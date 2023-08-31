@@ -1,0 +1,14 @@
+name: climate-risk-stac
+
+channels:
+  - conda-forge
+
+dependencies:
+  - jupyter
+  - geopandas
+  - netcdf4
+  - pystac
+  - python==3.11
+  - rasterio
+  - shapely
+  - xarray

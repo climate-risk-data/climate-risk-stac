@@ -1,0 +1,42 @@
+{
+  "type": "Collection",
+  "id": "hazard",
+  "stac_version": "1.0.0",
+  "description": "Hazard datasets",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    }
+  ],
+  "title": "Hazard",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -90,
+          180,
+          90
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2023-08-31T09:10:37.808409Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}
