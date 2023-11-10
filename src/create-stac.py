@@ -43,7 +43,9 @@ collection_ev = pystac.Collection(
 )
 catalog.add_child(collection_ev)
 
-#
+# add subcollections
+
+
 
 # %%
 catalog.normalize_hrefs(os.path.join(tmp_dir.name, "stac"))
