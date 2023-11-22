@@ -19,18 +19,36 @@ catalog = pystac.Catalog(
 )
 
 #%%
-# add child collections
+# add child catalogs
 
-collection_h = pystac.Collection(
+catalog_h = pystac.Catalog(
     id="hazard",
     title="Hazard",
-    description="Hazard datasets",
-    extent=pystac.Extent(
-        spatial=pystac.SpatialExtent([[-180, -90, 180, 90]]),
-        temporal=pystac.TemporalExtent([[datetime.utcnow(), None]]),
-    ),
+    description="Hazard dataset",
+    stac_extensions=stac_extensions,
 )
-catalog.add_child(collection_h)
+catalog.add_child(catalog_h)
+
+catalog_ev = pystac.Catalog(
+    id="exposure-vulnerability",
+    title="Exposure and Vulnerability",
+    description="Exposure and Vulnerability datasets",
+    stac_extensions=stac_extensions,
+)
+catalog.add_child(catalog_ev)
+
+
+# add subcatalogs
+catalog_h1 = pystac.Catalog(
+    id="flood",
+    title="Flood",
+    description="Flooding datasets",
+    stac_extensions=stac_extensions,
+)
+catalog_h.add_child(catalog_h1)
+
+
+
 
 collection_ev = pystac.Collection(
     id="exposure-vulnerability",
@@ -41,19 +59,9 @@ collection_ev = pystac.Collection(
         temporal=pystac.TemporalExtent([[datetime.utcnow(), None]]),
     ),
 )
-catalog.add_child(collection_ev)
+catalog.add_child(catalog_ev)
 
-# add subcollections
-collection_h1 = pystac.Collection(
-    id="flood",
-    title="Flood",
-    description="Flooding datasets",
-    extent=pystac.Extent(
-        spatial=pystac.SpatialExtent([[-180, -90, 180, 90]]),
-        temporal=pystac.TemporalExtent([[datetime.utcnow(), None]]),
-    ),
-)
-collection_h.add_child(collection_h)
+
 
 
 # %%
