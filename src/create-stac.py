@@ -44,7 +44,16 @@ collection_ev = pystac.Collection(
 catalog.add_child(collection_ev)
 
 # add subcollections
-
+collection_h1 = pystac.Collection(
+    id="flood",
+    title="Flood",
+    description="Flooding datasets",
+    extent=pystac.Extent(
+        spatial=pystac.SpatialExtent([[-180, -90, 180, 90]]),
+        temporal=pystac.TemporalExtent([[datetime.utcnow(), None]]),
+    ),
+)
+collection_h.add_child(collection_h)
 
 
 # %%
