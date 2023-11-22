@@ -11,6 +11,7 @@ tmp_dir = TemporaryDirectory()
 root_url = r'https://raw.githubusercontent.com/DirkEilander/climate-risk-stac/main/stac'
 stac_extensions=[]
 
+# create main catalog
 catalog = pystac.Catalog(
     id="climate-risk-data", 
     title="Climate Risk Data",
@@ -47,19 +48,26 @@ catalog_h1 = pystac.Catalog(
 )
 catalog_h.add_child(catalog_h1)
 
+catalog_h2 = pystac.Catalog(
+    id="river flood",
+    title="River flood",
+    description="River flooding datasets",
+    stac_extensions=stac_extensions,
+)
+catalog_h1.add_child(catalog_h2)
 
 
-
-collection_ev = pystac.Collection(
-    id="exposure-vulnerability",
-    title="Exposure and Vulnerability",
-    description="Exposure and Vulnerability datasets",
+# add collections
+collection = pystac.Collection(
+    id="aqueduct",
+    title="Aqueduct flood hazard maps",
+    description="Aqueduct flood hazard maps for different return periods ...",
     extent=pystac.Extent(
         spatial=pystac.SpatialExtent([[-180, -90, 180, 90]]),
         temporal=pystac.TemporalExtent([[datetime.utcnow(), None]]),
     ),
 )
-catalog.add_child(catalog_ev)
+catalog_h2.add_child(collection)
 
 
 
