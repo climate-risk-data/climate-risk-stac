@@ -12,13 +12,13 @@
     },
     {
       "rel": "child",
-      "href": "./hazard/collection.json",
+      "href": "./hazard/catalog.json",
       "type": "application/json",
       "title": "Hazard"
     },
     {
       "rel": "child",
-      "href": "./exposure-vulnerability/collection.json",
+      "href": "./exposure-vulnerability/catalog.json",
       "type": "application/json",
       "title": "Exposure and Vulnerability"
     }
