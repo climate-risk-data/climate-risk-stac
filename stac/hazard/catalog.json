@@ -1,0 +1,27 @@
+{
+  "type": "Catalog",
+  "id": "hazard",
+  "stac_version": "1.0.0",
+  "description": "Hazard dataset",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "child",
+      "href": "./flood/catalog.json",
+      "type": "application/json",
+      "title": "Flood"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    }
+  ],
+  "title": "Hazard"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "Catalog",
+  "id": "flood",
+  "stac_version": "1.0.0",
+  "description": "Flooding datasets",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "child",
+      "href": "./river flood/catalog.json",
+      "type": "application/json",
+      "title": "River flood"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Hazard"
+    }
+  ],
+  "title": "Flood"
+}
