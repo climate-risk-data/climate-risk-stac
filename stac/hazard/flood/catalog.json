@@ -12,9 +12,21 @@
     },
     {
       "rel": "child",
-      "href": "./river flood/catalog.json",
+      "href": "./coastal-flood/catalog.json",
       "type": "application/json",
-      "title": "River flood"
+      "title": "Coastal flood flood"
+    },
+    {
+      "rel": "child",
+      "href": "./fluvial-flood/catalog.json",
+      "type": "application/json",
+      "title": "Fluvial flood"
+    },
+    {
+      "rel": "child",
+      "href": "./pluvial-flood/catalog.json",
+      "type": "application/json",
+      "title": "Pluvial flood"
     },
     {
       "rel": "parent",

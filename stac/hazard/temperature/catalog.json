@@ -1,0 +1,21 @@
+{
+  "type": "Catalog",
+  "id": "temperature",
+  "stac_version": "1.0.0",
+  "description": "Temperature-related datasets",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Hazard"
+    }
+  ],
+  "title": "Temperature"
+}
