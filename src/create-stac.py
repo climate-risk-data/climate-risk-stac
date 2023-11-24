@@ -186,6 +186,40 @@ catalog_ev = pystac.Catalog(
 )
 catalog.add_child(catalog_ev)
 
+# exp & vul type (level2)
+catalog_ev1 = pystac.Catalog(
+    id="population",
+    title="Population",
+    description="Population datasets",
+    stac_extensions=stac_extensions,
+)
+catalog_ev.add_child(catalog_ev1)
+
+#  exp  (level3)
+catalog_ev11 = pystac.Catalog(
+    id="number",
+    title="Population number",
+    description="Population number datasets",
+    stac_extensions=stac_extensions,
+)
+catalog_ev1.add_child(catalog_ev11)
+
+# add dataset collections
+collection = pystac.Collection(
+    id="ghs-pop",
+    title="Global Human Settlement Layer Population",
+    description="The Global Human Settlement Layer Population (GHS-POP) datasets are available in two different coordinate systems and two spatial resolutions each for the years 1975-2030 in 5-year time intervals.",
+    extent=pystac.Extent(
+        spatial=pystac.SpatialExtent([[-180, -90, 180, 90]]),
+        temporal=pystac.TemporalExtent([[datetime.utcnow(), None]]),
+    ),
+)
+catalog_ev11.add_child(collection)
+
+# add item (Timothy :))
+
+
+
 
 
 # %%
