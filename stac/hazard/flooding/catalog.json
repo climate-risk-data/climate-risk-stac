@@ -1,6 +1,6 @@
 {
   "type": "Catalog",
-  "id": "flood",
+  "id": "flooding",
   "stac_version": "1.0.0",
   "description": "Flooding datasets",
   "links": [
@@ -14,19 +14,13 @@
       "rel": "child",
       "href": "./coastal-flood/catalog.json",
       "type": "application/json",
-      "title": "Coastal flood"
+      "title": "Coastal flooding"
     },
     {
       "rel": "child",
       "href": "./fluvial-flood/catalog.json",
       "type": "application/json",
-      "title": "Fluvial flood"
-    },
-    {
-      "rel": "child",
-      "href": "./pluvial-flood/catalog.json",
-      "type": "application/json",
-      "title": "Pluvial flood"
+      "title": "Fluvial flooding"
     },
     {
       "rel": "parent",
@@ -35,5 +29,5 @@
       "title": "Hazard"
     }
   ],
-  "title": "Flood"
+  "title": "Flooding"
 }

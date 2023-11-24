@@ -1,12 +1,12 @@
 {
   "type": "Collection",
-  "id": "hazard",
+  "id": "aqueduct",
   "stac_version": "1.0.0",
-  "description": "Hazard datasets",
+  "description": "Aqueduct flood hazard maps for different return periods ...",
   "links": [
     {
       "rel": "root",
-      "href": "../catalog.json",
+      "href": "../../../../catalog.json",
       "type": "application/json",
       "title": "Climate Risk Data"
     },
@@ -14,10 +14,10 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "Climate Risk Data"
+      "title": "Fluvial flood"
     }
   ],
-  "title": "Hazard",
+  "title": "Aqueduct flood hazard maps",
   "extent": {
     "spatial": {
       "bbox": [
@@ -32,7 +32,7 @@
     "temporal": {
       "interval": [
         [
-          "2023-08-31T09:10:37.808409Z",
+          "2023-11-24T11:52:38.459495Z",
           null
         ]
       ]

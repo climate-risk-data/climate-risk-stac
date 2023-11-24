@@ -1,27 +1,27 @@
 {
   "type": "Catalog",
-  "id": "exposure-vulnerability",
+  "id": "fluvial-flood",
   "stac_version": "1.0.0",
-  "description": "Exposure and Vulnerability datasets",
+  "description": "Fluvial flooding datasets",
   "links": [
     {
       "rel": "root",
-      "href": "../catalog.json",
+      "href": "../../../catalog.json",
       "type": "application/json",
       "title": "Climate Risk Data"
     },
     {
       "rel": "child",
-      "href": "./population/catalog.json",
+      "href": "./aqueduct/collection.json",
       "type": "application/json",
-      "title": "Population"
+      "title": "Aqueduct flood hazard maps"
     },
     {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "Climate Risk Data"
+      "title": "Flooding"
     }
   ],
-  "title": "Exposure and Vulnerability"
+  "title": "Fluvial flooding"
 }
