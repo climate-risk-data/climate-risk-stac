@@ -1,8 +1,8 @@
 {
   "type": "Catalog",
-  "id": "precipitation",
+  "id": "flooding",
   "stac_version": "1.0.0",
-  "description": "Precipitation-related datasets",
+  "description": "Flooding datasets",
   "links": [
     {
       "rel": "root",
@@ -12,15 +12,15 @@
     },
     {
       "rel": "child",
-      "href": "./drought/catalog.json",
+      "href": "./coastal-flood/catalog.json",
       "type": "application/json",
-      "title": "Drought"
+      "title": "Coastal flooding"
     },
     {
       "rel": "child",
-      "href": "./snow/catalog.json",
+      "href": "./fluvial-flood/catalog.json",
       "type": "application/json",
-      "title": "Heavy snowfall"
+      "title": "Fluvial flooding"
     },
     {
       "rel": "parent",
@@ -29,5 +29,5 @@
       "title": "Hazard"
     }
   ],
-  "title": "Precipitation"
+  "title": "Flooding"
 }

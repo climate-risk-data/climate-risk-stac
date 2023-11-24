@@ -11,6 +11,18 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "child",
+      "href": "./heat-wave/catalog.json",
+      "type": "application/json",
+      "title": "Heat wave"
+    },
+    {
+      "rel": "child",
+      "href": "./cold-wave/catalog.json",
+      "type": "application/json",
+      "title": "Cold wave"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",

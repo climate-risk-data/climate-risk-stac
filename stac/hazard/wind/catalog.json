@@ -1,8 +1,8 @@
 {
   "type": "Catalog",
-  "id": "precipitation",
+  "id": "wind",
   "stac_version": "1.0.0",
-  "description": "Precipitation-related datasets",
+  "description": "Wind-related datasets",
   "links": [
     {
       "rel": "root",
@@ -12,15 +12,15 @@
     },
     {
       "rel": "child",
-      "href": "./drought/catalog.json",
+      "href": "./tropical-cyclone/catalog.json",
       "type": "application/json",
-      "title": "Drought"
+      "title": "Tropical cyclone"
     },
     {
       "rel": "child",
-      "href": "./snow/catalog.json",
+      "href": "./extratropical-cyclone/catalog.json",
       "type": "application/json",
-      "title": "Heavy snowfall"
+      "title": "Extratropical cyclone"
     },
     {
       "rel": "parent",
@@ -29,5 +29,5 @@
       "title": "Hazard"
     }
   ],
-  "title": "Precipitation"
+  "title": "Wind"
 }

@@ -27,19 +27,45 @@ catalog = pystac.Catalog(
 catalog_h = pystac.Catalog(
     id="hazard",
     title="Hazard",
-    description="Hazard dataset",
+    description="Hazard datasets",
     stac_extensions=stac_extensions,
 )
 catalog.add_child(catalog_h)
 
-# subcatalogs hazard profile (level2)
+# hazard profile (level2)
 catalog_h1 = pystac.Catalog(
-    id="flood",
-    title="Flood",
+    id="flooding",
+    title="Flooding",
     description="Flooding datasets",
     stac_extensions=stac_extensions,
 )
 catalog_h.add_child(catalog_h1)
+
+# hazard type (level3)
+catalog_h11 = pystac.Catalog(
+    id="coastal-flood",
+    title="Coastal flooding",
+    description="Coastal flooding datasets",
+    stac_extensions=stac_extensions,
+)
+catalog_h1.add_child(catalog_h11)
+
+catalog_h12 = pystac.Catalog(
+    id="fluvial-flood",
+    title="Fluvial flooding",
+    description="Fluvial flooding datasets",
+    stac_extensions=stac_extensions,
+)
+catalog_h1.add_child(catalog_h12)
+
+#catalog_h13 = pystac.Catalog(
+#    id="pluvial-flood",
+#    title="Pluvial flooding",
+#    description="Pluvial flood datasets",
+#    stac_extensions=stac_extensions,
+#)
+#catalog_h1.add_child(catalog_h13)
+
 
 catalog_h2 = pystac.Catalog(
     id="precipitation",
@@ -49,6 +75,23 @@ catalog_h2 = pystac.Catalog(
 )
 catalog_h.add_child(catalog_h2)
 
+catalog_h21 = pystac.Catalog(
+    id="drought",
+    title="Drought",
+    description="Drought datasets",
+    stac_extensions=stac_extensions,
+)
+catalog_h2.add_child(catalog_h21)
+
+catalog_h22 = pystac.Catalog(
+    id="snow",
+    title="Heavy snowfall",
+    description="Heavy snowfall datasets",
+    stac_extensions=stac_extensions,
+)
+catalog_h2.add_child(catalog_h22)
+
+
 catalog_h3 = pystac.Catalog(
     id="temperature",
     title="Temperature",
@@ -57,13 +100,47 @@ catalog_h3 = pystac.Catalog(
 )
 catalog_h.add_child(catalog_h3)
 
+catalog_h31 = pystac.Catalog(
+    id="heat-wave",
+    title="Heat wave",
+    description="Heat wave datasets",
+    stac_extensions=stac_extensions,
+)
+catalog_h3.add_child(catalog_h31)
+
+catalog_h32 = pystac.Catalog(
+    id="cold-wave",
+    title="Cold wave",
+    description="Cold wave datasets",
+    stac_extensions=stac_extensions,
+)
+catalog_h3.add_child(catalog_h32)
+
+
 catalog_h4 = pystac.Catalog(
-    id="pressure-wind",
-    title="Pressure and Wind",
-    description="Pressure- and Wind-related datasets",
+    id="wind",
+    title="Wind",
+    description="Wind-related datasets",
     stac_extensions=stac_extensions,
 )
 catalog_h.add_child(catalog_h4)
+
+catalog_h41 = pystac.Catalog(
+    id="tropical-cyclone",
+    title="Tropical cyclone",
+    description="Tropical cyclone datasets",
+    stac_extensions=stac_extensions,
+)
+catalog_h4.add_child(catalog_h41)
+
+catalog_h42 = pystac.Catalog(
+    id="extratropical-cyclone",
+    title="Extratropical cyclone",
+    description="Extratropical cyclone datasets",
+    stac_extensions=stac_extensions,
+)
+catalog_h4.add_child(catalog_h42)
+
 
 catalog_h5 = pystac.Catalog(
     id="environment",
@@ -81,30 +158,6 @@ catalog_h6 = pystac.Catalog(
 )
 catalog_h.add_child(catalog_h6)
 
-# subcatalogs hazard type (level3)
-catalog_h11 = pystac.Catalog(
-    id="coastal-flood",
-    title="Coastal flood flood",
-    description="Coastal flood datasets",
-    stac_extensions=stac_extensions,
-)
-catalog_h1.add_child(catalog_h11)
-
-catalog_h12 = pystac.Catalog(
-    id="fluvial-flood",
-    title="Fluvial flood",
-    description="Fluvial flood datasets",
-    stac_extensions=stac_extensions,
-)
-catalog_h1.add_child(catalog_h12)
-
-catalog_h13 = pystac.Catalog(
-    id="pluvial-flood",
-    title="Pluvial flood",
-    description="Pluvial flood datasets",
-    stac_extensions=stac_extensions,
-)
-catalog_h1.add_child(catalog_h13)
 
 
 
@@ -121,6 +174,7 @@ collection = pystac.Collection(
     ),
 )
 catalog_h12.add_child(collection)
+
 
 #%%
 # exposure & vulnerability

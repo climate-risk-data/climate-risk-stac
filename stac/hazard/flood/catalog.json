@@ -14,7 +14,7 @@
       "rel": "child",
       "href": "./coastal-flood/catalog.json",
       "type": "application/json",
-      "title": "Coastal flood flood"
+      "title": "Coastal flood"
     },
     {
       "rel": "child",
