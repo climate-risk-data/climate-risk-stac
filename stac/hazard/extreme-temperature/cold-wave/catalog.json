@@ -1,0 +1,21 @@
+{
+  "type": "Catalog",
+  "id": "cold-wave",
+  "stac_version": "1.0.0",
+  "description": "Cold wave datasets",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Extreme temperature"
+    }
+  ],
+  "title": "Cold wave"
+}
