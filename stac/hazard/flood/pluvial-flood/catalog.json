@@ -1,0 +1,21 @@
+{
+  "type": "Catalog",
+  "id": "pluvial-flood",
+  "stac_version": "1.0.0",
+  "description": "Pluvial flood datasets",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Flood"
+    }
+  ],
+  "title": "Pluvial flood"
+}

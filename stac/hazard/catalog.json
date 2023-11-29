@@ -1,0 +1,57 @@
+{
+  "type": "Catalog",
+  "id": "hazard",
+  "stac_version": "1.0.0",
+  "description": "Hazard datasets",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "child",
+      "href": "./flooding/catalog.json",
+      "type": "application/json",
+      "title": "Flooding"
+    },
+    {
+      "rel": "child",
+      "href": "./extreme-precipitation/catalog.json",
+      "type": "application/json",
+      "title": "Extreme precipitation"
+    },
+    {
+      "rel": "child",
+      "href": "./extreme-temperature/catalog.json",
+      "type": "application/json",
+      "title": "Extreme temperature"
+    },
+    {
+      "rel": "child",
+      "href": "./windstorm/catalog.json",
+      "type": "application/json",
+      "title": "Windstorm"
+    },
+    {
+      "rel": "child",
+      "href": "./wildfire/catalog.json",
+      "type": "application/json",
+      "title": "Wildfire"
+    },
+    {
+      "rel": "child",
+      "href": "./multi-hazard/catalog.json",
+      "type": "application/json",
+      "title": "Multi-hazard"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    }
+  ],
+  "title": "Hazard"
+}

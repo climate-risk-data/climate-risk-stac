@@ -1,0 +1,21 @@
+{
+  "type": "Catalog",
+  "id": "snow",
+  "stac_version": "1.0.0",
+  "description": "Heavy snowfall datasets",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Precipitation"
+    }
+  ],
+  "title": "Heavy snowfall"
+}

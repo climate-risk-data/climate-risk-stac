@@ -1,0 +1,33 @@
+{
+  "type": "Catalog",
+  "id": "precipitation",
+  "stac_version": "1.0.0",
+  "description": "Precipitation-related datasets",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "child",
+      "href": "./drought/catalog.json",
+      "type": "application/json",
+      "title": "Drought"
+    },
+    {
+      "rel": "child",
+      "href": "./snow/catalog.json",
+      "type": "application/json",
+      "title": "Heavy snowfall"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Hazard"
+    }
+  ],
+  "title": "Precipitation"
+}

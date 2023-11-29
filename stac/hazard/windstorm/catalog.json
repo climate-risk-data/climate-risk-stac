@@ -1,0 +1,33 @@
+{
+  "type": "Catalog",
+  "id": "windstorm",
+  "stac_version": "1.0.0",
+  "description": "Windstorm-related datasets",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "child",
+      "href": "./tropical-cyclone/catalog.json",
+      "type": "application/json",
+      "title": "Tropical cyclone"
+    },
+    {
+      "rel": "child",
+      "href": "./extratropical-cyclone/catalog.json",
+      "type": "application/json",
+      "title": "Extratropical cyclone"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Hazard"
+    }
+  ],
+  "title": "Windstorm"
+}

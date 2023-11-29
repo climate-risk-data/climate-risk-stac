@@ -1,0 +1,33 @@
+{
+  "type": "Catalog",
+  "id": "flooding",
+  "stac_version": "1.0.0",
+  "description": "Flooding datasets",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "child",
+      "href": "./coastal-flood/catalog.json",
+      "type": "application/json",
+      "title": "Coastal flooding"
+    },
+    {
+      "rel": "child",
+      "href": "./fluvial-flood/catalog.json",
+      "type": "application/json",
+      "title": "Fluvial flooding"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Hazard"
+    }
+  ],
+  "title": "Flooding"
+}
