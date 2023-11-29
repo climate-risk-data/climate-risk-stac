@@ -18,27 +18,27 @@
     },
     {
       "rel": "child",
-      "href": "./precipitation/catalog.json",
+      "href": "./extreme-precipitation/catalog.json",
       "type": "application/json",
-      "title": "Precipitation"
+      "title": "Extreme precipitation"
     },
     {
       "rel": "child",
-      "href": "./temperature/catalog.json",
+      "href": "./extreme-temperature/catalog.json",
       "type": "application/json",
-      "title": "Temperature"
+      "title": "Extreme temperature"
     },
     {
       "rel": "child",
-      "href": "./wind/catalog.json",
+      "href": "./windstorm/catalog.json",
       "type": "application/json",
-      "title": "Wind"
+      "title": "Windstorm"
     },
     {
       "rel": "child",
-      "href": "./environment/catalog.json",
+      "href": "./wildfire/catalog.json",
       "type": "application/json",
-      "title": "Environmental degradation"
+      "title": "Wildfire"
     },
     {
       "rel": "child",
