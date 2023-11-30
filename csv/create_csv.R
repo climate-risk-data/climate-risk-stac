@@ -2,7 +2,7 @@
 ##  create csvs with attributes ##
 ##################################
 # by Lena Reimann
-# Nov 24, 2023
+# Nov 30, 2023
 
 ## goal: create a first setup of the csv needed for STAC
 #         a) one csv independent from item or collection
@@ -22,10 +22,11 @@ wd = "C:/Users/lrn238/Documents/GitHub/climate-risk-stac/"
 csv = data.frame(
   
   # catalog ('folder') location
-  catalog1 = "Exposure and Vulnerability",
-  catalog2 = "Social", 
-  catalog3 = "Population", #'category' according to RDLs
-  risk_data_type = "Exposure", #@; use as label  
+  catalog1 = "exposure-vulnerability",
+  catalog2 = "population", #'category' according to RDLs
+  catalog3 = "population-number", 
+  risk_data_type = "exposure", #@; use as label  
+  data_type_category = "social", # use as label; maybe not needed?
   
   # collection-specific attributes
   title_collection = "Global Human Settlement Layer Population", #
@@ -64,12 +65,12 @@ csv = data.frame(
   temporal_resolution = "1975-2030", #*, @; to be added in ISO8601
   time_interval = "5-yearly", #(e.g. years, decades); not necessarily needed, but can be derived from the items
   #year = seq(1975, 2030, by = 5),
-  scenarios = "N/A", #if future
+  scenarios = "extrapolation", #if future
   
   # data calculation
   data_calculation_type = "simulated", #@; Inferred, observed, simulated; not so suitable for E/V?
   calculation_approach = "dasymetric", #if applicable, determined by data calculation type
-  underlying_data = "Gridded Population of the World (GPW) v4, GHS built-up land (GHS-BUILT)", #related to data calculation type
+  underlying_data = "Gridded Population of the World (GPW) v4, GHS built-up land (GHS-BUILT)",
   
   # data provision
   provider = "JRC Data Catalogue", #*
@@ -86,7 +87,8 @@ csv = data.frame(
   publication_type = "report", #e.g. report, article, policy brief
   
   # usage notes
-  usage_notes = "any relevant information or cautions for using the data",
+  usage_notes = "GHS-POP may underestimate population in sparsely populated locations where settlements are not detected by the satellite; 
+  it may therefore overconcentrate population in those locations where settlements are detected.",
   
   # links to specific datasets
   assets = c(paste("GHS_POP_E1975_GLOBE_R2023A_4326_3ss/V1-0/GHS_POP_E1975_GLOBE_R2023A_4326_3ss_V1_0.zip",
