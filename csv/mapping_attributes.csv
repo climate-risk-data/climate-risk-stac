@@ -1,0 +1,37 @@
+"column_name","description","rdls","stac"
+"catalog1","id of first-level catalog in stac browser",NA,NA
+"catalog2","id of second-level catalog in stac browser","category",NA
+"catalog3","id of third-level catalog in stac browser",NA,NA
+"risk_data_type","risk driver (i.e. hazard, exposure, vulnerability)","risk_data_type",NA
+"data_type_category","category of the risk driver (e.g. hydrological, meterological; social, physical)","exposure_category; hazard_type",NA
+"title_collection","dataset (collection) name",NA,NA
+"title_short","short name of dataset (if applicable)",NA,NA
+"description_collection","short description of dataset (collection)",NA,NA
+"title_item","name of specific dataset item",NA,NA
+"description_item","short description of dataset item",NA,NA
+"item_id","dataset item id",NA,NA
+"bbox","bounding box coordinates (WGS coordinates)","bbox",NA
+"data_type","data type (i.e. raster, vector, tabular (lat/lon)",NA,NA
+"format","data format (i.e. geotiff, geopackage, shapefile, geodatabase, csv)","format",NA
+"spatial_scale","spatial scale (i.e. global, regional, national, subnational; for now global only)","spatial_scale",NA
+"crs_name","name of the coordinate reference system (CRS) (e.g. WGS84, Mollweide)",NA,NA
+"crs_code","numerical code of CRS (e.g. 4326, 54009)","coordinate_system",NA
+"spatial_resolution","spatial resolution (numeric)","spatial_resolution",NA
+"spatial_resolution_unit","spatial resolution unit (i.e. arc seconds, arc minutes, decimal degrees, meters, kilometers)",NA,NA
+"reference_period","reference period for which the data are available (i.e. historical, future, historical and future)",NA,NA
+"temporal_resolution","temporal resolution of the data (from-to) to be added in ISO8601 format","temporal_resolution",NA
+"temporal_interval","temporal intervals of the data (e.g. hourly, yearly, 5-yearly)",NA,NA
+"scenarios","name of scenarios used (if future) (e.g. RCPs, SSPs, warming levels)",NA,NA
+"data_calculation_type","method used for data calculation (i.e. inferred, observed, simulated)","data_calculation_type",NA
+"analysis_type","method used for calculating the data (i.e. probabilistic, deterministic, empirical for hazards; e.g. dasymetric modeling for exposure & vulnerability)","analysis_type",NA
+"underlying_data","data underlying the calculation type and approach (if applicable)",NA,NA
+"provider","name of data provider","publisher",NA
+"provider_role","role of data provider, separated by ',' (i.e. licensor, producer, processor, host)","entity",NA
+"license","data distribution license (e.g CC0-1.0, CC-BY-4.0, CC-BY-SA-4.0)","license",NA
+"link_website","link to the website where the data can be accessed","access_url",NA
+"code_link","link to available code (e.g. doi)",NA,NA
+"code_type","type of available code (e.g. for data download, processing)",NA,NA
+"publication_link","link to publication (e.g. doi)","doi",NA
+"publication_type","type of publication (e.g. report, article, policy brief)",NA,NA
+"usage_notes","any relevant information for using the data",NA,NA
+"assets","links to specific data files","download_url",NA
