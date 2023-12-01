@@ -11,9 +11,9 @@
 
 rm(list=ls())
 
-lib = "C:/Users/lrn238/AppData/Local/RLIB" 
+#lib = "C:/Users/lrn238/AppData/Local/RLIB" 
 # load packages
-library(dplyr, lib.loc = lib)
+#library(dplyr, lib.loc = lib)
 
 # define directory
 wd = "C:/Users/lrn238/Documents/GitHub/climate-risk-stac/"
@@ -242,7 +242,12 @@ csv_readme[which(csv_readme$column_name == "assets"), "stac"] <- "assets"
 
 
 # rearrange columns
-csv_readme = csv_readme %>% select(column_name, stac, rdls, description)
+column_name = csv_readme$column_name
+stac = csv_readme$stac
+rdls = csv_readme$rdls
+description = csv_readme$description
+
+csv_readme =  data.frame(column_name, stac, rdls, description)
 
 name = "mapping_attributes.csv"
 #write.csv(csv_readme, file = paste(wd, "csv", name, sep = "/"), row.names = F)
