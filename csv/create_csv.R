@@ -242,12 +242,12 @@ csv_readme[which(csv_readme$column_name == "assets"), "stac"] <- "assets"
 
 
 # rearrange columns
-column_name = csv_readme$column_name
-stac = csv_readme$stac
-rdls = csv_readme$rdls
-description = csv_readme$description
+# column_name = csv_readme$column_name
+# stac = csv_readme$stac
+# rdls = csv_readme$rdls
+# description = csv_readme$description
 
-csv_readme =  data.frame(column_name, stac, rdls, description)
+# csv_readme =  data.frame(column_name, stac, rdls, description)
 
 name = "mapping_attributes.csv"
 #write.csv(csv_readme, file = paste(wd, "csv", name, sep = "/"), row.names = F)
