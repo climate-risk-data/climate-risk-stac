@@ -6,8 +6,7 @@ from tempfile import TemporaryDirectory
 from datetime import datetime
 
 tmp_dir = TemporaryDirectory()
-
-tmp_dir.name = 'C:/Users/lrn238/Documents/GitHub/climate-risk-stac/'
+#tmp_dir.name = 'C:/Users/lrn238/Documents/GitHub/climate-risk-stac/'
 
 #%%
 root_url = r'https://raw.githubusercontent.com/DirkEilander/climate-risk-stac/main/stac'
