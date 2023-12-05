@@ -78,8 +78,8 @@ csv = data.frame(
   
   # data provision
   provider = "JRC Data Catalogue", #*
-  provider_role = "licensor, producer", #*
-  license = "CC BY 4.0", #*
+  provider_role = "licensor", #*
+  license = "CC-BY-4.0", #*
   link_website = "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/",
   
   # publication
@@ -87,8 +87,8 @@ csv = data.frame(
   publication_type = "report", #e.g. report, article, policy brief  
   
   # code
-  code_link = "N/A", #e.g. doi to code related to the data
-  code_type = "N/A", #e.g. download, processing
+  code_link = " ", #e.g. doi to code related to the data
+  code_type = " ", #e.g. download, processing
   
   # usage notes
   usage_notes = "GHS-POP may underestimate population in sparsely populated locations where settlements are not detected by the satellite; 
