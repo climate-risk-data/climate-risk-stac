@@ -2,7 +2,7 @@
 ##  create csvs with attributes ##
 ##################################
 # by Lena Reimann
-# Dec 1, 2023
+# Dec 5, 2023
 
 ## goal: create a first setup of the csv needed for STAC
 #         a) one csv independent from item or collection
@@ -55,7 +55,7 @@ csv = data.frame(
 
   # data type
   data_type = "raster", #raster, vector, tabular (not in any of the specs -> remove?)
-  format = "GeoTIFF", #@; e.g. GeoTIFF, NetCDF, shapefile, csv 
+  format = "geotiff", #@; e.g. geotiff, netcdf, shapefile, csv 
   
   # spatial details
   spatial_scale = "global", #@; for now global as the default
