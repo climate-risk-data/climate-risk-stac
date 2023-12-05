@@ -30,7 +30,7 @@ csv = data.frame(
   catalog2 = "population", #'category' according to RDLs
   catalog3 = "population-number", 
   risk_data_type = "exposure", #@; use as label  
-  data_type_category = "social", # use as label; maybe not needed?
+  #data_type_category = "social", # use as label; maybe not needed?
   
   # collection-specific attributes
   title_collection = "Global Human Settlement Layer Population", #
@@ -65,7 +65,7 @@ csv = data.frame(
   spatial_resolution_unit = c("arc seconds", "arc seconds", "meters", "meters"), #unit
   
   # temporal details
-  reference_period = "historical and future", #@; use as label
+  reference_period = "historical & future", #@; use as label
   temporal_resolution = "1975-2030", #*, @; to be added in ISO8601
   temporal_interval = "5-yearly", #(e.g. years, decades); not necessarily needed, but can be derived from the items
   #year = seq(1975, 2030, by = 5),
@@ -82,13 +82,13 @@ csv = data.frame(
   license = "CC BY 4.0", #*
   link_website = "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/",
   
+  # publication
+  publication_link = "https://doi.org/10.2760/098587", #e.g. doi; rephrase to accommodate scientific extension
+  publication_type = "report", #e.g. report, article, policy brief  
+  
   # code
   code_link = "N/A", #e.g. doi to code related to the data
   code_type = "N/A", #e.g. download, processing
-  
-  # publication
-  publication_link = "https://doi.org/10.2760/098587", #e.g. doi; rephrase to accommodate scientific extension
-  publication_type = "report", #e.g. report, article, policy brief
   
   # usage notes
   usage_notes = "GHS-POP may underestimate population in sparsely populated locations where settlements are not detected by the satellite; 
@@ -151,7 +151,7 @@ csv = data.frame(
 )
 
 name = "csv.csv"
-#write.csv(csv, file = paste(wd, "csv", name, sep = "/"), row.names = F)
+write.csv(csv, file = paste(wd, "csv", name, sep = "/"), row.names = F)
 
 
 ## create table with attribute descriptions and mappings to stac & RDLS
@@ -162,7 +162,7 @@ description = c("id of first-level catalog in stac browser",
                 "id of second-level catalog in stac browser",
                 "id of third-level catalog in stac browser",
                 "risk driver (i.e. hazard, exposure, vulnerability)",
-                "category of the risk driver (e.g. hydrological, meterological; social, physical)",
+                #"category of the risk driver (e.g. hydrological, meterological; social, physical)",
                 "dataset (collection) name",
                 "short name of dataset (if applicable)",
                 "short description of dataset (collection)",
@@ -177,21 +177,21 @@ description = c("id of first-level catalog in stac browser",
                 "numerical code of CRS (e.g. 4326, 54009)",
                 "spatial resolution (numeric)",
                 "spatial resolution unit (i.e. arc seconds, arc minutes, decimal degrees, meters, kilometers)",
-                "reference period for which the data are available (i.e. historical, future, historical and future)",
-                "temporal resolution of the data (from-to) to be added in ISO8601 format",
-                "temporal intervals of the data (e.g. hourly, yearly, 5-yearly)",
+                "reference period for which the data are available (i.e. historical, future, historical & future)",
+                "temporal resolution of the data (YYYY-YYYY)",
+                "temporal intervals of the data (i.e. hourly, daily, monthly, yearly, 5-yearly, 10-yearly, irregular)",
                 "name of scenarios used (if future) (e.g. RCPs, SSPs, warming levels)",
                 "method used for data calculation (i.e. inferred, observed, simulated)",
-                "method used for calculating the data (i.e. probabilistic, deterministic, empirical for hazards; e.g. dasymetric modeling for exposure & vulnerability)",
+                "method used for calculating the data (i.e. probabilistic, deterministic, empirical for hazards; e.g. dasymetric modeling, random forest modeling for exposure & vulnerability)",
                 "data underlying the calculation type and approach (if applicable)",
                 "name of data provider",
                 "role of data provider, separated by ',' (i.e. licensor, producer, processor, host)",
                 "data distribution license (e.g CC0-1.0, CC-BY-4.0, CC-BY-SA-4.0)",
                 "link to the website where the data can be accessed",
-                "link to available code (e.g. doi)",
-                "type of available code (e.g. for data download, processing)",
                 "link to publication (e.g. doi)",
-                "type of publication (e.g. report, article, policy brief)",
+                "type of publication (e.g. report, article, documentation)",
+                "link to available code (e.g. doi)",
+                "type of available code (e.g. for data download, processing, application)",
                 "any relevant information for using the data",
                 "links to specific data files"
                 )
@@ -205,7 +205,7 @@ csv_readme$stac = NA
 # add rdls equivalents (not necessarily complete)
 csv_readme[which(csv_readme$column_name == "catalog2"), "rdls"] <- "category"
 csv_readme[which(csv_readme$column_name == "risk_data_type"), "rdls"] <- "risk_data_type"
-csv_readme[which(csv_readme$column_name == "data_type_category"), "rdls"] <- paste("exposure_category", "hazard_type", sep = "; ")
+#csv_readme[which(csv_readme$column_name == "data_type_category"), "rdls"] <- paste("exposure_category", "hazard_type", sep = "; ")
 csv_readme[which(csv_readme$column_name == "bbox"), "rdls"] <- "bbox"
 csv_readme[which(csv_readme$column_name == "format"), "rdls"] <- "format"
 csv_readme[which(csv_readme$column_name == "spatial_scale"), "rdls"] <- "spatial_scale"
@@ -250,7 +250,7 @@ csv_readme[which(csv_readme$column_name == "assets"), "stac"] <- "assets"
 # csv_readme =  data.frame(column_name, stac, rdls, description)
 
 name = "mapping_attributes.csv"
-#write.csv(csv_readme, file = paste(wd, "csv", name, sep = "/"), row.names = F)
+write.csv(csv_readme, file = paste(wd, "csv", name, sep = "/"), row.names = F)
 
 
 
