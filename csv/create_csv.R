@@ -2,7 +2,7 @@
 ##  create csvs with attributes ##
 ##################################
 # by Lena Reimann
-# Dec 5, 2023
+# Dec 8, 2023
 
 ## goal: create a first setup of the csv needed for STAC
 #         a) one csv independent from item or collection
@@ -26,9 +26,9 @@ wd = "C:/Users/lrn238/Documents/GitHub/climate-risk-stac/"
 csv = data.frame(
   
   # catalog ('folder') location
-  catalog1 = "exposure-vulnerability",
-  catalog2 = "population", #'category' according to RDLs
-  catalog3 = "population-number", 
+  catalog = "exposure-vulnerability",
+  category = "population",
+  subcategory = "population-number", 
   risk_data_type = "exposure", #@; use as label  
   #data_type_category = "social", # use as label; maybe not needed?
   
@@ -158,9 +158,9 @@ write.csv(csv, file = paste(wd, "csv", name, sep = "/"), row.names = F)
 # export attribute names
 column_name = colnames(csv)
 
-description = c("id of first-level catalog in stac browser",
-                "id of second-level catalog in stac browser",
-                "id of third-level catalog in stac browser",
+description = c("id of catalog (i.e. hazard or exposure-vulnerability)",
+                "category of data type",
+                "subcategory of data type",
                 "risk driver (i.e. hazard, exposure, vulnerability)",
                 #"category of the risk driver (e.g. hydrological, meterological; social, physical)",
                 "dataset (collection) name",
@@ -175,17 +175,17 @@ description = c("id of first-level catalog in stac browser",
                 "spatial scale (i.e. global, regional, national, subnational; for now global only)",
                 "name of the coordinate reference system (CRS) (e.g. WGS84, Mollweide)",
                 "numerical code of CRS (e.g. 4326, 54009)",
-                "spatial resolution (numeric)",
+                "spatial resolution (numeric or administrative unit level)",
                 "spatial resolution unit (i.e. arc seconds, arc minutes, decimal degrees, meters, kilometers)",
                 "reference period for which the data are available (i.e. historical, future, historical & future)",
-                "temporal resolution of the data (YYYY-YYYY)",
+                "temporal resolution of the data (YYYY or YYYY-YYYY)",
                 "temporal intervals of the data (i.e. hourly, daily, monthly, yearly, 5-yearly, 10-yearly, irregular)",
                 "name of scenarios used (if future) (e.g. RCPs, SSPs, warming levels)",
                 "method used for data calculation (i.e. inferred, observed, simulated)",
                 "method used for calculating the data (i.e. probabilistic, deterministic, empirical for hazards; e.g. dasymetric modeling, random forest modeling for exposure & vulnerability)",
                 "data underlying the calculation type and approach (if applicable)",
                 "name of data provider",
-                "role of data provider, separated by ',' (i.e. licensor, producer, processor, host)",
+                "role of data provider (i.e. licensor, producer, processor, host)",
                 "data distribution license (e.g CC0-1.0, CC-BY-4.0, CC-BY-SA-4.0)",
                 "link to the website where the data can be accessed",
                 "link to publication (e.g. doi)",
@@ -193,7 +193,7 @@ description = c("id of first-level catalog in stac browser",
                 "link to available code (e.g. doi)",
                 "type of available code (e.g. for data download, processing, application)",
                 "any relevant information for using the data",
-                "links to specific data files"
+                "links to specific data files, separated by ';'"
                 )
 # make df
 csv_readme = data.frame(column_name, description)
@@ -203,7 +203,9 @@ csv_readme$rdls = NA
 csv_readme$stac = NA
 
 # add rdls equivalents (not necessarily complete)
-csv_readme[which(csv_readme$column_name == "catalog2"), "rdls"] <- "category"
+csv_readme[which(csv_readme$column_name == "catalog"), "rdls"] <- "category"
+csv_readme[which(csv_readme$column_name == "category"), "rdls"] <- "category"
+csv_readme[which(csv_readme$column_name == "subcategory"), "rdls"] <- "category"
 csv_readme[which(csv_readme$column_name == "risk_data_type"), "rdls"] <- "risk_data_type"
 #csv_readme[which(csv_readme$column_name == "data_type_category"), "rdls"] <- paste("exposure_category", "hazard_type", sep = "; ")
 csv_readme[which(csv_readme$column_name == "bbox"), "rdls"] <- "bbox"
@@ -223,9 +225,9 @@ csv_readme[which(csv_readme$column_name == "publication_link"), "rdls"] <- "doi"
 csv_readme[which(csv_readme$column_name == "assets"), "rdls"] <- "download_url"
 
 # add stac equivalents (not necessarily complete)
-csv_readme[which(csv_readme$column_name == "catalog1"), "stac"] <- "catalog"
-csv_readme[which(csv_readme$column_name == "catalog2"), "stac"] <- "catalog"
-csv_readme[which(csv_readme$column_name == "catalog3"), "stac"] <- "catalog"
+csv_readme[which(csv_readme$column_name == "catalog"), "stac"] <- "catalog"
+csv_readme[which(csv_readme$column_name == "category"), "stac"] <- "catalog"
+csv_readme[which(csv_readme$column_name == "subcategory"), "stac"] <- "catalog"
 csv_readme[which(csv_readme$column_name == "title_collection"), "stac"] <- "title"
 csv_readme[which(csv_readme$column_name == "description_collection"), "stac"] <- "description"
 csv_readme[which(csv_readme$column_name == "title_item"), "stac"] <- "title"

@@ -1,7 +1,7 @@
 "column_name","description","rdls","stac"
-"catalog1","id of first-level catalog in stac browser",NA,"catalog"
-"catalog2","id of second-level catalog in stac browser","category","catalog"
-"catalog3","id of third-level catalog in stac browser",NA,"catalog"
+"catalog","id of catalog (i.e. hazard or exposure-vulnerability)","category","catalog"
+"category","category of data type","category","catalog"
+"subcategory","subcategory of data type","category","catalog"
 "risk_data_type","risk driver (i.e. hazard, exposure, vulnerability)","risk_data_type",NA
 "title_collection","dataset (collection) name",NA,"title"
 "title_short","short name of dataset (if applicable)",NA,NA
@@ -15,17 +15,17 @@
 "spatial_scale","spatial scale (i.e. global, regional, national, subnational; for now global only)","spatial_scale",NA
 "crs_name","name of the coordinate reference system (CRS) (e.g. WGS84, Mollweide)",NA,NA
 "crs_code","numerical code of CRS (e.g. 4326, 54009)","coordinate_system","proj:epsg (projection extension)"
-"spatial_resolution","spatial resolution (numeric)","spatial_resolution",NA
+"spatial_resolution","spatial resolution (numeric or administrative unit level)","spatial_resolution",NA
 "spatial_resolution_unit","spatial resolution unit (i.e. arc seconds, arc minutes, decimal degrees, meters, kilometers)",NA,NA
 "reference_period","reference period for which the data are available (i.e. historical, future, historical & future)",NA,NA
-"temporal_resolution","temporal resolution of the data (YYYY-YYYY)","temporal_resolution","datetime"
+"temporal_resolution","temporal resolution of the data (YYYY or YYYY-YYYY)","temporal_resolution","datetime"
 "temporal_interval","temporal intervals of the data (i.e. hourly, daily, monthly, yearly, 5-yearly, 10-yearly, irregular)",NA,NA
 "scenarios","name of scenarios used (if future) (e.g. RCPs, SSPs, warming levels)",NA,NA
 "data_calculation_type","method used for data calculation (i.e. inferred, observed, simulated)","data_calculation_type",NA
 "analysis_type","method used for calculating the data (i.e. probabilistic, deterministic, empirical for hazards; e.g. dasymetric modeling, random forest modeling for exposure & vulnerability)","analysis_type",NA
 "underlying_data","data underlying the calculation type and approach (if applicable)",NA,NA
 "provider","name of data provider","publisher","provider"
-"provider_role","role of data provider, separated by ',' (i.e. licensor, producer, processor, host)","entity","roles"
+"provider_role","role of data provider (i.e. licensor, producer, processor, host)","entity","roles"
 "license","data distribution license (e.g CC0-1.0, CC-BY-4.0, CC-BY-SA-4.0)","license","license"
 "link_website","link to the website where the data can be accessed","access_url",NA
 "publication_link","link to publication (e.g. doi)","doi","sci:doi (scientific citation extension)"
@@ -33,4 +33,4 @@
 "code_link","link to available code (e.g. doi)",NA,NA
 "code_type","type of available code (e.g. for data download, processing, application)",NA,NA
 "usage_notes","any relevant information for using the data",NA,NA
-"assets","links to specific data files","download_url","assets"
+"assets","links to specific data files, separated by ';'","download_url","assets"
