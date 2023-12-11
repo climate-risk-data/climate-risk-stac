@@ -10,7 +10,7 @@
 "description_item","short description of dataset item",NA,"description"
 "item_id","dataset item id",NA,"id (not numeric)"
 "bbox","bounding box coordinates (WGS coordinates)","bbox","bbox"
-"data_type","data type (i.e. raster, vector, tabular (lat/lon)",NA,NA
+"data_type","data type (i.e. raster, vector, tabular)",NA,NA
 "format","data format (i.e. geotiff, geopackage, shapefile, geodatabase, csv)","format",NA
 "spatial_scale","spatial scale (i.e. global, regional, national, subnational; for now global only)","spatial_scale",NA
 "crs_name","name of the coordinate reference system (CRS) (e.g. WGS84, Mollweide)",NA,NA
@@ -34,3 +34,4 @@
 "code_type","type of available code (e.g. for data download, processing, application)",NA,NA
 "usage_notes","any relevant information for using the data",NA,NA
 "assets","links to specific data files, separated by ';'","download_url","assets"
+"name_contributor","name of person who added the dataset to the sheet (for possible follow-ups)","contact_point",NA
