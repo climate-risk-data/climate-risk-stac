@@ -2,7 +2,7 @@
 ##  create csvs with attributes ##
 ##################################
 # by Lena Reimann
-# Dec 8, 2023
+# Dec 11, 2023
 
 ## goal: create a first setup of the csv needed for STAC
 #         a) one csv independent from item or collection
@@ -147,7 +147,8 @@ csv = data.frame(
                    "GHS_POP_E2025_GLOBE_R2023A_54009_1000/V1-0/GHS_POP_E2025_GLOBE_R2023A_54009_1000_V1_0.zip",
                    "GHS_POP_E2030_GLOBE_R2023A_54009_1000/V1-0/GHS_POP_E2030_GLOBE_R2023A_54009_1000_V1_0.zip",
                    sep = ";")
-             )#*
+             ),#*
+  name_contributor = "Lena Reimann"
 )
 
 name = "csv.csv"
@@ -170,7 +171,7 @@ description = c("id of catalog (i.e. hazard or exposure-vulnerability)",
                 "short description of dataset item",
                 "dataset item id",
                 "bounding box coordinates (WGS coordinates)",
-                "data type (i.e. raster, vector, tabular (lat/lon)",
+                "data type (i.e. raster, vector, tabular)",
                 "data format (i.e. geotiff, geopackage, shapefile, geodatabase, csv)",
                 "spatial scale (i.e. global, regional, national, subnational; for now global only)",
                 "name of the coordinate reference system (CRS) (e.g. WGS84, Mollweide)",
@@ -193,7 +194,8 @@ description = c("id of catalog (i.e. hazard or exposure-vulnerability)",
                 "link to available code (e.g. doi)",
                 "type of available code (e.g. for data download, processing, application)",
                 "any relevant information for using the data",
-                "links to specific data files, separated by ';'"
+                "links to specific data files, separated by ';'",
+                "name of person who added the dataset to the sheet (for possible follow-ups)"
                 )
 # make df
 csv_readme = data.frame(column_name, description)
@@ -223,6 +225,7 @@ csv_readme[which(csv_readme$column_name == "license"), "rdls"] <- "license"
 csv_readme[which(csv_readme$column_name == "link_website"), "rdls"] <- "access_url"
 csv_readme[which(csv_readme$column_name == "publication_link"), "rdls"] <- "doi"
 csv_readme[which(csv_readme$column_name == "assets"), "rdls"] <- "download_url"
+csv_readme[which(csv_readme$column_name == "name_contributor"), "rdls"] <- "contact_point"
 
 # add stac equivalents (not necessarily complete)
 csv_readme[which(csv_readme$column_name == "catalog"), "stac"] <- "catalog"
