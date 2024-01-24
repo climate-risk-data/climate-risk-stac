@@ -21,6 +21,18 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Flooding"
+    },
+    {
+      "rel": "child",
+      "href": "./JRC/collection.json",
+      "type": "application/json",
+      "title": "JRC flood hazard maps"
+    },
+    {
+      "rel": "child",
+      "href": "./JRC/collection.json",
+      "type": "application/json",
+      "title": "JRC flood hazard maps"
     }
   ],
   "title": "Fluvial flooding"
