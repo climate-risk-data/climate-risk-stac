@@ -2,7 +2,7 @@
 ##  fill csv with datasets already collected ## # do it manually??
 ###############################################
 # by Lena Reimann
-# Dec 6, 2023
+# Jan 26, 2023
 
 ## goal: reformat data sheets to fit csv requirements
 #         a) own data sheet of E+V data
@@ -14,7 +14,7 @@ rm(list=ls())
 
 
 # load packages
-lib = "C:/Users/lrn238/AppData/Local/RLIB" 
+lib = "C:/Users/lrn238/AppData/Local/R/win-library/4.3" 
 library(readxl, lib.loc = lib)
 
 # define directory
