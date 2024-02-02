@@ -17,7 +17,7 @@
 "spatial_resolution_unit","spatial resolution unit (i.e. arc seconds, arc minutes, decimal degrees, meters, kilometers)",NA,NA,"item"
 "reference_period","reference period for which the data are available (i.e. historical, future, historical & future)",NA,NA,"collection (label)"
 "temporal_resolution","temporal resolution of the data (YYYY or YYYY-YYYY)","temporal_resolution","datetime","collection; item"
-"temporal_interval","temporal intervals of the data (i.e. hourly, daily, monthly, yearly, 5-yearly, 10-yearly, irregular)",NA,NA,"item"
+"temporal_interval","temporal intervals of the data (i.e. hourly, daily, monthly, yearly, 5-yearly, 10-yearly, irregular)",NA,NA,"collection"
 "scenarios","name of scenarios used (if future) (e.g. RCPs, SSPs, warming levels)",NA,NA,"collection"
 "data_calculation_type","method used for data calculation (i.e. inferred, observed, simulated)","data_calculation_type",NA,"collection"
 "analysis_type","method used for calculating the data (i.e. probabilistic, deterministic, empirical for hazards; e.g. dasymetric modeling, random forest modeling for exposure & vulnerability)","analysis_type",NA,"collection"
