@@ -2,7 +2,7 @@
 ##  create csvs with attributes ##
 ##################################
 # by Lena Reimann
-# Dec 11, 2023
+# Feb 2, 2024
 
 ## goal: create a first setup of the csv needed for STAC
 #         a) one csv independent from item or collection
@@ -16,7 +16,7 @@ rm(list=ls())
 #library(dplyr, lib.loc = lib)
 
 # define directory
-wd = "C:/Users/lrn238/Documents/GitHub/climate-risk-stac/"
+wd = "C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/"
 
 #----------------#
 #### Option a ####
@@ -48,7 +48,7 @@ csv = data.frame(
                        "GHS-POP in WGS84 coordinates and a spatial resolution of 30 arc seconds.",
                        "GHS-POP in Mollweide coordinates and a spatial resolution of 100 meters.",
                        "GHS-POP in Mollweide coordinates and a spatial resolution of 1 kilometer."),
-  item_id = 1:4, #if several datasets listed from the same overall dataset (i.e. collection)
+  #item_id = 1:4, #if several datasets listed from the same overall dataset (i.e. collection)
   
   # extent
   bbox = rep("-180, -90, 180, 90", 4), #*, @; extent coordinates --> more elegant way to get this in the stac format
@@ -59,8 +59,7 @@ csv = data.frame(
   
   # spatial details
   spatial_scale = "global", #@; for now global as the default
-  crs_name = c("WGS84", "WGS84", "Mollweide", "Mollweide"), # Coordinate Reference System; rephrase to accommodate projection extensions
-  crs_code = c(4326, 4326, 54009, 54009), #EPSG code
+  coordinate_system = c(4326, 4326, 54009, 54009), #EPSG code
   spatial_resolution = c(3, 30, 100, 1000), #@; value
   spatial_resolution_unit = c("arc seconds", "arc seconds", "meters", "meters"), #unit
   
@@ -155,7 +154,7 @@ name = "csv.csv"
 write.csv(csv, file = paste(wd, "csv", name, sep = "/"), row.names = F)
 
 
-## create table with attribute descriptions and mappings to stac & RDLS
+## create table with attribute descriptions; mappings to stac & RDLS; items or collection attributes
 # export attribute names
 column_name = colnames(csv)
 
@@ -169,13 +168,12 @@ description = c("id of catalog (i.e. hazard or exposure-vulnerability)",
                 "short description of dataset (collection)",
                 "name of specific dataset item",
                 "short description of dataset item",
-                "dataset item id",
+                #"dataset item id",
                 "bounding box coordinates (WGS coordinates)",
                 "data type (i.e. raster, vector, tabular)",
                 "data format (i.e. geotiff, geopackage, shapefile, geodatabase, csv)",
                 "spatial scale (i.e. global, regional, national, subnational; for now global only)",
-                "name of the coordinate reference system (CRS) (e.g. WGS84, Mollweide)",
-                "numerical code of CRS (e.g. 4326, 54009)",
+                "numerical code of the coordinate reference system (CRS) (e.g. 4326, 54009); name of CRS if code does not exist (e.g. WGS84, Mollweide)",
                 "spatial resolution (numeric or administrative unit level)",
                 "spatial resolution unit (i.e. arc seconds, arc minutes, decimal degrees, meters, kilometers)",
                 "reference period for which the data are available (i.e. historical, future, historical & future)",
@@ -213,7 +211,7 @@ csv_readme[which(csv_readme$column_name == "risk_data_type"), "rdls"] <- "risk_d
 csv_readme[which(csv_readme$column_name == "bbox"), "rdls"] <- "bbox"
 csv_readme[which(csv_readme$column_name == "format"), "rdls"] <- "format"
 csv_readme[which(csv_readme$column_name == "spatial_scale"), "rdls"] <- "spatial_scale"
-csv_readme[which(csv_readme$column_name == "crs_code"), "rdls"] <- "coordinate_system"
+csv_readme[which(csv_readme$column_name == "coordinate_system"), "rdls"] <- "coordinate_system"
 csv_readme[which(csv_readme$column_name == "spatial_resolution"), "rdls"] <- "spatial_resolution"
 #csv_readme[which(csv_readme$column_name == "reference_period"), "rdls"] <- "reference_period" #can't find this any more
 csv_readme[which(csv_readme$column_name == "temporal_resolution"), "rdls"] <- "temporal_resolution"
@@ -237,13 +235,54 @@ csv_readme[which(csv_readme$column_name == "title_item"), "stac"] <- "title"
 csv_readme[which(csv_readme$column_name == "description_item"), "stac"] <- "description"
 csv_readme[which(csv_readme$column_name == "item_id"), "stac"] <- "id (not numeric)"
 csv_readme[which(csv_readme$column_name == "bbox"), "stac"] <- "bbox"
-csv_readme[which(csv_readme$column_name == "crs_code"), "stac"] <- "proj:epsg (projection extension)"
+csv_readme[which(csv_readme$column_name == "coordinate_system"), "stac"] <- "proj:epsg (projection extension)"
 csv_readme[which(csv_readme$column_name == "temporal_resolution"), "stac"] <- "datetime"
 csv_readme[which(csv_readme$column_name == "provider"), "stac"] <- "provider"
 csv_readme[which(csv_readme$column_name == "provider_role"), "stac"] <- "roles"
 csv_readme[which(csv_readme$column_name == "license"), "stac"] <- "license"
 csv_readme[which(csv_readme$column_name == "publication_link"), "stac"] <- "sci:doi (scientific citation extension)"
 csv_readme[which(csv_readme$column_name == "assets"), "stac"] <- "assets"
+
+
+# add information on whether attributes belong to the item or collection spec
+stac_spec = c("catalog",
+              "catalog",
+              "catalog",
+              "catalog (label)",
+              "collection",
+              "collection",
+              "collection",
+              "item",
+              "item",
+              "collection; item",
+              "collection",
+              "collection",
+              "collection",
+              "item",
+              "item",
+              "item",
+              "collection",
+              "collection; item",
+              "collection",
+              "collection",
+              "collection",
+              "collection",
+              "collection",         
+              "collection",
+              "collection",
+              "collection",
+              "collection",
+              "collection",
+              "collection",
+              "collection",
+              "collection",
+              "collection",
+              "item",
+              "internal use only"
+)
+
+
+csv_readme$stac_spec = stac_spec
 
 
 # rearrange columns
