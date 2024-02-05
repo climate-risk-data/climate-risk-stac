@@ -3,6 +3,7 @@ import json
 import os
 import pandas as pd
 from datetime import datetime
+import numpy as np
 
 catalog_main = pystac.Catalog.from_file("stac/catalog.json")
 
@@ -37,26 +38,30 @@ print(links_dict)
 hazard = pd.read_excel('csv/xls.xlsx', 'hazard')
 expvul = pd.read_excel('csv/xls.xlsx', 'exposure-vulnerability')
 
+row_num = 6
+
 # Get item metadata
-item = hazard.iloc[0]
+item = hazard.iloc[row_num]
+
 for column_name in hazard.columns:
-    globals()[column_name] = hazard[column_name][0]
+    globals()[column_name] = hazard[column_name][row_num]
 
 links_dict['stac'][catalog][category]['fluvial-flood'].keys()
 
 collections = links_dict['stac'][catalog][category]['fluvial-flood']
 href = collections['href']
 
+if pd.isna(title_short):
+    title_short = title_collection
+bbox_list = [float(coord.strip()) for coord in item['bbox'].split(',')]
+
 # if not item['title_short'] in collections:
-if not 'JRC' in collections:
+if not title_short in collections:
     # Open parent catalog
     parent_catalog = pystac.Catalog.from_file(f"{href}/catalog.json")
 
-    bbox_list = [float(coord.strip()) for coord in item['bbox'].split(',')]
-
     collection = pystac.Collection(
-        # id = item['title_short'],
-        id = 'JRC',
+        id = title_short,
         title = item['title_collection'],
         description = item['description_collection'],
         extent=pystac.Extent(
@@ -75,5 +80,45 @@ if not 'JRC' in collections:
     parent_catalog.add_child(collection)
     parent_catalog.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
 
+collection = pystac.Collection.from_file(f"{href}/{title_short}/collection.json")
+
+# if not title_item in list(collection.get_items()):
+if title_item not in [i.id for i in collection.get_items()]:
+    item_stac = pystac.Item(
+        id = title_item,
+        geometry = None,
+        bbox = bbox_list,
+        datetime = None,
+        start_datetime = datetime.utcnow(),
+        end_datetime = datetime.utcnow(),
+        properties={
+            'description': item['description_item'],
+            'data_type': item['data_type'],
+            'data_format': item['format'],
+            'spatial_scale': item['spatial_scale'],
+            'crs_name': item['crs_name'],
+            'crs_code': int(item['crs_code']),
+            'reference_period': item['reference_period'],
+            'temporal_resolution': item['temporal_resolution'],
+            'temporal_interval': item['temporal_interval'],
+            'scenarios': item['scenarios'],
+            'data_calculation_type': item['data_calculation_type'],
+            'analysis_type': item['analysis_type'],
+            'underlying_data': item['underlying_data'],
+            'provider': item['provider'],
+            'provider_role': item['provider_role'],
+            'license': item['license'],
+            'link_website': item['link_website'],
+            'publication_link': item['publication_link'],
+            'publication_type': item['publication_type'],
+            'code_link': item['code_link'],
+            'code_type': item['code_type'],
+            'usage_notes': item['usage_notes'],
+            'assets': item['assets'],
+            'name_contributor': item['name_contributor'],
+        },
+    )
+    collection.add_item(item_stac)
+    collection.save()
 
 
