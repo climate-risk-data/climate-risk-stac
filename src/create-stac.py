@@ -6,7 +6,7 @@ from tempfile import TemporaryDirectory
 from datetime import datetime
 
 tmp_dir = TemporaryDirectory()
-#tmp_dir.name = 'C:/Users/lrn238/Documents/GitHub/climate-risk-stac/'
+#tmp_dir.name = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/'
 
 #%%
 root_url = r'https://raw.githubusercontent.com/DirkEilander/climate-risk-stac/main/stac'
@@ -159,9 +159,8 @@ catalog_h6 = pystac.Catalog(
 catalog_h.add_child(catalog_h6)
 
 
-
 #%%
-# add dataset collections (just as a test)
+# add dataset collections
 collection1 = pystac.Collection(
     id="aqueduct",
     title="Aqueduct flood hazard maps",
@@ -170,9 +169,10 @@ collection1 = pystac.Collection(
         spatial=pystac.SpatialExtent([[-180, -90, 180, 90]]),
         temporal=pystac.TemporalExtent([[datetime.utcnow(), None]]),
     ),
-    #keywords="Fluvial flood" # or something like this?
+    #keywords = "Fluvial flooding", # or similar?
 )
 catalog_h1.add_child(collection1)
+
 
 
 
@@ -304,6 +304,7 @@ catalog_ev.add_child(catalog_ev4)
 #)
 #catalog_ev4.add_child(catalog_ev42)
 
+
 # add dataset collections
 collection1 = pystac.Collection(
     id="ghs-pop",
@@ -313,14 +314,11 @@ collection1 = pystac.Collection(
         spatial=pystac.SpatialExtent([[-180, -90, 180, 90]]),
         temporal=pystac.TemporalExtent([[datetime.utcnow(), None]]),
     ),
-    #keywords="Population number" # or something like this?
+    #keywords = "Population number", # or similar?
 )
 catalog_ev1.add_child(collection1)
-
+  
 # add item (Timothy :))
-
-
-
 
 
 # %%
