@@ -1,12 +1,12 @@
 {
   "type": "Catalog",
-  "id": "cold-wave",
+  "id": "multi-hazard",
   "stac_version": "1.0.0",
-  "description": "Cold wave datasets",
+  "description": "Multi-hazard datasets",
   "links": [
     {
       "rel": "root",
-      "href": "../../../catalog.json",
+      "href": "../../catalog.json",
       "type": "application/json",
       "title": "Climate Risk Data"
     },
@@ -14,8 +14,8 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "Extreme temperature"
+      "title": "Hazard"
     }
   ],
-  "title": "Cold wave"
+  "title": "Multi-hazard"
 }

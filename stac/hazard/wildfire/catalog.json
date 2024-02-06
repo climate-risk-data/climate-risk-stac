@@ -1,12 +1,12 @@
 {
   "type": "Catalog",
-  "id": "heat-wave",
+  "id": "wildfire",
   "stac_version": "1.0.0",
-  "description": "Heat wave datasets",
+  "description": "Wildfire datasets",
   "links": [
     {
       "rel": "root",
-      "href": "../../../catalog.json",
+      "href": "../../catalog.json",
       "type": "application/json",
       "title": "Climate Risk Data"
     },
@@ -14,8 +14,8 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "Extreme temperature"
+      "title": "Hazard"
     }
   ],
-  "title": "Heat wave"
+  "title": "Wildfire"
 }
