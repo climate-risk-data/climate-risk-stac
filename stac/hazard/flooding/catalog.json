@@ -1,0 +1,27 @@
+{
+  "type": "Catalog",
+  "id": "flooding",
+  "stac_version": "1.0.0",
+  "description": "Flooding datasets",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "child",
+      "href": "./aqueduct/collection.json",
+      "type": "application/json",
+      "title": "Aqueduct flood hazard maps"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Hazard"
+    }
+  ],
+  "title": "Flooding"
+}

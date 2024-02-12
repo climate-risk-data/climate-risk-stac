@@ -1,0 +1,42 @@
+{
+  "type": "Collection",
+  "id": "aqueduct",
+  "stac_version": "1.0.0",
+  "description": "Aqueduct flood hazard maps for different return periods ...",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Flooding"
+    }
+  ],
+  "title": "Aqueduct flood hazard maps",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -90,
+          180,
+          90
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-02-12T16:43:14.585198Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

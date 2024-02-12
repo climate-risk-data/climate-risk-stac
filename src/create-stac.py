@@ -2,11 +2,11 @@
 import pystac
 import json
 import os
-from tempfile import TemporaryDirectory
+#from tempfile import TemporaryDirectory
 from datetime import datetime
 
-tmp_dir = TemporaryDirectory()
-#tmp_dir.name = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/'
+#tmp_dir = TemporaryDirectory()
+dir = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/'
 
 #%%
 root_url = r'https://raw.githubusercontent.com/DirkEilander/climate-risk-stac/main/stac'
@@ -322,5 +322,5 @@ catalog_ev1.add_child(collection1)
 
 
 # %%
-catalog.normalize_hrefs(os.path.join(tmp_dir.name, "stac"))
+catalog.normalize_hrefs(os.path.join(dir, "stac"))
 catalog.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
