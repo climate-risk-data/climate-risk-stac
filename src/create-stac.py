@@ -169,7 +169,7 @@ collection1 = pystac.Collection(
         spatial=pystac.SpatialExtent([[-180, -90, 180, 90]]),
         temporal=pystac.TemporalExtent([[datetime.utcnow(), None]]),
     ),
-    #keywords = "Fluvial flooding", # or similar?
+    keywords = "Fluvial flooding", # or similar?
 )
 catalog_h1.add_child(collection1)
 
