@@ -2,7 +2,7 @@ column_name,description,rdls,stac,stac_spec,stac_spec_notes
 catalog,id of catalog (i.e. hazard or exposure-vulnerability),category,catalog,catalog,
 category,category of data type,category,catalog,catalog,
 subcategory,subcategory of data type,category,NA,catalog (keyword),use for properties and keywords
-risk_data_type,"risk driver (i.e. hazard, exposure, vulnerability)",risk_data_type,NA,catalog (keyword),use for properties and keywords
+risk_data_type,"risk driver (i.e. hazard, exposure, vulnerability)",risk_data_type,NA,catalog (keyword),use for properties and keywords (for E+V only)
 title_item,name of specific dataset item,NA,title,item,
 description_item,short description of dataset item,NA,description,item,
 title_collection,dataset (collection) name,NA,title,collection,
