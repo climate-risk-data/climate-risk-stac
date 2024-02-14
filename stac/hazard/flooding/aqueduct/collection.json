@@ -6,7 +6,7 @@
   "links": [
     {
       "rel": "root",
-      "href": "../../../../catalog.json",
+      "href": "../../../catalog.json",
       "type": "application/json",
       "title": "Climate Risk Data"
     },
@@ -14,7 +14,7 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "Fluvial flooding"
+      "title": "Flooding"
     }
   ],
   "title": "Aqueduct flood hazard maps",
@@ -32,7 +32,7 @@
     "temporal": {
       "interval": [
         [
-          "2023-12-08T10:12:46.676141Z",
+          "2024-02-12T16:49:46.311550Z",
           null
         ]
       ]

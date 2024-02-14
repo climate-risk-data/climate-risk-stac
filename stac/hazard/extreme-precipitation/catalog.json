@@ -11,18 +11,6 @@
       "title": "Climate Risk Data"
     },
     {
-      "rel": "child",
-      "href": "./drought/catalog.json",
-      "type": "application/json",
-      "title": "Drought"
-    },
-    {
-      "rel": "child",
-      "href": "./snow/catalog.json",
-      "type": "application/json",
-      "title": "Heavy snowfall"
-    },
-    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",

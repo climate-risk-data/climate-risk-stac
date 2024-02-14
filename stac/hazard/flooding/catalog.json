@@ -12,15 +12,9 @@
     },
     {
       "rel": "child",
-      "href": "./coastal-flood/catalog.json",
+      "href": "./aqueduct/collection.json",
       "type": "application/json",
-      "title": "Coastal flooding"
-    },
-    {
-      "rel": "child",
-      "href": "./fluvial-flood/catalog.json",
-      "type": "application/json",
-      "title": "Fluvial flooding"
+      "title": "Aqueduct flood hazard maps"
     },
     {
       "rel": "parent",

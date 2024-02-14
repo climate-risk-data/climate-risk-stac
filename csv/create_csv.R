@@ -71,7 +71,7 @@ csv = data.frame(
   scenarios = "extrapolation", #if future
   
   # data calculation
-  data_calculation_type = "simulated", #@; Inferred, observed, simulated; not so suitable for E/V?
+  data_calculation_type = "modeled", #@; Inferred, observed, simulated (changed to "modeled" to make it fit with E/V)
   analysis_type = "dasymetric modeling",
   underlying_data = "Gridded Population of the World (GPW) v4, GHS built-up land (GHS-BUILT)",
   
@@ -228,7 +228,6 @@ csv_readme[which(csv_readme$column_name == "name_contributor"), "rdls"] <- "cont
 # add stac equivalents (not necessarily complete)
 csv_readme[which(csv_readme$column_name == "catalog"), "stac"] <- "catalog"
 csv_readme[which(csv_readme$column_name == "category"), "stac"] <- "catalog"
-csv_readme[which(csv_readme$column_name == "subcategory"), "stac"] <- "catalog"
 csv_readme[which(csv_readme$column_name == "title_collection"), "stac"] <- "title"
 csv_readme[which(csv_readme$column_name == "description_collection"), "stac"] <- "description"
 csv_readme[which(csv_readme$column_name == "title_item"), "stac"] <- "title"
@@ -247,40 +246,39 @@ csv_readme[which(csv_readme$column_name == "assets"), "stac"] <- "assets"
 # add information on whether attributes belong to the item or collection spec
 stac_spec = c("catalog",
               "catalog",
-              "catalog",
-              "catalog (label)",
+              "catalog (keyword)",
+              "catalog (keyword)",
+              "item",
+              "item",              
               "collection",
               "collection",
               "collection",
+              "collection+item",
               "item",
               "item",
-              "collection; item",
-              "item",
-              "item",
-              "collection (label)",
+              "item (keyword)",
               "item",
               "item",
               "item",
-              "collection (label)",
-              "collection; item",
-              "collection",
-              "collection",
-              "collection",
-              "collection",
-              "collection",         
-              "collection",
-              "collection",
-              "collection",
-              "collection",
-              "collection",
-              "collection",
-              "collection",
-              "collection",
-              "collection",
+              "item (keyword)",
+              "collection+item",
+              "item",
+              "item",
+              "item",
+              "item",
+              "item",         
+              "collection;item",
+              "collection;item",
+              "collection;item",
+              "collection;item",
+              "item",
+              "item",
+              "item",
+              "item",
+              "item",
               "item",
               "internal use only"
 )
-
 
 csv_readme$stac_spec = stac_spec
 
@@ -296,6 +294,7 @@ csv_readme$stac_spec = stac_spec
 name = "mapping_attributes.csv"
 write.csv(csv_readme, file = paste(wd, "csv", name, sep = "/"), row.names = F)
 
+## +++ column 'stac_spec_notes' added manually +++ ##
 
 
 

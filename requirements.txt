@@ -1,0 +1,7 @@
+jupyter
+geopandas
+netcdf4
+pystac
+rasterio
+shapely
+xarray
