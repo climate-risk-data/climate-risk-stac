@@ -1,9 +1,11 @@
 import pystac
+from pystac.extensions.base import ScientificExtension
 import json
 import os
 import pandas as pd
 from datetime import datetime
 import numpy as np
+import sys
 
 catalog_main = pystac.Catalog.from_file("stac/catalog.json")
 
@@ -38,7 +40,7 @@ print(links_dict)
 hazard = pd.read_excel('csv/xls.xlsx', 'hazard')
 expvul = pd.read_excel('csv/xls.xlsx', 'exposure-vulnerability')
 
-row_num = 6
+row_num = 20
 
 # Get item metadata
 item = hazard.iloc[row_num]
@@ -46,14 +48,22 @@ item = hazard.iloc[row_num]
 for column_name in hazard.columns:
     globals()[column_name] = hazard[column_name][row_num]
 
-links_dict['stac'][catalog][category]['fluvial-flood'].keys()
-
-collections = links_dict['stac'][catalog][category]['fluvial-flood']
+collections = links_dict['stac'][catalog][category]
 href = collections['href']
 
 if pd.isna(title_short):
     title_short = title_collection
 bbox_list = [float(coord.strip()) for coord in item['bbox'].split(',')]
+
+def parse_year_range(year_str):
+    if '-' in year_str:
+        start, end = map(int, year_str.split('-'))
+        return datetime(start, 1, 1), datetime(end, 12, 31)
+    else:
+        year = int(year_str)
+        return datetime(year, 1, 1), None
+year_start, year_end = parse_year_range(item['temporal_resolution'])
+# sys.exit(0)
 
 # if not item['title_short'] in collections:
 if not title_short in collections:
@@ -66,9 +76,9 @@ if not title_short in collections:
         description = item['description_collection'],
         extent=pystac.Extent(
             spatial=pystac.SpatialExtent([bbox_list]),
-            # temporal=pystac.TemporalExtent([item['temporal_resolution']]),
-            temporal=pystac.TemporalExtent([[datetime.utcnow(), None]]),
+            temporal=pystac.TemporalExtent([[year_end, year_start]]),
         ),
+        stac_extensions=['https://stac-extensions.github.io/scientific/v1.0.0/schema.json'],
         extra_fields={
             'data_type': item['data_type'],
             'data_format': item['format'],
@@ -77,8 +87,8 @@ if not title_short in collections:
             'crs_code': int(item['crs_code']),
         },
     )
-    parent_catalog.add_child(collection)
-    parent_catalog.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
+    # parent_catalog.add_child(collection)
+    # parent_catalog.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
 
 collection = pystac.Collection.from_file(f"{href}/{title_short}/collection.json")
 
@@ -118,7 +128,8 @@ if title_item not in [i.id for i in collection.get_items()]:
             'name_contributor': item['name_contributor'],
         },
     )
-    collection.add_item(item_stac)
-    collection.save()
+    # collection.add_item(item_stac)
+    # collection.save()
 
 
+# sci_ext = ScientificExtension.ext(collection)
