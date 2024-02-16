@@ -1,5 +1,6 @@
 import pystac
-from pystac.extensions.base import ScientificExtension
+from pystac.extensions.scientific import ScientificExtension
+from pystac.extensions.projection import ProjectionExtension
 import json
 import os
 import pandas as pd
@@ -40,7 +41,7 @@ print(links_dict)
 hazard = pd.read_excel('csv/xls.xlsx', 'hazard')
 expvul = pd.read_excel('csv/xls.xlsx', 'exposure-vulnerability')
 
-row_num = 20
+row_num = 2
 
 # Get item metadata
 item = hazard.iloc[row_num]
@@ -78,7 +79,6 @@ if not title_short in collections:
             spatial=pystac.SpatialExtent([bbox_list]),
             temporal=pystac.TemporalExtent([[year_end, year_start]]),
         ),
-        stac_extensions=['https://stac-extensions.github.io/scientific/v1.0.0/schema.json'],
         extra_fields={
             'data_type': item['data_type'],
             'data_format': item['format'],
@@ -90,7 +90,7 @@ if not title_short in collections:
     # parent_catalog.add_child(collection)
     # parent_catalog.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
 
-collection = pystac.Collection.from_file(f"{href}/{title_short}/collection.json")
+# collection = pystac.Collection.from_file(f"{href}/collection.json")
 
 # if not title_item in list(collection.get_items()):
 if title_item not in [i.id for i in collection.get_items()]:
@@ -131,5 +131,10 @@ if title_item not in [i.id for i in collection.get_items()]:
     # collection.add_item(item_stac)
     # collection.save()
 
+sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
+sci_ext.doi = item['publication_link']
+
+# proj_ext = ProjectionExtension.ext(item_stac, add_if_missing=True)
+# proj_ext.epsg = 4326
 
 # sci_ext = ScientificExtension.ext(collection)
