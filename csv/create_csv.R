@@ -2,7 +2,7 @@
 ##  create csvs with attributes ##
 ##################################
 # by Lena Reimann
-# Feb 2, 2024
+# Feb 16, 2024
 
 ## goal: create a first setup of the csv needed for STAC
 #         a) one csv independent from item or collection
@@ -32,13 +32,6 @@ csv = data.frame(
   risk_data_type = "exposure", #@; use as label  
   #data_type_category = "social", # use as label; maybe not needed?
   
-  # collection-specific attributes
-  title_collection = "Global Human Settlement Layer Population", #
-  title_short = "GHS-POP", #not needed unless used as 'folder title'
-  description_collection = "The Global Human Settlement Layer Population (GHS-POP) datasets 
-  are available in two different coordinate systems and two spatial resolutions each 
-  for the years 1975-2030 in 5-year time intervals.", #*
-  
   # item-specific attributes
   title_item = c("GHS-POP WGS84 3 arc seconds", 
                  "GHS-POP WGS84 30 arc seconds",
@@ -48,7 +41,15 @@ csv = data.frame(
                        "GHS-POP in WGS84 coordinates and a spatial resolution of 30 arc seconds.",
                        "GHS-POP in Mollweide coordinates and a spatial resolution of 100 meters.",
                        "GHS-POP in Mollweide coordinates and a spatial resolution of 1 kilometer."),
-  #item_id = 1:4, #if several datasets listed from the same overall dataset (i.e. collection)
+  #item_id = 1:4, #if several datasets listed from the same overall dataset (i.e. collection)  
+  
+  # collection-specific attributes
+  title_collection = "Global Human Settlement Layer Population", #
+  title_short = "GHS-POP", #not needed unless used as 'folder title'
+  description_collection = "The Global Human Settlement Layer Population (GHS-POP) datasets 
+  are available in two different coordinate systems and two spatial resolutions each 
+  for the years 1975-2030 in 5-year time intervals.", #*
+  
   
   # extent
   bbox = rep("-180, -90, 180, 90", 4), #*, @; extent coordinates --> more elegant way to get this in the stac format
@@ -154,49 +155,87 @@ name = "csv.csv"
 write.csv(csv, file = paste(wd, "csv", name, sep = "/"), row.names = F)
 
 
-## create table with attribute descriptions; mappings to stac & RDLS; items or collection attributes
+## create table with attribute descriptions; attribute importance; mappings to stac & RDLS; items or collection attributes; notes on the stac specs
 # export attribute names
 column_name = colnames(csv)
 
 description = c("id of catalog (i.e. hazard or exposure-vulnerability)",
-                "category of data type",
-                "subcategory of data type",
+                "category of data type according to hierarchical structure in 'instructions' tab (please do not change)",
+                "subcategory of data type according to hierarchical structure in 'instructions' tab; for hazard separate subcategories with ';', for exposure-vulnerability use drop-down menu",
                 "risk driver (i.e. hazard, exposure, vulnerability)",
-                #"category of the risk driver (e.g. hydrological, meterological; social, physical)",
-                "dataset (collection) name",
-                "short name of dataset (if applicable)",
-                "short description of dataset (collection)",
-                "name of specific dataset item",
-                "short description of dataset item",
+                "dataset (item) name: each item needs to have a different name",
+                "short description of dataset item: each item description must be different",
+                "collection name (if applicable): all items belonging to the same collection need to have the same collection name",
+                "short name of dataset (if available)",
+                "short description of dataset collection (if applicable): all items belonging to the same collection must have the same collection description",
                 #"dataset item id",
                 "bounding box coordinates (WGS coordinates)",
                 "data type (i.e. raster, vector, tabular)",
                 "data format (i.e. geotiff, geopackage, shapefile, geodatabase, csv)",
-                "spatial scale (i.e. global, regional, national, subnational; for now global only)",
+                "spatial scale (i.e. (near-)global, regional, national, subnational)",
                 "numerical code of the coordinate reference system (CRS) (e.g. 4326, 54009); name of CRS if code does not exist (e.g. WGS84, Mollweide)",
                 "spatial resolution (numeric or administrative unit level)",
-                "spatial resolution unit (i.e. arc seconds, arc minutes, decimal degrees, meters, kilometers)",
+                "spatial resolution unit (i.e. arc seconds, arc minutes, decimal degrees, meters, kilometers; admin1, admin2, admin3, NUTS1, NUTS2, NUTS3)",
                 "reference period for which the data are available (i.e. historical, future, historical & future)",
-                "temporal resolution of the data (YYYY or YYYY-YYYY)",
+                "temporal resolution of the data (YYYY or YYYY-YYYY; use YYYY- if data are updated in real time)",
                 "temporal intervals of the data (i.e. hourly, daily, monthly, yearly, 5-yearly, 10-yearly, irregular)",
                 "name of scenarios used (if future) (e.g. RCPs, SSPs, warming levels)",
-                "method used for data calculation (i.e. inferred, observed, simulated)",
+                "method used for data calculation (i.e. inferred, observed, modeled)",
                 "method used for calculating the data (i.e. probabilistic, deterministic, empirical for hazards; e.g. dasymetric modeling, random forest modeling for exposure & vulnerability)",
                 "data underlying the calculation type and approach (if applicable)",
                 "name of data provider",
                 "role of data provider (i.e. licensor, producer, processor, host)",
                 "data distribution license (e.g CC0-1.0, CC-BY-4.0, CC-BY-SA-4.0)",
                 "link to the website where the data can be accessed",
-                "link to publication (e.g. doi)",
+                "link to publication (doi if possible)",
                 "type of publication (e.g. report, article, documentation)",
-                "link to available code (e.g. doi)",
+                "link to available code (doi if possible)",
                 "type of available code (e.g. for data download, processing, application)",
                 "any relevant information for using the data",
-                "links to specific data files, separated by ';'",
+                "links to specific data files, separated with ';'",
                 "name of person who added the dataset to the sheet (for possible follow-ups)"
                 )
 # make df
 csv_readme = data.frame(column_name, description)
+
+# add columns with attribute importance
+importance = c("crucial",
+                "crucial",
+                "necessary",
+                "necessary",
+                "crucial",
+                "crucial",
+                "optional",
+                "optional",
+                "optional",
+                "crucial",
+                "necessary",
+                "necessary",
+                "necessary",
+                "necessary",
+                "necessary",
+                "necessary",
+                "necessary",
+                "crucial",
+                "optional",
+                "optional",
+                "necessary",
+                "optional",
+                "optional",
+                "necessary",
+                "necessary",
+                "crucial",
+                "crucial",
+                "optional",
+                "optional",
+                "optional",
+                "optional",
+                "optional",
+                "necessary",
+                "necessary"
+)
+
+csv_readme$importance = importance
 
 # add columns for the rdls and stac specs
 csv_readme$rdls = NA
@@ -282,7 +321,44 @@ stac_spec = c("catalog",
 
 csv_readme$stac_spec = stac_spec
 
+# add stac spec notes
+stac_spec_notes = c(NA,
+              NA,
+              "use for properties and keywords",
+              "use for properties and keywords (for E+V only)",
+              NA,
+              NA,              
+              NA,
+              NA,
+              NA,
+              "use for both",
+              NA,
+              NA,
+              "use for properties and keywords",
+              NA,
+              NA,
+              NA,
+              "use for properties and keywords",
+              "use for both; if collection == T, use lowest and highest value from all items",
+              NA,
+              NA,
+              NA,
+              NA,
+              NA,         
+              "if collection == T, use as collection properties",
+              "if collection == T, use as collection properties",
+              "if collection == T, use as collection properties",
+              "if collection == T, use as collection properties",
+              NA,
+              NA,
+              NA,
+              NA,
+              NA,
+              NA,
+              NA
+)
 
+csv_readme$stac_spec_notes = stac_spec_notes
 # rearrange columns
 # column_name = csv_readme$column_name
 # stac = csv_readme$stac
@@ -294,7 +370,6 @@ csv_readme$stac_spec = stac_spec
 name = "mapping_attributes.csv"
 write.csv(csv_readme, file = paste(wd, "csv", name, sep = "/"), row.names = F)
 
-## +++ column 'stac_spec_notes' added manually +++ ##
 
 
 
