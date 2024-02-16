@@ -2,7 +2,7 @@
 ##  create csvs with attributes ##
 ##################################
 # by Lena Reimann
-# Feb 2, 2024
+# Feb 16, 2024
 
 ## goal: create a first setup of the csv needed for STAC
 #         a) one csv independent from item or collection
@@ -32,13 +32,6 @@ csv = data.frame(
   risk_data_type = "exposure", #@; use as label  
   #data_type_category = "social", # use as label; maybe not needed?
   
-  # collection-specific attributes
-  title_collection = "Global Human Settlement Layer Population", #
-  title_short = "GHS-POP", #not needed unless used as 'folder title'
-  description_collection = "The Global Human Settlement Layer Population (GHS-POP) datasets 
-  are available in two different coordinate systems and two spatial resolutions each 
-  for the years 1975-2030 in 5-year time intervals.", #*
-  
   # item-specific attributes
   title_item = c("GHS-POP WGS84 3 arc seconds", 
                  "GHS-POP WGS84 30 arc seconds",
@@ -48,7 +41,15 @@ csv = data.frame(
                        "GHS-POP in WGS84 coordinates and a spatial resolution of 30 arc seconds.",
                        "GHS-POP in Mollweide coordinates and a spatial resolution of 100 meters.",
                        "GHS-POP in Mollweide coordinates and a spatial resolution of 1 kilometer."),
-  #item_id = 1:4, #if several datasets listed from the same overall dataset (i.e. collection)
+  #item_id = 1:4, #if several datasets listed from the same overall dataset (i.e. collection)  
+  
+  # collection-specific attributes
+  title_collection = "Global Human Settlement Layer Population", #
+  title_short = "GHS-POP", #not needed unless used as 'folder title'
+  description_collection = "The Global Human Settlement Layer Population (GHS-POP) datasets 
+  are available in two different coordinate systems and two spatial resolutions each 
+  for the years 1975-2030 in 5-year time intervals.", #*
+  
   
   # extent
   bbox = rep("-180, -90, 180, 90", 4), #*, @; extent coordinates --> more elegant way to get this in the stac format
@@ -159,15 +160,15 @@ write.csv(csv, file = paste(wd, "csv", name, sep = "/"), row.names = F)
 column_name = colnames(csv)
 
 description = c("id of catalog (i.e. hazard or exposure-vulnerability)",
-                "category of data type",
-                "subcategory of data type",
+                "category of data type according to hierarchical structure in 'instructions' tab (please do not change)",
+                "subcategory of data type according to hierarchical structure in 'instructions' tab; for hazard separate subcategories with ';', for exposure-vulnerability use drop-down menu",
                 "risk driver (i.e. hazard, exposure, vulnerability)",
                 #"category of the risk driver (e.g. hydrological, meterological; social, physical)",
-                "dataset (collection) name",
-                "short name of dataset (if applicable)",
-                "short description of dataset (collection)",
-                "name of specific dataset item",
+                "dataset (item) name",
                 "short description of dataset item",
+                "collection name (if applicable)",
+                "short name of dataset (if available)",
+                "short description of dataset collection (if applicable)",
                 #"dataset item id",
                 "bounding box coordinates (WGS coordinates)",
                 "data type (i.e. raster, vector, tabular)",
