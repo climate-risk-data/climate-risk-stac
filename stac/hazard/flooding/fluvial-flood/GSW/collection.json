@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "GSW",
+  "stac_version": "1.0.0",
+  "description": "The dataset includes the occurrence, seasonality, recurrence, transitions, and maximum water extent for different temporal moment at global scale between 1985 and 2015",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Fluvial flooding"
+    },
+    {
+      "rel": "item",
+      "href": "./Global Surface Water/Global Surface Water.json",
+      "type": "application/json"
+    }
+  ],
+  "data_type": "raster",
+  "data_format": "geotiff",
+  "spatial_scale": "global",
+  "crs_name": "WGS84",
+  "crs_code": 4326,
+  "title": "Global Surface Water",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -56.0,
+          180.0,
+          78.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-02-05T14:19:04.248764Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

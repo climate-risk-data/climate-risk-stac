@@ -1,0 +1,64 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Global Surface Water",
+  "properties": {
+    "description": "The dataset includes the occurrence, seasonality, recurrence, transitions, and maximum water extent for different temporal moment at global scale between 1985 and 2015",
+    "data_type": "raster",
+    "data_format": "geotiff",
+    "spatial_scale": "global",
+    "crs_name": "WGS84",
+    "crs_code": 4326,
+    "reference_period": "historical",
+    "temporal_resolution": "1985-2015",
+    "temporal_interval": "monthly",
+    "scenarios": NaN,
+    "data_calculation_type": "inferred",
+    "analysis_type": "deterministic",
+    "underlying_data": "precessed from Landsat, SRTM DEM, GTOPO30 DEM, GMTED2010, GHSL, GADM",
+    "provider": "EC JRC, Google",
+    "provider_role": "licensor",
+    "license": "CC-BY-4.0",
+    "link_website": "https://global-surface-water.appspot.com/",
+    "publication_link": "https://www.nature.com/articles/nature20584",
+    "publication_type": "article",
+    "code_link": NaN,
+    "code_type": NaN,
+    "usage_notes": NaN,
+    "assets": NaN,
+    "name_contributor": "Maurizio Mazzoleni",
+    "start_datetime": "2024-02-05T14:19:04.259761Z",
+    "end_datetime": "2024-02-05T14:19:04.259761Z",
+    "datetime": null
+  },
+  "geometry": null,
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Global Surface Water"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Global Surface Water"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180.0,
+    -56.0,
+    180.0,
+    78.0
+  ],
+  "stac_extensions": [],
+  "collection": "GSW"
+}

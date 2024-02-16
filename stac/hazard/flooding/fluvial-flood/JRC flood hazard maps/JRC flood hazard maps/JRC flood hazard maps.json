@@ -1,0 +1,64 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "JRC flood hazard maps",
+  "properties": {
+    "description": "The datasets included in this collection depict flood prone areas in the World for river flood events of different magnitude, i.e. different six return periods from 1-in-10-year to 1-in-500-year events. The maps have been developed using hydrological and hydrodynamic models, driven by the climatological data of the Global Flood Awareness Systems (GloFAS).",
+    "data_type": "raster",
+    "data_format": "geotiff",
+    "spatial_scale": "global",
+    "crs_name": "WGS84",
+    "crs_code": 4326,
+    "reference_period": "historical",
+    "temporal_resolution": NaN,
+    "temporal_interval": NaN,
+    "scenarios": NaN,
+    "data_calculation_type": "simulated",
+    "analysis_type": "probabilistic",
+    "underlying_data": "several data sources (see publication for further details)",
+    "provider": "JRC Data Catalogue",
+    "provider_role": "licensor",
+    "license": "CC-BY-4.0",
+    "link_website": "https://data.jrc.ec.europa.eu/collection/id-0054",
+    "publication_link": "https://doi.org/10.1016/j.advwatres.2016.05.002",
+    "publication_type": "article",
+    "code_link": NaN,
+    "code_type": NaN,
+    "usage_notes": "Cell values indicate water depth (in m)",
+    "assets": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp10y.zip;https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp20y.zip;https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp50y.zip;https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp100y.zip;https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp200y.zip;https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp500y.zip",
+    "name_contributor": "Lena Reimann",
+    "start_datetime": "2024-02-05T14:11:30.909728Z",
+    "end_datetime": "2024-02-05T14:11:30.909728Z",
+    "datetime": null
+  },
+  "geometry": null,
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "JRC flood hazard maps"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "JRC flood hazard maps"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "stac_extensions": [],
+  "collection": "JRC flood hazard maps"
+}
