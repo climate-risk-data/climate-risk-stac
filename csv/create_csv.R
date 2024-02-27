@@ -2,7 +2,7 @@
 ##  create csvs with attributes ##
 ##################################
 # by Lena Reimann
-# Feb 16, 2024
+# Feb 27, 2024
 
 ## goal: create a first setup of the csv needed for STAC
 #         a) one csv independent from item or collection
@@ -285,8 +285,8 @@ csv_readme[which(csv_readme$column_name == "assets"), "stac"] <- "assets"
 # add information on whether attributes belong to the item or collection spec
 stac_spec = c("catalog",
               "catalog",
-              "catalog (keyword)",
-              "catalog (keyword)",
+              "collection (keyword)",
+              "collection (keyword)",
               "item",
               "item",              
               "collection",

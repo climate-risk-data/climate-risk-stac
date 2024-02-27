@@ -1,8 +1,8 @@
 "column_name","description","importance","rdls","stac","stac_spec","stac_spec_notes"
 "catalog","id of catalog (i.e. hazard or exposure-vulnerability)","crucial","category","catalog","catalog",NA
 "category","category of data type according to hierarchical structure in 'instructions' tab (please do not change)","crucial","category","catalog","catalog",NA
-"subcategory","subcategory of data type according to hierarchical structure in 'instructions' tab; for hazard separate subcategories with ';', for exposure-vulnerability use drop-down menu","necessary","category",NA,"catalog (keyword)","use for properties and keywords"
-"risk_data_type","risk driver (i.e. hazard, exposure, vulnerability)","necessary","risk_data_type",NA,"catalog (keyword)","use for properties and keywords (for E+V only)"
+"subcategory","subcategory of data type according to hierarchical structure in 'instructions' tab; for hazard separate subcategories with ';', for exposure-vulnerability use drop-down menu","necessary","category",NA,"collection (keyword)","use for properties and keywords"
+"risk_data_type","risk driver (i.e. hazard, exposure, vulnerability)","necessary","risk_data_type",NA,"collection (keyword)","use for properties and keywords (for E+V only)"
 "title_item","dataset (item) name: each item needs to have a different name","crucial",NA,"title","item",NA
 "description_item","short description of dataset item: each item description must be different","crucial",NA,"description","item",NA
 "title_collection","collection name (if applicable): all items belonging to the same collection need to have the same collection name","optional",NA,"title","collection",NA
