@@ -15,6 +15,60 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Hazard"
+    },
+    {
+      "rel": "child",
+      "href": "./Database of drought events/collection.json",
+      "type": "application/json",
+      "title": "Global database of meteorological drought events "
+    },
+    {
+      "rel": "child",
+      "href": "./E-OBS indices/collection.json",
+      "type": "application/json",
+      "title": "E-OBS indices"
+    },
+    {
+      "rel": "child",
+      "href": "./E-OBS indices/collection.json",
+      "type": "application/json",
+      "title": "E-OBS indices"
+    },
+    {
+      "rel": "child",
+      "href": "./IPCC WGI Interactive Atlas/collection.json",
+      "type": "application/json",
+      "title": "Gridded monthly climate projection dataset underpinning the IPCC AR6 Interactive Atlas"
+    },
+    {
+      "rel": "child",
+      "href": "./CMIP6 indicators/collection.json",
+      "type": "application/json",
+      "title": "Climate extreme indices and heat stress indicators derived from CMIP6 global climate projections"
+    },
+    {
+      "rel": "child",
+      "href": "./Temperature and precipitation climate impact indicators from 1970 to 2100 derived from European climate projections/collection.json",
+      "type": "application/json",
+      "title": "Temperature and precipitation climate impact indicators from 1970 to 2100 derived from European climate projections"
+    },
+    {
+      "rel": "child",
+      "href": "./EDO and GDO Data/collection.json",
+      "type": "application/json",
+      "title": "European Drought Observatory and Global Drought Observatory Data"
+    },
+    {
+      "rel": "child",
+      "href": "./Extreme precipitation risk indicators for Europe and European cities from 1950 to 2019/collection.json",
+      "type": "application/json",
+      "title": "Extreme precipitation risk indicators for Europe and European cities from 1950 to 2019"
+    },
+    {
+      "rel": "child",
+      "href": "./Extreme precipitation risk indicators for Europe and European cities from 1950 to 2019/collection.json",
+      "type": "application/json",
+      "title": "Extreme precipitation risk indicators for Europe and European cities from 1950 to 2019"
     }
   ],
   "title": "Extreme precipitation"

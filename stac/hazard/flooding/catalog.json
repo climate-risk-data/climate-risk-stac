@@ -21,6 +21,90 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Hazard"
+    },
+    {
+      "rel": "child",
+      "href": "./GLOFAS-GFM/collection.json",
+      "type": "application/json",
+      "title": "GloFAS Global Flood Monitoring"
+    },
+    {
+      "rel": "child",
+      "href": "./GLOFAS-GFM/collection.json",
+      "type": "application/json",
+      "title": "GloFAS Global Flood Monitoring"
+    },
+    {
+      "rel": "child",
+      "href": "./Coastal Flood Maps Deltares/collection.json",
+      "type": "application/json",
+      "title": "Coastal Flood Maps Deltares"
+    },
+    {
+      "rel": "child",
+      "href": "./EURO-CORDEX Hydrology/collection.json",
+      "type": "application/json",
+      "title": "Hydrology-related climate impact indicators from 1970 to 2100 derived from bias adjusted European climate projections"
+    },
+    {
+      "rel": "child",
+      "href": "./GFD/collection.json",
+      "type": "application/json",
+      "title": "Global Flood Database"
+    },
+    {
+      "rel": "child",
+      "href": "./GSW/collection.json",
+      "type": "application/json",
+      "title": "Global Surface Water"
+    },
+    {
+      "rel": "child",
+      "href": "./GFPLAIN250m/collection.json",
+      "type": "application/json",
+      "title": "A Global High-resolution Dataset of Earth\u2019s Floodplains"
+    },
+    {
+      "rel": "child",
+      "href": "./GRDC/collection.json",
+      "type": "application/json",
+      "title": "The Global Runoff Data Centre, River Discharge Data"
+    },
+    {
+      "rel": "child",
+      "href": "./cems-glofas-historical/collection.json",
+      "type": "application/json",
+      "title": "River discharge and related historical data from the Global Flood Awareness System"
+    },
+    {
+      "rel": "child",
+      "href": "./cems-glofas-forecast/collection.json",
+      "type": "application/json",
+      "title": "River discharge and related forecasted data by the Global Flood Awareness System"
+    },
+    {
+      "rel": "child",
+      "href": "./Seasonal reforecasts of river discharge and related data from the Global Flood Awareness System/collection.json",
+      "type": "application/json",
+      "title": "Seasonal reforecasts of river discharge and related data from the Global Flood Awareness System"
+    },
+    {
+      "rel": "child",
+      "href": "./Reforecasts of river discharge and related data by the Global Flood Awareness System/collection.json",
+      "type": "application/json",
+      "title": "Reforecasts of river discharge and related data by the Global Flood Awareness System"
+    },
+    {
+      "rel": "child",
+      "href": "./JRC river flood/collection.json",
+      "type": "application/json",
+      "title": NaN
+    },
+    {
+      "rel": "child",
+      "href": "./Aquaduct future flood/collection.json",
+      "type": "application/json",
+      "title": NaN
     }
   ],
   "title": "Flooding"

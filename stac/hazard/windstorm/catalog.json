@@ -15,6 +15,36 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Hazard"
+    },
+    {
+      "rel": "child",
+      "href": "./Winter windstorm indicators for Europe from 1979 to 2021 derived from reanalysis/collection.json",
+      "type": "application/json",
+      "title": "Winter windstorm indicators for Europe from 1979 to 2021 derived from reanalysis"
+    },
+    {
+      "rel": "child",
+      "href": "./Winter windstorm indicators for Europe from 1979 to 2021 derived from reanalysis/collection.json",
+      "type": "application/json",
+      "title": "Winter windstorm indicators for Europe from 1979 to 2021 derived from reanalysis"
+    },
+    {
+      "rel": "child",
+      "href": "./Winter windstorm indicators for Europe from 1979 to 2021 derived from reanalysis/collection.json",
+      "type": "application/json",
+      "title": "Winter windstorm indicators for Europe from 1979 to 2021 derived from reanalysis"
+    },
+    {
+      "rel": "child",
+      "href": "./Historic windstorms/collection.json",
+      "type": "application/json",
+      "title": "Winter windstorm indicators for Europe from 1979 to 2021 derived from reanalysis\n"
+    },
+    {
+      "rel": "child",
+      "href": "./Synthetic storms for historical conditions/collection.json",
+      "type": "application/json",
+      "title": "Synthetic windstorm events for Europe from 1986 to 2011"
     }
   ],
   "title": "Windstorm"

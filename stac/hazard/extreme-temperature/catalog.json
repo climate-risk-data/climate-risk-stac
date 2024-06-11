@@ -15,6 +15,54 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Hazard"
+    },
+    {
+      "rel": "child",
+      "href": "./GEHE/collection.json",
+      "type": "application/json",
+      "title": "Annual Global High-Resolution Extreme Heat Estimates, v1"
+    },
+    {
+      "rel": "child",
+      "href": "./UHE-Daily/collection.json",
+      "type": "application/json",
+      "title": "Global High Resolution Daily Extreme Urban Heat Exposure, v1"
+    },
+    {
+      "rel": "child",
+      "href": "./ERA5-HEAT/collection.json",
+      "type": "application/json",
+      "title": "Thermal comfort indices derived from ERA5 reanalysis"
+    },
+    {
+      "rel": "child",
+      "href": "./E-OBS indices/collection.json",
+      "type": "application/json",
+      "title": "E-OBS indices"
+    },
+    {
+      "rel": "child",
+      "href": "./E-OBS indices/collection.json",
+      "type": "application/json",
+      "title": "E-OBS indices"
+    },
+    {
+      "rel": "child",
+      "href": "./CMIP6 indicators/collection.json",
+      "type": "application/json",
+      "title": "Climate extreme indices and heat stress indicators derived from CMIP6 global climate projections"
+    },
+    {
+      "rel": "child",
+      "href": "./Heat waves and cold spells in Europe derived from climate projections/collection.json",
+      "type": "application/json",
+      "title": "Heat waves and cold spells in Europe derived from climate projections"
+    },
+    {
+      "rel": "child",
+      "href": "./Heat waves and cold spells in Europe derived from climate projections/collection.json",
+      "type": "application/json",
+      "title": "Heat waves and cold spells in Europe derived from climate projections"
     }
   ],
   "title": "Extreme temperature"

@@ -15,6 +15,48 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Hazard"
+    },
+    {
+      "rel": "child",
+      "href": "./Seasonal forecast of fire danger indices from the Copernicus Emergency Management Service/collection.json",
+      "type": "application/json",
+      "title": "Seasonal forecast of fire danger indices from the Copernicus Emergency Management Service"
+    },
+    {
+      "rel": "child",
+      "href": "./Seasonal forecast of fire danger indices from the Copernicus Emergency Management Service/collection.json",
+      "type": "application/json",
+      "title": "Seasonal forecast of fire danger indices from the Copernicus Emergency Management Service"
+    },
+    {
+      "rel": "child",
+      "href": "./Seasonal forecast of fire danger indices from the Copernicus Emergency Management Service/collection.json",
+      "type": "application/json",
+      "title": "Seasonal forecast of fire danger indices from the Copernicus Emergency Management Service"
+    },
+    {
+      "rel": "child",
+      "href": "./sis-tourism-fire-danger-indicators/collection.json",
+      "type": "application/json",
+      "title": "Fire danger indicators for Europe from 1970 to 2098 derived from climate projections"
+    },
+    {
+      "rel": "child",
+      "href": "./Fire danger indices historical data from the Copernicus Emergency Management Service/collection.json",
+      "type": "application/json",
+      "title": "Fire danger indices historical data from the Copernicus Emergency Management Service"
+    },
+    {
+      "rel": "child",
+      "href": "./Fire danger indices historical data from the Copernicus Emergency Management Service/collection.json",
+      "type": "application/json",
+      "title": "Fire danger indices historical data from the Copernicus Emergency Management Service"
+    },
+    {
+      "rel": "child",
+      "href": "./Fire danger indices historical data from the Copernicus Emergency Management Service/collection.json",
+      "type": "application/json",
+      "title": "Fire danger indices historical data from the Copernicus Emergency Management Service"
     }
   ],
   "title": "Wildfire"
