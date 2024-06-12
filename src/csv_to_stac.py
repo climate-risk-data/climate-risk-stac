@@ -8,8 +8,12 @@ from datetime import datetime
 import numpy as np
 import sys
 
+# directory for (reading &) writing the catalog (changes made by Lena)
+dir = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/'
+
 catalog_main = pystac.Catalog.from_file("stac/catalog.json")
 
+# establish folder structure (better to build the catalog directly from the xls --> next step)
 def process_links(catalog, links_dict, parent_folder):
     for link in catalog.links:
         if link.rel == 'child':
@@ -23,6 +27,7 @@ def process_links(catalog, links_dict, parent_folder):
                 links_dict[linked_catalog.id] = {"href": f"{parent_folder}/{linked_catalog.id}"}
                 process_links(linked_catalog, links_dict[linked_catalog.id], os.path.join( parent_folder, os.path.split(link.target[2:])[0]))
 
+# reformat temporal resolution to adjust to stac requirements
 def parse_year_range(year_str):
     year_str = year_str.replace('now', '2024').replace('current', '2024')
     if '-' in year_str:
@@ -49,9 +54,11 @@ print(links_dict)
 hazard = pd.read_excel('csv/xls.xlsx', 'hazard')
 expvul = pd.read_excel('csv/xls.xlsx', 'exposure-vulnerability')
 
+# determine catalog/excel tab to be used
 indicator = hazard
 # indicator = expvul
 
+# go over the table rows
 row_num = 2
 for row_num in range(len(indicator)):
     print(row_num)
@@ -175,3 +182,9 @@ for row_num in range(len(indicator)):
     # proj_ext.epsg = 4326
 
     # sci_ext = ScientificExtension.ext(collection)
+
+    # %%
+
+# write catalog
+catalog_main.normalize_hrefs(os.path.join(dir, "stac"))
+catalog_main.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
