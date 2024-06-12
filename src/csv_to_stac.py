@@ -185,6 +185,6 @@ for row_num in range(len(indicator)):
 
     # %%
 
-# write catalog
+# write catalog --> does not work yet because catalogs/collections not created and connected yet?
 catalog_main.normalize_hrefs(os.path.join(dir, "stac"))
 catalog_main.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
