@@ -1,8 +1,8 @@
 {
   "type": "Catalog",
-  "id": "climate-risk-data",
+  "id": "extreme-temperature",
   "stac_version": "1.0.0",
-  "description": "Community catalog containing datasets for all risk drivers.",
+  "description": "Extreme temperature-related datasets",
   "links": [
     {
       "rel": "root",
@@ -11,17 +11,17 @@
       "title": "Climate Risk Data"
     },
     {
-      "rel": "child",
+      "rel": "parent",
       "href": "./hazard/catalog.json",
       "type": "application/json",
       "title": "Hazard"
     },
     {
       "rel": "child",
-      "href": "./exposure-vulnerability/catalog.json",
+      "href": "./GEHE/collection.json",
       "type": "application/json",
-      "title": "Exposure and Vulnerability"
+      "title": "Annual Global High-Resolution Extreme Heat Estimates, v1"
     }
   ],
-  "title": "Climate Risk Data"
+  "title": "Extreme temperature"
 }

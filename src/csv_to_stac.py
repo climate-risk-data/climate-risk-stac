@@ -133,6 +133,8 @@ for row_num in range(len(indicator)):
             },
         )
         parent_catalog.add_child(collection)
+
+        parent_catalog.normalize_hrefs(os.path.join(dir, "stac"))
         parent_catalog.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
 
     collection = pystac.Collection.from_file(f"{href}/{title_short}/collection.json")
@@ -186,5 +188,5 @@ for row_num in range(len(indicator)):
     # %%
 
 # write catalog --> does not work yet because catalogs/collections not created and connected yet?
-catalog_main.normalize_hrefs(os.path.join(dir, "stac"))
-catalog_main.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
+#catalog_main.normalize_hrefs(os.path.join(dir, "stac"))
+#catalog_main.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
