@@ -346,14 +346,22 @@ catalogX = catalog_h3
 # determine bbox list
 bbox_list = [float(coord.strip()) for coord in item['bbox'].split(',')]
 
+#footprint = Polygon([ 
+#            [bbox_list[1], bbox_list[2]],
+#            [bbox_list[1], bbox_list[4]],
+#            [bbox_list[3], bbox_list[4]],
+#            [bbox_list[3], bbox_list[2]]
+#            ])
+
 item_stac = pystac.Item(
             id = 'test',
             geometry = None,
             bbox = bbox_list,
-            datetime = None,
-            start_datetime = datetime.utcnow(),
-            end_datetime = datetime.utcnow(),
+            datetime = datetime.utcnow(),
+            #start_datetime = datetime.utcnow(),
+            #end_datetime = datetime.utcnow(),
             properties={
+                'title': item['title_item'], #added
                 'description': item['description_item'],
                 'data_type': item['data_type'],
                 'data_format': item['format'],

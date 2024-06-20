@@ -149,6 +149,7 @@ for row_num in range(len(indicator)):
             start_datetime = datetime.utcnow(),
             end_datetime = datetime.utcnow(),
             properties={
+                'title': item['title_item'],
                 'description': item['description_item'],
                 'data_type': item['data_type'],
                 'data_format': item['format'],

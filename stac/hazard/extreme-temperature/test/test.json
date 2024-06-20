@@ -3,6 +3,7 @@
   "stac_version": "1.0.0",
   "id": "test",
   "properties": {
+    "title": "Observed drought events",
     "description": "4500 drought events classified using drought indicators: SPI-3, SPI-6, SPI-12, SPEI-3, SPEI-6, SPEI-12",
     "data_type": "raster",
     "data_format": "geotiff",
@@ -26,10 +27,8 @@
     "usage_notes": NaN,
     "assets": NaN,
     "name_contributor": "Andrea Vajda",
-    "start_datetime": "2024-06-20T13:42:56.843248Z",
-    "end_datetime": "2024-06-20T13:42:56.850956Z",
     "sci:doi": "https://www.sciencedirect.com/science/article/pii/S2214581818303136?via%3Dihub",
-    "datetime": null
+    "datetime": "2024-06-20T14:23:32.525431Z"
   },
   "geometry": null,
   "links": [
