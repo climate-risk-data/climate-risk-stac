@@ -358,8 +358,8 @@ item_stac = pystac.Item(
             geometry = None,
             bbox = bbox_list,
             datetime = datetime.utcnow(),
-            #start_datetime = datetime.utcnow(),
-            #end_datetime = datetime.utcnow(),
+            start_datetime = datetime.utcnow(),
+            end_datetime = datetime.utcnow(),
             properties={
                 'title': item['title_item'], #added
                 'description': item['description_item'],
