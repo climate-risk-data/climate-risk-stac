@@ -23,8 +23,8 @@ hazard = pd.read_excel('csv/xls.xlsx', 'hazard')
 expvul = pd.read_excel('csv/xls.xlsx', 'exposure-vulnerability')
 
 # determine catalog/excel tab to be used
-indicator = hazard
-# indicator = expvul
+#indicator = hazard
+indicator = expvul
 
 #%% create catalog folder structure %%# --> make a function that does this based on the (sub)categories in the xls
 
@@ -189,7 +189,6 @@ catalog_h1.add_child(collection1)
 
 
 
-
 #%%
 # exposure & vulnerability
 catalog_ev = pystac.Catalog(
@@ -335,13 +334,15 @@ catalog_ev1.add_child(collection1)
 # add example item (Timothy :))
 
 # loop through the sheet (right now only one line)
-row_num = 2
+#row_num = 2 # for hazard data test item
+row_num = 20 # for expvul data test item
 
 # Get item metadata
 item = indicator.iloc[row_num]
 
 # determine catalog to place this item into (create catalog?) --> determine this based on 'catalog' and 'category' attributes from xls
-catalogX = catalog_h3
+#catalogX = catalog_h3 # for hazard data test item
+catalogX = catalog_ev1 # for expvul data test item
 
 # determine bbox list
 bbox_list = [float(coord.strip()) for coord in item['bbox'].split(',')]
