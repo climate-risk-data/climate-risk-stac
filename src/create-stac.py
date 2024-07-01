@@ -26,6 +26,11 @@ expvul = pd.read_excel('csv/xls.xlsx', 'exposure-vulnerability')
 #indicator = hazard
 indicator = expvul
 
+# preprocessing, two options (option a much easier?): 
+# a. replace all na with "not available"
+# b. make condition for properties to leave out certain properties if na
+
+
 #%% create catalog folder structure %%# --> make a function that does this based on the (sub)categories in the xls
 
 # create main catalog (level0)
@@ -371,7 +376,7 @@ item_stac = pystac.Item(
                 #'coordinate_system': item['coordinate_system'],
                 'reference_period': item['reference_period'],
                 'temporal_resolution': item['temporal_resolution'],
-                'temporal_interval': item['temporal_interval'],
+                'temporal_interval': item['temporal_interval'], #expvul test: json just changed to "not available" (fix later!)
                 #'scenarios': item['scenarios'],
                 'data_calculation_type': item['data_calculation_type'],
                 'analysis_type': item['analysis_type'],
