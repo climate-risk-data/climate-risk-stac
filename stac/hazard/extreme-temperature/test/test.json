@@ -18,13 +18,11 @@
     "provider_role": "host",
     "license": "CC-BY-4.0",
     "link_website": "https://edo.jrc.ec.europa.eu/events",
-    "publication_link": "https://www.sciencedirect.com/science/article/pii/S2214581818303136?via%3Dihub",
+    "publication_link": "https://doi.org/10.1016/j.ejrh.2019.100593",
     "publication_type": "article",
     "name_contributor": "Andrea Vajda",
-    "start_datetime": "2024-07-01T08:02:00.359893Z",
-    "end_datetime": "2024-07-01T08:02:00.359893Z",
-    "sci:doi": "https://www.sciencedirect.com/science/article/pii/S2214581818303136?via%3Dihub",
-    "datetime": "2024-07-01T08:02:00.358882Z"
+    "sci:doi": "https://doi.org/10.1016/j.ejrh.2019.100593",
+    "datetime": "2024-07-01T08:41:28.020349Z"
   },
   "geometry": null,
   "links": [
@@ -36,7 +34,7 @@
     },
     {
       "rel": "cite-as",
-      "href": "https://doi.org/https%3A//www.sciencedirect.com/science/article/pii/S2214581818303136%3Fvia%253Dihub"
+      "href": "https://doi.org/https%3A//doi.org/10.1016/j.ejrh.2019.100593"
     },
     {
       "rel": "parent",

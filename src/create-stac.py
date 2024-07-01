@@ -1,9 +1,15 @@
 #%%
 import pystac
+from pystac.extensions.scientific import ScientificExtension
+from pystac.extensions.projection import ProjectionExtension
 import json
 import os
 #from tempfile import TemporaryDirectory
 from datetime import datetime
+import pandas as pd
+from datetime import datetime
+import numpy as np
+import sys
 
 #tmp_dir = TemporaryDirectory()
 dir = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/'
@@ -12,7 +18,15 @@ dir = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/
 root_url = r'https://raw.githubusercontent.com/DirkEilander/climate-risk-stac/main/stac'
 stac_extensions=[]
 
-#%% create catalog folder structure %%#
+# Read the data sheet
+hazard = pd.read_excel('csv/xls.xlsx', 'hazard')
+expvul = pd.read_excel('csv/xls.xlsx', 'exposure-vulnerability')
+
+# determine catalog/excel tab to be used
+indicator = hazard
+# indicator = expvul
+
+#%% create catalog folder structure %%# --> make a function that does this based on the (sub)categories in the xls
 
 # create main catalog (level0)
 catalog = pystac.Catalog(
@@ -318,8 +332,69 @@ collection1 = pystac.Collection(
 )
 catalog_ev1.add_child(collection1)
   
-# add item (Timothy :))
+# add example item (Timothy :))
 
+# loop through the sheet (right now only one line)
+row_num = 2
+
+# Get item metadata
+item = indicator.iloc[row_num]
+
+# determine catalog to place this item into (create catalog?) --> determine this based on 'catalog' and 'category' attributes from xls
+catalogX = catalog_h3
+
+# determine bbox list
+bbox_list = [float(coord.strip()) for coord in item['bbox'].split(',')]
+
+# find a way to determine the geometry
+#footprint = Polygon([ 
+#            [bbox_list[1], bbox_list[2]],
+#            [bbox_list[1], bbox_list[4]],
+#            [bbox_list[3], bbox_list[4]],
+#            [bbox_list[3], bbox_list[2]]
+#            ])
+
+item_stac = pystac.Item(
+            id = 'test',
+            geometry = None,
+            bbox = bbox_list,
+            datetime = datetime.utcnow(),
+            #start_datetime = datetime.utcnow(),
+            #end_datetime = datetime.utcnow(),
+            properties={
+                'title': item['title_item'], #added
+                'description': item['description_item'],
+                'data_type': item['data_type'],
+                'data_format': item['format'],
+                'spatial_scale': item['spatial_scale'],
+                #'coordinate_system': item['coordinate_system'],
+                'reference_period': item['reference_period'],
+                'temporal_resolution': item['temporal_resolution'],
+                'temporal_interval': item['temporal_interval'],
+                #'scenarios': item['scenarios'],
+                'data_calculation_type': item['data_calculation_type'],
+                'analysis_type': item['analysis_type'],
+                'underlying_data': item['underlying_data'],
+                'provider': item['provider'],
+                'provider_role': item['provider_role'],
+                'license': item['license'],
+                'link_website': item['link_website'],
+                'publication_link': item['publication_link'],
+                'publication_type': item['publication_type'],
+                #'code_link': item['code_link'],
+                #'code_type': item['code_type'],
+                #'usage_notes': item['usage_notes'],
+                #'assets': item['assets'],
+                'name_contributor': item['name_contributor'],
+            },
+        )
+catalogX.add_item(item_stac) # my change
+
+#collection.add_item(item_stac)
+# collection.save()
+if not np.nan_to_num(item['publication_link']) == 0:
+    sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
+    sci_ext.doi = item['publication_link']
 
 # %%
 catalog.normalize_hrefs(os.path.join(dir, "stac"))
