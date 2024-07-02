@@ -26,7 +26,7 @@ expvul = pd.read_excel('csv/xls.xlsx', 'exposure-vulnerability')
 #indicator = hazard
 indicator = expvul
 
-# preprocessing, two options (option a much easier?): 
+# preprocessing, two options (option a. much easier?): 
 # a. replace all na with "not available"
 # b. make condition for properties to leave out certain properties if na
 
