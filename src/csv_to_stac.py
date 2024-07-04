@@ -22,23 +22,23 @@ catalog_main = pystac.Catalog(
     id="climate-risk-data", 
     title="Climate Risk Data",
     description="Community catalog containing datasets for the three risk drivers Hazard, Expousre, and Vulnerability.",
-    stac_extensions=stac_extensions,
+    # stac_extensions=stac_extensions,
 )
 
 #%% not needed anymore when building catalog directly from csvs?
-# # establish folder structure (better to build the catalog directly from the xls --> next step)
-# def process_links(catalog, links_dict, parent_folder):
-#     for link in catalog.links:
-#         if link.rel == 'child':
-#             print(link.target.replace('./', f'{parent_folder}/'))
-#             if 'collection' in link.target:
-#                 linked_catalog = pystac.Collection.from_file(link.target.replace('./', f'{parent_folder}/'))
-#                 links_dict[linked_catalog.id] = {"href": f"{parent_folder}/{linked_catalog.id}"}
-#             elif 'catalog' in link.target:
-#                 linked_catalog = pystac.Catalog.from_file(link.target.replace('./', f'{parent_folder}/'))
-#                 # Include the parent folder in the href for sub-catalogs
-#                 links_dict[linked_catalog.id] = {"href": f"{parent_folder}/{linked_catalog.id}"}
-#                 process_links(linked_catalog, links_dict[linked_catalog.id], os.path.join( parent_folder, os.path.split(link.target[2:])[0]))
+# establish folder structure (better to build the catalog directly from the xls --> next step)
+def process_links(catalog, links_dict, parent_folder):
+    for link in catalog.links:
+        if link.rel == 'child':
+            print(link.target.replace('./', f'{parent_folder}/'))
+            if 'collection' in link.target:
+                linked_catalog = pystac.Collection.from_file(link.target.replace('./', f'{parent_folder}/'))
+                links_dict[linked_catalog.id] = {"href": f"{parent_folder}/{linked_catalog.id}"}
+            elif 'catalog' in link.target:
+                linked_catalog = pystac.Catalog.from_file(link.target.replace('./', f'{parent_folder}/'))
+                # Include the parent folder in the href for sub-catalogs
+                links_dict[linked_catalog.id] = {"href": f"{parent_folder}/{linked_catalog.id}"}
+                process_links(linked_catalog, links_dict[linked_catalog.id], os.path.join( parent_folder, os.path.split(link.target[2:])[0]))
 
 # reformat temporal resolution to adjust to stac requirements
 def parse_year_range(year_str):
@@ -52,9 +52,9 @@ def parse_year_range(year_str):
 
 
 #%% read data sheets (needs to be changed)
-hazard = pd.read_excel('csv/xls.xlsx', 'hazard')
-expvul = pd.read_excel('csv/xls.xlsx', 'exposure-vulnerability')
-
+hazard = pd.read_csv('csv/hazard.csv', encoding='utf-8')
+expvul = pd.read_csv('csv/expvul.csv', encoding='utf-8')
+sys.exit(0)
 
 #%% # preprocessing of data sheets, two options (option a. much easier?): 
 # a. replace all blank cells with "not available" (my favorite)
