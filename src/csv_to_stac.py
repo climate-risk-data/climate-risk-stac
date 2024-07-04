@@ -55,7 +55,6 @@ indicator = hazard
 row_num = 2
 for row_num in range(len(indicator)):
     print(row_num)
-    # Get item metadata
     item = indicator.iloc[row_num]
 
     for column_name in indicator.columns:
