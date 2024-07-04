@@ -19,8 +19,8 @@ root_url = r'https://raw.githubusercontent.com/DirkEilander/climate-risk-stac/ma
 stac_extensions=[]
 
 # Read the data sheet
-hazard = pd.read_excel('csv/xls.xlsx', 'hazard')
-expvul = pd.read_excel('csv/xls.xlsx', 'exposure-vulnerability')
+hazard = pd.read_csv('csv/hazard.csv', encoding='utf-8')
+expvul = pd.read_csv('csv/expvul.csv', encoding='utf-8')
 
 # determine catalog/excel tab to be used
 #indicator = hazard
