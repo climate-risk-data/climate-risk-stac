@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "Winter windstorm indicators for Europe from 1979 to 2021 derived from reanalysis",
+  "stac_version": "1.0.0",
+  "description": "The dataset provides climatological indicators on European winter windstorms and their economic impact derived from ERA5 reanalysis.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Windstorm"
+    }
+  ],
+  "data_type": "raster",
+  "data_format": "excel",
+  "spatial_scale": "regional",
+  "coordinate_system": 4326.0,
+  "title": "Winter windstorm indicators for Europe from 1979 to 2021 derived from reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -15.0,
+          35.0,
+          35.0,
+          70.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2021-12-31T00:00:00Z",
+          "1979-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

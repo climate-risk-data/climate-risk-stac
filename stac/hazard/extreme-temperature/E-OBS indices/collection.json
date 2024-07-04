@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "E-OBS indices",
+  "stac_version": "1.0.0",
+  "description": "\"The datafiles below provide climate indices for E-OBS derived using daily minimum temperature (TN), daily maximum temperature (TX), daily precipitation sum (RR), global radiation (QQ), relative humidity (HU) and daily mean wind speed (FG).\"",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Extreme temperature"
+    }
+  ],
+  "data_type": "raster",
+  "data_format": "netcdf",
+  "spatial_scale": "regional",
+  "coordinate_system": 4326.0,
+  "title": "E-OBS indices",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -24.9501395091997,
+          25.049860723083,
+          45.4498602091671,
+          71.4498587904728
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2023-12-31T00:00:00Z",
+          "1950-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

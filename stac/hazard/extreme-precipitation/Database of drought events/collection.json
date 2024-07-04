@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "Database of drought events",
+  "stac_version": "1.0.0",
+  "description": "More than 4500 drought events classified using a few indicators as the SPI and the SPEI at different temporal scales. The database of drought events has specific entries for each macro-region and country.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Extreme precipitation"
+    }
+  ],
+  "data_type": "raster",
+  "data_format": "geotiff",
+  "spatial_scale": "(near-)global",
+  "coordinate_system": NaN,
+  "title": "Global database of meteorological drought events ",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-12-31T00:00:00Z",
+          "1951-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

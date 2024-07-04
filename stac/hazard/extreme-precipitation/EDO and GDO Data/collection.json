@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "EDO and GDO Data",
+  "stac_version": "1.0.0",
+  "description": "Honestly, I can't find the proper description of this collection",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Extreme precipitation"
+    }
+  ],
+  "data_type": "raster",
+  "data_format": "geotiff",
+  "spatial_scale": "regional",
+  "coordinate_system": 3035.0,
+  "title": "European Drought Observatory and Global Drought Observatory Data",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -35.12,
+          23.91,
+          73.99,
+          72.66
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2023-12-31T00:00:00Z",
+          "2012-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

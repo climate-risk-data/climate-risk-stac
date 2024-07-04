@@ -1,0 +1,41 @@
+{
+  "type": "Collection",
+  "id": "JRC river flood",
+  "stac_version": "1.0.0",
+  "description": NaN,
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Flooding"
+    }
+  ],
+  "data_type": "raster",
+  "data_format": "netcdf",
+  "spatial_scale": "regional",
+  "coordinate_system": 4326.0,
+  "title": NaN,
+  "extent": {
+    "spatial": {
+      "bbox": [
+        "Europe"
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

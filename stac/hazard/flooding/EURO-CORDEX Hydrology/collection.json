@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "EURO-CORDEX Hydrology",
+  "stac_version": "1.0.0",
+  "description": "\"This dataset provides water variables and indicators based on hydrological impact modelling, forced by bias adjusted regional climate simulations from the European Coordinated Regional Climate Downscaling Experiment (EURO-CORDEX). The dataset contains Essential Climate Variable (ECV) data in the form of daily mean river discharge and a set of climate impact indicators (CIIs) for both water quantity and quality.\"",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Flooding"
+    }
+  ],
+  "data_type": "raster",
+  "data_format": "netcdf",
+  "spatial_scale": "regional",
+  "coordinate_system": NaN,
+  "title": "Hydrology-related climate impact indicators from 1970 to 2100 derived from bias adjusted European climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -35.034023284912,
+          24.751695632935,
+          73.937675476074,
+          72.641624450684
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2100-12-31T00:00:00Z",
+          "1971-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

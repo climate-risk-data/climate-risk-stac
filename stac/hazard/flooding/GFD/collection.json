@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "GFD",
+  "stac_version": "1.0.0",
+  "description": "The Global Flood Database provides satellite-derived flood footprints and depths for a variety of floods that occurred between 2000 and 2018.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Flooding"
+    }
+  ],
+  "data_type": "raster",
+  "data_format": "geotiff",
+  "spatial_scale": "(near-)global",
+  "coordinate_system": 4326.0,
+  "title": "Global Flood Database",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-12-31T00:00:00Z",
+          "2000-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

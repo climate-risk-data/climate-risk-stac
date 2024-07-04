@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "GFPLAIN250m",
+  "stac_version": "1.0.0",
+  "description": "The datasets aims at providing the floodplain delination at the global level",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Flooding"
+    }
+  ],
+  "data_type": "raster",
+  "data_format": "geotiff",
+  "spatial_scale": "(near-)global",
+  "coordinate_system": 4326.0,
+  "title": "A Global High-resolution Dataset of Earth\u2019s Floodplains",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          60.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          "2000-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

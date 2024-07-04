@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "IPCC WGI Interactive Atlas",
+  "stac_version": "1.0.0",
+  "description": "\"This catalogue entry provides gridded data from global (CMIP5 and CMIP6) and regional (CORDEX) projections for the set of 22 variables and indices included in the IPCC Interactive Atlas, a novel contribution from Working Group I (WGI) to the IPCC Sixth Assessment Report (AR6). These variables and indices are relevant for the climatic impact-drivers used in the regional assessments conducted in AR6 (Chapters 10, 11, 12 and Atlas), related to heat and cold, wet and dry, snow and ice, and wind.\"",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Extreme precipitation"
+    }
+  ],
+  "data_type": "raster",
+  "data_format": "netcdf",
+  "spatial_scale": "(near-)global",
+  "coordinate_system": 4326.0,
+  "title": "Gridded monthly climate projection dataset underpinning the IPCC AR6 Interactive Atlas",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2100-12-31T00:00:00Z",
+          "1850-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

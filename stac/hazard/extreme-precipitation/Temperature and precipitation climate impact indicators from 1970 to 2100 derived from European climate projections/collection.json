@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "Temperature and precipitation climate impact indicators from 1970 to 2100 derived from European climate projections",
+  "stac_version": "1.0.0",
+  "description": "\"This dataset provides precipitation and near surface air temperature for Europe as Essential Climate Variables (ECVs) and as a set of Climate Impact Indicators (CIIs) based on the ECVs.\"",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Extreme precipitation"
+    }
+  ],
+  "data_type": "raster",
+  "data_format": "netcdf",
+  "spatial_scale": "regional",
+  "coordinate_system": NaN,
+  "title": "Temperature and precipitation climate impact indicators from 1970 to 2100 derived from European climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -35.034023284912,
+          24.751695632935,
+          73.937675476074,
+          72.641624450684
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2100-12-31T00:00:00Z",
+          "1971-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

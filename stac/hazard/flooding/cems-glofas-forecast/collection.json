@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "cems-glofas-forecast",
+  "stac_version": "1.0.0",
+  "description": "A modelled future time series of gridded river discharge. It is a product of the Global Flood Awareness System (GloFAS) and offers a consistent representation of a key hydrological variable across the global domain. ",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Flooding"
+    }
+  ],
+  "data_type": "raster",
+  "data_format": "GRIB2",
+  "spatial_scale": "(near-)global",
+  "coordinate_system": 4326.0,
+  "title": "River discharge and related forecasted data by the Global Flood Awareness System",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-12-31T00:00:00Z",
+          "2019-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

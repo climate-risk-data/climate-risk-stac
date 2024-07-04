@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "Heat waves and cold spells in Europe derived from climate projections",
+  "stac_version": "1.0.0",
+  "description": "The dataset contains the number of hot and cold spell days using different European-wide and national/regional definitions developed within the C3S European Health service. These heat wave and cold spell days are available for different future time periods and use different climate change scenarios.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Extreme temperature"
+    }
+  ],
+  "data_type": "raster",
+  "data_format": "netcdf",
+  "spatial_scale": "regional",
+  "coordinate_system": 4326.0,
+  "title": "Heat waves and cold spells in Europe derived from climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -22.0,
+          27.0,
+          45.0,
+          72.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2085-12-31T00:00:00Z",
+          "1986-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

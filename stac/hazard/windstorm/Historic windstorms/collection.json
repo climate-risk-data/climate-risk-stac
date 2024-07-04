@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "Historic windstorms",
+  "stac_version": "1.0.0",
+  "description": NaN,
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Windstorm"
+    }
+  ],
+  "data_type": "raster",
+  "data_format": "netcdf",
+  "spatial_scale": "regional",
+  "coordinate_system": 4326.0,
+  "title": "Winter windstorm indicators for Europe from 1979 to 2021 derived from reanalysis\n",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -25.36,
+          29.83,
+          40.36,
+          70.35
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2021-12-31T00:00:00Z",
+          "1979-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

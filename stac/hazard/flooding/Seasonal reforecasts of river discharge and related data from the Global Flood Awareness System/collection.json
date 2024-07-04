@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "Seasonal reforecasts of river discharge and related data from the Global Flood Awareness System",
+  "stac_version": "1.0.0",
+  "description": "The dataset provides a gridded modelled time series of river discharge forced with seasonal range meteorological reforecasts. The data is a consistent representation of a key hydrological variable across the global domain, and is a product of the Global Flood Awareness System (GloFAS).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Flooding"
+    }
+  ],
+  "data_type": "raster",
+  "data_format": "GRIB2",
+  "spatial_scale": "(near-)global",
+  "coordinate_system": 4326.0,
+  "title": "Seasonal reforecasts of river discharge and related data from the Global Flood Awareness System",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-12-31T00:00:00Z",
+          "1981-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}
