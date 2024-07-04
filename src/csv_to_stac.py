@@ -1,3 +1,8 @@
+#############################################################################
+# suggestions made by Lena as comments starting with '#%%' -----------------#
+# see create-stac.py for script I have run to add example items to catalogs #
+#############################################################################
+
 import pystac
 from pystac.extensions.scientific import ScientificExtension
 from pystac.extensions.projection import ProjectionExtension
@@ -8,21 +13,34 @@ from datetime import datetime
 import numpy as np
 import sys
 
-catalog_main = pystac.Catalog.from_file("stac/catalog.json")
+#%% directory for (reading &) writing the catalog (change accordingly)
+dir = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/'
 
-def process_links(catalog, links_dict, parent_folder):
-    for link in catalog.links:
-        if link.rel == 'child':
-            print(link.target.replace('./', f'{parent_folder}/'))
-            if 'collection' in link.target:
-                linked_catalog = pystac.Collection.from_file(link.target.replace('./', f'{parent_folder}/'))
-                links_dict[linked_catalog.id] = {"href": f"{parent_folder}/{linked_catalog.id}"}
-            elif 'catalog' in link.target:
-                linked_catalog = pystac.Catalog.from_file(link.target.replace('./', f'{parent_folder}/'))
-                # Include the parent folder in the href for sub-catalogs
-                links_dict[linked_catalog.id] = {"href": f"{parent_folder}/{linked_catalog.id}"}
-                process_links(linked_catalog, links_dict[linked_catalog.id], os.path.join( parent_folder, os.path.split(link.target[2:])[0]))
+#%% create first catalog manually
+#catalog_main = pystac.Catalog.from_file("stac/catalog.json")
+catalog_main = pystac.Catalog(
+    id="climate-risk-data", 
+    title="Climate Risk Data",
+    description="Community catalog containing datasets for the three risk drivers Hazard, Expousre, and Vulnerability.",
+    stac_extensions=stac_extensions,
+)
 
+#%% not needed anymore when building catalog directly from csvs?
+# # establish folder structure (better to build the catalog directly from the xls --> next step)
+# def process_links(catalog, links_dict, parent_folder):
+#     for link in catalog.links:
+#         if link.rel == 'child':
+#             print(link.target.replace('./', f'{parent_folder}/'))
+#             if 'collection' in link.target:
+#                 linked_catalog = pystac.Collection.from_file(link.target.replace('./', f'{parent_folder}/'))
+#                 links_dict[linked_catalog.id] = {"href": f"{parent_folder}/{linked_catalog.id}"}
+#             elif 'catalog' in link.target:
+#                 linked_catalog = pystac.Catalog.from_file(link.target.replace('./', f'{parent_folder}/'))
+#                 # Include the parent folder in the href for sub-catalogs
+#                 links_dict[linked_catalog.id] = {"href": f"{parent_folder}/{linked_catalog.id}"}
+#                 process_links(linked_catalog, links_dict[linked_catalog.id], os.path.join( parent_folder, os.path.split(link.target[2:])[0]))
+
+# reformat temporal resolution to adjust to stac requirements
 def parse_year_range(year_str):
     year_str = year_str.replace('now', '2024').replace('current', '2024')
     if '-' in year_str:
@@ -32,29 +50,51 @@ def parse_year_range(year_str):
         year = int(year_str)
         return datetime(year, 1, 1), None
 
-# Initialize the dictionary to store links
-links_dict = {}
 
-# Manually include the parent folder for the main catalog
-parent_folder = "stac"
-links_dict[parent_folder] = {"href": f"./{parent_folder}/catalog.json"}
-
-# Process links recursively
-process_links(catalog_main, links_dict[parent_folder], parent_folder)
-
-# Print the resulting dictionary
-print(links_dict)
-
-# Read the data sheet
+#%% read data sheets (needs to be changed)
 hazard = pd.read_excel('csv/xls.xlsx', 'hazard')
 expvul = pd.read_excel('csv/xls.xlsx', 'exposure-vulnerability')
 
+
+#%% # preprocessing of data sheets, two options (option a. much easier?): 
+# a. replace all blank cells with "not available" (my favorite)
+# b. in loop adding items: make condition for properties to leave out certain properties if na
+
+
+#%% create catalog folder structure %%# --> make a function that does this based on the (sub)categories in the csvs?
+# first level catalogs based on column 'catalog': ids "hazard"; "exposure-vulnerability"
+# second level based on column 'category': 
+## hazard ids "flooding"; "extreme-precipitation"; "extreme-heat"; "windstorm"; "wildfire"; "multi-hazard"
+## expvul ids "population"; "buildings"; "infrastructure"; "environment"
+# idea: 
+## make condition in loop: if catalog already created, add collection+item; else create catalog
+# (see create-stac.py for the folders/catalogs as implemented manually now)
+
+
+#%% commented out because not needed any more?
+# # Initialize the dictionary to store links
+# links_dict = {}
+
+# # Manually include the parent folder for the main catalog
+# parent_folder = "stac"
+# links_dict[parent_folder] = {"href": f"./{parent_folder}/catalog.json"}
+
+# # Process links recursively
+# process_links(catalog_main, links_dict[parent_folder], parent_folder)
+
+# # Print the resulting dictionary
+# print(links_dict)
+#%%
+
+# determine catalog/excel tab to be used #%% loop through both?
 indicator = hazard
 # indicator = expvul
 
+# go over the table rows #%% add catalogs in this process: check whether catalog already created, otherwise create
 row_num = 2
 for row_num in range(len(indicator)):
     print(row_num)
+    # Get item metadata
     item = indicator.iloc[row_num]
 
     for column_name in indicator.columns:
@@ -104,10 +144,11 @@ for row_num in range(len(indicator)):
         continue
     # sys.exit(0)
 
-    # if not item['title_short'] in collections:
+    # if not item['title_short'] in collections #%% not sure whether this is needed, but:
+    #%% always create a collection, even if only one item in it 
     if not title_short in collections:
-        # Open parent catalog
-        parent_catalog = pystac.Catalog.from_file(f"{href}/catalog.json")
+        # Open parent catalog 
+        parent_catalog = pystac.Catalog.from_file(f"{href}/catalog.json") #% not sure whether this is actually needed, but rather determine catalog that this collection should go into (this can be done when building the entire catalog)
 
         collection = pystac.Collection(
             id = title_short,
@@ -125,7 +166,9 @@ for row_num in range(len(indicator)):
             },
         )
         parent_catalog.add_child(collection)
-        parent_catalog.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
+
+        parent_catalog.normalize_hrefs(os.path.join(dir, "stac")) #%% not 100% sure if needed
+        parent_catalog.save(catalog_type=pystac.CatalogType.SELF_CONTAINED) #%% only save at the end?
 
     collection = pystac.Collection.from_file(f"{href}/{title_short}/collection.json")
 
@@ -135,10 +178,11 @@ for row_num in range(len(indicator)):
             id = title_item,
             geometry = None,
             bbox = bbox_list,
-            datetime = None,
-            start_datetime = datetime.utcnow(),
-            end_datetime = datetime.utcnow(),
+            datetime = None, #%% should be replaced by temporal_resolution
+            #start_datetime = datetime.utcnow(), #%% not needed
+            #end_datetime = datetime.utcnow(), #%% not needed
             properties={
+                'title': item['title_item'], #%% added
                 'description': item['description_item'],
                 'data_type': item['data_type'],
                 'data_format': item['format'],
@@ -174,3 +218,9 @@ for row_num in range(len(indicator)):
     # proj_ext.epsg = 4326
 
     # sci_ext = ScientificExtension.ext(collection)
+
+    # %%
+
+#%% write catalog --> entire catalog with all subcatalogs, collections, and items
+catalog_main.normalize_hrefs(os.path.join(dir, "stac"))
+catalog_main.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
