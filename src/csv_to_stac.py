@@ -89,140 +89,138 @@ print(links_dict)
 
 
 # determine catalog/excel tab to be used #%% loop through both?
-indicator = hazard
-# indicator = expvul
+for indicator in [hazard, expvul]:
+    # go over the table rows #%% add catalogs in this process: check whether catalog already created, otherwise create
+    row_num = 2
+    for row_num in range(len(indicator)):
+        print(row_num)
+        # Get item metadata
+        item = indicator.iloc[row_num]
 
-# go over the table rows #%% add catalogs in this process: check whether catalog already created, otherwise create
-row_num = 2
-for row_num in range(len(indicator)):
-    print(row_num)
-    # Get item metadata
-    item = indicator.iloc[row_num]
+        for column_name in indicator.columns:
+            globals()[column_name] = indicator[column_name][row_num]
 
-    for column_name in indicator.columns:
-        globals()[column_name] = indicator[column_name][row_num]
-
-    try:
-        collections = links_dict['stac'][catalog][category]
-    except KeyError as e:
-        href = links_dict['stac'][catalog]['href']
-        parent_catalog = pystac.Catalog.from_file(f"{href}/catalog.json")
-        
-        # exp & vul type (level2)
-        catalog_ev1 = pystac.Catalog(
-            id=category,
-            title=category,
-            description=category,
-        )
-        parent_catalog.add_child(catalog_ev1)
-        links_dict['stac'][catalog][category] = {"href": f"stac/{catalog}/{category}"}
-        parent_catalog.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
-        
-        collections = links_dict['stac'][catalog][category]
-
-    href = collections['href']
-
-    if pd.isna(title_short):
-        if pd.isna(title_collection):
-            print('This we should discuss: probably title is NaN')
-            continue
-        else:
-            title_short = title_collection
-    
-    if not np.nan_to_num(item['bbox']) == 0:
         try:
-            bbox_list = [float(coord.strip()) for coord in item['bbox'].split(',')]
-        except ValueError as e:
-            print(f'Check bbox: {item["bbox"]}')
-            bbox_list = item['bbox']
-    else:
-        bbox_list = np.nan
+            collections = links_dict['stac'][catalog][category]
+        except KeyError as e:
+            href = links_dict['stac'][catalog]['href']
+            parent_catalog = pystac.Catalog.from_file(f"{href}/catalog.json")
+            
+            # exp & vul type (level2)
+            catalog_ev1 = pystac.Catalog(
+                id=category,
+                title=category,
+                description=category,
+            )
+            parent_catalog.add_child(catalog_ev1)
+            links_dict['stac'][catalog][category] = {"href": f"stac/{catalog}/{category}"}
+            parent_catalog.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
+            
+            collections = links_dict['stac'][catalog][category]
 
-    if not np.nan_to_num(item['temporal_resolution']) == 0:
-        year_start, year_end = parse_year_range(str(item['temporal_resolution']))
-    else:
-        year_start, year_end = np.nan, np.nan
-        print('This we should discuss: cannot create collection, because of no input for temporal_resolution')
-        continue
-    # sys.exit(0)
+        href = collections['href']
 
-    # if not item['title_short'] in collections #%% not sure whether this is needed, but:
-    #%% always create a collection, even if only one item in it 
-    if not title_short in collections:
-        # Open parent catalog 
-        parent_catalog = pystac.Catalog.from_file(f"{href}/catalog.json") #% not sure whether this is actually needed, but rather determine catalog that this collection should go into (this can be done when building the entire catalog)
+        if pd.isna(title_short):
+            if pd.isna(title_collection):
+                print('This we should discuss: probably title is NaN')
+                continue
+            else:
+                title_short = title_collection
+        
+        if not np.nan_to_num(item['bbox']) == 0:
+            try:
+                bbox_list = [float(coord.strip()) for coord in item['bbox'].split(',')]
+            except ValueError as e:
+                print(f'Check bbox: {item["bbox"]}')
+                bbox_list = item['bbox']
+        else:
+            bbox_list = np.nan
 
-        collection = pystac.Collection(
-            id = title_short,
-            title = item['title_collection'],
-            description = item['description_collection'],
-            extent=pystac.Extent(
-                spatial=pystac.SpatialExtent([bbox_list]),
-                temporal=pystac.TemporalExtent([[year_end, year_start]]),
-            ),
-            extra_fields={
-                'data_type': item['data_type'],
-                'data_format': item['format'],
-                'spatial_scale': item['spatial_scale'],
-                'coordinate_system': item['coordinate_system'],
-            },
-        )
-        parent_catalog.add_child(collection)
+        if not np.nan_to_num(item['temporal_resolution']) == 0:
+            year_start, year_end = parse_year_range(str(item['temporal_resolution']))
+        else:
+            year_start, year_end = np.nan, np.nan
+            print('This we should discuss: cannot create collection, because of no input for temporal_resolution')
+            continue
+        # sys.exit(0)
 
-        parent_catalog.normalize_hrefs(os.path.join(dir, "stac")) #%% not 100% sure if needed
-        parent_catalog.save(catalog_type=pystac.CatalogType.SELF_CONTAINED) #%% only save at the end?
+        # if not item['title_short'] in collections #%% not sure whether this is needed, but:
+        #%% always create a collection, even if only one item in it 
+        if not title_short in collections:
+            # Open parent catalog 
+            parent_catalog = pystac.Catalog.from_file(f"{href}/catalog.json") #% not sure whether this is actually needed, but rather determine catalog that this collection should go into (this can be done when building the entire catalog)
 
-    collection = pystac.Collection.from_file(f"{href}/{title_short}/collection.json")
+            collection = pystac.Collection(
+                id = title_short,
+                title = item['title_collection'],
+                description = item['description_collection'],
+                extent=pystac.Extent(
+                    spatial=pystac.SpatialExtent([bbox_list]),
+                    temporal=pystac.TemporalExtent([[year_end, year_start]]),
+                ),
+                extra_fields={
+                    'data_type': item['data_type'],
+                    'data_format': item['format'],
+                    'spatial_scale': item['spatial_scale'],
+                    'coordinate_system': item['coordinate_system'],
+                },
+            )
+            parent_catalog.add_child(collection)
 
-    # if not title_item in list(collection.get_items()):
-    if title_item not in [i.id for i in collection.get_items()]:
-        item_stac = pystac.Item(
-            id = title_item,
-            geometry = None,
-            bbox = bbox_list,
-            datetime = None, #%% should be replaced by temporal_resolution
-            #start_datetime = datetime.utcnow(), #%% not needed
-            #end_datetime = datetime.utcnow(), #%% not needed
-            properties={
-                'title': item['title_item'], #%% added
-                'description': item['description_item'],
-                'data_type': item['data_type'],
-                'data_format': item['format'],
-                'spatial_scale': item['spatial_scale'],
-                'coordinate_system': item['coordinate_system'],
-                'reference_period': item['reference_period'],
-                'temporal_resolution': item['temporal_resolution'],
-                'temporal_interval': item['temporal_interval'],
-                'scenarios': item['scenarios'],
-                'data_calculation_type': item['data_calculation_type'],
-                'analysis_type': item['analysis_type'],
-                'underlying_data': item['underlying_data'],
-                'provider': item['provider'],
-                'provider_role': item['provider_role'],
-                'license': item['license'],
-                'link_website': item['link_website'],
-                'publication_link': item['publication_link'],
-                'publication_type': item['publication_type'],
-                'code_link': item['code_link'],
-                'code_type': item['code_type'],
-                'usage_notes': item['usage_notes'],
-                'assets': item['assets'],
-                'name_contributor': item['name_contributor'],
-            },
-        )
-        collection.add_item(item_stac)
-        # collection.save()
-    if not np.nan_to_num(item['publication_link']) == 0:
-        sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
-        sci_ext.doi = item['publication_link']
+            parent_catalog.normalize_hrefs(os.path.join(dir, "stac")) #%% not 100% sure if needed
+            parent_catalog.save(catalog_type=pystac.CatalogType.SELF_CONTAINED) #%% only save at the end?
 
-    # proj_ext = ProjectionExtension.ext(item_stac, add_if_missing=True)
-    # proj_ext.epsg = 4326
+        collection = pystac.Collection.from_file(f"{href}/{title_short}/collection.json")
 
-    # sci_ext = ScientificExtension.ext(collection)
+        # if not title_item in list(collection.get_items()):
+        if title_item not in [i.id for i in collection.get_items()]:
+            item_stac = pystac.Item(
+                id = title_item,
+                geometry = None,
+                bbox = bbox_list,
+                datetime = None, #%% should be replaced by temporal_resolution
+                #start_datetime = datetime.utcnow(), #%% not needed
+                #end_datetime = datetime.utcnow(), #%% not needed
+                properties={
+                    'title': item['title_item'], #%% added
+                    'description': item['description_item'],
+                    'data_type': item['data_type'],
+                    'data_format': item['format'],
+                    'spatial_scale': item['spatial_scale'],
+                    'coordinate_system': item['coordinate_system'],
+                    'reference_period': item['reference_period'],
+                    'temporal_resolution': item['temporal_resolution'],
+                    'temporal_interval': item['temporal_interval'],
+                    'scenarios': item['scenarios'],
+                    'data_calculation_type': item['data_calculation_type'],
+                    'analysis_type': item['analysis_type'],
+                    'underlying_data': item['underlying_data'],
+                    'provider': item['provider'],
+                    'provider_role': item['provider_role'],
+                    'license': item['license'],
+                    'link_website': item['link_website'],
+                    'publication_link': item['publication_link'],
+                    'publication_type': item['publication_type'],
+                    'code_link': item['code_link'],
+                    'code_type': item['code_type'],
+                    'usage_notes': item['usage_notes'],
+                    'assets': item['assets'],
+                    'name_contributor': item['name_contributor'],
+                },
+            )
+            collection.add_item(item_stac)
+            # collection.save()
+        if not np.nan_to_num(item['publication_link']) == 0:
+            sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
+            sci_ext.doi = item['publication_link']
 
-    # %%
+        # proj_ext = ProjectionExtension.ext(item_stac, add_if_missing=True)
+        # proj_ext.epsg = 4326
 
-#%% write catalog --> entire catalog with all subcatalogs, collections, and items
-catalog_main.normalize_hrefs(os.path.join(dir, "stac"))
-catalog_main.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
+        # sci_ext = ScientificExtension.ext(collection)
+
+        # %%
+
+    #%% write catalog --> entire catalog with all subcatalogs, collections, and items
+    catalog_main.normalize_hrefs(os.path.join(dir, "stac"))
+    catalog_main.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
