@@ -54,11 +54,13 @@ def parse_year_range(year_str):
 #%% read data sheets (needs to be changed)
 hazard = pd.read_csv('csv/hazard.csv', encoding='utf-8')
 expvul = pd.read_csv('csv/expvul.csv', encoding='utf-8')
-sys.exit(0)
+# sys.exit(0)
 
 #%% # preprocessing of data sheets, two options (option a. much easier?): 
 # a. replace all blank cells with "not available" (my favorite)
 # b. in loop adding items: make condition for properties to leave out certain properties if na
+hazard = hazard.fillna('not available')
+expvul = expvul.fillna('not available')
 
 
 #%% create catalog folder structure %%# --> make a function that does this based on the (sub)categories in the csvs?
@@ -71,20 +73,20 @@ sys.exit(0)
 # (see create-stac.py for the folders/catalogs as implemented manually now)
 
 
-#%% commented out because not needed any more?
-# # Initialize the dictionary to store links
-# links_dict = {}
+#%% commented out because not needed any more? -->>> We need it because that is now how the code also works to create a digital copy of the stac folder structure
+# Initialize the dictionary to store links
+links_dict = {}
 
-# # Manually include the parent folder for the main catalog
-# parent_folder = "stac"
-# links_dict[parent_folder] = {"href": f"./{parent_folder}/catalog.json"}
+# Manually include the parent folder for the main catalog
+parent_folder = "stac"
+links_dict[parent_folder] = {"href": f"./{parent_folder}/catalog.json"}
 
-# # Process links recursively
-# process_links(catalog_main, links_dict[parent_folder], parent_folder)
+# Process links recursively
+process_links(catalog_main, links_dict[parent_folder], parent_folder)
 
-# # Print the resulting dictionary
-# print(links_dict)
-#%%
+# Print the resulting dictionary
+print(links_dict)
+
 
 # determine catalog/excel tab to be used #%% loop through both?
 indicator = hazard
