@@ -29,15 +29,16 @@ indicator = expvul
 # preprocessing, two options (option a. much easier?): 
 # a. replace all na with "not available"
 # b. make condition for properties to leave out certain properties if na
-
+hazard = hazard.fillna('not available')
+expvul = expvul.fillna('not available')
 
 #%% create catalog folder structure %%# --> make a function that does this based on the (sub)categories in the xls
 
 # create main catalog (level0)
-catalog = pystac.Catalog(
+catalog_main = pystac.Catalog(
     id="climate-risk-data", 
     title="Climate Risk Data",
-    description="Community catalog containing datasets for all risk drivers.",
+    description="Community catalog containing datasets for the three risk drivers Hazard, Exposure, and Vulnerability.",
     stac_extensions=stac_extensions,
 )
 
@@ -179,18 +180,18 @@ catalog_h.add_child(catalog_h6)
 
 
 #%%
-# add dataset collections
-collection1 = pystac.Collection(
-    id="aqueduct",
-    title="Aqueduct flood hazard maps",
-    description="Aqueduct flood hazard maps for different return periods ...",
-    extent=pystac.Extent(
-        spatial=pystac.SpatialExtent([[-180, -90, 180, 90]]),
-        temporal=pystac.TemporalExtent([[datetime.utcnow(), None]]),
-    ),
-    #keywords = "Fluvial flooding", # or similar?
-)
-catalog_h1.add_child(collection1)
+# add dataset collections (not needed because to be added from csv)
+# collection1 = pystac.Collection(
+#     id="aqueduct",
+#     title="Aqueduct flood hazard maps",
+#     description="Aqueduct flood hazard maps for different return periods ...",
+#     extent=pystac.Extent(
+#         spatial=pystac.SpatialExtent([[-180, -90, 180, 90]]),
+#         temporal=pystac.TemporalExtent([[datetime.utcnow(), None]]),
+#     ),
+#     #keywords = "Fluvial flooding", # or similar?
+# )
+# catalog_h1.add_child(collection1)
 
 
 
@@ -323,18 +324,18 @@ catalog_ev.add_child(catalog_ev4)
 #catalog_ev4.add_child(catalog_ev42)
 
 
-# add dataset collections
-collection1 = pystac.Collection(
-    id="ghs-pop",
-    title="Global Human Settlement Layer Population",
-    description="The Global Human Settlement Layer Population (GHS-POP) datasets are available in two different coordinate systems and two spatial resolutions each for the years 1975-2030 in 5-year time intervals.",
-    extent=pystac.Extent(
-        spatial=pystac.SpatialExtent([[-180, -90, 180, 90]]),
-        temporal=pystac.TemporalExtent([[datetime.utcnow(), None]]),
-    ),
-    #keywords = "Population number", # or similar?
-)
-catalog_ev1.add_child(collection1)
+# add dataset collections (not needed because to be added from csv)
+# collection1 = pystac.Collection(
+#     id="ghs-pop",
+#     title="Global Human Settlement Layer Population",
+#     description="The Global Human Settlement Layer Population (GHS-POP) datasets are available in two different coordinate systems and two spatial resolutions each for the years 1975-2030 in 5-year time intervals.",
+#     extent=pystac.Extent(
+#         spatial=pystac.SpatialExtent([[-180, -90, 180, 90]]),
+#         temporal=pystac.TemporalExtent([[datetime.utcnow(), None]]),
+#     ),
+#     #keywords = "Population number", # or similar?
+# )
+# catalog_ev1.add_child(collection1)
   
 # add example item (Timothy :))
 
@@ -373,11 +374,11 @@ item_stac = pystac.Item(
                 'data_type': item['data_type'],
                 'data_format': item['format'],
                 'spatial_scale': item['spatial_scale'],
-                #'coordinate_system': item['coordinate_system'],
+                'coordinate_system': item['coordinate_system'],
                 'reference_period': item['reference_period'],
                 'temporal_resolution': item['temporal_resolution'],
-                'temporal_interval': item['temporal_interval'], #expvul test: json just changed to "not available" (fix later!)
-                #'scenarios': item['scenarios'],
+                'temporal_interval': item['temporal_interval'],
+                'scenarios': item['scenarios'],
                 'data_calculation_type': item['data_calculation_type'],
                 'analysis_type': item['analysis_type'],
                 'underlying_data': item['underlying_data'],
@@ -387,10 +388,10 @@ item_stac = pystac.Item(
                 'link_website': item['link_website'],
                 'publication_link': item['publication_link'],
                 'publication_type': item['publication_type'],
-                #'code_link': item['code_link'],
-                #'code_type': item['code_type'],
-                #'usage_notes': item['usage_notes'],
-                #'assets': item['assets'],
+                'code_link': item['code_link'],
+                'code_type': item['code_type'],
+                'usage_notes': item['usage_notes'],
+                'assets': item['assets'],
                 'name_contributor': item['name_contributor'],
             },
         )
@@ -403,5 +404,5 @@ if not np.nan_to_num(item['publication_link']) == 0:
     sci_ext.doi = item['publication_link']
 
 # %%
-catalog.normalize_hrefs(os.path.join(dir, "stac"))
-catalog.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
+catalog_main.normalize_hrefs(os.path.join(dir, "stac"))
+catalog_main.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
