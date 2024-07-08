@@ -49,7 +49,7 @@ catalog_h = pystac.Catalog(
     description="Hazard datasets",
     stac_extensions=stac_extensions,
 )
-catalog.add_child(catalog_h)
+catalog_main.add_child(catalog_h)
 
 # hazard profile (level2)
 catalog_h1 = pystac.Catalog(
@@ -203,7 +203,7 @@ catalog_ev = pystac.Catalog(
     description="Exposure and Vulnerability datasets",
     stac_extensions=stac_extensions,
 )
-catalog.add_child(catalog_ev)
+catalog_main.add_child(catalog_ev)
 
 # exp & vul type (level2)
 catalog_ev1 = pystac.Catalog(
@@ -362,7 +362,7 @@ bbox_list = [float(coord.strip()) for coord in item['bbox'].split(',')]
 #            ])
 
 item_stac = pystac.Item(
-            id = 'test',
+            id = item['title_item'],
             geometry = None,
             bbox = bbox_list,
             datetime = datetime.utcnow(),
