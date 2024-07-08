@@ -89,7 +89,7 @@ print(links_dict)
 
 
 # determine catalog/excel tab to be used #%% loop through both?
-for indicator in [hazard, expvul]:
+for indicator in [hazard, expvul]: 
     # go over the table rows #%% add catalogs in this process: check whether catalog already created, otherwise create
     row_num = 2
     for row_num in range(len(indicator)):
@@ -175,41 +175,41 @@ for indicator in [hazard, expvul]:
         # if not title_item in list(collection.get_items()):
         if title_item not in [i.id for i in collection.get_items()]:
             item_stac = pystac.Item(
-                id = title_item,
-                geometry = None,
+                id = item['title_item'], #%% for collections use 'title_collection'
+                geometry = None, #%% we need to find a way to add a footprint here
                 bbox = bbox_list,
                 datetime = None, #%% should be replaced by temporal_resolution
                 #start_datetime = datetime.utcnow(), #%% not needed
                 #end_datetime = datetime.utcnow(), #%% not needed
                 properties={
-                    'title': item['title_item'], #%% added
-                    'description': item['description_item'],
-                    'data_type': item['data_type'],
-                    'data_format': item['format'],
-                    'spatial_scale': item['spatial_scale'],
-                    'coordinate_system': item['coordinate_system'],
-                    'reference_period': item['reference_period'],
-                    'temporal_resolution': item['temporal_resolution'],
-                    'temporal_interval': item['temporal_interval'],
-                    'scenarios': item['scenarios'],
-                    'data_calculation_type': item['data_calculation_type'],
-                    'analysis_type': item['analysis_type'],
-                    'underlying_data': item['underlying_data'],
-                    'provider': item['provider'],
-                    'provider_role': item['provider_role'],
-                    'license': item['license'],
-                    'link_website': item['link_website'],
-                    'publication_link': item['publication_link'],
-                    'publication_type': item['publication_type'],
-                    'code_link': item['code_link'],
-                    'code_type': item['code_type'],
-                    'usage_notes': item['usage_notes'],
-                    'assets': item['assets'],
-                    'name_contributor': item['name_contributor'],
-                },
-            )
-            collection.add_item(item_stac)
-            # collection.save()
+                   'title': item['title_item'], #%% for collections use 'title_collection'
+                   'description': item['description_item'],
+                   'data_type': item['data_type'],
+                   'data_format': item['format'],
+                   'spatial_scale': item['spatial_scale'], #%% use as label with label extension?
+                   'coordinate_system': item['coordinate_system'], #%% use the proj extension?
+                   'reference_period': item['reference_period'], #%% use as label with label extension? keywords?
+                   'temporal_resolution': item['temporal_resolution'], #%% make this the datetime attribute
+                   'temporal_interval': item['temporal_interval'], 
+                   'scenarios': item['scenarios'],
+                   'data_calculation_type': item['data_calculation_type'],
+                   'analysis_type': item['analysis_type'],
+                   'underlying_data': item['underlying_data'],
+                   'provider': item['provider'], #%% there is a way to add the provider in stac
+                   'provider_role': item['provider_role'], #%% there is a way to add the provider in stac
+                   'license': item['license'],
+                   'link_website': item['link_website'],
+                   'publication_link': item['publication_link'], # remove here because we use in the sci extension?
+                   'publication_type': item['publication_type'],
+                   'code_link': item['code_link'],
+                   'code_type': item['code_type'],
+                   'usage_notes': item['usage_notes'],
+                   'assets': item['assets'],
+                   #'name_contributor': item['name_contributor'], #%% for internal use only
+              },
+          )
+        collection.add_item(item_stac)
+        # collection.save()
         if not np.nan_to_num(item['publication_link']) == 0:
             sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
             sci_ext.doi = item['publication_link']
