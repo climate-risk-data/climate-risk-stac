@@ -1,5 +1,6 @@
 #%% NOTES %%#
 # also includes keywords (via 'extra_fields') --> needs to be changed to combine attributes from several columns into a list instead of a "keywords" col
+# also creates a collection if no title attributes available
 
 import pystac
 from pystac.extensions.scientific import ScientificExtension
@@ -44,7 +45,11 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         # Extract values from the row
         catalog_id = item['catalog']
         category_id = item['category']
-        title_short = item['title_short'] if not pd.isna(item['title_short']) else item['title_collection']
+        
+        # Generate default titles if necessary
+        title_short = item['title_short'] if not pd.isna(item['title_short']) else f"collection_{row_num}"
+        title_collection = item['title_collection'] if not pd.isna(item['title_collection']) else f"collection_{row_num}"
+        
         bbox = item['bbox']
         temporal_resolution = item['temporal_resolution']
         
@@ -79,8 +84,8 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             
             collection = pystac.Collection(
                 id=category_id,
-                title=category_id,
-                description=category_id,
+                title=title_collection,
+                description=title_collection,
                 extent=pystac.Extent(
                     spatial=pystac.SpatialExtent([bbox_list]),
                     temporal=pystac.TemporalExtent([[year_end, year_start]]),
