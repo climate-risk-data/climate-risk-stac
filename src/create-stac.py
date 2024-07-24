@@ -28,10 +28,11 @@ def parse_year_range(year_str):
             end_month = datetime.now().month
             end_day = datetime.now().day
             return datetime(start_year, 1, 1), datetime(end_year, end_month, end_day)
-        elif len(start) == 0 and len(end) == 4:
-            start_year = 0
+        # if start date BC (can handle any year until 10000 BC, but not year 0):
+        elif len(start) > 4 and len(end) == 4:
+            start_year = int(start.replace('BC', '')) - 1 # 1 BC is year 0; 2 BC is year 1 etc.
             end_year = int(end)
-            return datetime(start_year, 1, 1), datetime(end_year, end_month, end_day)
+            return datetime(start_year, 1, 1), datetime(end_year, 12, 31)
         else:
             raise ValueError("Invalid year range format")
     
