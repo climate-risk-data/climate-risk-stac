@@ -39,109 +39,117 @@ catalog_main = pystac.Catalog(
 
 # Function to create collections and items
 def create_catalog_from_csv(indicator, catalog_main, dir):
-    for row_num in range(len(indicator)):
+    for row_num in range(len(indicator)-1):
         item = indicator.iloc[row_num]
         
         # Extract values from the row
         catalog_id = item['catalog']
         category_id = item['category']
         
-        # Generate default titles if necessary
-        title_short = item['title_short'] if not pd.isna(item['title_short']) else f"collection_{row_num}"
-        title_collection = item['title_collection'] if not pd.isna(item['title_collection']) else f"collection_{row_num}"
+        # Use item titles if necessary
+        title_collection = item['title_short'] if not pd.isna(item['title_short']) else item['title_collection']
+        if title_collection is None: title_collection = item['title_item']
         
         bbox = item['bbox']
         temporal_resolution = item['temporal_resolution']
         
-        # Create or retrieve the catalog
+        # Create or retrieve the first-level catalog
         if catalog_id not in [cat.id for cat in catalog_main.get_children()]:
-            new_catalog = pystac.Catalog(id=catalog_id, title=catalog_id, description=catalog_id)
-            catalog_main.add_child(new_catalog)
+            catalog1 = pystac.Catalog(id=catalog_id, title=catalog_id, description=catalog_id) #adjust here once it works
+            catalog_main.add_child(catalog1)
         else:
-            new_catalog = catalog_main.get_child(catalog_id)
+            catalog1 = catalog_main.get_child(catalog_id)
+
+        # Create or retrieve the second-level catalog
+        if category_id not in [cat.id for cat in catalog1.get_children()]: ############# check here!!!! ###########
+            catalog2 = pystac.Catalog(id=category_id, title=category_id, description=category_id) #adjust here once it works
+            catalog1.add_child(catalog2)
+        else:
+            catalog2 = catalog1.get_child(category_id)   
         
-        # Create or retrieve the collection
-        if category_id not in [col.id for col in new_catalog.get_children()]:
-            # Process bbox
-            if not np.nan_to_num(bbox) == 0:
-                try:
-                    bbox_list = [float(coord.strip()) for coord in bbox.split(',')]
-                except ValueError:
-                    print(f'Check bbox: {bbox}')
-                    bbox_list = bbox
-            else:
-                bbox_list = np.nan
 
-            # Process temporal resolution
-            if not np.nan_to_num(temporal_resolution) == 0:
-                year_start, year_end = parse_year_range(str(temporal_resolution))
-            else:
-                year_start, year_end = np.nan, np.nan
-                print('Cannot create collection, because of no input for temporal_resolution')
-                continue
+        # # Create or retrieve the collection ## change here!! ##
+        # if category_id not in [col.id for col in new_catalog.get_children()]:
+        #     # Process bbox
+        #     if not np.nan_to_num(bbox) == 0:
+        #         try:
+        #             bbox_list = [float(coord.strip()) for coord in bbox.split(',')]
+        #         except ValueError:
+        #             print(f'Check bbox: {bbox}')
+        #             bbox_list = bbox
+        #     else:
+        #         bbox_list = np.nan
 
-            keywords = item['keywords'].split(',') if 'keywords' in item else []
+        #     # Process temporal resolution
+        #     if not np.nan_to_num(temporal_resolution) == 0:
+        #         year_start, year_end = parse_year_range(str(temporal_resolution))
+        #     else:
+        #         year_start, year_end = np.nan, np.nan
+        #         print('Cannot create collection, because of no input for temporal_resolution')
+        #         continue
+
+        #     keywords = item['keywords'].split(',') if 'keywords' in item else []
             
-            collection = pystac.Collection(
-                id=category_id,
-                title=title_collection,
-                description=title_collection,
-                extent=pystac.Extent(
-                    spatial=pystac.SpatialExtent([bbox_list]),
-                    temporal=pystac.TemporalExtent([[year_end, year_start]]),
-                ),
-                extra_fields={
-                    'data_type': item['data_type'],
-                    'data_format': item['format'],
-                    'spatial_scale': item['spatial_scale'],
-                    'coordinate_system': item['coordinate_system'],
-                    'keywords': keywords
-                },
-            )
-            new_catalog.add_child(collection)
-        else:
-            collection = new_catalog.get_child(category_id)
+        #     collection = pystac.Collection(
+        #         id=category_id,
+        #         title=title_collection,
+        #         description=title_collection,
+        #         extent=pystac.Extent(
+        #             spatial=pystac.SpatialExtent([bbox_list]),
+        #             temporal=pystac.TemporalExtent([[year_end, year_start]]),
+        #         ),
+        #         extra_fields={
+        #             'data_type': item['data_type'],
+        #             'data_format': item['format'],
+        #             'spatial_scale': item['spatial_scale'],
+        #             'coordinate_system': item['coordinate_system'],
+        #             'keywords': keywords
+        #         },
+        #     )
+        #     new_catalog.add_child(collection)
+        # else:
+        #     collection = new_catalog.get_child(category_id)
         
-        # Create the item
-        item_stac = pystac.Item(
-            id=item['title_item'],
-            geometry=None,  # Add geometry if available
-            bbox=bbox_list,
-            datetime=None,
-            properties={
-                'title': item['title_item'],
-                'description': item['description_item'],
-                'data_type': item['data_type'],
-                'data_format': item['format'],
-                'spatial_scale': item['spatial_scale'],
-                'coordinate_system': item['coordinate_system'],
-                'reference_period': item['reference_period'],
-                'temporal_resolution': item['temporal_resolution'],
-                'temporal_interval': item['temporal_interval'],
-                'scenarios': item['scenarios'],
-                'data_calculation_type': item['data_calculation_type'],
-                'analysis_type': item['analysis_type'],
-                'underlying_data': item['underlying_data'],
-                'provider': item['provider'],
-                'provider_role': item['provider_role'],
-                'license': item['license'],
-                'link_website': item['link_website'],
-                'publication_link': item['publication_link'],
-                'publication_type': item['publication_type'],
-                'code_link': item['code_link'],
-                'code_type': item['code_type'],
-                'usage_notes': item['usage_notes'],
-                'assets': item['assets'],
-            },
-        )
+        # # Create the item
+        # item_stac = pystac.Item(
+        #     id=item['title_item'],
+        #     geometry=None,  # Add geometry if available
+        #     bbox=bbox_list,
+        #     datetime=None,
+        #     properties={
+        #         'title': item['title_item'],
+        #         'description': item['description_item'],
+        #         'data_type': item['data_type'],
+        #         'data_format': item['format'],
+        #         'spatial_scale': item['spatial_scale'],
+        #         'coordinate_system': item['coordinate_system'],
+        #         'reference_period': item['reference_period'],
+        #         'temporal_resolution': item['temporal_resolution'],
+        #         'temporal_interval': item['temporal_interval'],
+        #         'scenarios': item['scenarios'],
+        #         'data_calculation_type': item['data_calculation_type'],
+        #         'analysis_type': item['analysis_type'],
+        #         'underlying_data': item['underlying_data'],
+        #         'provider': item['provider'],
+        #         'provider_role': item['provider_role'],
+        #         'license': item['license'],
+        #         'link_website': item['link_website'],
+        #         'publication_link': item['publication_link'],
+        #         'publication_type': item['publication_type'],
+        #         'code_link': item['code_link'],
+        #         'code_type': item['code_type'],
+        #         'usage_notes': item['usage_notes'],
+        #         'assets': item['assets'],
+        #     },
+        # )
         
-        # Add scientific extension if publication link is present
-        if not pd.isna(item['publication_link']):
-            sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
-            sci_ext.doi = item['publication_link']
+        # # Add scientific extension if publication link is present
+        # if not pd.isna(item['publication_link']):
+        #     sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
+        #     sci_ext.doi = item['publication_link']
         
-        # Add item to collection
-        collection.add_item(item_stac)
+        # # Add item to collection
+        # collection.add_item(item_stac)
 
     # Normalize hrefs and save the catalog
     catalog_main.normalize_hrefs(os.path.join(dir, "stac"))
