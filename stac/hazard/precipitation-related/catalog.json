@@ -1,8 +1,8 @@
 {
   "type": "Catalog",
-  "id": "extreme-temperature",
+  "id": "precipitation-related",
   "stac_version": "1.0.0",
-  "description": "Extreme temperature-related datasets",
+  "description": "precipitation-related",
   "links": [
     {
       "rel": "root",
@@ -14,8 +14,8 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "Hazard"
+      "title": "hazard"
     }
   ],
-  "title": "Extreme temperature"
+  "title": "precipitation-related"
 }

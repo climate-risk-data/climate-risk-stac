@@ -2,7 +2,7 @@
   "type": "Catalog",
   "id": "multi-hazard",
   "stac_version": "1.0.0",
-  "description": "Multi-hazard datasets",
+  "description": "multi-hazard",
   "links": [
     {
       "rel": "root",
@@ -14,8 +14,8 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "Hazard"
+      "title": "hazard"
     }
   ],
-  "title": "Multi-hazard"
+  "title": "multi-hazard"
 }
