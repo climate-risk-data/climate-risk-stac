@@ -72,9 +72,27 @@
     },
     {
       "rel": "child",
-      "href": "./not available/collection.json",
+      "href": "./Deltares Coastal Flood Maps/collection.json",
       "type": "application/json",
-      "title": "not available"
+      "title": "Deltares Coastal Flood Maps"
+    },
+    {
+      "rel": "child",
+      "href": "./JRC flood hazard maps/collection.json",
+      "type": "application/json",
+      "title": "JRC flood hazard maps"
+    },
+    {
+      "rel": "child",
+      "href": "./Monthly maximum of accumulated precipitation/collection.json",
+      "type": "application/json",
+      "title": "Monthly maximum of accumulated precipitation"
+    },
+    {
+      "rel": "child",
+      "href": "./Wet day precipitation indices/collection.json",
+      "type": "application/json",
+      "title": "Wet day precipitation indices"
     },
     {
       "rel": "parent",

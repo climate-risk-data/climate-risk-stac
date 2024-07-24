@@ -44,9 +44,9 @@ def parse_year_range(year_str):
 hazard = pd.read_csv('csv/hazard.csv', encoding='utf-8')
 expvul = pd.read_csv('csv/expvul.csv', encoding='utf-8')
 
-# Preprocessing of data sheets: replace all blank cells with "not available"
-hazard = hazard.fillna('not available')
-expvul = expvul.fillna('not available')
+# Preprocessing of data sheets: replace all blank cells with "not available" --> do this only for the 'property' columns!
+#hazard = hazard.fillna('not available')
+#expvul = expvul.fillna('not available')
 
 # Create the main catalog
 catalog_main = pystac.Catalog(
@@ -64,14 +64,11 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         catalog_id = item['catalog']
         category_id = item['category']
         
-        # Use item titles if necessary
-        title_collection = item['title_short'] if not pd.isna(item['title_short']) else item['title_collection']
-        if title_collection is None: title_collection = item['title_item']
-        
         # bbox and temp resolution
         bbox = item['bbox']
         temporal_resolution = item['temporal_resolution']
         
+        ## CATALOGS ##
         # Create or retrieve the first-level catalog
         if catalog_id not in [cat.id for cat in catalog_main.get_children()]:
             catalog1 = pystac.Catalog(id=catalog_id, title=catalog_id, description=catalog_id) #adjust here once it works
@@ -86,6 +83,10 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         else:
             catalog2 = catalog1.get_child(category_id)   
         
+        ## COLLECTIONS ##
+        # Use item titles if necessary
+        title_collection = item['title_short'] if not pd.isna(item['title_short']) else item['title_collection']
+        if title_collection is None: title_collection = item['title_item']
 
         # Create or retrieve the collection 
         if title_collection not in [col.id for col in catalog2.get_children()]:

@@ -1,5 +1,5 @@
 {
-  "type": "not available",
+  "type": NaN,
   "id": "GFD",
   "stac_version": "1.0.0",
   "description": "GFD",

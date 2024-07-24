@@ -1,8 +1,8 @@
 {
-  "type": NaN,
-  "id": "MYRIAD-HES",
+  "type": "drought",
+  "id": "Global SPEI database",
   "stac_version": "1.0.0",
-  "description": "MYRIAD-HES",
+  "description": "Global SPEI database",
   "links": [
     {
       "rel": "root",
@@ -14,10 +14,10 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "multi-hazard"
+      "title": "precipitation-related"
     }
   ],
-  "title": "MYRIAD-HES",
+  "title": "Global SPEI database",
   "extent": {
     "spatial": {
       "bbox": [
@@ -32,8 +32,8 @@
     "temporal": {
       "interval": [
         [
-          "2004-01-01T00:00:00Z",
-          "2017-12-31T00:00:00Z"
+          "1901-01-01T00:00:00Z",
+          "2022-12-31T00:00:00Z"
         ]
       ]
     }

@@ -1,8 +1,8 @@
 {
-  "type": NaN,
-  "id": "MYRIAD-HES",
+  "type": "wildfire",
+  "id": "Seasonal forecast of fire danger indices",
   "stac_version": "1.0.0",
-  "description": "MYRIAD-HES",
+  "description": "Seasonal forecast of fire danger indices",
   "links": [
     {
       "rel": "root",
@@ -14,26 +14,26 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "multi-hazard"
+      "title": "environmental"
     }
   ],
-  "title": "MYRIAD-HES",
+  "title": "Seasonal forecast of fire danger indices",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
+          -179.95,
+          -89.95,
+          179.95,
+          89.95
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2004-01-01T00:00:00Z",
-          "2017-12-31T00:00:00Z"
+          "1981-01-01T00:00:00Z",
+          "2024-07-24T00:00:00Z"
         ]
       ]
     }

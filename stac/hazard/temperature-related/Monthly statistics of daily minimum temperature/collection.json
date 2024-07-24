@@ -1,8 +1,8 @@
 {
-  "type": NaN,
-  "id": "MYRIAD-HES",
+  "type": "cold-wave",
+  "id": "Monthly statistics of daily minimum temperature",
   "stac_version": "1.0.0",
-  "description": "MYRIAD-HES",
+  "description": "Monthly statistics of daily minimum temperature",
   "links": [
     {
       "rel": "root",
@@ -14,16 +14,16 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "multi-hazard"
+      "title": "temperature-related"
     }
   ],
-  "title": "MYRIAD-HES",
+  "title": "Monthly statistics of daily minimum temperature",
   "extent": {
     "spatial": {
       "bbox": [
         [
           -180.0,
-          -90.0,
+          -60.0,
           180.0,
           90.0
         ]
@@ -32,8 +32,8 @@
     "temporal": {
       "interval": [
         [
-          "2004-01-01T00:00:00Z",
-          "2017-12-31T00:00:00Z"
+          "1850-01-01T00:00:00Z",
+          "2005-12-31T00:00:00Z"
         ]
       ]
     }

@@ -1,8 +1,8 @@
 {
-  "type": NaN,
-  "id": "MYRIAD-HES",
+  "type": "fluvial-flood",
+  "id": "JRC flood hazard maps",
   "stac_version": "1.0.0",
-  "description": "MYRIAD-HES",
+  "description": "JRC flood hazard maps",
   "links": [
     {
       "rel": "root",
@@ -14,10 +14,10 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "multi-hazard"
+      "title": "flood"
     }
   ],
-  "title": "MYRIAD-HES",
+  "title": "JRC flood hazard maps",
   "extent": {
     "spatial": {
       "bbox": [
@@ -32,8 +32,8 @@
     "temporal": {
       "interval": [
         [
-          "2004-01-01T00:00:00Z",
-          "2017-12-31T00:00:00Z"
+          "2013-01-01T00:00:00Z",
+          "2013-12-31T00:00:00Z"
         ]
       ]
     }

@@ -36,9 +36,9 @@
     },
     {
       "rel": "child",
-      "href": "./not available/collection.json",
+      "href": "./Monthly statistics of daily minimum temperature/collection.json",
       "type": "application/json",
-      "title": "not available"
+      "title": "Monthly statistics of daily minimum temperature"
     },
     {
       "rel": "parent",
