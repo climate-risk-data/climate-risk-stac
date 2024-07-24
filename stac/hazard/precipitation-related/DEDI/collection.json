@@ -1,0 +1,42 @@
+{
+  "type": "drought",
+  "id": "DEDI",
+  "stac_version": "1.0.0",
+  "description": "DEDI",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "precipitation-related"
+    }
+  ],
+  "title": "DEDI",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1979-01-01T00:00:00Z",
+          "2022-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

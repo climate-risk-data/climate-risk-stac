@@ -15,12 +15,6 @@
       "href": "./hazard/catalog.json",
       "type": "application/json",
       "title": "hazard"
-    },
-    {
-      "rel": "child",
-      "href": "./exposure-vulnerability/catalog.json",
-      "type": "application/json",
-      "title": "exposure-vulnerability"
     }
   ],
   "title": "Climate Risk Data"

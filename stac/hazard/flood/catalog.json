@@ -11,6 +11,72 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "child",
+      "href": "./Aqueduct/collection.json",
+      "type": "application/json",
+      "title": "Aqueduct"
+    },
+    {
+      "rel": "child",
+      "href": "./CEMS/collection.json",
+      "type": "application/json",
+      "title": "CEMS"
+    },
+    {
+      "rel": "child",
+      "href": "./GFD/collection.json",
+      "type": "application/json",
+      "title": "GFD"
+    },
+    {
+      "rel": "child",
+      "href": "./GFPLAIN250m/collection.json",
+      "type": "application/json",
+      "title": "GFPLAIN250m"
+    },
+    {
+      "rel": "child",
+      "href": "./GIEMS/collection.json",
+      "type": "application/json",
+      "title": "GIEMS"
+    },
+    {
+      "rel": "child",
+      "href": "./GloFAS/collection.json",
+      "type": "application/json",
+      "title": "GloFAS"
+    },
+    {
+      "rel": "child",
+      "href": "./GloFAS-GFM/collection.json",
+      "type": "application/json",
+      "title": "GloFAS-GFM"
+    },
+    {
+      "rel": "child",
+      "href": "./GRDC/collection.json",
+      "type": "application/json",
+      "title": "GRDC"
+    },
+    {
+      "rel": "child",
+      "href": "./GSW/collection.json",
+      "type": "application/json",
+      "title": "GSW"
+    },
+    {
+      "rel": "child",
+      "href": "./MCDWD/collection.json",
+      "type": "application/json",
+      "title": "MCDWD"
+    },
+    {
+      "rel": "child",
+      "href": "./not available/collection.json",
+      "type": "application/json",
+      "title": "not available"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",

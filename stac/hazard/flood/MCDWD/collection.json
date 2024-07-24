@@ -1,0 +1,42 @@
+{
+  "type": "not available",
+  "id": "MCDWD",
+  "stac_version": "1.0.0",
+  "description": "MCDWD",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "flood"
+    }
+  ],
+  "title": "MCDWD",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -50.0,
+          180.0,
+          70.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2021-01-01T00:00:00Z",
+          "2024-07-24T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

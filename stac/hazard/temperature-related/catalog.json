@@ -11,6 +11,36 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "child",
+      "href": "./ERA5-HEAT/collection.json",
+      "type": "application/json",
+      "title": "ERA5-HEAT"
+    },
+    {
+      "rel": "child",
+      "href": "./GEHE/collection.json",
+      "type": "application/json",
+      "title": "GEHE"
+    },
+    {
+      "rel": "child",
+      "href": "./HIS/collection.json",
+      "type": "application/json",
+      "title": "HIS"
+    },
+    {
+      "rel": "child",
+      "href": "./UHE-Daily/collection.json",
+      "type": "application/json",
+      "title": "UHE-Daily"
+    },
+    {
+      "rel": "child",
+      "href": "./not available/collection.json",
+      "type": "application/json",
+      "title": "not available"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",

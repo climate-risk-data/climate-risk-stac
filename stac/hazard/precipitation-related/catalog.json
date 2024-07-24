@@ -11,6 +11,30 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "child",
+      "href": "./DEDI/collection.json",
+      "type": "application/json",
+      "title": "DEDI"
+    },
+    {
+      "rel": "child",
+      "href": "./GDO/collection.json",
+      "type": "application/json",
+      "title": "GDO"
+    },
+    {
+      "rel": "child",
+      "href": "./SPI/collection.json",
+      "type": "application/json",
+      "title": "SPI"
+    },
+    {
+      "rel": "child",
+      "href": "./not available/collection.json",
+      "type": "application/json",
+      "title": "not available"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
