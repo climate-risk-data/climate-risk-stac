@@ -141,7 +141,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         
         ## ITEMS ##
         
-        #datetime
+        # #datetime
         #year_start, year_end = parse_year_range(str(temporal_resolution))
         #datetime_value = year_start if year_start else datetime.now()
         
@@ -150,7 +150,9 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             id=item['title_item'],
             geometry=None,  # Add geometry if available
             bbox=bbox_list,
-            datetime=datetime.now(),#datetime_value,
+            datetime=datetime.now(),
+            #start_datetime = year_start,
+            #end_datetime = year_end,
             properties={
                 'title': item['title_item'],
                 'description': item['description_item'],
@@ -159,8 +161,8 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 'spatial_scale': item['spatial_scale'],
                 'coordinate_system': str(item['coordinate_system']),
                 'reference_period': item['reference_period'],
-                'temporal_resolution': item['temporal_resolution'], #change here
-                #'temporal_interval': str(item['temporal_interval']),
+                #'temporal_resolution': item['temporal_resolution'], #change here
+                'temporal_interval': str(item['temporal_interval']),
                 'scenarios': str(item['scenarios']),
                 'data_calculation_type': item['data_calculation_type'],
                 'analysis_type': str(item['analysis_type']),
@@ -169,19 +171,24 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 'provider_role': item['provider_role'],
                 'license': item['license'],
                 'link_website': item['link_website'],
-                #'publication_link': item['publication_link'],
+                'publication_link': str(item['publication_link']),
                 'publication_type': str(item['publication_type']),
                 'code_link': str(item['code_link']),
                 'code_type': str(item['code_type']),
-                'usage_notes': str(item['usage_notes']),
-                #'assets': item['assets'],
+                'usage_notes': str(item['usage_notes'])
             },
         )
         
-        # Add scientific extension if publication link is present
-        if not pd.isna(item['publication_link']):
-            sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
-            sci_ext.doi = item['publication_link']
+        # Add scientific extension if DOI is present
+        # if item['publication_link'].startswith('10.'):
+        #     sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
+        #     sci_ext.doi = item['publication_link'] # adjust condition here for link that are not dois
+        # else:
+        #     return "The string does not start with '10'."
+
+        # if not pd.isna(item['publication_link']):
+        #     sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
+        #     sci_ext.doi = item['publication_link'] # adjust condition here for link that are not dois
         
         # Add item to collection
         collection.add_item(item_stac)
