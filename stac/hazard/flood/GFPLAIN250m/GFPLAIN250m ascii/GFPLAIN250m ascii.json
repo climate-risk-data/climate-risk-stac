@@ -1,0 +1,68 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "GFPLAIN250m ascii",
+  "properties": {
+    "title": "GFPLAIN250m ascii",
+    "description": "The datasets include the floodplain and floodprone locations at the global level in ascii format",
+    "data_type": "raster",
+    "data_format": "ascii",
+    "spatial_scale": "(near-)global",
+    "coordinate_system": "4326",
+    "reference_period": "historical",
+    "temporal_resolution": "2000",
+    "temporal_interval": NaN,
+    "scenarios": NaN,
+    "data_calculation_type": "inferred",
+    "analysis_type": "deterministic",
+    "underlying_data": "Processed from the NASA SRTM Digital Elevation model ",
+    "provider": "University for Foreigners of Perugia",
+    "provider_role": "licensor",
+    "license": "CC-BY-4.0",
+    "link_website": "https://figshare.com/articles/dataset/GFPLAIN250m/6665165/1",
+    "publication_link": "https://doi.org/10.1038/sdata.2018.309",
+    "publication_type": "article",
+    "code_link": NaN,
+    "code_type": NaN,
+    "usage_notes": NaN,
+    "assets": "https://figshare.com/ndownloader/files/12186359",
+    "sci:doi": "https://doi.org/10.1038/sdata.2018.309",
+    "datetime": "2000-01-01T00:00:00Z"
+  },
+  "geometry": null,
+  "links": [
+    {
+      "rel": "cite-as",
+      "href": "https://doi.org/https%3A//doi.org/10.1038/sdata.2018.309"
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GFPLAIN250m"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GFPLAIN250m"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    60.0
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
+  "collection": "GFPLAIN250m"
+}
