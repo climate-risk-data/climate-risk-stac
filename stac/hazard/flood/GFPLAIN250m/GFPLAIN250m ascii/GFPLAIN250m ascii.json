@@ -23,14 +23,14 @@
     "code_link": "nan",
     "code_type": "nan",
     "usage_notes": "nan",
-    "sci:doi": "https://doi.org/10.1038/sdata.2018.309",
-    "datetime": "2024-07-25T14:22:41.008757Z"
+    "sci:doi": "10.1038/sdata.2018.309",
+    "datetime": "2024-07-25T15:00:53.156111Z"
   },
   "geometry": null,
   "links": [
     {
       "rel": "cite-as",
-      "href": "https://doi.org/https%3A//doi.org/10.1038/sdata.2018.309"
+      "href": "https://doi.org/10.1038/sdata.2018.309"
     },
     {
       "rel": "root",

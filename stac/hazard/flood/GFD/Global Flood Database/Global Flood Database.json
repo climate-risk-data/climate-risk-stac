@@ -23,14 +23,14 @@
     "code_link": "https://github.com/cloudtostreet/MODIS_GlobalFloodDatabase",
     "code_type": "processing",
     "usage_notes": "Download per event possible. The data do not differentiate flood types. ",
-    "sci:doi": "https://doi.org/10.1038/s41586-021-03695-w",
-    "datetime": "2024-07-25T14:22:41.008757Z"
+    "sci:doi": "10.1038/s41586-021-03695-w",
+    "datetime": "2024-07-25T15:00:53.156111Z"
   },
   "geometry": null,
   "links": [
     {
       "rel": "cite-as",
-      "href": "https://doi.org/https%3A//doi.org/10.1038/s41586-021-03695-w"
+      "href": "https://doi.org/10.1038/s41586-021-03695-w"
     },
     {
       "rel": "root",
