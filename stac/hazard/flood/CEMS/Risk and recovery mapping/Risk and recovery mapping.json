@@ -10,7 +10,7 @@
     "spatial_scale": "(near-)global",
     "coordinate_system": "4326",
     "reference_period": "historical",
-    "temporal_resolution": "2017-",
+    "temporal_interval": "irregular",
     "scenarios": "nan",
     "data_calculation_type": "inferred",
     "analysis_type": "empirical",
@@ -19,11 +19,12 @@
     "provider_role": "producer",
     "license": "COPERNICUS",
     "link_website": "https://emergency.copernicus.eu/mapping/ems/emergency-management-service-mapping",
+    "publication_link": "nan",
     "publication_type": "nan",
     "code_link": "nan",
     "code_type": "nan",
     "usage_notes": "Download per event/case study possible",
-    "datetime": "2024-07-25T15:00:53.156111Z"
+    "datetime": "2024-07-25T17:46:19.063390Z"
   },
   "geometry": null,
   "links": [

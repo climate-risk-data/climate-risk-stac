@@ -10,7 +10,7 @@
     "spatial_scale": "(near-)global",
     "coordinate_system": "4326",
     "reference_period": "historical",
-    "temporal_resolution": "2017-",
+    "temporal_interval": "irregular",
     "scenarios": "nan",
     "data_calculation_type": "inferred",
     "analysis_type": "empirical",
@@ -19,19 +19,15 @@
     "provider_role": "producer",
     "license": "COPERNICUS",
     "link_website": "https://emergency.copernicus.eu/mapping/ems/emergency-management-service-mapping",
+    "publication_link": "https://emergency.copernicus.eu/mapping/sites/default/files/files/CopernicusEMS_RapidMapping_ProductUserManual_v1.pdf",
     "publication_type": "documentation",
     "code_link": "nan",
     "code_type": "nan",
     "usage_notes": "Download per event/case study possible",
-    "sci:doi": "https://emergency.copernicus.eu/mapping/sites/default/files/files/CopernicusEMS_RapidMapping_ProductUserManual_v1.pdf",
-    "datetime": "2024-07-25T15:00:53.156111Z"
+    "datetime": "2024-07-25T17:46:19.063390Z"
   },
   "geometry": null,
   "links": [
-    {
-      "rel": "cite-as",
-      "href": "https://doi.org/https%3A//emergency.copernicus.eu/mapping/sites/default/files/files/CopernicusEMS_RapidMapping_ProductUserManual_v1.pdf"
-    },
     {
       "rel": "root",
       "href": "../../../../catalog.json",
@@ -58,8 +54,6 @@
     180.0,
     90.0
   ],
-  "stac_extensions": [
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
-  ],
+  "stac_extensions": [],
   "collection": "CEMS"
 }

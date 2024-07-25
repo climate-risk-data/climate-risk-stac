@@ -10,7 +10,7 @@
     "spatial_scale": "(near-)global",
     "coordinate_system": "4326",
     "reference_period": "future",
-    "temporal_resolution": "2030-2080",
+    "temporal_interval": "irregular",
     "scenarios": "RCPs",
     "data_calculation_type": "modeled",
     "analysis_type": "probabilistic",
@@ -19,19 +19,15 @@
     "provider_role": "licensor",
     "license": "CC-BY-4.0",
     "link_website": "https://www.wri.org/data/aqueduct-floods-hazard-maps",
+    "publication_link": "10.5194/nhess-20-1025-2020",
     "publication_type": "article",
     "code_link": "nan",
     "code_type": "nan",
     "usage_notes": "data available for 2030, 2050, 2080 and RCP4.5 and 8.5",
-    "sci:doi": "10.5194/nhess-20-1025-2020",
-    "datetime": "2024-07-25T15:00:53.156111Z"
+    "datetime": "2024-07-25T17:46:19.063390Z"
   },
   "geometry": null,
   "links": [
-    {
-      "rel": "cite-as",
-      "href": "https://doi.org/10.5194/nhess-20-1025-2020"
-    },
     {
       "rel": "root",
       "href": "../../../../catalog.json",
@@ -58,8 +54,6 @@
     180.0,
     90.0
   ],
-  "stac_extensions": [
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
-  ],
+  "stac_extensions": [],
   "collection": "Aqueduct"
 }

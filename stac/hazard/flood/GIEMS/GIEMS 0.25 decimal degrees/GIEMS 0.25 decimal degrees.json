@@ -10,7 +10,7 @@
     "spatial_scale": "(near-)global",
     "coordinate_system": "4326",
     "reference_period": "historical",
-    "temporal_resolution": "1993-2007",
+    "temporal_interval": "monthly",
     "scenarios": "nan",
     "data_calculation_type": "inferred",
     "analysis_type": "empirical",
@@ -19,19 +19,15 @@
     "provider_role": "producer",
     "license": "CC-BY-NC-SA-4.0",
     "link_website": "https://www.estellus.fr/?static13/giems-d15",
+    "publication_link": "http://doi.org/10.1175/JHM-D-16-0155.1",
     "publication_type": "article",
     "code_link": "nan",
     "code_type": "nan",
     "usage_notes": "The datasets are available from author upon request, see webpage.",
-    "sci:doi": "http://doi.org/10.1175/JHM-D-16-0155.1",
-    "datetime": "2024-07-25T15:00:53.163763Z"
+    "datetime": "2024-07-25T17:46:19.072792Z"
   },
   "geometry": null,
   "links": [
-    {
-      "rel": "cite-as",
-      "href": "https://doi.org/http%3A//doi.org/10.1175/JHM-D-16-0155.1"
-    },
     {
       "rel": "root",
       "href": "../../../../catalog.json",
@@ -58,8 +54,6 @@
     180.0,
     85.0
   ],
-  "stac_extensions": [
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
-  ],
+  "stac_extensions": [],
   "collection": "GIEMS"
 }
