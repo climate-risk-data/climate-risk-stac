@@ -2,7 +2,7 @@
   "type": "drought",
   "id": "SPI",
   "stac_version": "1.0.0",
-  "description": "SPI",
+  "description": "This catalogue entry provides gridded data from CMIP6 projections included in the IPCC Interactive Atlas, a novel contribution from Working Group I (WGI) to the IPCC Sixth Assessment Report (AR6).",
   "links": [
     {
       "rel": "root",
@@ -17,7 +17,7 @@
       "title": "precipitation-related"
     }
   ],
-  "title": "SPI",
+  "title": "Spi",
   "extent": {
     "spatial": {
       "bbox": [

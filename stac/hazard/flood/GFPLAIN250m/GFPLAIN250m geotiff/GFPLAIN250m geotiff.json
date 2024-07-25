@@ -45,13 +45,13 @@
       "rel": "collection",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "GFPLAIN250m"
+      "title": "Gfplain250m"
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "GFPLAIN250m"
+      "title": "Gfplain250m"
     }
   ],
   "assets": {},

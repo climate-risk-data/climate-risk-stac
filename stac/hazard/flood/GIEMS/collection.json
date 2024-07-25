@@ -2,7 +2,7 @@
   "type": "fluvial-flood",
   "id": "GIEMS",
   "stac_version": "1.0.0",
-  "description": "GIEMS",
+  "description": "Provides maps of inundation percentage",
   "links": [
     {
       "rel": "root",
@@ -11,23 +11,13 @@
       "title": "Climate Risk Data"
     },
     {
-      "rel": "item",
-      "href": "./GIEMS 3 arc seconds/GIEMS 3 arc seconds.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "item",
-      "href": "./GIEMS 0.25 decimal degrees/GIEMS 0.25 decimal degrees.json",
-      "type": "application/json"
-    },
-    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "flood"
     }
   ],
-  "title": "GIEMS",
+  "title": "Giems",
   "extent": {
     "spatial": {
       "bbox": [

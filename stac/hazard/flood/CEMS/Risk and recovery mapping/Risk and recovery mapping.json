@@ -40,13 +40,13 @@
       "rel": "collection",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "CEMS"
+      "title": "Cems"
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "CEMS"
+      "title": "Cems"
     }
   ],
   "assets": {},

@@ -2,7 +2,7 @@
   "type": NaN,
   "id": "MYRIAD-HES",
   "stac_version": "1.0.0",
-  "description": "MYRIAD-HES",
+  "description": "",
   "links": [
     {
       "rel": "root",
@@ -17,7 +17,7 @@
       "title": "multi-hazard"
     }
   ],
-  "title": "MYRIAD-HES",
+  "title": "Myriad-hes",
   "extent": {
     "spatial": {
       "bbox": [

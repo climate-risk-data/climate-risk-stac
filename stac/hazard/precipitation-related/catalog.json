@@ -14,31 +14,31 @@
       "rel": "child",
       "href": "./DEDI/collection.json",
       "type": "application/json",
-      "title": "DEDI"
+      "title": "Dedi"
     },
     {
       "rel": "child",
       "href": "./GDO/collection.json",
       "type": "application/json",
-      "title": "GDO"
+      "title": "Gdo"
     },
     {
       "rel": "child",
       "href": "./SPI/collection.json",
       "type": "application/json",
-      "title": "SPI"
+      "title": "Spi"
     },
     {
       "rel": "child",
       "href": "./Global Drought Monitor/collection.json",
       "type": "application/json",
-      "title": "Global Drought Monitor"
+      "title": "Global drought monitor"
     },
     {
       "rel": "child",
       "href": "./Global SPEI database/collection.json",
       "type": "application/json",
-      "title": "Global SPEI database"
+      "title": "Global spei database"
     },
     {
       "rel": "parent",

@@ -2,7 +2,7 @@
   "type": NaN,
   "id": "CEMS",
   "stac_version": "1.0.0",
-  "description": "CEMS",
+  "description": "The Copernicus Emergency Management Service (CEMS) uses satellite imagery and other geospatial data to provide free of charge mapping service in cases of natural disasters, human-made emergency situations and humanitarian crises throughout the world. It covers the following hazards relevant for climate risk assessments: floods, severe storms, fires",
   "links": [
     {
       "rel": "root",
@@ -11,23 +11,13 @@
       "title": "Climate Risk Data"
     },
     {
-      "rel": "item",
-      "href": "./Rapid mapping per event/Rapid mapping per event.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "item",
-      "href": "./Risk and recovery mapping/Risk and recovery mapping.json",
-      "type": "application/json"
-    },
-    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "flood"
     }
   ],
-  "title": "CEMS",
+  "title": "Cems",
   "extent": {
     "spatial": {
       "bbox": [

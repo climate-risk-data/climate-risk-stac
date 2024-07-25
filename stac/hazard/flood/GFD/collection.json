@@ -2,7 +2,7 @@
   "type": NaN,
   "id": "GFD",
   "stac_version": "1.0.0",
-  "description": "GFD",
+  "description": "",
   "links": [
     {
       "rel": "root",
@@ -11,18 +11,13 @@
       "title": "Climate Risk Data"
     },
     {
-      "rel": "item",
-      "href": "./Global Flood Database/Global Flood Database.json",
-      "type": "application/json"
-    },
-    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "flood"
     }
   ],
-  "title": "GFD",
+  "title": "Gfd",
   "extent": {
     "spatial": {
       "bbox": [

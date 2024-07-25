@@ -14,7 +14,7 @@
       "rel": "child",
       "href": "./CEMS/collection.json",
       "type": "application/json",
-      "title": "CEMS"
+      "title": "Cems"
     },
     {
       "rel": "child",

@@ -2,7 +2,7 @@
   "type": "fluvial-flood",
   "id": "GSW",
   "stac_version": "1.0.0",
-  "description": "GSW",
+  "description": "",
   "links": [
     {
       "rel": "root",
@@ -17,7 +17,7 @@
       "title": "flood"
     }
   ],
-  "title": "GSW",
+  "title": "Gsw",
   "extent": {
     "spatial": {
       "bbox": [

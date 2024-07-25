@@ -2,7 +2,7 @@
   "type": "fluvial-flood",
   "id": "GloFAS-GFM",
   "stac_version": "1.0.0",
-  "description": "GloFAS-GFM",
+  "description": "A continuous monitoring of floods worldwide by immediately processing and analyzing all incoming Copernicus Sentinel-1 Synthetic Aperture Radar (SAR) satellite data",
   "links": [
     {
       "rel": "root",
@@ -17,7 +17,7 @@
       "title": "flood"
     }
   ],
-  "title": "GloFAS-GFM",
+  "title": "Glofas-gfm",
   "extent": {
     "spatial": {
       "bbox": [

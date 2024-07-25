@@ -2,7 +2,7 @@
   "type": "fluvial-flood",
   "id": "GloFAS",
   "stac_version": "1.0.0",
-  "description": "GloFAS",
+  "description": "GloFAS datasets provide daily simulations of river discharge, covering the globe with the exception of Antarctica",
   "links": [
     {
       "rel": "root",
@@ -17,7 +17,7 @@
       "title": "flood"
     }
   ],
-  "title": "GloFAS",
+  "title": "Glofas",
   "extent": {
     "spatial": {
       "bbox": [

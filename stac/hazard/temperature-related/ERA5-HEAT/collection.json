@@ -2,7 +2,7 @@
   "type": "heat-wave",
   "id": "ERA5-HEAT",
   "stac_version": "1.0.0",
-  "description": "ERA5-HEAT",
+  "description": "These data provide modelled hourly data for a set of indices representing human thermal stress and discomfort in outdoor conditions. ",
   "links": [
     {
       "rel": "root",
@@ -17,7 +17,7 @@
       "title": "temperature-related"
     }
   ],
-  "title": "ERA5-HEAT",
+  "title": "Era5-heat",
   "extent": {
     "spatial": {
       "bbox": [

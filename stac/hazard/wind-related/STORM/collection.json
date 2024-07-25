@@ -2,7 +2,7 @@
   "type": "tropical-cyclone",
   "id": "STORM",
   "stac_version": "1.0.0",
-  "description": "STORM",
+  "description": "Datasets generated with the synthetic resampling algorithm STORM",
   "links": [
     {
       "rel": "root",
@@ -17,7 +17,7 @@
       "title": "wind-related"
     }
   ],
-  "title": "STORM",
+  "title": "Storm",
   "extent": {
     "spatial": {
       "bbox": [

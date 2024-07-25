@@ -2,7 +2,7 @@
   "type": "cold-wave",
   "id": "Monthly statistics of daily minimum temperature",
   "stac_version": "1.0.0",
-  "description": "Monthly statistics of daily minimum temperature",
+  "description": "This catalogue entry provides gridded data from global (CMIP5 and CMIP6) projections included in the IPCC Interactive Atlas, a novel contribution from Working Group I (WGI) to the IPCC Sixth Assessment Report (AR6).",
   "links": [
     {
       "rel": "root",

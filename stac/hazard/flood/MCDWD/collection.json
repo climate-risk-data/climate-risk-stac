@@ -2,7 +2,7 @@
   "type": NaN,
   "id": "MCDWD",
   "stac_version": "1.0.0",
-  "description": "MCDWD",
+  "description": "The Flood Product is a daily, near-global, ~250 m resolution product showing flood and surface water detected from the twice-daily overpass of the MODIS optical sensors (onboard Terra and Aqua satellites). To minimize false-positives from cloud and terrain shadows, we employ a multi-observation compositing approach, and generate the product over three compositing periods (1-day, 2-day, and 3-day).",
   "links": [
     {
       "rel": "root",
@@ -17,7 +17,7 @@
       "title": "flood"
     }
   ],
-  "title": "MCDWD",
+  "title": "Mcdwd",
   "extent": {
     "spatial": {
       "bbox": [

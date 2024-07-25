@@ -2,7 +2,7 @@
   "type": "fluvial-flood",
   "id": "GRDC",
   "stac_version": "1.0.0",
-  "description": "GRDC",
+  "description": "",
   "links": [
     {
       "rel": "root",
@@ -17,7 +17,7 @@
       "title": "flood"
     }
   ],
-  "title": "GRDC",
+  "title": "Grdc",
   "extent": {
     "spatial": {
       "bbox": [

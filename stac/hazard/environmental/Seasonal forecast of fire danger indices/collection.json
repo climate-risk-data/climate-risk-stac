@@ -2,7 +2,7 @@
   "type": "wildfire",
   "id": "Seasonal forecast of fire danger indices",
   "stac_version": "1.0.0",
-  "description": "Seasonal forecast of fire danger indices",
+  "description": "Modelled daily fire danger time series, driven by seasonal weather forecasts (ECMWF SEAS5) and using fire danger indices from the U.S. Forest Service National Fire-Danger Rating System (NFDRS), the Canadian Forest Service Fire Weather Index Rating System (FWI), and the Australian McArthur (Mark 5) rating systems.",
   "links": [
     {
       "rel": "root",

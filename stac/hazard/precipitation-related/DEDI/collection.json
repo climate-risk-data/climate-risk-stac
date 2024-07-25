@@ -2,7 +2,7 @@
   "type": "drought",
   "id": "DEDI",
   "stac_version": "1.0.0",
-  "description": "DEDI",
+  "description": "",
   "links": [
     {
       "rel": "root",
@@ -17,7 +17,7 @@
       "title": "precipitation-related"
     }
   ],
-  "title": "DEDI",
+  "title": "Dedi",
   "extent": {
     "spatial": {
       "bbox": [
