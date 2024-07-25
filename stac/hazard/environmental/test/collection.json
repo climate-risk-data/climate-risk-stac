@@ -1,8 +1,8 @@
 {
   "type": "wildfire",
-  "id": "Seasonal forecast of fire danger indices",
+  "id": "test",
   "stac_version": "1.0.0",
-  "description": "Seasonal forecast of fire danger indices",
+  "description": "test",
   "links": [
     {
       "rel": "root",
@@ -17,7 +17,7 @@
       "title": "environmental"
     }
   ],
-  "title": "Seasonal forecast of fire danger indices",
+  "title": "test",
   "extent": {
     "spatial": {
       "bbox": [

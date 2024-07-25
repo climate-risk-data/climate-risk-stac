@@ -12,21 +12,51 @@
     },
     {
       "rel": "child",
-      "href": "./CEMS/collection.json",
+      "href": "./test/collection.json",
       "type": "application/json",
-      "title": "CEMS"
+      "title": "test"
     },
     {
       "rel": "child",
-      "href": "./Historical reconstruction of fire danger indices/collection.json",
+      "href": "./test/collection.json",
       "type": "application/json",
-      "title": "Historical reconstruction of fire danger indices"
+      "title": "test"
     },
     {
       "rel": "child",
-      "href": "./Seasonal forecast of fire danger indices/collection.json",
+      "href": "./test/collection.json",
       "type": "application/json",
-      "title": "Seasonal forecast of fire danger indices"
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
     },
     {
       "rel": "parent",

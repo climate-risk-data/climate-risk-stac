@@ -12,33 +12,159 @@
     },
     {
       "rel": "child",
-      "href": "./ERA5-HEAT/collection.json",
+      "href": "./test/collection.json",
       "type": "application/json",
-      "title": "ERA5-HEAT"
+      "title": "test"
     },
     {
       "rel": "child",
-      "href": "./GEHE/collection.json",
+      "href": "./test/collection.json",
       "type": "application/json",
-      "title": "GEHE"
+      "title": "test"
     },
     {
       "rel": "child",
-      "href": "./HIS/collection.json",
+      "href": "./test/collection.json",
       "type": "application/json",
-      "title": "HIS"
+      "title": "test"
     },
     {
       "rel": "child",
-      "href": "./UHE-Daily/collection.json",
+      "href": "./test/collection.json",
       "type": "application/json",
-      "title": "UHE-Daily"
+      "title": "test"
     },
     {
       "rel": "child",
-      "href": "./Monthly statistics of daily minimum temperature/collection.json",
+      "href": "./test/collection.json",
       "type": "application/json",
-      "title": "Monthly statistics of daily minimum temperature"
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
+    },
+    {
+      "rel": "child",
+      "href": "./test/collection.json",
+      "type": "application/json",
+      "title": "test"
     },
     {
       "rel": "parent",

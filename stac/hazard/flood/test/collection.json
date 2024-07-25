@@ -1,8 +1,8 @@
 {
-  "type": "wildfire",
-  "id": "Seasonal forecast of fire danger indices",
+  "type": "pluvial-flood",
+  "id": "test",
   "stac_version": "1.0.0",
-  "description": "Seasonal forecast of fire danger indices",
+  "description": "test",
   "links": [
     {
       "rel": "root",
@@ -14,26 +14,26 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "environmental"
+      "title": "flood"
     }
   ],
-  "title": "Seasonal forecast of fire danger indices",
+  "title": "test",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -179.95,
-          -89.95,
-          179.95,
-          89.95
+          -180.0,
+          -60.0,
+          180.0,
+          90.0
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "1981-01-01T00:00:00Z",
-          "2024-07-25T00:00:00Z"
+          "2015-01-01T00:00:00Z",
+          "2300-12-31T00:00:00Z"
         ]
       ]
     }

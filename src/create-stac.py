@@ -116,9 +116,9 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             #keywords = item['keywords'].split(',') if 'keywords' in item else [] ## check for proper formatting of keywords
             
             collection = pystac.Collection(
-                id=title_collection,
-                title=title_collection,
-                description=title_collection, #adjust here
+                id='test', #title_collection,
+                title='test',#title_collection,
+                description='test', #title_collection, #adjust here
                 extent=pystac.Extent(
                     spatial=pystac.SpatialExtent([bbox_list]),
                     temporal=pystac.TemporalExtent([[year_start, year_end]]),
