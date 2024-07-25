@@ -14,7 +14,7 @@
       "rel": "child",
       "href": "./hazard/catalog.json",
       "type": "application/json",
-      "title": "hazard"
+      "title": "Hazard"
     }
   ],
   "title": "Climate Risk Data"

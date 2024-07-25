@@ -14,10 +14,10 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "flood"
+      "title": "Flood"
     }
   ],
-  "title": "Mcdwd",
+  "title": "MCDWD",
   "extent": {
     "spatial": {
       "bbox": [

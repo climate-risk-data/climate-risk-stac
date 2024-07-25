@@ -11,13 +11,23 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./GFPLAIN250m ascii/GFPLAIN250m ascii.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./GFPLAIN250m geotiff/GFPLAIN250m geotiff.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "flood"
+      "title": "Flood"
     }
   ],
-  "title": "Gfplain250m",
+  "title": "GFPLAIN250m",
   "extent": {
     "spatial": {
       "bbox": [

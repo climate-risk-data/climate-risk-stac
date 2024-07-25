@@ -14,7 +14,7 @@
       "rel": "child",
       "href": "./CEMS/collection.json",
       "type": "application/json",
-      "title": "Cems"
+      "title": "CEMS"
     },
     {
       "rel": "child",
@@ -32,8 +32,8 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "hazard"
+      "title": "Hazard"
     }
   ],
-  "title": "environmental"
+  "title": "Environmental"
 }

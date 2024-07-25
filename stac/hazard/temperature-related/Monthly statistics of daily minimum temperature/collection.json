@@ -14,7 +14,7 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "temperature-related"
+      "title": "Temperature-related"
     }
   ],
   "title": "Monthly statistics of daily minimum temperature",

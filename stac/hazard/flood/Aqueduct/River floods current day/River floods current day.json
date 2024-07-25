@@ -11,8 +11,7 @@
     "coordinate_system": "4326",
     "reference_period": "historical",
     "temporal_resolution": "1980",
-    "temporal_interval": "irregular",
-    "scenarios": NaN,
+    "scenarios": "nan",
     "data_calculation_type": "modeled",
     "analysis_type": "probabilistic",
     "underlying_data": "EUWATCH, ISIMIP, HydroSHEDS",
@@ -20,14 +19,12 @@
     "provider_role": "licensor",
     "license": "CC-BY-4.0",
     "link_website": "https://www.wri.org/data/aqueduct-floods-hazard-maps",
-    "publication_link": "https://doi.org/10.5194/hess-17-1871-2013",
     "publication_type": "article",
-    "code_link": NaN,
-    "code_type": NaN,
-    "usage_notes": NaN,
-    "assets": NaN,
+    "code_link": "nan",
+    "code_type": "nan",
+    "usage_notes": "nan",
     "sci:doi": "https://doi.org/10.5194/hess-17-1871-2013",
-    "datetime": "1980-01-01T00:00:00Z"
+    "datetime": "2024-07-25T14:22:41.005327Z"
   },
   "geometry": null,
   "links": [

@@ -14,25 +14,25 @@
       "rel": "child",
       "href": "./ERA5-HEAT/collection.json",
       "type": "application/json",
-      "title": "Era5-heat"
+      "title": "ERA5-HEAT"
     },
     {
       "rel": "child",
       "href": "./GEHE/collection.json",
       "type": "application/json",
-      "title": "Gehe"
+      "title": "GEHE"
     },
     {
       "rel": "child",
       "href": "./HIS/collection.json",
       "type": "application/json",
-      "title": "His"
+      "title": "HIS"
     },
     {
       "rel": "child",
       "href": "./UHE-Daily/collection.json",
       "type": "application/json",
-      "title": "Uhe-daily"
+      "title": "UHE-Daily"
     },
     {
       "rel": "child",
@@ -44,8 +44,8 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "hazard"
+      "title": "Hazard"
     }
   ],
-  "title": "temperature-related"
+  "title": "Temperature-related"
 }

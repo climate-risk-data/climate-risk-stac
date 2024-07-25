@@ -14,10 +14,10 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "temperature-related"
+      "title": "Temperature-related"
     }
   ],
-  "title": "Uhe-daily",
+  "title": "UHE-Daily",
   "extent": {
     "spatial": {
       "bbox": [

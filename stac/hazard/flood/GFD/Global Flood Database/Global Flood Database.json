@@ -11,8 +11,7 @@
     "coordinate_system": "4326",
     "reference_period": "historical",
     "temporal_resolution": "2000-2018",
-    "temporal_interval": "irregular",
-    "scenarios": NaN,
+    "scenarios": "nan",
     "data_calculation_type": "inferred",
     "analysis_type": "empirical",
     "underlying_data": "MODIS satellite imagery",
@@ -20,14 +19,12 @@
     "provider_role": "licensor",
     "license": "CC-BY-4.0",
     "link_website": "https://global-flood-database.cloudtostreet.ai/#",
-    "publication_link": "https://doi.org/10.1038/s41586-021-03695-w",
     "publication_type": "article",
     "code_link": "https://github.com/cloudtostreet/MODIS_GlobalFloodDatabase",
     "code_type": "processing",
     "usage_notes": "Download per event possible. The data do not differentiate flood types. ",
-    "assets": NaN,
     "sci:doi": "https://doi.org/10.1038/s41586-021-03695-w",
-    "datetime": "2000-01-01T00:00:00Z"
+    "datetime": "2024-07-25T14:22:41.008757Z"
   },
   "geometry": null,
   "links": [
@@ -45,13 +42,13 @@
       "rel": "collection",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Gfd"
+      "title": "GFD"
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Gfd"
+      "title": "GFD"
     }
   ],
   "assets": {},

@@ -11,7 +11,6 @@
     "coordinate_system": "4326",
     "reference_period": "future",
     "temporal_resolution": "2030-2080",
-    "temporal_interval": "irregular",
     "scenarios": "RCPs",
     "data_calculation_type": "modeled",
     "analysis_type": "probabilistic",
@@ -20,14 +19,12 @@
     "provider_role": "licensor",
     "license": "CC-BY-4.0",
     "link_website": "https://www.wri.org/data/aqueduct-floods-hazard-maps",
-    "publication_link": "https://doi.org/10.5194/hess-17-1871-2013",
     "publication_type": "article",
-    "code_link": NaN,
-    "code_type": NaN,
+    "code_link": "nan",
+    "code_type": "nan",
     "usage_notes": "data available for 2030, 2050, 2080 and RCP4.5 and 8.5",
-    "assets": NaN,
     "sci:doi": "https://doi.org/10.5194/hess-17-1871-2013",
-    "datetime": "2030-01-01T00:00:00Z"
+    "datetime": "2024-07-25T14:22:41.005936Z"
   },
   "geometry": null,
   "links": [

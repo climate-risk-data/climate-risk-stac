@@ -20,67 +20,67 @@
       "rel": "child",
       "href": "./CEMS/collection.json",
       "type": "application/json",
-      "title": "Cems"
+      "title": "CEMS"
     },
     {
       "rel": "child",
       "href": "./GFD/collection.json",
       "type": "application/json",
-      "title": "Gfd"
+      "title": "GFD"
     },
     {
       "rel": "child",
       "href": "./GFPLAIN250m/collection.json",
       "type": "application/json",
-      "title": "Gfplain250m"
+      "title": "GFPLAIN250m"
     },
     {
       "rel": "child",
       "href": "./GIEMS/collection.json",
       "type": "application/json",
-      "title": "Giems"
+      "title": "GIEMS"
     },
     {
       "rel": "child",
       "href": "./GloFAS/collection.json",
       "type": "application/json",
-      "title": "Glofas"
+      "title": "GloFAS"
     },
     {
       "rel": "child",
       "href": "./GloFAS-GFM/collection.json",
       "type": "application/json",
-      "title": "Glofas-gfm"
+      "title": "GloFAS-GFM"
     },
     {
       "rel": "child",
       "href": "./GRDC/collection.json",
       "type": "application/json",
-      "title": "Grdc"
+      "title": "GRDC"
     },
     {
       "rel": "child",
       "href": "./GSW/collection.json",
       "type": "application/json",
-      "title": "Gsw"
+      "title": "GSW"
     },
     {
       "rel": "child",
       "href": "./MCDWD/collection.json",
       "type": "application/json",
-      "title": "Mcdwd"
+      "title": "MCDWD"
     },
     {
       "rel": "child",
       "href": "./Deltares Coastal Flood Maps/collection.json",
       "type": "application/json",
-      "title": "Deltares coastal flood maps"
+      "title": "Deltares Coastal Flood Maps"
     },
     {
       "rel": "child",
       "href": "./JRC flood hazard maps/collection.json",
       "type": "application/json",
-      "title": "Jrc flood hazard maps"
+      "title": "JRC flood hazard maps"
     },
     {
       "rel": "child",
@@ -98,8 +98,8 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "hazard"
+      "title": "Hazard"
     }
   ],
-  "title": "flood"
+  "title": "Flood"
 }

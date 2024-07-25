@@ -11,8 +11,7 @@
     "coordinate_system": "4326",
     "reference_period": "historical",
     "temporal_resolution": "2017-",
-    "temporal_interval": "irregular",
-    "scenarios": NaN,
+    "scenarios": "nan",
     "data_calculation_type": "inferred",
     "analysis_type": "empirical",
     "underlying_data": "satellite imagery and local data",
@@ -20,14 +19,12 @@
     "provider_role": "producer",
     "license": "COPERNICUS",
     "link_website": "https://emergency.copernicus.eu/mapping/ems/emergency-management-service-mapping",
-    "publication_link": "https://emergency.copernicus.eu/mapping/sites/default/files/files/CopernicusEMS_RapidMapping_ProductUserManual_v1.pdf",
     "publication_type": "documentation",
-    "code_link": NaN,
-    "code_type": NaN,
+    "code_link": "nan",
+    "code_type": "nan",
     "usage_notes": "Download per event/case study possible",
-    "assets": "https://emergency.copernicus.eu/mapping/list-of-activations-rapid",
     "sci:doi": "https://emergency.copernicus.eu/mapping/sites/default/files/files/CopernicusEMS_RapidMapping_ProductUserManual_v1.pdf",
-    "datetime": "2017-01-01T00:00:00Z"
+    "datetime": "2024-07-25T14:22:41.007652Z"
   },
   "geometry": null,
   "links": [
@@ -45,13 +42,13 @@
       "rel": "collection",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Cems"
+      "title": "CEMS"
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Cems"
+      "title": "CEMS"
     }
   ],
   "assets": {},

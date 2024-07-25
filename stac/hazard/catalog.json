@@ -14,37 +14,37 @@
       "rel": "child",
       "href": "./flood/catalog.json",
       "type": "application/json",
-      "title": "flood"
+      "title": "Flood"
     },
     {
       "rel": "child",
       "href": "./wind-related/catalog.json",
       "type": "application/json",
-      "title": "wind-related"
+      "title": "Wind-related"
     },
     {
       "rel": "child",
       "href": "./environmental/catalog.json",
       "type": "application/json",
-      "title": "environmental"
+      "title": "Environmental"
     },
     {
       "rel": "child",
       "href": "./precipitation-related/catalog.json",
       "type": "application/json",
-      "title": "precipitation-related"
+      "title": "Precipitation-related"
     },
     {
       "rel": "child",
       "href": "./temperature-related/catalog.json",
       "type": "application/json",
-      "title": "temperature-related"
+      "title": "Temperature-related"
     },
     {
       "rel": "child",
       "href": "./multi-hazard/catalog.json",
       "type": "application/json",
-      "title": "multi-hazard"
+      "title": "Multi-hazard"
     },
     {
       "rel": "parent",
@@ -53,5 +53,5 @@
       "title": "Climate Risk Data"
     }
   ],
-  "title": "hazard"
+  "title": "Hazard"
 }

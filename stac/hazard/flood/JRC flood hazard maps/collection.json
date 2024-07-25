@@ -14,10 +14,10 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "flood"
+      "title": "Flood"
     }
   ],
-  "title": "Jrc flood hazard maps",
+  "title": "JRC flood hazard maps",
   "extent": {
     "spatial": {
       "bbox": [

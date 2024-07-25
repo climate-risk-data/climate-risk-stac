@@ -6,13 +6,12 @@
     "title": "GIEMS 3 arc seconds",
     "description": "GIEMS at 3 arc seconds spatial resolution",
     "data_type": "raster",
-    "data_format": NaN,
+    "data_format": "nan",
     "spatial_scale": "(near-)global",
     "coordinate_system": "4326",
     "reference_period": "historical",
     "temporal_resolution": "1993-2007",
-    "temporal_interval": "monthly",
-    "scenarios": NaN,
+    "scenarios": "nan",
     "data_calculation_type": "inferred",
     "analysis_type": "empirical",
     "underlying_data": "Multiple passive and active satellite instruments, e.g. AVHRR and SSM/I on-board ERS. Layers for downscaling: HydroSHEDS, GLC2000, GLWD.",
@@ -20,14 +19,12 @@
     "provider_role": "producer",
     "license": "CC-BY-NC-SA-4.0",
     "link_website": "https://www.estellus.fr/?static13/giems-d15",
-    "publication_link": "http://doi.org/10.1175/JHM-D-16-0155.1",
     "publication_type": "article",
-    "code_link": NaN,
-    "code_type": NaN,
+    "code_link": "nan",
+    "code_type": "nan",
     "usage_notes": "The datasets are available from author upon request, see webpage.",
-    "assets": NaN,
     "sci:doi": "http://doi.org/10.1175/JHM-D-16-0155.1",
-    "datetime": "1993-01-01T00:00:00Z"
+    "datetime": "2024-07-25T14:22:41.008757Z"
   },
   "geometry": null,
   "links": [
@@ -45,13 +42,13 @@
       "rel": "collection",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Giems"
+      "title": "GIEMS"
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Giems"
+      "title": "GIEMS"
     }
   ],
   "assets": {},
