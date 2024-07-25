@@ -12,69 +12,33 @@
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./DEDI/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "DEDI"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./GDO/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "GDO"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./SPI/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "SPI"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./Global Drought Monitor/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "Global Drought Monitor"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./Global SPEI database/collection.json",
       "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
+      "title": "Global SPEI database"
     },
     {
       "rel": "parent",

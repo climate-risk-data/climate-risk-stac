@@ -12,159 +12,33 @@
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./ERA5-HEAT/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "ERA5-HEAT"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./GEHE/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "GEHE"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./HIS/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "HIS"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./UHE-Daily/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "UHE-Daily"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./Monthly statistics of daily minimum temperature/collection.json",
       "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
+      "title": "Monthly statistics of daily minimum temperature"
     },
     {
       "rel": "parent",

@@ -12,9 +12,9 @@
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./MYRIAD-HES/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "MYRIAD-HES"
     },
     {
       "rel": "parent",

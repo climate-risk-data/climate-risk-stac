@@ -12,225 +12,87 @@
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./Aqueduct/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "Aqueduct"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./CEMS/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "CEMS"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./GFD/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "GFD"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./GFPLAIN250m/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "GFPLAIN250m"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./GIEMS/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "GIEMS"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./GloFAS/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "GloFAS"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./GloFAS-GFM/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "GloFAS-GFM"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./GRDC/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "GRDC"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./GSW/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "GSW"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./MCDWD/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "MCDWD"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./Deltares Coastal Flood Maps/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "Deltares Coastal Flood Maps"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./JRC flood hazard maps/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "JRC flood hazard maps"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./Monthly maximum of accumulated precipitation/collection.json",
       "type": "application/json",
-      "title": "test"
+      "title": "Monthly maximum of accumulated precipitation"
     },
     {
       "rel": "child",
-      "href": "./test/collection.json",
+      "href": "./Wet day precipitation indices/collection.json",
       "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
-    },
-    {
-      "rel": "child",
-      "href": "./test/collection.json",
-      "type": "application/json",
-      "title": "test"
+      "title": "Wet day precipitation indices"
     },
     {
       "rel": "parent",
