@@ -131,7 +131,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                     temporal=pystac.TemporalExtent([[year_start, year_end]]), # needs to be updated based on all items in the collection
                 ),
                 license=item['license'],
-                keywords=['Subcategory:' + '' + str(item['subcategory']), item['risk_data_type']], #remove str() again once subcategory fixed
+                keywords=['Subcategory:' + '' + str(item['subcategory']), item['risk_data_type']], #remove str() again once subcategory fixed; change to only use risk data type for E+V
                 extra_fields={
                     'subcategory': str(item['subcategory']), #remove str() again once subcategory fixed
                     'risk data type': item['risk_data_type']
