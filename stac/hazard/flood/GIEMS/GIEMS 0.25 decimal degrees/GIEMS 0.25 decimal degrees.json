@@ -3,10 +3,10 @@
   "stac_version": "1.0.0",
   "id": "GIEMS 0.25 decimal degrees",
   "properties": {
-    "risk data type": "hazard",
-    "subcategory": "fluvial-flood",
     "title": "GIEMS 0.25 decimal degrees",
     "description": "GIEMS at 0.25 decimal degrees spatial resolution",
+    "risk data type": "hazard",
+    "subcategory": "fluvial-flood",
     "spatial scale": "(near-)global",
     "reference period": "historical",
     "temporal resolution": "1993-2007 (monthly)",
@@ -23,7 +23,7 @@
     "code link": "nan",
     "code type": "nan",
     "usage notes": "The datasets are available from author upon request, see webpage.",
-    "datetime": "2024-07-26T16:47:56.752270Z"
+    "datetime": "2024-07-26T16:53:18.522504Z"
   },
   "geometry": null,
   "links": [

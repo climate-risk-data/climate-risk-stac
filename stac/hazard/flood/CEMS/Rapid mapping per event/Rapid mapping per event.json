@@ -3,10 +3,10 @@
   "stac_version": "1.0.0",
   "id": "Rapid mapping per event",
   "properties": {
-    "risk data type": "hazard",
-    "subcategory": "nan",
     "title": "Rapid mapping per event",
     "description": "This service consists of the on-demand and fast provision (hours-days) of geospatial information in support of emergency management activities immediately following disaster. The service is based on the acquisition, processing and analysis, in rapid mode, of satellite imagery and other geospatial raster and vector data sources, and social media when relevant. A Rapid Mapping activation is defined by one event and a location. There can be more than one area of interest (AOI) in an activation but these need to be linked to the same event. AOIs represent the geographical areas to be analysed and mapped. There can be more than one product per AOI.",
+    "risk data type": "hazard",
+    "subcategory": "nan",
     "spatial scale": "(near-)global",
     "reference period": "historical",
     "temporal resolution": "2017- (irregular)",
@@ -23,7 +23,7 @@
     "code link": "nan",
     "code type": "nan",
     "usage notes": "Download per event/case study possible",
-    "datetime": "2024-07-26T16:47:56.739243Z"
+    "datetime": "2024-07-26T16:53:18.522504Z"
   },
   "geometry": null,
   "links": [

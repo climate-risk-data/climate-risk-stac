@@ -3,10 +3,10 @@
   "stac_version": "1.0.0",
   "id": "Risk and recovery mapping",
   "properties": {
-    "risk data type": "hazard",
-    "subcategory": "nan",
     "title": "Risk and recovery mapping",
     "description": "This service provides on-demand\u00a0geospatial information to support emergency management activities outside the immediate response phase. It covers the prevention, preparedness, disaster risk reduction, and recovery phases.",
+    "risk data type": "hazard",
+    "subcategory": "nan",
     "spatial scale": "(near-)global",
     "reference period": "historical",
     "temporal resolution": "2017- (irregular)",
@@ -23,7 +23,7 @@
     "code link": "nan",
     "code type": "nan",
     "usage notes": "Download per event/case study possible",
-    "datetime": "2024-07-26T16:47:56.739243Z"
+    "datetime": "2024-07-26T16:53:18.522504Z"
   },
   "geometry": null,
   "links": [

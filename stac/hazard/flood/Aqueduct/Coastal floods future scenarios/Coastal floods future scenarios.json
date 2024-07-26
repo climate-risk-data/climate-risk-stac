@@ -3,10 +3,10 @@
   "stac_version": "1.0.0",
   "id": "Coastal floods future scenarios",
   "properties": {
-    "risk data type": "hazard",
-    "subcategory": "coastal-flood",
     "title": "Coastal floods future scenarios",
     "description": "Coastal flood maps of flood extent and water depth for future scenarios",
+    "risk data type": "hazard",
+    "subcategory": "coastal-flood",
     "spatial scale": "(near-)global",
     "reference period": "future",
     "temporal resolution": "2030-2080 (irregular)",
@@ -23,7 +23,7 @@
     "code link": "nan",
     "code type": "nan",
     "usage notes": "data available for 2030, 2050, 2080 and RCP4.5 and 8.5",
-    "datetime": "2024-07-26T16:47:56.739243Z"
+    "datetime": "2024-07-26T16:53:18.520996Z"
   },
   "geometry": null,
   "links": [

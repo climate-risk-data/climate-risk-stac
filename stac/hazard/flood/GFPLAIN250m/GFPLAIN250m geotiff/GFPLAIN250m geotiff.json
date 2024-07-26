@@ -3,10 +3,10 @@
   "stac_version": "1.0.0",
   "id": "GFPLAIN250m geotiff",
   "properties": {
-    "risk data type": "hazard",
-    "subcategory": "fluvial-flood",
     "title": "GFPLAIN250m geotiff",
     "description": "The datasets include the floodplain and floodprone locations at the global level in geotiff format",
+    "risk data type": "hazard",
+    "subcategory": "fluvial-flood",
     "spatial scale": "(near-)global",
     "reference period": "historical",
     "temporal resolution": "2000 (nan)",
@@ -23,7 +23,7 @@
     "code link": "nan",
     "code type": "nan",
     "usage notes": "nan",
-    "datetime": "2024-07-26T16:47:56.752270Z"
+    "datetime": "2024-07-26T16:53:18.522504Z"
   },
   "geometry": null,
   "links": [

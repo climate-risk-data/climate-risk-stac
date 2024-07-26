@@ -3,10 +3,10 @@
   "stac_version": "1.0.0",
   "id": "Coastal floods current day",
   "properties": {
-    "risk data type": "hazard",
-    "subcategory": "coastal-flood",
     "title": "Coastal floods current day",
     "description": "Coastal flood maps of flood extent and water depth for current day",
+    "risk data type": "hazard",
+    "subcategory": "coastal-flood",
     "spatial scale": "(near-)global",
     "reference period": "historical",
     "temporal resolution": "1980 (irregular)",
@@ -23,7 +23,7 @@
     "code link": "nan",
     "code type": "nan",
     "usage notes": "nan",
-    "datetime": "2024-07-26T16:47:56.739243Z"
+    "datetime": "2024-07-26T16:53:18.520996Z"
   },
   "geometry": null,
   "links": [

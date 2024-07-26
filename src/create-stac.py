@@ -167,10 +167,10 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             #start_datetime = year_start,
             #end_datetime = year_end,
             properties={
-                'risk data type': item['risk_data_type'],
-                'subcategory': str(item['subcategory']),
                 'title': item['title_item'],
                 'description': item['description_item'],
+                'risk data type': item['risk_data_type'],
+                'subcategory': str(item['subcategory']),
                 'spatial scale': item['spatial_scale'],
                 'reference period': item['reference_period'],
                 'temporal resolution': str(item['temporal_resolution']) +' ('+ str(item['temporal_interval']) + ')',
