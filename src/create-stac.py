@@ -199,5 +199,5 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
     catalog_main.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
 
 # Create catalogs from both hazard and exposure-vulnerability CSVs
-create_catalog_from_csv(hazard, catalog_main, dir)
-#create_catalog_from_csv(expvul, catalog_main, dir)
+#create_catalog_from_csv(hazard, catalog_main, dir)
+create_catalog_from_csv(expvul, catalog_main, dir)

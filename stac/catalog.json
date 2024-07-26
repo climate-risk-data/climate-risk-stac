@@ -12,9 +12,9 @@
     },
     {
       "rel": "child",
-      "href": "./hazard/catalog.json",
+      "href": "./exposure-vulnerability/catalog.json",
       "type": "application/json",
-      "title": "Hazard"
+      "title": "Exposure-vulnerability"
     }
   ],
   "title": "Climate Risk Data"
