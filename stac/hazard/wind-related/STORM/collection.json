@@ -1,0 +1,42 @@
+{
+  "type": "tropical-cyclone",
+  "id": "STORM",
+  "stac_version": "1.0.0",
+  "description": "Datasets generated with the synthetic resampling algorithm STORM",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Wind-related"
+    }
+  ],
+  "title": "STORM",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          60.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1980-01-01T00:00:00Z",
+          "2017-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC0-1.0"
+}

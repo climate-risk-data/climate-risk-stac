@@ -11,16 +11,6 @@
       "title": "Climate Risk Data"
     },
     {
-      "rel": "item",
-      "href": "./GIEMS 3 arc seconds/GIEMS 3 arc seconds.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "item",
-      "href": "./GIEMS 0.25 decimal degrees/GIEMS 0.25 decimal degrees.json",
-      "type": "application/json"
-    },
-    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -48,5 +38,5 @@
       ]
     }
   },
-  "license": "proprietary"
+  "license": "CC-BY-NC-SA-4.0"
 }

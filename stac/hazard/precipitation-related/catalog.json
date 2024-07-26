@@ -1,0 +1,51 @@
+{
+  "type": "Catalog",
+  "id": "precipitation-related",
+  "stac_version": "1.0.0",
+  "description": "precipitation-related",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "child",
+      "href": "./DEDI/collection.json",
+      "type": "application/json",
+      "title": "DEDI"
+    },
+    {
+      "rel": "child",
+      "href": "./GDO/collection.json",
+      "type": "application/json",
+      "title": "GDO"
+    },
+    {
+      "rel": "child",
+      "href": "./SPI/collection.json",
+      "type": "application/json",
+      "title": "SPI"
+    },
+    {
+      "rel": "child",
+      "href": "./Global Drought Monitor/collection.json",
+      "type": "application/json",
+      "title": "Global Drought Monitor"
+    },
+    {
+      "rel": "child",
+      "href": "./Global SPEI database/collection.json",
+      "type": "application/json",
+      "title": "Global SPEI database"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Hazard"
+    }
+  ],
+  "title": "Precipitation-related"
+}

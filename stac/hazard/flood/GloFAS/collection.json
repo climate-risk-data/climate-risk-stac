@@ -1,0 +1,42 @@
+{
+  "type": "fluvial-flood",
+  "id": "GloFAS",
+  "stac_version": "1.0.0",
+  "description": "GloFAS datasets provide daily simulations of river discharge, covering the globe with the exception of Antarctica",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Flood"
+    }
+  ],
+  "title": "GloFAS",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          "2024-07-26T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CEMS-FLOODS"
+}

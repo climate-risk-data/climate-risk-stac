@@ -11,11 +11,6 @@
       "title": "Climate Risk Data"
     },
     {
-      "rel": "item",
-      "href": "./Global Flood Database/Global Flood Database.json",
-      "type": "application/json"
-    },
-    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -43,5 +38,5 @@
       ]
     }
   },
-  "license": "proprietary"
+  "license": "CC-BY-4.0"
 }
