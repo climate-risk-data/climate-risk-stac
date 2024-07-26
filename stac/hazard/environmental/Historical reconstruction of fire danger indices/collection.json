@@ -38,5 +38,12 @@
       ]
     }
   },
-  "license": "COPERNICUS"
+  "license": "COPERNICUS",
+  "providers": [
+    {
+      "name": "ECMWF",
+      "roles": "producer",
+      "url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.0e89c522?tab=overview"
+    }
+  ]
 }

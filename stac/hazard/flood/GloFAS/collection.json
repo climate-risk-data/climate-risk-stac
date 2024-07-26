@@ -38,5 +38,12 @@
       ]
     }
   },
-  "license": "CEMS-FLOODS"
+  "license": "CEMS-FLOODS",
+  "providers": [
+    {
+      "name": "CEMS",
+      "roles": "producer",
+      "url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/cems-glofas-seasonal-reforecast?tab=overview"
+    }
+  ]
 }

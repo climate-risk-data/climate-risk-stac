@@ -122,6 +122,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
 
             #keywords = item['keywords'].split(',') if 'keywords' in item else [] ## check for proper formatting of keywords
             
+            # create basic collection
             collection = pystac.Collection(
                 id=title_collection,
                 title=title_collection,
@@ -134,11 +135,22 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 extra_fields={
                     'type': item['subcategory'],
                     #'keywords': keywords
-                },
+                }
             )
+
+            # Create and add a Provider
+            provider = pystac.Provider(
+                 name=item['provider'],
+                 roles=item['provider_role'],
+                 url=item['link_website']
+                )
+            collection.providers = [provider]
+            
             catalog2.add_child(collection)
+
         else:
             collection = catalog2.get_child(title_collection)
+        
         
         ## ITEMS ##
         
@@ -190,6 +202,10 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         # # if not pd.isna(item['publication_link']):
         # #     sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
         # #     sci_ext.doi = item['publication_link'] # adjust condition here for link that are not dois
+
+        # code to add a web link (for the publication as well as the website link)
+        #item.add_link(pystac.Link(rel="related", target="https://www.openai.com", title="OpenAI"))
+
         
         # # Add item to collection
         # collection.add_item(item_stac)
@@ -199,5 +215,5 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
     catalog_main.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
 
 # Create catalogs from both hazard and exposure-vulnerability CSVs
-#create_catalog_from_csv(hazard, catalog_main, dir)
+create_catalog_from_csv(hazard, catalog_main, dir)
 create_catalog_from_csv(expvul, catalog_main, dir)

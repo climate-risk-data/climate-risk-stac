@@ -38,5 +38,12 @@
       ]
     }
   },
-  "license": "CC-BY-4.0"
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "name": "University for Foreigners of Perugia",
+      "roles": "licensor",
+      "url": "https://figshare.com/articles/dataset/GFPLAIN250m/6665165/1"
+    }
+  ]
 }

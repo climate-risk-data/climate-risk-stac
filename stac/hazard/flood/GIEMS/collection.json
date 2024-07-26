@@ -38,5 +38,12 @@
       ]
     }
   },
-  "license": "CC-BY-NC-SA-4.0"
+  "license": "CC-BY-NC-SA-4.0",
+  "providers": [
+    {
+      "name": "Estellus",
+      "roles": "producer",
+      "url": "https://www.estellus.fr/?static13/giems-d15"
+    }
+  ]
 }

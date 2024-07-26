@@ -38,5 +38,12 @@
       ]
     }
   },
-  "license": "ODbL-1.0"
+  "license": "ODbL-1.0",
+  "providers": [
+    {
+      "name": "Spanish National Research Council (CSIC)",
+      "roles": "licensor",
+      "url": "https://spei.csic.es/spei_database"
+    }
+  ]
 }

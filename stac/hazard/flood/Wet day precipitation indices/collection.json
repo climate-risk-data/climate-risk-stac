@@ -38,5 +38,12 @@
       ]
     }
   },
-  "license": "CC-BY-4.0"
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "name": "Copernicus Climate Data Store",
+      "roles": "host",
+      "url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-extreme-indices-cmip6"
+    }
+  ]
 }

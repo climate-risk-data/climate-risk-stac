@@ -38,5 +38,12 @@
       ]
     }
   },
-  "license": "CC-BY-4.0"
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "name": "Zenodo",
+      "roles": "host",
+      "url": "10.5281/ZENODO.8269680"
+    }
+  ]
 }

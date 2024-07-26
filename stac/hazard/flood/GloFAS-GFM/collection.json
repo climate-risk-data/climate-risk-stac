@@ -38,5 +38,12 @@
       ]
     }
   },
-  "license": "CC-BY-4.0"
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "name": "JRC",
+      "roles": "licensor",
+      "url": "https://www.globalfloods.eu/technical-information/glofas-gfm/"
+    }
+  ]
 }

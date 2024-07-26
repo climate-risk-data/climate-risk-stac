@@ -38,5 +38,12 @@
       ]
     }
   },
-  "license": "CC-BY-4.0"
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "name": "NASA",
+      "roles": "producer",
+      "url": "https://search.earthdata.nasa.gov/search?portal=idn&p=C2018623526-LANCEMODIS&pg%5B0%5D%5Bv%5D=f&pg%5B0%5D%5Bgsk%5D=-start_date&q=MCDWD"
+    }
+  ]
 }

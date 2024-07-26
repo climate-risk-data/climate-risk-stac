@@ -38,5 +38,12 @@
       ]
     }
   },
-  "license": "CC-BY-4.0"
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "name": "Global Drought Observatory",
+      "roles": "host",
+      "url": "https://data.jrc.ec.europa.eu/collection/id-00321"
+    }
+  ]
 }

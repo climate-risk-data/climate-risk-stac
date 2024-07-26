@@ -38,5 +38,12 @@
       ]
     }
   },
-  "license": "CDLA-Permissive-1.0"
+  "license": "CDLA-Permissive-1.0",
+  "providers": [
+    {
+      "name": "Deltares",
+      "roles": "producer",
+      "url": "https://planetarycomputer.microsoft.com/dataset/deltares-floods"
+    }
+  ]
 }

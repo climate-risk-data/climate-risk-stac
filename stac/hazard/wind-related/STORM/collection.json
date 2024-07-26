@@ -38,5 +38,12 @@
       ]
     }
   },
-  "license": "CC0-1.0"
+  "license": "CC0-1.0",
+  "providers": [
+    {
+      "name": "TU Delft",
+      "roles": "host",
+      "url": "https://data.4tu.nl/search"
+    }
+  ]
 }

@@ -38,5 +38,12 @@
       ]
     }
   },
-  "license": "CC-BY-4.0"
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "name": "NASA Socioeconomic Data and Applications Center (SEDAC)",
+      "roles": "licensor",
+      "url": "10.7927/hff0-k565"
+    }
+  ]
 }

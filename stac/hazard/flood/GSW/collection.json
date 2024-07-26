@@ -38,5 +38,12 @@
       ]
     }
   },
-  "license": "CC-BY-4.0"
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "name": "EC JRC, Google",
+      "roles": "licensor",
+      "url": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GSWE/"
+    }
+  ]
 }

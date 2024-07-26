@@ -38,5 +38,12 @@
       ]
     }
   },
-  "license": "CC-BY-4.0"
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "name": "ECMWF",
+      "roles": "producer",
+      "url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/derived-utci-historical?tab=overview"
+    }
+  ]
 }

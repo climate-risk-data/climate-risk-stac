@@ -38,5 +38,12 @@
       ]
     }
   },
-  "license": "CC-BY-4.0"
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "name": "World Meteorological Organization WMO",
+      "roles": "licensor",
+      "url": "https://portal.grdc.bafg.de/applications/public.html?publicuser=PublicUser#dataDownload/Stations"
+    }
+  ]
 }

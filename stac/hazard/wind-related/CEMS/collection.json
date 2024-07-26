@@ -38,5 +38,12 @@
       ]
     }
   },
-  "license": "COPERNICUS"
+  "license": "COPERNICUS",
+  "providers": [
+    {
+      "name": "CEMS",
+      "roles": "producer",
+      "url": "https://emergency.copernicus.eu/mapping/ems/emergency-management-service-mapping"
+    }
+  ]
 }
