@@ -1,5 +1,5 @@
 {
-  "type": "drought",
+  "type": "Collection",
   "id": "GDO",
   "stac_version": "1.0.0",
   "description": "More than 4500 drought events classified using a few indicators as the SPI and the SPEI at different temporal scales. The database of drought events has specific entries for each macro-region and country.",
@@ -17,8 +17,12 @@
       "title": "Precipitation-related"
     }
   ],
+  "subtype": "drought",
   "risk data type": "hazard",
-  "keywords": "(near-)global",
+  "keywords": [
+    "drought",
+    "hazard"
+  ],
   "title": "GDO",
   "extent": {
     "spatial": {

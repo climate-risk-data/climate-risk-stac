@@ -1,5 +1,5 @@
 {
-  "type": "tropical-cyclone",
+  "type": "Collection",
   "id": "STORM",
   "stac_version": "1.0.0",
   "description": "Datasets generated with the synthetic resampling algorithm STORM",
@@ -17,8 +17,12 @@
       "title": "Wind-related"
     }
   ],
+  "subtype": "tropical-cyclone",
   "risk data type": "hazard",
-  "keywords": "(near-)global",
+  "keywords": [
+    "tropical-cyclone",
+    "hazard"
+  ],
   "title": "STORM",
   "extent": {
     "spatial": {

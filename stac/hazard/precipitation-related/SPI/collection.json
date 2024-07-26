@@ -1,5 +1,5 @@
 {
-  "type": "drought",
+  "type": "Collection",
   "id": "SPI",
   "stac_version": "1.0.0",
   "description": "This catalogue entry provides gridded data from CMIP6 projections included in the IPCC Interactive Atlas, a novel contribution from Working Group I (WGI) to the IPCC Sixth Assessment Report (AR6).",
@@ -17,8 +17,12 @@
       "title": "Precipitation-related"
     }
   ],
+  "subtype": "drought",
   "risk data type": "hazard",
-  "keywords": "(near-)global",
+  "keywords": [
+    "drought",
+    "hazard"
+  ],
   "title": "SPI",
   "extent": {
     "spatial": {

@@ -1,5 +1,5 @@
 {
-  "type": "fluvial-flood",
+  "type": "Collection",
   "id": "GSW",
   "stac_version": "1.0.0",
   "description": "nan",
@@ -17,8 +17,12 @@
       "title": "Flood"
     }
   ],
+  "subtype": "fluvial-flood",
   "risk data type": "hazard",
-  "keywords": "(near-)global",
+  "keywords": [
+    "fluvial-flood",
+    "hazard"
+  ],
   "title": "GSW",
   "extent": {
     "spatial": {

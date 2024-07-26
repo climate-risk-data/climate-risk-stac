@@ -1,5 +1,5 @@
 {
-  "type": "heat-wave",
+  "type": "Collection",
   "id": "UHE-Daily",
   "stac_version": "1.0.0",
   "description": "The Global High Resolution Daily Extreme Urban Heat Exposure (UHE-Daily), 1983-2016 data set contains a high-resolution, longitudinal global record of geolocated urban extreme heat events and urban population exposure estimates for more than 10,000 urban settlements worldwide for 1983-2016.",
@@ -17,8 +17,12 @@
       "title": "Temperature-related"
     }
   ],
+  "subtype": "heat-wave",
   "risk data type": "hazard",
-  "keywords": "(near-)global",
+  "keywords": [
+    "heat-wave",
+    "hazard"
+  ],
   "title": "UHE-Daily",
   "extent": {
     "spatial": {

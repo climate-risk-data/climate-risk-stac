@@ -1,5 +1,5 @@
 {
-  "type": "drought",
+  "type": "Collection",
   "id": "DEDI",
   "stac_version": "1.0.0",
   "description": "nan",
@@ -17,8 +17,12 @@
       "title": "Precipitation-related"
     }
   ],
+  "subtype": "drought",
   "risk data type": "hazard",
-  "keywords": "(near-)global",
+  "keywords": [
+    "drought",
+    "hazard"
+  ],
   "title": "DEDI",
   "extent": {
     "spatial": {

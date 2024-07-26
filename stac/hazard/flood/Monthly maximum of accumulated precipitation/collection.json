@@ -1,5 +1,5 @@
 {
-  "type": "pluvial-flood",
+  "type": "Collection",
   "id": "Monthly maximum of accumulated precipitation",
   "stac_version": "1.0.0",
   "description": "This catalogue entry provides gridded data from CMIP5 and CMIP6 projections included in the IPCC Interactive Atlas, a novel contribution from Working Group I (WGI) to the IPCC Sixth Assessment Report (AR6).",
@@ -17,8 +17,12 @@
       "title": "Flood"
     }
   ],
+  "subtype": "pluvial-flood",
   "risk data type": "hazard",
-  "keywords": "(near-)global",
+  "keywords": [
+    "pluvial-flood",
+    "hazard"
+  ],
   "title": "Monthly maximum of accumulated precipitation",
   "extent": {
     "spatial": {

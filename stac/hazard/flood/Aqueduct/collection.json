@@ -1,5 +1,5 @@
 {
-  "type": "coastal-flood",
+  "type": "Collection",
   "id": "Aqueduct",
   "stac_version": "1.0.0",
   "description": "The Aqueduct Floods Hazard Maps for coastal floods were produced using the GLOFRIS model, based on the Global Tide and Surge Reanalysis (GTSR) dataset and sea-level rise projections from the RISES-AM project. The resulting flood maps have a resolution of 30''x30''.",
@@ -17,8 +17,12 @@
       "title": "Flood"
     }
   ],
+  "subtype": "coastal-flood",
   "risk data type": "hazard",
-  "keywords": "(near-)global",
+  "keywords": [
+    "coastal-flood",
+    "hazard"
+  ],
   "title": "Aqueduct",
   "extent": {
     "spatial": {

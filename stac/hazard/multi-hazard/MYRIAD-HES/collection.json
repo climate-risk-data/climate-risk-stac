@@ -1,5 +1,5 @@
 {
-  "type": NaN,
+  "type": "Collection",
   "id": "MYRIAD-HES",
   "stac_version": "1.0.0",
   "description": "nan",
@@ -17,8 +17,12 @@
       "title": "Multi-hazard"
     }
   ],
+  "subtype": NaN,
   "risk data type": "hazard",
-  "keywords": "(near-)global",
+  "keywords": [
+    NaN,
+    "hazard"
+  ],
   "title": "MYRIAD-HES",
   "extent": {
     "spatial": {

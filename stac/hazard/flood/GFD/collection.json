@@ -1,5 +1,5 @@
 {
-  "type": NaN,
+  "type": "Collection",
   "id": "GFD",
   "stac_version": "1.0.0",
   "description": "nan",
@@ -17,8 +17,12 @@
       "title": "Flood"
     }
   ],
+  "subtype": NaN,
   "risk data type": "hazard",
-  "keywords": "(near-)global",
+  "keywords": [
+    NaN,
+    "hazard"
+  ],
   "title": "GFD",
   "extent": {
     "spatial": {

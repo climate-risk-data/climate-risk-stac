@@ -1,5 +1,5 @@
 {
-  "type": "fluvial-flood",
+  "type": "Collection",
   "id": "GFPLAIN250m",
   "stac_version": "1.0.0",
   "description": "The datasets aims at providing the floodplain delineation at the global level",
@@ -17,8 +17,12 @@
       "title": "Flood"
     }
   ],
+  "subtype": "fluvial-flood",
   "risk data type": "hazard",
-  "keywords": "(near-)global",
+  "keywords": [
+    "fluvial-flood",
+    "hazard"
+  ],
   "title": "GFPLAIN250m",
   "extent": {
     "spatial": {

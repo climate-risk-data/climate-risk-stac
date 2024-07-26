@@ -1,5 +1,5 @@
 {
-  "type": "heat-wave",
+  "type": "Collection",
   "id": "GEHE",
   "stac_version": "1.0.0",
   "description": "The Annual Global High-Resolution Extreme Heat Estimates (GEHE), 1983-2016 data set provides global 0.05 degrees (~5 km) gridded annual counts of the number of days where the maximum Wet Bulb Globe Temperature (WBGTmax) exceeded dangerous hot-humid heat thresholds for the period 1983 to 2016.",
@@ -17,8 +17,12 @@
       "title": "Temperature-related"
     }
   ],
+  "subtype": "heat-wave",
   "risk data type": "hazard",
-  "keywords": "(near-)global",
+  "keywords": [
+    "heat-wave",
+    "hazard"
+  ],
   "title": "GEHE",
   "extent": {
     "spatial": {

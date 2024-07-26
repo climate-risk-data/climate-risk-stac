@@ -1,5 +1,5 @@
 {
-  "type": "heat-wave",
+  "type": "Collection",
   "id": "HIS",
   "stac_version": "1.0.0",
   "description": "The indices are provided for historical and future climate projections (SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP5-8.5) included in the Coupled Model Intercomparison Project Phase 6 (CMIP6) and used in the 6th Assessment Report of the Intergovernmental Panel on Climate Change (IPCC).",
@@ -17,8 +17,12 @@
       "title": "Temperature-related"
     }
   ],
+  "subtype": "heat-wave",
   "risk data type": "hazard",
-  "keywords": "(near-)global",
+  "keywords": [
+    "heat-wave",
+    "hazard"
+  ],
   "title": "HIS",
   "extent": {
     "spatial": {

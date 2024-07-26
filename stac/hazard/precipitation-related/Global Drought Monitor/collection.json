@@ -1,5 +1,5 @@
 {
-  "type": "drought",
+  "type": "Collection",
   "id": "Global Drought Monitor",
   "stac_version": "1.0.0",
   "description": "The SPEI Global Drought Monitor offers near real-time information about drought conditions at the global scale, with a 1 degree spatial resolution and a monthly time resolution. SPEI time-scales between 1 and 48 months are provided.",
@@ -17,8 +17,12 @@
       "title": "Precipitation-related"
     }
   ],
+  "subtype": "drought",
   "risk data type": "hazard",
-  "keywords": "(near-)global",
+  "keywords": [
+    "drought",
+    "hazard"
+  ],
   "title": "Global Drought Monitor",
   "extent": {
     "spatial": {

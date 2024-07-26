@@ -1,5 +1,5 @@
 {
-  "type": "fluvial-flood",
+  "type": "Collection",
   "id": "GloFAS",
   "stac_version": "1.0.0",
   "description": "GloFAS datasets provide daily simulations of river discharge, covering the globe with the exception of Antarctica",
@@ -17,8 +17,12 @@
       "title": "Flood"
     }
   ],
+  "subtype": "fluvial-flood",
   "risk data type": "hazard",
-  "keywords": "(near-)global",
+  "keywords": [
+    "fluvial-flood",
+    "hazard"
+  ],
   "title": "GloFAS",
   "extent": {
     "spatial": {
