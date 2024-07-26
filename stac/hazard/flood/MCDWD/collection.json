@@ -17,7 +17,7 @@
       "title": "Flood"
     }
   ],
-  "subcategory": NaN,
+  "subcategory": "nan",
   "risk data type": "hazard",
   "title": "MCDWD",
   "extent": {
@@ -42,7 +42,7 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    NaN,
+    "Subcategory:nan",
     "hazard"
   ],
   "providers": [
