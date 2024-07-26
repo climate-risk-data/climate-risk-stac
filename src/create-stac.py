@@ -167,6 +167,8 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             #start_datetime = year_start,
             #end_datetime = year_end,
             properties={
+                'risk data type': item['risk_data_type'],
+                'subcategory': str(item['subcategory']),
                 'title': item['title_item'],
                 'description': item['description_item'],
                 'spatial scale': item['spatial_scale'],
@@ -186,16 +188,17 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 'code link': str(item['code_link']),
                 'code type': str(item['code_type']),
                 'usage notes': str(item['usage_notes']),
-            },
-            extra_fields={
-                    'subcategory': str(item['subcategory']), #remove str() again once subcategory fixed
-                    'risk data type': item['risk_data_type']
-                }
+            }
+            # extra_fields={ # are part of the json, but not shown in the browser
+            #         'subcategory': str(item['subcategory']), #remove str() again once subcategory fixed
+            #         'risk data type': item['risk_data_type']
+            #     }
         )
 
-        # add keywords
-        item_stac.keywords=[item['risk_data_type'], item['spatial_scale'], item['reference_period']]
-        
+        # add keywords --> not available for items
+
+        # add projection extension!
+
         # # Add scientific extension if DOI is present
         # # if item['publication_link'].startswith('10.'):
         # #     sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)

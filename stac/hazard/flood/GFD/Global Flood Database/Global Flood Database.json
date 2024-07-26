@@ -3,6 +3,8 @@
   "stac_version": "1.0.0",
   "id": "Global Flood Database",
   "properties": {
+    "risk data type": "hazard",
+    "subcategory": "nan",
     "title": "Global Flood Database",
     "description": "The Global Flood Database provides satellite-derived flood footprints and depths for 913 floods that occurred between 2000 and 2018.",
     "spatial scale": "(near-)global",
@@ -21,7 +23,7 @@
     "code link": "https://github.com/cloudtostreet/MODIS_GlobalFloodDatabase",
     "code type": "processing",
     "usage notes": "Download per event possible. The data do not differentiate flood types. ",
-    "datetime": "2024-07-26T16:29:52.423705Z"
+    "datetime": "2024-07-26T16:47:56.739243Z"
   },
   "geometry": null,
   "links": [
@@ -52,7 +54,5 @@
     90.0
   ],
   "stac_extensions": [],
-  "collection": "GFD",
-  "subcategory": "nan",
-  "risk data type": "hazard"
+  "collection": "GFD"
 }

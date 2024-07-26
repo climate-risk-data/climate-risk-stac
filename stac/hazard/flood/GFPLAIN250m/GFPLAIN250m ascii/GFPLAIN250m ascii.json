@@ -3,6 +3,8 @@
   "stac_version": "1.0.0",
   "id": "GFPLAIN250m ascii",
   "properties": {
+    "risk data type": "hazard",
+    "subcategory": "fluvial-flood",
     "title": "GFPLAIN250m ascii",
     "description": "The datasets include the floodplain and floodprone locations at the global level in ascii format",
     "spatial scale": "(near-)global",
@@ -21,7 +23,7 @@
     "code link": "nan",
     "code type": "nan",
     "usage notes": "nan",
-    "datetime": "2024-07-26T16:29:52.423705Z"
+    "datetime": "2024-07-26T16:47:56.739243Z"
   },
   "geometry": null,
   "links": [
@@ -52,7 +54,5 @@
     60.0
   ],
   "stac_extensions": [],
-  "collection": "GFPLAIN250m",
-  "subcategory": "fluvial-flood",
-  "risk data type": "hazard"
+  "collection": "GFPLAIN250m"
 }
