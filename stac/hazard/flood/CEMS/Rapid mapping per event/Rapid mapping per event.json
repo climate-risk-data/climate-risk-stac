@@ -5,26 +5,23 @@
   "properties": {
     "title": "Rapid mapping per event",
     "description": "This service consists of the on-demand and fast provision (hours-days) of geospatial information in support of emergency management activities immediately following disaster. The service is based on the acquisition, processing and analysis, in rapid mode, of satellite imagery and other geospatial raster and vector data sources, and social media when relevant. A Rapid Mapping activation is defined by one event and a location. There can be more than one area of interest (AOI) in an activation but these need to be linked to the same event. AOIs represent the geographical areas to be analysed and mapped. There can be more than one product per AOI.",
-    "data_type": "vector",
-    "data_format": "shapefile",
-    "spatial_scale": "(near-)global",
-    "coordinate_system": "4326",
-    "reference_period": "historical",
-    "temporal_interval": "irregular",
+    "spatial scale": "(near-)global",
+    "reference period": "historical",
+    "temporal resolution": "2017- (irregular)",
     "scenarios": "nan",
-    "data_calculation_type": "inferred",
-    "analysis_type": "empirical",
-    "underlying_data": "satellite imagery and local data",
-    "provider": "CEMS",
-    "provider_role": "producer",
-    "license": "COPERNICUS",
-    "link_website": "https://emergency.copernicus.eu/mapping/ems/emergency-management-service-mapping",
-    "publication_link": "https://emergency.copernicus.eu/mapping/sites/default/files/files/CopernicusEMS_RapidMapping_ProductUserManual_v1.pdf",
-    "publication_type": "documentation",
-    "code_link": "nan",
-    "code_type": "nan",
-    "usage_notes": "Download per event/case study possible",
-    "datetime": "2024-07-26T12:36:13.172747Z"
+    "data type": "vector",
+    "data format": "shapefile",
+    "coordinate system": "4326",
+    "spatial resolution": "event level nan",
+    "data calculation type": "inferred",
+    "analysis type": "empirical",
+    "underlying data": "satellite imagery and local data",
+    "publication link": "https://emergency.copernicus.eu/mapping/sites/default/files/files/CopernicusEMS_RapidMapping_ProductUserManual_v1.pdf",
+    "publication type": "documentation",
+    "code link": "nan",
+    "code type": "nan",
+    "usage notes": "Download per event/case study possible",
+    "datetime": "2024-07-26T16:29:52.413012Z"
   },
   "geometry": null,
   "links": [
@@ -55,5 +52,7 @@
     90.0
   ],
   "stac_extensions": [],
-  "collection": "CEMS"
+  "collection": "CEMS",
+  "subcategory": "nan",
+  "risk data type": "hazard"
 }

@@ -158,39 +158,43 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         #year_start, year_end = parse_year_range(str(temporal_resolution))
         #datetime_value = year_start if year_start else datetime.now()
         
-        #Create the item
-        # item_stac = pystac.Item(
-        #     id=item['title_item'],
-        #     geometry=None,  # Add geometry if available
-        #     bbox=bbox_list,
-        #     datetime=datetime.now(),
-        #     #start_datetime = year_start,
-        #     #end_datetime = year_end,
-        #     properties={
-        #         'title': item['title_item'],
-        #         'description': item['description_item'],
-        #         'data_type': item['data_type'],
-        #         'data_format': str(item['format']),
-        #         'spatial_scale': item['spatial_scale'],
-        #         'coordinate_system': str(item['coordinate_system']),
-        #         'reference_period': item['reference_period'],
-        #         #'temporal_resolution': item['temporal_resolution'], #change here
-        #         'temporal_interval': str(item['temporal_interval']),
-        #         'scenarios': str(item['scenarios']),
-        #         'data_calculation_type': item['data_calculation_type'],
-        #         'analysis_type': str(item['analysis_type']),
-        #         'underlying_data': str(item['underlying_data']),
-        #         'provider': item['provider'],
-        #         'provider_role': item['provider_role'],
-        #         'license': item['license'],
-        #         'link_website': item['link_website'],
-        #         'publication_link': str(item['publication_link']),
-        #         'publication_type': str(item['publication_type']),
-        #         'code_link': str(item['code_link']),
-        #         'code_type': str(item['code_type']),
-        #         'usage_notes': str(item['usage_notes']),
-        #     },
-        # )
+        # Create basic item
+        item_stac = pystac.Item(
+            id=item['title_item'],
+            geometry=None,  # Add geometry if available
+            bbox=bbox_list,
+            datetime=datetime.now(),
+            #start_datetime = year_start,
+            #end_datetime = year_end,
+            properties={
+                'title': item['title_item'],
+                'description': item['description_item'],
+                'spatial scale': item['spatial_scale'],
+                'reference period': item['reference_period'],
+                'temporal resolution': str(item['temporal_resolution']) +' ('+ str(item['temporal_interval']) + ')',
+                #'temporal interval': str(item['temporal_interval']),
+                'scenarios': str(item['scenarios']),
+                'data type': item['data_type'],
+                'data format': str(item['format']),
+                'coordinate system': str(item['coordinate_system']),
+                'spatial resolution': str(item['spatial_resolution']) +' '+ str(item['spatial_resolution_unit']),
+                'data calculation type': item['data_calculation_type'],
+                'analysis type': str(item['analysis_type']),
+                'underlying data': str(item['underlying_data']),
+                'publication link': str(item['publication_link']),
+                'publication type': str(item['publication_type']),
+                'code link': str(item['code_link']),
+                'code type': str(item['code_type']),
+                'usage notes': str(item['usage_notes']),
+            },
+            extra_fields={
+                    'subcategory': str(item['subcategory']), #remove str() again once subcategory fixed
+                    'risk data type': item['risk_data_type']
+                }
+        )
+
+        # add keywords
+        item_stac.keywords=[item['risk_data_type'], item['spatial_scale'], item['reference_period']]
         
         # # Add scientific extension if DOI is present
         # # if item['publication_link'].startswith('10.'):
@@ -204,11 +208,11 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         # #     sci_ext.doi = item['publication_link'] # adjust condition here for link that are not dois
 
         # code to add a web link (for the publication as well as the website link)
-        #item.add_link(pystac.Link(rel="related", target="https://www.openai.com", title="OpenAI"))
+        #item_stac.add_link(pystac.Link(rel="related", target="https://www.openai.com", title="OpenAI"))
 
         
-        # # Add item to collection
-        # collection.add_item(item_stac)
+        # Add item to collection
+        collection.add_item(item_stac)
 
     # Normalize hrefs and save the catalog
     catalog_main.normalize_hrefs(os.path.join(dir, "stac"))

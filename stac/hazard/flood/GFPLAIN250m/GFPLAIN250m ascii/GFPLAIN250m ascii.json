@@ -5,26 +5,23 @@
   "properties": {
     "title": "GFPLAIN250m ascii",
     "description": "The datasets include the floodplain and floodprone locations at the global level in ascii format",
-    "data_type": "raster",
-    "data_format": "ascii",
-    "spatial_scale": "(near-)global",
-    "coordinate_system": "4326",
-    "reference_period": "historical",
-    "temporal_interval": "nan",
+    "spatial scale": "(near-)global",
+    "reference period": "historical",
+    "temporal resolution": "2000 (nan)",
     "scenarios": "nan",
-    "data_calculation_type": "inferred",
-    "analysis_type": "deterministic",
-    "underlying_data": "Processed from the NASA SRTM Digital Elevation model ",
-    "provider": "University for Foreigners of Perugia",
-    "provider_role": "licensor",
-    "license": "CC-BY-4.0",
-    "link_website": "https://figshare.com/articles/dataset/GFPLAIN250m/6665165/1",
-    "publication_link": "10.1038/sdata.2018.309",
-    "publication_type": "article",
-    "code_link": "nan",
-    "code_type": "nan",
-    "usage_notes": "nan",
-    "datetime": "2024-07-26T12:36:13.172747Z"
+    "data type": "raster",
+    "data format": "ascii",
+    "coordinate system": "4326",
+    "spatial resolution": "250 meters",
+    "data calculation type": "inferred",
+    "analysis type": "deterministic",
+    "underlying data": "Processed from the NASA SRTM Digital Elevation model ",
+    "publication link": "10.1038/sdata.2018.309",
+    "publication type": "article",
+    "code link": "nan",
+    "code type": "nan",
+    "usage notes": "nan",
+    "datetime": "2024-07-26T16:29:52.423705Z"
   },
   "geometry": null,
   "links": [
@@ -55,5 +52,7 @@
     60.0
   ],
   "stac_extensions": [],
-  "collection": "GFPLAIN250m"
+  "collection": "GFPLAIN250m",
+  "subcategory": "fluvial-flood",
+  "risk data type": "hazard"
 }

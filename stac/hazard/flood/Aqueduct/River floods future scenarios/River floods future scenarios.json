@@ -5,26 +5,23 @@
   "properties": {
     "title": "River floods future scenarios",
     "description": "River flood maps of flood extent and water depth for future scenarios",
-    "data_type": "raster",
-    "data_format": "geotiff",
-    "spatial_scale": "(near-)global",
-    "coordinate_system": "4326",
-    "reference_period": "future",
-    "temporal_interval": "irregular",
+    "spatial scale": "(near-)global",
+    "reference period": "future",
+    "temporal resolution": "2030-2080 (irregular)",
     "scenarios": "RCPs",
-    "data_calculation_type": "modeled",
-    "analysis_type": "probabilistic",
-    "underlying_data": "EUWATCH, ISIMIP, HydroSHEDS",
-    "provider": "World Resources Institute",
-    "provider_role": "licensor",
-    "license": "CC-BY-4.0",
-    "link_website": "https://www.wri.org/data/aqueduct-floods-hazard-maps",
-    "publication_link": "10.5194/hess-17-1871-2013",
-    "publication_type": "article",
-    "code_link": "nan",
-    "code_type": "nan",
-    "usage_notes": "data available for 2030, 2050, 2080 and RCP4.5 and 8.5",
-    "datetime": "2024-07-26T12:36:13.172747Z"
+    "data type": "raster",
+    "data format": "geotiff",
+    "coordinate system": "4326",
+    "spatial resolution": "30 arc seconds",
+    "data calculation type": "modeled",
+    "analysis type": "probabilistic",
+    "underlying data": "EUWATCH, ISIMIP, HydroSHEDS",
+    "publication link": "10.5194/hess-17-1871-2013",
+    "publication type": "article",
+    "code link": "nan",
+    "code type": "nan",
+    "usage notes": "data available for 2030, 2050, 2080 and RCP4.5 and 8.5",
+    "datetime": "2024-07-26T16:29:52.413012Z"
   },
   "geometry": null,
   "links": [
@@ -55,5 +52,7 @@
     90.0
   ],
   "stac_extensions": [],
-  "collection": "Aqueduct"
+  "collection": "Aqueduct",
+  "subcategory": "fluvial-flood",
+  "risk data type": "hazard"
 }

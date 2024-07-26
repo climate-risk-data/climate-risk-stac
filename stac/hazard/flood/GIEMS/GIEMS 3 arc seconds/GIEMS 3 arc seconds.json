@@ -5,26 +5,23 @@
   "properties": {
     "title": "GIEMS 3 arc seconds",
     "description": "GIEMS at 3 arc seconds spatial resolution",
-    "data_type": "raster",
-    "data_format": "nan",
-    "spatial_scale": "(near-)global",
-    "coordinate_system": "4326",
-    "reference_period": "historical",
-    "temporal_interval": "monthly",
+    "spatial scale": "(near-)global",
+    "reference period": "historical",
+    "temporal resolution": "1993-2007 (monthly)",
     "scenarios": "nan",
-    "data_calculation_type": "inferred",
-    "analysis_type": "empirical",
-    "underlying_data": "Multiple passive and active satellite instruments, e.g. AVHRR and SSM/I on-board ERS. Layers for downscaling: HydroSHEDS, GLC2000, GLWD.",
-    "provider": "Estellus",
-    "provider_role": "producer",
-    "license": "CC-BY-NC-SA-4.0",
-    "link_website": "https://www.estellus.fr/?static13/giems-d15",
-    "publication_link": "10.1175/JHM-D-16-0155.1",
-    "publication_type": "article",
-    "code_link": "nan",
-    "code_type": "nan",
-    "usage_notes": "The datasets are available from author upon request, see webpage.",
-    "datetime": "2024-07-26T12:36:13.172747Z"
+    "data type": "raster",
+    "data format": "nan",
+    "coordinate system": "4326",
+    "spatial resolution": "3 arc seconds",
+    "data calculation type": "inferred",
+    "analysis type": "empirical",
+    "underlying data": "Multiple passive and active satellite instruments, e.g. AVHRR and SSM/I on-board ERS. Layers for downscaling: HydroSHEDS, GLC2000, GLWD.",
+    "publication link": "10.1175/JHM-D-16-0155.1",
+    "publication type": "article",
+    "code link": "nan",
+    "code type": "nan",
+    "usage notes": "The datasets are available from author upon request, see webpage.",
+    "datetime": "2024-07-26T16:29:52.423705Z"
   },
   "geometry": null,
   "links": [
@@ -55,5 +52,7 @@
     85.0
   ],
   "stac_extensions": [],
-  "collection": "GIEMS"
+  "collection": "GIEMS",
+  "subcategory": "fluvial-flood",
+  "risk data type": "hazard"
 }
