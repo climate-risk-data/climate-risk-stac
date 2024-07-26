@@ -17,12 +17,8 @@
       "title": "Wind-related"
     }
   ],
-  "subtype": "extratropical-cyclone",
+  "subcategory": "extratropical-cyclone",
   "risk data type": "hazard",
-  "keywords": [
-    "extratropical-cyclone",
-    "hazard"
-  ],
   "title": "CEMS",
   "extent": {
     "spatial": {
@@ -45,6 +41,10 @@
     }
   },
   "license": "COPERNICUS",
+  "keywords": [
+    "extratropical-cyclone",
+    "hazard"
+  ],
   "providers": [
     {
       "name": "CEMS",

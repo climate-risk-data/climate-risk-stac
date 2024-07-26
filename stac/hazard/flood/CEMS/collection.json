@@ -17,12 +17,8 @@
       "title": "Flood"
     }
   ],
-  "subtype": NaN,
+  "subcategory": NaN,
   "risk data type": "hazard",
-  "keywords": [
-    NaN,
-    "hazard"
-  ],
   "title": "CEMS",
   "extent": {
     "spatial": {
@@ -45,6 +41,10 @@
     }
   },
   "license": "COPERNICUS",
+  "keywords": [
+    NaN,
+    "hazard"
+  ],
   "providers": [
     {
       "name": "CEMS",

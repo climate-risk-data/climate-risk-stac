@@ -17,12 +17,8 @@
       "title": "Temperature-related"
     }
   ],
-  "subtype": "heat-wave",
+  "subcategory": "heat-wave",
   "risk data type": "hazard",
-  "keywords": [
-    "heat-wave",
-    "hazard"
-  ],
   "title": "GEHE",
   "extent": {
     "spatial": {
@@ -45,6 +41,10 @@
     }
   },
   "license": "CC-BY-4.0",
+  "keywords": [
+    "heat-wave",
+    "hazard"
+  ],
   "providers": [
     {
       "name": "NASA Socioeconomic Data and Applications Center (SEDAC)",

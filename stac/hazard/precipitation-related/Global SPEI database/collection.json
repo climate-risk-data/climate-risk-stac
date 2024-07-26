@@ -17,12 +17,8 @@
       "title": "Precipitation-related"
     }
   ],
-  "subtype": "drought",
+  "subcategory": "drought",
   "risk data type": "hazard",
-  "keywords": [
-    "drought",
-    "hazard"
-  ],
   "title": "Global SPEI database",
   "extent": {
     "spatial": {
@@ -45,6 +41,10 @@
     }
   },
   "license": "ODbL-1.0",
+  "keywords": [
+    "drought",
+    "hazard"
+  ],
   "providers": [
     {
       "name": "Spanish National Research Council (CSIC)",

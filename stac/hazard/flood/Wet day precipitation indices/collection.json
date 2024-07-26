@@ -17,12 +17,8 @@
       "title": "Flood"
     }
   ],
-  "subtype": "pluvial-flood",
+  "subcategory": "pluvial-flood",
   "risk data type": "hazard",
-  "keywords": [
-    "pluvial-flood",
-    "hazard"
-  ],
   "title": "Wet day precipitation indices",
   "extent": {
     "spatial": {
@@ -45,6 +41,10 @@
     }
   },
   "license": "CC-BY-4.0",
+  "keywords": [
+    "pluvial-flood",
+    "hazard"
+  ],
   "providers": [
     {
       "name": "Copernicus Climate Data Store",

@@ -17,12 +17,8 @@
       "title": "Flood"
     }
   ],
-  "subtype": "fluvial-flood",
+  "subcategory": "fluvial-flood",
   "risk data type": "hazard",
-  "keywords": [
-    "fluvial-flood",
-    "hazard"
-  ],
   "title": "JRC flood hazard maps",
   "extent": {
     "spatial": {
@@ -45,6 +41,10 @@
     }
   },
   "license": "CC-BY-4.0",
+  "keywords": [
+    "fluvial-flood",
+    "hazard"
+  ],
   "providers": [
     {
       "name": "JRC Data Catalogue",

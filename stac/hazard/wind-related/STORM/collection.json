@@ -17,12 +17,8 @@
       "title": "Wind-related"
     }
   ],
-  "subtype": "tropical-cyclone",
+  "subcategory": "tropical-cyclone",
   "risk data type": "hazard",
-  "keywords": [
-    "tropical-cyclone",
-    "hazard"
-  ],
   "title": "STORM",
   "extent": {
     "spatial": {
@@ -45,6 +41,10 @@
     }
   },
   "license": "CC0-1.0",
+  "keywords": [
+    "tropical-cyclone",
+    "hazard"
+  ],
   "providers": [
     {
       "name": "TU Delft",

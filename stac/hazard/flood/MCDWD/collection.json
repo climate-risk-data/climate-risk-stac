@@ -17,12 +17,8 @@
       "title": "Flood"
     }
   ],
-  "subtype": NaN,
+  "subcategory": NaN,
   "risk data type": "hazard",
-  "keywords": [
-    NaN,
-    "hazard"
-  ],
   "title": "MCDWD",
   "extent": {
     "spatial": {
@@ -45,6 +41,10 @@
     }
   },
   "license": "CC-BY-4.0",
+  "keywords": [
+    NaN,
+    "hazard"
+  ],
   "providers": [
     {
       "name": "NASA",

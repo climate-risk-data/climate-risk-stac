@@ -17,12 +17,8 @@
       "title": "Flood"
     }
   ],
-  "subtype": "fluvial-flood",
+  "subcategory": "fluvial-flood",
   "risk data type": "hazard",
-  "keywords": [
-    "fluvial-flood",
-    "hazard"
-  ],
   "title": "GloFAS",
   "extent": {
     "spatial": {
@@ -45,6 +41,10 @@
     }
   },
   "license": "CEMS-FLOODS",
+  "keywords": [
+    "fluvial-flood",
+    "hazard"
+  ],
   "providers": [
     {
       "name": "CEMS",

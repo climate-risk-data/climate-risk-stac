@@ -17,12 +17,8 @@
       "title": "Environmental"
     }
   ],
-  "subtype": "wildfire",
+  "subcategory": "wildfire",
   "risk data type": "hazard",
-  "keywords": [
-    "wildfire",
-    "hazard"
-  ],
   "title": "CEMS",
   "extent": {
     "spatial": {
@@ -45,6 +41,10 @@
     }
   },
   "license": "COPERNICUS",
+  "keywords": [
+    "wildfire",
+    "hazard"
+  ],
   "providers": [
     {
       "name": "CEMS",

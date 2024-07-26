@@ -17,12 +17,8 @@
       "title": "Flood"
     }
   ],
-  "subtype": "coastal-flood",
+  "subcategory": "coastal-flood",
   "risk data type": "hazard",
-  "keywords": [
-    "coastal-flood",
-    "hazard"
-  ],
   "title": "Deltares Coastal Flood Maps",
   "extent": {
     "spatial": {
@@ -45,6 +41,10 @@
     }
   },
   "license": "CDLA-Permissive-1.0",
+  "keywords": [
+    "coastal-flood",
+    "hazard"
+  ],
   "providers": [
     {
       "name": "Deltares",

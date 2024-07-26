@@ -17,12 +17,8 @@
       "title": "Temperature-related"
     }
   ],
-  "subtype": "cold-wave",
+  "subcategory": "cold-wave",
   "risk data type": "hazard",
-  "keywords": [
-    "cold-wave",
-    "hazard"
-  ],
   "title": "Monthly statistics of daily minimum temperature",
   "extent": {
     "spatial": {
@@ -45,6 +41,10 @@
     }
   },
   "license": "CC-BY-4.0",
+  "keywords": [
+    "cold-wave",
+    "hazard"
+  ],
   "providers": [
     {
       "name": "Copernicus Climate Data Store",

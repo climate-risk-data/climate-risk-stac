@@ -1,6 +1,5 @@
 #%% NOTES %%#
-# also includes keywords (via 'extra_fields') --> needs to be changed to combine attributes from several columns into a list instead of a "keywords" col
-# also creates a collection if no title attributes available
+#
 
 import pystac
 from pystac.extensions.scientific import ScientificExtension
@@ -134,9 +133,8 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 license=item['license'],
                 keywords=[item['subcategory'], item['risk_data_type']],
                 extra_fields={
-                    'subtype': item['subcategory'],
-                    'risk data type': item['risk_data_type'],
-                    'keywords': item['spatial_scale']
+                    'subcategory': item['subcategory'],
+                    'risk data type': item['risk_data_type']
                 }
             )
 
