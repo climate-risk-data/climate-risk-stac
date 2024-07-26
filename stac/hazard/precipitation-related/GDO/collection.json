@@ -17,6 +17,8 @@
       "title": "Precipitation-related"
     }
   ],
+  "risk data type": "hazard",
+  "keywords": "(near-)global",
   "title": "GDO",
   "extent": {
     "spatial": {

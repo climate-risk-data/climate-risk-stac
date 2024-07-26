@@ -17,6 +17,8 @@
       "title": "Environmental"
     }
   ],
+  "risk data type": "hazard",
+  "keywords": "(near-)global",
   "title": "CEMS",
   "extent": {
     "spatial": {

@@ -134,7 +134,8 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 license=item['license'],
                 extra_fields={
                     'type': item['subcategory'],
-                    #'keywords': keywords
+                    'risk data type': item['risk_data_type'],
+                    'keywords': item['spatial_scale']
                 }
             )
 
@@ -151,7 +152,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         else:
             collection = catalog2.get_child(title_collection)
         
-        
+
         ## ITEMS ##
         
         # #datetime

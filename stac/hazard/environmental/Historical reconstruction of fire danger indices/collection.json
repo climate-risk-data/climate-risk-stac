@@ -17,6 +17,8 @@
       "title": "Environmental"
     }
   ],
+  "risk data type": "hazard",
+  "keywords": "(near-)global",
   "title": "Historical reconstruction of fire danger indices",
   "extent": {
     "spatial": {

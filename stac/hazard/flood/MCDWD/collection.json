@@ -17,6 +17,8 @@
       "title": "Flood"
     }
   ],
+  "risk data type": "hazard",
+  "keywords": "(near-)global",
   "title": "MCDWD",
   "extent": {
     "spatial": {

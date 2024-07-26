@@ -17,6 +17,8 @@
       "title": "Temperature-related"
     }
   ],
+  "risk data type": "hazard",
+  "keywords": "(near-)global",
   "title": "Monthly statistics of daily minimum temperature",
   "extent": {
     "spatial": {

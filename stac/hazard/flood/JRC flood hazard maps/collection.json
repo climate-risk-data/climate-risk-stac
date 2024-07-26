@@ -17,6 +17,8 @@
       "title": "Flood"
     }
   ],
+  "risk data type": "hazard",
+  "keywords": "(near-)global",
   "title": "JRC flood hazard maps",
   "extent": {
     "spatial": {

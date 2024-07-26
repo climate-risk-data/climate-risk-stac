@@ -17,6 +17,8 @@
       "title": "Wind-related"
     }
   ],
+  "risk data type": "hazard",
+  "keywords": "(near-)global",
   "title": "STORM",
   "extent": {
     "spatial": {
