@@ -49,7 +49,7 @@
     {
       "name": "CEMS",
       "roles": "producer",
-      "url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/cems-glofas-seasonal-reforecast?tab=overview"
+      "url": "https://cds.climate.copernicus.eu/cdsapp#!/search?type=dataset&text=glofas"
     }
   ]
 }
