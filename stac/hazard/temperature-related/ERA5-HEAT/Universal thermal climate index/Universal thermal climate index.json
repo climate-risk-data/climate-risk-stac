@@ -1,0 +1,58 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Universal thermal climate index",
+  "properties": {
+    "title": "Universal thermal climate index",
+    "description": "This dataset provides modelled hourly data of the universal thermal climate index",
+    "risk data type": "hazard",
+    "subcategory": "heat wave",
+    "spatial scale": "(near-)global",
+    "reference period": "historical",
+    "temporal resolution": "1940- (hourly)",
+    "scenarios": "nan",
+    "data type": "raster",
+    "data format": "netcdf",
+    "coordinate system": "4326",
+    "spatial resolution": "0.25 decimal degrees",
+    "data calculation type": "inferred",
+    "analysis type": "deterministic",
+    "underlying data": "ERA5",
+    "publication link": "10.24381/cds.553b7518",
+    "publication type": "dataset",
+    "code link": "nan",
+    "code type": "nan",
+    "usage notes": "data download via interface or API",
+    "datetime": "2024-07-30T18:30:36.331953Z"
+  },
+  "geometry": null,
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "ERA5-HEAT"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "ERA5-HEAT"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    90.0
+  ],
+  "stac_extensions": [],
+  "collection": "ERA5-HEAT"
+}

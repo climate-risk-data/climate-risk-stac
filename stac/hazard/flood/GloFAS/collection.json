@@ -11,13 +11,38 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./Reforecasts/Reforecasts.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Forecasted data/Forecasted data.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Historical data/Historical data.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Seasonal forecasts/Seasonal forecasts.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Seasonal reforecasts/Seasonal reforecasts.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Flood"
     }
   ],
-  "subcategory": "fluvial-flood",
+  "subcategory": "fluvial flood",
   "risk data type": "hazard",
   "title": "GloFAS",
   "extent": {
@@ -34,20 +59,20 @@
     "temporal": {
       "interval": [
         [
-          "1981-01-01T00:00:00Z",
-          "2024-07-30T00:00:00Z"
+          "2003-01-01T00:00:00Z",
+          "2022-12-31T00:00:00Z"
         ]
       ]
     }
   },
-  "license": "CEMS-FLOODS",
+  "license": "proprietary",
   "keywords": [
-    "Subcategory:fluvial-flood",
+    "Subcategory:fluvial flood",
     "hazard"
   ],
   "providers": [
     {
-      "name": "CEMS",
+      "name": "Copernicus Emergency Management Service",
       "roles": "producer",
       "url": "https://cds.climate.copernicus.eu/cdsapp#!/search?type=dataset&text=glofas"
     }

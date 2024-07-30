@@ -11,6 +11,16 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./Rapid mapping per event/Rapid mapping per event.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Risk and recovery mapping/Risk and recovery mapping.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -40,7 +50,7 @@
       ]
     }
   },
-  "license": "COPERNICUS",
+  "license": "proprietary",
   "keywords": [
     "Subcategory:wildfire",
     "hazard"

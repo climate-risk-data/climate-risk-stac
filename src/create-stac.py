@@ -7,6 +7,7 @@ import pandas as pd
 from datetime import datetime
 import numpy as np
 import os
+import json
 
 # Directory for (reading &) writing the catalog
 dir = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/'
@@ -155,75 +156,105 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
 
         ## ITEMS ##
         
-        # #datetime
-        #year_start, year_end = parse_year_range(str(temporal_resolution))
-        #datetime_value = year_start if year_start else datetime.now()
+        # datetime and bbox
+        year_start, year_end = parse_year_range(str(temporal_resolution))
+        bbox_list = [float(coord.strip()) for coord in bbox.split(',')]
         
-        # # Create basic item
-        # item_stac = pystac.Item(
-        #     id=item['title_item'],
-        #     geometry=None,  # Add geometry if available
-        #     bbox=bbox_list,
-        #     datetime=datetime.now(),
-        #     #start_datetime = year_start,
-        #     #end_datetime = year_end,
-        #     properties={
-        #         'title': item['title_item'],
-        #         'description': item['description_item'],
-        #         'risk data type': item['risk_data_type'],
-        #         'subcategory': str(item['subcategory']),
-        #         'spatial scale': item['spatial_scale'],
-        #         'reference period': item['reference_period'],
-        #         'temporal resolution': str(item['temporal_resolution']) +' ('+ str(item['temporal_interval']) + ')',
-        #         #'temporal interval': str(item['temporal_interval']),
-        #         'scenarios': str(item['scenarios']),
-        #         'data type': item['data_type'],
-        #         'data format': str(item['format']),
-        #         'coordinate system': str(item['coordinate_system']),
-        #         'spatial resolution': str(item['spatial_resolution']) +' '+ str(item['spatial_resolution_unit']),
-        #         'data calculation type': item['data_calculation_type'],
-        #         'analysis type': str(item['analysis_type']),
-        #         'underlying data': str(item['underlying_data']),
-        #         'publication link': str(item['publication_link']),
-        #         'publication type': str(item['publication_type']),
-        #         'code link': str(item['code_link']),
-        #         'code type': str(item['code_type']),
-        #         'usage notes': str(item['usage_notes']),
-        #     }
-        #     # extra_fields={ # are part of the json, but not shown in the browser
-        #     #         'subcategory': str(item['subcategory']), #remove str() again once subcategory fixed
-        #     #         'risk data type': item['risk_data_type']
-        #     #     }
-        # )
+        # Create basic item
+        item_stac = pystac.Item(
+            id=item['title_item'],
+            geometry=None,  # Add geometry if available
+            bbox=bbox_list,
+            datetime=datetime.now(),
+            #start_datetime = year_start,
+            #end_datetime = year_end,
+            properties={
+                'title': item['title_item'],
+                'description': item['description_item'],
+                'risk data type': item['risk_data_type'],
+                'subcategory': str(item['subcategory']),
+                'spatial scale': item['spatial_scale'],
+                'reference period': item['reference_period'],
+                'temporal resolution': str(item['temporal_resolution']) +' ('+ str(item['temporal_interval']) + ')',
+                #'temporal interval': str(item['temporal_interval']),
+                'scenarios': str(item['scenarios']),
+                'data type': item['data_type'],
+                'data format': str(item['format']),
+                'coordinate system': str(item['coordinate_system']),
+                'spatial resolution': str(item['spatial_resolution']) +' '+ str(item['spatial_resolution_unit']),
+                'data calculation type': item['data_calculation_type'],
+                'analysis type': str(item['analysis_type']),
+                'underlying data': str(item['underlying_data']),
+                'publication link': str(item['publication_link']),
+                'publication type': str(item['publication_type']),
+                'code link': str(item['code_link']),
+                'code type': str(item['code_type']),
+                'usage notes': str(item['usage_notes'])
+            }
+            # extra_fields={ # are part of the json, but not shown in the browser
+            #         'subcategory': str(item['subcategory']), #remove str() again once subcategory fixed
+            #         'risk data type': item['risk_data_type']
+            #     }
+        )
 
-        # # add keywords --> not available for items
+        # add keywords --> not available for items
 
-        # # add projection extension!
+        # add projection extension!
 
-        # # # Add scientific extension if DOI is present
-        # # # if item['publication_link'].startswith('10.'):
-        # # #     sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
-        # # #     sci_ext.doi = item['publication_link'] # adjust condition here for link that are not dois
-        # # # else:
-        # # #     return "The string does not start with '10'."
+        # # Add scientific extension if DOI is present
+        # # if item['publication_link'].startswith('10.'):
+        # #     sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
+        # #     sci_ext.doi = item['publication_link'] # adjust condition here for link that are not dois
+        # # else:
+        # #     return "The string does not start with '10'."
 
-        # # # if not pd.isna(item['publication_link']):
-        # # #     sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
-        # # #     sci_ext.doi = item['publication_link'] # adjust condition here for link that are not dois
+        # # if not pd.isna(item['publication_link']):
+        # #     sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
+        # #     sci_ext.doi = item['publication_link'] # adjust condition here for link that are not dois
 
-        # # code to add a web link (for the publication as well as the website link)
-        # #item_stac.add_link(pystac.Link(rel="related", target="https://www.openai.com", title="OpenAI"))
+        # code to add a web link (for the publication as well as the website link)
+        #item_stac.add_link(pystac.Link(rel="related", target="https://www.openai.com", title="OpenAI"))
 
         
-        # # Add item to collection
-        # collection.add_item(item_stac)
+        # Add item to collection
+        collection.add_item(item_stac)
 
-        # print('item ', row_num, ' ', item['title_item'], ' successful')
+    	# get paths of item
+        #for item_stac in catalog_main.get_all_items():
+        #    print(item_stac.get_self_href())
+        
+        # confirmation item added
+        print('item ', row_num, ' ', item['title_item'], ' successful')
+
+    #print(json.dumps(item_stac.to_dict(), indent=4))
+    catalog_main.describe()
 
     # Normalize hrefs and save the catalog
     catalog_main.normalize_hrefs(os.path.join(dir, "stac"))
     catalog_main.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
+    #catalog_main.save(catalog_type=pystac.CatalogType.RELATIVE_PUBLISHED)
+   
 
 # Create catalogs from both hazard and exposure-vulnerability CSVs
 create_catalog_from_csv(hazard, catalog_main, dir)
-create_catalog_from_csv(expvul, catalog_main, dir)
+#create_catalog_from_csv(expvul, catalog_main, dir)
+
+
+# # Function to ensure directory exists
+# def ensure_dir(file_path):
+#     directory = os.path.dirname(file_path)
+#     if not os.path.exists(directory):
+#         os.makedirs(directory)
+
+# # Ensure the directory exists
+# ensure_dir(dir)
+
+
+# # Ensure directories for all items
+# for item in catalog_main.get_all_items():
+#     item_href = item.get_self_href()
+#     ensure_dir(item_href)
+
+# # Save all items
+# for item in catalog_main.get_all_items():
+#     item.save_object(include_self_link=False)

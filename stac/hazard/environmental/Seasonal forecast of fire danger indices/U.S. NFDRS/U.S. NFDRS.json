@@ -1,0 +1,58 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "U.S. NFDRS",
+  "properties": {
+    "title": "U.S. NFDRS",
+    "description": "U.S. Forest Service National Fire-Danger Rating System (NFDRS) at 1 dec deg spatial resolution. Components: Burning index, Ignition component, Energy release component, Spread component",
+    "risk data type": "hazard",
+    "subcategory": "wildfire",
+    "spatial scale": "(near-)global",
+    "reference period": "historical",
+    "temporal resolution": "1981- (daily)",
+    "scenarios": "nan",
+    "data type": "raster",
+    "data format": "GRIB",
+    "coordinate system": "4326",
+    "spatial resolution": "1 decimal degrees",
+    "data calculation type": "modeled",
+    "analysis type": "probabilistic",
+    "underlying data": "ECMWF SEAS5",
+    "publication link": "10.1038/s41597-024-02948-3",
+    "publication type": "article",
+    "code link": "https://github.com/fdg10371/Jupyter_notebooks",
+    "code type": "processing",
+    "usage notes": "data download via interface or API",
+    "datetime": "2024-07-30T18:30:36.352732Z"
+  },
+  "geometry": null,
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Seasonal forecast of fire danger indices"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Seasonal forecast of fire danger indices"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -179.95,
+    -89.95,
+    179.95,
+    89.95
+  ],
+  "stac_extensions": [],
+  "collection": "Seasonal forecast of fire danger indices"
+}

@@ -12,9 +12,15 @@
     },
     {
       "rel": "child",
-      "href": "./DEDI/collection.json",
+      "href": "./Global Drought Monitor/collection.json",
       "type": "application/json",
-      "title": "DEDI"
+      "title": "Global Drought Monitor"
+    },
+    {
+      "rel": "child",
+      "href": "./Global SPEI database/collection.json",
+      "type": "application/json",
+      "title": "Global SPEI database"
     },
     {
       "rel": "child",
@@ -30,15 +36,9 @@
     },
     {
       "rel": "child",
-      "href": "./Global Drought Monitor/collection.json",
+      "href": "./DEDI/collection.json",
       "type": "application/json",
-      "title": "Global Drought Monitor"
-    },
-    {
-      "rel": "child",
-      "href": "./Global SPEI database/collection.json",
-      "type": "application/json",
-      "title": "Global SPEI database"
+      "title": "DEDI"
     },
     {
       "rel": "parent",

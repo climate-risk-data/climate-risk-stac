@@ -11,6 +11,36 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./SPEI12/SPEI12.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SPEI3/SPEI3.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SPEI6/SPEI6.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SPI12/SPI12.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SPI3/SPI3.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SPI6/SPI6.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",

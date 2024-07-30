@@ -11,13 +11,23 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./Daily Extreme Urban Heat Exposure tabular/Daily Extreme Urban Heat Exposure tabular.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Daily Extreme Urban Heat Exposure vector/Daily Extreme Urban Heat Exposure vector.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Temperature-related"
     }
   ],
-  "subcategory": "heat-wave",
+  "subcategory": "heat wave",
   "risk data type": "hazard",
   "title": "UHE-Daily",
   "extent": {
@@ -42,14 +52,14 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "Subcategory:heat-wave",
+    "Subcategory:heat wave",
     "hazard"
   ],
   "providers": [
     {
       "name": "NASA Socioeconomic Data and Applications Center (SEDAC)",
       "roles": "licensor",
-      "url": "10.7927/fq7g-ny13"
+      "url": "https://doi.org/10.7927/fq7g-ny13"
     }
   ]
 }

@@ -11,13 +11,33 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./Climate Change synthetic tropical cyclone tracks/Climate Change synthetic tropical cyclone tracks.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Climate change tropical cyclone wind speed return periods/Climate change tropical cyclone wind speed return periods.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Historical tropical cyclone tracks/Historical tropical cyclone tracks.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Tropical cyclone wind speed return periods/Tropical cyclone wind speed return periods.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Wind-related"
     }
   ],
-  "subcategory": "tropical-cyclone",
+  "subcategory": "tropical cyclone",
   "risk data type": "hazard",
   "title": "STORM",
   "extent": {
@@ -34,15 +54,15 @@
     "temporal": {
       "interval": [
         [
-          "1980-01-01T00:00:00Z",
-          "2017-12-31T00:00:00Z"
+          "2015-01-01T00:00:00Z",
+          "2050-12-31T00:00:00Z"
         ]
       ]
     }
   },
   "license": "CC0-1.0",
   "keywords": [
-    "Subcategory:tropical-cyclone",
+    "Subcategory:tropical cyclone",
     "hazard"
   ],
   "providers": [

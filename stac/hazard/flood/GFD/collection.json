@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "GFD",
   "stac_version": "1.0.0",
-  "description": "nan",
+  "description": "The Global Flood Database provides satellite-derived flood footprints and depths for 913 floods that occurred between 2000 and 2018.",
   "links": [
     {
       "rel": "root",
@@ -11,13 +11,18 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./GFD 2000-2018/GFD 2000-2018.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Flood"
     }
   ],
-  "subcategory": "nan",
+  "subcategory": "coastal flood, fluvial flood, pluvial flood",
   "risk data type": "hazard",
   "title": "GFD",
   "extent": {
@@ -42,7 +47,7 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "Subcategory:nan",
+    "Subcategory:coastal flood, fluvial flood, pluvial flood",
     "hazard"
   ],
   "providers": [

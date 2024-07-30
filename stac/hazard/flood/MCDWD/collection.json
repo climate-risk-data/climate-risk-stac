@@ -11,13 +11,28 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./MCDWD 1-day GeoTIFF/MCDWD 1-day GeoTIFF.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./MCDWD 2-day GeoTIFF/MCDWD 2-day GeoTIFF.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./MCDWD 3-day GeoTIFF/MCDWD 3-day GeoTIFF.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Flood"
     }
   ],
-  "subcategory": "nan",
+  "subcategory": "coastal flood, fluvial flood, pluvial flood",
   "risk data type": "hazard",
   "title": "MCDWD",
   "extent": {
@@ -42,7 +57,7 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "Subcategory:nan",
+    "Subcategory:coastal flood, fluvial flood, pluvial flood",
     "hazard"
   ],
   "providers": [

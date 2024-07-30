@@ -18,15 +18,9 @@
     },
     {
       "rel": "child",
-      "href": "./wind-related/catalog.json",
+      "href": "./temperature-related/catalog.json",
       "type": "application/json",
-      "title": "Wind-related"
-    },
-    {
-      "rel": "child",
-      "href": "./environmental/catalog.json",
-      "type": "application/json",
-      "title": "Environmental"
+      "title": "Temperature-related"
     },
     {
       "rel": "child",
@@ -36,9 +30,15 @@
     },
     {
       "rel": "child",
-      "href": "./temperature-related/catalog.json",
+      "href": "./wind-related/catalog.json",
       "type": "application/json",
-      "title": "Temperature-related"
+      "title": "Wind-related"
+    },
+    {
+      "rel": "child",
+      "href": "./environmental/catalog.json",
+      "type": "application/json",
+      "title": "Environmental"
     },
     {
       "rel": "child",

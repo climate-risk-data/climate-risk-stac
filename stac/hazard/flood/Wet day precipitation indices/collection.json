@@ -11,13 +11,33 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./Extremely wet day precipitation (R99p) future/Extremely wet day precipitation (R99p) future.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Extremely wet day precipitation (R99p) historical/Extremely wet day precipitation (R99p) historical.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Very wet day precipitation (R95p) future/Very wet day precipitation (R95p) future.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Very wet day precipitation (R95p) historical/Very wet day precipitation (R95p) historical.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Flood"
     }
   ],
-  "subcategory": "pluvial-flood",
+  "subcategory": "pluvial flood",
   "risk data type": "hazard",
   "title": "Wet day precipitation indices",
   "extent": {
@@ -34,15 +54,15 @@
     "temporal": {
       "interval": [
         [
-          "1849-01-01T00:00:00Z",
-          "2016-12-31T00:00:00Z"
+          "2015-01-01T00:00:00Z",
+          "2300-12-31T00:00:00Z"
         ]
       ]
     }
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "Subcategory:pluvial-flood",
+    "Subcategory:pluvial flood",
     "hazard"
   ],
   "providers": [

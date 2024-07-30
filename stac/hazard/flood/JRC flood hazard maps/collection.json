@@ -11,13 +11,18 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./JRC flood hazard maps global/JRC flood hazard maps global.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Flood"
     }
   ],
-  "subcategory": "fluvial-flood",
+  "subcategory": "fluvial flood",
   "risk data type": "hazard",
   "title": "JRC flood hazard maps",
   "extent": {
@@ -42,7 +47,7 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "Subcategory:fluvial-flood",
+    "Subcategory:fluvial flood",
     "hazard"
   ],
   "providers": [

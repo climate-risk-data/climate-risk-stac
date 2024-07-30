@@ -11,6 +11,16 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./SPI6 Future/SPI6 Future.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./SPI6 Historical/SPI6 Historical.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -34,8 +44,8 @@
     "temporal": {
       "interval": [
         [
-          "1850-01-01T00:00:00Z",
-          "2014-12-31T00:00:00Z"
+          "2015-01-01T00:00:00Z",
+          "2100-12-31T00:00:00Z"
         ]
       ]
     }

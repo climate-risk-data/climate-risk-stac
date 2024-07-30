@@ -11,13 +11,23 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./Mean radiant temperature/Mean radiant temperature.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Universal thermal climate index/Universal thermal climate index.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Temperature-related"
     }
   ],
-  "subcategory": "heat-wave",
+  "subcategory": "heat wave",
   "risk data type": "hazard",
   "title": "ERA5-HEAT",
   "extent": {
@@ -40,9 +50,9 @@
       ]
     }
   },
-  "license": "CC-BY-4.0",
+  "license": "proprietary",
   "keywords": [
-    "Subcategory:heat-wave",
+    "Subcategory:heat wave",
     "hazard"
   ],
   "providers": [

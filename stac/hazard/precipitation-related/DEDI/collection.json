@@ -2,13 +2,18 @@
   "type": "Collection",
   "id": "DEDI",
   "stac_version": "1.0.0",
-  "description": "nan",
+  "description": "A global daily drought index dataset named as daily evapotranspiration deficit index (DEDI) is constructed using daily actual evapotranspiration and potential evapotranspiration data provided by European Centre for Medium-Range Weather Forecasts Reanalysis v5 (ERA5).",
   "links": [
     {
       "rel": "root",
       "href": "../../../catalog.json",
       "type": "application/json",
       "title": "Climate Risk Data"
+    },
+    {
+      "rel": "item",
+      "href": "./DEDI 1979-2022/DEDI 1979-2022.json",
+      "type": "application/json"
     },
     {
       "rel": "parent",

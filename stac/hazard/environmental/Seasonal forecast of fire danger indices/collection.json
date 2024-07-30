@@ -11,6 +11,21 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./Australian McArthur/Australian McArthur.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Canadian FWI/Canadian FWI.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./U.S. NFDRS/U.S. NFDRS.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -40,7 +55,7 @@
       ]
     }
   },
-  "license": "COPERNICUS",
+  "license": "proprietary",
   "keywords": [
     "Subcategory:wildfire",
     "hazard"

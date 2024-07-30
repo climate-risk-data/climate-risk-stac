@@ -1,0 +1,58 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "RX5day CMIP6 future",
+  "properties": {
+    "title": "RX5day CMIP6 future",
+    "description": "Highest 5-day precipitation amount",
+    "risk data type": "hazard",
+    "subcategory": "pluvial flood",
+    "spatial scale": "(near-)global",
+    "reference period": "future",
+    "temporal resolution": "2015-2100 (monthly)",
+    "scenarios": "SSP-RCP combinations",
+    "data type": "raster",
+    "data format": "netcdf",
+    "coordinate system": "4326",
+    "spatial resolution": "1 decimal degrees",
+    "data calculation type": "modeled",
+    "analysis type": "deterministic",
+    "underlying data": "CMIP6",
+    "publication link": "10.24381/cds.5292a2b0",
+    "publication type": "dataset",
+    "code link": "https://github.com/IPCC-WG1/Atlas/tree/main",
+    "code type": "processing",
+    "usage notes": "data download via interface or API",
+    "datetime": "2024-07-30T18:30:36.337337Z"
+  },
+  "geometry": null,
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Monthly maximum of accumulated precipitation"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Monthly maximum of accumulated precipitation"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    90.0
+  ],
+  "stac_extensions": [],
+  "collection": "Monthly maximum of accumulated precipitation"
+}

@@ -11,13 +11,63 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./Heat index future/Heat index future.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Heat index historical/Heat index historical.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Humidex future/Humidex future.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Humidex historical/Humidex historical.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Indoor universal thermal climate index future/Indoor universal thermal climate index future.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Indoor universal thermal climate index historical/Indoor universal thermal climate index historical.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Indoor wet-bulb globe temperature index future/Indoor wet-bulb globe temperature index future.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Indoor wet-bulb globe temperature index historical/Indoor wet-bulb globe temperature index historical.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Wet-bulb temperature index  future/Wet-bulb temperature index  future.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Wet-bulb temperature index historical/Wet-bulb temperature index historical.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Temperature-related"
     }
   ],
-  "subcategory": "heat-wave",
+  "subcategory": "heat wave",
   "risk data type": "hazard",
   "title": "HIS",
   "extent": {
@@ -34,15 +84,15 @@
     "temporal": {
       "interval": [
         [
-          "1951-01-01T00:00:00Z",
-          "2014-12-31T00:00:00Z"
+          "2015-01-01T00:00:00Z",
+          "2100-12-31T00:00:00Z"
         ]
       ]
     }
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "Subcategory:heat-wave",
+    "Subcategory:heat wave",
     "hazard"
   ],
   "providers": [

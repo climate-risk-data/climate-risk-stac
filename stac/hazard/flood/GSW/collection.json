@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "GSW",
   "stac_version": "1.0.0",
-  "description": "nan",
+  "description": "The dataset includes the occurrence, seasonality, recurrence, transitions, and maximum water extent for different temporal moment at global scale",
   "links": [
     {
       "rel": "root",
@@ -11,13 +11,18 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./GSW 1984-2021/GSW 1984-2021.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Flood"
     }
   ],
-  "subcategory": "fluvial-flood",
+  "subcategory": "fluvial flood",
   "risk data type": "hazard",
   "title": "GSW",
   "extent": {
@@ -42,7 +47,7 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "Subcategory:fluvial-flood",
+    "Subcategory:fluvial flood",
     "hazard"
   ],
   "providers": [

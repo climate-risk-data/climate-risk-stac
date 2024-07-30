@@ -11,13 +11,33 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./Coastal floods current day/Coastal floods current day.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Coastal floods future scenarios/Coastal floods future scenarios.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./River floods current day/River floods current day.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./River floods future scenarios/River floods future scenarios.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Flood"
     }
   ],
-  "subcategory": "coastal-flood",
+  "subcategory": "coastal flood",
   "risk data type": "hazard",
   "title": "Aqueduct",
   "extent": {
@@ -42,7 +62,7 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "Subcategory:coastal-flood",
+    "Subcategory:coastal flood",
     "hazard"
   ],
   "providers": [

@@ -1,0 +1,58 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Observed flood extent",
+  "properties": {
+    "title": "Observed flood extent",
+    "description": "Composite of the flooded areas mapped as the difference between S-1 observed water extent and the reference water mask.",
+    "risk data type": "hazard",
+    "subcategory": "fluvial flood",
+    "spatial scale": "(near-)global",
+    "reference period": "historical",
+    "temporal resolution": "2015- (irregular)",
+    "scenarios": "nan",
+    "data type": "raster",
+    "data format": "geotiff",
+    "coordinate system": "4326",
+    "spatial resolution": "10 meters",
+    "data calculation type": "observed",
+    "analysis type": "deterministic",
+    "underlying data": "Sentinel-1 SAR",
+    "publication link": "nan",
+    "publication type": "nan",
+    "code link": "nan",
+    "code type": "nan",
+    "usage notes": "user account needed for data download",
+    "datetime": "2024-07-30T18:30:36.312413Z"
+  },
+  "geometry": null,
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GloFAS-GFM"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GloFAS-GFM"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "stac_extensions": [],
+  "collection": "GloFAS-GFM"
+}

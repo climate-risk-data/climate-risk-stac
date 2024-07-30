@@ -11,13 +11,53 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./RX1day CMIP5 future/RX1day CMIP5 future.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./RX1day CMIP5 historical/RX1day CMIP5 historical.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./RX1day CMIP6 future/RX1day CMIP6 future.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./RX1day CMIP6 historical/RX1day CMIP6 historical.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./RX5day CMIP5 future/RX5day CMIP5 future.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./RX5day CMIP5 historical/RX5day CMIP5 historical.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./RX5day CMIP6 future/RX5day CMIP6 future.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./RX5day CMIP6 historical/RX5day CMIP6 historical.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Flood"
     }
   ],
-  "subcategory": "pluvial-flood",
+  "subcategory": "pluvial flood",
   "risk data type": "hazard",
   "title": "Monthly maximum of accumulated precipitation",
   "extent": {
@@ -34,15 +74,15 @@
     "temporal": {
       "interval": [
         [
-          "1850-01-01T00:00:00Z",
-          "2014-12-31T00:00:00Z"
+          "2006-01-01T00:00:00Z",
+          "2100-12-31T00:00:00Z"
         ]
       ]
     }
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "Subcategory:pluvial-flood",
+    "Subcategory:pluvial flood",
     "hazard"
   ],
   "providers": [
