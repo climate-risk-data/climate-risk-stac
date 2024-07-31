@@ -23,7 +23,7 @@
     "code link": "nan",
     "code type": "nan",
     "usage notes": "Reforecasts are generated in near real time for each Monday and Thursday as reference dates, 46-day lead time. For each reference date, reforecasts are produced for the past 20 years from 2003 to 2022 (inclusive). The first available reforecast reference date is the 2023-03-27.",
-    "datetime": "2024-07-31T15:30:15.870963Z"
+    "datetime": "2024-07-31T15:39:13.023513Z"
   },
   "geometry": null,
   "links": [

@@ -49,7 +49,7 @@ def parse_keywords(subc, rdata):
     # separate strings
     subc = subc.split(',') if ',' in subc else subc
     # use rdata if expvul
-    keywords = subc if rdata == 'hazard' else [subc, rdata]
+    keywords = subc if rdata == 'hazard' else [rdata, subc]
     print(f"new keywords: {keywords}")
     return keywords
 
@@ -130,7 +130,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 continue
 
             # make keywords
-            keyw = parse_keywords(item['subcategory'], item['risk_data_type'])
+            keywords = parse_keywords(item['subcategory'], item['risk_data_type'])
          
             # create basic collection
             collection = pystac.Collection(
@@ -142,7 +142,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                     temporal=pystac.TemporalExtent([[year_start, year_end]]), # needs to be updated based on all items in the collection
                 ),
                 license=item['license'],
-                keywords=keyw, # add further if needed
+                keywords=keywords, # add further if needed
                 extra_fields={
                     'subcategory': item['subcategory'],
                     'risk data type': item['risk_data_type']
