@@ -51,6 +51,9 @@
     }
   },
   "license": "proprietary",
+  "keywords": [
+    "heat wave"
+  ],
   "providers": [
     {
       "name": "ECMWF",

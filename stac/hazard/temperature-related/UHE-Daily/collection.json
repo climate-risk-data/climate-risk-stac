@@ -51,6 +51,9 @@
     }
   },
   "license": "CC-BY-4.0",
+  "keywords": [
+    "heat wave"
+  ],
   "providers": [
     {
       "name": "NASA Socioeconomic Data and Applications Center (SEDAC)",

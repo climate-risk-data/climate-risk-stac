@@ -46,6 +46,9 @@
     }
   },
   "license": "CC-BY-4.0",
+  "keywords": [
+    "drought"
+  ],
   "providers": [
     {
       "name": "Zenodo",

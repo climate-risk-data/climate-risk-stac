@@ -91,6 +91,9 @@
     }
   },
   "license": "CC-BY-4.0",
+  "keywords": [
+    "heat wave"
+  ],
   "providers": [
     {
       "name": "Copernicus Climate Data Store",

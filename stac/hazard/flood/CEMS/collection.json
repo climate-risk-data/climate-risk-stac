@@ -51,6 +51,11 @@
     }
   },
   "license": "proprietary",
+  "keywords": [
+    "coastal flood",
+    " fluvial flood",
+    " pluvial flood"
+  ],
   "providers": [
     {
       "name": "CEMS",

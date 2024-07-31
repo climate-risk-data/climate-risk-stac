@@ -46,6 +46,9 @@
     }
   },
   "license": "CC-BY-4.0",
+  "keywords": [
+    "fluvial flood"
+  ],
   "providers": [
     {
       "name": "World Meteorological Organization WMO",

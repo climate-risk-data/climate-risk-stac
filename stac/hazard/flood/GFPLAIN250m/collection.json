@@ -51,6 +51,9 @@
     }
   },
   "license": "CC-BY-4.0",
+  "keywords": [
+    "fluvial flood"
+  ],
   "providers": [
     {
       "name": "University for Foreigners of Perugia",

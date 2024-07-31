@@ -46,6 +46,11 @@
     }
   },
   "license": "CC-BY-4.0",
+  "keywords": [
+    "coastal flood",
+    " fluvial flood",
+    " pluvial flood"
+  ],
   "providers": [
     {
       "name": "Cloud to Street",

@@ -7,7 +7,7 @@ import pandas as pd
 from datetime import datetime
 import numpy as np
 import os
-import json
+#import json
 
 # Directory for (reading &) writing the catalog
 dir = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/'
@@ -47,12 +47,12 @@ def parse_year_range(year_str):
 # Function to make keywords based on subcategory and risk data type
 def parse_keywords(subc, rdata):
     # separate strings
-    keywords = subc.split(',') if ',' in subc else [subc]
+    subc = subc.split(',') if ',' in subc else subc
+    # use rdata if expvul
+    keywords = subc if rdata == 'hazard' else [subc, rdata]
+    print(f"new keywords: {keywords}")
+    return keywords
 
-    if rdata == 'hazard':
-        keywords = keywords
-    else:   
-        keywords = [keywords, rdata]
 
 # Read data sheets
 hazard = pd.read_csv('csv/hazard.csv', encoding='utf-8')
@@ -130,7 +130,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 continue
 
             # make keywords
-            keywords = parse_keywords(item['subcategory'], item['risk_data_type'])
+            keyw = parse_keywords(item['subcategory'], item['risk_data_type'])
          
             # create basic collection
             collection = pystac.Collection(
@@ -142,7 +142,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                     temporal=pystac.TemporalExtent([[year_start, year_end]]), # needs to be updated based on all items in the collection
                 ),
                 license=item['license'],
-                keywords=keywords, # add further if needed
+                keywords=keyw, # add further if needed
                 extra_fields={
                     'subcategory': item['subcategory'],
                     'risk data type': item['risk_data_type']
@@ -246,8 +246,8 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
    
 
 # Create catalogs from both hazard and exposure-vulnerability CSVs
-create_catalog_from_csv(hazard, catalog_main, dir)
-#create_catalog_from_csv(expvul, catalog_main, dir)
+#create_catalog_from_csv(hazard, catalog_main, dir)
+create_catalog_from_csv(expvul, catalog_main, dir)
 
 
 # # Function to ensure directory exists
