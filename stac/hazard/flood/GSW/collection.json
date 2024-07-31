@@ -46,9 +46,7 @@
     }
   },
   "license": "CC-BY-4.0",
-  "keywords": [
-    "fluvial flood"
-  ],
+  "keywords": "fluvial flood",
   "providers": [
     {
       "name": "EC JRC, Google",

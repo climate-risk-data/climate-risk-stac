@@ -6,10 +6,10 @@
     "title": "Risk and recovery mapping",
     "description": "This service provides on-demand\u00a0geospatial information to support emergency management activities outside the immediate response phase. It covers the prevention, preparedness, disaster risk reduction, and recovery phases.",
     "risk data type": "hazard",
-    "subcategory": "coastal flood, fluvial flood, pluvial flood",
+    "subcategory": "coastal flood,fluvial flood,pluvial flood",
     "spatial scale": "(near-)global",
     "reference period": "historical",
-    "temporal resolution": "2017- (irregular)",
+    "temporal resolution": "2017-now (irregular)",
     "scenarios": "nan",
     "data type": "vector",
     "data format": "shapefile",
@@ -23,7 +23,7 @@
     "code link": "nan",
     "code type": "nan",
     "usage notes": "Download per event/case study possible",
-    "datetime": "2024-07-31T12:37:25.079528Z"
+    "datetime": "2024-07-31T15:30:15.837451Z"
   },
   "geometry": null,
   "links": [

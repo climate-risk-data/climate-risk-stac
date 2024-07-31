@@ -61,9 +61,7 @@
     }
   },
   "license": "CC0-1.0",
-  "keywords": [
-    "tropical cyclone"
-  ],
+  "keywords": "tropical cyclone",
   "providers": [
     {
       "name": "TU Delft",

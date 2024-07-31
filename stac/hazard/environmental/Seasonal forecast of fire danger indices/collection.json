@@ -56,9 +56,7 @@
     }
   },
   "license": "proprietary",
-  "keywords": [
-    "wildfire"
-  ],
+  "keywords": "wildfire",
   "providers": [
     {
       "name": "ECMWF",

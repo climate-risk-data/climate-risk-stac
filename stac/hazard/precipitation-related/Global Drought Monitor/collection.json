@@ -46,9 +46,7 @@
     }
   },
   "license": "ODbL-1.0",
-  "keywords": [
-    "drought"
-  ],
+  "keywords": "drought",
   "providers": [
     {
       "name": "Spanish National Research Council (CSIC)",

@@ -32,7 +32,7 @@
       "title": "Flood"
     }
   ],
-  "subcategory": "coastal flood, fluvial flood, pluvial flood",
+  "subcategory": "coastal flood,fluvial flood,pluvial flood",
   "risk data type": "hazard",
   "title": "MCDWD",
   "extent": {
@@ -58,8 +58,8 @@
   "license": "CC-BY-4.0",
   "keywords": [
     "coastal flood",
-    " fluvial flood",
-    " pluvial flood"
+    "fluvial flood",
+    "pluvial flood"
   ],
   "providers": [
     {

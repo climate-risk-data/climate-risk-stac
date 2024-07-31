@@ -51,9 +51,7 @@
     }
   },
   "license": "CC-BY-NC-SA-4.0",
-  "keywords": [
-    "fluvial flood"
-  ],
+  "keywords": "fluvial flood",
   "providers": [
     {
       "name": "Estellus",

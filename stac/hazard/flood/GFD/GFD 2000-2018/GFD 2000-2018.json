@@ -6,7 +6,7 @@
     "title": "GFD 2000-2018",
     "description": "The Global Flood Database provides satellite-derived flood footprints and depths for 913 floods that occurred between 2000 and 2018.",
     "risk data type": "hazard",
-    "subcategory": "coastal flood, fluvial flood, pluvial flood",
+    "subcategory": "coastal flood,fluvial flood,pluvial flood",
     "spatial scale": "(near-)global",
     "reference period": "historical",
     "temporal resolution": "2000-2018 (irregular)",
@@ -23,7 +23,7 @@
     "code link": "https://github.com/cloudtostreet/MODIS_GlobalFloodDatabase",
     "code type": "processing",
     "usage notes": "Download per event possible. The data do not differentiate flood types. ",
-    "datetime": "2024-07-31T12:37:25.082139Z"
+    "datetime": "2024-07-31T15:30:15.838633Z"
   },
   "geometry": null,
   "links": [

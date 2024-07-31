@@ -9,7 +9,7 @@
     "subcategory": "fluvial flood",
     "spatial scale": "(near-)global",
     "reference period": "historical",
-    "temporal resolution": "2020- (daily)",
+    "temporal resolution": "2020-now (daily)",
     "scenarios": "nan",
     "data type": "raster",
     "data format": "GRIB2",
@@ -23,7 +23,7 @@
     "code link": "nan",
     "code type": "nan",
     "usage notes": "data download via interface or API",
-    "datetime": "2024-07-31T12:37:25.032925Z"
+    "datetime": "2024-07-31T15:30:15.872990Z"
   },
   "geometry": null,
   "links": [

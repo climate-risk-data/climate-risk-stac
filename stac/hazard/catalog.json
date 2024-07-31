@@ -36,15 +36,15 @@
     },
     {
       "rel": "child",
-      "href": "./environmental/catalog.json",
-      "type": "application/json",
-      "title": "Environmental"
-    },
-    {
-      "rel": "child",
       "href": "./multi-hazard/catalog.json",
       "type": "application/json",
       "title": "Multi-hazard"
+    },
+    {
+      "rel": "child",
+      "href": "./environmental/catalog.json",
+      "type": "application/json",
+      "title": "Environmental"
     },
     {
       "rel": "parent",

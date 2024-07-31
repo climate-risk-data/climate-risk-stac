@@ -24,6 +24,24 @@
     },
     {
       "rel": "child",
+      "href": "./CEMS/collection.json",
+      "type": "application/json",
+      "title": "CEMS"
+    },
+    {
+      "rel": "child",
+      "href": "./MCDWD/collection.json",
+      "type": "application/json",
+      "title": "MCDWD"
+    },
+    {
+      "rel": "child",
+      "href": "./GFD/collection.json",
+      "type": "application/json",
+      "title": "GFD"
+    },
+    {
+      "rel": "child",
       "href": "./GFPLAIN250m/collection.json",
       "type": "application/json",
       "title": "GFPLAIN250m"
@@ -75,24 +93,6 @@
       "href": "./Wet day precipitation indices/collection.json",
       "type": "application/json",
       "title": "Wet day precipitation indices"
-    },
-    {
-      "rel": "child",
-      "href": "./CEMS/collection.json",
-      "type": "application/json",
-      "title": "CEMS"
-    },
-    {
-      "rel": "child",
-      "href": "./MCDWD/collection.json",
-      "type": "application/json",
-      "title": "MCDWD"
-    },
-    {
-      "rel": "child",
-      "href": "./GFD/collection.json",
-      "type": "application/json",
-      "title": "GFD"
     },
     {
       "rel": "parent",

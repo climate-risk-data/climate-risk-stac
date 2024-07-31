@@ -71,9 +71,7 @@
     }
   },
   "license": "CC-BY-4.0",
-  "keywords": [
-    "drought"
-  ],
+  "keywords": "drought",
   "providers": [
     {
       "name": "Global Drought Observatory",

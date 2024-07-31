@@ -66,9 +66,7 @@
     }
   },
   "license": "proprietary",
-  "keywords": [
-    "fluvial flood"
-  ],
+  "keywords": "fluvial flood",
   "providers": [
     {
       "name": "Copernicus Emergency Management Service",

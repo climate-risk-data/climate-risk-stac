@@ -81,9 +81,7 @@
     }
   },
   "license": "CC-BY-4.0",
-  "keywords": [
-    "cold wave"
-  ],
+  "keywords": "cold wave",
   "providers": [
     {
       "name": "Copernicus Climate Data Store",
