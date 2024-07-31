@@ -81,7 +81,9 @@
     }
   },
   "license": "CC-BY-4.0",
-  "keywords": "pluvial flood",
+  "keywords": [
+    "pluvial flood"
+  ],
   "providers": [
     {
       "name": "Copernicus Climate Data Store",

@@ -47,7 +47,7 @@ def parse_year_range(year_str):
 # Function to make keywords based on subcategory and risk data type
 def parse_keywords(subc, rdata):
     # separate strings
-    keyw = subc.split(',') if ',' in subc else subc
+    keyw = subc.split(',') if ',' in subc else [subc]
     # use rdata if expvul
     keywords = keyw if rdata == 'hazard' else [rdata, subc]
     print(f"new keywords: {keywords}")

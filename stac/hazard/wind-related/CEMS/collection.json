@@ -61,7 +61,9 @@
     }
   },
   "license": "proprietary",
-  "keywords": "extratropical cyclone",
+  "keywords": [
+    "extratropical cyclone"
+  ],
   "providers": [
     {
       "name": "CEMS",

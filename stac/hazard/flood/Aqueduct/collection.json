@@ -61,7 +61,9 @@
     }
   },
   "license": "CC-BY-4.0",
-  "keywords": "coastal flood",
+  "keywords": [
+    "coastal flood"
+  ],
   "providers": [
     {
       "name": "World Resources Institute",
