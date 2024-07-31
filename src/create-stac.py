@@ -78,10 +78,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         catalog_id = item['catalog']
         category_id = item['category']
         
-        # bbox and temp resolution
-        bbox = item['bbox']
-        temporal_resolution = item['temporal_resolution']
-        
+      
         ## CATALOGS ##
         # Create or retrieve the first-level catalog
         if catalog_id not in [cat.id for cat in catalog_main.get_children()]:
@@ -101,34 +98,24 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         else:
             catalog2 = catalog1.get_child(category_id)   
         
+
+        # Process bbox (needed for collections and items)
+        bbox = item['bbox']
+        bbox_list = [float(coord.strip()) for coord in bbox.split(',')]
+
+        # Process temporal resolution ## this needs to be changed to account for the total range of all items ##
+        temporal_resolution = item['temporal_resolution']
+        year_start, year_end = parse_year_range(str(temporal_resolution))
+
+
         ## COLLECTIONS ##
-        # Use item titles if necessary
-        title_collection = (item['title_short'] if not pd.isna(item['title_short'])
-                    else (item['title_collection'] if not pd.isna(item['title_collection'])
-                          else item['title_item']))
-        # collection description
-        #description_collection = item['description_collection'] if not pd.isna(item['description_collection']) else ''                                                                               
+        # combine title and short title
+        title_collection = (item['title_collection'] + ' (' + item['title_short'] + ')' if not pd.isna(item['title_short'])
+                            else (item['title_collection'])
+                            )
 
         # Create or retrieve the collection 
         if title_collection not in [col.id for col in catalog2.get_children()]:
-            # Process bbox
-            if not np.nan_to_num(bbox) == 0:
-                try:
-                    bbox_list = [float(coord.strip()) for coord in bbox.split(',')]
-                except ValueError:
-                    print(f'Check bbox: {bbox}')
-                    bbox_list = bbox
-            else:
-                bbox_list = np.nan
-
-            # Process temporal resolution ## this needs to be changed to account for the total range of all items ##
-            if not np.nan_to_num(temporal_resolution) == 0:
-                year_start, year_end = parse_year_range(str(temporal_resolution))
-            else:
-                year_start, year_end = np.nan, np.nan
-                print('Cannot create collection, because of no input for temporal_resolution')
-                continue
-
             # make keywords
             keywords = parse_keywords(item['subcategory'], item['risk_data_type'])
          
@@ -246,7 +233,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
    
 
 # Create catalogs from both hazard and exposure-vulnerability CSVs
-create_catalog_from_csv(hazard, catalog_main, dir)
+#create_catalog_from_csv(hazard, catalog_main, dir)
 create_catalog_from_csv(expvul, catalog_main, dir)
 
 
