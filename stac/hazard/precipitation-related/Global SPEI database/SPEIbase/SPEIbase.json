@@ -1,0 +1,58 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "SPEIbase",
+  "properties": {
+    "title": "SPEIbase",
+    "description": "The SPEIbase is based on the FAO-56 Penman-Monteith estimation of potential evapotranspiration. This is a major difference with respect to the SPEI Global Drought Monitor, that uses the Thornthwaite PET estimation.",
+    "risk data type": "hazard",
+    "subcategory": "drought",
+    "spatial scale": "(near-)global",
+    "reference period": "historical",
+    "temporal resolution": "1901-2022 (monthly)",
+    "scenarios": "nan",
+    "data type": "raster",
+    "data format": "netcdf",
+    "coordinate system": "4326",
+    "spatial resolution": "0.5 decimal degrees",
+    "data calculation type": "inferred",
+    "analysis type": "deterministic",
+    "underlying data": "NOAA",
+    "publication link": "10.1002/joc.3887",
+    "publication type": "article",
+    "code link": "https://zenodo.org/badge/latestdoi/97464490",
+    "code type": "processing",
+    "usage notes": "nan",
+    "datetime": "2024-07-31T17:46:08.763003Z"
+  },
+  "geometry": null,
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Global SPEI database"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Global SPEI database"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "stac_extensions": [],
+  "collection": "Global SPEI database"
+}

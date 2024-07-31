@@ -1,0 +1,58 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "GFPLAIN250m geotiff",
+  "properties": {
+    "title": "GFPLAIN250m geotiff",
+    "description": "The datasets include the floodplain and floodprone locations at the global level in geotiff format",
+    "risk data type": "hazard",
+    "subcategory": "fluvial flood",
+    "spatial scale": "(near-)global",
+    "reference period": "historical",
+    "temporal resolution": "2000 (nan)",
+    "scenarios": "nan",
+    "data type": "raster",
+    "data format": "geotiff",
+    "coordinate system": "4326",
+    "spatial resolution": "250 meters",
+    "data calculation type": "inferred",
+    "analysis type": "deterministic",
+    "underlying data": "Processed from the NASA SRTM Digital Elevation model ",
+    "publication link": "10.1038/sdata.2018.309",
+    "publication type": "article",
+    "code link": "nan",
+    "code type": "nan",
+    "usage notes": "nan",
+    "datetime": "2024-07-31T17:46:08.706764Z"
+  },
+  "geometry": null,
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "A Global High-resolution Dataset of Earth\u2019s Floodplains (GFPLAIN250m)"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "A Global High-resolution Dataset of Earth\u2019s Floodplains (GFPLAIN250m)"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    60.0
+  ],
+  "stac_extensions": [],
+  "collection": "A Global High-resolution Dataset of Earth\u2019s Floodplains (GFPLAIN250m)"
+}

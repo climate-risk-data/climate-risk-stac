@@ -1,0 +1,58 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Humidex future",
+  "properties": {
+    "title": "Humidex future",
+    "description": "Humidex is a heat stress indicator used by Canadian meteorological services. It is calculated as linear combination of daily maximum temperature and vapour pressure (calculated from daily mean specific humidity and surface pressure).",
+    "risk data type": "hazard",
+    "subcategory": "heat wave",
+    "spatial scale": "(near-)global",
+    "reference period": "future",
+    "temporal resolution": "2015-2100 (daily)",
+    "scenarios": "SSP-RCP combinations",
+    "data type": "raster",
+    "data format": "netcdf",
+    "coordinate system": "4326",
+    "spatial resolution": "0.5 decimal degrees",
+    "data calculation type": "modeled",
+    "analysis type": "deterministic",
+    "underlying data": "CMIP6",
+    "publication link": "10.24381/cds.776e08bd",
+    "publication type": "dataset",
+    "code link": "https://github.com/IPCC-WG1/Atlas/tree/main",
+    "code type": "processing",
+    "usage notes": "data download via interface or API",
+    "datetime": "2024-07-31T17:46:08.786109Z"
+  },
+  "geometry": null,
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "CMIP6 heat stress indicators (HIS)"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "CMIP6 heat stress indicators (HIS)"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    90.0
+  ],
+  "stac_extensions": [],
+  "collection": "CMIP6 heat stress indicators (HIS)"
+}

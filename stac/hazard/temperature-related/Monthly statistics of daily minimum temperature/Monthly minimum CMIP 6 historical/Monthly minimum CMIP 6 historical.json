@@ -1,0 +1,58 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Monthly minimum CMIP 6 historical",
+  "properties": {
+    "title": "Monthly minimum CMIP 6 historical",
+    "description": "Monthly minimum of daily minimum near-surface (2 meters) air temperature",
+    "risk data type": "hazard",
+    "subcategory": "cold wave",
+    "spatial scale": "(near-)global",
+    "reference period": "historical",
+    "temporal resolution": "1850-2014 (monthly)",
+    "scenarios": "nan",
+    "data type": "raster",
+    "data format": "netcdf",
+    "coordinate system": "4326",
+    "spatial resolution": "1 decimal degrees",
+    "data calculation type": "inferred",
+    "analysis type": "deterministic",
+    "underlying data": "CMIP6",
+    "publication link": "10.24381/cds.5292a2b0",
+    "publication type": "dataset",
+    "code link": "https://github.com/IPCC-WG1/Atlas/tree/main",
+    "code type": "processing",
+    "usage notes": "data download via interface or API",
+    "datetime": "2024-07-31T17:46:08.801910Z"
+  },
+  "geometry": null,
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Monthly statistics of daily minimum temperature"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Monthly statistics of daily minimum temperature"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    90.0
+  ],
+  "stac_extensions": [],
+  "collection": "Monthly statistics of daily minimum temperature"
+}

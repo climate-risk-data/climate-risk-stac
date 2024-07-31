@@ -1,0 +1,58 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Coastal floods current day",
+  "properties": {
+    "title": "Coastal floods current day",
+    "description": "Coastal flood maps of flood extent and water depth for current day",
+    "risk data type": "hazard",
+    "subcategory": "coastal flood",
+    "spatial scale": "(near-)global",
+    "reference period": "historical",
+    "temporal resolution": "1980 (irregular)",
+    "scenarios": "nan",
+    "data type": "raster",
+    "data format": "geotiff",
+    "coordinate system": "4326",
+    "spatial resolution": "30 arc seconds",
+    "data calculation type": "modeled",
+    "analysis type": "probabilistic",
+    "underlying data": "GTSR",
+    "publication link": "10.5194/nhess-20-1025-2020",
+    "publication type": "article",
+    "code link": "nan",
+    "code type": "nan",
+    "usage notes": "nan",
+    "datetime": "2024-07-31T17:46:08.706764Z"
+  },
+  "geometry": null,
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Aqueduct coastal floods (Aqueduct)"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Aqueduct coastal floods (Aqueduct)"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "stac_extensions": [],
+  "collection": "Aqueduct coastal floods (Aqueduct)"
+}

@@ -1,0 +1,58 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Rapid mapping per event",
+  "properties": {
+    "title": "Rapid mapping per event",
+    "description": "This service consists of the on-demand and fast provision (hours-days) of geospatial information in support of emergency management activities immediately following disaster. The service is based on the acquisition, processing and analysis, in rapid mode, of satellite imagery and other geospatial raster and vector data sources, and social media when relevant. A Rapid Mapping activation is defined by one event and a location. There can be more than one area of interest (AOI) in an activation but these need to be linked to the same event. AOIs represent the geographical areas to be analysed and mapped. There can be more than one product per AOI.",
+    "risk data type": "hazard",
+    "subcategory": "wildfire",
+    "spatial scale": "(near-)global",
+    "reference period": "historical",
+    "temporal resolution": "2017-now (irregular)",
+    "scenarios": "nan",
+    "data type": "vector",
+    "data format": "shapefile",
+    "coordinate system": "4326",
+    "spatial resolution": "event level nan",
+    "data calculation type": "inferred",
+    "analysis type": "empirical",
+    "underlying data": "satellite imagery and local data",
+    "publication link": "https://emergency.copernicus.eu/mapping/sites/default/files/files/CopernicusEMS_RapidMapping_ProductUserManual_v1.pdf",
+    "publication type": "documentation",
+    "code link": "nan",
+    "code type": "nan",
+    "usage notes": "Download per event/case study possible",
+    "datetime": "2024-07-31T17:46:08.681703Z"
+  },
+  "geometry": null,
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Copernicus Emergency Management Service - Mapping (CEMS)"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Copernicus Emergency Management Service - Mapping (CEMS)"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "stac_extensions": [],
+  "collection": "Copernicus Emergency Management Service - Mapping (CEMS)"
+}

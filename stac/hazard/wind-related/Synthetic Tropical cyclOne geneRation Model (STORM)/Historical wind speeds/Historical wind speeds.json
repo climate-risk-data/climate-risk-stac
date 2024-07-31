@@ -1,0 +1,58 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Historical wind speeds",
+  "properties": {
+    "title": "Historical wind speeds",
+    "description": "Datasets containing tropical cyclone maximum wind speed (in m/s) return periods, generated using the STORM datasets",
+    "risk data type": "hazard",
+    "subcategory": "tropical cyclone",
+    "spatial scale": "(near-)global",
+    "reference period": "historical",
+    "temporal resolution": "1980-2017 (nan)",
+    "scenarios": "nan",
+    "data type": "raster",
+    "data format": "geotiff",
+    "coordinate system": "4326",
+    "spatial resolution": "0.1 decimal degrees",
+    "data calculation type": "modeled",
+    "analysis type": "probabilistic",
+    "underlying data": "IBTrACS",
+    "publication link": "10.1038/s41597-020-00720-x",
+    "publication type": "article",
+    "code link": "https://github.com/NBloemendaal/STORM-return-periods",
+    "code type": "processing",
+    "usage notes": "nan",
+    "datetime": "2024-07-31T17:46:08.809817Z"
+  },
+  "geometry": null,
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Synthetic Tropical cyclOne geneRation Model (STORM)"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Synthetic Tropical cyclOne geneRation Model (STORM)"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    60.0
+  ],
+  "stac_extensions": [],
+  "collection": "Synthetic Tropical cyclOne geneRation Model (STORM)"
+}
