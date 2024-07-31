@@ -46,10 +46,6 @@
     }
   },
   "license": "CDLA-Permissive-1.0",
-  "keywords": [
-    "Subcategory:coastal flood",
-    "hazard"
-  ],
   "providers": [
     {
       "name": "Deltares",

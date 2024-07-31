@@ -61,10 +61,6 @@
     }
   },
   "license": "CC0-1.0",
-  "keywords": [
-    "Subcategory:tropical cyclone",
-    "hazard"
-  ],
   "providers": [
     {
       "name": "TU Delft",

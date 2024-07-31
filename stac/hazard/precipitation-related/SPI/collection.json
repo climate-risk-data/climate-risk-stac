@@ -51,10 +51,6 @@
     }
   },
   "license": "CC-BY-4.0",
-  "keywords": [
-    "Subcategory:drought",
-    "hazard"
-  ],
   "providers": [
     {
       "name": "Copernicus Climate Data Store",

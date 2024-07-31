@@ -46,10 +46,6 @@
     }
   },
   "license": "CC-BY-4.0",
-  "keywords": [
-    "Subcategory:multi hazard",
-    "hazard"
-  ],
   "providers": [
     {
       "name": "Zenodo",

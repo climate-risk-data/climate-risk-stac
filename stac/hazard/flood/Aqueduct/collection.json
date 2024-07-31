@@ -61,10 +61,6 @@
     }
   },
   "license": "CC-BY-4.0",
-  "keywords": [
-    "Subcategory:coastal flood",
-    "hazard"
-  ],
   "providers": [
     {
       "name": "World Resources Institute",

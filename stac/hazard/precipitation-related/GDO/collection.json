@@ -71,10 +71,6 @@
     }
   },
   "license": "CC-BY-4.0",
-  "keywords": [
-    "Subcategory:drought",
-    "hazard"
-  ],
   "providers": [
     {
       "name": "Global Drought Observatory",

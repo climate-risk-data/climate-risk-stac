@@ -46,10 +46,6 @@
     }
   },
   "license": "ODbL-1.0",
-  "keywords": [
-    "Subcategory:drought",
-    "hazard"
-  ],
   "providers": [
     {
       "name": "Spanish National Research Council (CSIC)",

@@ -46,10 +46,6 @@
     }
   },
   "license": "CC-BY-4.0",
-  "keywords": [
-    "Subcategory:fluvial flood",
-    "hazard"
-  ],
   "providers": [
     {
       "name": "World Meteorological Organization WMO",

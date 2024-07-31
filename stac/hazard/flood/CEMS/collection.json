@@ -45,16 +45,12 @@
       "interval": [
         [
           "2017-01-01T00:00:00Z",
-          "2024-07-30T00:00:00Z"
+          "2024-07-31T00:00:00Z"
         ]
       ]
     }
   },
   "license": "proprietary",
-  "keywords": [
-    "Subcategory:coastal flood, fluvial flood, pluvial flood",
-    "hazard"
-  ],
   "providers": [
     {
       "name": "CEMS",

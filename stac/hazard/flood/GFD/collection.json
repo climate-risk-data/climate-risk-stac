@@ -46,10 +46,6 @@
     }
   },
   "license": "CC-BY-4.0",
-  "keywords": [
-    "Subcategory:coastal flood, fluvial flood, pluvial flood",
-    "hazard"
-  ],
   "providers": [
     {
       "name": "Cloud to Street",

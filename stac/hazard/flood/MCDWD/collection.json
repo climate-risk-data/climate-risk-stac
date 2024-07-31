@@ -50,16 +50,12 @@
       "interval": [
         [
           "2021-01-01T00:00:00Z",
-          "2024-07-30T00:00:00Z"
+          "2024-07-31T00:00:00Z"
         ]
       ]
     }
   },
   "license": "CC-BY-4.0",
-  "keywords": [
-    "Subcategory:coastal flood, fluvial flood, pluvial flood",
-    "hazard"
-  ],
   "providers": [
     {
       "name": "NASA",

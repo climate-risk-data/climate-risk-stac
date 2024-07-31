@@ -40,16 +40,12 @@
       "interval": [
         [
           "1955-01-01T00:00:00Z",
-          "2024-07-30T00:00:00Z"
+          "2024-07-31T00:00:00Z"
         ]
       ]
     }
   },
   "license": "ODbL-1.0",
-  "keywords": [
-    "Subcategory:drought",
-    "hazard"
-  ],
   "providers": [
     {
       "name": "Spanish National Research Council (CSIC)",

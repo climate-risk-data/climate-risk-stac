@@ -51,10 +51,6 @@
     }
   },
   "license": "CC-BY-NC-SA-4.0",
-  "keywords": [
-    "Subcategory:fluvial flood",
-    "hazard"
-  ],
   "providers": [
     {
       "name": "Estellus",

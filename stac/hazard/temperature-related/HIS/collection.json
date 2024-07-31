@@ -91,10 +91,6 @@
     }
   },
   "license": "CC-BY-4.0",
-  "keywords": [
-    "Subcategory:heat wave",
-    "hazard"
-  ],
   "providers": [
     {
       "name": "Copernicus Climate Data Store",

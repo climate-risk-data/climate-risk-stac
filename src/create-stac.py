@@ -44,6 +44,15 @@ def parse_year_range(year_str):
         else:
             raise ValueError("Invalid year format")
         
+# Function to make keywords based on subcategory and risk data type
+def parse_keywords(subc, rdata):
+    # separate strings
+    keywords = subc.split(',') if ',' in subc else [subc]
+
+    if rdata == 'hazard':
+        keywords = keywords
+    else:   
+        keywords = [keywords, rdata]
 
 # Read data sheets
 hazard = pd.read_csv('csv/hazard.csv', encoding='utf-8')
@@ -120,8 +129,9 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 print('Cannot create collection, because of no input for temporal_resolution')
                 continue
 
-            #keywords = item['keywords'].split(',') if 'keywords' in item else [] ## check for proper formatting of keywords
-            
+            # make keywords
+            keywords = parse_keywords(item['subcategory'], item['risk_data_type'])
+         
             # create basic collection
             collection = pystac.Collection(
                 id=title_collection,
@@ -132,9 +142,9 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                     temporal=pystac.TemporalExtent([[year_start, year_end]]), # needs to be updated based on all items in the collection
                 ),
                 license=item['license'],
-                keywords=['Subcategory:' + '' + str(item['subcategory']), item['risk_data_type']], #remove str() again once subcategory fixed; change to only use risk data type for E+V
+                keywords=keywords, # add further if needed
                 extra_fields={
-                    'subcategory': str(item['subcategory']), #remove str() again once subcategory fixed
+                    'subcategory': item['subcategory'],
                     'risk data type': item['risk_data_type']
                 }
             )

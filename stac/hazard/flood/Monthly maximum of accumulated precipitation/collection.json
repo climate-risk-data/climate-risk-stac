@@ -81,10 +81,6 @@
     }
   },
   "license": "CC-BY-4.0",
-  "keywords": [
-    "Subcategory:pluvial flood",
-    "hazard"
-  ],
   "providers": [
     {
       "name": "Copernicus Climate Data Store",

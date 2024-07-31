@@ -81,10 +81,6 @@
     }
   },
   "license": "CC-BY-4.0",
-  "keywords": [
-    "Subcategory:cold wave",
-    "hazard"
-  ],
   "providers": [
     {
       "name": "Copernicus Climate Data Store",
