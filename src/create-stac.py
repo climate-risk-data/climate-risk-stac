@@ -22,7 +22,7 @@ def parse_year_range(year_str):
         if len(start) == 4 and len(end) == 4:
             start_year, end_year = int(start), int(end)
             return datetime(start_year, 1, 1), datetime(end_year, 12, 31)
-        elif len(start) == 4 and len(end) == 0:
+        elif len(start) == 4 and len(end) == 3:
             start_year = int(start)
             end_year = datetime.now().year
             end_month = datetime.now().month
