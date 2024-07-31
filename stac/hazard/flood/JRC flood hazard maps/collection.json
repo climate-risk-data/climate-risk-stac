@@ -22,8 +22,8 @@
       "title": "Flood"
     }
   ],
-  "subcategory": "fluvial flood",
   "risk data type": "hazard",
+  "subcategory": "fluvial flood",
   "title": "JRC flood hazard maps",
   "extent": {
     "spatial": {

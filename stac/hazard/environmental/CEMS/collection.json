@@ -27,8 +27,8 @@
       "title": "Environmental"
     }
   ],
-  "subcategory": "wildfire",
   "risk data type": "hazard",
+  "subcategory": "wildfire",
   "title": "CEMS",
   "extent": {
     "spatial": {

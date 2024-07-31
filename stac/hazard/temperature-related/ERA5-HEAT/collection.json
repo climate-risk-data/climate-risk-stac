@@ -27,8 +27,8 @@
       "title": "Temperature-related"
     }
   ],
-  "subcategory": "heat wave",
   "risk data type": "hazard",
+  "subcategory": "heat wave",
   "title": "ERA5-HEAT",
   "extent": {
     "spatial": {

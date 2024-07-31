@@ -47,9 +47,9 @@ def parse_year_range(year_str):
 # Function to make keywords based on subcategory and risk data type
 def parse_keywords(subc, rdata):
     # separate strings
-    subc = subc.split(',') if ',' in subc else subc
+    keyw = subc.split(',') if ',' in subc else subc
     # use rdata if expvul
-    keywords = subc if rdata == 'hazard' else [rdata, subc]
+    keywords = keyw if rdata == 'hazard' else [rdata, subc]
     print(f"new keywords: {keywords}")
     return keywords
 
@@ -144,8 +144,8 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 license=item['license'],
                 keywords=keywords, # add further if needed
                 extra_fields={
-                    'subcategory': item['subcategory'],
-                    'risk data type': item['risk_data_type']
+                    'risk data type': item['risk_data_type'],
+                    'subcategory': item['subcategory']                    
                 }
             )
 

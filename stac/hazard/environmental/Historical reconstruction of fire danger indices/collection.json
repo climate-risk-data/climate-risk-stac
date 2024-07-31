@@ -37,8 +37,8 @@
       "title": "Environmental"
     }
   ],
-  "subcategory": "wildfire",
   "risk data type": "hazard",
+  "subcategory": "wildfire",
   "title": "Historical reconstruction of fire danger indices",
   "extent": {
     "spatial": {

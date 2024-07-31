@@ -37,8 +37,8 @@
       "title": "Flood"
     }
   ],
-  "subcategory": "coastal flood",
   "risk data type": "hazard",
+  "subcategory": "coastal flood",
   "title": "Aqueduct",
   "extent": {
     "spatial": {

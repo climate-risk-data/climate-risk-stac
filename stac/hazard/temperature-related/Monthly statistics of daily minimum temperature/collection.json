@@ -57,8 +57,8 @@
       "title": "Temperature-related"
     }
   ],
-  "subcategory": "cold wave",
   "risk data type": "hazard",
+  "subcategory": "cold wave",
   "title": "Monthly statistics of daily minimum temperature",
   "extent": {
     "spatial": {

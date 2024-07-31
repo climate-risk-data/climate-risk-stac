@@ -22,8 +22,8 @@
       "title": "Multi-hazard"
     }
   ],
-  "subcategory": "multi hazard",
   "risk data type": "hazard",
+  "subcategory": "multi hazard",
   "title": "MYRIAD-HES",
   "extent": {
     "spatial": {

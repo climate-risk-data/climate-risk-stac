@@ -22,8 +22,8 @@
       "title": "Precipitation-related"
     }
   ],
-  "subcategory": "drought",
   "risk data type": "hazard",
+  "subcategory": "drought",
   "title": "DEDI",
   "extent": {
     "spatial": {

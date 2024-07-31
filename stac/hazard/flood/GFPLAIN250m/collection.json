@@ -27,8 +27,8 @@
       "title": "Flood"
     }
   ],
-  "subcategory": "fluvial flood",
   "risk data type": "hazard",
+  "subcategory": "fluvial flood",
   "title": "GFPLAIN250m",
   "extent": {
     "spatial": {

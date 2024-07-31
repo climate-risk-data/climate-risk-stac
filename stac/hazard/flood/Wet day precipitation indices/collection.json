@@ -37,8 +37,8 @@
       "title": "Flood"
     }
   ],
-  "subcategory": "pluvial flood",
   "risk data type": "hazard",
+  "subcategory": "pluvial flood",
   "title": "Wet day precipitation indices",
   "extent": {
     "spatial": {

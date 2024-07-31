@@ -32,8 +32,8 @@
       "title": "Flood"
     }
   ],
-  "subcategory": "coastal flood,fluvial flood,pluvial flood",
   "risk data type": "hazard",
+  "subcategory": "coastal flood,fluvial flood,pluvial flood",
   "title": "MCDWD",
   "extent": {
     "spatial": {

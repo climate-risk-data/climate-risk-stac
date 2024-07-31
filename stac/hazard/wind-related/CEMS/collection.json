@@ -37,8 +37,8 @@
       "title": "Wind-related"
     }
   ],
-  "subcategory": "extratropical cyclone",
   "risk data type": "hazard",
+  "subcategory": "extratropical cyclone",
   "title": "CEMS",
   "extent": {
     "spatial": {

@@ -22,8 +22,8 @@
       "title": "Flood"
     }
   ],
-  "subcategory": "fluvial flood",
   "risk data type": "hazard",
+  "subcategory": "fluvial flood",
   "title": "GRDC",
   "extent": {
     "spatial": {

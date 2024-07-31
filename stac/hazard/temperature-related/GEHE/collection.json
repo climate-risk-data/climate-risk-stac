@@ -37,8 +37,8 @@
       "title": "Temperature-related"
     }
   ],
-  "subcategory": "heat wave",
   "risk data type": "hazard",
+  "subcategory": "heat wave",
   "title": "GEHE",
   "extent": {
     "spatial": {

@@ -37,8 +37,8 @@
       "title": "Wind-related"
     }
   ],
-  "subcategory": "tropical cyclone",
   "risk data type": "hazard",
+  "subcategory": "tropical cyclone",
   "title": "STORM",
   "extent": {
     "spatial": {

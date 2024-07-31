@@ -32,8 +32,8 @@
       "title": "Environmental"
     }
   ],
-  "subcategory": "wildfire",
   "risk data type": "hazard",
+  "subcategory": "wildfire",
   "title": "Seasonal forecast of fire danger indices",
   "extent": {
     "spatial": {
