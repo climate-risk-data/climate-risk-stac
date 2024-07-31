@@ -107,7 +107,6 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         temporal_resolution = item['temporal_resolution']
         year_start, year_end = parse_year_range(str(temporal_resolution))
 
-
         ## COLLECTIONS ##
         # combine title and short title
         title_collection = (item['title_collection'] + ' (' + item['title_short'] + ')' if not pd.isna(item['title_short'])
@@ -152,11 +151,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         print('collection ', row_num, ' ', title_collection, ' successful')
 
         ## ITEMS ##
-        
-        # datetime and bbox
-        year_start, year_end = parse_year_range(str(temporal_resolution))
-        bbox_list = [float(coord.strip()) for coord in bbox.split(',')]
-        
+       
         # Create basic item
         item_stac = pystac.Item(
             id=item['title_item'],
