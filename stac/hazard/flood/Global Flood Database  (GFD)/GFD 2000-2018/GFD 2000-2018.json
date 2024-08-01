@@ -23,7 +23,7 @@
     "code link": "https://github.com/cloudtostreet/MODIS_GlobalFloodDatabase",
     "code type": "processing",
     "usage notes": "Download per event possible. The data do not differentiate flood types. ",
-    "datetime": "2024-07-31T17:46:08.721656Z"
+    "datetime": "2024-08-01T14:07:14.294996Z"
   },
   "geometry": null,
   "links": [

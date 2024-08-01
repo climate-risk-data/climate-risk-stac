@@ -1,0 +1,58 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Coastal floods future scenarios",
+  "properties": {
+    "title": "Coastal floods future scenarios",
+    "description": "Coastal flood maps of flood extent and water depth for future scenarios",
+    "risk data type": "hazard",
+    "subcategory": "coastal flood",
+    "spatial scale": "(near-)global",
+    "reference period": "future",
+    "temporal resolution": "2030-2080 (irregular)",
+    "scenarios": "RCPs",
+    "data type": "raster",
+    "data format": "geotiff",
+    "coordinate system": "4326",
+    "spatial resolution": "30 arc seconds",
+    "data calculation type": "modeled",
+    "analysis type": "probabilistic",
+    "underlying data": "GTSR",
+    "publication link": "10.5194/nhess-20-1025-2020",
+    "publication type": "article",
+    "code link": "nan",
+    "code type": "nan",
+    "usage notes": "data available for 2030, 2050, 2080 and RCP4.5 and 8.5",
+    "datetime": "2024-08-01T14:07:14.291533Z"
+  },
+  "geometry": null,
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Flood hazard maps (Aqueduct)"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Flood hazard maps (Aqueduct)"
+    }
+  ],
+  "assets": {},
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "stac_extensions": [],
+  "collection": "Flood hazard maps (Aqueduct)"
+}

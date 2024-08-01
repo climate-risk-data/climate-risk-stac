@@ -24,21 +24,9 @@
     },
     {
       "rel": "child",
-      "href": "./multi-hazard/catalog.json",
-      "type": "application/json",
-      "title": "Multi-hazard"
-    },
-    {
-      "rel": "child",
       "href": "./precipitation-related/catalog.json",
       "type": "application/json",
       "title": "Precipitation-related"
-    },
-    {
-      "rel": "child",
-      "href": "./temperature-related/catalog.json",
-      "type": "application/json",
-      "title": "Temperature-related"
     },
     {
       "rel": "child",

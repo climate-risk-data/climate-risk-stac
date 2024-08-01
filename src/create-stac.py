@@ -9,8 +9,14 @@ import numpy as np
 import os
 #import json
 
-# Directory for (reading &) writing the catalog
+# File paths
 dir = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/'
+haz = 'csv/hazard.csv'
+exv = 'csv/expvul.csv'
+
+# Read data sheets
+hazard = pd.read_csv(haz, encoding='utf-8')
+expvul = pd.read_csv(exv, encoding='utf-8')
 
 # Function to parse year range
 def parse_year_range(year_str):
@@ -53,14 +59,31 @@ def parse_keywords(subc, rdata):
     print(f"new keywords: {keywords}")
     return keywords
 
+# Function to update existing keywords
+def update_keywords(ext_key, keywords):
+    ext_key = set(ext_key)
+    # Add missing keywords from the existing keywords list
+    for keyword in keywords:
+        ext_key.add(keyword)
+        # update keywords
+        upd_key = list(ext_key)
+    return upd_key
 
-# Read data sheets
-hazard = pd.read_csv('csv/hazard.csv', encoding='utf-8')
-expvul = pd.read_csv('csv/expvul.csv', encoding='utf-8')
-
-# Preprocessing of data sheets: replace all blank cells with "not available" --> do this only for the 'property' columns!
-#hazard = hazard.fillna('not available')
-#expvul = expvul.fillna('not available')
+# Function to update providers ## DOES NOT WORK YET ##
+def update_providers(provider1, provider2):
+    # check whether both providers are equal
+    print(provider1)
+    print(provider2)
+    check=(
+        provider1 == provider2 #and
+        #provider1[1] == provider2[1] and
+        #provider1[2] == provider2[2]
+    )
+    if not check:
+        providers = [provider1, provider2]
+    else:
+        providers = provider1
+    return providers
 
 # Create the main catalog
 catalog_main = pystac.Catalog(
@@ -113,11 +136,12 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                             else (item['title_collection'])
                             )
 
+        # make keywords
+        keywords = parse_keywords(item['subcategory'], item['risk_data_type'])
+        
         # Create or retrieve the collection 
         if title_collection not in [col.id for col in catalog2.get_children()]:
-            # make keywords
-            keywords = parse_keywords(item['subcategory'], item['risk_data_type'])
-         
+                    
             # create basic collection
             collection = pystac.Collection(
                 id=title_collection,
@@ -136,9 +160,11 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             )
 
             # Create and add a Provider
+            role = pystac.ProviderRole(item['provider_role'])
+            
             provider = pystac.Provider(
                  name=item['provider'],
-                 roles=item['provider_role'],
+                 roles=role, # change role
                  url=item['link_website']
                 )
             collection.providers = [provider]
@@ -146,8 +172,30 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             catalog2.add_child(collection)
 
         else:
+            # retrieve collection
             collection = catalog2.get_child(title_collection)
-        
+            
+            # Update keywords
+            # retrieve existing keywords
+            key_col = collection.keywords
+            # update keywords
+            new_key = update_keywords(key_col, keywords)
+            # add to collection
+            collection.keywords = new_key
+
+            # # Update providers
+            # # retrieve existing provider
+            # provider1 = collection.providers
+            # # create potential new provider from current row
+            # provider2 = pystac.Provider(
+            #      name=item['provider'],
+            #      roles=item['provider_role'],
+            #      url=item['link_website']
+            #     )
+            # new_pro = update_providers(provider1, provider2)
+            # # add to collection
+            # collection.providers = new_pro
+   
         print('collection ', row_num, ' ', title_collection, ' successful')
 
         ## ITEMS ##
@@ -210,15 +258,15 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         
         # Add item to collection
         collection.add_item(item_stac)
-
-    	# get paths of item
-        #for item_stac in catalog_main.get_all_items():
-        #    print(item_stac.get_self_href())
         
         # confirmation item added
         print('item ', row_num, ' ', item['title_item'], ' successful')
+    
+    # update collection properties based on all items belonging to the collection ## NOT FINISHED YET ##
+    #collection_interval = sorted([collection_item.datetime, collection_item2.datetime])
+    #temporal_extent = pystac.TemporalExtent(intervals=[collection_interval])
 
-    #print(json.dumps(item_stac.to_dict(), indent=4))
+
     catalog_main.describe()
 
     # Normalize hrefs and save the catalog
