@@ -68,7 +68,7 @@
   "providers": [
     {
       "name": "World Resources Institute",
-      "roles": "licensor",
+      "roles": "host",
       "url": "https://www.wri.org/data/aqueduct-floods-hazard-maps"
     }
   ]

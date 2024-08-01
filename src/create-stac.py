@@ -160,7 +160,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             )
 
             # Create and add a Provider
-            role = pystac.ProviderRole(item['provider_role'])
+            role = pystac.provider.ProviderRole.HOST #item['provider_role']
             
             provider = pystac.Provider(
                  name=item['provider'],
