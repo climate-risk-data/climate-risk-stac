@@ -10,7 +10,7 @@
     "spatial scale": "(near-)global",
     "reference period": "historical",
     "temporal resolution": "2017-now (irregular)",
-    "scenarios": null,
+    "scenarios": NaN,
     "data type": "vector",
     "data format": "shapefile",
     "coordinate system": "4326",
