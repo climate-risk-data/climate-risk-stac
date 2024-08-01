@@ -218,7 +218,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 'spatial scale': item['spatial_scale'],
                 'reference period': item['reference_period'],
                 'temporal resolution': temporal_resolution, # combination of resolution and interval
-                'scenarios': item['scenarios'], 
+                'scenarios': str(item['scenarios']),
                 'data type': item['data_type'],
                 'data format': item['format'],
                 'coordinate system': str(item['coordinate_system']),
@@ -228,9 +228,9 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 'underlying data': str(item['underlying_data']),
                 'publication link': str(item['publication_link']),
                 'publication type': str(item['publication_type']),
-                'code link': item['code_link'],
-                'code type': item['code_type'],
-                'usage notes': item['usage_notes'],
+                'code link': str(item['code_link']),
+                'code type': str(item['code_type']),
+                'usage notes': str(item['usage_notes']),
             }
             # extra_fields={ # are part of the json, but not shown in the browser
             #         'subcategory': str(item['subcategory']), #remove str() again once subcategory fixed

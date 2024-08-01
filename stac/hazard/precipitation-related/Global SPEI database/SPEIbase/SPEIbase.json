@@ -10,7 +10,7 @@
     "spatial scale": "(near-)global",
     "reference period": "historical",
     "temporal resolution": "1901-2022 (monthly)",
-    "scenarios": NaN,
+    "scenarios": "nan",
     "data type": "raster",
     "data format": "netcdf",
     "coordinate system": "4326",
@@ -22,7 +22,7 @@
     "publication type": "article",
     "code link": "https://zenodo.org/badge/latestdoi/97464490",
     "code type": "processing",
-    "usage notes": NaN,
+    "usage notes": "nan",
     "start_datetime": "1901-01-01T00:00:00Z",
     "end_datetime": "2022-12-31T00:00:00Z",
     "datetime": null
