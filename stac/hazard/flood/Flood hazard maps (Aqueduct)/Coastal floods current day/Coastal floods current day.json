@@ -10,7 +10,7 @@
     "spatial scale": "(near-)global",
     "reference period": "historical",
     "temporal resolution": "1980",
-    "scenarios": NaN,
+    "scenarios": null,
     "data type": "raster",
     "data format": "geotiff",
     "coordinate system": "4326",

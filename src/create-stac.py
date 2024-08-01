@@ -202,6 +202,11 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         if not np.nan_to_num(item['temporal_interval']) == 0:
             temporal_resolution = str(item['temporal_resolution']) +' ('+ str(item['temporal_interval']) + ')'
 
+        if np.nan_to_num(item['scenarios']):
+            scenarios = item['scenarios']
+        else: 
+            scenarios = None
+
         # Create basic item
         item_stac = pystac.Item(
             id=item['title_item'],
@@ -218,7 +223,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 'spatial scale': item['spatial_scale'],
                 'reference period': item['reference_period'],
                 'temporal resolution': temporal_resolution, # combination of resolution and interval
-                'scenarios': item['scenarios'],
+                'scenarios': scenarios,
                 'data type': item['data_type'],
                 'data format': item['format'],
                 'coordinate system': str(item['coordinate_system']),
