@@ -10,7 +10,7 @@
     "spatial scale": "(near-)global",
     "reference period": "historical",
     "temporal resolution": "1901-2022 (monthly)",
-    "scenarios": "nan",
+    "scenarios": null,
     "data type": "raster",
     "data format": "netcdf",
     "coordinate system": "4326",
