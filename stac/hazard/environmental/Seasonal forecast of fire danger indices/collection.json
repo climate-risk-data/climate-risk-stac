@@ -52,7 +52,7 @@
   "providers": [
     {
       "name": "ECMWF",
-      "roles": "host",
+      "roles": "producer",
       "url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/cems-fire-seasonal?tab=overview"
     }
   ]

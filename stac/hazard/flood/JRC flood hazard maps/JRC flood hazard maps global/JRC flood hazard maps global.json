@@ -23,7 +23,9 @@
     "code link": "nan",
     "code type": "nan",
     "usage notes": "Cell values indicate water depth (in m), based on an analysis from 2000-2013 (so roughly representing 2013)",
-    "datetime": "2024-08-01T14:16:10.727723Z"
+    "start_datetime": "2013-01-01T00:00:00Z",
+    "end_datetime": "2013-12-31T00:00:00Z",
+    "datetime": null
   },
   "geometry": null,
   "links": [

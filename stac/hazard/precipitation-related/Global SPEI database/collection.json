@@ -52,7 +52,7 @@
   "providers": [
     {
       "name": "Spanish National Research Council (CSIC)",
-      "roles": "host",
+      "roles": "licensor",
       "url": "https://spei.csic.es/spei_database"
     }
   ]

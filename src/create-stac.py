@@ -128,7 +128,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
 
         # Process temporal resolution ## this needs to be changed to account for the total range of all items ##
         temporal_resolution = item['temporal_resolution']
-        year_start, year_end = parse_year_range(str(temporal_resolution))
+        start, end = parse_year_range(str(temporal_resolution))
 
         ## COLLECTIONS ##
         # combine title and short title
@@ -149,7 +149,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 description= str(item['description_collection']),#description_collection,
                 extent=pystac.Extent(
                     spatial=pystac.SpatialExtent([bbox_list]), # needs to be updated based on all items in the collection
-                    temporal=pystac.TemporalExtent([[year_start, year_end]]), # needs to be updated based on all items in the collection
+                    temporal=pystac.TemporalExtent([[start, end]]), # needs to be updated based on all items in the collection
                 ),
                 license=item['license'],
                 keywords=keywords, # add further if needed
@@ -159,12 +159,10 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 }
             )
 
-            # Create and add a Provider
-            #role = pystac.provider.ProviderRole.HOST #
-            
+            # Create and add a Provider         
             provider = pystac.Provider(
                  name=item['provider'],
-                 roles= pystac.provider.ProviderRole.HOST, #item['provider_role'], # change role
+                 roles= item['provider_role'], # change role: pystac.provider.ProviderRole.HOST ## DOES NOT WORK ##
                  url=item['link_website']
                 )
             collection.providers = [provider]
@@ -205,9 +203,9 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             id=item['title_item'],
             geometry=None,  # Add geometry if available
             bbox=bbox_list,
-            datetime=datetime.now(),
-            #start_datetime = year_start,
-            #end_datetime = year_end,
+            datetime=None, #datetime.now(),
+            start_datetime=start,
+            end_datetime=end,
             properties={
                 'title': item['title_item'],
                 'description': item['description_item'],
@@ -229,7 +227,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 'publication type': str(item['publication_type']),
                 'code link': str(item['code_link']),
                 'code type': str(item['code_type']),
-                'usage notes': str(item['usage_notes'])
+                'usage notes': str(item['usage_notes']),
             }
             # extra_fields={ # are part of the json, but not shown in the browser
             #         'subcategory': str(item['subcategory']), #remove str() again once subcategory fixed

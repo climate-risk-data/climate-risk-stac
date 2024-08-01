@@ -57,7 +57,7 @@
   "providers": [
     {
       "name": "CEMS",
-      "roles": "host",
+      "roles": "producer",
       "url": "https://emergency.copernicus.eu/mapping/ems/emergency-management-service-mapping"
     }
   ]

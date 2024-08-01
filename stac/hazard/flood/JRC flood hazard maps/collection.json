@@ -52,7 +52,7 @@
   "providers": [
     {
       "name": "JRC Data Catalogue",
-      "roles": "host",
+      "roles": "licensor",
       "url": "https://data.jrc.ec.europa.eu/collection/id-0054"
     }
   ]
