@@ -10,7 +10,7 @@
     "spatial scale": "(near-)global",
     "reference period": "historical",
     "temporal resolution": "1981-now (daily)",
-    "scenarios": "nan",
+    "scenarios": NaN,
     "data type": "raster",
     "data format": "GRIB",
     "coordinate system": "4326",

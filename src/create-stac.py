@@ -218,7 +218,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 'spatial scale': item['spatial_scale'],
                 'reference period': item['reference_period'],
                 'temporal resolution': temporal_resolution, # combination of resolution and interval
-                'scenarios': str(item['scenarios']),
+                'scenarios': item['scenarios'],
                 'data type': item['data_type'],
                 'data format': item['format'],
                 'coordinate system': str(item['coordinate_system']),
