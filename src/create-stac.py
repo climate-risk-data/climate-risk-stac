@@ -247,20 +247,20 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         # add projection extension!
 
         # Add scientific extension if DOI is present
-        # if str(item['publication_link']).startswith('10.'):
-        #     print("doi available")
-        #     sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
-        #     sci_ext.doi = item['publication_link'] # adjust condition here for links that are not dois
-        #     #sci_ext.related_identifiers = [
-        #     #    {
-        #     #        "relation": "isCitedBy",
-        #     #        "identifier": "doi:10.1038/s41586-020-2584-7"
-        #     #        }
-        #     #]
-        #     #item['publication_link']
-        #     #print(url)
-        # else:
-        #     print("no doi available")
+        if str(item['publication_link']).startswith('10.'):
+            print("doi available")
+            sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
+            sci_ext.doi = item['publication_link'] # adjust condition here for links that are not dois
+            #sci_ext.related_identifiers = [
+            #    {
+            #        "relation": "isCitedBy",
+            #        "identifier": "doi:10.1038/s41586-020-2584-7"
+            #        }
+            #]
+            #item['publication_link']
+            #print(url)
+        else:
+            print("no doi available")
 
 
         # code to add a web link (for the publication as well as the website link)

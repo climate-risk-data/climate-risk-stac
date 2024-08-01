@@ -25,10 +25,15 @@
     "usage notes": "nan",
     "start_datetime": "1980-01-01T00:00:00Z",
     "end_datetime": "2017-12-31T00:00:00Z",
+    "sci:doi": "10.1038/s41597-020-00720-x",
     "datetime": null
   },
   "geometry": null,
   "links": [
+    {
+      "rel": "cite-as",
+      "href": "https://doi.org/10.1038/s41597-020-00720-x"
+    },
     {
       "rel": "root",
       "href": "../../../../catalog.json",
@@ -55,6 +60,8 @@
     180.0,
     60.0
   ],
-  "stac_extensions": [],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
   "collection": "Synthetic Tropical cyclOne geneRation Model (STORM)"
 }
