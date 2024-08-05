@@ -127,8 +127,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         bbox_list = [float(coord.strip()) for coord in bbox.split(',')]
 
         # Process temporal resolution ## this needs to be changed to account for the total range of all items ##
-        temporal_resolution = item['temporal_resolution']
-        start, end = parse_year_range(str(temporal_resolution))
+        start, end = parse_year_range(str(item['temporal_resolution']))
 
         ## COLLECTIONS ##
         # combine title and short title
@@ -198,14 +197,15 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
 
         ## ITEMS ##
        
-        # define temporal resolution
-        if not np.nan_to_num(item['temporal_interval']) == 0:
-            temporal_resolution = str(item['temporal_resolution']) +' ('+ str(item['temporal_interval']) + ')'
-
-        if np.nan_to_num(item['scenarios']):
-            scenarios = item['scenarios']
-        else: 
-            scenarios = None
+        # define item attributes that may deviate per item
+        temporal_resolution = f"{item['temporal_resolution']} ({item['temporal_interval']})" if np.nan_to_num(item['temporal_interval']) else f"{item['temporal_resolution']}"
+        scenarios = item['scenarios'] if np.nan_to_num(item['scenarios']) else None
+        spatial_resolution = f"{item['spatial_resolution']} {item['spatial_resolution_unit']}" if np.nan_to_num(item['spatial_resolution_unit']) else f"{item['spatial_resolution']}"
+        analysis_type = item['analysis_type'] if np.nan_to_num(item['analysis_type']) else None
+        underlying_data = item['underlying_data'] if np.nan_to_num(item['underlying_data']) else None
+        publication = f"{item['publication_link']} ({item['publication_type']})" if np.nan_to_num(item['publication_link']) else None
+        code =  f"{item['code_link']} ({item['code_type']})" if np.nan_to_num(item['code_link']) else None
+        usage_notes = item['usage_notes'] if np.nan_to_num(item['underlying_data']) else None
 
         # Create basic item
         item_stac = pystac.Item(
@@ -227,15 +227,13 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 'data type': item['data_type'],
                 'data format': item['format'],
                 'coordinate system': str(item['coordinate_system']),
-                'spatial resolution': str(item['spatial_resolution']) +' '+ str(item['spatial_resolution_unit']),
+                'spatial resolution': spatial_resolution, # combination of resolution and unit
                 'data calculation type': item['data_calculation_type'],
-                'analysis type': str(item['analysis_type']),
-                'underlying data': str(item['underlying_data']),
-                'publication link': str(item['publication_link']),
-                'publication type': str(item['publication_type']),
-                'code link': str(item['code_link']),
-                'code type': str(item['code_type']),
-                'usage notes': str(item['usage_notes']),
+                'analysis type': analysis_type,
+                'underlying data': underlying_data,
+                'publication': publication,
+                'code': code,
+                'usage notes': usage_notes
             }
             # extra_fields={ # are part of the json, but not shown in the browser
             #         'subcategory': str(item['subcategory']), #remove str() again once subcategory fixed
@@ -251,22 +249,17 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             print("doi available")
             sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
             sci_ext.doi = item['publication_link'] # adjust condition here for links that are not dois
-            # sci_ext.related_identifiers = [
-            #     {
-            #         "relation": "isCitedBy",
-            #         "identifier": "doi:10.1038/s41586-020-2584-7"
-            #         }
-            # ]
-            #item['publication_link']
-            #print(url)
-        else:
-            print("no doi available")
-
-
-        # code to add a web link (for the publication as well as the website link)
-        #item_stac.add_link(pystac.Link(rel="related", target="https://www.openai.com", title="OpenAI"))
+        elif np.nan_to_num(item['publication_link']):
+            print("weblink available")
+            link = pystac.Link(
+                rel="publication-link",  # Relationship of the link
+                target=item['publication_link'],  # Target URL
+                title="Publication link",  # Optional title
+                )
+            item_stac.add_link(link)
 
         
+
         # Add item to collection
         collection.add_item(item_stac)
         
