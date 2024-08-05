@@ -203,9 +203,16 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         spatial_resolution = f"{item['spatial_resolution']} {item['spatial_resolution_unit']}" if np.nan_to_num(item['spatial_resolution_unit']) else f"{item['spatial_resolution']}"
         analysis_type = item['analysis_type'] if np.nan_to_num(item['analysis_type']) else None
         underlying_data = item['underlying_data'] if np.nan_to_num(item['underlying_data']) else None
-        publication = f"{item['publication_type']} (link in Additional Resources)" if np.nan_to_num(item['publication_link']) else None
         code =  f"{item['code_type']} (link in Additional Resources)" if np.nan_to_num(item['code_link']) else None
         usage_notes = item['usage_notes'] if np.nan_to_num(item['usage_notes']) else None
+        
+        # condition for publication
+        if str(item['publication_link']).startswith('10.'):
+            publication = f"{item['publication_type']} (DOI below)" 
+        elif np.nan_to_num(item['publication_link']): 
+            publication = f"{item['publication_type']} (link in Additional Resources)"
+        else:
+            publication = None
 
         # Create basic item
         item_stac = pystac.Item(
@@ -266,9 +273,6 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 title="Code link",  # Optional title
                 )
             item_stac.add_link(link)
-
-
-        
 
         # Add item to collection
         collection.add_item(item_stac)

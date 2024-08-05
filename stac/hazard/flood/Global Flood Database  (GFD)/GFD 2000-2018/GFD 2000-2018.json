@@ -18,7 +18,7 @@
     "data calculation type": "inferred",
     "analysis type": "empirical",
     "underlying data": "MODIS satellite imagery",
-    "publication": "article (link in Additional Resources)",
+    "publication": "article (DOI below)",
     "code": "processing (link in Additional Resources)",
     "usage notes": "Download per event possible. The data do not differentiate flood types. ",
     "start_datetime": "2000-01-01T00:00:00Z",
