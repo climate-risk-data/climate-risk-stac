@@ -290,13 +290,18 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
 
         # Add assets
         # establish the number of assets
-        asset_str = item['assets']
-        if ';' in asset_str:
-            assets = asset_str.split(';')
+        asset_str = item['assets'] # useful if we want to make this a function
+        if np.nan_to_num(asset_str):
+            if ';' in asset_str:
+                assets = asset_str.split(';')
+            else:
+                assets = asset_str
         else:
-            assets = asset_str
+            assets = None
         print(assets)
-        
+        length = len(assets) if np.nan_to_num(asset_str) else None  
+        print('number of assets provided:' , length)
+
         # Define the asset details
         asset_href = "path/to/your/datafile.tif"
         asset = pystac.Asset(
