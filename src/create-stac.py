@@ -253,15 +253,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         # add projection extension
         proj_ext = ProjectionExtension.ext(item_stac, add_if_missing=True)
         # Add projection properties
-        proj_ext.epsg = 4326
-        proj_ext.wkt2 = "GEOGCRS[...]"
-        proj_ext.proj_bbox = [125.0, 10.0, 126.0, 11.0]
-        proj_ext.shape = [1000, 1000]
-        proj_ext.transform = [
-                0.1, 0, 125.0,
-                0, -0.1, 11.0,
-                0, 0, 1
-        ]
+        proj_ext.epsg = int(item['coordinate_system'])
 
         # Publication: Add scientific extension if DOI is present
         if str(item['publication_link']).startswith('10.'):
