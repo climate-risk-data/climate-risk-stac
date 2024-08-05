@@ -17,7 +17,7 @@
     "data calculation type": "inferred",
     "analysis type": "empirical",
     "underlying data": "Multiple passive and active satellite instruments, e.g. AVHRR and SSM/I on-board ERS. Layers for downscaling: HydroSHEDS, GLC2000, GLWD.",
-    "publication type": "article (DOI below)",
+    "publication type": "article (see DOI)",
     "code type": null,
     "usage notes": "The datasets are available from author upon request, see webpage.",
     "start_datetime": "1993-01-01T00:00:00Z",

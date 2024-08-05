@@ -17,7 +17,7 @@
     "data calculation type": "inferred",
     "analysis type": "empirical",
     "underlying data": "MODIS satellite imagery",
-    "publication type": "documentation (link in Additional Resources)",
+    "publication type": "documentation (see Publication link)",
     "code type": null,
     "usage notes": "user account needed for data download",
     "start_datetime": "2021-01-01T00:00:00Z",

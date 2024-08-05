@@ -17,7 +17,7 @@
     "data calculation type": "inferred",
     "analysis type": "deterministic",
     "underlying data": "ERA5",
-    "publication type": "dataset (DOI below)",
+    "publication type": "dataset (see DOI)",
     "code type": null,
     "usage notes": "data download via interface or API",
     "start_datetime": "1940-01-01T00:00:00Z",

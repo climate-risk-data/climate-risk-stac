@@ -17,7 +17,7 @@
     "data calculation type": "modeled",
     "analysis type": "probabilistic",
     "underlying data": "ECMWF-ENS",
-    "publication type": "dataset (DOI below)",
+    "publication type": "dataset (see DOI)",
     "code type": null,
     "usage notes": "Reforecasts are generated in near real time for each Monday and Thursday as reference dates, 46-day lead time. For each reference date, reforecasts are produced for the past 20 years from 2003 to 2022 (inclusive). The first available reforecast reference date is the 2023-03-27.",
     "start_datetime": "2003-01-01T00:00:00Z",

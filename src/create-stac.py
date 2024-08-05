@@ -2,7 +2,7 @@
 #
 
 import pystac
-from pystac import RelType
+#from pystac import RelType
 from pystac.extensions.scientific import ScientificExtension
 from pystac.extensions.projection import ProjectionExtension
 import pandas as pd
@@ -13,7 +13,7 @@ import os
 
 # File paths
 dir = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/'
-haz = 'csv/hazard.csv' 
+haz = 'csv/hazard.csv' # use test set which also includes expvul
 exv = 'csv/expvul.csv' # can both be combined into one csv, but: some attributes are slightly different
 
 # Read data sheets
@@ -202,17 +202,25 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         # define item attributes that can deviate per item
         temporal_resolution = f"{item['temporal_resolution']} ({item['temporal_interval']})" if np.nan_to_num(item['temporal_interval']) else f"{item['temporal_resolution']}"
         scenarios = item['scenarios'] if np.nan_to_num(item['scenarios']) else None
-        spatial_resolution = f"{item['spatial_resolution']} {item['spatial_resolution_unit']}" if np.nan_to_num(item['spatial_resolution_unit']) else f"{item['spatial_resolution']}"
         analysis_type = item['analysis_type'] if np.nan_to_num(item['analysis_type']) else None
         underlying_data = item['underlying_data'] if np.nan_to_num(item['underlying_data']) else None
-        code =  f"{item['code_type']} (link in Additional Resources)" if np.nan_to_num(item['code_link']) else None
+        code =  f"{item['code_type']} (see Code link)" if np.nan_to_num(item['code_link']) else None
         usage_notes = item['usage_notes'] if np.nan_to_num(item['usage_notes']) else None
         
+        # condition for spatial resolution
+        if np.nan_to_num(item['spatial_resolution_unit']):
+            if item['spatial_resolution'] == 'administrative units':
+                spatial_resolution = f"{item['spatial_resolution']} ({item['spatial_resolution_unit']})"
+            else:
+                spatial_resolution = f"{item['spatial_resolution']} {item['spatial_resolution_unit']}"
+        else:
+            spatial_resolution = f"{item['spatial_resolution']}"
+
         # condition for publication
         if str(item['publication_link']).startswith('10.'):
-            publication = f"{item['publication_type']} (DOI below)" 
+            publication = f"{item['publication_type']} (see DOI)" 
         elif np.nan_to_num(item['publication_link']): 
-            publication = f"{item['publication_type']} (link in Additional Resources)"
+            publication = f"{item['publication_type']} (see Publication link)"
         else:
             publication = None
 
@@ -298,5 +306,5 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
    
 
 # Create catalogs from both hazard and exposure-vulnerability CSVs
-#create_catalog_from_csv(hazard, catalog_main, dir)
+create_catalog_from_csv(hazard, catalog_main, dir)
 create_catalog_from_csv(expvul, catalog_main, dir)
