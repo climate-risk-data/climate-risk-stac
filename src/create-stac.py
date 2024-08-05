@@ -1,34 +1,91 @@
 #%% NOTES %%#
-# also includes keywords (via 'extra_fields') --> needs to be changed to combine attributes from several columns into a list instead of a "keywords" col
-# also creates a collection if no title attributes available
+#
 
 import pystac
+#from pystac import RelType
 from pystac.extensions.scientific import ScientificExtension
+from pystac.extensions.projection import ProjectionExtension
 import pandas as pd
 from datetime import datetime
 import numpy as np
 import os
+#import json
 
-# Directory for (reading &) writing the catalog
+# File paths
 dir = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/'
+haz = 'csv/hazard.csv' # use test set which also includes expvul
+exv = 'csv/expvul.csv' # can both be combined into one csv, but: some attributes are slightly different
+
+# Read data sheets
+hazard = pd.read_csv(haz, encoding='utf-8')
+expvul = pd.read_csv(exv, encoding='utf-8')
 
 # Function to parse year range
 def parse_year_range(year_str):
-    year_str = year_str.replace('now', '2024').replace('current', '2024')
+     # If the string contains a dash, it's a range
     if '-' in year_str:
-        start, end = map(int, year_str.split('-'))
-        return datetime(start, 1, 1), datetime(end, 12, 31)
+        start, end = year_str.split('-')
+        
+        # Determine the length of the start and end strings to parse correctly
+        if len(start) == 4 and len(end) == 4:
+            start_year, end_year = int(start), int(end)
+            return datetime(start_year, 1, 1), datetime(end_year, 12, 31)
+        elif len(start) == 4 and len(end) == 3:
+            start_year = int(start)
+            end_year = datetime.now().year
+            end_month = datetime.now().month
+            end_day = datetime.now().day
+            return datetime(start_year, 1, 1), datetime(end_year, end_month, end_day)
+        # if start date BC (can handle any year until 10000 BC, but not year 0):
+        elif len(start) > 4 and len(end) == 4:
+            start_year = int(start.replace('BC', '')) - 1 # 1 BC is year 0; 2 BC is year 1 etc.
+            end_year = int(end)
+            return datetime(start_year, 1, 1), datetime(end_year, 12, 31)
+        else:
+            raise ValueError("Invalid year range format")
+    
+    # If there's no dash, it's a single year
     else:
-        year = int(year_str)
-        return datetime(year, 1, 1), None
+        if len(year_str) == 4:
+            year = int(year_str)
+            return datetime(year, 1, 1), datetime(year, 12, 31)
+        else:
+            raise ValueError("Invalid year format")
+        
+# Function to make keywords based on subcategory and risk data type
+def parse_keywords(subc, rdata):
+    # separate strings
+    keyw = subc.split(',') if ',' in subc else [subc]
+    # use rdata if expvul
+    keywords = keyw if rdata == 'hazard' else [rdata, subc]
+    print(f"new keywords: {keywords}")
+    return keywords
 
-# Read data sheets
-hazard = pd.read_csv('csv/hazard.csv', encoding='utf-8')
-expvul = pd.read_csv('csv/expvul.csv', encoding='utf-8')
+# Function to update existing keywords
+def update_keywords(ext_key, keywords):
+    ext_key = set(ext_key)
+    # Add missing keywords from the existing keywords list
+    for keyword in keywords:
+        ext_key.add(keyword)
+        # update keywords
+        upd_key = list(ext_key)
+    return upd_key
 
-# Preprocessing of data sheets: replace all blank cells with "not available"
-hazard = hazard.fillna('not available')
-expvul = expvul.fillna('not available')
+# Function to update providers ## DOES NOT WORK YET ##
+def update_providers(provider1, provider2):
+    # check whether both providers are equal
+    print(provider1)
+    print(provider2)
+    check=(
+        provider1 == provider2 #and
+        #provider1[1] == provider2[1] and
+        #provider1[2] == provider2[2]
+    )
+    if not check:
+        providers = [provider1, provider2]
+    else:
+        providers = provider1
+    return providers
 
 # Create the main catalog
 catalog_main = pystac.Catalog(
@@ -46,106 +103,207 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         catalog_id = item['catalog']
         category_id = item['category']
         
-        # Generate default titles if necessary
-        title_short = item['title_short'] if not pd.isna(item['title_short']) else f"collection_{row_num}"
-        title_collection = item['title_collection'] if not pd.isna(item['title_collection']) else f"collection_{row_num}"
-        
-        bbox = item['bbox']
-        temporal_resolution = item['temporal_resolution']
-        
-        # Create or retrieve the catalog
+      
+        ## CATALOGS ##
+        # Create or retrieve the first-level catalog
         if catalog_id not in [cat.id for cat in catalog_main.get_children()]:
-            new_catalog = pystac.Catalog(id=catalog_id, title=catalog_id, description=catalog_id)
-            catalog_main.add_child(new_catalog)
+            catalog1 = pystac.Catalog(id=catalog_id, 
+                                      title=catalog_id.capitalize(), 
+                                      description=catalog_id) #adjust here once it works
+            catalog_main.add_child(catalog1)
         else:
-            new_catalog = catalog_main.get_child(catalog_id)
+            catalog1 = catalog_main.get_child(catalog_id)
+
+        # Create or retrieve the second-level catalog
+        if category_id not in [cat.id for cat in catalog1.get_children()]:
+            catalog2 = pystac.Catalog(id=category_id, 
+                                      title=category_id.capitalize(), 
+                                      description=category_id) #adjust here once it works
+            catalog1.add_child(catalog2)
+        else:
+            catalog2 = catalog1.get_child(category_id)   
         
-        # Create or retrieve the collection
-        if category_id not in [col.id for col in new_catalog.get_children()]:
-            # Process bbox
-            if not np.nan_to_num(bbox) == 0:
-                try:
-                    bbox_list = [float(coord.strip()) for coord in bbox.split(',')]
-                except ValueError:
-                    print(f'Check bbox: {bbox}')
-                    bbox_list = bbox
-            else:
-                bbox_list = np.nan
 
-            # Process temporal resolution
-            if not np.nan_to_num(temporal_resolution) == 0:
-                year_start, year_end = parse_year_range(str(temporal_resolution))
-            else:
-                year_start, year_end = np.nan, np.nan
-                print('Cannot create collection, because of no input for temporal_resolution')
-                continue
+        # Process bbox (needed for collections and items)
+        bbox = item['bbox']
+        bbox_list = [float(coord.strip()) for coord in bbox.split(',')]
 
-            keywords = item['keywords'].split(',') if 'keywords' in item else []
-            
+        # Process temporal resolution ## this needs to be changed to account for the total range of all items ##
+        start, end = parse_year_range(str(item['temporal_resolution']))
+
+        ## COLLECTIONS ##
+        # combine title and short title
+        title_collection = (item['title_collection'] + ' (' + item['title_short'] + ')' if not pd.isna(item['title_short'])
+                            else (item['title_collection'])
+                            )
+
+        # make keywords
+        keywords = parse_keywords(item['subcategory'], item['risk_data_type'])
+        
+        # Create or retrieve the collection 
+        if title_collection not in [col.id for col in catalog2.get_children()]:
+                    
+            # create basic collection
             collection = pystac.Collection(
-                id=category_id,
+                id=title_collection,
                 title=title_collection,
-                description=title_collection,
+                description= str(item['description_collection']),#description_collection,
                 extent=pystac.Extent(
-                    spatial=pystac.SpatialExtent([bbox_list]),
-                    temporal=pystac.TemporalExtent([[year_end, year_start]]),
+                    spatial=pystac.SpatialExtent([bbox_list]), # needs to be updated based on all items in the collection
+                    temporal=pystac.TemporalExtent([[start, end]]), # needs to be updated based on all items in the collection
                 ),
+                license=item['license'],
+                keywords=keywords, # add further if needed
                 extra_fields={
-                    'data_type': item['data_type'],
-                    'data_format': item['format'],
-                    'spatial_scale': item['spatial_scale'],
-                    'coordinate_system': item['coordinate_system'],
-                    'keywords': keywords
-                },
+                    'risk data type': item['risk_data_type'],
+                    'subcategory': item['subcategory']                    
+                }
             )
-            new_catalog.add_child(collection)
+
+            # Create and add a Provider         
+            provider = pystac.Provider(
+                 name=item['provider'],
+                 roles= item['provider_role'], # change role: pystac.provider.ProviderRole.HOST ## DOES NOT WORK ##
+                 url=item['link_website']
+                )
+            collection.providers = [provider]
+            
+            catalog2.add_child(collection)
+
         else:
-            collection = new_catalog.get_child(category_id)
+            # retrieve collection
+            collection = catalog2.get_child(title_collection)
+            
+            # Update keywords
+            # retrieve existing keywords
+            key_col = collection.keywords
+            # update keywords
+            new_key = update_keywords(key_col, keywords)
+            # add to collection
+            collection.keywords = new_key
+
+            # # Update providers -> relevant when more than one weblink per collection provided: needs to be fixed to account for the option that several providers are already present. These need to be compared one by one
+            # # retrieve existing provider
+            # provider1 = collection.providers
+            # # create potential new provider from current row
+            # provider2 = pystac.Provider(
+            #      name=item['provider'],
+            #      roles=item['provider_role'],
+            #      url=item['link_website']
+            #     )
+            # new_pro = update_providers(provider1, provider2)
+            # # add to collection
+            # collection.providers = new_pro
+   
+        print('collection ', row_num, ' ', title_collection, ' successful')
+
+        ## ITEMS ##
+       
+        # define item attributes that can deviate per item
+        temporal_resolution = f"{item['temporal_resolution']} ({item['temporal_interval']})" if np.nan_to_num(item['temporal_interval']) else f"{item['temporal_resolution']}"
+        scenarios = item['scenarios'] if np.nan_to_num(item['scenarios']) else None
+        analysis_type = item['analysis_type'] if np.nan_to_num(item['analysis_type']) else None
+        underlying_data = item['underlying_data'] if np.nan_to_num(item['underlying_data']) else None
+        code =  f"{item['code_type']} (see Code link)" if np.nan_to_num(item['code_link']) else None
+        usage_notes = item['usage_notes'] if np.nan_to_num(item['usage_notes']) else None
         
-        # Create the item
+        # condition for spatial resolution
+        if np.nan_to_num(item['spatial_resolution_unit']):
+            if item['spatial_resolution'] == 'administrative units':
+                spatial_resolution = f"{item['spatial_resolution']} ({item['spatial_resolution_unit']})"
+            else:
+                spatial_resolution = f"{item['spatial_resolution']} {item['spatial_resolution_unit']}"
+        else:
+            spatial_resolution = f"{item['spatial_resolution']}"
+
+        # condition for publication
+        if str(item['publication_link']).startswith('10.'):
+            publication = f"{item['publication_type']} (see DOI)" 
+        elif np.nan_to_num(item['publication_link']): 
+            publication = f"{item['publication_type']} (see Publication link)"
+        else:
+            publication = None
+
+        # Create basic item
         item_stac = pystac.Item(
             id=item['title_item'],
             geometry=None,  # Add geometry if available
             bbox=bbox_list,
-            datetime=None,
+            datetime=None, #datetime.now(),
+            start_datetime=start,
+            end_datetime=end,
             properties={
                 'title': item['title_item'],
                 'description': item['description_item'],
-                'data_type': item['data_type'],
-                'data_format': item['format'],
-                'spatial_scale': item['spatial_scale'],
-                'coordinate_system': item['coordinate_system'],
-                'reference_period': item['reference_period'],
-                'temporal_resolution': item['temporal_resolution'],
-                'temporal_interval': item['temporal_interval'],
-                'scenarios': item['scenarios'],
-                'data_calculation_type': item['data_calculation_type'],
-                'analysis_type': item['analysis_type'],
-                'underlying_data': item['underlying_data'],
-                'provider': item['provider'],
-                'provider_role': item['provider_role'],
-                'license': item['license'],
-                'link_website': item['link_website'],
-                'publication_link': item['publication_link'],
-                'publication_type': item['publication_type'],
-                'code_link': item['code_link'],
-                'code_type': item['code_type'],
-                'usage_notes': item['usage_notes'],
-                'assets': item['assets'],
-            },
+                'risk data type': item['risk_data_type'],
+                'subcategory': item['subcategory'],
+                'spatial scale': item['spatial_scale'],
+                'reference period': item['reference_period'],
+                'temporal resolution': temporal_resolution, # combination of resolution and interval
+                'scenarios': scenarios,
+                'data type': item['data_type'],
+                'data format': item['format'],
+                'spatial resolution': spatial_resolution, # combination of resolution and unit
+                'data calculation type': item['data_calculation_type'],
+                'analysis type': analysis_type,
+                'underlying data': underlying_data,
+                'publication type': publication,
+                'code type': code,
+                'usage notes': usage_notes
+            }
+            # extra_fields={ # are part of the json, but not shown in the browser
+            #         'subcategory': str(item['subcategory']), #remove str() again once subcategory fixed
+            #         'risk data type': item['risk_data_type']
+            #     }
         )
-        
-        # Add scientific extension if publication link is present
-        if not pd.isna(item['publication_link']):
+
+        # add projection extension
+        proj_ext = ProjectionExtension.ext(item_stac, add_if_missing=True)
+        # Add projection properties
+        proj_ext.epsg = int(item['coordinate_system'])
+
+        # Publication: Add scientific extension if DOI is present
+        if str(item['publication_link']).startswith('10.'):
+            print("doi available")
             sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
-            sci_ext.doi = item['publication_link']
-        
+            sci_ext.doi = item['publication_link'] # adjust condition here for links that are not dois
+        elif np.nan_to_num(item['publication_link']):
+            print("weblink available")
+            link = pystac.Link(
+                rel="cite-as",  # Relationship of the link
+                target=item['publication_link'],  # Target URL
+                title="Publication link",  # Optional title
+                )
+            item_stac.add_link(link)
+
+        # Code: add link if available
+        if code != None:
+            print("code available")
+            link = pystac.Link(
+                rel="cite-as",  # Relationship of the link
+                target=item['code_link'],  # Target URL
+                title="Code link",  # Optional title
+                )
+            item_stac.add_link(link)
+
         # Add item to collection
         collection.add_item(item_stac)
+        
+        # confirmation item added
+        print('item ', row_num, ' ', item['title_item'], ' successful')
+    
+    # update collection properties based on all items belonging to the collection ## NOT FINISHED YET ##
+    #collection_interval = sorted([collection_item.datetime, collection_item2.datetime])
+    #temporal_extent = pystac.TemporalExtent(intervals=[collection_interval])
+
+
+    catalog_main.describe()
 
     # Normalize hrefs and save the catalog
     catalog_main.normalize_hrefs(os.path.join(dir, "stac"))
     catalog_main.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
+    #catalog_main.save(catalog_type=pystac.CatalogType.RELATIVE_PUBLISHED)
+   
 
 # Create catalogs from both hazard and exposure-vulnerability CSVs
 create_catalog_from_csv(hazard, catalog_main, dir)

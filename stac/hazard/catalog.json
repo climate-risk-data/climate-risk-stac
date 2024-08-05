@@ -2,7 +2,7 @@
   "type": "Catalog",
   "id": "hazard",
   "stac_version": "1.0.0",
-  "description": "Hazard datasets",
+  "description": "hazard",
   "links": [
     {
       "rel": "root",
@@ -12,33 +12,33 @@
     },
     {
       "rel": "child",
-      "href": "./flooding/catalog.json",
+      "href": "./flood/catalog.json",
       "type": "application/json",
-      "title": "Flooding"
+      "title": "Flood"
     },
     {
       "rel": "child",
-      "href": "./extreme-precipitation/catalog.json",
+      "href": "./environmental/catalog.json",
       "type": "application/json",
-      "title": "Extreme precipitation"
+      "title": "Environmental"
     },
     {
       "rel": "child",
-      "href": "./extreme-temperature/catalog.json",
+      "href": "./wind-related/catalog.json",
       "type": "application/json",
-      "title": "Extreme temperature"
+      "title": "Wind-related"
     },
     {
       "rel": "child",
-      "href": "./windstorm/catalog.json",
+      "href": "./precipitation-related/catalog.json",
       "type": "application/json",
-      "title": "Windstorm"
+      "title": "Precipitation-related"
     },
     {
       "rel": "child",
-      "href": "./wildfire/catalog.json",
+      "href": "./temperature-related/catalog.json",
       "type": "application/json",
-      "title": "Wildfire"
+      "title": "Temperature-related"
     },
     {
       "rel": "child",

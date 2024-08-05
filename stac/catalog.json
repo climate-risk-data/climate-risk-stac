@@ -20,7 +20,7 @@
       "rel": "child",
       "href": "./exposure-vulnerability/catalog.json",
       "type": "application/json",
-      "title": "Exposure and Vulnerability"
+      "title": "Exposure-vulnerability"
     }
   ],
   "title": "Climate Risk Data"
