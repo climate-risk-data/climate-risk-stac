@@ -13,8 +13,8 @@ import os
 
 # File paths
 dir = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/'
-haz = 'csv/hazard.csv'
-exv = 'csv/expvul.csv'
+haz = 'csv/hazard.csv' 
+exv = 'csv/expvul.csv' # can both be combined into one csv, but: some attributes are slightly different
 
 # Read data sheets
 hazard = pd.read_csv(haz, encoding='utf-8')
@@ -235,13 +235,12 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 'scenarios': scenarios,
                 'data type': item['data_type'],
                 'data format': item['format'],
-                'coordinate system': str(item['coordinate_system']),
                 'spatial resolution': spatial_resolution, # combination of resolution and unit
                 'data calculation type': item['data_calculation_type'],
                 'analysis type': analysis_type,
                 'underlying data': underlying_data,
-                'publication': publication,
-                'code': code,
+                'publication type': publication,
+                'code type': code,
                 'usage notes': usage_notes
             }
             # extra_fields={ # are part of the json, but not shown in the browser
@@ -301,23 +300,3 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
 # Create catalogs from both hazard and exposure-vulnerability CSVs
 create_catalog_from_csv(hazard, catalog_main, dir)
 #create_catalog_from_csv(expvul, catalog_main, dir)
-
-
-# # Function to ensure directory exists
-# def ensure_dir(file_path):
-#     directory = os.path.dirname(file_path)
-#     if not os.path.exists(directory):
-#         os.makedirs(directory)
-
-# # Ensure the directory exists
-# ensure_dir(dir)
-
-
-# # Ensure directories for all items
-# for item in catalog_main.get_all_items():
-#     item_href = item.get_self_href()
-#     ensure_dir(item_href)
-
-# # Save all items
-# for item in catalog_main.get_all_items():
-#     item.save_object(include_self_link=False)
