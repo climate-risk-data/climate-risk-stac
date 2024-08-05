@@ -2,7 +2,9 @@
 #
 
 import pystac
+from pystac import RelType
 from pystac.extensions.scientific import ScientificExtension
+from pystac.extensions.projection import ProjectionExtension
 import pandas as pd
 from datetime import datetime
 import numpy as np
@@ -180,7 +182,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             # add to collection
             collection.keywords = new_key
 
-            # # Update providers
+            # # Update providers -> relevant when more than one weblink per collection provided: needs to be fixed to account for the option that several providers are already present. These need to be compared one by one
             # # retrieve existing provider
             # provider1 = collection.providers
             # # create potential new provider from current row
@@ -197,7 +199,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
 
         ## ITEMS ##
        
-        # define item attributes that may deviate per item
+        # define item attributes that can deviate per item
         temporal_resolution = f"{item['temporal_resolution']} ({item['temporal_interval']})" if np.nan_to_num(item['temporal_interval']) else f"{item['temporal_resolution']}"
         scenarios = item['scenarios'] if np.nan_to_num(item['scenarios']) else None
         spatial_resolution = f"{item['spatial_resolution']} {item['spatial_resolution_unit']}" if np.nan_to_num(item['spatial_resolution_unit']) else f"{item['spatial_resolution']}"
@@ -248,7 +250,18 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             #     }
         )
 
-        # add projection extension!
+        # add projection extension
+        proj_ext = ProjectionExtension.ext(item_stac, add_if_missing=True)
+        # Add projection properties
+        proj_ext.epsg = 4326
+        proj_ext.wkt2 = "GEOGCRS[...]"
+        proj_ext.proj_bbox = [125.0, 10.0, 126.0, 11.0]
+        proj_ext.shape = [1000, 1000]
+        proj_ext.transform = [
+                0.1, 0, 125.0,
+                0, -0.1, 11.0,
+                0, 0, 1
+        ]
 
         # Publication: Add scientific extension if DOI is present
         if str(item['publication_link']).startswith('10.'):
