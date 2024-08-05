@@ -120,7 +120,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         if category_id not in [cat.id for cat in catalog1.get_children()]:
             catalog2 = pystac.Catalog(id=category_id, 
                                       title=category_id.capitalize(), 
-                                      description=f"{catalog_id.capitalize()} datasets")
+                                      description=f"{category_id.capitalize()} datasets")
             catalog1.add_child(catalog2)
         else:
             catalog2 = catalog1.get_child(category_id)   
@@ -287,6 +287,19 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 title="Code link",  # Optional title
                 )
             item_stac.add_link(link)
+
+        # Add assets
+        # Define the asset details
+        asset_href = "path/to/your/datafile.tif"
+        asset = pystac.Asset(
+                href=asset_href,
+                media_type=pystac.MediaType.COG,  # Change this to the appropriate media type
+                roles=["data"],
+                title="Example Data File"
+        )
+
+        # Add the asset to the item
+        item_stac.add_asset("data-file", asset)
 
         # Add item to collection
         collection.add_item(item_stac)

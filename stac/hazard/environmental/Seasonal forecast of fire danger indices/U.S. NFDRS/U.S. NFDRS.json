@@ -56,7 +56,16 @@
       "title": "Seasonal forecast of fire danger indices"
     }
   ],
-  "assets": {},
+  "assets": {
+    "data-file": {
+      "href": "path/to/your/datafile.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Example Data File",
+      "roles": [
+        "data"
+      ]
+    }
+  },
   "bbox": [
     -179.95,
     -89.95,

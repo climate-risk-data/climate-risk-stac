@@ -2,7 +2,7 @@
   "type": "Catalog",
   "id": "flood",
   "stac_version": "1.0.0",
-  "description": "Hazard datasets",
+  "description": "Flood datasets",
   "links": [
     {
       "rel": "root",

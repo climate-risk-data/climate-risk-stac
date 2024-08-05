@@ -2,7 +2,7 @@
   "type": "Catalog",
   "id": "wind-related",
   "stac_version": "1.0.0",
-  "description": "Hazard datasets",
+  "description": "Wind-related datasets",
   "links": [
     {
       "rel": "root",

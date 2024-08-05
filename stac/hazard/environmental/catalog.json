@@ -2,7 +2,7 @@
   "type": "Catalog",
   "id": "environmental",
   "stac_version": "1.0.0",
-  "description": "Hazard datasets",
+  "description": "Environmental datasets",
   "links": [
     {
       "rel": "root",

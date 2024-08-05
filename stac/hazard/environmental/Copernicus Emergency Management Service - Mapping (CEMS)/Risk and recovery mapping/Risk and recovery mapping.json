@@ -46,7 +46,16 @@
       "title": "Copernicus Emergency Management Service - Mapping (CEMS)"
     }
   ],
-  "assets": {},
+  "assets": {
+    "data-file": {
+      "href": "path/to/your/datafile.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Example Data File",
+      "roles": [
+        "data"
+      ]
+    }
+  },
   "bbox": [
     -180.0,
     -90.0,
