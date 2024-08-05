@@ -289,6 +289,14 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             item_stac.add_link(link)
 
         # Add assets
+        # establish the number of assets
+        asset_str = item['assets']
+        if ';' in asset_str:
+            assets = asset_str.split(';')
+        else:
+            assets = asset_str
+        print(assets)
+        
         # Define the asset details
         asset_href = "path/to/your/datafile.tif"
         asset = pystac.Asset(
