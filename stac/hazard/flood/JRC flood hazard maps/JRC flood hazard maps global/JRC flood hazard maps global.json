@@ -18,7 +18,7 @@
     "data calculation type": "modeled",
     "analysis type": "probabilistic",
     "underlying data": "several data sources (see publication for further details)",
-    "publication": "10.1016/j.advwatres.2016.05.002 (article)",
+    "publication": "article (link in Additional Resources)",
     "code": null,
     "usage notes": "Cell values indicate water depth (in m), based on an analysis from 2000-2013 (so roughly representing 2013)",
     "start_datetime": "2013-01-01T00:00:00Z",

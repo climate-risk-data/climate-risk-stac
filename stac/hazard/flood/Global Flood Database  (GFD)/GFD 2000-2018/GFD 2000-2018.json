@@ -18,8 +18,8 @@
     "data calculation type": "inferred",
     "analysis type": "empirical",
     "underlying data": "MODIS satellite imagery",
-    "publication": "10.1038/s41586-021-03695-w (article)",
-    "code": "https://github.com/cloudtostreet/MODIS_GlobalFloodDatabase (processing)",
+    "publication": "article (link in Additional Resources)",
+    "code": "processing (link in Additional Resources)",
     "usage notes": "Download per event possible. The data do not differentiate flood types. ",
     "start_datetime": "2000-01-01T00:00:00Z",
     "end_datetime": "2018-12-31T00:00:00Z",
@@ -31,6 +31,11 @@
     {
       "rel": "cite-as",
       "href": "https://doi.org/10.1038/s41586-021-03695-w"
+    },
+    {
+      "rel": "cite-as",
+      "href": "https://github.com/cloudtostreet/MODIS_GlobalFloodDatabase",
+      "title": "Code link"
     },
     {
       "rel": "root",

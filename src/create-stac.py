@@ -203,9 +203,9 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         spatial_resolution = f"{item['spatial_resolution']} {item['spatial_resolution_unit']}" if np.nan_to_num(item['spatial_resolution_unit']) else f"{item['spatial_resolution']}"
         analysis_type = item['analysis_type'] if np.nan_to_num(item['analysis_type']) else None
         underlying_data = item['underlying_data'] if np.nan_to_num(item['underlying_data']) else None
-        publication = f"{item['publication_link']} ({item['publication_type']})" if np.nan_to_num(item['publication_link']) else None
-        code =  f"{item['code_link']} ({item['code_type']})" if np.nan_to_num(item['code_link']) else None
-        usage_notes = item['usage_notes'] if np.nan_to_num(item['underlying_data']) else None
+        publication = f"{item['publication_type']} (link in Additional Resources)" if np.nan_to_num(item['publication_link']) else None
+        code =  f"{item['code_type']} (link in Additional Resources)" if np.nan_to_num(item['code_link']) else None
+        usage_notes = item['usage_notes'] if np.nan_to_num(item['usage_notes']) else None
 
         # Create basic item
         item_stac = pystac.Item(
@@ -240,11 +240,10 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             #         'risk data type': item['risk_data_type']
             #     }
         )
-        # add keywords --> not available for items
 
         # add projection extension!
 
-        # Add scientific extension if DOI is present
+        # Publication: Add scientific extension if DOI is present
         if str(item['publication_link']).startswith('10.'):
             print("doi available")
             sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
@@ -257,6 +256,17 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 title="Publication link",  # Optional title
                 )
             item_stac.add_link(link)
+
+        # Code: add link if available
+        if code != None:
+            print("code available")
+            link = pystac.Link(
+                rel="cite-as",  # Relationship of the link
+                target=item['code_link'],  # Target URL
+                title="Code link",  # Optional title
+                )
+            item_stac.add_link(link)
+
 
         
 
