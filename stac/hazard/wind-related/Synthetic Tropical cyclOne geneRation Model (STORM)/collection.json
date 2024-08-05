@@ -52,7 +52,9 @@
   "providers": [
     {
       "name": "TU Delft",
-      "roles": "host",
+      "roles": [
+        "host"
+      ],
       "url": "https://data.4tu.nl/search"
     }
   ]

@@ -62,13 +62,15 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "fluvial flood",
-    "coastal flood"
+    "coastal flood",
+    "fluvial flood"
   ],
   "providers": [
     {
       "name": "World Resources Institute",
-      "roles": "licensor",
+      "roles": [
+        "licensor"
+      ],
       "url": "https://www.wri.org/data/aqueduct-floods-hazard-maps"
     }
   ]
