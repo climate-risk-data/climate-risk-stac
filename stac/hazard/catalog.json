@@ -12,15 +12,21 @@
     },
     {
       "rel": "child",
+      "href": "./flood/catalog.json",
+      "type": "application/json",
+      "title": "Flood"
+    },
+    {
+      "rel": "child",
       "href": "./environmental/catalog.json",
       "type": "application/json",
       "title": "Environmental"
     },
     {
       "rel": "child",
-      "href": "./flood/catalog.json",
+      "href": "./wind-related/catalog.json",
       "type": "application/json",
-      "title": "Flood"
+      "title": "Wind-related"
     },
     {
       "rel": "child",
@@ -30,9 +36,15 @@
     },
     {
       "rel": "child",
-      "href": "./wind-related/catalog.json",
+      "href": "./temperature-related/catalog.json",
       "type": "application/json",
-      "title": "Wind-related"
+      "title": "Temperature-related"
+    },
+    {
+      "rel": "child",
+      "href": "./multi-hazard/catalog.json",
+      "type": "application/json",
+      "title": "Multi-hazard"
     },
     {
       "rel": "parent",
