@@ -2,7 +2,7 @@
   "type": "Catalog",
   "id": "hazard",
   "stac_version": "1.0.0",
-  "description": "hazard",
+  "description": "Hazard datasets",
   "links": [
     {
       "rel": "root",

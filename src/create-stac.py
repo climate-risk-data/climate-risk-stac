@@ -91,7 +91,7 @@ def update_providers(provider1, provider2):
 catalog_main = pystac.Catalog(
     id="climate-risk-data",
     title="Climate Risk Data",
-    description="Community catalog containing datasets for the three risk drivers Hazard, Exposure, and Vulnerability."
+    description="This is a community catalog containing datasets for the three risk drivers Hazard, Exposure, and Vulnerability. The catalog in its current form conforms with the risk framework of the IPCC's 5th Assessment Report (AR5) where risk results from the interaction of hazards, the elements exposed to these hazards as well as the vulnerability of the exposed elements. The catalog structure has been defined following a variety of standards for provisioning of risk data (please see 'LINK TO FIGURE WITH CATALOG STRUCTURE'). The catalog allows for the integration of other risk drivers, such as adaptation responses as defined in IPCC AR6 when such data are available. The first version of the catalog (released in XXXX) focusses on global-scale datasets that can be used as input in climate risk assessments (CRA) with as little preprocessing as possible. It has been developed as part of the Horizon Europe project CLIMAAX, which ... (see link to website/handbook below). The development of the catalog is described in detail in the publication referenced below. The catalog is designed under Open Science and FAIR Data Principles, with the idea to be a community-led endeavor. We encourage anyone working with risk data at different spatial scales (i.e. local to global) to add datasets to this catalog, thereby creating growing knowledge base for further potential users. Please use GitHub Actions (see link below) to suggest new datasets."
 )
 
 # Function to create collections and items
@@ -109,16 +109,18 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         if catalog_id not in [cat.id for cat in catalog_main.get_children()]:
             catalog1 = pystac.Catalog(id=catalog_id, 
                                       title=catalog_id.capitalize(), 
-                                      description=catalog_id) #adjust here once it works
+                                      description= f"{catalog_id.capitalize()} datasets" 
+                                      )
             catalog_main.add_child(catalog1)
         else:
             catalog1 = catalog_main.get_child(catalog_id)
 
         # Create or retrieve the second-level catalog
+
         if category_id not in [cat.id for cat in catalog1.get_children()]:
             catalog2 = pystac.Catalog(id=category_id, 
                                       title=category_id.capitalize(), 
-                                      description=category_id) #adjust here once it works
+                                      description=f"{catalog_id.capitalize()} datasets")
             catalog1.add_child(catalog2)
         else:
             catalog2 = catalog1.get_child(category_id)   

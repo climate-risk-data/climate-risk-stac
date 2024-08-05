@@ -52,8 +52,8 @@
   },
   "license": "proprietary",
   "keywords": [
-    "fluvial flood",
     "coastal flood",
+    "fluvial flood",
     "pluvial flood"
   ],
   "providers": [
