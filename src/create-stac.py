@@ -252,7 +252,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         elif np.nan_to_num(item['publication_link']):
             print("weblink available")
             link = pystac.Link(
-                rel="publication-link",  # Relationship of the link
+                rel="cite-as",  # Relationship of the link
                 target=item['publication_link'],  # Target URL
                 title="Publication link",  # Optional title
                 )

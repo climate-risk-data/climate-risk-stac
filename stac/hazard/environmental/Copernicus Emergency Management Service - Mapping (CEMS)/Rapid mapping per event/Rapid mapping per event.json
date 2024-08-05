@@ -28,7 +28,7 @@
   "geometry": null,
   "links": [
     {
-      "rel": "publication-link",
+      "rel": "cite-as",
       "href": "https://emergency.copernicus.eu/mapping/sites/default/files/files/CopernicusEMS_RapidMapping_ProductUserManual_v1.pdf",
       "title": "Publication link"
     },
