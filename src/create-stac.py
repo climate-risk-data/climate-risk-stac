@@ -195,7 +195,10 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         keywords = []
         for keyword in [rdata, subc, scale, ref, code]:
             if keyword:
-                keywords.append(keyword)   
+                if isinstance(keyword, list):
+                    keywords = keywords + keyword
+                else:
+                    keywords.append(keyword)   
         print(f"keywords: {keywords}")
 
         # Create or retrieve the collection 
