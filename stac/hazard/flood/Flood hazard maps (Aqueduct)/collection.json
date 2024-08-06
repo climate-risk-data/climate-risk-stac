@@ -65,7 +65,8 @@
     "coastal flood",
     "fluvial flood",
     "(near-)global",
-    "historical & future"
+    "historical",
+    "future"
   ],
   "providers": [
     {
