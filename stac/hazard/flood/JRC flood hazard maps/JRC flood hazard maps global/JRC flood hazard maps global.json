@@ -52,9 +52,49 @@
     }
   ],
   "assets": {
-    "data-file": {
-      "href": "path/to/your/datafile.tif",
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+    "data-file_1": {
+      "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp10y.zip",
+      "type": "geotiff",
+      "title": "Example Data File",
+      "roles": [
+        "data"
+      ]
+    },
+    "data-file_2": {
+      "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp20y.zip",
+      "type": "geotiff",
+      "title": "Example Data File",
+      "roles": [
+        "data"
+      ]
+    },
+    "data-file_3": {
+      "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp50y.zip",
+      "type": "geotiff",
+      "title": "Example Data File",
+      "roles": [
+        "data"
+      ]
+    },
+    "data-file_4": {
+      "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp100y.zip",
+      "type": "geotiff",
+      "title": "Example Data File",
+      "roles": [
+        "data"
+      ]
+    },
+    "data-file_5": {
+      "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp200y.zip",
+      "type": "geotiff",
+      "title": "Example Data File",
+      "roles": [
+        "data"
+      ]
+    },
+    "data-file_6": {
+      "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp500y.zip",
+      "type": "geotiff",
       "title": "Example Data File",
       "roles": [
         "data"

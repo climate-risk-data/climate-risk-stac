@@ -57,9 +57,9 @@
     }
   ],
   "assets": {
-    "data-file": {
-      "href": "path/to/your/datafile.tif",
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+    "data-file_1": {
+      "href": "https://digital.csic.es/bitstream/10261/332007/3/spei01.nc",
+      "type": "netcdf",
       "title": "Example Data File",
       "roles": [
         "data"

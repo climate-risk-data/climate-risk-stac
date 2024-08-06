@@ -170,7 +170,10 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 )
             collection.providers = [provider]
             
+            print(pystac.ProviderRole(item['provider_role']))
+            
             catalog2.add_child(collection)
+            
 
         else:
             # retrieve collection
@@ -294,25 +297,33 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         if np.nan_to_num(asset_str):
             if ';' in asset_str:
                 assets = asset_str.split(';')
+                no_assets = len(assets)
             else:
-                assets = asset_str
+                assets = [asset_str]
+                no_assets = 1
         else:
             assets = None
-        print(assets)
-        length = len(assets) if np.nan_to_num(asset_str) else None  
-        print('number of assets provided:' , length)
+            no_assets = 0
+        print('number of assets:' , no_assets)
 
-        # Define the asset details
-        asset_href = "path/to/your/datafile.tif"
-        asset = pystac.Asset(
-                href=asset_href,
-                media_type=pystac.MediaType.COG,  # Change this to the appropriate media type
-                roles=["data"],
-                title="Example Data File"
-        )
+        # loop through all assets
+        if assets:
+            counter = 1
+            for asset in assets:
+                # Define the asset
+                asset_stac = pystac.Asset(
+                        href=asset,
+                        media_type=item['format'],#pystac.MediaType.GEOTIFF,  # Change this to the appropriate media type
+                        roles=["data"],
+                        title="Example Data File"
+                )
+                # Add the asset to the item
+                key = f"data-file_{counter}"
+                item_stac.add_asset(key, asset_stac)
+                counter +=1
+        else: 
+            print("no assets provided")
 
-        # Add the asset to the item
-        item_stac.add_asset("data-file", asset)
 
         # Add item to collection
         collection.add_item(item_stac)
