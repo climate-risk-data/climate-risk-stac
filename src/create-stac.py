@@ -20,6 +20,24 @@ exv = 'csv/expvul.csv' # can both be combined into one csv, but: some attributes
 hazard = pd.read_csv(haz, encoding='utf-8')
 expvul = pd.read_csv(exv, encoding='utf-8')
 
+# Mapping formats to media types (for assets)
+format_to_media_type = {
+    "geotiff": pystac.MediaType.GEOTIFF,
+    "FlatGeobuf": pystac.MediaType.FLATGEOBUF,
+    "netcdf": "application/x-netcdf",
+    "geopackage": pystac.MediaType.GEOPACKAGE,
+    "shapefile": "application/x-shapefile",
+    "geodatabase": "application/x-filegdb",
+    "csv": "text/csv",
+    "excel": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "GeoParquet": pystac.MediaType.PARQUET,
+    "GRIB": "application/grib",
+    "GRIB2": "application/grib2",
+    "txt": pystac.MediaType.TEXT,
+    "pbf": "application/x-protobuf",
+    "ascii": "text/plain"
+}
+
 # Function to parse year range
 def parse_year_range(year_str):
      # If the string contains a dash, it's a range
@@ -310,12 +328,15 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         if assets:
             counter = 1
             for asset in assets:
+                # Determine the media type based on the format attribute
+                media_type = format_to_media_type.get(item['format'].lower(), "application/octet-stream")  # Default to binary stream
+        
                 # Define the asset
                 asset_stac = pystac.Asset(
                         href=asset,
-                        media_type=item['format'],#pystac.MediaType.GEOTIFF,  # Change this to the appropriate media type
+                        media_type=media_type,#pystac.MediaType.GEOTIFF
                         roles=["data"],
-                        title="Example Data File"
+                        title=f"Data File {counter}"
                 )
                 # Add the asset to the item
                 key = f"data-file_{counter}"

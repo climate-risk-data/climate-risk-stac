@@ -49,8 +49,8 @@
   "assets": {
     "data-file_1": {
       "href": "https://emergency.copernicus.eu/mapping/list-of-activations-risk-and-recovery",
-      "type": "shapefile",
-      "title": "Example Data File",
+      "type": "application/x-shapefile",
+      "title": "Data File 1",
       "roles": [
         "data"
       ]

@@ -59,16 +59,16 @@
   "assets": {
     "data-file_1": {
       "href": "https://data.4tu.nl/file/0ea98bdd-5772-4da8-ae97-99735e891aff/0b98c6f5-c7af-45bb-bb6e-dac53e1b8d55",
-      "type": "geotiff",
-      "title": "Example Data File",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data File 1",
       "roles": [
         "data"
       ]
     },
     "data-file_2": {
       "href": "https://data.4tu.nl/file/0ea98bdd-5772-4da8-ae97-99735e891aff/3c839d73-e6c0-4d63-ae03-c0d05e734d57",
-      "type": "geotiff",
-      "title": "Example Data File",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data File 2",
       "roles": [
         "data"
       ]
