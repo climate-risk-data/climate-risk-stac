@@ -113,21 +113,13 @@ def update_keywords(ext_key, keywords, categories):
     sorted_keywords.extend(remaining_keywords)
     return sorted_keywords
 
-# Function to update providers ## DOES NOT WORK YET ##
-def update_providers(provider1, provider2):
-    # check whether both providers are equal
-    print(provider1)
-    print(provider2)
-    check=(
-        provider1 == provider2 #and
-        #provider1[1] == provider2[1] and
-        #provider1[2] == provider2[2]
-    )
-    if not check:
-        providers = [provider1, provider2]
-    else:
-        providers = provider1
-    return providers
+# Function to compare two pystac.Provider objects
+def providers_are_equal(provider1, provider2):
+    name_equal = provider1.name == provider2.name
+    roles_equal = set(provider1.roles) == set(provider2.roles)
+    url_equal = provider1.url == provider2.url
+    return name_equal and roles_equal and url_equal
+
 
 # Create the main catalog
 catalog_main = pystac.Catalog(
@@ -202,6 +194,12 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                     keywords.append(keyword)   
         print(f"keywords: {keywords}")
 
+        provider = pystac.Provider(
+            name=item['provider'],
+            roles= pystac.ProviderRole(item['provider_role']),
+            url=item['link_website']
+        )
+
         # Create or retrieve the collection 
         if title_collection not in [col.id for col in catalog2.get_children()]:
                     
@@ -215,22 +213,21 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                     temporal=pystac.TemporalExtent([[start, end]]), # needs to be updated based on all items in the collection
                 ),
                 license=item['license'],
-                keywords=keywords, # add further if needed
+                keywords=keywords,
+                providers=[provider],
                 extra_fields={
                     'risk data type': item['risk_data_type'],
                     'subcategory': item['subcategory']                    
                 }
             )
 
-            # Create and add a Provider         
-            provider = pystac.Provider(
-                 name=item['provider'],
-                 roles= pystac.ProviderRole(item['provider_role']), # change role: pystac.provider.ProviderRole.HOST ## DOES NOT WORK ##
-                 url=item['link_website']
-                )
-            collection.providers = [provider]
-            
-            #print(pystac.ProviderRole(item['provider_role']))
+            # # Create and add a Provider         
+            # provider = pystac.Provider(
+            #      name=item['provider'],
+            #      roles= pystac.ProviderRole(item['provider_role']),
+            #      url=item['link_website']
+            #     )
+            #collection.providers = [provider]
             
             catalog2.add_child(collection)
 
@@ -249,18 +246,19 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             collection.keywords = new_key
             print(f"updated and sorted keywords: {new_key}")
 
-            # # Update providers -> relevant when more than one weblink per collection provided: needs to be fixed to account for the option that several providers are already present. These need to be compared one by one
-            # # retrieve existing provider
-            # provider1 = collection.providers
-            # # create potential new provider from current row
-            # provider2 = pystac.Provider(
-            #      name=item['provider'],
-            #      roles=item['provider_role'],
-            #      url=item['link_website']
-            #     )
-            # new_pro = update_providers(provider1, provider2)
-            # # add to collection
-            # collection.providers = new_pro
+            # Update providers
+            # Access providers in the collection and compare to the new provider
+            ext_providers = collection.providers
+            is_new_provider_unique = all(not providers_are_equal(provider, ext_provider) for ext_provider in ext_providers)
+            print(f"The new provider is unique: {is_new_provider_unique}")
+
+            # If unique, add the new provider to the collection
+            if is_new_provider_unique:
+                collection.providers.append(provider)
+                print("New provider added to the collection.")
+            else:
+                print("The new provider already exists in the collection.")
+
             print(f"collection {row_num} {title_collection} successfully updated")
 
         ## ITEMS ##
