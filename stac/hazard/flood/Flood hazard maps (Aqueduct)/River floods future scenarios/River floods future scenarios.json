@@ -57,7 +57,7 @@
       "type": "image/tiff; application=geotiff",
       "title": "Data Link 1",
       "roles": [
-        "overview"
+        "metadata"
       ]
     }
   },

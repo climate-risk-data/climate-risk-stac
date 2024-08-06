@@ -318,7 +318,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             roles = ["data"]
         else:
             assets = [item['link_website']] # change here once asset link updated
-            roles = ["overview"]
+            roles = ["metadata"]
         print('no assets provided; use website link instead')
 
         # loop through all assets
@@ -330,7 +330,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             # Define the asset
             asset_stac = pystac.Asset(
                     href=asset,
-                    media_type=media_type,#pystac.MediaType.GEOTIFF
+                    media_type=media_type,
                     roles=roles,
                     title=f"Data Link {counter}"
             )

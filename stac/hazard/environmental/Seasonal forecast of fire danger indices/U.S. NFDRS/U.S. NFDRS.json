@@ -62,7 +62,7 @@
       "type": "application/octet-stream",
       "title": "Data Link 1",
       "roles": [
-        "overview"
+        "metadata"
       ]
     }
   },
