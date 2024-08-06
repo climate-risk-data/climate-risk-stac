@@ -57,9 +57,7 @@
   "providers": [
     {
       "name": "Cloud to Street",
-      "roles": [
-        "licensor"
-      ],
+      "roles": "licensor",
       "url": "https://global-flood-database.cloudtostreet.ai/#"
     }
   ]

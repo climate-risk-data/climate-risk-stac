@@ -225,12 +225,12 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             # Create and add a Provider         
             provider = pystac.Provider(
                  name=item['provider'],
-                 roles= [item['provider_role']], # change role: pystac.provider.ProviderRole.HOST ## DOES NOT WORK ##
+                 roles= pystac.ProviderRole(item['provider_role']), # change role: pystac.provider.ProviderRole.HOST ## DOES NOT WORK ##
                  url=item['link_website']
                 )
             collection.providers = [provider]
             
-            print(pystac.ProviderRole(item['provider_role']))
+            #print(pystac.ProviderRole(item['provider_role']))
             
             catalog2.add_child(collection)
 
