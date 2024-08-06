@@ -313,38 +313,31 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         # establish the number of assets
         asset_str = item['assets'] # useful if we want to make this a function
         if np.nan_to_num(asset_str):
-            if ';' in asset_str:
-                assets = asset_str.split(';')
-                no_assets = len(assets)
-            else:
-                assets = [asset_str]
-                no_assets = 1
+            print('at least one asset provided; use asset link')
+            assets = asset_str.split(';') if ';' in asset_str else [asset_str]
+            roles = ["data"]
         else:
-            assets = None
-            no_assets = 0
-        print('number of assets:' , no_assets)
+            assets = item['link_website'] # change here!
+            roles = ["overview"]
+        print('no assets provided; use website link instead')
 
         # loop through all assets
-        if assets:
-            counter = 1
-            for asset in assets:
-                # Determine the media type based on the format attribute
-                media_type = format_to_media_type.get(item['format'].lower(), "application/octet-stream")  # Default to binary stream
-        
-                # Define the asset
-                asset_stac = pystac.Asset(
-                        href=asset,
-                        media_type=media_type,#pystac.MediaType.GEOTIFF
-                        roles=["data"],
-                        title=f"Data File {counter}"
-                )
-                # Add the asset to the item
-                key = f"data-file_{counter}"
-                item_stac.add_asset(key, asset_stac)
-                counter +=1
-        else: 
-            print("no assets provided")
-
+        counter = 1
+        for asset in assets:
+            # Determine the media type based on the format attribute
+            media_type = format_to_media_type.get(item['format'].lower(), "application/octet-stream")  # Default to binary stream
+    
+            # Define the asset
+            asset_stac = pystac.Asset(
+                    href=asset,
+                    media_type=media_type,#pystac.MediaType.GEOTIFF
+                    roles=roles,
+                    title=f"Data Link {counter}"
+            )
+            # Add the asset to the item
+            key = f"data-file_{counter}"
+            item_stac.add_asset(key, asset_stac)
+            counter +=1
 
         # Add item to collection
         collection.add_item(item_stac)
