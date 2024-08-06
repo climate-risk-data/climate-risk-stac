@@ -47,7 +47,10 @@
   },
   "license": "ODbL-1.0",
   "keywords": [
-    "drought"
+    "drought",
+    "(near-)global",
+    "historical",
+    "code"
   ],
   "providers": [
     {

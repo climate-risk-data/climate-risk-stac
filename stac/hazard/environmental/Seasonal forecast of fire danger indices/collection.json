@@ -47,7 +47,10 @@
   },
   "license": "proprietary",
   "keywords": [
-    "wildfire"
+    "wildfire",
+    "(near-)global",
+    "historical",
+    "code"
   ],
   "providers": [
     {

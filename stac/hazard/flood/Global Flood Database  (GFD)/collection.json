@@ -47,9 +47,14 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "coastal flood",
-    "fluvial flood",
-    "pluvial flood"
+    [
+      "coastal flood",
+      "fluvial flood",
+      "pluvial flood"
+    ],
+    "(near-)global",
+    "historical",
+    "code"
   ],
   "providers": [
     {

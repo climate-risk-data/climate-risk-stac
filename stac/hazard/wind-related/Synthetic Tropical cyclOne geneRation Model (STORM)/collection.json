@@ -47,7 +47,10 @@
   },
   "license": "CC0-1.0",
   "keywords": [
-    "tropical cyclone"
+    "tropical cyclone",
+    "(near-)global",
+    "historical",
+    "code"
   ],
   "providers": [
     {

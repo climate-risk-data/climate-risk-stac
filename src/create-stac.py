@@ -38,6 +38,19 @@ format_to_media_type = {
     "ascii": "text/plain"
 }
 
+# Categories for keywords
+cat_keywords = {
+    "risk_data_type": ["hazard", "exposure", "vulnerability"],
+    "subcategory": ["coastal flood", "fluvial flood", "pluvial flood", "drought", "snowstorm/blizzard", "heat wave", "cold wave", "tropical cyclone", "extratropical cyclone",
+                    "wildfire", "multi hazard",
+                    "population number", "demographics", "socioeconomic status", "adaptive capacity", "building footprints", "building characteristics", 
+                    "infrastructure footprints", "infrastructure characteristics", "urban/built-up", "land use/land cover", "population vulnerability"
+                    ],
+    "spatial_scale": ["(near-)global", "regional", "national", "subnational"],
+    "reference_period": ["historical", "future", "historical & future"],
+    "code": ["code"]
+}
+
 # Function to parse year range
 def parse_year_range(year_str):
      # If the string contains a dash, it's a range
@@ -70,24 +83,34 @@ def parse_year_range(year_str):
         else:
             raise ValueError("Invalid year format")
         
-# Function to make keywords based on subcategory and risk data type
-def parse_keywords(subc, rdata):
-    # separate strings
-    keyw = subc.split(',') if ',' in subc else [subc]
-    # use rdata if expvul
-    keywords = keyw if rdata == 'hazard' else [rdata, subc]
-    print(f"new keywords: {keywords}")
-    return keywords
-
 # Function to update existing keywords
-def update_keywords(ext_key, keywords):
-    ext_key = set(ext_key)
+def update_keywords(ext_key, keywords, categories):
+    new_key = set(ext_key)
     # Add missing keywords from the existing keywords list
     for keyword in keywords:
-        ext_key.add(keyword)
-        # update keywords
-        upd_key = list(ext_key)
-    return upd_key
+        new_key.add(keyword)
+
+    # Check for the presence of 'historical' and 'future'
+    if 'historical & future' in new_key:
+        new_key.discard('historical')
+        new_key.discard('future')
+
+    elif 'historical' in new_key and 'future' in new_key:
+        new_key.discard('historical')
+        new_key.discard('future')
+        new_key.add('historical & future')
+
+    # Sort the keywords based on categories
+    sorted_keywords = []
+    for categories, cat_keywords in categories.items():
+        for keyword in cat_keywords:
+            if keyword in new_key:
+                sorted_keywords.append(keyword)
+
+    # Add any remaining keywords that are not in the categories
+    remaining_keywords = new_key - set(sorted_keywords)
+    sorted_keywords.extend(remaining_keywords)
+    return sorted_keywords
 
 # Function to update providers ## DOES NOT WORK YET ##
 def update_providers(provider1, provider2):
@@ -158,8 +181,23 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                             )
 
         # make keywords
-        keywords = parse_keywords(item['subcategory'], item['risk_data_type'])
-        
+        # Function to make keywords based on subcategory and risk data type
+        # use rdata if expvul
+        rdata = item['risk_data_type'] if item['risk_data_type'] != 'hazard' else None
+        # separate strings
+        subc = item['subcategory'].split(',') if ',' in item['subcategory'] else item['subcategory']
+        # add further keywords
+        scale = item['spatial_scale']
+        ref = item['reference_period']
+        # add code keyword if provided
+        code = 'code' if np.nan_to_num(item['code_link']) else None
+        # filter out empty values
+        keywords = []
+        for keyword in [rdata, subc, scale, ref, code]:
+            if keyword:
+                keywords.append(keyword)   
+        print(f"keywords: {keywords}")
+
         # Create or retrieve the collection 
         if title_collection not in [col.id for col in catalog2.get_children()]:
                     
@@ -167,7 +205,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             collection = pystac.Collection(
                 id=title_collection,
                 title=title_collection,
-                description= str(item['description_collection']),#description_collection,
+                description= item['description_collection'],
                 extent=pystac.Extent(
                     spatial=pystac.SpatialExtent([bbox_list]), # needs to be updated based on all items in the collection
                     temporal=pystac.TemporalExtent([[start, end]]), # needs to be updated based on all items in the collection
@@ -202,9 +240,10 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             # retrieve existing keywords
             key_col = collection.keywords
             # update keywords
-            new_key = update_keywords(key_col, keywords)
+            new_key = update_keywords(key_col, keywords, cat_keywords)
             # add to collection
             collection.keywords = new_key
+            print(f"updated and sorted keywords: {new_key}")
 
             # # Update providers -> relevant when more than one weblink per collection provided: needs to be fixed to account for the option that several providers are already present. These need to be compared one by one
             # # retrieve existing provider

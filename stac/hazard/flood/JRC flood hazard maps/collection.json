@@ -47,7 +47,9 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "fluvial flood"
+    "fluvial flood",
+    "(near-)global",
+    "historical"
   ],
   "providers": [
     {
