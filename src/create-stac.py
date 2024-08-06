@@ -309,7 +309,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 )
             item_stac.add_link(link)
 
-        # Add assets
+        # ADD ASSETS        
         # establish the number of assets
         asset_str = item['assets'] # useful if we want to make this a function
         if np.nan_to_num(asset_str):
@@ -317,7 +317,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             assets = asset_str.split(';') if ';' in asset_str else [asset_str]
             roles = ["data"]
         else:
-            assets = item['link_website'] # change here!
+            assets = [item['link_website']] # change here once asset link updated
             roles = ["overview"]
         print('no assets provided; use website link instead')
 
@@ -348,7 +348,6 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
     # update collection properties based on all items belonging to the collection ## NOT FINISHED YET ##
     #collection_interval = sorted([collection_item.datetime, collection_item2.datetime])
     #temporal_extent = pystac.TemporalExtent(intervals=[collection_interval])
-
 
     catalog_main.describe()
 
