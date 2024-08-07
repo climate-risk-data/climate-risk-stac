@@ -1,0 +1,27 @@
+{
+  "type": "Catalog",
+  "id": "precipitation-related",
+  "stac_version": "1.0.0",
+  "description": "Precipitation-related datasets",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk Data"
+    },
+    {
+      "rel": "child",
+      "href": "./Global SPEI database/collection.json",
+      "type": "application/json",
+      "title": "Global SPEI database"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Hazard"
+    }
+  ],
+  "title": "Precipitation-related"
+}
