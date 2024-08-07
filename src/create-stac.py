@@ -100,28 +100,18 @@ def compute_overall_bbox(items):
     
 # Function to update existing keywords
 def update_keywords(ext_key, keywords, categories):
-    new_key = set(ext_key)
-    # Add missing keywords from the existing keywords list
-    for keyword in keywords:
-        new_key.add(keyword)
+    # Combine existing keywords and additional keywords into a set to avoid duplicates
+    new_key = set(ext_key) | set(keywords)
 
     # Check for the presence of 'historical & future'
     if 'historical & future' in new_key:
-        new_key.add('historical')
-        new_key.add('future')
+        new_key.update(['historical', 'future'])
         new_key.discard('historical & future')
-
-    # elif 'historical' in new_key and 'future' in new_key:
-    #     new_key.discard('historical')
-    #     new_key.discard('future')
-    #     new_key.add('historical & future')
 
     # Sort the keywords based on categories
     sorted_keywords = []
     for categories, cat_keywords in categories.items():
-        for keyword in cat_keywords:
-            if keyword in new_key:
-                sorted_keywords.append(keyword)
+        sorted_keywords.extend([kw for kw in cat_keywords if kw in new_key])
 
     # Add any remaining keywords that are not in the categories
     remaining_keywords = new_key - set(sorted_keywords)
@@ -442,5 +432,5 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
     #catalog_main.save(catalog_type=pystac.CatalogType.RELATIVE_PUBLISHED)
    
 # Create catalogs from both hazard and exposure-vulnerability CSVs
-#create_catalog_from_csv(hazard, catalog_main, dir)
+create_catalog_from_csv(hazard, catalog_main, dir)
 create_catalog_from_csv(expvul, catalog_main, dir)
