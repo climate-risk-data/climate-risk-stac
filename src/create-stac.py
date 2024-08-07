@@ -35,7 +35,8 @@ format_to_media_type = {
     "GRIB2": "application/grib2",
     "txt": pystac.MediaType.TEXT,
     "pbf": "application/x-protobuf",
-    "ascii": "text/plain"
+    "ascii": "text/plain",
+    "nan": None
 }
 
 # Categories for keywords
@@ -332,7 +333,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             if str(item['publication_link']).startswith('10.'):
                 print("doi available")
                 sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
-                sci_ext.doi = item['publication_link'] # adjust condition here for links that are not dois
+                sci_ext.doi = item['publication_link']
             elif np.nan_to_num(item['publication_link']):
                 print("weblink available")
                 link = pystac.Link(
@@ -368,7 +369,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             counter = 1
             for asset in assets:
                 # Determine the media type based on the format attribute
-                media_type = format_to_media_type.get(item['format'].lower(), "application/octet-stream")  # Default to binary stream
+                media_type = format_to_media_type.get(str(item['format']).lower(), "application/octet-stream")  # Default to binary stream
 
                 # Define the asset
                 asset_stac = pystac.Asset(
