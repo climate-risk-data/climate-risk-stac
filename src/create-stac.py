@@ -13,7 +13,7 @@ import os
 
 # File paths
 dir = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/'
-haz = 'csv/hazard.csv' # use test set which also includes expvul
+haz = 'csv/hazard_test.csv' # use test set which also includes expvul
 exv = 'csv/expvul.csv' # can both be combined into one csv, but: some attributes are slightly different
 
 # Read data sheets
@@ -36,7 +36,7 @@ format_to_media_type = {
     "txt": pystac.MediaType.TEXT,
     "pbf": "application/x-protobuf",
     "ascii": "text/plain",
-    "nan": None
+    "nan": "unknown"
 }
 
 # Categories for keywords
@@ -370,7 +370,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             for asset in assets:
                 # Determine the media type based on the format attribute
                 media_type = format_to_media_type.get(str(item['format']).lower(), "application/octet-stream")  # Default to binary stream
-
+                print(f" media type defined as: {media_type}")
                 # Define the asset
                 asset_stac = pystac.Asset(
                         href=asset,
@@ -405,4 +405,4 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
 
 # Create catalogs from both hazard and exposure-vulnerability CSVs
 create_catalog_from_csv(hazard, catalog_main, dir)
-create_catalog_from_csv(expvul, catalog_main, dir)
+#create_catalog_from_csv(expvul, catalog_main, dir)

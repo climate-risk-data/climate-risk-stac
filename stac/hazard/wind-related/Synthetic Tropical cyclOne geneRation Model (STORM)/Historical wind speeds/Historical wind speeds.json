@@ -12,7 +12,7 @@
     "temporal resolution": "1980-2017",
     "scenarios": null,
     "data type": "raster",
-    "data format": "geotiff",
+    "data format": NaN,
     "spatial resolution": "0.1 decimal degrees",
     "data calculation type": "modeled",
     "analysis type": "probabilistic",
@@ -59,7 +59,7 @@
   "assets": {
     "data-file_1": {
       "href": "https://data.4tu.nl/file/0ea98bdd-5772-4da8-ae97-99735e891aff/0b98c6f5-c7af-45bb-bb6e-dac53e1b8d55",
-      "type": "image/tiff; application=geotiff",
+      "type": "unknown",
       "title": "Data Link 1",
       "roles": [
         "data"
@@ -67,7 +67,7 @@
     },
     "data-file_2": {
       "href": "https://data.4tu.nl/file/0ea98bdd-5772-4da8-ae97-99735e891aff/3c839d73-e6c0-4d63-ae03-c0d05e734d57",
-      "type": "image/tiff; application=geotiff",
+      "type": "unknown",
       "title": "Data Link 2",
       "roles": [
         "data"
