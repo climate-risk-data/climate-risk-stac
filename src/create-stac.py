@@ -194,12 +194,12 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                     keywords.append(keyword)   
         print(f"keywords: {keywords}")
 
-        # # make provider
-        # provider = pystac.Provider(
-        #     name=item['provider'],
-        #     roles= pystac.ProviderRole(item['provider_role']),
-        #     url=item['link_website']
-        # )
+        # make provider
+        provider = pystac.Provider(
+            name=item['provider'],
+            roles= pystac.ProviderRole(item['provider_role']),
+            url=item['link_website']
+        )
 
         # Create or retrieve the collection 
         if title_collection not in [col.id for col in catalog2.get_children()]:
@@ -215,21 +215,21 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 ),
                 license=item['license'],
                 keywords=keywords,
-                #providers=[provider],
+                providers=[provider],
                 extra_fields={
                     'risk data type': item['risk_data_type'],
                     'subcategory': item['subcategory']                    
                 }
             )
 
-            # Create and add a Provider         
-            provider = pystac.Provider(
-                 name=item['provider'],
-                 roles= pystac.ProviderRole(item['provider_role']),
-                 url=item['link_website']
-                )
-            collection.providers = [provider]
-            print(f"provider: {provider.name}, {provider.roles}, {provider.url}")
+            # # Create and add a Provider         
+            # provider = pystac.Provider(
+            #      name=item['provider'],
+            #      roles= pystac.ProviderRole(item['provider_role']),
+            #      url=item['link_website']
+            #     )
+            # collection.providers = [provider]
+            # print(f"provider: {provider.name}, {provider.roles}, {provider.url}")
 
             catalog2.add_child(collection)
 
@@ -248,30 +248,30 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             collection.keywords = new_key
             print(f"updated and sorted keywords: {new_key}")
 
-            # # Update providers
-            # # Access providers in the collection and compare to the new provider
-            # ext_providers = collection.providers
+            # Update providers
+            # Access providers in the collection and compare to the new provider
+            ext_providers = collection.providers
             
-            # # Display the existing providers
-            # print("Existing providers:")
-            # for provider in collection.providers:
-            #     print(f"Name: {provider.name}, Roles: {provider.roles}, URL: {provider.url}")
+            # Display the existing providers
+            print("Existing providers:")
+            for ext_provider in collection.providers:
+                print(f"Name: {ext_provider.name}, Roles: {ext_provider.roles}, URL: {ext_provider.url}")
 
-            # is_new_provider_unique = all(not providers_are_equal(provider, ext_provider) for ext_provider in ext_providers)
-            # #print(f"The new provider is unique: {is_new_provider_unique}")
+            is_new_provider_unique = all(not providers_are_equal(provider, ext_provider) for ext_provider in ext_providers)
+            print(f"The new provider is unique: {is_new_provider_unique}")
 
-            # # If unique, add the new provider to the collection
-            # if is_new_provider_unique:
-            #     collection.providers.append(provider)
-            #     print("New provider added to the collection.")
-            # else:
-            #     print("The new provider already exists in the collection.")
+            # If unique, add the new provider to the collection
+            if is_new_provider_unique:
+                collection.providers.append(provider)
+                print("New provider added to the collection.")
+            else:
+                print("The new provider already exists in the collection.")
 
-            # print("Updated providers:")
-            # for provider in collection.providers:
-            #     print(f"Name: {provider.name}, Roles: {provider.roles}, URL: {provider.url}")
+            print("Updated providers:")
+            for provider in collection.providers:
+                print(f"Name: {provider.name}, Roles: {provider.roles}, URL: {provider.url}")
 
-            # print(f"collection {row_num} {title_collection} successfully updated")
+            print(f"collection {row_num} {title_collection} successfully updated")
 
         ## ITEMS ##
         # Create new item if not present yet
