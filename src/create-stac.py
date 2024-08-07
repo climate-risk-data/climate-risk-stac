@@ -195,11 +195,11 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         print(f"keywords: {keywords}")
 
         # make provider ## FOR SOME REASON PROVIDER ROLES ARE SOMETIMES DISPLAYED IN THE BROWSER, OTHER TIMES NOT; NO IDEA WHY ##
-        provider = pystac.Provider(
-            name=item['provider'],
-            roles= pystac.ProviderRole(item['provider_role']),
-            url=item['link_website']
-        )
+        # provider = pystac.Provider(
+        #     name=item['provider'],
+        #     roles= pystac.ProviderRole(item['provider_role']),
+        #     url=item['link_website']
+        # )
 
         # Create or retrieve the collection 
         if title_collection not in [col.id for col in catalog2.get_children()]:
@@ -214,8 +214,8 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                     temporal=pystac.TemporalExtent([[start, end]]), # needs to be updated based on all items in the collection
                 ),
                 license=item['license'],
-                keywords=keywords,
-                providers=[provider],
+                keywords=keywords#,
+                #providers=[provider],
                 #extra_fields={ ## any extra field specified will be displayed in the 'Metadata' section ##
                 #    'risk data type': item['risk_data_type'],
                 #    'subcategory': item['subcategory']                    
@@ -223,12 +223,12 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             )
 
             # # Create and add a Provider         
-            # provider = pystac.Provider(
-            #      name=item['provider'],
-            #      roles= pystac.ProviderRole(item['provider_role']),
-            #      url=item['link_website']
-            #     )
-            # collection.providers = [provider]
+            provider = pystac.Provider(
+                 name=item['provider'],
+                 roles= pystac.ProviderRole(item['provider_role']),
+                 url=item['link_website']
+                )
+            collection.providers = [provider]
             # print(f"provider: {provider.name}, {provider.roles}, {provider.url}")
 
             catalog2.add_child(collection)
