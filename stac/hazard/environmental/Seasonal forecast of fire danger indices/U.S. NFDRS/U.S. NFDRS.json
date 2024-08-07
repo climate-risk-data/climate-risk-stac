@@ -59,7 +59,7 @@
   "assets": {
     "data-file_1": {
       "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/cems-fire-seasonal?tab=overview",
-      "type": "application/octet-stream",
+      "type": "application/grib",
       "title": "Data Link 1",
       "roles": [
         "overview"
