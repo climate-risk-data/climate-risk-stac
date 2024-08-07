@@ -21,7 +21,7 @@
     "code type": null,
     "usage notes": "data download via interface",
     "start_datetime": "1955-01-01T00:00:00Z",
-    "end_datetime": "2024-08-05T00:00:00Z",
+    "end_datetime": "2024-08-07T00:00:00Z",
     "proj:epsg": 4326,
     "datetime": null
   },
@@ -46,7 +46,16 @@
       "title": "Global Drought Monitor"
     }
   ],
-  "assets": {},
+  "assets": {
+    "data-file_1": {
+      "href": "https://spei.csic.es/map/maps.html#months=1#month=5#year=2024",
+      "type": "application/x-netcdf",
+      "title": "Data Link 1",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
   "bbox": [
     -180.0,
     -90.0,

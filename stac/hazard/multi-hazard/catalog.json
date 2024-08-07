@@ -2,7 +2,7 @@
   "type": "Catalog",
   "id": "multi-hazard",
   "stac_version": "1.0.0",
-  "description": "multi-hazard",
+  "description": "Multi-hazard datasets",
   "links": [
     {
       "rel": "root",

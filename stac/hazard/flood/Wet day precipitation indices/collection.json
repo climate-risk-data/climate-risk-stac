@@ -37,8 +37,6 @@
       "title": "Flood"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "pluvial flood",
   "title": "Wet day precipitation indices",
   "extent": {
     "spatial": {
@@ -54,7 +52,7 @@
     "temporal": {
       "interval": [
         [
-          "2015-01-01T00:00:00Z",
+          "1849-01-01T00:00:00Z",
           "2300-12-31T00:00:00Z"
         ]
       ]
@@ -62,7 +60,11 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "pluvial flood"
+    "pluvial flood",
+    "(near-)global",
+    "historical",
+    "future",
+    "code"
   ],
   "providers": [
     {

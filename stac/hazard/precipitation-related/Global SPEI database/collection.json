@@ -22,8 +22,6 @@
       "title": "Precipitation-related"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "drought",
   "title": "Global SPEI database",
   "extent": {
     "spatial": {
@@ -47,7 +45,10 @@
   },
   "license": "ODbL-1.0",
   "keywords": [
-    "drought"
+    "drought",
+    "(near-)global",
+    "historical",
+    "code"
   ],
   "providers": [
     {

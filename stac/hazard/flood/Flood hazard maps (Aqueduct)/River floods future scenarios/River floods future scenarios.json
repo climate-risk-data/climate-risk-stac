@@ -51,7 +51,16 @@
       "title": "Flood hazard maps (Aqueduct)"
     }
   ],
-  "assets": {},
+  "assets": {
+    "data-file_1": {
+      "href": "https://www.wri.org/data/aqueduct-floods-hazard-maps",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data Link 1",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
   "bbox": [
     -180.0,
     -90.0,

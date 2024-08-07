@@ -37,8 +37,6 @@
       "title": "Temperature-related"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "heat wave",
   "title": "Annual Global High-Resolution Extreme Heat Estimates (GEHE)",
   "extent": {
     "spatial": {
@@ -62,7 +60,10 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "heat wave"
+    "heat wave",
+    "(near-)global",
+    "historical",
+    "code"
   ],
   "providers": [
     {

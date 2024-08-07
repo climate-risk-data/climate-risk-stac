@@ -22,8 +22,6 @@
       "title": "Multi-hazard"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "multi hazard",
   "title": "MYRIAD Hazard Events Sets (MYRIAD-HES)",
   "extent": {
     "spatial": {
@@ -47,7 +45,10 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "multi hazard"
+    "multi hazard",
+    "(near-)global",
+    "historical",
+    "code"
   ],
   "providers": [
     {

@@ -56,7 +56,16 @@
       "title": "Global Surface Water (GSW)"
     }
   ],
-  "assets": {},
+  "assets": {
+    "data-file_1": {
+      "href": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GSWE/",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data Link 1",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
   "bbox": [
     -180.0,
     -56.0,

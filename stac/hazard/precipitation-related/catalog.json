@@ -2,7 +2,7 @@
   "type": "Catalog",
   "id": "precipitation-related",
   "stac_version": "1.0.0",
-  "description": "precipitation-related",
+  "description": "Precipitation-related datasets",
   "links": [
     {
       "rel": "root",

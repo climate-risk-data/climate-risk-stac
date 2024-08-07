@@ -37,8 +37,6 @@
       "title": "Wind-related"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "tropical cyclone",
   "title": "Synthetic Tropical cyclOne geneRation Model (STORM)",
   "extent": {
     "spatial": {
@@ -54,7 +52,7 @@
     "temporal": {
       "interval": [
         [
-          "2015-01-01T00:00:00Z",
+          "1980-01-01T00:00:00Z",
           "2050-12-31T00:00:00Z"
         ]
       ]
@@ -62,7 +60,11 @@
   },
   "license": "CC0-1.0",
   "keywords": [
-    "tropical cyclone"
+    "tropical cyclone",
+    "(near-)global",
+    "historical",
+    "future",
+    "code"
   ],
   "providers": [
     {

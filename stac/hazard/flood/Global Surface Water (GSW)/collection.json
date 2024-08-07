@@ -22,8 +22,6 @@
       "title": "Flood"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "fluvial flood",
   "title": "Global Surface Water (GSW)",
   "extent": {
     "spatial": {
@@ -47,7 +45,10 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "fluvial flood"
+    "fluvial flood",
+    "(near-)global",
+    "historical",
+    "code"
   ],
   "providers": [
     {

@@ -56,7 +56,16 @@
       "title": "Global SPEI database"
     }
   ],
-  "assets": {},
+  "assets": {
+    "data-file_1": {
+      "href": "https://digital.csic.es/bitstream/10261/332007/3/spei01.nc",
+      "type": "application/x-netcdf",
+      "title": "Data Link 1",
+      "roles": [
+        "data"
+      ]
+    }
+  },
   "bbox": [
     -180.0,
     -90.0,

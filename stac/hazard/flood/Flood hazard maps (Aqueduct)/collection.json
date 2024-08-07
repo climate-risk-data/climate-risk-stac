@@ -37,8 +37,6 @@
       "title": "Flood"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "coastal flood",
   "title": "Flood hazard maps (Aqueduct)",
   "extent": {
     "spatial": {
@@ -55,15 +53,18 @@
       "interval": [
         [
           "1980-01-01T00:00:00Z",
-          "1980-12-31T00:00:00Z"
+          "2080-12-31T00:00:00Z"
         ]
       ]
     }
   },
   "license": "CC-BY-4.0",
   "keywords": [
+    "coastal flood",
     "fluvial flood",
-    "coastal flood"
+    "(near-)global",
+    "historical",
+    "future"
   ],
   "providers": [
     {

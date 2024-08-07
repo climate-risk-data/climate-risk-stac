@@ -27,8 +27,6 @@
       "title": "Precipitation-related"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "drought",
   "title": "Standardized precipitation index (SPI)",
   "extent": {
     "spatial": {
@@ -44,7 +42,7 @@
     "temporal": {
       "interval": [
         [
-          "2015-01-01T00:00:00Z",
+          "1850-01-01T00:00:00Z",
           "2100-12-31T00:00:00Z"
         ]
       ]
@@ -52,7 +50,11 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "drought"
+    "drought",
+    "(near-)global",
+    "historical",
+    "future",
+    "code"
   ],
   "providers": [
     {

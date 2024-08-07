@@ -51,7 +51,16 @@
       "title": "Meteorological drought events from the Global Drought Observatory (GDO)"
     }
   ],
-  "assets": {},
+  "assets": {
+    "data-file_1": {
+      "href": "https://data.jrc.ec.europa.eu/collection/id-00321",
+      "type": "application/x-netcdf",
+      "title": "Data Link 1",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
   "bbox": [
     -180.0,
     -90.0,

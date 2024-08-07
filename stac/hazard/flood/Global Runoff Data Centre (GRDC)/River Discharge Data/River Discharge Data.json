@@ -46,7 +46,16 @@
       "title": "Global Runoff Data Centre (GRDC)"
     }
   ],
-  "assets": {},
+  "assets": {
+    "data-file_1": {
+      "href": "https://portal.grdc.bafg.de/applications/public.html?publicuser=PublicUser#dataDownload/Stations",
+      "type": "text/plain",
+      "title": "Data Link 1",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
   "bbox": [
     -180.0,
     -90.0,

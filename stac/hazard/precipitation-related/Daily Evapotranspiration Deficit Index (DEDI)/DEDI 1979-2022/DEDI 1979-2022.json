@@ -56,7 +56,16 @@
       "title": "Daily Evapotranspiration Deficit Index (DEDI)"
     }
   ],
-  "assets": {},
+  "assets": {
+    "data-file_1": {
+      "href": "https://zenodo.org/doi/10.5281/zenodo.7768533",
+      "type": "application/x-netcdf",
+      "title": "Data Link 1",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
   "bbox": [
     -180.0,
     -90.0,

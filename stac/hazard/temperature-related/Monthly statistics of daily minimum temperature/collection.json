@@ -57,8 +57,6 @@
       "title": "Temperature-related"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "cold wave",
   "title": "Monthly statistics of daily minimum temperature",
   "extent": {
     "spatial": {
@@ -74,7 +72,7 @@
     "temporal": {
       "interval": [
         [
-          "2006-01-01T00:00:00Z",
+          "1850-01-01T00:00:00Z",
           "2100-12-31T00:00:00Z"
         ]
       ]
@@ -82,7 +80,11 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "cold wave"
+    "cold wave",
+    "(near-)global",
+    "historical",
+    "future",
+    "code"
   ],
   "providers": [
     {

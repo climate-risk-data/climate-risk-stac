@@ -27,8 +27,6 @@
       "title": "Flood"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "fluvial flood",
   "title": "Global Inundation Extent from Multi-Satellites (GIEMS)",
   "extent": {
     "spatial": {
@@ -52,7 +50,9 @@
   },
   "license": "CC-BY-NC-SA-4.0",
   "keywords": [
-    "fluvial flood"
+    "fluvial flood",
+    "(near-)global",
+    "historical"
   ],
   "providers": [
     {

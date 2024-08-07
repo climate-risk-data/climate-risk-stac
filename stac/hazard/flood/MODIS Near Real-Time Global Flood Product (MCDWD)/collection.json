@@ -32,8 +32,6 @@
       "title": "Flood"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "coastal flood,fluvial flood,pluvial flood",
   "title": "MODIS Near Real-Time Global Flood Product (MCDWD)",
   "extent": {
     "spatial": {
@@ -50,16 +48,18 @@
       "interval": [
         [
           "2021-01-01T00:00:00Z",
-          "2024-08-05T00:00:00Z"
+          "2024-08-07T00:00:00Z"
         ]
       ]
     }
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "fluvial flood",
     "coastal flood",
-    "pluvial flood"
+    "fluvial flood",
+    "pluvial flood",
+    "(near-)global",
+    "historical"
   ],
   "providers": [
     {

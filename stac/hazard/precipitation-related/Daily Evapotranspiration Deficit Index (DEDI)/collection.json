@@ -22,8 +22,6 @@
       "title": "Precipitation-related"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "drought",
   "title": "Daily Evapotranspiration Deficit Index (DEDI)",
   "extent": {
     "spatial": {
@@ -47,7 +45,10 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "drought"
+    "drought",
+    "(near-)global",
+    "historical",
+    "code"
   ],
   "providers": [
     {

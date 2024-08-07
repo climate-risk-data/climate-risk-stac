@@ -56,7 +56,16 @@
       "title": "Daily Extreme Urban Heat Exposure (UHE-Daily)"
     }
   ],
-  "assets": {},
+  "assets": {
+    "data-file_1": {
+      "href": "https://sedac.ciesin.columbia.edu/downloads/data/sdei/sdei-high-res-daily-uhe-1983-2016/sdei-high-res-daily-uhe-1983-2016-shp.zip",
+      "type": "application/x-shapefile",
+      "title": "Data Link 1",
+      "roles": [
+        "data"
+      ]
+    }
+  },
   "bbox": [
     -180.0,
     -90.0,

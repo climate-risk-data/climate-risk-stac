@@ -56,7 +56,16 @@
       "title": "MYRIAD Hazard Events Sets (MYRIAD-HES)"
     }
   ],
-  "assets": {},
+  "assets": {
+    "data-file_1": {
+      "href": "https://zenodo.org/records/8269680/files/MYRIAD-HES.zip?download=1",
+      "type": "text/csv",
+      "title": "Data Link 1",
+      "roles": [
+        "data"
+      ]
+    }
+  },
   "bbox": [
     -180.0,
     -90.0,

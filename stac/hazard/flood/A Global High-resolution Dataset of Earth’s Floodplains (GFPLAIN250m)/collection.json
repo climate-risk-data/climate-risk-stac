@@ -27,8 +27,6 @@
       "title": "Flood"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "fluvial flood",
   "title": "A Global High-resolution Dataset of Earth\u2019s Floodplains (GFPLAIN250m)",
   "extent": {
     "spatial": {
@@ -52,7 +50,9 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "fluvial flood"
+    "fluvial flood",
+    "(near-)global",
+    "historical"
   ],
   "providers": [
     {

@@ -56,7 +56,16 @@
       "title": "Monthly statistics of daily minimum temperature"
     }
   ],
-  "assets": {},
+  "assets": {
+    "data-file_1": {
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-climate-atlas?tab=overview",
+      "type": "application/x-netcdf",
+      "title": "Data Link 1",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
   "bbox": [
     -180.0,
     -60.0,

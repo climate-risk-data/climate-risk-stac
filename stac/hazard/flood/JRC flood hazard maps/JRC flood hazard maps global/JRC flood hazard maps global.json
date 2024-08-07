@@ -51,7 +51,56 @@
       "title": "JRC flood hazard maps"
     }
   ],
-  "assets": {},
+  "assets": {
+    "data-file_1": {
+      "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp10y.zip",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data Link 1",
+      "roles": [
+        "data"
+      ]
+    },
+    "data-file_2": {
+      "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp20y.zip",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data Link 2",
+      "roles": [
+        "data"
+      ]
+    },
+    "data-file_3": {
+      "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp50y.zip",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data Link 3",
+      "roles": [
+        "data"
+      ]
+    },
+    "data-file_4": {
+      "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp100y.zip",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data Link 4",
+      "roles": [
+        "data"
+      ]
+    },
+    "data-file_5": {
+      "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp200y.zip",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data Link 5",
+      "roles": [
+        "data"
+      ]
+    },
+    "data-file_6": {
+      "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp500y.zip",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data Link 6",
+      "roles": [
+        "data"
+      ]
+    }
+  },
   "bbox": [
     -180.0,
     -90.0,

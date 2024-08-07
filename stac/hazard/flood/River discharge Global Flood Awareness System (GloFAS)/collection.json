@@ -42,8 +42,6 @@
       "title": "Flood"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "fluvial flood",
   "title": "River discharge Global Flood Awareness System (GloFAS)",
   "extent": {
     "spatial": {
@@ -59,15 +57,17 @@
     "temporal": {
       "interval": [
         [
-          "2003-01-01T00:00:00Z",
-          "2022-12-31T00:00:00Z"
+          "1979-01-01T00:00:00Z",
+          "2024-12-31T00:00:00Z"
         ]
       ]
     }
   },
   "license": "proprietary",
   "keywords": [
-    "fluvial flood"
+    "fluvial flood",
+    "(near-)global",
+    "historical"
   ],
   "providers": [
     {

@@ -21,7 +21,7 @@
     "code type": null,
     "usage notes": "user account needed for data download",
     "start_datetime": "2015-01-01T00:00:00Z",
-    "end_datetime": "2024-08-05T00:00:00Z",
+    "end_datetime": "2024-08-07T00:00:00Z",
     "proj:epsg": 4326,
     "datetime": null
   },
@@ -46,7 +46,16 @@
       "title": "GloFAS Global Flood Monitoring (GloFAS-GFM)"
     }
   ],
-  "assets": {},
+  "assets": {
+    "data-file_1": {
+      "href": "https://www.globalfloods.eu/technical-information/glofas-gfm/",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data Link 1",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
   "bbox": [
     -180.0,
     -90.0,

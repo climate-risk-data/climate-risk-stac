@@ -67,8 +67,6 @@
       "title": "Temperature-related"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "heat wave",
   "title": "CMIP6 heat stress indicators (HIS)",
   "extent": {
     "spatial": {
@@ -84,7 +82,7 @@
     "temporal": {
       "interval": [
         [
-          "2015-01-01T00:00:00Z",
+          "1951-01-01T00:00:00Z",
           "2100-12-31T00:00:00Z"
         ]
       ]
@@ -92,7 +90,11 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "heat wave"
+    "heat wave",
+    "(near-)global",
+    "historical",
+    "future",
+    "code"
   ],
   "providers": [
     {

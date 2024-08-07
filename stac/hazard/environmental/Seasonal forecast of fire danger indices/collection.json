@@ -32,8 +32,6 @@
       "title": "Environmental"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "wildfire",
   "title": "Seasonal forecast of fire danger indices",
   "extent": {
     "spatial": {
@@ -50,14 +48,17 @@
       "interval": [
         [
           "1981-01-01T00:00:00Z",
-          "2024-08-05T00:00:00Z"
+          "2024-08-07T00:00:00Z"
         ]
       ]
     }
   },
   "license": "proprietary",
   "keywords": [
-    "wildfire"
+    "wildfire",
+    "(near-)global",
+    "historical",
+    "code"
   ],
   "providers": [
     {

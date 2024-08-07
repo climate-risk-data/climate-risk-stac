@@ -27,8 +27,6 @@
       "title": "Flood"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "coastal flood,fluvial flood,pluvial flood",
   "title": "Copernicus Emergency Management Service - Mapping (CEMS)",
   "extent": {
     "spatial": {
@@ -45,16 +43,18 @@
       "interval": [
         [
           "2017-01-01T00:00:00Z",
-          "2024-08-05T00:00:00Z"
+          "2024-08-07T00:00:00Z"
         ]
       ]
     }
   },
   "license": "proprietary",
   "keywords": [
-    "fluvial flood",
     "coastal flood",
-    "pluvial flood"
+    "fluvial flood",
+    "pluvial flood",
+    "(near-)global",
+    "historical"
   ],
   "providers": [
     {

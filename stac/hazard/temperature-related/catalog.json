@@ -2,7 +2,7 @@
   "type": "Catalog",
   "id": "temperature-related",
   "stac_version": "1.0.0",
-  "description": "temperature-related",
+  "description": "Temperature-related datasets",
   "links": [
     {
       "rel": "root",

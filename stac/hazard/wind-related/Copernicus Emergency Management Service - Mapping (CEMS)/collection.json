@@ -21,24 +21,12 @@
       "type": "application/json"
     },
     {
-      "rel": "item",
-      "href": "./Rapid mapping per event/Rapid mapping per event.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "item",
-      "href": "./Risk and recovery mapping/Risk and recovery mapping.json",
-      "type": "application/json"
-    },
-    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Wind-related"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "extratropical cyclone",
   "title": "Copernicus Emergency Management Service - Mapping (CEMS)",
   "extent": {
     "spatial": {
@@ -55,15 +43,17 @@
       "interval": [
         [
           "2017-01-01T00:00:00Z",
-          "2024-08-05T00:00:00Z"
+          "2024-08-07T00:00:00Z"
         ]
       ]
     }
   },
   "license": "proprietary",
   "keywords": [
+    "tropical cyclone",
     "extratropical cyclone",
-    "tropical cyclone"
+    "(near-)global",
+    "historical"
   ],
   "providers": [
     {

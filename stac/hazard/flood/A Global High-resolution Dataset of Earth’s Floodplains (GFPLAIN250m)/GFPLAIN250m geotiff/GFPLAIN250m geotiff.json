@@ -51,7 +51,16 @@
       "title": "A Global High-resolution Dataset of Earth\u2019s Floodplains (GFPLAIN250m)"
     }
   ],
-  "assets": {},
+  "assets": {
+    "data-file_1": {
+      "href": "https://figshare.com/ndownloader/files/12186356",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data Link 1",
+      "roles": [
+        "data"
+      ]
+    }
+  },
   "bbox": [
     -180.0,
     -60.0,

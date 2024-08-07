@@ -47,8 +47,6 @@
       "title": "Precipitation-related"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "drought",
   "title": "Meteorological drought events from the Global Drought Observatory (GDO)",
   "extent": {
     "spatial": {
@@ -72,7 +70,9 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "drought"
+    "drought",
+    "(near-)global",
+    "historical"
   ],
   "providers": [
     {

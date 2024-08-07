@@ -27,8 +27,6 @@
       "title": "Temperature-related"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "heat wave",
   "title": "Thermal comfort indices derived from ERA5 (ERA5-HEAT)",
   "extent": {
     "spatial": {
@@ -45,14 +43,16 @@
       "interval": [
         [
           "1940-01-01T00:00:00Z",
-          "2024-08-05T00:00:00Z"
+          "2024-08-07T00:00:00Z"
         ]
       ]
     }
   },
   "license": "proprietary",
   "keywords": [
-    "heat wave"
+    "heat wave",
+    "(near-)global",
+    "historical"
   ],
   "providers": [
     {

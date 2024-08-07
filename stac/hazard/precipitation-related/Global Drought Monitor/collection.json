@@ -22,8 +22,6 @@
       "title": "Precipitation-related"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "drought",
   "title": "Global Drought Monitor",
   "extent": {
     "spatial": {
@@ -40,14 +38,16 @@
       "interval": [
         [
           "1955-01-01T00:00:00Z",
-          "2024-08-05T00:00:00Z"
+          "2024-08-07T00:00:00Z"
         ]
       ]
     }
   },
   "license": "ODbL-1.0",
   "keywords": [
-    "drought"
+    "drought",
+    "(near-)global",
+    "historical"
   ],
   "providers": [
     {

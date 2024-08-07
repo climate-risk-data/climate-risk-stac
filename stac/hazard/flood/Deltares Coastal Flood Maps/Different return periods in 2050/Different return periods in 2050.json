@@ -56,7 +56,16 @@
       "title": "Deltares Coastal Flood Maps"
     }
   ],
-  "assets": {},
+  "assets": {
+    "data-file_1": {
+      "href": "https://planetarycomputer.microsoft.com/dataset/deltares-floods",
+      "type": "application/x-netcdf",
+      "title": "Data Link 1",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
   "bbox": [
     -180.0,
     -90.0,

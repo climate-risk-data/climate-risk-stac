@@ -22,8 +22,6 @@
       "title": "Flood"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "coastal flood,fluvial flood,pluvial flood",
   "title": "Global Flood Database  (GFD)",
   "extent": {
     "spatial": {
@@ -49,7 +47,10 @@
   "keywords": [
     "coastal flood",
     "fluvial flood",
-    "pluvial flood"
+    "pluvial flood",
+    "(near-)global",
+    "historical",
+    "code"
   ],
   "providers": [
     {
