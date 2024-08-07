@@ -194,12 +194,12 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                     keywords.append(keyword)   
         print(f"keywords: {keywords}")
 
-        # make provider
-        provider = pystac.Provider(
-            name=item['provider'],
-            roles= pystac.ProviderRole(item['provider_role']),
-            url=item['link_website']
-        )
+        # # make provider
+        # provider = pystac.Provider(
+        #     name=item['provider'],
+        #     roles= pystac.ProviderRole(item['provider_role']),
+        #     url=item['link_website']
+        # )
 
         # Create or retrieve the collection 
         if title_collection not in [col.id for col in catalog2.get_children()]:
@@ -215,20 +215,20 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 ),
                 license=item['license'],
                 keywords=keywords,
-                providers=[provider],
+                #providers=[provider],
                 extra_fields={
                     'risk data type': item['risk_data_type'],
                     'subcategory': item['subcategory']                    
                 }
             )
 
-            # # Create and add a Provider         
-            # provider = pystac.Provider(
-            #      name=item['provider'],
-            #      roles= pystac.ProviderRole(item['provider_role']),
-            #      url=item['link_website']
-            #     )
-            #collection.providers = [provider]
+            # Create and add a Provider         
+            provider = pystac.Provider(
+                 name=item['provider'],
+                 roles= pystac.ProviderRole(item['provider_role']),
+                 url=item['link_website']
+                )
+            collection.providers = [provider]
             
             catalog2.add_child(collection)
 
@@ -406,7 +406,8 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
     #collection_interval = sorted([collection_item.datetime, collection_item2.datetime])
     #temporal_extent = pystac.TemporalExtent(intervals=[collection_interval])
 
-    catalog_main.describe()
+    # show full catalog structure
+    #catalog_main.describe()
 
     # Normalize hrefs and save the catalog
     catalog_main.normalize_hrefs(os.path.join(dir, "stac"))
