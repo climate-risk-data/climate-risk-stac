@@ -12,7 +12,7 @@
     "temporal resolution": "1980-2017",
     "scenarios": null,
     "data type": "raster",
-    "data format": NaN,
+    "data format": "unknown",
     "spatial resolution": "0.1 decimal degrees",
     "data calculation type": "modeled",
     "analysis type": "probabilistic",

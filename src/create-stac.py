@@ -35,8 +35,7 @@ format_to_media_type = {
     "grib2": "application/grib2",
     "txt": pystac.MediaType.TEXT,
     "pbf": "application/x-protobuf",
-    "ascii": "text/plain",
-    "nan": "unknown"
+    "ascii": "text/plain"
 }
 
 # Categories for keywords
@@ -273,6 +272,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             underlying_data = item['underlying_data'] if np.nan_to_num(item['underlying_data']) else None
             code =  f"{item['code_type']} (see Code link)" if np.nan_to_num(item['code_link']) else None
             usage_notes = item['usage_notes'] if np.nan_to_num(item['usage_notes']) else None
+            format = item['format']  if np.nan_to_num(item['format']) else f"unknown"
             
             # condition for spatial resolution
             if np.nan_to_num(item['spatial_resolution_unit']):
@@ -309,7 +309,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                     'temporal resolution': temporal_resolution, # combination of resolution and interval
                     'scenarios': scenarios,
                     'data type': item['data_type'],
-                    'data format': item['format'],
+                    'data format': format,
                     'spatial resolution': spatial_resolution, # combination of resolution and unit
                     'data calculation type': item['data_calculation_type'],
                     'analysis type': analysis_type,
@@ -369,7 +369,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             counter = 1
             for asset in assets:
                 # Determine the media type based on the format attribute
-                media_type = format_to_media_type.get(str(item['format']).lower(), "application/octet-stream")  # Default to binary stream
+                media_type = format_to_media_type.get(format.lower(), "unknown")  # Default to None
                 print(f" media type defined as: {media_type}")
                 # Define the asset
                 asset_stac = pystac.Asset(
