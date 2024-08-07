@@ -25,14 +25,14 @@ expvul = pd.read_csv(exv, encoding='utf-8')
 # Mapping formats to media types (for assets)
 format_to_media_type = {
     "geotiff": pystac.MediaType.GEOTIFF,
-    "FlatGeobuf": pystac.MediaType.FLATGEOBUF,
+    "flatgeobuf": pystac.MediaType.FLATGEOBUF,
     "netcdf": "application/x-netcdf",
     "geopackage": pystac.MediaType.GEOPACKAGE,
     "shapefile": "application/x-shapefile",
     "geodatabase": "application/x-filegdb",
     "csv": "text/csv",
     "excel": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    "GeoParquet": pystac.MediaType.PARQUET,
+    "geoparquet": pystac.MediaType.PARQUET,
     "grib": "application/grib",
     "grib2": "application/grib2",
     "txt": pystac.MediaType.TEXT,
