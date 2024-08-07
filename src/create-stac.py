@@ -194,7 +194,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                     keywords.append(keyword)   
         print(f"keywords: {keywords}")
 
-        # make provider
+        # make provider ## FOR SOME REASON PROVIDER ROLES ARE SOMETIMES DISPLAYED IN THE BROWSER, OTHER TIMES NOT; NO IDEA WHY ##
         provider = pystac.Provider(
             name=item['provider'],
             roles= pystac.ProviderRole(item['provider_role']),
@@ -216,10 +216,10 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 license=item['license'],
                 keywords=keywords,
                 providers=[provider],
-                extra_fields={
-                    'risk data type': item['risk_data_type'],
-                    'subcategory': item['subcategory']                    
-                }
+                #extra_fields={ ## any extra field specified will be displayed in the 'Metadata' section ##
+                #    'risk data type': item['risk_data_type'],
+                #    'subcategory': item['subcategory']                    
+                #}
             )
 
             # # Create and add a Provider         
@@ -251,14 +251,8 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             # Update providers
             # Access providers in the collection and compare to the new provider
             ext_providers = collection.providers
-            
-            # Display the existing providers
-            print("Existing providers:")
-            for ext_provider in collection.providers:
-                print(f"Name: {ext_provider.name}, Roles: {ext_provider.roles}, URL: {ext_provider.url}")
-
             is_new_provider_unique = all(not providers_are_equal(provider, ext_provider) for ext_provider in ext_providers)
-            print(f"The new provider is unique: {is_new_provider_unique}")
+            #print(f"The new provider is unique: {is_new_provider_unique}")
 
             # If unique, add the new provider to the collection
             if is_new_provider_unique:
@@ -267,141 +261,137 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             else:
                 print("The new provider already exists in the collection.")
 
-            print("Updated providers:")
-            for provider in collection.providers:
-                print(f"Name: {provider.name}, Roles: {provider.roles}, URL: {provider.url}")
-
             print(f"collection {row_num} {title_collection} successfully updated")
 
-        ## ITEMS ##
-        # Create new item if not present yet
-        if item['title_item'] not in [col.id for col in collection.get_items()]:
+        # ## ITEMS ##
+        # # Create new item if not present yet
+        # if item['title_item'] not in [col.id for col in collection.get_items()]:
        
-            # define item attributes that can deviate per item
-            temporal_resolution = f"{item['temporal_resolution']} ({item['temporal_interval']})" if np.nan_to_num(item['temporal_interval']) else f"{item['temporal_resolution']}"
-            scenarios = item['scenarios'] if np.nan_to_num(item['scenarios']) else None
-            analysis_type = item['analysis_type'] if np.nan_to_num(item['analysis_type']) else None
-            underlying_data = item['underlying_data'] if np.nan_to_num(item['underlying_data']) else None
-            code =  f"{item['code_type']} (see Code link)" if np.nan_to_num(item['code_link']) else None
-            usage_notes = item['usage_notes'] if np.nan_to_num(item['usage_notes']) else None
-            format = item['format']  if np.nan_to_num(item['format']) else f"unknown"
+        #     # define item attributes that can deviate per item
+        #     temporal_resolution = f"{item['temporal_resolution']} ({item['temporal_interval']})" if np.nan_to_num(item['temporal_interval']) else f"{item['temporal_resolution']}"
+        #     scenarios = item['scenarios'] if np.nan_to_num(item['scenarios']) else None
+        #     analysis_type = item['analysis_type'] if np.nan_to_num(item['analysis_type']) else None
+        #     underlying_data = item['underlying_data'] if np.nan_to_num(item['underlying_data']) else None
+        #     code =  f"{item['code_type']} (see Code link)" if np.nan_to_num(item['code_link']) else None
+        #     usage_notes = item['usage_notes'] if np.nan_to_num(item['usage_notes']) else None
+        #     format = item['format']  if np.nan_to_num(item['format']) else f"unknown"
             
-            # condition for spatial resolution
-            if np.nan_to_num(item['spatial_resolution_unit']):
-                if item['spatial_resolution'] == 'administrative units':
-                    spatial_resolution = f"{item['spatial_resolution']} ({item['spatial_resolution_unit']})"
-                else:
-                    spatial_resolution = f"{item['spatial_resolution']} {item['spatial_resolution_unit']}"
-            else:
-                spatial_resolution = f"{item['spatial_resolution']}"
+        #     # condition for spatial resolution
+        #     if np.nan_to_num(item['spatial_resolution_unit']):
+        #         if item['spatial_resolution'] == 'administrative units':
+        #             spatial_resolution = f"{item['spatial_resolution']} ({item['spatial_resolution_unit']})"
+        #         else:
+        #             spatial_resolution = f"{item['spatial_resolution']} {item['spatial_resolution_unit']}"
+        #     else:
+        #         spatial_resolution = f"{item['spatial_resolution']}"
 
-            # condition for publication
-            if str(item['publication_link']).startswith('10.'):
-                publication = f"{item['publication_type']} (see DOI)" 
-            elif np.nan_to_num(item['publication_link']): 
-                publication = f"{item['publication_type']} (see Publication link)"
-            else:
-                publication = None
+        #     # condition for publication
+        #     if str(item['publication_link']).startswith('10.'):
+        #         publication = f"{item['publication_type']} (see DOI)" 
+        #     elif np.nan_to_num(item['publication_link']): 
+        #         publication = f"{item['publication_type']} (see Publication link)"
+        #     else:
+        #         publication = None
 
-            # Create basic item
-            item_stac = pystac.Item(
-                id=item['title_item'],
-                geometry=None,  # Add geometry if available
-                bbox=bbox_list,
-                datetime=None, #datetime.now(),
-                start_datetime=start,
-                end_datetime=end,
-                properties={
-                    'title': item['title_item'],
-                    'description': item['description_item'],
-                    'risk data type': item['risk_data_type'],
-                    'subcategory': item['subcategory'],
-                    'spatial scale': item['spatial_scale'],
-                    'reference period': item['reference_period'],
-                    'temporal resolution': temporal_resolution, # combination of resolution and interval
-                    'scenarios': scenarios,
-                    'data type': item['data_type'],
-                    'data format': format,
-                    'spatial resolution': spatial_resolution, # combination of resolution and unit
-                    'data calculation type': item['data_calculation_type'],
-                    'analysis type': analysis_type,
-                    'underlying data': underlying_data,
-                    'publication type': publication,
-                    'code type': code,
-                    'usage notes': usage_notes
-                }
-                # extra_fields={ # are part of the json, but not shown in the browser
-                #         'subcategory': str(item['subcategory']), #remove str() again once subcategory fixed
-                #         'risk data type': item['risk_data_type']
-                #     }
-            )
+        #     # Create basic item
+        #     item_stac = pystac.Item(
+        #         id=item['title_item'],
+        #         geometry=None,  # Add geometry if available
+        #         bbox=bbox_list,
+        #         datetime=None, #datetime.now(),
+        #         start_datetime=start,
+        #         end_datetime=end,
+        #         properties={
+        #             'title': item['title_item'],
+        #             'description': item['description_item'],
+        #             'risk data type': item['risk_data_type'],
+        #             'subcategory': item['subcategory'],
+        #             'spatial scale': item['spatial_scale'],
+        #             'reference period': item['reference_period'],
+        #             'temporal resolution': temporal_resolution, # combination of resolution and interval
+        #             'scenarios': scenarios,
+        #             'data type': item['data_type'],
+        #             'data format': format,
+        #             'spatial resolution': spatial_resolution, # combination of resolution and unit
+        #             'data calculation type': item['data_calculation_type'],
+        #             'analysis type': analysis_type,
+        #             'underlying data': underlying_data,
+        #             'publication type': publication,
+        #             'code type': code,
+        #             'usage notes': usage_notes
+        #         }
+        #         # extra_fields={ # are part of the json, but not shown in the browser
+        #         #         'subcategory': str(item['subcategory']), #remove str() again once subcategory fixed
+        #         #         'risk data type': item['risk_data_type']
+        #         #     }
+        #     )
 
-            # add projection extension
-            proj_ext = ProjectionExtension.ext(item_stac, add_if_missing=True)
-            # Add projection properties
-            proj_ext.epsg = int(item['coordinate_system'])
+        #     # add projection extension
+        #     proj_ext = ProjectionExtension.ext(item_stac, add_if_missing=True)
+        #     # Add projection properties
+        #     proj_ext.epsg = int(item['coordinate_system'])
 
-            # Publication: Add scientific extension if DOI is present
-            if str(item['publication_link']).startswith('10.'):
-                print("doi available")
-                sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
-                sci_ext.doi = item['publication_link']
-            elif np.nan_to_num(item['publication_link']):
-                print("weblink available")
-                link = pystac.Link(
-                    rel="cite-as",  # Relationship of the link
-                    target=item['publication_link'],  # Target URL
-                    title="Publication link",  # Optional title
-                    )
-                item_stac.add_link(link)
+        #     # Publication: Add scientific extension if DOI is present
+        #     if str(item['publication_link']).startswith('10.'):
+        #         print("doi available")
+        #         sci_ext = ScientificExtension.ext(item_stac, add_if_missing=True)
+        #         sci_ext.doi = item['publication_link']
+        #     elif np.nan_to_num(item['publication_link']):
+        #         print("weblink available")
+        #         link = pystac.Link(
+        #             rel="cite-as",  # Relationship of the link
+        #             target=item['publication_link'],  # Target URL
+        #             title="Publication link",  # Optional title
+        #             )
+        #         item_stac.add_link(link)
 
-            # Code: add link if available
-            if code != None:
-                print("code available")
-                link = pystac.Link(
-                    rel="cite-as",  # Relationship of the link
-                    target=item['code_link'],  # Target URL
-                    title="Code link",  # Optional title
-                    )
-                item_stac.add_link(link)
+        #     # Code: add link if available
+        #     if code != None:
+        #         print("code available")
+        #         link = pystac.Link(
+        #             rel="cite-as",  # Relationship of the link
+        #             target=item['code_link'],  # Target URL
+        #             title="Code link",  # Optional title
+        #             )
+        #         item_stac.add_link(link)
 
-            # ADD ASSETS        
-            # establish the number of assets
-            asset_str = item['assets']
-            if np.nan_to_num(asset_str):
-                print('at least one asset provided; use asset link')
-                assets = asset_str.split(';') if ';' in asset_str else [asset_str]
-                roles = ["data"]
-            else:
-                assets = [item['link_website']] # change here once asset link updated
-                roles = ["overview"]
-                print('no assets provided; use website link instead')
+        #     # ADD ASSETS        
+        #     # establish the number of assets
+        #     asset_str = item['assets']
+        #     if np.nan_to_num(asset_str):
+        #         print('at least one asset provided; use asset link')
+        #         assets = asset_str.split(';') if ';' in asset_str else [asset_str]
+        #         roles = ["data"]
+        #     else:
+        #         assets = [item['link_website']] # change here once asset link updated
+        #         roles = ["overview"]
+        #         print('no assets provided; use website link instead')
 
-            # loop through all assets
-            counter = 1
-            for asset in assets:
-                # Determine the media type based on the format attribute
-                media_type = format_to_media_type.get(format.lower(), "format unknown")  # Default to None
-                print(f" media type defined as: {media_type}")
-                # Define the asset
-                asset_stac = pystac.Asset(
-                        href=asset,
-                        media_type=media_type,
-                        roles=roles,
-                        title=f"Data Link {counter}"
-                )
-                # Add the asset to the item
-                key = f"data-file_{counter}"
-                item_stac.add_asset(key, asset_stac)
-                counter +=1
+        #     # loop through all assets
+        #     counter = 1
+        #     for asset in assets:
+        #         # Determine the media type based on the format attribute
+        #         media_type = format_to_media_type.get(format.lower(), "format unknown")  # Default to None
+        #         print(f" media type defined as: {media_type}")
+        #         # Define the asset
+        #         asset_stac = pystac.Asset(
+        #                 href=asset,
+        #                 media_type=media_type,
+        #                 roles=roles,
+        #                 title=f"Data Link {counter}"
+        #         )
+        #         # Add the asset to the item
+        #         key = f"data-file_{counter}"
+        #         item_stac.add_asset(key, asset_stac)
+        #         counter +=1
 
-            # Add item to collection
-            collection.add_item(item_stac)
+        #     # Add item to collection
+        #     collection.add_item(item_stac)
             
-            # confirmation item added
-            print(f"item {row_num} {item['title_item']} successfully added")
-        else:
-            print(f"item {row_num} already present. Compare items and remove duplicates.")
+        #     # confirmation item added
+        #     print(f"item {row_num} {item['title_item']} successfully added")
+        # else:
+        #     print(f"item {row_num} already present. Compare items and remove duplicates.")
     
     # update collection properties based on all items belonging to the collection ## NOT FINISHED YET ##
     #collection_interval = sorted([collection_item.datetime, collection_item2.datetime])

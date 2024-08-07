@@ -11,19 +11,12 @@
       "title": "Climate Risk Data"
     },
     {
-      "rel": "item",
-      "href": "./SPEIbase/SPEIbase.json",
-      "type": "application/json"
-    },
-    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Precipitation-related"
     }
   ],
-  "risk data type": "hazard",
-  "subcategory": "drought",
   "title": "Global SPEI database",
   "extent": {
     "spatial": {
