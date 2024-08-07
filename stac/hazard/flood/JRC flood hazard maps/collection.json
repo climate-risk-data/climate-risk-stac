@@ -11,6 +11,11 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./JRC flood hazard maps global/JRC flood hazard maps global.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",

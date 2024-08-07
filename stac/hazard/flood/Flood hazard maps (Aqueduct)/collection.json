@@ -11,6 +11,26 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "item",
+      "href": "./Coastal floods current day/Coastal floods current day.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Coastal floods future scenarios/Coastal floods future scenarios.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./River floods current day/River floods current day.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./River floods future scenarios/River floods future scenarios.json",
+      "type": "application/json"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
@@ -53,8 +73,8 @@
       "url": "https://www.wri.org/data/aqueduct-floods-hazard-maps"
     },
     {
-      "name": "Figshare",
-      "roles": "host",
+      "name": "World Resources Institute",
+      "roles": "licensor",
       "url": "https://doi.org/10.6084/m9.figshare.16571064"
     }
   ]
