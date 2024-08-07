@@ -15,7 +15,7 @@ from shapely.ops import unary_union
 
 # File paths
 dir = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/'
-haz = 'csv/hazard_test.csv' # use test set which also includes expvul
+haz = 'csv/hazard.csv' # use test set which also includes expvul
 exv = 'csv/expvul.csv' # can both be combined into one csv, but: some attributes are slightly different
 
 # Read data sheets
@@ -63,6 +63,7 @@ def parse_year_range(year_str):
         if len(start) == 4 and len(end) == 4:
             start_year, end_year = int(start), int(end)
             return datetime(start_year, 1, 1), datetime(end_year, 12, 31)
+        # if YYYY-now:
         elif len(start) == 4 and len(end) == 3:
             start_year = int(start)
             end_year = datetime.now().year
@@ -428,20 +429,18 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         else:
             print(f"item {row_num} already present. Compare items and remove duplicates.")
     
-    print(f"complete catalog built")
+    print(f"catalog built")
 
     # validate catalog
     #pystac.Catalog.validate(catalog_main)
     # show full catalog structure
     #catalog_main.describe()
-       
 
     # Normalize hrefs and save the catalog
     catalog_main.normalize_hrefs(os.path.join(dir, "stac"))
     catalog_main.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
     #catalog_main.save(catalog_type=pystac.CatalogType.RELATIVE_PUBLISHED)
    
-
 # Create catalogs from both hazard and exposure-vulnerability CSVs
-create_catalog_from_csv(hazard, catalog_main, dir)
-#create_catalog_from_csv(expvul, catalog_main, dir)
+#create_catalog_from_csv(hazard, catalog_main, dir)
+create_catalog_from_csv(expvul, catalog_main, dir)
