@@ -9,6 +9,8 @@ import pandas as pd
 from datetime import datetime
 import numpy as np
 import os
+from shapely.geometry import box
+from shapely.ops import unary_union
 #import json
 
 # File paths
@@ -82,7 +84,19 @@ def parse_year_range(year_str):
             return datetime(year, 1, 1), datetime(year, 12, 31)
         else:
             raise ValueError("Invalid year format")
-        
+
+# Function to compute the overall spatial extent for collection items
+def compute_overall_bbox(items):
+    bboxes = []
+    for item in items:
+        if item.bbox:
+            minx, miny, maxx, maxy = item.bbox
+            bboxes.append(box(minx, miny, maxx, maxy))
+    if not bboxes:
+        return None
+    overall_bbox = unary_union(bboxes).bounds
+    return list(overall_bbox)
+    
 # Function to update existing keywords
 def update_keywords(ext_key, keywords, categories):
     new_key = set(ext_key)
@@ -164,7 +178,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         bbox = item['bbox']
         bbox_list = [float(coord.strip()) for coord in bbox.split(',')]
 
-        # Process temporal resolution ## this needs to be changed to account for the total range of all items ##
+        # Process temporal resolution (needed for collections and items)
         start, end = parse_year_range(str(item['temporal_resolution']))
 
         ## COLLECTIONS ##
@@ -203,14 +217,14 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
 
         # Create or retrieve the collection 
         if title_collection not in [col.id for col in catalog2.get_children()]:
-                    
+
             # create basic collection
             collection = pystac.Collection(
                 id=title_collection,
                 title=title_collection,
                 description= item['description_collection'],
                 extent=pystac.Extent(
-                    spatial=pystac.SpatialExtent([bbox_list]), # needs to be updated based on all items in the collection
+                    spatial=pystac.SpatialExtent([bbox_list]),
                     temporal=pystac.TemporalExtent([[start, end]]), # needs to be updated based on all items in the collection
                 ),
                 license=item['license'],
@@ -229,6 +243,35 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         else:
             # retrieve collection
             collection = catalog2.get_child(title_collection)
+            
+            # Update spatial extent
+            # get all items
+            items = list(collection.get_all_items())
+            # Compute the overall bbox from all items
+            overall_bbox = compute_overall_bbox(items)
+            # Update the collection bbox
+            collection.extent.spatial.bboxes = [overall_bbox]
+            print(f"Updated collection bbox: {overall_bbox}")
+
+            # Update temporal extent
+            # Retrieve the current temporal extent
+            exts = collection.extent.temporal.to_dict()
+            # Parse the current temporal extent
+            current_start = exts['interval'][0][0] if exts['interval'][0][0] is not None else datetime.min
+            current_end = exts['interval'][0][1] if exts['interval'][0][1] is not None else datetime.max
+            # Convert current_start and current_end to datetime objects
+            current_start = datetime.fromisoformat(current_start)
+            current_end = datetime.fromisoformat(current_end)
+            #print({current_start}, {current_end})
+            # Determine the new temporal extent based on the year provided
+            updated_start_year = min(current_start.year, start.year)
+            updated_end_year = max(current_end.year, end.year)
+            # update start and end year
+            updated_start = datetime(updated_start_year, current_start.month, current_start.day)
+            updated_end = datetime(updated_end_year, current_end.month, current_end.day)
+            # Update the temporal extent in the collection
+            collection.extent.temporal = pystac.TemporalExtent([updated_start, updated_end])
+            print(f"Updated collection temporal extent: {updated_start}; {updated_end}")
             
             # Update keywords
             # retrieve existing keywords
@@ -253,6 +296,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 print("The new provider already exists in the collection.")
 
             print(f"collection {row_num} {title_collection} successfully updated")
+
 
         ## ITEMS ##
         # Create new item if not present yet
@@ -363,7 +407,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             for asset in assets:
                 # Determine the media type based on the format attribute
                 media_type = format_to_media_type.get(format.lower(), "format unknown")  # Default to None
-                print(f" media type defined as: {media_type}")
+                print(f"media type defined as: {media_type}")
                 # Define the asset
                 asset_stac = pystac.Asset(
                         href=asset,
@@ -384,12 +428,13 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         else:
             print(f"item {row_num} already present. Compare items and remove duplicates.")
     
-    # update collection properties based on all items belonging to the collection ## NOT FINISHED YET ##
-    #collection_interval = sorted([collection_item.datetime, collection_item2.datetime])
-    #temporal_extent = pystac.TemporalExtent(intervals=[collection_interval])
+    print(f"complete catalog built")
 
+    # validate catalog
+    #pystac.Catalog.validate(catalog_main)
     # show full catalog structure
     #catalog_main.describe()
+       
 
     # Normalize hrefs and save the catalog
     catalog_main.normalize_hrefs(os.path.join(dir, "stac"))
