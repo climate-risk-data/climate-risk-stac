@@ -194,6 +194,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                     keywords.append(keyword)   
         print(f"keywords: {keywords}")
 
+        # make provider
         provider = pystac.Provider(
             name=item['provider'],
             roles= pystac.ProviderRole(item['provider_role']),
@@ -246,20 +247,30 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             collection.keywords = new_key
             print(f"updated and sorted keywords: {new_key}")
 
-            # Update providers
-            # Access providers in the collection and compare to the new provider
-            ext_providers = collection.providers
-            is_new_provider_unique = all(not providers_are_equal(provider, ext_provider) for ext_provider in ext_providers)
-            #print(f"The new provider is unique: {is_new_provider_unique}")
+            # # Update providers
+            # # Access providers in the collection and compare to the new provider
+            # ext_providers = collection.providers
+            
+            # # Display the existing providers
+            # print("Existing providers:")
+            # for provider in collection.providers:
+            #     print(f"Name: {provider.name}, Roles: {provider.roles}, URL: {provider.url}")
 
-            # If unique, add the new provider to the collection
-            if is_new_provider_unique:
-                collection.providers.append(provider)
-                print("New provider added to the collection.")
-            else:
-                print("The new provider already exists in the collection.")
+            # is_new_provider_unique = all(not providers_are_equal(provider, ext_provider) for ext_provider in ext_providers)
+            # #print(f"The new provider is unique: {is_new_provider_unique}")
 
-            print(f"collection {row_num} {title_collection} successfully updated")
+            # # If unique, add the new provider to the collection
+            # if is_new_provider_unique:
+            #     collection.providers.append(provider)
+            #     print("New provider added to the collection.")
+            # else:
+            #     print("The new provider already exists in the collection.")
+
+            # print("Updated providers:")
+            # for provider in collection.providers:
+            #     print(f"Name: {provider.name}, Roles: {provider.roles}, URL: {provider.url}")
+
+            # print(f"collection {row_num} {title_collection} successfully updated")
 
         ## ITEMS ##
         # Create new item if not present yet
@@ -369,7 +380,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             counter = 1
             for asset in assets:
                 # Determine the media type based on the format attribute
-                media_type = format_to_media_type.get(format.lower(), "unknown")  # Default to None
+                media_type = format_to_media_type.get(format.lower(), "format unknown")  # Default to None
                 print(f" media type defined as: {media_type}")
                 # Define the asset
                 asset_stac = pystac.Asset(
