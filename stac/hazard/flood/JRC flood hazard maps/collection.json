@@ -52,7 +52,10 @@
   "providers": [
     {
       "name": "JRC Data Catalogue",
-      "roles": "licensor",
+      "description": "test test",
+      "roles": [
+        "licensor"
+      ],
       "url": "https://data.jrc.ec.europa.eu/collection/id-0054"
     }
   ]
