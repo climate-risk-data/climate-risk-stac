@@ -207,7 +207,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         # make provider ## FOR SOME REASON PROVIDER ROLES ARE SOMETIMES DISPLAYED IN THE BROWSER, OTHER TIMES NOT; NO IDEA WHY ##
         provider = pystac.Provider(
             name=item['provider'],
-            description= 'test test',
+            #description= 'test test',
             roles= [pystac.ProviderRole(item['provider_role'])],
             url=item['link_website']
         )
@@ -394,12 +394,12 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 print('at least one asset provided; use asset link')
                 assets = asset_str.split(';') if ';' in asset_str else [asset_str]
                 roles = ["data"]
-                description = "data download"
+                #description = "data download"
             else:
                 print('no assets provided; use website link instead')
                 assets = [item['link_website']] # change here once asset link updated
                 roles = ["overview"]
-                description = "overview page"
+                #description = "overview page"
 
             # loop through all assets
             counter = 1
@@ -413,7 +413,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                         media_type=media_type,
                         roles=roles,
                         title=f"Data Link {counter}",
-                        description=description
+                        #description=description
                 )
                 # Add the asset to the item
                 key = f"data-file_{counter}"
