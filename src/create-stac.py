@@ -111,7 +111,7 @@ def generate_keywords(item):
     reference_period = item['reference_period']
     
     # Add 'code' keyword if 'code_link' is provided and valid
-    code_keyword = 'code' if item.get('code_link') else None
+    code_keyword = 'code available' if item.get('code_link') else None
     
     # Filter out None or empty values and flatten lists into keywords
     keywords = [
