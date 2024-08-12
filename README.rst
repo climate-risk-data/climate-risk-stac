@@ -14,4 +14,6 @@ The current version of the catalog includes hazard, exposure and vulnerbility da
    :width: 600px
    :align: center
 
-.. rubric:: Catalog structure along the three risk drivers, separated into a) climate processes (i.e. hazards) and b) socioeconomic processes (i.e. exposure and vulnerability)
+   <p style="font-size: 0.8em; text-align: left; color: #555555;">
+   Catalog structure along the three risk drivers, separated into a) climate processes (i.e. hazards) and b) socioeconomic processes (i.e. exposure and vulnerability)
+   </p>
