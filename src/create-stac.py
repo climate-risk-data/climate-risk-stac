@@ -98,6 +98,29 @@ def compute_overall_bbox(items):
     overall_bbox = unary_union(bboxes).bounds
     return list(overall_bbox)
     
+# Function to generate keywords
+def generate_keywords(item):
+    # Determine risk data type if not 'hazard'
+    risk_data = item['risk_data_type'] if item['risk_data_type'] != 'hazard' else None
+    
+    # Split the subcategory string if it contains commas
+    subcategories = item['subcategory'].split(',') if ',' in item['subcategory'] else [item['subcategory']]
+    
+    # Extract other attributes
+    spatial_scale = item['spatial_scale']
+    reference_period = item['reference_period']
+    
+    # Add 'code' keyword if 'code_link' is provided and valid
+    code_keyword = 'code' if item.get('code_link') else None
+    
+    # Filter out None or empty values and flatten lists into keywords
+    keywords = [
+        keyword for keyword in [risk_data, *subcategories, spatial_scale, reference_period, code_keyword]
+        if keyword
+    ]
+    print(f"keywords: {keywords}")
+    return keywords
+
 # Function to update existing keywords
 def update_keywords(ext_key, keywords, categories):
     # Combine existing keywords and additional keywords into a set to avoid duplicates
@@ -179,25 +202,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                             )
 
         # make keywords
-        # Function to make keywords based on subcategory and risk data type
-        # use rdata if expvul
-        rdata = item['risk_data_type'] if item['risk_data_type'] != 'hazard' else None
-        # separate strings
-        subc = item['subcategory'].split(',') if ',' in item['subcategory'] else item['subcategory']
-        # add further keywords
-        scale = item['spatial_scale']
-        ref = item['reference_period']
-        # add code keyword if provided
-        code = 'code' if np.nan_to_num(item['code_link']) else None
-        # filter out empty values
-        keywords = []
-        for keyword in [rdata, subc, scale, ref, code]:
-            if keyword:
-                if isinstance(keyword, list):
-                    keywords = keywords + keyword
-                else:
-                    keywords.append(keyword)   
-        print(f"keywords: {keywords}")
+        keywords = generate_keywords(item)
 
         # make provider ## FOR SOME REASON PROVIDER ROLES ARE SOMETIMES DISPLAYED IN THE BROWSER, OTHER TIMES NOT; NO IDEA WHY ##
         provider = pystac.Provider(
