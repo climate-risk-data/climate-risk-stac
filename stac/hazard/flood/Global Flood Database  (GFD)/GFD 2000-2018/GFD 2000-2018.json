@@ -61,7 +61,6 @@
       "href": "https://global-flood-database.cloudtostreet.ai/#",
       "type": "image/tiff; application=geotiff",
       "title": "Data Link 1",
-      "description": "overview page",
       "roles": [
         "overview"
       ]

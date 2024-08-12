@@ -56,7 +56,6 @@
       "href": "https://emergency.copernicus.eu/mapping/list-of-activations-rapid",
       "type": "application/x-shapefile",
       "title": "Data Link 1",
-      "description": "data download",
       "roles": [
         "data"
       ]

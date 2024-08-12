@@ -56,7 +56,6 @@
       "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp10y.zip",
       "type": "image/tiff; application=geotiff",
       "title": "Data Link 1",
-      "description": "data download",
       "roles": [
         "data"
       ]
@@ -65,7 +64,6 @@
       "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp20y.zip",
       "type": "image/tiff; application=geotiff",
       "title": "Data Link 2",
-      "description": "data download",
       "roles": [
         "data"
       ]
@@ -74,7 +72,6 @@
       "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp50y.zip",
       "type": "image/tiff; application=geotiff",
       "title": "Data Link 3",
-      "description": "data download",
       "roles": [
         "data"
       ]
@@ -83,7 +80,6 @@
       "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp100y.zip",
       "type": "image/tiff; application=geotiff",
       "title": "Data Link 4",
-      "description": "data download",
       "roles": [
         "data"
       ]
@@ -92,7 +88,6 @@
       "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp200y.zip",
       "type": "image/tiff; application=geotiff",
       "title": "Data Link 5",
-      "description": "data download",
       "roles": [
         "data"
       ]
@@ -101,7 +96,6 @@
       "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp500y.zip",
       "type": "image/tiff; application=geotiff",
       "title": "Data Link 6",
-      "description": "data download",
       "roles": [
         "data"
       ]

@@ -61,7 +61,6 @@
       "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/cems-fire-seasonal?tab=overview",
       "type": "application/grib",
       "title": "Data Link 1",
-      "description": "overview page",
       "roles": [
         "overview"
       ]

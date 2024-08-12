@@ -58,7 +58,6 @@
   "providers": [
     {
       "name": "CEMS",
-      "description": "test test",
       "roles": [
         "producer"
       ],

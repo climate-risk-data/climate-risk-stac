@@ -55,7 +55,6 @@
   "providers": [
     {
       "name": "Cloud to Street",
-      "description": "test test",
       "roles": [
         "licensor"
       ],

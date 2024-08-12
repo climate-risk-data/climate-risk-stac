@@ -70,7 +70,6 @@
   "providers": [
     {
       "name": "World Resources Institute",
-      "description": "test test",
       "roles": [
         "licensor"
       ],
@@ -78,7 +77,6 @@
     },
     {
       "name": "World Resources Institute",
-      "description": "test test",
       "roles": [
         "licensor"
       ],
