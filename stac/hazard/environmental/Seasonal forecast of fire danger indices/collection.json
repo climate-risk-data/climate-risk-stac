@@ -12,16 +12,6 @@
     },
     {
       "rel": "item",
-      "href": "./Australian McArthur/Australian McArthur.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "item",
-      "href": "./Canadian FWI/Canadian FWI.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "item",
       "href": "./U.S. NFDRS/U.S. NFDRS.json",
       "type": "application/json"
     },
@@ -58,7 +48,7 @@
     "wildfire",
     "(near-)global",
     "historical",
-    "code"
+    "code available"
   ],
   "providers": [
     {

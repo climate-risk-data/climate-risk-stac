@@ -15,7 +15,7 @@ from shapely.ops import unary_union
 
 # File paths
 dir = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/'
-haz = 'csv/hazard.csv' # use test set which also includes expvul
+haz = 'csv/hazard_test.csv' # use test set which also includes expvul
 exv = 'csv/expvul.csv' # can both be combined into one csv, but: some attributes are slightly different
 
 # Read data sheets
@@ -50,7 +50,7 @@ cat_keywords = {
                     ],
     "spatial_scale": ["(near-)global", "regional", "national", "subnational"],
     "reference_period": ["historical", "future", "historical & future"],
-    "code": ["code"]
+    "code": ["code available"]
 }
 
 # Function to parse year range
@@ -111,7 +111,7 @@ def generate_keywords(item):
     reference_period = item['reference_period']
     
     # Add 'code' keyword if 'code_link' is provided and valid
-    code_keyword = 'code' if item.get('code_link') else None
+    code_keyword = 'code available' if item.get('code_link') else None
     
     # Filter out None or empty values and flatten lists into keywords
     keywords = [
@@ -153,8 +153,34 @@ def providers_are_equal(provider1, provider2):
 catalog_main = pystac.Catalog(
     id="climate-risk-data",
     title="Climate Risk Data",
-    description="This is a community catalog containing datasets for the three risk drivers Hazard, Exposure, and Vulnerability. The catalog in its current form conforms with the risk framework of the IPCC's 5th Assessment Report (AR5) where risk results from the interaction of hazards, the elements exposed to these hazards as well as the vulnerability of the exposed elements. The catalog structure has been defined following a variety of standards for provisioning of risk data (please see 'LINK TO FIGURE WITH CATALOG STRUCTURE'). The catalog allows for the integration of other risk drivers, such as adaptation responses as defined in IPCC AR6 when such data are available. \n The first version of the catalog (released in XXXX) focusses on global-scale datasets that can be used as input in climate risk assessments (CRA) with as little preprocessing as possible. It has been developed as part of the Horizon Europe project CLIMAAX, which ... (see link to website/handbook below). \n The development of the catalog is described in detail in the publication referenced below. The catalog is designed under Open Science and FAIR Data Principles, with the idea to be a community-led endeavor. We encourage anyone working with risk data at different spatial scales (i.e. local to global) to add datasets to this catalog, thereby creating growing knowledge base for further potential users. Please use GitHub Actions (see link below) to suggest new datasets."
+    description="This is a community catalog containing datasets for the three risk drivers Hazard, Exposure, and Vulnerability. The catalog in its current form conforms with the risk framework of the IPCC's 5th Assessment Report (AR5) where risk results from the interaction of hazards, the elements exposed to these hazards as well as the vulnerability of the exposed elements. The catalog structure has been defined following a variety of standards for provisioning of risk data (please see 'Link to catalog structure figure'). The catalog allows for the integration of other risk drivers, such as adaptation responses as defined in IPCC AR6 when such data are available. \n The first version of the catalog (released in XXXX) focusses on global-scale datasets that can be used as input in climate risk assessments (CRA) with as little preprocessing as possible. It has been developed as part of the Horizon Europe project CLIMAAX, which ... (see 'Link to CLIMAAX CRA handbook'). \n The development of the catalog is described in detail in the publication referenced below. The catalog is designed under Open Science and FAIR Data Principles, with the idea to be a community-led endeavor. We encourage anyone working with risk data at different spatial scales (i.e. local to global) to add datasets to this catalog, thereby creating growing knowledge base for further potential users. Please use GitHub Actions (see 'Link to GitHub Actions') to suggest new datasets."
 )
+
+# Create catalog links
+# link to catalog structure figure
+figure_link = pystac.Link(
+    rel=pystac.RelType.VIA,  # if not working, try "cite-as"
+    target="https://github.com/DirkEilander/climate-risk-stac/blob/6ce2f57caf1bc2e4d81b1d5fac9dcf60dde22475/README.rst",  # link to github readme ##  UPDATE  ##
+    media_type=pystac.MediaType.PNG,  # the type of resource the link points to
+    title="Link to catalog structure figure")  # a human-readable title for the link
+# Add the link to the catalog
+catalog_main.add_link(figure_link)
+
+# link to climaax handbook
+handbook_link = pystac.Link(
+    rel=pystac.RelType.VIA,  # if not working, try "cite-as"
+    target="https://handbook.climaax.eu",  # the URL you want to link to
+    title="Link to CLIMAAX CRA handbook")  # a human-readable title for the link
+# Add the link to the catalog
+catalog_main.add_link(handbook_link)
+
+github_link  = pystac.Link(
+    rel=pystac.RelType.VIA,  # if not working, try "cite-as"
+    target="https://github.com/DirkEilander/climate-risk-stac",  # link to github actions (not implemented yet)
+    title="Link to GitHub Actions (once implemented)")  # a human-readable title for the link
+# Add the link to the catalog
+catalog_main.add_link(github_link)
+
 
 # Function to create collections and items
 def create_catalog_from_csv(indicator, catalog_main, dir):
@@ -442,4 +468,4 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
    
 # Create catalogs from both hazard and exposure-vulnerability CSVs
 create_catalog_from_csv(hazard, catalog_main, dir)
-create_catalog_from_csv(expvul, catalog_main, dir)
+#create_catalog_from_csv(expvul, catalog_main, dir)

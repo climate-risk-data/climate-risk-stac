@@ -42,10 +42,10 @@
     "spatial": {
       "bbox": [
         [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
+          -18.0,
+          -70.0,
+          120.0,
+          80.0
         ]
       ]
     },
@@ -65,7 +65,7 @@
     "(near-)global",
     "historical",
     "future",
-    "code"
+    "code available"
   ],
   "providers": [
     {
@@ -74,6 +74,13 @@
         "licensor"
       ],
       "url": "https://www.wri.org/data/aqueduct-floods-hazard-maps"
+    },
+    {
+      "name": "World Resources Institute",
+      "roles": [
+        "licensor"
+      ],
+      "url": "https://doi.org/10.6084/m9.figshare.16571064"
     }
   ]
 }
