@@ -153,7 +153,7 @@ def providers_are_equal(provider1, provider2):
 catalog_main = pystac.Catalog(
     id="climate-risk-data",
     title="Climate Risk Data",
-    description="This is a community catalog containing datasets for the three risk drivers Hazard, Exposure, and Vulnerability. The catalog in its current form conforms with the risk framework of the IPCC's 5th Assessment Report (AR5) where risk results from the interaction of hazards, the elements exposed to these hazards as well as the vulnerability of the exposed elements. The catalog structure has been defined following a variety of standards for provisioning of risk data (please see 'Link to catalog structure figure'). The catalog allows for the integration of other risk drivers, such as adaptation responses as defined in IPCC AR6 when such data are available. \n The first version of the catalog (released in XXXX) focusses on global-scale datasets that can be used as input in climate risk assessments (CRA) with as little preprocessing as possible. It has been developed as part of the Horizon Europe project CLIMAAX, which ... (see 'Link to CLIMAAX handbook'). \n The development of the catalog is described in detail in the publication referenced below. The catalog is designed under Open Science and FAIR Data Principles, with the idea to be a community-led endeavor. We encourage anyone working with risk data at different spatial scales (i.e. local to global) to add datasets to this catalog, thereby creating growing knowledge base for further potential users. Please use GitHub Actions (see 'Link to GitHub Actions') to suggest new datasets."
+    description="This is a community catalog containing datasets for the three risk drivers Hazard, Exposure, and Vulnerability. The catalog in its current form conforms with the risk framework of the IPCC's 5th Assessment Report (AR5) where risk results from the interaction of hazards, the elements exposed to these hazards as well as the vulnerability of the exposed elements. The catalog structure has been defined following a variety of standards for provisioning of risk data (please see 'Link to catalog structure figure'). The catalog allows for the integration of other risk drivers, such as adaptation responses as defined in IPCC AR6 when such data are available. \n The first version of the catalog (released in XXXX) focusses on global-scale datasets that can be used as input in climate risk assessments (CRA) with as little preprocessing as possible. It has been developed as part of the Horizon Europe project CLIMAAX, which ... (see 'Link to CLIMAAX CRA handbook'). \n The development of the catalog is described in detail in the publication referenced below. The catalog is designed under Open Science and FAIR Data Principles, with the idea to be a community-led endeavor. We encourage anyone working with risk data at different spatial scales (i.e. local to global) to add datasets to this catalog, thereby creating growing knowledge base for further potential users. Please use GitHub Actions (see 'Link to GitHub Actions') to suggest new datasets."
 )
 
 # Create catalog links
@@ -170,7 +170,7 @@ catalog_main.add_link(figure_link)
 handbook_link = pystac.Link(
     rel=pystac.RelType.VIA,  # if not working, try "cite-as"
     target="https://handbook.climaax.eu",  # the URL you want to link to
-    title="Link to CLIMAAX handbook")  # a human-readable title for the link
+    title="Link to CLIMAAX CRA handbook")  # a human-readable title for the link
 # Add the link to the catalog
 catalog_main.add_link(handbook_link)
 
