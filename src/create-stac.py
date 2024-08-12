@@ -160,7 +160,7 @@ catalog_main = pystac.Catalog(
 # link to catalog structure figure
 figure_link = pystac.Link(
     rel=pystac.RelType.VIA,  # if not working, try "cite-as"
-    target="https://github.com/DirkEilander/climate-risk-stac/blob/9d230fd85ba11519cf9bc80e891379f06353b6cc/README.rst",  # link to github readme ##  UPDATE  ##
+    target="https://github.com/DirkEilander/climate-risk-stac/blob/main/README.rst",
     media_type=pystac.MediaType.PNG,  # the type of resource the link points to
     title="Link to catalog structure figure")  # a human-readable title for the link
 # Add the link to the catalog
