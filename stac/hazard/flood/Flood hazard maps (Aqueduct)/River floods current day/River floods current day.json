@@ -62,10 +62,10 @@
     }
   },
   "bbox": [
-    -180.0,
-    -90.0,
-    180.0,
-    90.0
+    -10.0,
+    -70.0,
+    10.0,
+    80.0
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v1.1.0/schema.json",

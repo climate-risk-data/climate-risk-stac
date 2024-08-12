@@ -11,6 +11,12 @@
       "title": "Climate Risk Data"
     },
     {
+      "rel": "via",
+      "href": "https://github.com/DirkEilander/climate-risk-stac/blob/0e52db0aefef9d5b56b64a7f929ce453df26669e/README.rst",
+      "type": "image/png",
+      "title": "Link to catalog structure figure"
+    },
+    {
       "rel": "child",
       "href": "./hazard/catalog.json",
       "type": "application/json",
