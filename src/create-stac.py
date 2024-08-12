@@ -50,7 +50,7 @@ cat_keywords = {
                     ],
     "spatial_scale": ["(near-)global", "regional", "national", "subnational"],
     "reference_period": ["historical", "future", "historical & future"],
-    "code": ["code"]
+    "code": ["code available"]
 }
 
 # Function to parse year range
