@@ -56,6 +56,7 @@
       "href": "https://www.wri.org/data/aqueduct-floods-hazard-maps",
       "type": "image/tiff; application=geotiff",
       "title": "Data Link 1",
+      "description": "overview page",
       "roles": [
         "overview"
       ]
