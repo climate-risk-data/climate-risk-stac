@@ -15,7 +15,7 @@ from shapely.ops import unary_union
 
 # File paths
 dir = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/'
-haz = 'csv/hazard_test.csv' # use test set which also includes expvul
+haz = 'csv/hazard.csv' # use test set which also includes expvul
 exv = 'csv/expvul.csv' # can both be combined into one csv, but: some attributes are slightly different
 
 # Read data sheets
@@ -468,4 +468,4 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
    
 # Create catalogs from both hazard and exposure-vulnerability CSVs
 create_catalog_from_csv(hazard, catalog_main, dir)
-#create_catalog_from_csv(expvul, catalog_main, dir)
+create_catalog_from_csv(expvul, catalog_main, dir)

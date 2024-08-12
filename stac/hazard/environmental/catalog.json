@@ -18,6 +18,12 @@
     },
     {
       "rel": "child",
+      "href": "./Historical reconstruction of fire danger indices/collection.json",
+      "type": "application/json",
+      "title": "Historical reconstruction of fire danger indices"
+    },
+    {
+      "rel": "child",
       "href": "./Seasonal forecast of fire danger indices/collection.json",
       "type": "application/json",
       "title": "Seasonal forecast of fire danger indices"

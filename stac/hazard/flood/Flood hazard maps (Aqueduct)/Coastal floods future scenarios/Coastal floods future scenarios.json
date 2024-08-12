@@ -53,7 +53,7 @@
   ],
   "assets": {
     "data-file_1": {
-      "href": "https://doi.org/10.6084/m9.figshare.16571064",
+      "href": "https://www.wri.org/data/aqueduct-floods-hazard-maps",
       "type": "image/tiff; application=geotiff",
       "title": "Data Link 1",
       "roles": [
@@ -62,10 +62,10 @@
     }
   },
   "bbox": [
-    -10.0,
-    -9.0,
-    1.0,
-    9.0
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
