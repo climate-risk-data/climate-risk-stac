@@ -111,8 +111,8 @@ def generate_keywords(item):
     spatial_scale = item['spatial_scale']
     reference_period = item['reference_period']
     
-    # Add 'code' keyword if 'code_link' is provided and valid
-    code_keyword = 'code available' if item['code_link'] else None
+    # Add 'code' keyword if 'code_link' is provided
+    code_keyword = "code available" if np.nan_to_num(item['code_link']) else None
     
     # Filter out None or empty values and flatten lists into keywords
     keywords = [
