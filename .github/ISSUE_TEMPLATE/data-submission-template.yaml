@@ -14,7 +14,7 @@ body:
   - type: dropdown
     id: catalog
     attributes:
-      description: Which catalog does the data item belong to?
+      description: Please specify the overarching catalog that the data belong to
       label: Catalog
       options:
         - hazard
@@ -23,22 +23,10 @@ body:
     validations:
       required: true
   - type: textarea
-    id: location
+    id: further-details
     attributes:
       description: >
-        If the docs are wrong or unclear please provide the URL of the documentation in question
-      label: Location of the documentation
-  - type: textarea
-    id: problem
-    attributes:
-      description: >
-        Please provide a description of the documentation problem
-      label: Documentation problem
+        Please provide any further details relevant for this new data entry
+      label: Further details
     validations:
       required: true
-  - type: textarea
-    id: suggested-fix
-    attributes:
-      description: >
-        Please explain your suggested fix and why it's better than the existing documentation
-      label: Suggested fix for documentation
