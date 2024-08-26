@@ -11,6 +11,7 @@ body:
         - label: >
             I have checked that the dataset is not yet included in the catalog.
           required: true
+
   - type: dropdown
     id: catalog
     attributes:
@@ -20,6 +21,7 @@ body:
         - hazard
     validations:
       required: true
+
   - type: dropdown
     id: category
     attributes:
@@ -34,6 +36,7 @@ body:
         - multi-hazard
     validations:
       required: true
+
   - type: dropdown
     id: subcategory
     attributes:
@@ -54,6 +57,7 @@ body:
         - multi hazard
     validations:
       required: true
+
   - type: dropdown
     id: risk-data-type
     attributes:
@@ -63,6 +67,7 @@ body:
         - hazard
     validations:
       required: true
+
   - type: input
     id: title-collection
     attributes:
@@ -70,6 +75,7 @@ body:
       label: Title (collection)
     validations:
       required: true
+
   - type: input
     id: title-short
     attributes:
@@ -79,9 +85,10 @@ body:
     id: description-collection
     attributes:
       description: Detailed description of the dataset collection
-      label: Description (collection)
+      label: Description of dataset collection
     validations:
       required: true
+
   - type: input
     id: title-item
     attributes:
@@ -91,15 +98,64 @@ body:
       value: TEST TEST
     validations:
       required: true
+
   - type: textarea
     id: description-item
     attributes:
       description: Detailed description of the dataset item; if there is only one item in the collection, the collection description can be copied here.
-      label: Description (item)
+      label: Description of dataset item
+    validations:
+      required: true
+  - type: input
+    id: bbox
+    attributes:
+      description: Bounding box (i.e. spatial extent) of the dataset given in WGS84 coordinates (xmin, ymin, xmax, ymax)
+      label: Bounding box
+      placeholder: ex. -180, -90, 180, 90
     validations:
       required: true
 
-    
+  - type: dropdown
+    id: data-type
+    attributes:
+      label: Data type
+      options:
+        - raster
+        - vector
+        - tabular
+    validations:
+      required: true
+
+  - type: dropdown
+    id: format
+    attributes:
+      label: Data format
+      options:
+        - geotiff
+        - netcdf
+        - geopackage
+        - shapefile
+        - geodatabase
+        - FlatGeobuf
+        - GeoParquet
+        - GRIB
+        - GRIB2
+        - csv
+        - excel
+        - ascii
+        - txt
+        - pbf
+        - other (please specify next)
+    validations:
+      required: true
+
+  - type: input
+    id: custom-data-format
+    attributes:
+      label: New data format (if 'other' selected)
+      description: If you selected 'other', please specify the data format here
+      placeholder: Enter custom data format
+
   - type: textarea
     id: further-details
     attributes:
