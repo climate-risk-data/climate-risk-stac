@@ -1,7 +1,7 @@
 ---
-name: Data submission template
-description: Suggest a new dataset to be included in the living catalog
-labels: [New dataset, to be added]
+name: Data submission template (Hazard)
+description: Suggest a new hazard dataset to be included in the living catalog
+labels: [New dataset, Hazard]
 
 body:
   - type: checkboxes
@@ -14,14 +14,90 @@ body:
   - type: dropdown
     id: catalog
     attributes:
-      description: Please specify the overarching catalog that the data belong to
+      description: Overarching catalog that the data belong to (i.e. hazard, exposure-vulnerability)
       label: Catalog
       options:
         - hazard
-        - exposure-vulnerability
-        - response
     validations:
       required: true
+  - type: dropdown
+    id: category
+    attributes:
+      description: Category of data type according to hierarchical structure (see readme)
+      label: Category
+      options:
+        - flood
+        - precipitation-related
+        - temperature-related
+        - wind-related
+        - environmental
+        - multi-hazard
+    validations:
+      required: true
+  - type: dropdown
+    id: subcategory
+    attributes:
+      description: Subcategory of data type according to hierarchical structure (see readme)
+      label: Subcategory
+      options:
+        - coastal flood
+        - fluvial flood
+        - pluvial flood
+        - flood type not specified
+        - drought
+        - snowstorm/blizzard
+        - heat wave
+        - cold wave
+        - tropical cyclone
+        - extratropical cyclone
+        - wildfire
+        - multi hazard
+  - type: dropdown
+    id: risk-data-type
+    attributes:
+      description: Risk driver (i.e. hazard, exposure, vulnerability, response)
+      label: Risk data type
+      options:
+        - hazard
+    validations:
+      required: true
+  - type: textarea
+    id: title-collection
+    attributes:
+      description: Name of the dataset collection; the collection name must be the same for each item belong to that collection (see 'Title (item)' for further instructions).
+      label: Title (collection)
+    validations:
+      required: true
+  - type: textarea
+    id: title-short
+    attributes:
+      description: (optional) short name/acronym of dataset
+      label: Title short
+  - type: textarea
+    id: description-collection
+    attributes:
+      description: Detailed description of the dataset collection
+      label: Description (collection)
+    validations:
+      required: true
+  - type: textarea
+    id: title-item
+    attributes:
+      description: Concise name of the dataset item; each item from the same collection needs to have a unique name. 
+      If data are from the same overall data source, but metadata attributes differ, these are separate items that belong to the same collection. 
+      Please submit separate data items per collection by creating a new issue.
+      label: Title (item)
+    validations:
+      required: true
+  - type: textarea
+    id: description-item
+    attributes:
+      description: Detailed description of the dataset item; if there is only one item in the collection, the collection description can be copied here.
+      label: Description (item)
+    validations:
+      required: true
+
+    
   - type: textarea
     id: further-details
     attributes:
