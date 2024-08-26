@@ -63,14 +63,14 @@ body:
         - hazard
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: title-collection
     attributes:
       description: Name of the dataset collection; the collection name must be the same for each item belong to that collection (see 'Title (item)' for further instructions).
       label: Title (collection)
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: title-short
     attributes:
       description: (optional) short name/acronym of dataset
@@ -88,6 +88,7 @@ body:
       description: Concise name of the dataset item; each item from the same collection needs to have a unique name. If data are from the same overall data source, but metadata attributes differ, these are separate items that belong to the same collection. Please submit separate data items per collection by creating a new issue.
       label: Title (item)
       placeholder: TEST
+      value: TEST TEST
     validations:
       required: true
   - type: textarea
