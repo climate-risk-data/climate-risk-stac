@@ -79,7 +79,7 @@ body:
   - type: input
     id: title-short
     attributes:
-      description: (optional) short name/acronym of the dataset
+      description: Short name/acronym of the dataset (if available)
       label: Title short
 
   - type: textarea
@@ -191,7 +191,7 @@ body:
   - type: dropdown
     id: spatial-resolution-unit
     attributes:
-      label: (optional) spatial resolution unit if numeric or "administrative unit"
+      label: Spatial resolution unit (if numeric or "administrative unit")
       options:
         - arc seconds
         - arc minutes
