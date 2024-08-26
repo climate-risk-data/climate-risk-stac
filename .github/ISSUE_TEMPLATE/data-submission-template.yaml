@@ -1,0 +1,44 @@
+---
+name: Data submission template
+description: Suggest a new dataset to be included in the living catalog
+labels: [New dataset, to be added]
+
+body:
+  - type: checkboxes
+    attributes:
+      label: Duplicate checks
+      options:
+        - label: >
+            I have checked that the dataset is not yet included in the catalog.
+          required: true
+  - type: dropdown
+    id: catalog
+    attributes:
+      description: Which catalog does the data item belong to?
+      label: Catalog
+      options:
+        - hazard
+        - exposure-vulnerability
+        - response
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      description: >
+        If the docs are wrong or unclear please provide the URL of the documentation in question
+      label: Location of the documentation
+  - type: textarea
+    id: problem
+    attributes:
+      description: >
+        Please provide a description of the documentation problem
+      label: Documentation problem
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      description: >
+        Please explain your suggested fix and why it's better than the existing documentation
+      label: Suggested fix for documentation
