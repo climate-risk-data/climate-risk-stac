@@ -1,7 +1,7 @@
 ---
-name: Data submission template (Hazard)
+name: Data submission form - HAZARD
 description: Suggest a new hazard dataset to be included in the living catalog
-labels: [New dataset, Hazard]
+labels: [enhancement]
 
 body:
   - type: checkboxes
@@ -25,7 +25,7 @@ body:
   - type: dropdown
     id: category
     attributes:
-      description: Category of data type according to hierarchical structure (see readme)
+      description: Category of data type according to classification scheme (see readme)
       label: Category
       options:
         - flood
@@ -40,7 +40,7 @@ body:
   - type: dropdown
     id: subcategory
     attributes:
-      description: Subcategory of data type according to hierarchical structure (see readme)
+      description: Subcategory of data type according to classification scheme (see readme)
       label: Subcategory
       options:
         - coastal flood
@@ -71,21 +71,22 @@ body:
   - type: input
     id: title-collection
     attributes:
-      description: Name of the dataset collection; the collection name must be the same for each item belong to that collection (see 'Title (item)' for further instructions).
-      label: Title (collection)
+      description: Name of the dataset collection; the collection title must be the same for each item belong to that collection (see 'Item title' for further instructions).
+      label: Collection title
     validations:
       required: true
 
   - type: input
     id: title-short
     attributes:
-      description: (optional) short name/acronym of dataset
+      description: (optional) short name/acronym of the dataset
       label: Title short
+
   - type: textarea
     id: description-collection
     attributes:
-      description: Detailed description of the dataset collection
-      label: Description of dataset collection
+      description: Detailed description of the dataset collection; the collection description must be the same for each item belong to that collection
+      label: Collection description
     validations:
       required: true
 
@@ -93,9 +94,9 @@ body:
     id: title-item
     attributes:
       description: Concise name of the dataset item; each item from the same collection needs to have a unique name. If data are from the same overall data source, but metadata attributes differ, these are separate items that belong to the same collection. Please submit separate data items per collection by creating a new issue.
-      label: Title (item)
-      placeholder: TEST
-      value: TEST TEST
+      label: Item title
+      #placeholder: TEST
+      #value: TEST TEST
     validations:
       required: true
 
@@ -103,7 +104,7 @@ body:
     id: description-item
     attributes:
       description: Detailed description of the dataset item; if there is only one item in the collection, the collection description can be copied here.
-      label: Description of dataset item
+      label: Item description
     validations:
       required: true
 
@@ -173,8 +174,8 @@ body:
     id: coordinate-system
     attributes:
       label: Coordinate system
-      description: Numerical code of the coordinate reference system (CRS)
-      placeholder: ex. 4326; 54009
+      description: Numerical code of the coordinate reference system (CRS) (e.g. 4326, 54009)
+      placeholder: ex. 4326
     validations:
       required: true
 
@@ -183,20 +184,23 @@ body:
     attributes:
       label: Spatial resolution
       description: Spatial resolution in numeric value or use "administrative unit", "feature level", "event"
-      placeholder: "30"
+      placeholder: "ex. 30"
     validations:
       required: true
 
   - type: dropdown
     id: spatial-resolution-unit
     attributes:
-      label: (optional) spatial resolution unit if numeric
+      label: (optional) spatial resolution unit if numeric or "administrative unit"
       options:
-        - raster
-        - vector
-        - tabular
-    validations:
-      required: true
+        - arc seconds
+        - arc minutes
+        - decimal degrees
+        - meters
+        - kilometers
+        - admin1
+        - admin2
+        - admin3
 
   - type: textarea
     id: further-details
