@@ -82,11 +82,12 @@ body:
       label: Description (collection)
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: title-item
     attributes:
       description: Concise name of the dataset item; each item from the same collection needs to have a unique name. If data are from the same overall data source, but metadata attributes differ, these are separate items that belong to the same collection. Please submit separate data items per collection by creating a new issue.
       label: Title (item)
+      placeholder: TEST
     validations:
       required: true
   - type: textarea
