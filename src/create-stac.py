@@ -104,7 +104,9 @@ def generate_keywords(item):
     # Determine risk data type if not 'hazard'
     risk_data = item['risk_data_type'] if item['risk_data_type'] != 'hazard' else None
     
-    # Split the subcategory string if it contains commas
+    # Subcategory: a) replace subcategory with string with commas, b) split the string if it contains commas
+    if item['category'] == 'flood' and item['subcategory'] == 'flood type not specified':
+        item['subcategory'] = "coastal flood,fluvial flood,pluvial flood"
     subcategories = item['subcategory'].split(',') if ',' in item['subcategory'] else [item['subcategory']]
     
     # Extract other attributes
