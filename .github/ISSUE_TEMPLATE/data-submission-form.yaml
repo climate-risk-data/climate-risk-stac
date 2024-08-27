@@ -99,7 +99,6 @@ body:
       description: Concise name of the dataset item; each item from the same collection needs to have a unique name. If data are from the same overall data source, but metadata attributes differ, these are separate items that belong to the same collection. Please submit separate data items per collection by creating a new issue.
       label: Item title
       placeholder: ex. Heat index historical
-      #value: TEST TEST
     validations:
       required: true
 
@@ -183,6 +182,7 @@ body:
         - SSP-RCP combinations
         - warming levels
         - extrapolation
+        - other
 
   - type: input
     id: custom-scenarios
