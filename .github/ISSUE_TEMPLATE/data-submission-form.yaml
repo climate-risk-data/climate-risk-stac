@@ -182,7 +182,7 @@ body:
         - SSP-RCP combinations
         - warming levels
         - extrapolation
-        - other
+        - other (please specify below)
 
   - type: input
     id: custom-scenarios
@@ -337,8 +337,16 @@ body:
         - CC-BY-3.0 IGO
         - CDLA-Permissive-1.0
         - proprietary
+        - other (please specify below)
     validations:
       required: true
+
+  - type: input
+    id: custom-license
+    attributes:
+      label: New license
+      description: If 'other' selected in 'License', please specify the license here (open-access licenses only)
+      placeholder: Enter new data license
 
   - type: input
     id: link-website
