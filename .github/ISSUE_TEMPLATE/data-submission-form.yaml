@@ -6,7 +6,7 @@ labels: [enhancement]
 body:
   - type: checkboxes
     attributes:
-      label: Duplicate checks
+      label: Duplicate check
       options:
         - label: >
             I have checked that the dataset is not yet included in the catalog.
@@ -172,7 +172,7 @@ body:
         - 10-yearly
         - irregular
   
-   - type: dropdown
+  - type: dropdown
     id: scenarios
     attributes:
       description: 
@@ -289,14 +289,14 @@ body:
         - deterministic
         - empirical
 
-    - type: input
+  - type: input
     id: underlying-data
     attributes:
       label: Underlying data
       description: Data underlying the calculation and analysis type (optional)
       placeholder: ex. CMIP6
 
-    - type: input
+  - type: input
     id: provider
     attributes:
       label: Provider
@@ -340,7 +340,7 @@ body:
     validations:
       required: true
 
-    - type: input
+  - type: input
     id: link-website
     attributes:
       label: Link website
@@ -349,14 +349,14 @@ body:
     validations:
       required: true
 
-    - type: input
+  - type: input
     id: publication-link
     attributes:
       label: Publication link
       description: Link to publication; DOI if possible (optional)
       placeholder: ex. 10.24381/cds.776e08bd
 
-    - type: dropdown
+  - type: dropdown
     id: publication-type
     attributes:
       label: Publication type
@@ -367,14 +367,14 @@ body:
         - documentation
         - dataset
 
-    - type: input
+  - type: input
     id: code-link
     attributes:
       label: Code link
       description: Link to available code; DOI if possible (optional)
       placeholder: ex. https://github.com/IPCC-WG1/Atlas/tree/main
 
-    - type: dropdown
+  - type: dropdown
     id: code-type
     attributes:
       label: Code type
@@ -385,14 +385,14 @@ body:
         - application
         - visualization
 
-    - type: textarea
+  - type: textarea
     id: usage-notes
     attributes:
       label: Usage notes
       description: Any relevant information for using the data
       placeholder: ex. data download via interface or API (user account needed)
 
-    - type: input
+  - type: input
     id: assets
     attributes:
       label: Assets
