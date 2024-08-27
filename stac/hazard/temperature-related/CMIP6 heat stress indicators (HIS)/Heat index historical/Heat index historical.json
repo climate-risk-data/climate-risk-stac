@@ -19,7 +19,7 @@
     "underlying data": "CMIP6",
     "publication type": "dataset (see DOI)",
     "code type": "processing (see Code link)",
-    "usage notes": "data download via interface or API",
+    "usage notes": "data download via interface or API (user account needed)",
     "start_datetime": "1951-01-01T00:00:00Z",
     "end_datetime": "2014-12-31T00:00:00Z",
     "proj:epsg": 4326,
@@ -58,11 +58,11 @@
   ],
   "assets": {
     "data-file_1": {
-      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-extreme-indices-cmip6?tab=overview",
+      "href": "https://cds-beta.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=download",
       "type": "application/x-netcdf",
       "title": "Data Link 1",
       "roles": [
-        "overview"
+        "data"
       ]
     }
   },

@@ -12,16 +12,6 @@
     },
     {
       "rel": "item",
-      "href": "./RX1day CMIP5 future/RX1day CMIP5 future.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "item",
-      "href": "./RX1day CMIP5 historical/RX1day CMIP5 historical.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "item",
       "href": "./RX1day CMIP6 future/RX1day CMIP6 future.json",
       "type": "application/json"
     },
@@ -32,22 +22,32 @@
     },
     {
       "rel": "item",
-      "href": "./RX5day CMIP5 future/RX5day CMIP5 future.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "item",
-      "href": "./RX5day CMIP5 historical/RX5day CMIP5 historical.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "item",
       "href": "./RX5day CMIP6 future/RX5day CMIP6 future.json",
       "type": "application/json"
     },
     {
       "rel": "item",
       "href": "./RX5day CMIP6 historical/RX5day CMIP6 historical.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./RX1day CMIP5 future/RX1day CMIP5 future.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./RX1day CMIP5 historical/RX1day CMIP5 historical.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./RX5day CMIP5 future/RX5day CMIP5 future.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./RX5day CMIP5 historical/RX5day CMIP5 historical.json",
       "type": "application/json"
     },
     {

@@ -88,7 +88,7 @@
       ]
     }
   },
-  "license": "CC-BY-4.0",
+  "license": "proprietary",
   "keywords": [
     "heat wave",
     "(near-)global",
@@ -102,7 +102,7 @@
       "roles": [
         "host"
       ],
-      "url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-extreme-indices-cmip6?tab=overview"
+      "url": "https://cds-beta.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=overview"
     }
   ]
 }

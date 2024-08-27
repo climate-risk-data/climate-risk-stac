@@ -17,12 +17,7 @@
     },
     {
       "rel": "item",
-      "href": "./Forecasted data/Forecasted data.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "item",
-      "href": "./Historical data/Historical data.json",
+      "href": "./Seasonal reforecasts/Seasonal reforecasts.json",
       "type": "application/json"
     },
     {
@@ -32,7 +27,12 @@
     },
     {
       "rel": "item",
-      "href": "./Seasonal reforecasts/Seasonal reforecasts.json",
+      "href": "./Forecasted data/Forecasted data.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Historical data/Historical data.json",
       "type": "application/json"
     },
     {
