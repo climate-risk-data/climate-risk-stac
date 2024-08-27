@@ -413,6 +413,7 @@ body:
     attributes:
       description: Please provide any further details relevant for this new data entry
       label: Further details
+      placeholder: Add any relevant information not provided before, problems encountered while filling in the form etc.
     validations:
       required: true
 
