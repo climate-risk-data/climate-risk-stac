@@ -1,0 +1,418 @@
+---
+name: Data submission form (hazard data)
+description: Suggest a new hazard dataset to be included in the living catalog
+labels: [enhancement]
+
+body:
+  - type: checkboxes
+    attributes:
+      label: Duplicate check
+      options:
+        - label: >
+            I have checked that the dataset is not yet included in the catalog.
+          required: true
+
+  - type: dropdown
+    id: catalog
+    attributes:
+      description: Overarching catalog that the data belong to (i.e. hazard, exposure-vulnerability)
+      label: Catalog
+      options:
+        - hazard
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      description: Category of data type according to classification scheme (see readme)
+      label: Category
+      options:
+        - flood
+        - precipitation-related
+        - temperature-related
+        - wind-related
+        - environmental
+        - multi-hazard
+    validations:
+      required: true
+
+  - type: dropdown
+    id: subcategory
+    attributes:
+      description: Subcategory of data type according to classification scheme (see readme)
+      label: Subcategory
+      options:
+        - coastal flood
+        - fluvial flood
+        - pluvial flood
+        - flood type not specified
+        - drought
+        - snowstorm/blizzard
+        - heat wave
+        - cold wave
+        - tropical cyclone
+        - extratropical cyclone
+        - wildfire
+        - multi hazard
+    validations:
+      required: true
+
+  - type: dropdown
+    id: risk-data-type
+    attributes:
+      description: Risk driver (i.e. hazard, exposure, vulnerability, response)
+      label: Risk data type
+      options:
+        - hazard
+    validations:
+      required: true
+
+  - type: input
+    id: title-collection
+    attributes:
+      description: Name of the dataset collection; the collection title must be the same for each item belonging to that collection (see 'Item title' for further instructions).
+      label: Collection title
+      placeholder: ex. CMIP6 heat stress indicators
+    validations:
+      required: true
+
+  - type: input
+    id: title-short
+    attributes:
+      description: Short name/acronym of the dataset (if available)
+      placeholder: ex. HIS
+      label: Title short
+
+  - type: textarea
+    id: description-collection
+    attributes:
+      description: Detailed description of the dataset collection; the collection description must be the same for each item belonging to that collection
+      label: Collection description
+      placeholder: ex. The indices are provided for historical and future climate projections (SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP5-8.5) included in the Coupled Model Intercomparison Project Phase 6 (CMIP6) and used in the 6th Assessment Report of the Intergovernmental Panel on Climate Change (IPCC).
+    validations:
+      required: true
+
+  - type: input
+    id: title-item
+    attributes:
+      description: Concise name of the dataset item; each item from the same collection needs to have a unique name. If data are from the same overall data source, but metadata attributes differ, these are separate items that belong to the same collection. Please submit separate data items per collection by creating a new issue.
+      label: Item title
+      placeholder: ex. Heat index historical
+    validations:
+      required: true
+
+  - type: textarea
+    id: description-item
+    attributes:
+      description: Detailed description of the dataset item; if there is only one item in the collection, the collection description can be copied here.
+      label: Item description
+      placeholder: ex. Heat index is a heat stress indicator used by the US National Oceanic and Atmospheric Administration (NOAA) National Weather Service for issuing heat warnings. It is calculated using multiple linear regression based on daily maximum temperature and relative humidity (calculated from daily mean specific humidity and surface pressure).
+    validations:
+      required: true
+
+  - type: dropdown
+    id: spatial-scale
+    attributes:
+      label: Spatial scale
+      description: Spatial coverage of the dataset
+      options:
+        - (near-)global
+        - regional
+        - national
+        - subnational
+    validations:
+      required: true
+
+  - type: input
+    id: bbox
+    attributes:
+      description: Bounding box (i.e. spatial extent) of the dataset given in WGS84 coordinates (xmin, ymin, xmax, ymax)
+      label: Bounding box
+      placeholder: ex. -180, -60, 180, 90
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reference-period
+    attributes:
+      label: Reference period
+      description: Reference period for which the data are available 
+      options:
+        - historical
+        - future
+        - historical & future
+    validations:
+      required: true
+
+  - type: input
+    id: temporal-resolution
+    attributes:
+      description: Temporal resolution of the data in format YYYY, YYYY-YYYY or YYYY-now (if data are updated in real time)
+      label: Temporal resolution
+      placeholder: ex. 1951-2014
+    validations:
+      required: true
+
+  - type: dropdown
+    id: temporal-interval
+    attributes:
+      label: Temporal interval
+      description: Temporal intervals that the data are available in (optional)
+      options:
+        - hourly
+        - 3-hourly
+        - daily
+        - 10-days
+        - monthly
+        - yearly
+        - 5-yearly
+        - 6-yearly
+        - 10-yearly
+        - irregular
+  
+  - type: dropdown
+    id: scenarios
+    attributes:
+      description: Name of the scenarios used if 'Reference period' is 'future'
+      label: Scenarios
+      options:
+        - RCPs
+        - SSP-RCP combinations
+        - warming levels
+        - extrapolation
+        - other (please specify below)
+
+  - type: input
+    id: custom-scenarios
+    attributes:
+      label: New scenarios
+      description: If 'other' selected in 'Scenarios', please specify the name of the scenarios here
+      placeholder: Enter name of scenarios
+
+  - type: dropdown
+    id: data-type
+    attributes:
+      label: Data type
+      description: Data type of the dataset (if more than one available, please submit a new item)
+      options:
+        - raster
+        - vector
+        - tabular
+    validations:
+      required: true
+
+  - type: dropdown
+    id: format
+    attributes:
+      label: Data format
+      description: Data format of the dataset (if more than one available, please submit a new item)
+      options:
+        - geotiff
+        - netcdf
+        - geopackage
+        - shapefile
+        - geodatabase
+        - FlatGeobuf
+        - GeoParquet
+        - GRIB
+        - GRIB2
+        - csv
+        - excel
+        - ascii
+        - txt
+        - pbf
+        - other (please specify below)
+    validations:
+      required: true
+
+  - type: input
+    id: custom-data-format
+    attributes:
+      label: New data format
+      description: If 'other' selected in 'Data format', please specify the data format here
+      placeholder: Enter new data format
+
+  - type: input
+    id: spatial-resolution
+    attributes:
+      label: Spatial resolution
+      description: Spatial resolution in numeric value or as a string, e.g. "administrative unit", "feature level", "event" (if more than one available, please submit a new item)
+      placeholder: ex. 0.5
+    validations:
+      required: true
+
+  - type: dropdown
+    id: spatial-resolution-unit
+    attributes:
+      label: Spatial resolution unit
+      description: If 'Spatial resolution' numeric or "administrative unit", please specify the spatial resolution unit here
+      options:
+        - arc seconds
+        - arc minutes
+        - decimal degrees
+        - meters
+        - kilometers
+        - admin1
+        - admin2
+        - admin3
+
+  - type: input
+    id: coordinate-system
+    attributes:
+      label: Coordinate system
+      description: Numerical code (e.g. EPSG, ESRI code) of the coordinate reference system (CRS) (e.g. 4326, 54009) (if more than one available, please submit a new item)
+      placeholder: ex. 4326
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: data-calculation-type
+    attributes:
+      label: Data calculation type
+      description: Method used for data calculation
+      options:
+        - observed
+        - inferred
+        - modeled
+    validations:
+      required: true
+
+  - type: dropdown
+    id: analysis-type
+    attributes:
+      label: Analysis type
+      description: Method used for calculating the data (optional)
+      options:
+        - probabilistic
+        - deterministic
+        - empirical
+
+  - type: input
+    id: underlying-data
+    attributes:
+      label: Underlying data
+      description: Data underlying the calculation and analysis type (optional)
+      placeholder: ex. CMIP6
+
+  - type: input
+    id: provider
+    attributes:
+      label: Provider
+      description: Name of data provider
+      placeholder: ex. Copernicus Climate Data Store
+    validations:
+      required: true
+
+  - type: dropdown
+    id: provider-role
+    attributes:
+      label: Provider role
+      description: Role of data provider
+      options:
+        - licensor
+        - producer
+        - processor
+        - host
+    validations:
+      required: true
+
+  - type: dropdown
+    id: license
+    attributes:
+      label: License
+      description: Data distribution license
+      options:
+        - CC0-1.0
+        - CC-BY-4.0
+        - CC-BY-SA-4.0
+        - CC-BY-NC-SA-4.0
+        - CC BY-ND 4.0
+        - CC BY-NC-ND 4.0
+        - ODbL-1.0
+        - ODC-By-1.0
+        - PDDL-1.0
+        - GNU General Public License
+        - CC-BY-3.0 IGO
+        - CDLA-Permissive-1.0
+        - proprietary
+        - other (please specify below)
+    validations:
+      required: true
+
+  - type: input
+    id: custom-license
+    attributes:
+      label: New license
+      description: If 'other' selected in 'License', please specify the license here (open-access licenses only)
+      placeholder: Enter new data license
+
+  - type: input
+    id: link-website
+    attributes:
+      label: Link website
+      description: URL of the website where the data can be accessed
+      placeholder: ex. https://cds-beta.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=overview
+    validations:
+      required: true
+
+  - type: input
+    id: publication-link
+    attributes:
+      label: Publication link
+      description: Link to publication; DOI if available, starting with '10.' (optional)
+      placeholder: ex. 10.24381/cds.776e08bd
+
+  - type: dropdown
+    id: publication-type
+    attributes:
+      label: Publication type
+      description: Type of publication (if 'Publication link' provided)
+      options:
+        - article
+        - report
+        - documentation
+        - dataset
+
+  - type: input
+    id: code-link
+    attributes:
+      label: Code link
+      description: Link to available code; DOI if available, starting with '10.'(optional)
+      placeholder: ex. https://github.com/IPCC-WG1/Atlas/tree/main
+
+  - type: dropdown
+    id: code-type
+    attributes:
+      label: Code type
+      description: Type of available code (if 'Code link' provided)
+      options:
+        - download
+        - processing
+        - application
+        - visualization
+
+  - type: textarea
+    id: usage-notes
+    attributes:
+      label: Usage notes
+      description: Any relevant information for using the data
+      placeholder: ex. data download via interface or API (user account needed)
+
+  - type: input
+    id: assets
+    attributes:
+      label: Assets
+      description: Links to specific data files or data download page (separated with ';')
+      placeholder: ex. https://cds-beta.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=download
+    validations:
+      required: true
+
+  - type: textarea
+    id: further-details
+    attributes:
+      description: Please provide any further details relevant for this new data entry
+      label: Further details
+    validations:
+      required: true
+
