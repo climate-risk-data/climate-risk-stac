@@ -12,16 +12,6 @@
     },
     {
       "rel": "item",
-      "href": "./Monthly mean CMIP 5 future/Monthly mean CMIP 5 future.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "item",
-      "href": "./Monthly mean CMIP 5 historical/Monthly mean CMIP 5 historical.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "item",
       "href": "./Monthly mean CMIP 6 future/Monthly mean CMIP 6 future.json",
       "type": "application/json"
     },
@@ -32,22 +22,32 @@
     },
     {
       "rel": "item",
-      "href": "./Monthly minimum CMIP 5 future/Monthly minimum CMIP 5 future.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "item",
-      "href": "./Monthly minimum CMIP 5 historical/Monthly minimum CMIP 5 historical.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "item",
       "href": "./Monthly minimum CMIP 6 future/Monthly minimum CMIP 6 future.json",
       "type": "application/json"
     },
     {
       "rel": "item",
       "href": "./Monthly minimum CMIP 6 historical/Monthly minimum CMIP 6 historical.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Monthly mean CMIP 5 future/Monthly mean CMIP 5 future.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Monthly mean CMIP 5 historical/Monthly mean CMIP 5 historical.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Monthly minimum CMIP 5 future/Monthly minimum CMIP 5 future.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./Monthly minimum CMIP 5 historical/Monthly minimum CMIP 5 historical.json",
       "type": "application/json"
     },
     {

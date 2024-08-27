@@ -18,9 +18,9 @@
     },
     {
       "rel": "child",
-      "href": "./Annual Global High-Resolution Extreme Heat Estimates (GEHE)/collection.json",
+      "href": "./Monthly statistics of daily minimum temperature/collection.json",
       "type": "application/json",
-      "title": "Annual Global High-Resolution Extreme Heat Estimates (GEHE)"
+      "title": "Monthly statistics of daily minimum temperature"
     },
     {
       "rel": "child",
@@ -36,9 +36,9 @@
     },
     {
       "rel": "child",
-      "href": "./Monthly statistics of daily minimum temperature/collection.json",
+      "href": "./Annual Global High-Resolution Extreme Heat Estimates (GEHE)/collection.json",
       "type": "application/json",
-      "title": "Monthly statistics of daily minimum temperature"
+      "title": "Annual Global High-Resolution Extreme Heat Estimates (GEHE)"
     },
     {
       "rel": "parent",

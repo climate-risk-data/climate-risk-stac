@@ -15,7 +15,7 @@ from shapely.ops import unary_union
 
 # File paths
 dir = 'C:/Users/lrn238/OneDrive - Vrije Universiteit Amsterdam/Documents/GitHub/climate-risk-stac/'
-haz = 'csv/hazard.csv' # use test set which also includes expvul
+haz = 'csv/hazard.csv'
 exv = 'csv/expvul.csv' # can both be combined into one csv, but: some attributes are slightly different
 
 # Read data sheets
@@ -409,11 +409,20 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             # Code: add link if available
             if code != None:
                 print("code available")
-                link = pystac.Link(
-                    rel="cite-as",  # Relationship of the link
-                    target=item['code_link'],  # Target URL
-                    title="Code link",  # Optional title
-                    )
+                if str(item['code_link']).startswith('10.'):
+                    print("doi available")
+                    link = pystac.Link(
+                        rel="cite-as",  # Relationship of the link
+                        target=f"https://doi.org/{item['code_link']}",  # Target URL
+                        title="Code link",  # Optional title
+                        )
+                else:
+                    print("weblink available")
+                    link = pystac.Link(
+                        rel="cite-as",  # Relationship of the link
+                        target=item['code_link'],  # Target URL
+                        title="Code link",  # Optional title
+                        )
                 item_stac.add_link(link)
 
             # ADD ASSETS        
