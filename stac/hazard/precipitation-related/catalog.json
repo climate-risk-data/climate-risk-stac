@@ -12,21 +12,15 @@
     },
     {
       "rel": "child",
-      "href": "./Daily Evapotranspiration Deficit Index (DEDI)/collection.json",
+      "href": "./Standardized precipitation index (SPI)/collection.json",
       "type": "application/json",
-      "title": "Daily Evapotranspiration Deficit Index (DEDI)"
+      "title": "Standardized precipitation index (SPI)"
     },
     {
       "rel": "child",
       "href": "./Meteorological drought events from the Global Drought Observatory (GDO)/collection.json",
       "type": "application/json",
       "title": "Meteorological drought events from the Global Drought Observatory (GDO)"
-    },
-    {
-      "rel": "child",
-      "href": "./Standardized precipitation index (SPI)/collection.json",
-      "type": "application/json",
-      "title": "Standardized precipitation index (SPI)"
     },
     {
       "rel": "child",
@@ -39,6 +33,12 @@
       "href": "./Global SPEI database/collection.json",
       "type": "application/json",
       "title": "Global SPEI database"
+    },
+    {
+      "rel": "child",
+      "href": "./Daily Evapotranspiration Deficit Index (DEDI)/collection.json",
+      "type": "application/json",
+      "title": "Daily Evapotranspiration Deficit Index (DEDI)"
     },
     {
       "rel": "parent",

@@ -12,15 +12,15 @@
     },
     {
       "rel": "child",
-      "href": "./Copernicus Emergency Management Service - Mapping (CEMS)/collection.json",
-      "type": "application/json",
-      "title": "Copernicus Emergency Management Service - Mapping (CEMS)"
-    },
-    {
-      "rel": "child",
       "href": "./Synthetic Tropical cyclOne geneRation Model (STORM)/collection.json",
       "type": "application/json",
       "title": "Synthetic Tropical cyclOne geneRation Model (STORM)"
+    },
+    {
+      "rel": "child",
+      "href": "./Copernicus Emergency Management Service - Mapping (CEMS)/collection.json",
+      "type": "application/json",
+      "title": "Copernicus Emergency Management Service - Mapping (CEMS)"
     },
     {
       "rel": "parent",
