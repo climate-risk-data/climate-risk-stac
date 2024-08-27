@@ -175,9 +175,9 @@ body:
   - type: dropdown
     id: scenarios
     attributes:
-      description: 
+      description: Name of the scenarios used if 'Reference period' is 'future'
       label: Scenarios
-      options: Name of the scenarios used if 'Reference period' is 'future'
+      options: 
         - SSPs
         - RCPs
         - SSP-RCP combinations
