@@ -180,7 +180,7 @@ catalog_main.add_link(handbook_link)
 github_link  = pystac.Link(
     rel=pystac.RelType.VIA,  # if not working, try "cite-as"
     target="https://github.com/DirkEilander/climate-risk-stac",  # link to github actions (not implemented yet)
-    title="Link to GitHub Actions (once implemented)")  # a human-readable title for the link
+    title="Link to GitHub Issues (once implemented)")  # a human-readable title for the link
 # Add the link to the catalog
 catalog_main.add_link(github_link)
 
@@ -207,7 +207,6 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
             catalog1 = catalog_main.get_child(catalog_id)
 
         # Create or retrieve the second-level catalog
-
         if category_id not in [cat.id for cat in catalog1.get_children()]:
             catalog2 = pystac.Catalog(id=category_id, 
                                       title=category_id.capitalize(), 
