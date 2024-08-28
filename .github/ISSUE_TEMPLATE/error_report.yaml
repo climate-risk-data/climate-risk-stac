@@ -41,7 +41,7 @@ body:
     id: context
     attributes:
       description: >
-        Please add any additional context about the error here. Please provide a suggested fix if possible (i.e. correct link or metadata attributes). If metadata attributes need updating, please consider doing so directly in the respective CSV file (https://github.com/XXXXXX).
+        Please provide any additional context and a suggested fix if possible (i.e. correct link or metadata attributes). If metadata attributes need updating, please consider doing so directly in the respective CSV file (https://github.com/XXXXXX).
       label: Additional context
     validations:
       required: true
