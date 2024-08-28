@@ -11,7 +11,7 @@ body:
       options:
         - label: I have checked that this issue has not already been reported.
           required: true
-        - label: I have checked that this error exists on the latest version of the living catalog on `main` (https://github.com/XXXXXX).
+        - label: I have checked that this error exists on the latest version of the living catalog on `main` [here](https://github.com/XXXXXX).
           required: true
   
   - type: dropdown
@@ -41,7 +41,7 @@ body:
     id: context
     attributes:
       description: >
-        Please provide any additional context and a suggested fix if possible (i.e. correct link or metadata attributes). If metadata attributes need updating, please consider doing so directly in the respective CSV file (https://github.com/XXXXXX).
+        Please provide any additional context and a suggested fix if possible (i.e. correct link or metadata attributes). If metadata attributes need updating, please consider doing so directly in the respective CSV file [here](https://github.com/XXXXXX).
       label: Additional context
     validations:
       required: true
