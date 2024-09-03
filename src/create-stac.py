@@ -175,7 +175,7 @@ publication_link = pystac.Link(
     media_type=pystac.MediaType.PNG,
     title="Peer-reviewed publication (will be added once published)")
 # Add the link to the catalog
-catalog_main.add_link(figure_link)
+catalog_main.add_link(publication_link)
 
 github_link  = pystac.Link(
     rel=pystac.RelType.VIA,
