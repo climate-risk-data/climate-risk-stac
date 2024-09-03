@@ -9,7 +9,7 @@ body:
       label: Version check
       options:
         - label: >
-            I have checked that the issue still exists on the latest versions of the docs on `main` [here](https://github.com/XXXXXX).
+            I have checked that the issue still exists on the latest versions of the docs on `main` [here](https://github.com//climate-risk-data/climate-risk-stac).
           required: true
   - type: dropdown
     id: kind
