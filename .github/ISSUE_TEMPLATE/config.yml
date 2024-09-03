@@ -3,5 +3,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: Ask a question
-    url: https://github.com/XXXXXX  #add URL once discussion page is set up
+    url: https://github.com/climate-risk-data/climate-risk-stac/discussions
     about: Ask questions and discuss with other community members
