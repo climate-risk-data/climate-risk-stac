@@ -240,7 +240,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
         # make keywords
         keywords = generate_keywords(item)
 
-        # make provider ## FOR SOME REASON PROVIDER ROLES ARE SOMETIMES DISPLAYED IN THE BROWSER, OTHER TIMES NOT; NO IDEA WHY ##
+        # make provider
         provider = pystac.Provider(
             name=item['provider'],
             #description= 'test test',
@@ -258,7 +258,7 @@ def create_catalog_from_csv(indicator, catalog_main, dir):
                 description= item['description_collection'],
                 extent=pystac.Extent(
                     spatial=pystac.SpatialExtent([bbox_list]),
-                    temporal=pystac.TemporalExtent([[start, end]]), # needs to be updated based on all items in the collection
+                    temporal=pystac.TemporalExtent([[start, end]]), 
                 ),
                 license=item['license'],
                 keywords=keywords,
