@@ -31,7 +31,7 @@ body:
         - population
         - buildings
         - infrastructure
-        - environment
+        - land use
     validations:
       required: true
 
