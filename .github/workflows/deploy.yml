@@ -1,4 +1,4 @@
-name: deploy-book
+name: build-deploy-docs
 
 on:
   # Trigger the workflow on push to main and restructure branch
@@ -23,7 +23,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy-book:
+  build-deploy-docs:
     runs-on: ubuntu-latest
     # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
     # NOTE: this does not seem to work with a private repos but requried for the deployment step?
@@ -67,8 +67,19 @@ jobs:
         with:
           path: docs/_site
 
-      # Deploy the book's HTML to GitHub Pages
-      - name: Deploy to GitHub Pages
+    #   # Deploy the book's HTML to GitHub Pages
+    #   - name: Deploy to GitHub Pages
+    #     # if: ${{ github.event_name != 'pull_request' }}
+    #     id: deployment
+    #     uses: actions/deploy-pcdages@v2
+
+      - name: Upload to GitHub Pages
         # if: ${{ github.event_name != 'pull_request' }}
-        id: deployment
-        uses: actions/deploy-pages@v2
+        uses: peaceiris/actions-gh-pages@v3.9.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/_site
+        #   keep_files: false
+        #   exclude_assets: .buildinfo,_sources/*,_examples/*.ipynb
+        #   destination_dir: ./${{ env.DOC_VERSION }}
+        #   full_commit_message: Deploy ${{ env.DOC_VERSION }} to GitHub Pages
