@@ -62,7 +62,7 @@ jobs:
           uses: peaceiris/actions-gh-pages@v3.9.3
           with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: ./docs/_site.
+            publish_dir: ./docs/_site
+            destination_dir: ./
             keep_files: false
-            # destination_dir: ./${{ env.DOC_VERSION }}
             # full_commit_message: Deploy ${{ env.DOC_VERSION }} to GitHub Pages
