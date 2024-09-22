@@ -1,0 +1,74 @@
+name: deploy-book
+
+on:
+  # Trigger the workflow on push to main and restructure branch
+  push:
+    branches:
+      - main
+  # Trigger the workflow on pull request to main branch
+  pull_request:
+    branches:
+      - main
+  # manual trigger
+  workflow_dispatch:
+
+
+env:
+  BASE_URL: /${{ github.event.repository.name }}
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy-book:
+    runs-on: ubuntu-latest
+    # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+    # NOTE: this does not seem to work with a private repos but requried for the deployment step?
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Install dependencies
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+          cache: 'pip'
+          cache-dependency-path: 'requirements.txt'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+  
+      # Build the stac
+      - name: Build the STAC
+        run: |
+          python csv_to_stac.py --stac_dir ./docs/_site/stac
+
+      # Build the website
+      - name: Build the website
+        run: |
+            quarto render ./docs --to html
+
+      # Upload the book's HTML as an artifact
+      - name: Upload artifact
+        if: ${{ github.event_name != 'pull_request' }}
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: docs/_site
+
+      # Deploy the book's HTML to GitHub Pages
+      - name: Deploy to GitHub Pages
+        if: ${{ github.event_name != 'pull_request' }}
+        id: deployment
+        uses: actions/deploy-pages@v2

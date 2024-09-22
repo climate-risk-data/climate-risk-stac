@@ -1,0 +1,28 @@
+project:
+  type: website
+
+execute:
+  freeze: auto  # do not execute code chunks by default
+
+website:
+  title: "Climate Risk STAC DataCatalog"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: https://radiantearth.github.io/stac-browser/#/external/https://raw.githubusercontent.com/climate-risk-data/climate-risk-stac/refs/heads/gh-pages/stac/catalog.json
+        text: STAC Browser
+      - about.qmd
+    right:
+      - icon: github
+        href: https://github.com/climate-risk-data/climate-risk-stac
+        aria-label: GitHub
+        
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
