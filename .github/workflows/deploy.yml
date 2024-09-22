@@ -67,19 +67,8 @@ jobs:
         with:
           path: docs/_site
 
-    #   # Deploy the book's HTML to GitHub Pages
-    #   - name: Deploy to GitHub Pages
-    #     # if: ${{ github.event_name != 'pull_request' }}
-    #     id: deployment
-    #     uses: actions/deploy-pcdages@v2
-
-      - name: Upload to GitHub Pages
+      # Deploy the book's HTML to GitHub Pages
+      - name: Deploy to GitHub Pages
         # if: ${{ github.event_name != 'pull_request' }}
-        uses: peaceiris/actions-gh-pages@v3.9.3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/_site
-        #   keep_files: false
-        #   exclude_assets: .buildinfo,_sources/*,_examples/*.ipynb
-        #   destination_dir: ./${{ env.DOC_VERSION }}
-        #   full_commit_message: Deploy ${{ env.DOC_VERSION }} to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
