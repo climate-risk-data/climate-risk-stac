@@ -25,6 +25,8 @@ concurrency:
 jobs:
   build-deploy-docs:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
     # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
     # NOTE: this does not seem to work with a private repos but requried for the deployment step?
     permissions:
