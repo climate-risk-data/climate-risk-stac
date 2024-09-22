@@ -62,13 +62,13 @@ jobs:
 
       # Upload the book's HTML as an artifact
       - name: Upload artifact
-        if: ${{ github.event_name != 'pull_request' }}
+        # if: ${{ github.event_name != 'pull_request' }}
         uses: actions/upload-pages-artifact@v2
         with:
           path: docs/_site
 
       # Deploy the book's HTML to GitHub Pages
       - name: Deploy to GitHub Pages
-        if: ${{ github.event_name != 'pull_request' }}
+        # if: ${{ github.event_name != 'pull_request' }}
         id: deployment
         uses: actions/deploy-pages@v2
