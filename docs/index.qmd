@@ -1,5 +1,5 @@
 ---
-title: "Climate Risk STAC DataCatalog"
+title: "Climate Risk STAC"
 ---
 
 <!-- {{< include ../README.md >}} This doesn't work because of the relative path to images -->

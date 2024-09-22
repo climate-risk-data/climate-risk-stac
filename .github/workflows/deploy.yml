@@ -58,7 +58,7 @@ jobs:
             python csv_to_stac.py --stac_dir ./docs/_site/stac
 
         - name: Upload to GitHub Pages
-        #   if: ${{ github.event_name != 'pull_request' }}
+          if: ${{ github.event_name != 'pull_request' }}
           uses: peaceiris/actions-gh-pages@v3.9.3
           with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
