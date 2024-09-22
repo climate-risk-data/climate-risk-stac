@@ -25,8 +25,6 @@ concurrency:
 jobs:
     build-deploy-docs:
         runs-on: ubuntu-latest
-        environment:
-            name: github-pages
         # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
         # NOTE: this does not seem to work with a private repos but requried for the deployment step?
         permissions:
@@ -64,15 +62,12 @@ jobs:
           run: |
             python csv_to_stac.py --stac_dir ./docs/_site/stac
 
-
-        # Upload the book's HTML as an artifact
-        - name: Upload artifact
-          uses: actions/upload-pages-artifact@v2
-          with:
-            path: docs/_site
-
-        # Deploy the book's HTML to GitHub Pages
-        - name: Deploy to GitHub Pages
+        - name: Upload to GitHub Pages
           if: ${{ github.event_name != 'pull_request' }}
-          id: deployment
-          uses: actions/deploy-pages@v2
+          uses: peaceiris/actions-gh-pages@v3.9.3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./docs/_site.
+            keep_files: false
+            # destination_dir: ./${{ env.DOC_VERSION }}
+            # full_commit_message: Deploy ${{ env.DOC_VERSION }} to GitHub Pages
