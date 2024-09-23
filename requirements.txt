@@ -2,6 +2,7 @@ jupyter
 geopandas
 netcdf4
 pandas
+pydantic
 pystac>=1.10
 rasterio
 shapely

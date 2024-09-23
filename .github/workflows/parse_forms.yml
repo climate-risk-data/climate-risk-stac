@@ -1,0 +1,49 @@
+name: Issue to PR
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  issue_to_pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Install dependencies
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+          cache: 'pip'
+          cache-dependency-path: 'requirements.txt'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run form_to_json
+        run: |
+          echo "${{ github.event.issue.body }}" > issue_content.md
+          python form_to_json.py issue_content.md
+
+      - name: Create new branch
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git checkout -b issue-${{ github.event.issue.number }}
+          git add json
+          git commit -m "Add JSON file for issue #${{ github.event.issue.number }}"
+          git push origin issue-${{ github.event.issue.number }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: issue-${{ github.event.issue.number }}
+          title: "Extend catalog for issue #${{ github.event.issue.number }}"
+          body: "This PR fixes issue #${{ github.event.issue.number }}."
+        #   labels: ["auto-generated"]
