@@ -1,7 +1,12 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
   "id": "Heat index historical",
+  "geometry": null,
   "properties": {
     "title": "Heat index historical",
     "description": "Heat index is a heat stress indicator used by the US National Oceanic and Atmospheric Administration (NOAA) National Weather Service for issuing heat warnings. It is calculated using multiple linear regression based on daily maximum temperature and relative humidity (calculated from daily mean specific humidity and surface pressure).",
@@ -26,7 +31,6 @@
     "sci:doi": "10.24381/cds.776e08bd",
     "datetime": null
   },
-  "geometry": null,
   "links": [
     {
       "rel": "cite-as",
@@ -66,15 +70,5 @@
       ]
     }
   },
-  "bbox": [
-    -180.0,
-    -60.0,
-    180.0,
-    90.0
-  ],
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
-  ],
   "collection": "CMIP6 heat stress indicators (HIS)"
 }

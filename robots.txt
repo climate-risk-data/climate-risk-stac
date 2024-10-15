@@ -1,0 +1,1 @@
+Sitemap: https://climate-risk-data.github.io/climate-risk-stac/sitemap.xml

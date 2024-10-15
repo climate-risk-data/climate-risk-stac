@@ -1,7 +1,11 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
   "id": "Different return periods in 2050",
+  "geometry": null,
   "properties": {
     "title": "Different return periods in 2050",
     "description": "Inundation (m) of coastal floods at 3 arc seconds resolution for 2050 (return periods 0, 2, 5, 10, 25, 50, 100, 250)",
@@ -25,7 +29,6 @@
     "proj:epsg": 4326,
     "datetime": null
   },
-  "geometry": null,
   "links": [
     {
       "rel": "cite-as",
@@ -66,14 +69,5 @@
       ]
     }
   },
-  "bbox": [
-    -180.0,
-    -90.0,
-    180.0,
-    90.0
-  ],
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
-  ],
   "collection": "Deltares Coastal Flood Maps"
 }

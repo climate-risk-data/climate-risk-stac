@@ -1,16 +1,16 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Climate Risk STAC",
+    "section": "",
+    "text": "In this repository, a metadata catalog of datasets for climate risk assessments (CRA) is assembled, implemented in the SpatioTemporal Asset Catalog (STAC) specification and browsable in the STAC browser.\nSTAC Browser: explore the catalog\nThe current version of the catalog includes hazard, exposure and vulnerability datasets, which are grouped into a) climate processes (i.e. hazard) and b) socioeconomic processes (i.e. exposure and vulnerability):\n\n\n\nCatalog structure along the three risk drivers, separated into a) climate processes (i.e. hazard) and b) socioeconomic processes (i.e. exposure and vulnerability)"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Climate Risk STAC DataCatalog",
-    "section": "",
-    "text": "In this repository, a metadata catalog of datasets for climate risk assessments (CRA) is assembled, implemented in the SpatioTemporal Asset Catalog (STAC) specification and browsable in the STAC browser.\nSTAC Browser: explore the catalog\nThe current version of the catalog includes hazard, exposure and vulnerability datasets, which are grouped into a) climate processes (i.e. hazard) and b) socioeconomic processes (i.e. exposure and vulnerability):\n\n\n\nCatalog structure along the three risk drivers, separated into a) climate processes (i.e. hazard) and b) socioeconomic processes (i.e. exposure and vulnerability)"
   }
 ]

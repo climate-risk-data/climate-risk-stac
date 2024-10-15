@@ -1,7 +1,11 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
   "id": "River Discharge Data",
+  "geometry": null,
   "properties": {
     "title": "River Discharge Data",
     "description": "River discharge from in-situ station globaly for 9500 stations. It provides daily, monthly, and long-term statistics",
@@ -25,7 +29,6 @@
     "proj:epsg": 4326,
     "datetime": null
   },
-  "geometry": null,
   "links": [
     {
       "rel": "root",
@@ -56,14 +59,5 @@
       ]
     }
   },
-  "bbox": [
-    -180.0,
-    -90.0,
-    180.0,
-    90.0
-  ],
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
-  ],
   "collection": "Global Runoff Data Centre (GRDC)"
 }

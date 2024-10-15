@@ -1,7 +1,12 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
   "id": "Monthly minimum CMIP 6 future",
+  "geometry": null,
   "properties": {
     "title": "Monthly minimum CMIP 6 future",
     "description": "Monthly minimum of daily minimum near-surface (2 meters) air temperature",
@@ -26,7 +31,6 @@
     "sci:doi": "10.24381/cds.5292a2b0",
     "datetime": null
   },
-  "geometry": null,
   "links": [
     {
       "rel": "cite-as",
@@ -66,15 +70,5 @@
       ]
     }
   },
-  "bbox": [
-    -180.0,
-    -60.0,
-    180.0,
-    90.0
-  ],
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
-  ],
   "collection": "Monthly statistics of daily minimum temperature"
 }

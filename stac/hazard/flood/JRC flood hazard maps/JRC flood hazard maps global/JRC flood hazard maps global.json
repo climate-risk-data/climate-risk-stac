@@ -1,7 +1,12 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
   "id": "JRC flood hazard maps global",
+  "geometry": null,
   "properties": {
     "title": "JRC flood hazard maps global",
     "description": "The datasets included in this collection depict flood prone areas in the World for river flood events of different magnitude, i.e. different six return periods from 1-in-10-year to 1-in-500-year events. The maps have been developed using hydrological and hydrodynamic models, driven by the climatological data of the Global Flood Awareness Systems (GloFAS).",
@@ -26,7 +31,6 @@
     "sci:doi": "10.1016/j.advwatres.2016.05.002",
     "datetime": null
   },
-  "geometry": null,
   "links": [
     {
       "rel": "cite-as",
@@ -101,15 +105,5 @@
       ]
     }
   },
-  "bbox": [
-    -180.0,
-    -90.0,
-    180.0,
-    90.0
-  ],
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
-  ],
   "collection": "JRC flood hazard maps"
 }

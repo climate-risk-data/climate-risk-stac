@@ -1,7 +1,12 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
   "id": "Future tracks",
+  "geometry": null,
   "properties": {
     "title": "Future tracks",
     "description": "Datasets consisting of 10,000 years of synthetic tropical cyclone tracks, generated using the Synthetic Tropical cyclOne geneRation Model (STORM) algorithm under future climate change",
@@ -26,7 +31,6 @@
     "sci:doi": "10.1038/s41597-020-0381-2",
     "datetime": null
   },
-  "geometry": null,
   "links": [
     {
       "rel": "cite-as",
@@ -90,15 +94,5 @@
       ]
     }
   },
-  "bbox": [
-    -180.0,
-    -90.0,
-    180.0,
-    60.0
-  ],
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
-  ],
   "collection": "Synthetic Tropical cyclOne geneRation Model (STORM)"
 }

@@ -1,7 +1,12 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
   "id": "RX5day CMIP6 historical",
+  "geometry": null,
   "properties": {
     "title": "RX5day CMIP6 historical",
     "description": "Highest 5-day precipitation amount",
@@ -26,7 +31,6 @@
     "sci:doi": "10.24381/cds.5292a2b0",
     "datetime": null
   },
-  "geometry": null,
   "links": [
     {
       "rel": "cite-as",
@@ -66,15 +70,5 @@
       ]
     }
   },
-  "bbox": [
-    -180.0,
-    -60.0,
-    180.0,
-    90.0
-  ],
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
-  ],
   "collection": "Monthly maximum of accumulated precipitation"
 }

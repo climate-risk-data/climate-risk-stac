@@ -1,7 +1,12 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
   "id": "GFPLAIN250m ascii",
+  "geometry": null,
   "properties": {
     "title": "GFPLAIN250m ascii",
     "description": "The datasets include the floodplain and floodprone locations at the global level in ascii format",
@@ -26,7 +31,6 @@
     "sci:doi": "10.1038/sdata.2018.309",
     "datetime": null
   },
-  "geometry": null,
   "links": [
     {
       "rel": "cite-as",
@@ -61,15 +65,5 @@
       ]
     }
   },
-  "bbox": [
-    -180.0,
-    -60.0,
-    180.0,
-    60.0
-  ],
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
-  ],
   "collection": "A Global High-resolution Dataset of Earth\u2019s Floodplains (GFPLAIN250m)"
 }
