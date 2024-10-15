@@ -7,7 +7,8 @@ dependencies:
   - jupyter
   - geopandas
   - netcdf4
-  - pystac
+  - pandas
+  - pystac>=1.10
   - python==3.11
   - rasterio
   - shapely

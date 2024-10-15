@@ -1,7 +1,8 @@
 jupyter
 geopandas
 netcdf4
-pystac
+pandas
+pystac>=1.10
 rasterio
 shapely
 xarray

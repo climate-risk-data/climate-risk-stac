@@ -1,0 +1,68 @@
+name: build-deploy-docs
+
+on:
+    # Trigger the workflow on push to main and restructure branch
+    push:
+        branches:
+            - main
+    # Trigger the workflow on pull request to main branch
+    pull_request:
+        branches:
+            - main
+    # manual trigger
+    workflow_dispatch:
+
+
+env:
+    BASE_URL: /${{ github.event.repository.name }}
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+    group: "pages"
+    cancel-in-progress: false
+
+jobs:
+    build-deploy-docs:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
+        
+        # Install dependencies
+        - name: Set up Python 3.11
+          uses: actions/setup-python@v5
+          with:
+            python-version: 3.11
+            cache: 'pip'
+            cache-dependency-path: 'requirements.txt'
+
+        # install dependencies required to build the STAC
+        - name: Install dependencies
+          run: |
+            pip install -r requirements.txt
+
+        # install quarto
+        - name: Set up Quarto
+          uses: quarto-dev/quarto-actions/setup@v2
+
+        # Build the website using quarto
+        - name: Build the website
+          run: |
+            quarto render ./docs --to html
+
+        # Build the STAC catalog from csv files
+        - name: Build the STAC
+          run: |
+            python csv_to_stac.py --stac_dir ./docs/_site/stac
+
+        - name: Upload to GitHub Pages
+          if: ${{ github.event_name != 'pull_request' }}
+          uses: peaceiris/actions-gh-pages@v3.9.3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./docs/_site
+            destination_dir: ./
+            keep_files: false
+            # full_commit_message: Deploy ${{ env.DOC_VERSION }} to GitHub Pages
