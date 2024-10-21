@@ -361,7 +361,7 @@ def update_catalog_from_dataframe(
             for asset in assets:
                 # Determine the media type based on the format attribute
                 media_type = format_to_media_type.get(
-                    format.lower(), "format unknown"
+                    data_format.lower(), "format unknown"
                 )  # Default to None
                 logger.info(f"media type defined as: {media_type}")
                 # Define the asset
