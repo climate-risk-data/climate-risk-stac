@@ -33,24 +33,21 @@ def create_catalog() -> pystac.Catalog:
     catalog_main = pystac.Catalog(
         id="climate-risk-data",
         title="Climate Risk Data",
-        description="This is a community catalog containing datasets for the three risk drivers Hazard, Exposure, and Vulnerability. The catalog in its current form conforms with the risk framework of the IPCC's 5th and 6th Assessment Reports (AR5, AR6) where risk results from the interaction of hazards, the elements exposed to these hazards as well as the vulnerability of the exposed elements (see 'Catalog structure' for an overview figure). The first version of the catalog (released in XXXX) focusses on global-scale datasets that can be used as input in climate risk assessments (CRA) with as little preprocessing as possible. It has been developed as part of the Horizon Europe project CLIMAAX, which [add further details here] (see 'Link to CLIMAAX Climate Risk Assessment handbook'). The development of the catalog is described in detail in the referenced publication (see 'Peer-reviewed publication'). The catalog is designed to be a community-led endeavor. We therefore encourage risk data users to add datasets to this catalog, thereby creating a growing knowledge base for potential users. Please use the data submission form on GitHub Issues (see 'Submit a new dataset') to suggest new datasets.",
-    )
-
+        description="This is a community catalog containing datasets for the three risk drivers Hazard, Exposure, and Vulnerability. This first version of the catalog (released XXXX) focusses on global-scale datasets that can be used as input in climate risk assessments (CRA). We provide detailed documentation on how to navigate the catalog, including a user guide (see 'Catalog documentation'). The development of the catalog is described in detail in the referenced publication (see 'Peer-reviewed publication'). As the catalog is designed to be a community-led endeavor, we encourage risk data users to add datasets to this catalog, thereby creating a growing knowledge base for potential users. New datasets can be submitted via GitHub (see 'Submit a new dataset').",
+        )
+    
     # Create catalog links
-    # link to catalog structure figure
-    figure_link = pystac.Link(
-        rel=pystac.RelType.VIA,  # if not working, try "cite-as"
-        target="https://github.com/climate-risk-data/climate-risk-stac/blob/main/README.rst",
-        media_type=pystac.MediaType.PNG,  # the type of resource the link points to
-        title="Catalog structure",
-    )  # a human-readable title for the link
+    documentation_link = pystac.Link(
+        rel=pystac.RelType.VIA,
+        target="https://climate-risk-data.github.io/climate-risk-stac/",
+        title="Catalog documentation",
+    )
     # Add the link to the catalog
-    catalog_main.add_link(figure_link)
+    catalog_main.add_link(documentation_link)
 
     publication_link = pystac.Link(
         rel=pystac.RelType.VIA,
         target="https://doi.org/XXXXXXX",
-        media_type=pystac.MediaType.PNG,
         title="Peer-reviewed publication (will be added once published)",
     )
     # Add the link to the catalog
@@ -63,15 +60,6 @@ def create_catalog() -> pystac.Catalog:
     )
     # Add the link to the catalog
     catalog_main.add_link(github_link)
-
-    # link to climaax handbook
-    handbook_link = pystac.Link(
-        rel=pystac.RelType.VIA,
-        target="https://handbook.climaax.eu",
-        title="CLIMAAX Climate Risk Assessment handbook",
-    )
-    # Add the link to the catalog
-    catalog_main.add_link(handbook_link)
 
     return catalog_main
 
