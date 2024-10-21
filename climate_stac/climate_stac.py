@@ -107,7 +107,7 @@ def update_catalog_from_dataframe(
         bbox_list = [float(coord.strip()) for coord in bbox.split(",")]
 
         # Process temporal resolution (needed for collections and items)
-        start, end = parse_year_range(str(item["temporal_resolution"]))
+        start, end = parse_year_range(str(item["temporal_coverage"]))
 
         ## COLLECTIONS ##
         # combine title and short title
@@ -122,10 +122,10 @@ def update_catalog_from_dataframe(
 
         # make provider
         provider = pystac.Provider(
-            name=item["provider"],
+            name=item["provider_name"],
             # description= 'test test',
             roles=[pystac.ProviderRole(item["provider_role"])],
-            url=item["link_website"],
+            url=item["data_overview_link"],
         )
 
         # Create or retrieve the collection
@@ -230,10 +230,10 @@ def update_catalog_from_dataframe(
         # Create new item if not present yet
         if item["title_item"] not in [col.id for col in collection.get_items()]:
             # define item attributes that can deviate per item
-            temporal_resolution = (
-                f"{item['temporal_resolution']} ({item['temporal_interval']})"
+            temporal_coverage = (
+                f"{item['temporal_coverage']} ({item['temporal_interval']})"
                 if np.nan_to_num(item["temporal_interval"])
-                else f"{item['temporal_resolution']}"
+                else f"{item['temporal_coverage']}"
             )
             scenarios = item["scenarios"] if np.nan_to_num(item["scenarios"]) else None
             analysis_type = (
@@ -252,7 +252,7 @@ def update_catalog_from_dataframe(
             usage_notes = (
                 item["usage_notes"] if np.nan_to_num(item["usage_notes"]) else None
             )
-            format = item["format"] if np.nan_to_num(item["format"]) else "unknown"
+            data_format = item["data_format"] if np.nan_to_num(item["data_format"]) else "unknown"
 
             # condition for spatial resolution
             if np.nan_to_num(item["spatial_resolution_unit"]):
@@ -286,12 +286,12 @@ def update_catalog_from_dataframe(
                     "subcategory": item["subcategory"],
                     "spatial scale": item["spatial_scale"],
                     "reference period": item["reference_period"],
-                    "temporal resolution": temporal_resolution,  # combination of resolution and interval
+                    "temporal coverage": temporal_coverage,  # combination of resolution and interval
                     "scenarios": scenarios,
                     "data type": item["data_type"],
-                    "data format": format,
+                    "data format": data_format,
                     "spatial resolution": spatial_resolution,  # combination of resolution and unit
-                    "data calculation type": item["data_calculation_type"],
+                    "source type": item["source_type"],
                     "analysis type": analysis_type,
                     "underlying data": underlying_data,
                     "publication type": publication,
@@ -307,7 +307,7 @@ def update_catalog_from_dataframe(
             # add projection extension
             proj_ext = ProjectionExtension.ext(item_stac, add_if_missing=True)
             # Add projection properties
-            proj_ext.epsg = int(item["coordinate_system"])
+            proj_ext.epsg = int(item["coordinate_reference_system"])
 
             # Publication: Add scientific extension if DOI is present
             if str(item["publication_link"]).startswith("10."):
@@ -344,15 +344,15 @@ def update_catalog_from_dataframe(
 
             # ADD ASSETS
             # establish the number of assets
-            asset_str = item["assets"]
+            asset_str = item["asset_links"]
             if np.nan_to_num(asset_str):
                 logger.info("at least one asset provided; use asset link")
-                assets = asset_str.split(";") if ";" in asset_str else [asset_str]
+                assets = asset_str.split(" ") if " " in asset_str else [asset_str]
                 roles = ["data"]
                 # description = "data download"
             else:
-                logger.info("no assets provided; use website link instead")
-                assets = [item["link_website"]]  # change here once asset link updated
+                logger.info("no assets provided; use data overview link instead")
+                assets = [item["data_overview_link"]]  # change here once asset link updated
                 roles = ["overview"]
                 # description = "overview page"
 
