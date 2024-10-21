@@ -147,10 +147,10 @@ body:
       required: true
 
   - type: input
-    id: temporal-resolution
+    id: temporal-coverage
     attributes:
-      description: Temporal resolution of the data in format YYYY, YYYY-YYYY or YYYY-now (if data are updated in real time)
-      label: Temporal resolution
+      description: Temporal coverage of the data in years (i.e. YYYY for one time step; YYYY-YYYY for time series; YYYY-now if data are updated in real time)
+      label: Temporal coverage
       placeholder: ex. 2021
     validations:
       required: true
@@ -159,7 +159,7 @@ body:
     id: temporal-interval
     attributes:
       label: Temporal interval
-      description: Temporal intervals that the data are available in (optional)
+      description: Time steps that the data are reported in (optional)
       options:
         - hourly
         - 3-hourly
@@ -195,7 +195,7 @@ body:
     id: data-type
     attributes:
       label: Data type
-      description: Data type of the dataset (if more than one available, please submit a new item)
+      description: Geospatial data type of the dataset (if more than one available, please submit a new item)
       options:
         - raster
         - vector
@@ -204,10 +204,10 @@ body:
       required: true
 
   - type: dropdown
-    id: format
+    id: data-format
     attributes:
       label: Data format
-      description: Data format of the dataset (if more than one available, please submit a new item)
+      description: Geospatial data format of the dataset (if more than one available, please submit a new item)
       options:
         - geotiff
         - netcdf
@@ -259,22 +259,21 @@ body:
         - admin3
 
   - type: input
-    id: coordinate-system
+    id: coordinate-reference-system
     attributes:
-      label: Coordinate system
+      label: Coordinate reference system
       description: Numerical code (e.g. EPSG, ESRI code) of the coordinate reference system (CRS) (e.g. 4326, 54009) (if more than one available, please submit a new item)
       placeholder: ex. 4326
     validations:
       required: true
   
   - type: dropdown
-    id: data-calculation-type
+    id: source-type
     attributes:
-      label: Data calculation type
-      description: Method used for data calculation
+      label: Source type
+      description: Indicates whether the data is directly observed from real-world measurements or generated through modeling or simulations (i.e. observed, modeled)
       options:
         - observed
-        - inferred
         - modeled
     validations:
       required: true
@@ -283,7 +282,7 @@ body:
     id: analysis-type
     attributes:
       label: Analysis type
-      description: Method used for calculating the data (optional)
+      description: Method used to generate the data (optional)
       placeholder: ex. equal weighting
 
   - type: input
@@ -294,9 +293,9 @@ body:
       placeholder: ex. Open Street Map (OSM)
 
   - type: input
-    id: provider
+    id: provider-name
     attributes:
-      label: Provider
+      label: Provider name
       description: Name of data provider
       placeholder: ex. Zenodo
     validations:
@@ -346,10 +345,10 @@ body:
       placeholder: Enter new data license
 
   - type: input
-    id: link-website
+    id: data_overview-link
     attributes:
-      label: Link website
-      description: URL of the website where the data can be accessed
+      label: Data overview link
+      description: URL to website where the dataset is described and can be accessed
       placeholder: ex. https://zenodo.org/records/4957647
     validations:
       required: true
@@ -360,7 +359,6 @@ body:
       label: Publication link
       description: Link to publication; DOI if available, starting with '10.' (optional)
       placeholder: ex. 10.1038/s41597-022-01218-4
-
 
   - type: dropdown
     id: publication-type
@@ -399,10 +397,10 @@ body:
       placeholder: ex. The CISI is developed from OSM data and its spatial coverage depends on the completeness of OSM records.
 
   - type: input
-    id: assets
+    id: asset-links
     attributes:
-      label: Assets
-      description: Links to specific data files or data download page (separated with ';')
+      label: Asset links
+      description: URL to specific data files or download page (separated with ‘ ‘)
       placeholder: ex. https://zenodo.org/records/4957647/files/CISI.zip?download=1
     validations:
       required: true
