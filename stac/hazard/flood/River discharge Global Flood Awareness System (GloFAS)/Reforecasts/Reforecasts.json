@@ -14,12 +14,12 @@
     "subcategory": "fluvial flood",
     "spatial scale": "(near-)global",
     "reference period": "historical",
-    "temporal resolution": "2003-2022 (daily)",
+    "temporal coverage": "2003-2022 (daily)",
     "scenarios": null,
     "data type": "raster",
     "data format": "GRIB2",
     "spatial resolution": "0.05 decimal degrees",
-    "data calculation type": "modeled",
+    "source type": "modeled",
     "analysis type": "probabilistic",
     "underlying data": "ECMWF-ENS",
     "publication type": "dataset (see DOI)",
@@ -57,7 +57,7 @@
   ],
   "assets": {
     "data-file_1": {
-      "href": "https://cds.climate.copernicus.eu/cdsapp#!/search?type=dataset&text=glofas",
+      "href": "https://doi.org/10.24381/cds.2d78664e",
       "type": "application/grib2",
       "title": "Data Link 1",
       "roles": [

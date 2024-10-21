@@ -102,7 +102,7 @@
       "roles": [
         "host"
       ],
-      "url": "https://cds-beta.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=overview"
+      "url": "https://doi.org/10.24381/cds.776e08bd"
     }
   ]
 }

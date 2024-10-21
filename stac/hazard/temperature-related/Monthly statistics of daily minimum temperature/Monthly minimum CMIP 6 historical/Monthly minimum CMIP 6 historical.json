@@ -14,12 +14,12 @@
     "subcategory": "cold wave",
     "spatial scale": "(near-)global",
     "reference period": "historical",
-    "temporal resolution": "1850-2014 (monthly)",
+    "temporal coverage": "1850-2014 (monthly)",
     "scenarios": null,
     "data type": "raster",
     "data format": "netcdf",
     "spatial resolution": "1 decimal degrees",
-    "data calculation type": "inferred",
+    "source type": "modeled",
     "analysis type": "deterministic",
     "underlying data": "CMIP6",
     "publication type": "dataset (see DOI)",
@@ -62,7 +62,7 @@
   ],
   "assets": {
     "data-file_1": {
-      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-climate-atlas?tab=overview",
+      "href": "https://doi.org/10.24381/cds.5292a2b0",
       "type": "application/x-netcdf",
       "title": "Data Link 1",
       "roles": [

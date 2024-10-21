@@ -14,12 +14,12 @@
     "subcategory": "pluvial flood",
     "spatial scale": "(near-)global",
     "reference period": "historical",
-    "temporal resolution": "1850-2005 (monthly)",
+    "temporal coverage": "1850-2005 (monthly)",
     "scenarios": null,
     "data type": "raster",
     "data format": "netcdf",
     "spatial resolution": "2 decimal degrees",
-    "data calculation type": "modeled",
+    "source type": "modeled",
     "analysis type": "deterministic",
     "underlying data": "CMIP5",
     "publication type": "dataset (see DOI)",
@@ -62,7 +62,7 @@
   ],
   "assets": {
     "data-file_1": {
-      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-climate-atlas",
+      "href": "https://doi.org/10.24381/cds.5292a2b0",
       "type": "application/x-netcdf",
       "title": "Data Link 1",
       "roles": [

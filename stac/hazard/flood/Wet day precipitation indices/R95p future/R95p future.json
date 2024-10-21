@@ -14,12 +14,12 @@
     "subcategory": "pluvial flood",
     "spatial scale": "(near-)global",
     "reference period": "future",
-    "temporal resolution": "2015-2300 (yearly)",
+    "temporal coverage": "2015-2300 (yearly)",
     "scenarios": "SSP-RCP combinations",
     "data type": "raster",
     "data format": "netcdf",
     "spatial resolution": "0.5 decimal degrees",
-    "data calculation type": "modeled",
+    "source type": "modeled",
     "analysis type": "deterministic",
     "underlying data": "CMIP6",
     "publication type": "dataset (see DOI)",
@@ -62,7 +62,7 @@
   ],
   "assets": {
     "data-file_1": {
-      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-extreme-indices-cmip6",
+      "href": "https://doi.org/10.24381/cds.776e08bd",
       "type": "application/x-netcdf",
       "title": "Data Link 1",
       "roles": [

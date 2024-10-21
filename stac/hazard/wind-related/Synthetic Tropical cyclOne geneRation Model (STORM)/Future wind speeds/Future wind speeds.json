@@ -14,12 +14,12 @@
     "subcategory": "tropical cyclone",
     "spatial scale": "(near-)global",
     "reference period": "future",
-    "temporal resolution": "2015-2050",
+    "temporal coverage": "2015-2050",
     "scenarios": "SSP-RCP combinations",
     "data type": "raster",
     "data format": "geotiff",
     "spatial resolution": "0.1 decimal degrees",
-    "data calculation type": "modeled",
+    "source type": "modeled",
     "analysis type": "probabilistic",
     "underlying data": "IBTrACS",
     "publication type": "article (see DOI)",
@@ -134,9 +134,65 @@
       ]
     },
     "data-file_10": {
-      "href": "climate change tropical cyclone wind speed return periods",
+      "href": "climate",
       "type": "image/tiff; application=geotiff",
       "title": "Data Link 10",
+      "roles": [
+        "data"
+      ]
+    },
+    "data-file_11": {
+      "href": "change",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data Link 11",
+      "roles": [
+        "data"
+      ]
+    },
+    "data-file_12": {
+      "href": "tropical",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data Link 12",
+      "roles": [
+        "data"
+      ]
+    },
+    "data-file_13": {
+      "href": "cyclone",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data Link 13",
+      "roles": [
+        "data"
+      ]
+    },
+    "data-file_14": {
+      "href": "wind",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data Link 14",
+      "roles": [
+        "data"
+      ]
+    },
+    "data-file_15": {
+      "href": "speed",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data Link 15",
+      "roles": [
+        "data"
+      ]
+    },
+    "data-file_16": {
+      "href": "return",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data Link 16",
+      "roles": [
+        "data"
+      ]
+    },
+    "data-file_17": {
+      "href": "periods",
+      "type": "image/tiff; application=geotiff",
+      "title": "Data Link 17",
       "roles": [
         "data"
       ]

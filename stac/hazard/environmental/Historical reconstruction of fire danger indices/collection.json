@@ -53,7 +53,7 @@
       "interval": [
         [
           "1940-01-01T00:00:00Z",
-          "2024-10-15T00:00:00Z"
+          "2024-10-21T00:00:00Z"
         ]
       ]
     }
@@ -70,7 +70,7 @@
       "roles": [
         "producer"
       ],
-      "url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.0e89c522?tab=overview"
+      "url": "https://doi.org/10.24381/cds.0e89c522"
     }
   ]
 }

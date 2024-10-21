@@ -92,7 +92,7 @@
       "roles": [
         "host"
       ],
-      "url": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/projections-climate-atlas?tab=overview"
+      "url": "https://doi.org/10.24381/cds.5292a2b0"
     }
   ]
 }
