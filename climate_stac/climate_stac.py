@@ -33,24 +33,21 @@ def create_catalog() -> pystac.Catalog:
     catalog_main = pystac.Catalog(
         id="climate-risk-data",
         title="Climate Risk Data",
-        description="This is a community catalog containing datasets for the three risk drivers Hazard, Exposure, and Vulnerability. The catalog in its current form conforms with the risk framework of the IPCC's 5th and 6th Assessment Reports (AR5, AR6) where risk results from the interaction of hazards, the elements exposed to these hazards as well as the vulnerability of the exposed elements (see 'Catalog structure' for an overview figure). The first version of the catalog (released in XXXX) focusses on global-scale datasets that can be used as input in climate risk assessments (CRA) with as little preprocessing as possible. It has been developed as part of the Horizon Europe project CLIMAAX, which [add further details here] (see 'Link to CLIMAAX Climate Risk Assessment handbook'). The development of the catalog is described in detail in the referenced publication (see 'Peer-reviewed publication'). The catalog is designed to be a community-led endeavor. We therefore encourage risk data users to add datasets to this catalog, thereby creating a growing knowledge base for potential users. Please use the data submission form on GitHub Issues (see 'Submit a new dataset') to suggest new datasets.",
-    )
-
+        description="This is a community catalog containing datasets for the three risk drivers Hazard, Exposure, and Vulnerability. This first version of the catalog (released XXXX) focusses on global-scale datasets that can be used as input in climate risk assessments (CRA). We provide detailed documentation on how to navigate the catalog, including a user guide (see 'Catalog documentation'). The development of the catalog is described in detail in the referenced publication (see 'Peer-reviewed publication'). As the catalog is designed to be a community-led endeavor, we encourage risk data users to add datasets to this catalog, thereby creating a growing knowledge base for potential users. New datasets can be submitted via GitHub (see 'Submit a new dataset').",
+        )
+    
     # Create catalog links
-    # link to catalog structure figure
-    figure_link = pystac.Link(
-        rel=pystac.RelType.VIA,  # if not working, try "cite-as"
-        target="https://github.com/climate-risk-data/climate-risk-stac/blob/main/README.rst",
-        media_type=pystac.MediaType.PNG,  # the type of resource the link points to
-        title="Catalog structure",
-    )  # a human-readable title for the link
+    documentation_link = pystac.Link(
+        rel=pystac.RelType.VIA,
+        target="https://climate-risk-data.github.io/climate-risk-stac/",
+        title="Catalog documentation",
+    )
     # Add the link to the catalog
-    catalog_main.add_link(figure_link)
+    catalog_main.add_link(documentation_link)
 
     publication_link = pystac.Link(
         rel=pystac.RelType.VIA,
         target="https://doi.org/XXXXXXX",
-        media_type=pystac.MediaType.PNG,
         title="Peer-reviewed publication (will be added once published)",
     )
     # Add the link to the catalog
@@ -63,15 +60,6 @@ def create_catalog() -> pystac.Catalog:
     )
     # Add the link to the catalog
     catalog_main.add_link(github_link)
-
-    # link to climaax handbook
-    handbook_link = pystac.Link(
-        rel=pystac.RelType.VIA,
-        target="https://handbook.climaax.eu",
-        title="CLIMAAX Climate Risk Assessment handbook",
-    )
-    # Add the link to the catalog
-    catalog_main.add_link(handbook_link)
 
     return catalog_main
 
@@ -119,7 +107,7 @@ def update_catalog_from_dataframe(
         bbox_list = [float(coord.strip()) for coord in bbox.split(",")]
 
         # Process temporal resolution (needed for collections and items)
-        start, end = parse_year_range(str(item["temporal_resolution"]))
+        start, end = parse_year_range(str(item["temporal_coverage"]))
 
         ## COLLECTIONS ##
         # combine title and short title
@@ -134,10 +122,10 @@ def update_catalog_from_dataframe(
 
         # make provider
         provider = pystac.Provider(
-            name=item["provider"],
+            name=item["provider_name"],
             # description= 'test test',
             roles=[pystac.ProviderRole(item["provider_role"])],
-            url=item["link_website"],
+            url=item["data_overview_link"],
         )
 
         # Create or retrieve the collection
@@ -242,10 +230,10 @@ def update_catalog_from_dataframe(
         # Create new item if not present yet
         if item["title_item"] not in [col.id for col in collection.get_items()]:
             # define item attributes that can deviate per item
-            temporal_resolution = (
-                f"{item['temporal_resolution']} ({item['temporal_interval']})"
+            temporal_coverage = (
+                f"{item['temporal_coverage']} ({item['temporal_interval']})"
                 if np.nan_to_num(item["temporal_interval"])
-                else f"{item['temporal_resolution']}"
+                else f"{item['temporal_coverage']}"
             )
             scenarios = item["scenarios"] if np.nan_to_num(item["scenarios"]) else None
             analysis_type = (
@@ -264,7 +252,7 @@ def update_catalog_from_dataframe(
             usage_notes = (
                 item["usage_notes"] if np.nan_to_num(item["usage_notes"]) else None
             )
-            format = item["format"] if np.nan_to_num(item["format"]) else "unknown"
+            data_format = item["data_format"] if np.nan_to_num(item["data_format"]) else "unknown"
 
             # condition for spatial resolution
             if np.nan_to_num(item["spatial_resolution_unit"]):
@@ -298,12 +286,12 @@ def update_catalog_from_dataframe(
                     "subcategory": item["subcategory"],
                     "spatial scale": item["spatial_scale"],
                     "reference period": item["reference_period"],
-                    "temporal resolution": temporal_resolution,  # combination of resolution and interval
+                    "temporal coverage": temporal_coverage,  # combination of resolution and interval
                     "scenarios": scenarios,
                     "data type": item["data_type"],
-                    "data format": format,
+                    "data format": data_format,
                     "spatial resolution": spatial_resolution,  # combination of resolution and unit
-                    "data calculation type": item["data_calculation_type"],
+                    "source type": item["source_type"],
                     "analysis type": analysis_type,
                     "underlying data": underlying_data,
                     "publication type": publication,
@@ -319,7 +307,7 @@ def update_catalog_from_dataframe(
             # add projection extension
             proj_ext = ProjectionExtension.ext(item_stac, add_if_missing=True)
             # Add projection properties
-            proj_ext.epsg = int(item["coordinate_system"])
+            proj_ext.epsg = int(item["coordinate_reference_system"])
 
             # Publication: Add scientific extension if DOI is present
             if str(item["publication_link"]).startswith("10."):
@@ -356,15 +344,15 @@ def update_catalog_from_dataframe(
 
             # ADD ASSETS
             # establish the number of assets
-            asset_str = item["assets"]
+            asset_str = item["asset_links"]
             if np.nan_to_num(asset_str):
                 logger.info("at least one asset provided; use asset link")
-                assets = asset_str.split(";") if ";" in asset_str else [asset_str]
+                assets = asset_str.split(" ") if " " in asset_str else [asset_str]
                 roles = ["data"]
                 # description = "data download"
             else:
-                logger.info("no assets provided; use website link instead")
-                assets = [item["link_website"]]  # change here once asset link updated
+                logger.info("no assets provided; use data overview link instead")
+                assets = [item["data_overview_link"]]  # change here once asset link updated
                 roles = ["overview"]
                 # description = "overview page"
 
@@ -373,7 +361,7 @@ def update_catalog_from_dataframe(
             for asset in assets:
                 # Determine the media type based on the format attribute
                 media_type = format_to_media_type.get(
-                    format.lower(), "format unknown"
+                    data_format.lower(), "format unknown"
                 )  # Default to None
                 logger.info(f"media type defined as: {media_type}")
                 # Define the asset
