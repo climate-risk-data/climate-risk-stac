@@ -116,9 +116,9 @@ def update_keywords(ext_key, keywords, categories):
     new_key = set(ext_key) | set(keywords)
 
     # Check for the presence of 'historical & future'
-    if 'historical & future' in new_key:
-        new_key.update(['historical', 'future'])
-        new_key.discard('historical & future')
+    # if 'historical & future' in new_key:
+    #     new_key.update(['historical', 'future'])
+    #     new_key.discard('historical & future')
 
     # Sort the keywords based on categories
     sorted_keywords = []
