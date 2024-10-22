@@ -5,6 +5,7 @@ from pystac.extensions.scientific import ScientificExtension
 from pystac.extensions.projection import ProjectionExtension
 import pandas as pd
 from datetime import datetime
+from shapely.geometry import Polygon, mapping
 import numpy as np
 import logging
 
@@ -271,10 +272,19 @@ def update_catalog_from_dataframe(
             else:
                 publication = None
 
+            # create geometry from bbox_list
+            footprint_polygon = Polygon([
+                [bbox_list[0], bbox_list[1]],  # (min_lon, min_lat)
+                [bbox_list[2], bbox_list[1]],  # (max_lon, min_lat)
+                [bbox_list[2], bbox_list[3]],  # (max_lon, max_lat)
+                [bbox_list[0], bbox_list[3]],  # (min_lon, max_lat)
+                [bbox_list[0], bbox_list[1]]   # Close the polygon
+                ])
+
             # Create basic item
             item_stac = pystac.Item(
                 id=item["title_item"],
-                geometry=None,  # Add geometry if available
+                geometry=mapping(footprint_polygon),
                 bbox=bbox_list,
                 datetime=None,  # datetime.now(),
                 start_datetime=start,
