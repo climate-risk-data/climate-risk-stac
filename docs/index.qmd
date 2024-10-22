@@ -9,6 +9,6 @@ We provide a metadata catalog of geospatial datasets for climate risk assessment
 STAC Browser: 
 [explore the catalog](https://radiantearth.github.io/stac-browser/#/external/https://raw.githubusercontent.com/climate-risk-data/climate-risk-stac/refs/heads/gh-pages/stac/catalog.json)
 
-The urrent version of the catalog includes hazard, exposure and vulnerability datasets, which are grouped into a) climate processes (i.e. hazard) and b) socioeconomic processes (i.e. exposure and vulnerability): 
+The current version of the catalog includes hazard, exposure and vulnerability datasets, which are grouped into a) climate processes (i.e. hazard) and b) socioeconomic processes (i.e. exposure and vulnerability): 
 
 ![Catalog structure along the three risk drivers, separated into a) climate processes (i.e. hazard) and b) socioeconomic processes (i.e. exposure and vulnerability)](./images/classification.png)
