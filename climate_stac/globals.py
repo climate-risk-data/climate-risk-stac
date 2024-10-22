@@ -54,5 +54,6 @@ cat_keywords = {
     ],
     "spatial_scale": ["(near-)global", "regional", "national", "subnational"],
     "reference_period": ["historical", "future", "historical & future"],
+    "source_type": ["observed", "modeled"],
     "code": ["code available"],
 }
