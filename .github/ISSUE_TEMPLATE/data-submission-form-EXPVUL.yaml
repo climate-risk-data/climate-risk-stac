@@ -345,7 +345,7 @@ body:
       placeholder: Enter new data license
 
   - type: input
-    id: data_overview-link
+    id: data-overview-link
     attributes:
       label: Data overview link
       description: URL to website where the dataset is described and can be accessed
@@ -400,7 +400,7 @@ body:
     id: asset-links
     attributes:
       label: Asset links
-      description: URL to specific data files or download page (separated with ‘ ‘)
+      description: URL to specific data files or download page (separated with ' ')
       placeholder: ex. https://zenodo.org/records/4957647/files/CISI.zip?download=1
     validations:
       required: true
