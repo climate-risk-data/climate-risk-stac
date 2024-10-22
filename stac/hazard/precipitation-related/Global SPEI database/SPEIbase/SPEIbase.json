@@ -6,7 +6,39 @@
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ],
   "id": "SPEIbase",
-  "geometry": null,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
   "properties": {
     "title": "SPEIbase",
     "description": "The SPEIbase is based on the FAO-56 Penman-Monteith estimation of potential evapotranspiration. This is a major difference with respect to the SPEI Global Drought Monitor, that uses the Thornthwaite PET estimation.",

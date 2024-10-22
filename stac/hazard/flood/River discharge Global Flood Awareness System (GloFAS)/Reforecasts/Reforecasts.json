@@ -6,7 +6,39 @@
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ],
   "id": "Reforecasts",
-  "geometry": null,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -60.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    90.0
+  ],
   "properties": {
     "title": "Reforecasts",
     "description": "This dataset provides a gridded modelled time series of river discharge, forced with medium- to sub-seasonal range meteorological reforecasts. The data is a consistent representation of a key hydrological variable across the global domain, and is a product of the Global Flood Awareness System (GloFAS).",

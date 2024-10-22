@@ -6,7 +6,39 @@
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ],
   "id": "GIEMS 0.25 decimal degrees",
-  "geometry": null,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -85.0
+        ],
+        [
+          180.0,
+          -85.0
+        ],
+        [
+          180.0,
+          85.0
+        ],
+        [
+          -180.0,
+          85.0
+        ],
+        [
+          -180.0,
+          -85.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -85.0,
+    180.0,
+    85.0
+  ],
   "properties": {
     "title": "GIEMS 0.25 decimal degrees",
     "description": "GIEMS at 0.25 decimal degrees spatial resolution",

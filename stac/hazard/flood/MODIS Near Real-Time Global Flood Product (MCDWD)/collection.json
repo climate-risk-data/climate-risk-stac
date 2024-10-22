@@ -48,7 +48,7 @@
       "interval": [
         [
           "2021-01-01T00:00:00Z",
-          "2024-10-21T00:00:00Z"
+          "2024-10-22T00:00:00Z"
         ]
       ]
     }
@@ -59,7 +59,8 @@
     "fluvial flood",
     "pluvial flood",
     "(near-)global",
-    "historical"
+    "historical",
+    "modeled"
   ],
   "providers": [
     {

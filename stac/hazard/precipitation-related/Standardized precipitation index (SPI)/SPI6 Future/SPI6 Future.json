@@ -6,7 +6,39 @@
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ],
   "id": "SPI6 Future",
-  "geometry": null,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -60.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    90.0
+  ],
   "properties": {
     "title": "SPI6 Future",
     "description": "6-Month Standardized Precipitation Index 2006-2100",

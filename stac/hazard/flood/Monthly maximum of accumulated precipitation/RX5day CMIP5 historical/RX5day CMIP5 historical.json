@@ -6,7 +6,39 @@
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ],
   "id": "RX5day CMIP5 historical",
-  "geometry": null,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -60.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    90.0
+  ],
   "properties": {
     "title": "RX5day CMIP5 historical",
     "description": "Highest 5-day precipitation amount",

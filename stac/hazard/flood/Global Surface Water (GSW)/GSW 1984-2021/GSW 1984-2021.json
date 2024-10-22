@@ -6,7 +6,39 @@
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ],
   "id": "GSW 1984-2021",
-  "geometry": null,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -56.0
+        ],
+        [
+          180.0,
+          -56.0
+        ],
+        [
+          180.0,
+          78.0
+        ],
+        [
+          -180.0,
+          78.0
+        ],
+        [
+          -180.0,
+          -56.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -56.0,
+    180.0,
+    78.0
+  ],
   "properties": {
     "title": "GSW 1984-2021",
     "description": "The dataset includes the occurrence, seasonality, recurrence, transitions, and maximum water extent for different temporal moment at global scale",

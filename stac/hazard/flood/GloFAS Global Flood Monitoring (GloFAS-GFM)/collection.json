@@ -43,7 +43,7 @@
       "interval": [
         [
           "2015-01-01T00:00:00Z",
-          "2024-10-21T00:00:00Z"
+          "2024-10-22T00:00:00Z"
         ]
       ]
     }
@@ -52,7 +52,8 @@
   "keywords": [
     "fluvial flood",
     "(near-)global",
-    "historical"
+    "historical",
+    "observed"
   ],
   "providers": [
     {

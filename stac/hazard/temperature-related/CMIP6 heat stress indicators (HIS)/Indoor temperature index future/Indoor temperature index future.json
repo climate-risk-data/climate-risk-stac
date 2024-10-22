@@ -6,7 +6,39 @@
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ],
   "id": "Indoor temperature index future",
-  "geometry": null,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -60.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    90.0
+  ],
   "properties": {
     "title": "Indoor temperature index future",
     "description": "Indoor wet-bulb globe temperature is a heat stress indicator that is calculated as weighted mean of wet-bulb temperature, globe temperature, and daily maximum temperature. In the present dataset, the influence of solar radiation and wind speed is not considered and wet-bulb globe temperature is calculated as weighted mean of wet-bulb temperature and daily maximum temperature (neglecting globe temperature). It thus represents indoor conditions.",

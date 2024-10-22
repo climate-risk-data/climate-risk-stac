@@ -6,7 +6,39 @@
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ],
   "id": "Wet-bulb temperature index  future",
-  "geometry": null,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -60.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    90.0
+  ],
   "properties": {
     "title": "Wet-bulb temperature index  future",
     "description": "The wet-bulb temperature index is a heat stress indicator that indicates the human cooling capacity through sweating. It is calculated from the equivalent potential temperature based on daily maximum temperature and water vapour mixing ratio (calculated from daily mean specific humidity and surface pressure).",

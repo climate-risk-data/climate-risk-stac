@@ -6,7 +6,39 @@
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ],
   "id": "Future wind speeds",
-  "geometry": null,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          60.0
+        ],
+        [
+          -180.0,
+          60.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    60.0
+  ],
   "properties": {
     "title": "Future wind speeds",
     "description": "Datasets containing tropical cyclone maximum wind speed (in m/s) return periods, generated using the STORM datasets under future climate conditions",

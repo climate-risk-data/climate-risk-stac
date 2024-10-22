@@ -6,7 +6,39 @@
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ],
   "id": "Heat index historical",
-  "geometry": null,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -60.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    90.0
+  ],
   "properties": {
     "title": "Heat index historical",
     "description": "Heat index is a heat stress indicator used by the US National Oceanic and Atmospheric Administration (NOAA) National Weather Service for issuing heat warnings. It is calculated using multiple linear regression based on daily maximum temperature and relative humidity (calculated from daily mean specific humidity and surface pressure).",

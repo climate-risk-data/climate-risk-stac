@@ -43,7 +43,7 @@
       "interval": [
         [
           "2017-01-01T00:00:00Z",
-          "2024-10-21T00:00:00Z"
+          "2024-10-22T00:00:00Z"
         ]
       ]
     }
@@ -53,7 +53,8 @@
     "tropical cyclone",
     "extratropical cyclone",
     "(near-)global",
-    "historical"
+    "historical",
+    "modeled"
   ],
   "providers": [
     {

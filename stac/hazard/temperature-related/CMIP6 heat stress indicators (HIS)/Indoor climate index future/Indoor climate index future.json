@@ -6,7 +6,39 @@
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ],
   "id": "Indoor climate index future",
-  "geometry": null,
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -60.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    90.0
+  ],
   "properties": {
     "title": "Indoor climate index future",
     "description": "The indoor universal thermal climate index is defined as the air temperature of a reference outdoor environment that would elicit in the human body the same physiological model\u2019s response (sweat production, shivering, skin wettedness, skin blood flow and rectal, mean skin and face temperatures) as the actual environment. Here, a polynomial approximation based on near-surface air temperature, solar radiation, vapor pressure, and wind speed is used for calculating the universal thermal climate index. In the present dataset, the influence of solar radiation and wind speed is not considered, and the universal thermal climate index is calculated from near-surface air temperature and vapor pressure solely, thus representing indoor conditions.",

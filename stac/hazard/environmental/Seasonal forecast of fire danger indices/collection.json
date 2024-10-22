@@ -48,7 +48,7 @@
       "interval": [
         [
           "1981-01-01T00:00:00Z",
-          "2024-10-21T00:00:00Z"
+          "2024-10-22T00:00:00Z"
         ]
       ]
     }
@@ -58,6 +58,7 @@
     "wildfire",
     "(near-)global",
     "historical",
+    "modeled",
     "code available"
   ],
   "providers": [
