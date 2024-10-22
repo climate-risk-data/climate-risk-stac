@@ -8,8 +8,8 @@ from shapely.geometry import Polygon, mapping
 
 
 __all__ = [
-    'compute_overall_bbox',
     'get_bbox_and_footprint',
+    'compute_overall_bbox',
     'parse_year_range',
     'generate_keywords',
     'update_keywords',
