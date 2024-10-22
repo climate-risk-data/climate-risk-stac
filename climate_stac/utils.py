@@ -98,13 +98,14 @@ def generate_keywords(item: pystac.Item) -> list:
     # Extract other attributes
     spatial_scale = item['spatial_scale']
     reference_period = item['reference_period']
-    
+    source_type = item['source_type']
+
     # Add 'code' keyword if 'code_link' is provided
     code_keyword = "code available" if np.nan_to_num(item['code_link']) else None
     
     # Filter out None or empty values and flatten lists into keywords
     keywords = [
-        keyword for keyword in [risk_data, *subcategories, spatial_scale, reference_period, code_keyword]
+        keyword for keyword in [risk_data, *subcategories, spatial_scale, reference_period, source_type, code_keyword]
         if keyword
     ]
     logger.info(f"keywords: {keywords}")
