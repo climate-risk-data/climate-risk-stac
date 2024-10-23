@@ -12,15 +12,9 @@
     },
     {
       "rel": "child",
-      "href": "./Thermal comfort indices derived from ERA5 (ERA5-HEAT)/collection.json",
+      "href": "./Annual Global High-Resolution Extreme Heat Estimates (GEHE)/collection.json",
       "type": "application/json",
-      "title": "Thermal comfort indices derived from ERA5 (ERA5-HEAT)"
-    },
-    {
-      "rel": "child",
-      "href": "./Monthly statistics of daily minimum temperature/collection.json",
-      "type": "application/json",
-      "title": "Monthly statistics of daily minimum temperature"
+      "title": "Annual Global High-Resolution Extreme Heat Estimates (GEHE)"
     },
     {
       "rel": "child",
@@ -36,9 +30,15 @@
     },
     {
       "rel": "child",
-      "href": "./Annual Global High-Resolution Extreme Heat Estimates (GEHE)/collection.json",
+      "href": "./Monthly statistics of daily minimum temperature/collection.json",
       "type": "application/json",
-      "title": "Annual Global High-Resolution Extreme Heat Estimates (GEHE)"
+      "title": "Monthly statistics of daily minimum temperature"
+    },
+    {
+      "rel": "child",
+      "href": "./Thermal comfort indices derived from ERA5 (ERA5-HEAT)/collection.json",
+      "type": "application/json",
+      "title": "Thermal comfort indices derived from ERA5 (ERA5-HEAT)"
     },
     {
       "rel": "parent",

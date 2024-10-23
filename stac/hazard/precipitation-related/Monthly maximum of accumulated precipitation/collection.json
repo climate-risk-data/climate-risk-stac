@@ -54,7 +54,7 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "Flood"
+      "title": "Precipitation-related"
     }
   ],
   "title": "Monthly maximum of accumulated precipitation",
@@ -80,7 +80,6 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "pluvial flood",
     "(near-)global",
     "historical",
     "future",

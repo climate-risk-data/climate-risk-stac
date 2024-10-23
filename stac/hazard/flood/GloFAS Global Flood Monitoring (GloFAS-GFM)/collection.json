@@ -43,17 +43,25 @@
       "interval": [
         [
           "2015-01-01T00:00:00Z",
-          "2024-10-22T00:00:00Z"
+          "2024-10-23T00:00:00Z"
         ]
       ]
     }
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "fluvial flood",
     "(near-)global",
     "historical",
-    "observed"
+    "observed",
+    "o",
+    " ",
+    "a",
+    "d",
+    "i",
+    "f",
+    "u",
+    "l",
+    "v"
   ],
   "providers": [
     {
@@ -61,7 +69,7 @@
       "roles": [
         "licensor"
       ],
-      "url": "https://www.globalfloods.eu/technical-information/glofas-gfm/"
+      "url": "https://global-flood.emergency.copernicus.eu/general-information/data-and-services/"
     }
   ]
 }

@@ -50,10 +50,18 @@
   },
   "license": "CC-BY-NC-SA-4.0",
   "keywords": [
-    "fluvial flood",
     "(near-)global",
     "historical",
-    "modeled"
+    "modeled",
+    "o",
+    " ",
+    "a",
+    "d",
+    "i",
+    "f",
+    "u",
+    "l",
+    "v"
   ],
   "providers": [
     {
@@ -61,7 +69,7 @@
       "roles": [
         "producer"
       ],
-      "url": "https://www.estellus.fr/?static13/giems-d15"
+      "url": "https://lerma.obspm.fr/spip.php?article91&lang=fr"
     }
   ]
 }

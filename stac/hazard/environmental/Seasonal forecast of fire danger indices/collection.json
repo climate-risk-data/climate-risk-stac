@@ -48,18 +48,24 @@
       "interval": [
         [
           "1981-01-01T00:00:00Z",
-          "2024-10-22T00:00:00Z"
+          "2024-10-23T00:00:00Z"
         ]
       ]
     }
   },
   "license": "proprietary",
   "keywords": [
-    "wildfire",
     "(near-)global",
     "historical",
     "modeled",
-    "code available"
+    "code available",
+    "e",
+    "d",
+    "r",
+    "i",
+    "f",
+    "w",
+    "l"
   ],
   "providers": [
     {

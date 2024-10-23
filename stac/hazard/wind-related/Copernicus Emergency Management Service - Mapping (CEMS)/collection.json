@@ -43,18 +43,29 @@
       "interval": [
         [
           "2017-01-01T00:00:00Z",
-          "2024-10-22T00:00:00Z"
+          "2024-10-23T00:00:00Z"
         ]
       ]
     }
   },
   "license": "proprietary",
   "keywords": [
-    "tropical cyclone",
-    "extratropical cyclone",
     "(near-)global",
     "historical",
-    "modeled"
+    "modeled",
+    "o",
+    "e",
+    " ",
+    "r",
+    "y",
+    "x",
+    "c",
+    "p",
+    "a",
+    "i",
+    "t",
+    "n",
+    "l"
   ],
   "providers": [
     {

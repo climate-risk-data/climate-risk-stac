@@ -5,7 +5,7 @@
     "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ],
-  "id": "RX5day CMIP6 historical",
+  "id": "R95p future",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -40,33 +40,33 @@
     90.0
   ],
   "properties": {
-    "title": "RX5day CMIP6 historical",
-    "description": "Highest 5-day precipitation amount",
+    "title": "R95p future",
+    "description": "Total annually summed precipitation on days with more daily precipitation than the 95th daily precipitation percentile on wet days in the base period. Precipitation is the deposition of water on the Earth\u2019s surface, either rain, snow, ice or hail. The ETCCDI short name for this variable is \"R95p\".",
     "risk data type": "hazard",
-    "subcategory": "pluvial flood",
+    "subcategory": NaN,
     "spatial scale": "(near-)global",
-    "reference period": "historical",
-    "temporal coverage": "1850-2014 (monthly)",
-    "scenarios": null,
+    "reference period": "future",
+    "temporal coverage": "2015-2300 (yearly)",
+    "scenarios": "SSP-RCP combinations",
     "data type": "raster",
     "data format": "netcdf",
-    "spatial resolution": "1 decimal degrees",
+    "spatial resolution": "0.5 decimal degrees",
     "source type": "modeled",
     "analysis type": "deterministic",
     "underlying data": "CMIP6",
     "publication type": "dataset (see DOI)",
     "code type": "processing (see Code link)",
     "usage notes": "data download via interface or API",
-    "start_datetime": "1850-01-01T00:00:00Z",
-    "end_datetime": "2014-12-31T00:00:00Z",
+    "start_datetime": "2015-01-01T00:00:00Z",
+    "end_datetime": "2300-12-31T00:00:00Z",
     "proj:epsg": 4326,
-    "sci:doi": "10.24381/cds.5292a2b0",
+    "sci:doi": "10.24381/cds.776e08bd",
     "datetime": null
   },
   "links": [
     {
       "rel": "cite-as",
-      "href": "https://doi.org/10.24381/cds.5292a2b0"
+      "href": "https://doi.org/10.24381/cds.776e08bd"
     },
     {
       "rel": "cite-as",
@@ -83,18 +83,18 @@
       "rel": "collection",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Monthly maximum of accumulated precipitation"
+      "title": "Wet day precipitation indices"
     },
     {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
-      "title": "Monthly maximum of accumulated precipitation"
+      "title": "Wet day precipitation indices"
     }
   ],
   "assets": {
     "data-file_1": {
-      "href": "https://doi.org/10.24381/cds.5292a2b0",
+      "href": "https://doi.org/10.24381/cds.776e08bd",
       "type": "application/x-netcdf",
       "title": "Data Link 1",
       "roles": [
@@ -102,5 +102,5 @@
       ]
     }
   },
-  "collection": "Monthly maximum of accumulated precipitation"
+  "collection": "Wet day precipitation indices"
 }

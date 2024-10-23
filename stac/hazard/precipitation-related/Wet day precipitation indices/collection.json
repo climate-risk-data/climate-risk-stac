@@ -34,7 +34,7 @@
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
-      "title": "Flood"
+      "title": "Precipitation-related"
     }
   ],
   "title": "Wet day precipitation indices",
@@ -60,7 +60,6 @@
   },
   "license": "CC-BY-4.0",
   "keywords": [
-    "pluvial flood",
     "(near-)global",
     "historical",
     "future",

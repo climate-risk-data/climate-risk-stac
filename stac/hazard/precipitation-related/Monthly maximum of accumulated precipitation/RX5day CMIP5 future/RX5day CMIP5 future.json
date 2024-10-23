@@ -43,7 +43,7 @@
     "title": "RX5day CMIP5 future",
     "description": "Highest 5-day precipitation amount",
     "risk data type": "hazard",
-    "subcategory": "pluvial flood",
+    "subcategory": NaN,
     "spatial scale": "(near-)global",
     "reference period": "future",
     "temporal coverage": "2006-2100 (monthly)",

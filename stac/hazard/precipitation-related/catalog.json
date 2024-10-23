@@ -12,15 +12,9 @@
     },
     {
       "rel": "child",
-      "href": "./Standardized precipitation index (SPI)/collection.json",
+      "href": "./Daily Evapotranspiration Deficit Index (DEDI)/collection.json",
       "type": "application/json",
-      "title": "Standardized precipitation index (SPI)"
-    },
-    {
-      "rel": "child",
-      "href": "./Meteorological drought events from the Global Drought Observatory (GDO)/collection.json",
-      "type": "application/json",
-      "title": "Meteorological drought events from the Global Drought Observatory (GDO)"
+      "title": "Daily Evapotranspiration Deficit Index (DEDI)"
     },
     {
       "rel": "child",
@@ -36,9 +30,27 @@
     },
     {
       "rel": "child",
-      "href": "./Daily Evapotranspiration Deficit Index (DEDI)/collection.json",
+      "href": "./Meteorological drought events from the Global Drought Observatory (GDO)/collection.json",
       "type": "application/json",
-      "title": "Daily Evapotranspiration Deficit Index (DEDI)"
+      "title": "Meteorological drought events from the Global Drought Observatory (GDO)"
+    },
+    {
+      "rel": "child",
+      "href": "./Monthly maximum of accumulated precipitation/collection.json",
+      "type": "application/json",
+      "title": "Monthly maximum of accumulated precipitation"
+    },
+    {
+      "rel": "child",
+      "href": "./Standardized precipitation index (SPI)/collection.json",
+      "type": "application/json",
+      "title": "Standardized precipitation index (SPI)"
+    },
+    {
+      "rel": "child",
+      "href": "./Wet day precipitation indices/collection.json",
+      "type": "application/json",
+      "title": "Wet day precipitation indices"
     },
     {
       "rel": "parent",
