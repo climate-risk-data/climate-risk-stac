@@ -367,7 +367,7 @@ def update_catalog_from_dataframe(
                 # description = "overview page"
 
             # loop through all assets
-            counter = 1
+            #counter = 1
             for asset in assets:
                 # Determine the media type based on the format attribute
                 media_type = format_to_media_type.get(
@@ -383,9 +383,9 @@ def update_catalog_from_dataframe(
                     # description=description
                 )
                 # Add the asset to the item
-                key = f"data-file_{counter}"
+                key = asset, #f"data-file_{counter}"
                 item_stac.add_asset(key, asset_stac)
-                counter += 1
+                #counter += 1
 
             # Add item to collection
             collection.add_item(item_stac)
