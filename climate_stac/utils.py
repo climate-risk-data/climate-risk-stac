@@ -93,9 +93,10 @@ def generate_keywords(item: pystac.Item) -> list:
     # Subcategory: a) replace subcategory with string with commas, b) split the string if it contains commas
     #if item['category'] == 'flood' and item['subcategory'] == 'flood type not specified':
     #    item['subcategory'] = "coastal flood,fluvial flood,pluvial flood"
-    subcat = item['subcategory'] if np.nan_to_num(item['subcategory']) else None
-    subcategories = subcat.split(',') if ',' in subcat else subcat
-    
+    subcategories = (item['subcategory'].split(',') if ',' in str(item['subcategory']) 
+                 else item['subcategory']) if np.nan_to_num(item['subcategory']) else []
+
+
     # Extract other attributes
     spatial_scale = item['spatial_scale']
     reference_period = item['reference_period']
