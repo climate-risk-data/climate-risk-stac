@@ -2,12 +2,35 @@
 title: "About"
 ---
 
-## Risk data catalog
-We provide a living metadata catalog of publicly available geospatial datasets for climate risk assessments (CRAs), which can be browsed, selected, and accessed based on a variety of technical specifications and information relevant for CRAs. The living catalog is based on the SpatioTemporal Asset Catalog (STAC) specification and visualized in STAC Browser. 
+## A catalog of climate risk data
 
-This is a community catalog containing datasets for the three risk drivers Hazard, Exposure, and Vulnerability. 
-The catalog in its current form conforms with the risk framework of the IPCC's 5th and 6th Assessment Reports (AR5, AR6) where risk results from the interaction of hazards, the elements exposed to these hazards as well as the vulnerability of the exposed elements (see 'Catalog structure' for an overview figure). 
-This first version of the catalog (released in XXXX) focusses on global-scale datasets that can be used as input in climate risk assessments (CRA) with as little preprocessing as possible. 
+This is a **living, community-driven metadata catalog** of geospatial datasets relevant for climate risk assessments (CRAs). This first version of the catalog (released XXXX) is structured around the three risk drivers hazard, exposure, and vulnerability, with a focus on global-scale datasets. It therefore conforms with the **IPCC risk framework** of the 5th and 6th Assessment Reports (AR5, AR6) where risk results from the interaction of hazards, the elements exposed to these hazards as well as the vulnerability of the exposed elements.
+
+## To be continued:
+The living catalog is based on the SpatioTemporal Asset Catalog (STAC) specification and visualized in STAC Browser.
+We provide detailed documentation on how to navigate the catalog, including a user guide (see 'Catalog documentation'). 
+
+ 
+As the catalog is designed to be a community-led endeavor, we encourage risk data users to add datasets to this catalog, thereby creating a growing knowledge base for potential users. New datasets can be submitted via GitHub (see 'Submit a new dataset'). 
+
+
+
+- Catalog of risk data (spatial data as input into CRA, links to datasets with open access, ipcc framework)
+- Stac implementation 
+- Community driven
+- Publication: first version, based on global data 
+
+
+The development of the catalog is described in detail in the referenced publication (see 'Peer-reviewed publication'). 
+
+
+
+## The CLIMAAX project
 It has been developed as part of the Horizon Europe project CLIMAAX, which [add further details here] (see 'Link to CLIMAAX Climate Risk Assessment handbook'). 
 The development of the catalog is described in detail in the referenced publication (see 'Peer-reviewed publication'). 
 As the catalog is designed to be a community-led endeavor, we encourage risk data users to add datasets to this catalog, thereby creating a growing knowledge base for potential users. Please use the data submission form on GitHub Issues (see 'Submit a new dataset') to suggest new datasets.
+
+ 
+
+
+
