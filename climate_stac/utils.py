@@ -94,8 +94,7 @@ def generate_keywords(item: pystac.Item) -> list:
     #if item['category'] == 'flood' and item['subcategory'] == 'flood type not specified':
     #    item['subcategory'] = "coastal flood,fluvial flood,pluvial flood"
     subcategories = (item['subcategory'].split(',') if ',' in str(item['subcategory']) 
-                 else item['subcategory']) if np.nan_to_num(item['subcategory']) else []
-
+                 else [item['subcategory']]) if np.nan_to_num(item['subcategory']) else []
 
     # Extract other attributes
     spatial_scale = item['spatial_scale']
