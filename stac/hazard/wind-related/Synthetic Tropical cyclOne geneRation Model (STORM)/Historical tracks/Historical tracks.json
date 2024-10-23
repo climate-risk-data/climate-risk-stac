@@ -96,7 +96,7 @@
     "data-file_1": {
       "href": "https://data.4tu.nl/file/01b2ebc7-7903-42ef-b46b-f43b9175dbf4/c3e5015a-3629-4f1c-9d5f-9acfbd6119eb",
       "type": "text/plain",
-      "title": "Data Link 1",
+      "title": "https://data.4tu.nl/file/01b2ebc7-7903-42ef-b46b-f43b9175dbf4/c3e5015a-3629-4f1c-9d5f-9acfbd6119eb",
       "roles": [
         "data"
       ]

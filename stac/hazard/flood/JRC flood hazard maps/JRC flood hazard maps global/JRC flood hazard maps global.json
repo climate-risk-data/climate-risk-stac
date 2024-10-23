@@ -91,7 +91,7 @@
     "data-file_1": {
       "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp10y.zip",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 1",
+      "title": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp10y.zip",
       "roles": [
         "data"
       ]
@@ -99,7 +99,7 @@
     "data-file_2": {
       "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp20y.zip",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 2",
+      "title": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp20y.zip",
       "roles": [
         "data"
       ]
@@ -107,7 +107,7 @@
     "data-file_3": {
       "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp50y.zip",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 3",
+      "title": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp50y.zip",
       "roles": [
         "data"
       ]
@@ -115,7 +115,7 @@
     "data-file_4": {
       "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp100y.zip",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 4",
+      "title": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp100y.zip",
       "roles": [
         "data"
       ]
@@ -123,7 +123,7 @@
     "data-file_5": {
       "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp200y.zip",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 5",
+      "title": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp200y.zip",
       "roles": [
         "data"
       ]
@@ -131,7 +131,7 @@
     "data-file_6": {
       "href": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp500y.zip",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 6",
+      "title": "https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp500y.zip",
       "roles": [
         "data"
       ]

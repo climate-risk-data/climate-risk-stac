@@ -96,7 +96,7 @@
     "data-file_1": {
       "href": "https://zenodo.org/doi/10.5281/zenodo.7768533",
       "type": "application/x-netcdf",
-      "title": "Data Link 1",
+      "title": "https://zenodo.org/doi/10.5281/zenodo.7768533",
       "roles": [
         "overview"
       ]

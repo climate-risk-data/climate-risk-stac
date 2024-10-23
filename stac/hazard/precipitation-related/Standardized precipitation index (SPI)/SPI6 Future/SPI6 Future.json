@@ -96,7 +96,7 @@
     "data-file_1": {
       "href": "https://doi.org/10.24381/cds.5292a2b0",
       "type": "application/x-netcdf",
-      "title": "Data Link 1",
+      "title": "https://doi.org/10.24381/cds.5292a2b0",
       "roles": [
         "overview"
       ]

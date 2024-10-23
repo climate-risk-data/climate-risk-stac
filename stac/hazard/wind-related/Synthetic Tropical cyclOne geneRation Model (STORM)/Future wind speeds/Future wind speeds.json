@@ -96,7 +96,7 @@
     "data-file_1": {
       "href": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/2a3759e8-f4ad-4190-abb3-434ad5c4679b",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 1",
+      "title": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/2a3759e8-f4ad-4190-abb3-434ad5c4679b",
       "roles": [
         "data"
       ]
@@ -104,7 +104,7 @@
     "data-file_2": {
       "href": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/c460a0c8-f918-4ede-a734-75e77e99b102",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 2",
+      "title": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/c460a0c8-f918-4ede-a734-75e77e99b102",
       "roles": [
         "data"
       ]
@@ -112,7 +112,7 @@
     "data-file_3": {
       "href": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/304d1441-bd71-47c7-8231-b20253c1cc2a",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 3",
+      "title": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/304d1441-bd71-47c7-8231-b20253c1cc2a",
       "roles": [
         "data"
       ]
@@ -120,7 +120,7 @@
     "data-file_4": {
       "href": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/856f9530-56d7-489e-8005-18ae36db4804",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 4",
+      "title": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/856f9530-56d7-489e-8005-18ae36db4804",
       "roles": [
         "data"
       ]
@@ -128,7 +128,7 @@
     "data-file_5": {
       "href": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/9740b235-c2fe-4677-a8b9-f90eb13e4938",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 5",
+      "title": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/9740b235-c2fe-4677-a8b9-f90eb13e4938",
       "roles": [
         "data"
       ]
@@ -136,7 +136,7 @@
     "data-file_6": {
       "href": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/df247ab2-7565-4888-b5a9-2ccd31d9c90f",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 6",
+      "title": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/df247ab2-7565-4888-b5a9-2ccd31d9c90f",
       "roles": [
         "data"
       ]
@@ -144,7 +144,7 @@
     "data-file_7": {
       "href": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/43ce1a8f-914a-414c-b949-884e06616301",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 7",
+      "title": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/43ce1a8f-914a-414c-b949-884e06616301",
       "roles": [
         "data"
       ]
@@ -152,7 +152,7 @@
     "data-file_8": {
       "href": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/ac3fd12d-c21d-406e-8e2e-bd212ee9f817",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 8",
+      "title": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/ac3fd12d-c21d-406e-8e2e-bd212ee9f817",
       "roles": [
         "data"
       ]
@@ -160,7 +160,7 @@
     "data-file_9": {
       "href": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/a7e915a4-ee2a-44d7-8e91-8920bff34f16",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 9",
+      "title": "https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/a7e915a4-ee2a-44d7-8e91-8920bff34f16",
       "roles": [
         "data"
       ]
@@ -168,7 +168,7 @@
     "data-file_10": {
       "href": "climate",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 10",
+      "title": "climate",
       "roles": [
         "data"
       ]
@@ -176,7 +176,7 @@
     "data-file_11": {
       "href": "change",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 11",
+      "title": "change",
       "roles": [
         "data"
       ]
@@ -184,7 +184,7 @@
     "data-file_12": {
       "href": "tropical",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 12",
+      "title": "tropical",
       "roles": [
         "data"
       ]
@@ -192,7 +192,7 @@
     "data-file_13": {
       "href": "cyclone",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 13",
+      "title": "cyclone",
       "roles": [
         "data"
       ]
@@ -200,7 +200,7 @@
     "data-file_14": {
       "href": "wind",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 14",
+      "title": "wind",
       "roles": [
         "data"
       ]
@@ -208,7 +208,7 @@
     "data-file_15": {
       "href": "speed",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 15",
+      "title": "speed",
       "roles": [
         "data"
       ]
@@ -216,7 +216,7 @@
     "data-file_16": {
       "href": "return",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 16",
+      "title": "return",
       "roles": [
         "data"
       ]
@@ -224,7 +224,7 @@
     "data-file_17": {
       "href": "periods",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 17",
+      "title": "periods",
       "roles": [
         "data"
       ]

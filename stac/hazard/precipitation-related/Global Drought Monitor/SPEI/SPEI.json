@@ -85,7 +85,7 @@
     "data-file_1": {
       "href": "https://spei.csic.es/map/maps.html#months=1#month=5#year=2024",
       "type": "application/x-netcdf",
-      "title": "Data Link 1",
+      "title": "https://spei.csic.es/map/maps.html#months=1#month=5#year=2024",
       "roles": [
         "overview"
       ]

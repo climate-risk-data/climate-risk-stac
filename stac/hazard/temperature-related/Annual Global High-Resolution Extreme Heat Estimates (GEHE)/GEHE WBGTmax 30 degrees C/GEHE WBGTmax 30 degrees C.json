@@ -96,7 +96,7 @@
     "data-file_1": {
       "href": "https://sedac.ciesin.columbia.edu/downloads/data/sdei/sdei-high-res-extreme-heat-estimates-1983-2016/sdei-high-res-extreme-heat-estimates-1983-2016-wbgtmax30-counts-geotiff.zip",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 1",
+      "title": "https://sedac.ciesin.columbia.edu/downloads/data/sdei/sdei-high-res-extreme-heat-estimates-1983-2016/sdei-high-res-extreme-heat-estimates-1983-2016-wbgtmax30-counts-geotiff.zip",
       "roles": [
         "data"
       ]

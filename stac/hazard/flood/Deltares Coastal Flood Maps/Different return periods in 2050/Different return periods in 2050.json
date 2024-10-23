@@ -95,7 +95,7 @@
     "data-file_1": {
       "href": "https://planetarycomputer.microsoft.com/dataset/deltares-floods",
       "type": "application/x-netcdf",
-      "title": "Data Link 1",
+      "title": "https://planetarycomputer.microsoft.com/dataset/deltares-floods",
       "roles": [
         "overview"
       ]

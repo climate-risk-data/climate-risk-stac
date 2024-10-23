@@ -91,7 +91,7 @@
     "data-file_1": {
       "href": "https://www.wri.org/data/aqueduct-floods-hazard-maps",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 1",
+      "title": "https://www.wri.org/data/aqueduct-floods-hazard-maps",
       "roles": [
         "overview"
       ]

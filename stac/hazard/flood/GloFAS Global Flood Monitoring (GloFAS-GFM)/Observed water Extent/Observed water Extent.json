@@ -85,7 +85,7 @@
     "data-file_1": {
       "href": "https://global-flood.emergency.copernicus.eu/general-information/data-and-services/",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 1",
+      "title": "https://global-flood.emergency.copernicus.eu/general-information/data-and-services/",
       "roles": [
         "overview"
       ]

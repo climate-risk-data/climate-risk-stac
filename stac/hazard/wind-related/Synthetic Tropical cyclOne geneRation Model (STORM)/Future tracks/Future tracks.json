@@ -96,7 +96,7 @@
     "data-file_1": {
       "href": "https://data.4tu.nl/file/98900e17-8e01-4d70-b3b6-ca1a1da2f194/bdc3820c-7b7e-41de-8def-792f50b06c49",
       "type": "text/plain",
-      "title": "Data Link 1",
+      "title": "https://data.4tu.nl/file/98900e17-8e01-4d70-b3b6-ca1a1da2f194/bdc3820c-7b7e-41de-8def-792f50b06c49",
       "roles": [
         "data"
       ]
@@ -104,7 +104,7 @@
     "data-file_2": {
       "href": "https://data.4tu.nl/file/98900e17-8e01-4d70-b3b6-ca1a1da2f194/3b08e6a8-2824-435f-a141-9509a9922cfe",
       "type": "text/plain",
-      "title": "Data Link 2",
+      "title": "https://data.4tu.nl/file/98900e17-8e01-4d70-b3b6-ca1a1da2f194/3b08e6a8-2824-435f-a141-9509a9922cfe",
       "roles": [
         "data"
       ]
@@ -112,7 +112,7 @@
     "data-file_3": {
       "href": "https://data.4tu.nl/file/98900e17-8e01-4d70-b3b6-ca1a1da2f194/2eaeb5f6-40f3-4f94-9f9c-ca7aad3237fc",
       "type": "text/plain",
-      "title": "Data Link 3",
+      "title": "https://data.4tu.nl/file/98900e17-8e01-4d70-b3b6-ca1a1da2f194/2eaeb5f6-40f3-4f94-9f9c-ca7aad3237fc",
       "roles": [
         "data"
       ]
@@ -120,7 +120,7 @@
     "data-file_4": {
       "href": "https://data.4tu.nl/file/98900e17-8e01-4d70-b3b6-ca1a1da2f194/f35142d6-d858-4874-9a51-2dc08462d45f",
       "type": "text/plain",
-      "title": "Data Link 4",
+      "title": "https://data.4tu.nl/file/98900e17-8e01-4d70-b3b6-ca1a1da2f194/f35142d6-d858-4874-9a51-2dc08462d45f",
       "roles": [
         "data"
       ]

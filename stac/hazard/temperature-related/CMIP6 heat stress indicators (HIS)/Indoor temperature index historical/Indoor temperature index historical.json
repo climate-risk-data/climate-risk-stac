@@ -96,7 +96,7 @@
     "data-file_1": {
       "href": "https://cds-beta.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=download",
       "type": "application/x-netcdf",
-      "title": "Data Link 1",
+      "title": "https://cds-beta.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=download",
       "roles": [
         "data"
       ]

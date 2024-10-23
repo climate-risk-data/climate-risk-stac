@@ -90,7 +90,7 @@
     "data-file_1": {
       "href": "https://dx.doi.org/10.5067/MODIS/MCDWD_L3_F1_NRT.061",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 1",
+      "title": "https://dx.doi.org/10.5067/MODIS/MCDWD_L3_F1_NRT.061",
       "roles": [
         "data"
       ]

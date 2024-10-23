@@ -91,7 +91,7 @@
     "data-file_1": {
       "href": "https://doi.org/10.24381/cds.00b6c4fb",
       "type": "application/grib2",
-      "title": "Data Link 1",
+      "title": "https://doi.org/10.24381/cds.00b6c4fb",
       "roles": [
         "overview"
       ]

@@ -85,7 +85,7 @@
     "data-file_1": {
       "href": "https://portal.grdc.bafg.de/applications/public.html?publicuser=PublicUser#dataDownload/Stations",
       "type": "text/plain",
-      "title": "Data Link 1",
+      "title": "https://portal.grdc.bafg.de/applications/public.html?publicuser=PublicUser#dataDownload/Stations",
       "roles": [
         "overview"
       ]

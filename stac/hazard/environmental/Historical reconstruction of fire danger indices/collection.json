@@ -60,16 +60,10 @@
   },
   "license": "proprietary",
   "keywords": [
+    "wildfire",
     "(near-)global",
     "historical",
-    "modeled",
-    "e",
-    "d",
-    "r",
-    "i",
-    "f",
-    "w",
-    "l"
+    "modeled"
   ],
   "providers": [
     {

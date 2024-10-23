@@ -96,7 +96,7 @@
     "data-file_1": {
       "href": "https://global-flood-database.cloudtostreet.ai/#",
       "type": "image/tiff; application=geotiff",
-      "title": "Data Link 1",
+      "title": "https://global-flood-database.cloudtostreet.ai/#",
       "roles": [
         "overview"
       ]

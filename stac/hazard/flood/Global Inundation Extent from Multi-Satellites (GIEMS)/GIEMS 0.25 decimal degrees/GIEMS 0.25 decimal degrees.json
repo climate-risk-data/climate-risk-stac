@@ -91,7 +91,7 @@
     "data-file_1": {
       "href": "https://lerma.obspm.fr/spip.php?article91&lang=fr",
       "type": "format unknown",
-      "title": "Data Link 1",
+      "title": "https://lerma.obspm.fr/spip.php?article91&lang=fr",
       "roles": [
         "overview"
       ]

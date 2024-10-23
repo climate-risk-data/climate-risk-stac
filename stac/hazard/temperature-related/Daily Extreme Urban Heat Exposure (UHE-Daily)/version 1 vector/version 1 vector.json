@@ -96,7 +96,7 @@
     "data-file_1": {
       "href": "https://sedac.ciesin.columbia.edu/downloads/data/sdei/sdei-high-res-daily-uhe-1983-2016/sdei-high-res-daily-uhe-1983-2016-shp.zip",
       "type": "application/x-shapefile",
-      "title": "Data Link 1",
+      "title": "https://sedac.ciesin.columbia.edu/downloads/data/sdei/sdei-high-res-daily-uhe-1983-2016/sdei-high-res-daily-uhe-1983-2016-shp.zip",
       "roles": [
         "data"
       ]
