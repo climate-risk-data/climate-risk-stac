@@ -34,7 +34,7 @@ def create_catalog() -> pystac.Catalog:
     catalog_main = pystac.Catalog(
         id="climate-risk-data",
         title="Climate Risk Data",
-        description="This is a community catalog containing datasets for the three risk drivers Hazard, Exposure, and Vulnerability. This first version of the catalog (released XXXX) focusses on global-scale datasets that can be used as input in climate risk assessments (CRA). We provide detailed documentation on how to navigate the catalog, including a user guide (see 'Catalog documentation'). The development of the catalog is described in detail in the referenced publication (see 'Peer-reviewed publication'). As the catalog is designed to be a community-led endeavor, we encourage risk data users to add datasets to this catalog, thereby creating a growing knowledge base for potential users. New datasets can be submitted via GitHub (see 'Submit a new dataset').",
+        description="This is a living, community-driven metadata catalog of geospatial datasets relevant for climate risk assessments (CRAs). This first version of the catalog (released XXXX) is structured around the three risk drivers hazard, exposure, and vulnerability, with a focus on global-scale datasets. We provide detailed documentation on how to navigate the catalog, including a user guide (see 'Catalog documentation'). The development of the catalog is described in detail in the referenced publication (see 'Peer-reviewed publication'). As the catalog is designed to be a community-led endeavor, we encourage risk data users to add datasets to this catalog, thereby creating a growing knowledge base for potential users. New datasets can be submitted via GitHub (see 'Submit a new dataset').",
         )
     
     # Create catalog links

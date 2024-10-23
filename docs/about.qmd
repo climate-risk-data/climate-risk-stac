@@ -3,6 +3,7 @@ title: "About"
 ---
 
 ## Risk data catalog
+We provide a living metadata catalog of publicly available geospatial datasets for climate risk assessments (CRAs), which can be browsed, selected, and accessed based on a variety of technical specifications and information relevant for CRAs. The living catalog is based on the SpatioTemporal Asset Catalog (STAC) specification and visualized in STAC Browser. 
 
 This is a community catalog containing datasets for the three risk drivers Hazard, Exposure, and Vulnerability. 
 The catalog in its current form conforms with the risk framework of the IPCC's 5th and 6th Assessment Reports (AR5, AR6) where risk results from the interaction of hazards, the elements exposed to these hazards as well as the vulnerability of the exposed elements (see 'Catalog structure' for an overview figure). 

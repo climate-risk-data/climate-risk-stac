@@ -25,7 +25,7 @@ body:
   - type: dropdown
     id: category
     attributes:
-      description: Category of data type according to classification scheme (see readme)
+      description: Category of data type according to classification scheme (see classification in README, grey boxes)
       label: Category
       options:
         - population
@@ -38,7 +38,7 @@ body:
   - type: dropdown
     id: subcategory
     attributes:
-      description: Subcategory of data type according to classification scheme (see readme)
+      description: Subcategory of data type according to classification scheme (see classification in README, light blue and yellow boxes)
       label: Subcategory
       options:
         - population number
@@ -54,6 +54,7 @@ body:
         - land use/land cover footprints
         - urban/built-up characteristics
         - land use/land cover characteristics
+        - not specified
     validations:
       required: true
 
