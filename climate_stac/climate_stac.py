@@ -379,7 +379,7 @@ def update_catalog_from_dataframe(
                     href=asset,
                     media_type=media_type,
                     roles=roles,
-                    title=f"Data Link {counter}",
+                    title=asset, #f"Data Link {counter}",
                     # description=description
                 )
                 # Add the asset to the item
