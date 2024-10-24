@@ -12,10 +12,11 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - browse.qmd
       - contribute.qmd
-      - href: https://radiantearth.github.io/stac-browser/#/external/https://raw.githubusercontent.com/climate-risk-data/climate-risk-stac/refs/heads/gh-pages/stac/catalog.json
-        text: STAC Browser
-        target: _blank
+      # - href: https://radiantearth.github.io/stac-browser/#/external/https://raw.githubusercontent.com/climate-risk-data/climate-risk-stac/refs/heads/gh-pages/stac/catalog.json
+      #   text: STAC Browser
+      #   target: _blank
     right:
       - icon: github
         href: https://github.com/climate-risk-data/climate-risk-stac
