@@ -97,12 +97,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contribute.html"> 
-<span class="menu-text">How to Contribute</span></a>
+    <a class="nav-link" href="./browse.html"> 
+<span class="menu-text">How to browse</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://radiantearth.github.io/stac-browser/#/external/https://raw.githubusercontent.com/climate-risk-data/climate-risk-stac/refs/heads/gh-pages/stac/catalog.json" target="_blank"> 
-<span class="menu-text">STAC Browser</span></a>
+    <a class="nav-link" href="./contribute.html"> 
+<span class="menu-text">How to contribute</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -127,7 +127,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#risk-data-catalog" id="toc-risk-data-catalog" class="nav-link active" data-scroll-target="#risk-data-catalog">Risk data catalog</a></li>
+  <li><a href="#key-principles" id="toc-key-principles" class="nav-link active" data-scroll-target="#key-principles">Key principles</a></li>
+  <li><a href="#technical-implementation" id="toc-technical-implementation" class="nav-link" data-scroll-target="#technical-implementation">Technical implementation</a></li>
+  <li><a href="#further-information" id="toc-further-information" class="nav-link" data-scroll-target="#further-information">Further information</a></li>
   </ul>
 </nav>
     </div>
@@ -153,10 +155,28 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="risk-data-catalog" class="level2">
-<h2 class="anchored" data-anchor-id="risk-data-catalog">Risk data catalog</h2>
-<p>We provide a living metadata catalog of publicly available geospatial datasets for climate risk assessments (CRAs), which can be browsed, selected, and accessed based on a variety of technical specifications and information relevant for CRAs. The living catalog is based on the SpatioTemporal Asset Catalog (STAC) specification and visualized in STAC Browser.</p>
-<p>This is a community catalog containing datasets for the three risk drivers Hazard, Exposure, and Vulnerability. The catalog in its current form conforms with the risk framework of the IPCC’s 5th and 6th Assessment Reports (AR5, AR6) where risk results from the interaction of hazards, the elements exposed to these hazards as well as the vulnerability of the exposed elements (see ‘Catalog structure’ for an overview figure). This first version of the catalog (released in XXXX) focusses on global-scale datasets that can be used as input in climate risk assessments (CRA) with as little preprocessing as possible. It has been developed as part of the Horizon Europe project CLIMAAX, which [add further details here] (see ‘Link to CLIMAAX Climate Risk Assessment handbook’). The development of the catalog is described in detail in the referenced publication (see ‘Peer-reviewed publication’). As the catalog is designed to be a community-led endeavor, we encourage risk data users to add datasets to this catalog, thereby creating a growing knowledge base for potential users. Please use the data submission form on GitHub Issues (see ‘Submit a new dataset’) to suggest new datasets.</p>
+<p>These pages provide documentation and support on <strong>how to navigate</strong> the living metadata catalog of open-access geospatial datasets for climate risk assessments (CRAs).</p>
+<section id="key-principles" class="level3">
+<h3 class="anchored" data-anchor-id="key-principles">Key principles</h3>
+<ul>
+<li><strong>Risk framework</strong>: The catalog follows the risk framework of the IPCC’s 5th and 6th Assessment Reports (<a href="https://www.ipcc.ch/report/ar5/wg2/">AR5</a>, <a href="https://www.ipcc.ch/report/sixth-assessment-report-working-group-ii/">AR6</a>) where risk results from the interaction of hazards, the elements exposed to these hazards as well as the vulnerability of the exposed elements.</li>
+<li><strong>FAIR data</strong>: The catalog includes data with an open-access license only, thereby facilitating the provision of Findable, Accessible, Interoperable, and Reusable (FAIR) data (<a href="https://doi.org/10.1038/sdata.2016.18">Wilkinson et al.&nbsp;2016</a>).</li>
+<li><strong>Community-driven development</strong>: To allow for continuous development by the CRA community, the catalog is hosted in a <a href="https://github.com/climate-risk-data/climate-risk-stac">collaborative environment</a> with the opportunity to <a href="https://github.com/climate-risk-data/climate-risk-stac/issues/new/choose">contribute further datasets</a> (see <a href="./contribute.html">How to contribute</a>).</li>
+</ul>
+</section>
+<section id="technical-implementation" class="level3">
+<h3 class="anchored" data-anchor-id="technical-implementation">Technical implementation</h3>
+<ul>
+<li><strong>SpatioTemporal Asset Catalog (STAC)</strong>: The <a href="https://stacspec.org/">STAC specification</a> provides the underlying common standard of the living catalog, allowing for structuring and querying geospatial metadata. STAC can flexibly accommodate a variety metadata attributes relevant for CRAs.</li>
+<li><strong>STAC Browser</strong>: All data included in the living catalog can be explored in a <a href="https://radiantearth.github.io/stac-browser/#/external/https://raw.githubusercontent.com/climate-risk-data/climate-risk-stac/refs/heads/gh-pages/stac/catalog.json">browsable webpage</a>.</li>
+</ul>
+</section>
+<section id="further-information" class="level3">
+<h3 class="anchored" data-anchor-id="further-information">Further information</h3>
+<ul>
+<li><strong>Scientific article</strong>: The development of the living catalog is described in Reimann et al (in prep) [link will follow upon publication].</li>
+<li><strong>CLIMAAX project</strong>: The catalog has been developed as part of the Horizon Europe project <a href="https://www.climaax.eu/">CLIMAAX</a>, which develops a harmonized framework and toolbox for CRAs across Europe. The catalog provides as a pool of possible data sources for a variety of CRA approaches (‘<a href="https://handbook.climaax.eu">risk workflows</a>’).</li>
+</ul>
 
 
 </section>

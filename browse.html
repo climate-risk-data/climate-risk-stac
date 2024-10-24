@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Climate Risk STAC</title>
+<title>How to browse – Climate Risk STAC</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -97,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./browse.html"> 
+    <a class="nav-link active" href="./browse.html" aria-current="page"> 
 <span class="menu-text">How to browse</span></a>
   </li>  
   <li class="nav-item">
@@ -122,15 +122,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#catalogs" id="toc-catalogs" class="nav-link active" data-scroll-target="#catalogs">Catalogs</a></li>
+  <li><a href="#collections" id="toc-collections" class="nav-link" data-scroll-target="#collections">Collections</a></li>
+  <li><a href="#items" id="toc-items" class="nav-link" data-scroll-target="#items">Items</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Climate Risk STAC</h1>
+<h1 class="title">How to browse</h1>
 </div>
 
 
@@ -147,18 +155,75 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- {{< include ../README.md >}} This doesn't work because of the relative path to images -->
-<p>We provide a <strong>living metadata catalog</strong> of publicly available geospatial datasets for climate risk assessments (CRAs), which can be browsed, selected, and accessed based on a variety of technical specifications and information relevant for CRAs. The living catalog is based on the SpatioTemporal Asset Catalog (STAC) specification and visualized in STAC Browser.</p>
-<p>STAC Browser: <a href="https://radiantearth.github.io/stac-browser/#/external/https://raw.githubusercontent.com/climate-risk-data/climate-risk-stac/refs/heads/gh-pages/stac/catalog.json">explore the catalog</a></p>
-<p>The current version of the catalog includes hazard, exposure and vulnerability datasets, which are grouped into a) climate processes (i.e.&nbsp;hazard) and b) socioeconomic processes (i.e.&nbsp;exposure and vulnerability):</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/classification.png" class="img-fluid figure-img"></p>
-<figcaption>Catalog structure along the three risk drivers, separated into a) climate processes (i.e.&nbsp;hazard) and b) socioeconomic processes (i.e.&nbsp;exposure and vulnerability)</figcaption>
-</figure>
+<p>Browse STAC via STAC Browser: add brief introduction</p>
+<section id="catalogs" class="level3">
+<h3 class="anchored" data-anchor-id="catalogs">Catalogs</h3>
+<ul>
+<li>underlying folder structure of the living catalog
+<ul>
+<li>first level:</li>
+<li>second level:</li>
+</ul></li>
+<li>can be filtered by title, descriptions and keywords</li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Collections are listed as “Catalogs” in STAC Browser.</p>
+</div>
+</div>
+</section>
+<section id="collections" class="level3">
+<h3 class="anchored" data-anchor-id="collections">Collections</h3>
+<ul>
+<li>Their functionality is similar to catalogs, but their contain important overall data source information</li>
+<li>keywords can be selected for filtering</li>
+<li>contain important metadata (link to metadata overview table here?) that all data entries (= items) have in common
+<ul>
+<li>description</li>
+<li>keywords</li>
+<li>license</li>
+<li>overall temporal extent</li>
+<li>overall spatial footprint</li>
+<li>data provider including weblink</li>
+</ul></li>
+<li>links to corresponding items</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Very important: at least one item per collection</p>
+</div>
+</div>
+</section>
+<section id="items" class="level3">
+<h3 class="anchored" data-anchor-id="items">Items</h3>
+<ul>
+<li>vast majority of metadata attributes (link to metadata overview table here)
+<ul>
+<li>technical specifications of the data entry</li>
+<li>additional information relevant for CRAs</li>
+<li>additional resources such as links to publications and code (if available)</li>
+<li>assets = define here</li>
+</ul></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
