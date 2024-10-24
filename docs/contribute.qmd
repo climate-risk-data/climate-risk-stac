@@ -1,6 +1,47 @@
 ---
-title: "How to Contribute"
+title: "How to contribute"
 ---
 
-## Contribute datasets
-test test
+To make this a *living* catalog, it needs to be continuously updated and expanded by its users. We therefore encourage all users to **report inconsistencies**, missing information, or malfunctions, and to **contribute new or missing datasets**. 
+
+
+### Data criteria
+-	**CRA data**: The data must be relevant for climate risk assessments (CRAs), reflecting one of the risk determinants as defined in [IPCC AR6](https://www.ipcc.ch/report/sixth-assessment-report-working-group-ii/): hazard, exposure, vulnerability, or response.
+-	**Geospatial data**: Only geospatial datasets in raster format, vector data (i.e. points, polygons, polylines) at a subnational level (i.e. administrative units), or tabular data that include coordinates are included.
+-	**Open-access license**: The dataset must be available under an open-access license with a persistent identifier assigned to it.
+-	**Publication**: The dataset must have a transparent documentation of the methods used for producing the data and should preferably be published in the peer-reviewed literature.
+
+::: {.callout-note}
+While the catalog has so far focused on global-scale CRA data, all **spatial scales** (i.e. regional, national, subnational) can be added.
+::: 
+
+
+### Quality control
+-	**Validation**: The repository developers check the suggested data entries for
+    -   Data criteria (see above)
+    -   Completeness of the data entry
+-	**New data entry**: If validation is successful, the data entry is added to the living catalog
+-	**Revision**: If the data do not meet the quality criteria, the data contributor is asked to revise their data entry
+
+
+## Step-by-step instructions
+1.	Go to <https://github.com/> and make a **free user account**
+
+2.	Navigate to the [Climate Risk STAC repository](https://github.com/climate-risk-data/climate-risk-stac) 
+
+3.	Click on the "Issues" tab and create a new issue (= contribute a dataset) via the **"New Issue"** button
+
+![GitHub Issues tab](./images/issues.png)
+
+4.	Select the relevant category by clicking on the **"Get started"** button
+
+![GitHub Issues categories](./images/issue_templates.png)
+
+5.	Fill in the form and submit the issue, following **these instructions**:
+    a.	Follow the attribute descriptions (link to metadata overview table here) and examples provided
+    b.	Make use of the pre-defined drop-down menus and free input fields
+    c.	Be as precise as possible
+
+::: {.callout-important}
+Please submit a separate data entry (= **item**) for datasets belonging to the same overall data source (= **collection**) whenever more than one attribute applies.
+::: 
