@@ -38,7 +38,7 @@ While the catalog has so far focused on global-scale CRA data, all **spatial sca
 ![GitHub Issues categories](./images/issue_templates.png)
 
 5.	Fill in the form and submit the issue, following **these instructions**:
-    a.	Follow the attribute descriptions and examples provided
+    a.	Follow the attribute descriptions (link to metadata overview table here) and examples provided
     b.	Make use of the pre-defined drop-down menus and free input fields
     c.	Be as precise as possible
 
