@@ -15,6 +15,6 @@ These pages provide documentation and support on **how to navigate** the living 
 -	**STAC Browser**: All data included in the living catalog can be explored in a [browsable webpage](https://radiantearth.github.io/stac-browser/#/external/https://raw.githubusercontent.com/climate-risk-data/climate-risk-stac/refs/heads/gh-pages/stac/catalog.json).
 
 
-### Further information
+### Further details
 -	**Scientific article**: The development of the living catalog is described in Reimann et al (in prep) [link will follow upon publication].
 -	**CLIMAAX project**: The catalog has been developed as part of the Horizon Europe project [CLIMAAX](https://www.climaax.eu/), which develops a harmonized framework and toolbox for CRAs across Europe. The catalog provides as a pool of possible data sources for a variety of CRA approaches ('[risk workflows](https://handbook.climaax.eu)').
