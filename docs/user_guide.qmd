@@ -1,0 +1,33 @@
+---
+title: "User guide"
+---
+
+The catalog is visualized in STAC Browser which transforms it into a **browsable webpage**. The catalog is structured into several **nested levels** that constitute the underlying folder structure. 
+The following steps ease browsing, selecting, and accessing the (meta)data included in the catalog.
+<br>
+
+## Step-by-step browsing
+
+1. Access the living metadata catalog via [STAC Browser](https://radiantearth.github.io/stac-browser/#/external/https://raw.githubusercontent.com/climate-risk-data/climate-risk-stac/refs/heads/gh-pages/stac/catalog.json)
+
+2. Navigate to **hazard** (i.e. climate) or **exposure-vulnerability** (i.e. socioeconomic) to browse the respective data entries:
+
+![](./docs/images/1st_catalogs.png){width=80%}
+
+3. Select from six hazard and four exposure-vulnerability **categories**:
+    -   **Hazard**: Flood, Precipitation related, Temperature related, Wind related, Environmental, Multi-hazard
+    -   **Exposure-vulnerability**: Population, Buildings, Infrastructure, Land use
+    
+::: {.callout-tip}
+Catalogs can be **filtered** by title, descriptions, and keywords. Additionally, datasets can be filtered by selecting attributed **keywords**.
+::: 
+
+
+4. Choose a dataset from the listed **data sources** ('collections'). Collections contain the metadata attributes that all data entries have in common (e.g. keywords, license, temporal extent, data provider):
+
+![Screenshot of the STAC Browser visualization at the collection level. Example of the collection 'Critical Infrastructure Spatial Index (CISI)' in catalog 'Exposure-vulnerability' - 'Infrastructure' (web browser used: Mozilla Firefox](./docs/images/collection.png){width=90%}
+<br>
+
+5.  Choose a specific **data entry** ('item') . Items list a range of metadata attributes including at least one **asset**, provides access to the data download:
+
+![STAC Browser visualization at the item level. Example of the item 'Index 0.1 dec deg' in collection 'Critical Infrastructure Spatial Index (CISI)' (web browser used: Mozilla Firefox)](./docs/images/item.png){width=90%}
