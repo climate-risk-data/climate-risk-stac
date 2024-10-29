@@ -35,13 +35,13 @@ While the catalog has so far focused on global-scale CRA data, **all spatial sca
 
 3.	Click on the "Issues" tab and create a new issue (= contribute a dataset) via the **"New Issue"** button:
 
-![](./images/issues.png){width=80% fig-align="right"}
+![](./images/issues.png){width=80% fig-align="center"}
 
 <br>
 
 4.	Select the relevant category by clicking on the **"Get started"** button:
 
-![](./images/issue_templates.png){width=80%}
+![](./images/issue_templates.png){width=80% fig-align="center"}
 
 <br>
 
