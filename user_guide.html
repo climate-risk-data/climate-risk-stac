@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>How to browse – Climate Risk STAC</title>
+<title>User guide – Climate Risk STAC</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -97,8 +97,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./browse.html" aria-current="page"> 
-<span class="menu-text">How to browse</span></a>
+    <a class="nav-link active" href="./user_guide.html" aria-current="page"> 
+<span class="menu-text">User guide</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./contribute.html"> 
@@ -127,9 +127,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#catalogs" id="toc-catalogs" class="nav-link active" data-scroll-target="#catalogs">Catalogs</a></li>
-  <li><a href="#collections" id="toc-collections" class="nav-link" data-scroll-target="#collections">Collections</a></li>
-  <li><a href="#items" id="toc-items" class="nav-link" data-scroll-target="#items">Items</a></li>
+  <li><a href="#step-by-step-browsing" id="toc-step-by-step-browsing" class="nav-link active" data-scroll-target="#step-by-step-browsing">Step-by-step browsing</a></li>
   </ul>
 </nav>
     </div>
@@ -138,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">How to browse</h1>
+<h1 class="title">User guide</h1>
 </div>
 
 
@@ -155,72 +153,47 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Browse STAC via STAC Browser: add brief introduction</p>
-<section id="catalogs" class="level3">
-<h3 class="anchored" data-anchor-id="catalogs">Catalogs</h3>
+<p>The catalog is visualized in STAC Browser which transforms it into a <strong>browsable webpage</strong>. The catalog is structured into several <strong>nested levels</strong> that constitute the underlying folder structure. The following steps ease browsing, selecting, and accessing the (meta)data included in the catalog. <br></p>
+<section id="step-by-step-browsing" class="level2">
+<h2 class="anchored" data-anchor-id="step-by-step-browsing">Step-by-step browsing</h2>
+<ol type="1">
+<li><p>Access the living metadata catalog via <a href="https://radiantearth.github.io/stac-browser/#/external/https://raw.githubusercontent.com/climate-risk-data/climate-risk-stac/refs/heads/gh-pages/stac/catalog.json">STAC Browser</a></p></li>
+<li><p>Navigate to <strong>hazard</strong> (i.e.&nbsp;climate) or <strong>exposure-vulnerability</strong> (i.e.&nbsp;socioeconomic) to browse the respective data entries:</p></li>
+</ol>
+<p><img src="./docs/images/1st_catalogs.png" class="img-fluid" style="width:80.0%"></p>
+<ol start="3" type="1">
+<li>Select from six hazard and four exposure-vulnerability <strong>categories</strong>:
 <ul>
-<li>underlying folder structure of the living catalog
-<ul>
-<li>first level:</li>
-<li>second level:</li>
+<li><strong>Hazard</strong>: Flood, Precipitation related, Temperature related, Wind related, Environmental, Multi-hazard</li>
+<li><strong>Exposure-vulnerability</strong>: Population, Buildings, Infrastructure, Land use</li>
 </ul></li>
-<li>can be filtered by title, descriptions and keywords</li>
-</ul>
-<div class="callout callout-style-default callout-warning callout-titled">
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Collections are listed as “Catalogs” in STAC Browser.</p>
+<p>Catalogs can be <strong>filtered</strong> by title, descriptions, and keywords. Additionally, datasets can be filtered by selecting attributed <strong>keywords</strong>.</p>
 </div>
 </div>
-</section>
-<section id="collections" class="level3">
-<h3 class="anchored" data-anchor-id="collections">Collections</h3>
-<ul>
-<li>Their functionality is similar to catalogs, but their contain important overall data source information</li>
-<li>keywords can be selected for filtering</li>
-<li>contain important metadata (link to metadata overview table here?) that all data entries (= items) have in common
-<ul>
-<li>description</li>
-<li>keywords</li>
-<li>license</li>
-<li>overall temporal extent</li>
-<li>overall spatial footprint</li>
-<li>data provider including weblink</li>
-</ul></li>
-<li>links to corresponding items</li>
-</ul>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<ol start="4" type="1">
+<li>Choose a dataset from the listed <strong>data sources</strong> (‘collections’). Collections contain the metadata attributes that all data entries have in common (e.g.&nbsp;keywords, license, temporal extent, data provider):</li>
+</ol>
+<p><img src="./docs/images/collection.png" class="img-fluid" style="width:90.0%" alt="Screenshot of the STAC Browser visualization at the collection level. Example of the collection ‘Critical Infrastructure Spatial Index (CISI)’ in catalog ‘Exposure-vulnerability’ - ‘Infrastructure’ (web browser used: Mozilla Firefox"> <br></p>
+<ol start="5" type="1">
+<li>Choose a specific <strong>data entry</strong> (‘item’) . Items list a range of metadata attributes including at least one <strong>asset</strong>, provides access to the data download:</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./docs/images/item.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>STAC Browser visualization at the item level. Example of the item ‘Index 0.1 dec deg’ in collection ‘Critical Infrastructure Spatial Index (CISI)’ (web browser used: Mozilla Firefox)</figcaption>
+</figure>
 </div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Very important: at least one item per collection</p>
-</div>
-</div>
-</section>
-<section id="items" class="level3">
-<h3 class="anchored" data-anchor-id="items">Items</h3>
-<ul>
-<li>vast majority of metadata attributes (link to metadata overview table here)
-<ul>
-<li>technical specifications of the data entry</li>
-<li>additional information relevant for CRAs</li>
-<li>additional resources such as links to publications and code (if available)</li>
-<li>assets = define here</li>
-</ul></li>
-</ul>
 
 
 </section>

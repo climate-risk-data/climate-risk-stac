@@ -97,8 +97,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./browse.html"> 
-<span class="menu-text">How to browse</span></a>
+    <a class="nav-link" href="./user_guide.html"> 
+<span class="menu-text">User guide</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./contribute.html" aria-current="page"> 
@@ -127,8 +127,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-criteria" id="toc-data-criteria" class="nav-link active" data-scroll-target="#data-criteria">Data criteria</a></li>
+  <li><a href="#contribute-a-new-dataset" id="toc-contribute-a-new-dataset" class="nav-link active" data-scroll-target="#contribute-a-new-dataset">Contribute a new dataset</a>
+  <ul class="collapse">
+  <li><a href="#selection-criteria" id="toc-selection-criteria" class="nav-link" data-scroll-target="#selection-criteria">Selection criteria</a></li>
   <li><a href="#quality-control" id="toc-quality-control" class="nav-link" data-scroll-target="#quality-control">Quality control</a></li>
+  </ul></li>
   <li><a href="#step-by-step-instructions" id="toc-step-by-step-instructions" class="nav-link" data-scroll-target="#step-by-step-instructions">Step-by-step instructions</a></li>
   </ul>
 </nav>
@@ -155,9 +158,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>To make this a <em>living</em> catalog, it needs to be continuously updated and expanded by its users. We therefore encourage all users to <strong>report inconsistencies</strong>, missing information, or malfunctions, and to <strong>contribute new or missing datasets</strong>.</p>
-<section id="data-criteria" class="level3">
-<h3 class="anchored" data-anchor-id="data-criteria">Data criteria</h3>
+<p>To make this a <strong><em>living</em></strong> catalog, it needs to be continuously updated and expanded by its users. We therefore encourage all users to <strong>report inconsistencies</strong>, missing information, or malfunctions, and to <strong>contribute new or missing datasets</strong>.</p>
+<p><br></p>
+<section id="contribute-a-new-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="contribute-a-new-dataset">Contribute a new dataset</h2>
+<section id="selection-criteria" class="level3">
+<h3 class="anchored" data-anchor-id="selection-criteria">Selection criteria</h3>
 <ul>
 <li><strong>CRA data</strong>: The data must be relevant for climate risk assessments (CRAs), reflecting one of the risk determinants as defined in <a href="https://www.ipcc.ch/report/sixth-assessment-report-working-group-ii/">IPCC AR6</a>: hazard, exposure, vulnerability, or response.</li>
 <li><strong>Geospatial data</strong>: Only geospatial datasets in raster format, vector data (i.e.&nbsp;points, polygons, polylines) at a subnational level (i.e.&nbsp;administrative units), or tabular data that include coordinates are included.</li>
@@ -174,21 +180,24 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>While the catalog has so far focused on global-scale CRA data, all <strong>spatial scales</strong> (i.e.&nbsp;regional, national, subnational) can be added.</p>
+<p>While the catalog has so far focused on global-scale CRA data, <strong>all spatial scales</strong> (i.e.&nbsp;regional, national, subnational) can be added.</p>
 </div>
 </div>
+<p><br></p>
 </section>
 <section id="quality-control" class="level3">
 <h3 class="anchored" data-anchor-id="quality-control">Quality control</h3>
 <ul>
-<li><strong>Validation</strong>: The repository developers check the suggested data entries for
+<li><strong>Validation</strong>: When a new data entry is suggested, the repository developers check it for
 <ul>
-<li>Data criteria (see above)</li>
+<li>Selection criteria (see above)</li>
 <li>Completeness of the data entry</li>
 </ul></li>
-<li><strong>New data entry</strong>: If validation is successful, the data entry is added to the living catalog</li>
+<li><strong>New data entry</strong>: If the validation is successful, the data entry is added to the living catalog</li>
 <li><strong>Revision</strong>: If the data do not meet the quality criteria, the data contributor is asked to revise their data entry</li>
 </ul>
+<p><br></p>
+</section>
 </section>
 <section id="step-by-step-instructions" class="level2">
 <h2 class="anchored" data-anchor-id="step-by-step-instructions">Step-by-step instructions</h2>
@@ -197,25 +206,15 @@ Note
 <li><p>Navigate to the <a href="https://github.com/climate-risk-data/climate-risk-stac">Climate Risk STAC repository</a></p></li>
 <li><p>Click on the “Issues” tab and create a new issue (= contribute a dataset) via the <strong>“New Issue”</strong> button</p></li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/issues.png" class="img-fluid figure-img"></p>
-<figcaption>GitHub Issues tab</figcaption>
-</figure>
-</div>
+<p><img src="./docs/images/issues.png" class="img-fluid quarto-figure quarto-figure-right" style="width:80.0%" alt="GitHub Issues tab"> <br></p>
 <ol start="4" type="1">
 <li>Select the relevant category by clicking on the <strong>“Get started”</strong> button</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/issue_templates.png" class="img-fluid figure-img"></p>
-<figcaption>GitHub Issues categories</figcaption>
-</figure>
-</div>
+<p><img src="./docs/images/issue_templates.png" class="img-fluid" style="width:80.0%" alt="GitHub Issues categories"> <br></p>
 <ol start="5" type="1">
-<li>Fill in the form and submit the issue, following <strong>these instructions</strong>:
+<li><p>Fill in the form and submit the issue. Please follow these <strong>guidelines</strong>:</p>
 <ol type="a">
-<li>Follow the attribute descriptions (link to metadata overview table here) and examples provided</li>
+<li>Follow the attribute descriptions and examples provided</li>
 <li>Make use of the pre-defined drop-down menus and free input fields</li>
 <li>Be as precise as possible</li>
 </ol></li>
