@@ -12,7 +12,7 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - browse.qmd
+      - user_guide.qmd
       - contribute.qmd
       # - href: https://radiantearth.github.io/stac-browser/#/external/https://raw.githubusercontent.com/climate-risk-data/climate-risk-stac/refs/heads/gh-pages/stac/catalog.json
       #   text: STAC Browser

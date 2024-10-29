@@ -4,16 +4,20 @@ title: "About"
 
 These pages provide documentation and support on **how to navigate** the living metadata catalog of open-access geospatial datasets for climate risk assessments (CRAs).
 
+<br>
+
 ### Key principles
 - **Risk framework**: The catalog follows the risk framework of the IPCC’s 5th and 6th Assessment Reports ([AR5](https://www.ipcc.ch/report/ar5/wg2/), [AR6](https://www.ipcc.ch/report/sixth-assessment-report-working-group-ii/)) where risk results from the interaction of hazards, the elements exposed to these hazards as well as the vulnerability of the exposed elements.
 - **FAIR data**: The catalog includes data with an open-access license only, thereby facilitating the provision of Findable, Accessible, Interoperable, and Reusable (FAIR) data ([Wilkinson et al. 2016](https://doi.org/10.1038/sdata.2016.18)).
 - **Community-driven development**: To allow for continuous development by the CRA community, the catalog is hosted in a [collaborative environment](https://github.com/climate-risk-data/climate-risk-stac) with the opportunity to [contribute further datasets](https://github.com/climate-risk-data/climate-risk-stac/issues/new/choose) (see [How to contribute](./contribute.qmd)).
 
+<br>
 
 ### Technical implementation
 -	**SpatioTemporal Asset Catalog (STAC)**: The [STAC specification](https://stacspec.org/) provides the underlying common standard of the living catalog, allowing for structuring and querying geospatial metadata. STAC can flexibly accommodate a variety metadata attributes relevant for CRAs. 
 -	**STAC Browser**: All data included in the living catalog can be explored in a [browsable webpage](https://radiantearth.github.io/stac-browser/#/external/https://raw.githubusercontent.com/climate-risk-data/climate-risk-stac/refs/heads/gh-pages/stac/catalog.json).
 
+<br>
 
 ### Further details
 -	**Scientific article**: The development of the living catalog is described in Reimann et al (in prep) [link will follow upon publication].

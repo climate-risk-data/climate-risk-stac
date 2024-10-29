@@ -1,14 +1,14 @@
 ---
 title: "Climate Risk STAC"
 ---
-
 <!-- {{< include ../README.md >}} This doesn't work because of the relative path to images -->
 
 We provide a **living metadata catalog** of publicly available geospatial datasets for climate risk assessments (CRAs), which can be browsed, selected, and accessed based on a variety of technical specifications and information relevant for CRAs. The living catalog is based on the SpatioTemporal Asset Catalog (STAC) specification and visualized in STAC Browser. 
 
 STAC Browser: 
 [explore the catalog](https://radiantearth.github.io/stac-browser/#/external/https://raw.githubusercontent.com/climate-risk-data/climate-risk-stac/refs/heads/gh-pages/stac/catalog.json)
+<br>
 
-The current version of the catalog includes hazard, exposure and vulnerability datasets, which are grouped into a) climate processes (i.e. hazard) and b) socioeconomic processes (i.e. exposure and vulnerability): 
+The current version of the catalog includes **hazard, exposure and vulnerability datasets**, which are grouped into a) climate processes (i.e. hazard) and b) socioeconomic processes (i.e. exposure and vulnerability): 
 
 ![Catalog structure along the three risk drivers, separated into a) climate processes (i.e. hazard) and b) socioeconomic processes (i.e. exposure and vulnerability)](./images/classification.png)
