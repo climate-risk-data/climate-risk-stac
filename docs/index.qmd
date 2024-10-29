@@ -11,4 +11,4 @@ STAC Browser:
 
 The current version of the catalog includes **hazard, exposure and vulnerability datasets**, which are grouped into a) climate processes (i.e. hazard) and b) socioeconomic processes (i.e. exposure and vulnerability): 
 
-![Catalog structure along the three risk drivers, separated into a) climate processes (i.e. hazard) and b) socioeconomic processes (i.e. exposure and vulnerability)](./images/classification.png)
+![Catalog structure along the three risk drivers, separated into a) climate processes (i.e. hazard) and b) socioeconomic processes (i.e. exposure and vulnerability)](./docs/images/classification.png)
