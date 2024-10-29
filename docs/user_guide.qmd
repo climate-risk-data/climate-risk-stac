@@ -31,4 +31,4 @@ Catalogs can be **filtered** by title, descriptions, and keywords. Additionally,
 
 5.  Choose a specific **data entry** ('item') . Items list a range of metadata attributes including at least one **asset**, provides access to the data download:
 
-![STAC Browser visualization at the item level. Example of the item 'Index 0.1 dec deg' in collection 'Critical Infrastructure Spatial Index (CISI)' (web browser used: Mozilla Firefox)](./images/item.png){width=90%}
+![STAC Browser visualization at the item level. Example of the item 'Index 0.1 dec deg' in collection 'Critical Infrastructure Spatial Index (CISI)' (web browser used: Mozilla Firefox)](./images/item.png)
