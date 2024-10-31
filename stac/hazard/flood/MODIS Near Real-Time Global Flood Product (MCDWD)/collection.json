@@ -8,7 +8,7 @@
       "rel": "root",
       "href": "../../../catalog.json",
       "type": "application/json",
-      "title": "Climate Risk Data"
+      "title": "Climate Risk STAC"
     },
     {
       "rel": "item",
@@ -48,7 +48,7 @@
       "interval": [
         [
           "2021-01-01T00:00:00Z",
-          "2024-10-29T00:00:00Z"
+          "2024-10-31T00:00:00Z"
         ]
       ]
     }

@@ -58,7 +58,7 @@
     "code type": null,
     "usage notes": "data download via interface or API",
     "start_datetime": "1979-01-01T00:00:00Z",
-    "end_datetime": "2024-10-29T00:00:00Z",
+    "end_datetime": "2024-10-31T00:00:00Z",
     "proj:epsg": 4326,
     "sci:doi": "10.24381/cds.a4fdd6b9",
     "datetime": null
@@ -72,7 +72,7 @@
       "rel": "root",
       "href": "../../../../catalog.json",
       "type": "application/json",
-      "title": "Climate Risk Data"
+      "title": "Climate Risk STAC"
     },
     {
       "rel": "collection",

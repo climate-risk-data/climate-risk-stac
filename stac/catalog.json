@@ -1,14 +1,14 @@
 {
   "type": "Catalog",
-  "id": "climate-risk-data",
+  "id": "climate-risk-stac",
   "stac_version": "1.0.0",
-  "description": "This is a living, community-driven metadata catalog of geospatial datasets relevant for climate risk assessments (CRAs). This first version of the catalog (released XXXX) is structured around the three risk drivers hazard, exposure, and vulnerability, with a focus on global-scale datasets. We provide detailed documentation on how to navigate the catalog, including a user guide (see 'Catalog documentation'). The development of the catalog is described in detail in the referenced publication (see 'Peer-reviewed publication'). As the catalog is designed to be a community-led endeavor, we encourage risk data users to add datasets to this catalog, thereby creating a growing knowledge base for potential users. New datasets can be submitted via GitHub (see 'Submit a new dataset').",
+  "description": "This is a living, community-driven metadata catalog of geospatial datasets relevant for climate risk assessments (CRAs). The catalog is structured around the three risk drivers hazard, exposure, and vulnerability, with a focus on global-scale datasets. We provide detailed documentation on how to navigate the catalog, including a user guide (see 'Catalog documentation'). The development of the catalog is described in detail in the referenced publication (see 'Peer-reviewed publication'). As the catalog is designed to be a community-led endeavor, we encourage risk data users to add datasets to this catalog, thereby creating a growing knowledge base for potential users. New datasets can be submitted via GitHub (see 'Submit a new dataset').",
   "links": [
     {
       "rel": "root",
       "href": "./catalog.json",
       "type": "application/json",
-      "title": "Climate Risk Data"
+      "title": "Climate Risk STAC"
     },
     {
       "rel": "via",
@@ -38,5 +38,5 @@
       "title": "Exposure-vulnerability"
     }
   ],
-  "title": "Climate Risk Data"
+  "title": "Climate Risk STAC"
 }

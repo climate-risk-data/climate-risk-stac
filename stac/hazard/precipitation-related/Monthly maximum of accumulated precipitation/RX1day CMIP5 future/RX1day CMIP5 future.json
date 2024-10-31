@@ -77,7 +77,7 @@
       "rel": "root",
       "href": "../../../../catalog.json",
       "type": "application/json",
-      "title": "Climate Risk Data"
+      "title": "Climate Risk STAC"
     },
     {
       "rel": "collection",
