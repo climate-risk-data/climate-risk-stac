@@ -392,11 +392,26 @@ def update_catalog_from_dataframe(
 
             # confirmation item added
             logger.info(f"item {row_num} {item['title_item']} successfully added")
-        else:
-            logger.warning(
-                f"item {row_num} {item['title_item']} already present. "
-                "Compare items and remove duplicates."
-            )
+        
+        #  if item already present, check subcategory of exiting versus new item
+        if item["title_item"] in [col.id for col in collection.get_items()]:
+            existing_item = collection.get_item(item["title_item"])
+            existing_subcategory = existing_item.properties.get("subcategory", None)
+            new_subcategory = item["subcategory"]
+
+            if existing_subcategory != new_subcategory:
+                # add new subcategory to existing item in the properties "subcategory", separating it with a comma
+                if existing_subcategory:
+                    updated_subcategory = f"{existing_subcategory}, {new_subcategory}"
+                    existing_item.properties["subcategory"] = updated_subcategory
+                    logger.info(
+                        f"item {row_num} {item['title_item']} updated with new subcategory."
+                    )
+                else:
+                    logger.warning(
+                        f"item {row_num} {item['title_item']} already present. "
+                        "Compare items and remove duplicates."
+                )
 
     logger.info("catalog built")
 
