@@ -165,4 +165,4 @@ docs/.quarto/
 docs/_site/
 
 # stac
-stac/
+#stac/
