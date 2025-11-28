@@ -1,7 +1,7 @@
 {
   "type": "Collection",
   "id": "Monthly statistics of daily minimum temperature",
-  "stac_version": "1.0.0",
+  "stac_version": "1.1.0",
   "description": "This catalogue entry provides gridded data from global (CMIP5 and CMIP6) projections included in the IPCC Interactive Atlas, a novel contribution from Working Group I (WGI) to the IPCC Sixth Assessment Report (AR6).",
   "links": [
     {
@@ -13,42 +13,42 @@
     {
       "rel": "item",
       "href": "./Monthly mean CMIP 6 future/Monthly mean CMIP 6 future.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./Monthly mean CMIP 6 historical/Monthly mean CMIP 6 historical.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./Monthly minimum CMIP 6 future/Monthly minimum CMIP 6 future.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./Monthly minimum CMIP 6 historical/Monthly minimum CMIP 6 historical.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./Monthly mean CMIP 5 future/Monthly mean CMIP 5 future.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./Monthly mean CMIP 5 historical/Monthly mean CMIP 5 historical.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./Monthly minimum CMIP 5 future/Monthly minimum CMIP 5 future.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./Monthly minimum CMIP 5 historical/Monthly minimum CMIP 5 historical.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "parent",

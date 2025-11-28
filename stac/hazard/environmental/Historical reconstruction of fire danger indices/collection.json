@@ -1,7 +1,7 @@
 {
   "type": "Collection",
   "id": "Historical reconstruction of fire danger indices",
-  "stac_version": "1.0.0",
+  "stac_version": "1.1.0",
   "description": "The data set provides complete historical reconstruction of meteorological conditions favourable to the start, spread and sustainability of fires. The fire danger metrics provided are part of a vast dataset produced by the Copernicus Emergency Management Service for the European Forest Fire Information System (EFFIS). ",
   "links": [
     {
@@ -13,22 +13,22 @@
     {
       "rel": "item",
       "href": "./Australian McArthur/Australian McArthur.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./Canadian FWI/Canadian FWI.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./U.S. NFDRS 0.25/U.S. NFDRS 0.25.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./U.S. NFDRS 0.5/U.S. NFDRS 0.5.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "parent",
@@ -53,7 +53,7 @@
       "interval": [
         [
           "1940-01-01T00:00:00Z",
-          "2024-10-31T00:00:00Z"
+          "2025-11-28T00:00:00Z"
         ]
       ]
     }

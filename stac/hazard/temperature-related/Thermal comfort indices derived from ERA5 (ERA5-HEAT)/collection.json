@@ -1,7 +1,7 @@
 {
   "type": "Collection",
   "id": "Thermal comfort indices derived from ERA5 (ERA5-HEAT)",
-  "stac_version": "1.0.0",
+  "stac_version": "1.1.0",
   "description": "These data provide modelled hourly data for a set of indices representing human thermal stress and discomfort in outdoor conditions. ",
   "links": [
     {
@@ -13,12 +13,12 @@
     {
       "rel": "item",
       "href": "./Mean radiant temperature/Mean radiant temperature.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./Universal thermal climate index/Universal thermal climate index.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "parent",
@@ -43,7 +43,7 @@
       "interval": [
         [
           "1940-01-01T00:00:00Z",
-          "2024-10-31T00:00:00Z"
+          "2025-11-28T00:00:00Z"
         ]
       ]
     }

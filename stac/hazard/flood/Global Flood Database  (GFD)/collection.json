@@ -1,7 +1,7 @@
 {
   "type": "Collection",
   "id": "Global Flood Database  (GFD)",
-  "stac_version": "1.0.0",
+  "stac_version": "1.1.0",
   "description": "The Global Flood Database provides satellite-derived flood footprints and depths for 913 floods that occurred between 2000 and 2018.",
   "links": [
     {
@@ -13,7 +13,7 @@
     {
       "rel": "item",
       "href": "./GFD 2000-2018/GFD 2000-2018.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "parent",

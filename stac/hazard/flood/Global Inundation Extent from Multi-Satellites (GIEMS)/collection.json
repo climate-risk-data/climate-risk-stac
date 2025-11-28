@@ -1,7 +1,7 @@
 {
   "type": "Collection",
   "id": "Global Inundation Extent from Multi-Satellites (GIEMS)",
-  "stac_version": "1.0.0",
+  "stac_version": "1.1.0",
   "description": "Provides maps of inundation percentage",
   "links": [
     {
@@ -13,12 +13,12 @@
     {
       "rel": "item",
       "href": "./GIEMS 0.25 decimal degrees/GIEMS 0.25 decimal degrees.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./GIEMS 3 arc seconds/GIEMS 3 arc seconds.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "parent",

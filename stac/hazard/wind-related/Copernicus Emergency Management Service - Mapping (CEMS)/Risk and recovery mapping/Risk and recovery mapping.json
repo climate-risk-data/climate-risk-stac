@@ -1,8 +1,8 @@
 {
   "type": "Feature",
-  "stac_version": "1.0.0",
+  "stac_version": "1.1.0",
   "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
   ],
   "id": "Risk and recovery mapping",
   "geometry": {
@@ -42,7 +42,7 @@
     "title": "Risk and recovery mapping",
     "description": "This service provides on-demand\u00a0geospatial information to support emergency management activities outside the immediate response phase. It covers the prevention, preparedness, disaster risk reduction, and recovery phases.",
     "risk data type": "hazard",
-    "subcategory": "extratropical cyclone",
+    "subcategory": "extratropical cyclone, tropical cyclone",
     "spatial scale": "(near-)global",
     "reference period": "historical",
     "temporal coverage": "2017-now (irregular)",
@@ -57,8 +57,8 @@
     "code type": null,
     "usage notes": "Download per event/case study possible",
     "start_datetime": "2017-01-01T00:00:00Z",
-    "end_datetime": "2024-10-31T00:00:00Z",
-    "proj:epsg": 4326,
+    "end_datetime": "2025-11-28T00:00:00Z",
+    "proj:code": "EPSG:4326",
     "datetime": null
   },
   "links": [

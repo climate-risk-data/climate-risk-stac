@@ -1,7 +1,7 @@
 {
   "type": "Collection",
   "id": "Synthetic Tropical cyclOne geneRation Model (STORM)",
-  "stac_version": "1.0.0",
+  "stac_version": "1.1.0",
   "description": "Datasets generated with the synthetic resampling algorithm STORM",
   "links": [
     {
@@ -13,22 +13,22 @@
     {
       "rel": "item",
       "href": "./Future tracks/Future tracks.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./Future wind speeds/Future wind speeds.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./Historical tracks/Historical tracks.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./Historical wind speeds/Historical wind speeds.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "parent",

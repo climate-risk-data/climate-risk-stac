@@ -1,7 +1,7 @@
 {
   "type": "Collection",
   "id": "MODIS Near Real-Time Global Flood Product (MCDWD)",
-  "stac_version": "1.0.0",
+  "stac_version": "1.1.0",
   "description": "The Flood Product is a daily, near-global, ~250 m resolution product showing flood and surface water detected from the twice-daily overpass of the MODIS optical sensors (onboard Terra and Aqua satellites). To minimize false-positives from cloud and terrain shadows, we employ a multi-observation compositing approach, and generate the product over three compositing periods (1-day, 2-day, and 3-day).",
   "links": [
     {
@@ -13,17 +13,17 @@
     {
       "rel": "item",
       "href": "./MCDWD 1-day GeoTIFF/MCDWD 1-day GeoTIFF.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./MCDWD 2-day GeoTIFF/MCDWD 2-day GeoTIFF.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./MCDWD 3-day GeoTIFF/MCDWD 3-day GeoTIFF.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "parent",
@@ -48,7 +48,7 @@
       "interval": [
         [
           "2021-01-01T00:00:00Z",
-          "2024-10-31T00:00:00Z"
+          "2025-11-28T00:00:00Z"
         ]
       ]
     }

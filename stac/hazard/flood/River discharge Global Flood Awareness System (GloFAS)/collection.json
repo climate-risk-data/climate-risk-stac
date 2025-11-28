@@ -1,7 +1,7 @@
 {
   "type": "Collection",
   "id": "River discharge Global Flood Awareness System (GloFAS)",
-  "stac_version": "1.0.0",
+  "stac_version": "1.1.0",
   "description": "GloFAS datasets provide daily simulations of river discharge, covering the globe with the exception of Antarctica",
   "links": [
     {
@@ -13,27 +13,27 @@
     {
       "rel": "item",
       "href": "./Reforecasts/Reforecasts.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./Seasonal reforecasts/Seasonal reforecasts.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./Seasonal forecasts/Seasonal forecasts.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./Forecasted data/Forecasted data.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./Historical data/Historical data.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "parent",
@@ -58,7 +58,7 @@
       "interval": [
         [
           "1979-01-01T00:00:00Z",
-          "2024-12-31T00:00:00Z"
+          "2025-12-31T00:00:00Z"
         ]
       ]
     }

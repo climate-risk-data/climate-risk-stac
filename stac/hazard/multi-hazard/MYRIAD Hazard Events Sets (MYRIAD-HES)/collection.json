@@ -1,7 +1,7 @@
 {
   "type": "Collection",
   "id": "MYRIAD Hazard Events Sets (MYRIAD-HES)",
-  "stac_version": "1.0.0",
+  "stac_version": "1.1.0",
   "description": "A global multi-hazard event set database, spanning from 2004 to 2017, which includes eleven hazards (coldwaves, heatwaves, droughts, earthquakes, extreme wind events, floods, landslides, tropical cyclones, tsunamis, volcanic eruptions, and wildfires).",
   "links": [
     {
@@ -13,7 +13,7 @@
     {
       "rel": "item",
       "href": "./Multi-hazard events sets/Multi-hazard events sets.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "parent",

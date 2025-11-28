@@ -1,7 +1,7 @@
 {
   "type": "Collection",
   "id": "A Global High-resolution Dataset of Earth\u2019s Floodplains (GFPLAIN250m)",
-  "stac_version": "1.0.0",
+  "stac_version": "1.1.0",
   "description": "The datasets aims at providing the floodplain delineation at the global level",
   "links": [
     {
@@ -13,12 +13,12 @@
     {
       "rel": "item",
       "href": "./GFPLAIN250m ascii/GFPLAIN250m ascii.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./GFPLAIN250m geotiff/GFPLAIN250m geotiff.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "parent",

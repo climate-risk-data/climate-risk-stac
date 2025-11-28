@@ -1,7 +1,7 @@
 {
   "type": "Collection",
   "id": "Global SPEI database",
-  "stac_version": "1.0.0",
+  "stac_version": "1.1.0",
   "description": "The Global SPEI database, SPEIbase, offers long-time, robust information about drought conditions at the global scale, with a 0.5 degrees spatial resolution and a monthly time resolution. It has a multi-scale character, providing SPEI time-scales between 1 and 48 months. It is based on monthly precipitation and potential evapotranspiration data from the Climatic Research Unit of the University of East Anglia, starting in January 1901, and it is updated as soon as new data becomes available.",
   "links": [
     {
@@ -13,7 +13,7 @@
     {
       "rel": "item",
       "href": "./SPEIbase/SPEIbase.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "parent",

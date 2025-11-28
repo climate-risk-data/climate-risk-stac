@@ -1,8 +1,8 @@
 {
   "type": "Feature",
-  "stac_version": "1.0.0",
+  "stac_version": "1.1.0",
   "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ],
   "id": "Reforecasts",
@@ -59,7 +59,7 @@
     "usage notes": "Reforecasts are generated in near real time for each Monday and Thursday as reference dates, 46-day lead time. For each reference date, reforecasts are produced for the past 20 years from 2003 to 2022 (inclusive). The first available reforecast reference date is the 2023-03-27.",
     "start_datetime": "2003-01-01T00:00:00Z",
     "end_datetime": "2022-12-31T00:00:00Z",
-    "proj:epsg": 4326,
+    "proj:code": "EPSG:4326",
     "sci:doi": "10.24381/cds.2d78664e",
     "datetime": null
   },

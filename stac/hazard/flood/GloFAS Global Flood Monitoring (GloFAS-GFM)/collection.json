@@ -1,7 +1,7 @@
 {
   "type": "Collection",
   "id": "GloFAS Global Flood Monitoring (GloFAS-GFM)",
-  "stac_version": "1.0.0",
+  "stac_version": "1.1.0",
   "description": "A continuous monitoring of floods worldwide by immediately processing and analyzing all incoming Copernicus Sentinel-1 Synthetic Aperture Radar (SAR) satellite data",
   "links": [
     {
@@ -13,12 +13,12 @@
     {
       "rel": "item",
       "href": "./Observed flood extent/Observed flood extent.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./Observed water Extent/Observed water Extent.json",
-      "type": "application/json"
+      "type": "application/geo+json"
     },
     {
       "rel": "parent",
@@ -43,7 +43,7 @@
       "interval": [
         [
           "2015-01-01T00:00:00Z",
-          "2024-10-31T00:00:00Z"
+          "2025-11-28T00:00:00Z"
         ]
       ]
     }
