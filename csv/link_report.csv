@@ -1,0 +1,992 @@
+"file","row_number","title_item","link","status","success"
+"csv/hazard.csv",4,"GEHE increase","https://sedac.ciesin.columbia.edu/downloads/data/sdei/sdei-high-res-extreme-heat-estimates-1983-2016/sdei-high-res-extreme-heat-estimates-1983-2016-wbgtmax-trends-geotiff.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10003 milliseconds",FALSE
+"csv/hazard.csv",5,"GEHE WBGTmax 28 degrees C","https://sedac.ciesin.columbia.edu/downloads/data/sdei/sdei-high-res-extreme-heat-estimates-1983-2016/sdei-high-res-extreme-heat-estimates-1983-2016-wbgtmax28-counts-geotiff.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10001 milliseconds",FALSE
+"csv/hazard.csv",6,"GEHE WBGTmax 30 degrees C","https://sedac.ciesin.columbia.edu/downloads/data/sdei/sdei-high-res-extreme-heat-estimates-1983-2016/sdei-high-res-extreme-heat-estimates-1983-2016-wbgtmax30-counts-geotiff.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10009 milliseconds",FALSE
+"csv/hazard.csv",7,"GEHE WBGTmax 32 degrees C","https://sedac.ciesin.columbia.edu/downloads/data/sdei/sdei-high-res-extreme-heat-estimates-1983-2016/sdei-high-res-extreme-heat-estimates-1983-2016-wbgtmax32-counts-geotiff.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10017 milliseconds",FALSE
+"csv/hazard.csv",8,"Heat index future","https://cds-beta.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=download","SSL peer certificate or SSH remote key was not OK [cds-beta.climate.copernicus.eu]:
+schannel: SEC_E_UNTRUSTED_ROOT (0x80090325) - The certificate chain was issued by an authority that is not trusted.",FALSE
+"csv/hazard.csv",9,"Heat index historical","https://cds-beta.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=download","SSL peer certificate or SSH remote key was not OK [cds-beta.climate.copernicus.eu]:
+schannel: SEC_E_UNTRUSTED_ROOT (0x80090325) - The certificate chain was issued by an authority that is not trusted.",FALSE
+"csv/hazard.csv",10,"Humidex future","https://cds-beta.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=download","SSL peer certificate or SSH remote key was not OK [cds-beta.climate.copernicus.eu]:
+schannel: SEC_E_UNTRUSTED_ROOT (0x80090325) - The certificate chain was issued by an authority that is not trusted.",FALSE
+"csv/hazard.csv",11,"Humidex historical","https://cds-beta.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=download","SSL peer certificate or SSH remote key was not OK [cds-beta.climate.copernicus.eu]:
+schannel: SEC_E_UNTRUSTED_ROOT (0x80090325) - The certificate chain was issued by an authority that is not trusted.",FALSE
+"csv/hazard.csv",12,"Indoor climate index future","https://cds-beta.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=download","SSL peer certificate or SSH remote key was not OK [cds-beta.climate.copernicus.eu]:
+schannel: SEC_E_UNTRUSTED_ROOT (0x80090325) - The certificate chain was issued by an authority that is not trusted.",FALSE
+"csv/hazard.csv",13,"Indoor climate index historical","https://cds-beta.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=download","SSL peer certificate or SSH remote key was not OK [cds-beta.climate.copernicus.eu]:
+schannel: SEC_E_UNTRUSTED_ROOT (0x80090325) - The certificate chain was issued by an authority that is not trusted.",FALSE
+"csv/hazard.csv",14,"Indoor temperature index future","https://cds-beta.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=download","SSL peer certificate or SSH remote key was not OK [cds-beta.climate.copernicus.eu]:
+schannel: SEC_E_UNTRUSTED_ROOT (0x80090325) - The certificate chain was issued by an authority that is not trusted.",FALSE
+"csv/hazard.csv",15,"Indoor temperature index historical","https://cds-beta.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=download","SSL peer certificate or SSH remote key was not OK [cds-beta.climate.copernicus.eu]:
+schannel: SEC_E_UNTRUSTED_ROOT (0x80090325) - The certificate chain was issued by an authority that is not trusted.",FALSE
+"csv/hazard.csv",16,"Wet-bulb temperature index  future","https://cds-beta.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=download","SSL peer certificate or SSH remote key was not OK [cds-beta.climate.copernicus.eu]:
+schannel: SEC_E_UNTRUSTED_ROOT (0x80090325) - The certificate chain was issued by an authority that is not trusted.",FALSE
+"csv/hazard.csv",17,"Wet-bulb temperature index historical","https://cds-beta.climate.copernicus.eu/datasets/sis-extreme-indices-cmip6?tab=download","SSL peer certificate or SSH remote key was not OK [cds-beta.climate.copernicus.eu]:
+schannel: SEC_E_UNTRUSTED_ROOT (0x80090325) - The certificate chain was issued by an authority that is not trusted.",FALSE
+"csv/hazard.csv",19,"Rapid mapping per event","https://emergency.copernicus.eu/mapping/list-of-activations-rapid","404",FALSE
+"csv/hazard.csv",20,"Rapid mapping per event","https://emergency.copernicus.eu/mapping/list-of-activations-rapid","404",FALSE
+"csv/hazard.csv",21,"Risk and recovery mapping","https://emergency.copernicus.eu/mapping/list-of-activations-risk-and-recovery","404",FALSE
+"csv/hazard.csv",22,"Rapid mapping per event","https://emergency.copernicus.eu/mapping/list-of-activations-rapid","404",FALSE
+"csv/hazard.csv",23,"Risk and recovery mapping","https://emergency.copernicus.eu/mapping/list-of-activations-risk-and-recovery","404",FALSE
+"csv/hazard.csv",24,"Rapid mapping per event","https://emergency.copernicus.eu/mapping/list-of-activations-rapid","404",FALSE
+"csv/hazard.csv",25,"Risk and recovery mapping","https://emergency.copernicus.eu/mapping/list-of-activations-risk-and-recovery","404",FALSE
+"csv/hazard.csv",27,"version 1 tabular","https://sedac.ciesin.columbia.edu/downloads/data/sdei/sdei-high-res-daily-uhe-1983-2016/sdei-high-res-daily-uhe-1983-2016-csv-json.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10014 milliseconds",FALSE
+"csv/hazard.csv",28,"version 1 vector","https://sedac.ciesin.columbia.edu/downloads/data/sdei/sdei-high-res-daily-uhe-1983-2016/sdei-high-res-daily-uhe-1983-2016-shp.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10004 milliseconds",FALSE
+"csv/hazard.csv",29,"Risk and recovery mapping","https://emergency.copernicus.eu/mapping/list-of-activations-risk-and-recovery","404",FALSE
+"csv/hazard.csv",31,"MCDWD 1-day GeoTIFF","https://dx.doi.org/10.5067/MODIS/MCDWD_L3_F1_NRT.061","200",TRUE
+"csv/hazard.csv",32,"MCDWD 2-day GeoTIFF","https://dx.doi.org/10.5067/MODIS/MCDWD_L3_F2_NRT.061","200",TRUE
+"csv/hazard.csv",33,"MCDWD 3-day GeoTIFF","https://dx.doi.org/10.5067/MODIS/MCDWD_L3_F3_NRT.061","200",TRUE
+"csv/hazard.csv",35,"GFPLAIN250m ascii","https://figshare.com/ndownloader/files/12186359","202",TRUE
+"csv/hazard.csv",36,"GFPLAIN250m geotiff","https://figshare.com/ndownloader/files/12186356","202",TRUE
+"csv/hazard.csv",39,"SPEIbase","https://digital.csic.es/bitstream/10261/332007/3/spei01.nc","200",TRUE
+"csv/hazard.csv",56,"JRC flood hazard maps global","https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp10y.zip","200",TRUE
+"csv/hazard.csv",56,"JRC flood hazard maps global","https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp20y.zip","200",TRUE
+"csv/hazard.csv",56,"JRC flood hazard maps global","https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp50y.zip","200",TRUE
+"csv/hazard.csv",56,"JRC flood hazard maps global","https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp100y.zip","200",TRUE
+"csv/hazard.csv",56,"JRC flood hazard maps global","https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp200y.zip","200",TRUE
+"csv/hazard.csv",56,"JRC flood hazard maps global","https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/FLOODS/GlobalMaps/floodMapGL_rp500y.zip","200",TRUE
+"csv/hazard.csv",73,"Multi-hazard events sets","https://zenodo.org/records/8269680/files/MYRIAD-HES.zip?download=1","200",TRUE
+"csv/hazard.csv",84,"Future tracks","https://data.4tu.nl/file/98900e17-8e01-4d70-b3b6-ca1a1da2f194/bdc3820c-7b7e-41de-8def-792f50b06c49","200",TRUE
+"csv/hazard.csv",84,"Future tracks","https://data.4tu.nl/file/98900e17-8e01-4d70-b3b6-ca1a1da2f194/3b08e6a8-2824-435f-a141-9509a9922cfe","Timeout was reached [data.4tu.nl]:
+Operation timed out after 10009 milliseconds with 0 bytes received",FALSE
+"csv/hazard.csv",84,"Future tracks","https://data.4tu.nl/file/98900e17-8e01-4d70-b3b6-ca1a1da2f194/2eaeb5f6-40f3-4f94-9f9c-ca7aad3237fc","200",TRUE
+"csv/hazard.csv",84,"Future tracks","https://data.4tu.nl/file/98900e17-8e01-4d70-b3b6-ca1a1da2f194/f35142d6-d858-4874-9a51-2dc08462d45f","200",TRUE
+"csv/hazard.csv",85,"Future wind speeds","https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/2a3759e8-f4ad-4190-abb3-434ad5c4679b","200",TRUE
+"csv/hazard.csv",85,"Future wind speeds","https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/c460a0c8-f918-4ede-a734-75e77e99b102","200",TRUE
+"csv/hazard.csv",85,"Future wind speeds","https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/304d1441-bd71-47c7-8231-b20253c1cc2a","200",TRUE
+"csv/hazard.csv",85,"Future wind speeds","https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/856f9530-56d7-489e-8005-18ae36db4804","200",TRUE
+"csv/hazard.csv",85,"Future wind speeds","https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/9740b235-c2fe-4677-a8b9-f90eb13e4938","200",TRUE
+"csv/hazard.csv",85,"Future wind speeds","https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/df247ab2-7565-4888-b5a9-2ccd31d9c90f","200",TRUE
+"csv/hazard.csv",85,"Future wind speeds","https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/43ce1a8f-914a-414c-b949-884e06616301","200",TRUE
+"csv/hazard.csv",85,"Future wind speeds","https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/ac3fd12d-c21d-406e-8e2e-bd212ee9f817","200",TRUE
+"csv/hazard.csv",85,"Future wind speeds","https://data.4tu.nl/file/504c838e-2bd8-4d61-85a1-d495bdc560c3/a7e915a4-ee2a-44d7-8e91-8920bff34f16","200",TRUE
+"csv/hazard.csv",85,"Future wind speeds","climate","Could not resolve hostname [climate]:
+Could not resolve host: climate",FALSE
+"csv/hazard.csv",85,"Future wind speeds","change","Could not resolve hostname [change]:
+Could not resolve host: change",FALSE
+"csv/hazard.csv",85,"Future wind speeds","tropical","Could not resolve hostname [tropical]:
+Could not resolve host: tropical",FALSE
+"csv/hazard.csv",85,"Future wind speeds","cyclone","Could not resolve hostname [cyclone]:
+Could not resolve host: cyclone",FALSE
+"csv/hazard.csv",85,"Future wind speeds","wind","Could not resolve hostname [wind]:
+Could not resolve host: wind",FALSE
+"csv/hazard.csv",85,"Future wind speeds","speed","Could not resolve hostname [speed]:
+Could not resolve host: speed",FALSE
+"csv/hazard.csv",85,"Future wind speeds","return","Could not resolve hostname [return]:
+Could not resolve host: return",FALSE
+"csv/hazard.csv",85,"Future wind speeds","periods","Could not resolve hostname [periods]:
+Could not resolve host: periods",FALSE
+"csv/hazard.csv",86,"Historical tracks","https://data.4tu.nl/file/01b2ebc7-7903-42ef-b46b-f43b9175dbf4/c3e5015a-3629-4f1c-9d5f-9acfbd6119eb","200",TRUE
+"csv/hazard.csv",87,"Historical wind speeds","https://data.4tu.nl/file/0ea98bdd-5772-4da8-ae97-99735e891aff/0b98c6f5-c7af-45bb-bb6e-dac53e1b8d55","200",TRUE
+"csv/hazard.csv",87,"Historical wind speeds","https://data.4tu.nl/file/0ea98bdd-5772-4da8-ae97-99735e891aff/3c839d73-e6c0-4d63-ae03-c0d05e734d57","200",TRUE
+"csv/expvul.csv",2,"Water Stress historic","https://files.wri.org/aqueduct/aqueduct-4-0-water-risk-data.zip","200",TRUE
+"csv/expvul.csv",3,"Water Stress future","https://files.wri.org/aqueduct/aqueduct-4-0-water-risk-data.zip","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-1992-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-1993-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-1994-v2.0.8.nc?","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-1995-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-1996-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-1997-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-1998-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-1999-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2000-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2001-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2002-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2003-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2004-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2005-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2006-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2007-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2008-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2009-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2010-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2011-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2012-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2013-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2014-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2015-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2016-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2017-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2018-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2019-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",4,"Global plant functional types","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/pft/v2.0.8/ESACCI-LC-L4-PFT-Map-300m-P1Y-2020-v2.0.8.nc?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1992-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1993-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1994-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1995-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1996-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1997-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1998-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1999-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2000-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2001-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2002-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2003-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2004-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2005-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2006-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2007-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2008-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2009-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2010-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2011-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2012-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2013-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2014-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",5,"Global land cover maps geotiff","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2015-v2.0.7.tif?download=1","200",TRUE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1992-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1993-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1994-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1995-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1996-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1997-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1998-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-1999-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2000-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2001-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2002-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2003-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2004-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2005-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2006-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2007-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2008-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2009-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2010-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2011-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2012-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2013-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2014-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",6,"Global land cover maps netcdf","https://dap.ceda.ac.uk/neodc/esacci/land_cover/data/land_cover_maps/v2.0.7/ESACCI-LC-L4-LCCS-Map-300m-P1Y-2015-v2.0.7.nc?download=1","404",FALSE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_1992_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_1993_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_1994_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_1995_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_1996_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_1997_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_1998_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_1999_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_2000_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_2001_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_2002_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_2003_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_2004_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_2005_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_2006_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_2007_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_2008_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_2009_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_2010_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_2011_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_2012_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",7,"CCNL","https://zenodo.org/records/6644980/files/CCNL_DMSP_2013_V1.tif?download=1","200",TRUE
+"csv/expvul.csv",8,"Index 0.1 dec deg","https://zenodo.org/records/4957647/files/CISI.zip?download=1","200",TRUE
+"csv/expvul.csv",9,"Index 0.25 dec deg","https://zenodo.org/records/4957647/files/CISI.zip?download=1","200",TRUE
+"csv/expvul.csv",10,"Types 0.1 dec deg","https://zenodo.org/records/4957647/files/Amount_of_infrastructure.zip?download=1","200",TRUE
+"csv/expvul.csv",11,"Types 0.25 dec deg","https://zenodo.org/records/4957647/files/Amount_of_infrastructure.zip?download=1","200",TRUE
+"csv/expvul.csv",12,"DMSP NTL","https://figshare.com/ndownloader/articles/9828827/versions/8","202",TRUE
+"csv/expvul.csv",14,"Crop production value","https://s3.eu-west-1.amazonaws.com/data.gaezdev.aws.fao.org/res06/V/2010/all_2010_val.tif","200",TRUE
+"csv/expvul.csv",15,"Irrigation availability","https://s3.eu-west-1.amazonaws.com/data.gaezdev.aws.fao.org/LR/wat/GLCSv11_12_5m.tif","200",TRUE
+"csv/expvul.csv",17,"GDP excel","https://sedac.ciesin.columbia.edu/downloads/data/spatialecon/spatialecon-gecon-v4/spatialecon-gecon-v4-xls.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",18,"GDP ascii","https://sedac.ciesin.columbia.edu/downloads/data/spatialecon/spatialecon-gecon-v4/spatialecon-gecon-v4-gis-ascii.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",19,"Mollweide 10 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_C_GLOBE_R2023A/GHS_BUILT_C_MSZ_E2018_GLOBE_R2023A_54009_10/V1-0/GHS_BUILT_C_MSZ_E2018_GLOBE_R2023A_54009_10_V1_0.zip","200",TRUE
+"csv/expvul.csv",19,"Mollweide 10 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_C_GLOBE_R2023A/GHS_BUILT_C_FUN_E2018_GLOBE_R2023A_54009_10/V1-0/GHS_BUILT_C_FUN_E2018_GLOBE_R2023A_54009_10_V1_0.zip","200",TRUE
+"csv/expvul.csv",20,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_H_GLOBE_R2023A/GHS_BUILT_H_AGBH_E2018_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_H_AGBH_E2018_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",20,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_H_GLOBE_R2023A/GHS_BUILT_H_ANBH_E2018_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_H_ANBH_E2018_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",21,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_H_GLOBE_R2023A/GHS_BUILT_H_AGBH_E2018_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_H_AGBH_E2018_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",21,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_H_GLOBE_R2023A/GHS_BUILT_H_ANBH_E2018_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_H_ANBH_E2018_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1975_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_E1975_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1975_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_NRES_E1975_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1980_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_E1980_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1980_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_NRES_E1980_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1985_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_E1985_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1985_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_NRES_E1985_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1990_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_E1990_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1990_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_NRES_E1990_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1995_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_E1995_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1995_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_NRES_E1995_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2000_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_E2000_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2000_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_NRES_E2000_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2005_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_E2005_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2005_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_NRES_E2005_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2010_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_E2010_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2010_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_NRES_E2010_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2015_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_E2015_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2015_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_NRES_E2015_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2020_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_E2020_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2020_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_NRES_E2020_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2025_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_E2025_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2025_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_NRES_E2025_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2030_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_E2030_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",22,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2030_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_S_NRES_E2030_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",23,"Mollweide 10 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2018_GLOBE_R2023A_54009_10/V1-0/GHS_BUILT_S_E2018_GLOBE_R2023A_54009_10_V1_0.zip","200",TRUE
+"csv/expvul.csv",23,"Mollweide 10 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2018_GLOBE_R2023A_54009_10/V1-0/GHS_BUILT_S_NRES_E2018_GLOBE_R2023A_54009_10_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1975_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_E1975_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1975_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_NRES_E1975_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1980_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_E1980_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1980_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_NRES_E1980_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1985_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_E1985_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1985_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_NRES_E1985_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1990_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_E1990_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1990_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_NRES_E1990_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1995_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_E1995_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1995_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_NRES_E1995_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2000_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_E2000_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2000_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_NRES_E2000_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2005_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_E2005_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2005_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_NRES_E2005_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2010_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_E2010_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2010_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_NRES_E2010_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2015_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_E2015_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2015_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_NRES_E2015_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2020_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_E2020_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2020_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_NRES_E2020_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2025_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_E2025_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2025_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_NRES_E2025_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2030_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_E2030_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",24,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2030_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_S_NRES_E2030_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1975_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_E1975_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1975_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_NRES_E1975_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1980_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_E1980_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1980_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_NRES_E1980_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1985_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_E1985_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1985_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_NRES_E1985_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1990_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_E1990_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1990_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_NRES_E1990_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1995_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_E1995_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1995_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_NRES_E1995_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2000_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_E2000_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2000_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_NRES_E2000_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2005_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_E2005_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2005_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_NRES_E2005_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2010_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_E2010_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2010_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_NRES_E2010_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2015_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_E2015_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2015_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_NRES_E2015_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2020_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_E2020_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2020_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_NRES_E2020_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2025_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_E2025_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2025_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_NRES_E2025_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2030_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_E2030_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",25,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2030_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_S_NRES_E2030_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1975_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_E1975_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1975_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_NRES_E1975_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1980_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_E1980_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1980_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_NRES_E1980_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1985_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_E1985_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1985_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_NRES_E1985_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1990_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_E1990_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1990_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_NRES_E1990_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E1995_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_E1995_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E1995_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_NRES_E1995_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2000_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_E2000_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2000_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_NRES_E2000_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2005_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_E2005_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2005_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_NRES_E2005_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2010_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_E2010_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2010_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_NRES_E2010_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2015_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_E2015_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2015_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_NRES_E2015_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_E2020_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2020_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_NRES_E2020_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2025_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_E2025_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2025_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_NRES_E2025_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2030_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_E2030_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",26,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_NRES_E2030_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_S_NRES_E2030_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1975_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_E1975_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1975_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_NRES_E1975_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1980_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_E1980_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1980_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_NRES_E1980_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1985_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_E1985_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1985_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_NRES_E1985_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1990_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_E1990_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1990_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_NRES_E1990_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1995_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_E1995_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1995_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_NRES_E1995_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2000_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_E2000_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2000_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_NRES_E2000_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2005_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_E2005_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2005_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_NRES_E2005_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2010_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_E2010_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2010_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_NRES_E2010_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2015_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_E2015_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2015_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_NRES_E2015_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2020_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_E2020_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2020_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_NRES_E2020_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2025_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_E2025_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2030_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_E2030_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",27,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2030_GLOBE_R2023A_54009_1000/V1-0/GHS_BUILT_V_NRES_E2030_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1975_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_E1975_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1975_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_NRES_E1975_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1980_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_E1980_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1980_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_NRES_E1980_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1985_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_E1985_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1985_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_NRES_E1985_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1990_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_E1990_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1990_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_NRES_E1990_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1995_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_E1995_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1995_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_NRES_E1995_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2000_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_E2000_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2000_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_NRES_E2000_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2005_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_E2005_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2005_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_NRES_E2005_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2010_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_E2010_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2010_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_NRES_E2010_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2015_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_E2015_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2015_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_NRES_E2015_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2020_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_E2020_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2020_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_NRES_E2020_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2025_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_E2025_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2030_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_E2030_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",28,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2030_GLOBE_R2023A_4326_3ss/V1-0/GHS_BUILT_V_NRES_E2030_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1975_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_E1975_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1975_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_NRES_E1975_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1980_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_E1980_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1980_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_NRES_E1980_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1985_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_E1985_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1985_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_NRES_E1985_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1990_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_E1990_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1990_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_NRES_E1990_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1995_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_E1995_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1995_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_NRES_E1995_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2000_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_E2000_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2000_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_NRES_E2000_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2005_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_E2005_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2005_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_NRES_E2005_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2010_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_E2010_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2010_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_NRES_E2010_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2015_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_E2015_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2015_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_NRES_E2015_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2020_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_E2020_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2020_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_NRES_E2020_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2025_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_E2025_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2030_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_E2030_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",29,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2030_GLOBE_R2023A_4326_30ss/V1-0/GHS_BUILT_V_NRES_E2030_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1975_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_E1975_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1975_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_NRES_E1975_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1980_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_E1980_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1980_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_NRES_E1980_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1985_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_E1985_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1985_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_NRES_E1985_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1990_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_E1990_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1990_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_NRES_E1990_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E1995_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_E1995_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E1995_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_NRES_E1995_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2000_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_E2000_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2000_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_NRES_E2000_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2005_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_E2005_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2005_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_NRES_E2005_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2010_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_E2010_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2010_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_NRES_E2010_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2015_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_E2015_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2015_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_NRES_E2015_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2020_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_E2020_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2020_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_NRES_E2020_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2025_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_E2025_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_NRES_E2025_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_E2030_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_E2030_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",30,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_V_GLOBE_R2023A/GHS_BUILT_V_NRES_E2030_GLOBE_R2023A_54009_100/V1-0/GHS_BUILT_V_NRES_E2030_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",31,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1975_GLOBE_R2023A_4326_3ss/V1-0/GHS_POP_E1975_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",31,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1980_GLOBE_R2023A_4326_3ss/V1-0/GHS_POP_E1980_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",31,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1985_GLOBE_R2023A_4326_3ss/V1-0/GHS_POP_E1985_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",31,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1990_GLOBE_R2023A_4326_3ss/V1-0/GHS_POP_E1990_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",31,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1995_GLOBE_R2023A_4326_3ss/V1-0/GHS_POP_E1995_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",31,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2000_GLOBE_R2023A_4326_3ss/V1-0/GHS_POP_E2000_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",31,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2005_GLOBE_R2023A_4326_3ss/V1-0/GHS_POP_E2005_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",31,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2010_GLOBE_R2023A_4326_3ss/V1-0/GHS_POP_E2010_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",31,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2015_GLOBE_R2023A_4326_3ss/V1-0/GHS_POP_E2015_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",31,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2020_GLOBE_R2023A_4326_3ss/V1-0/GHS_POP_E2020_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",31,"WGS84 3 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2025_GLOBE_R2023A_4326_3ss/V1-0/GHS_POP_E2025_GLOBE_R2023A_4326_3ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",31,"WGS84 3 arc seconds","GHS_POP_E2030_GLOBE_R2023A_4326_3ss/V1-0/GHS_POP_E2030_GLOBE_R2023A_4326_3ss_V1_0.zip","Could not resolve hostname [GHS_POP_E2030_GLOBE_R2023A_4326_3ss]:
+Could not resolve host: GHS_POP_E2030_GLOBE_R2023A_4326_3ss",FALSE
+"csv/expvul.csv",32,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1975_GLOBE_R2023A_4326_30ss/V1-0/GHS_POP_E1975_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",32,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1980_GLOBE_R2023A_4326_30ss/V1-0/GHS_POP_E1980_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",32,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1985_GLOBE_R2023A_4326_30ss/V1-0/GHS_POP_E1985_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",32,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1990_GLOBE_R2023A_4326_30ss/V1-0/GHS_POP_E1990_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",32,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1995_GLOBE_R2023A_4326_30ss/V1-0/GHS_POP_E1995_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",32,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2000_GLOBE_R2023A_4326_30ss/V1-0/GHS_POP_E2000_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",32,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2005_GLOBE_R2023A_4326_30ss/V1-0/GHS_POP_E2005_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",32,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2010_GLOBE_R2023A_4326_30ss/V1-0/GHS_POP_E2010_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",32,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2015_GLOBE_R2023A_4326_30ss/V1-0/GHS_POP_E2015_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",32,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2020_GLOBE_R2023A_4326_30ss/V1-0/GHS_POP_E2020_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",32,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2025_GLOBE_R2023A_4326_30ss/V1-0/GHS_POP_E2025_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",32,"WGS84 30 arc seconds","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2030_GLOBE_R2023A_4326_30ss/V1-0/GHS_POP_E2030_GLOBE_R2023A_4326_30ss_V1_0.zip","200",TRUE
+"csv/expvul.csv",33,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1975_GLOBE_R2023A_54009_100/V1-0/GHS_POP_E1975_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",33,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1980_GLOBE_R2023A_54009_100/V1-0/GHS_POP_E1980_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",33,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1985_GLOBE_R2023A_54009_100/V1-0/GHS_POP_E1985_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",33,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1990_GLOBE_R2023A_54009_100/V1-0/GHS_POP_E1990_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",33,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1995_GLOBE_R2023A_54009_100/V1-0/GHS_POP_E1995_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",33,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2000_GLOBE_R2023A_54009_100/V1-0/GHS_POP_E2000_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",33,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2005_GLOBE_R2023A_54009_100/V1-0/GHS_POP_E2005_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",33,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2010_GLOBE_R2023A_54009_100/V1-0/GHS_POP_E2010_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",33,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2015_GLOBE_R2023A_54009_100/V1-0/GHS_POP_E2015_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",33,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2020_GLOBE_R2023A_54009_100/V1-0/GHS_POP_E2020_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",33,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2025_GLOBE_R2023A_54009_100/V1-0/GHS_POP_E2025_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",33,"Mollweide 100 m","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2030_GLOBE_R2023A_54009_100/V1-0/GHS_POP_E2030_GLOBE_R2023A_54009_100_V1_0.zip","200",TRUE
+"csv/expvul.csv",34,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1975_GLOBE_R2023A_54009_1000/V1-0/GHS_POP_E1975_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",34,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1980_GLOBE_R2023A_54009_1000/V1-0/GHS_POP_E1980_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",34,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1985_GLOBE_R2023A_54009_1000/V1-0/GHS_POP_E1985_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",34,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1990_GLOBE_R2023A_54009_1000/V1-0/GHS_POP_E1990_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",34,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E1995_GLOBE_R2023A_54009_1000/V1-0/GHS_POP_E1995_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",34,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2000_GLOBE_R2023A_54009_1000/V1-0/GHS_POP_E2000_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",34,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2005_GLOBE_R2023A_54009_1000/V1-0/GHS_POP_E2005_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",34,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2010_GLOBE_R2023A_54009_1000/V1-0/GHS_POP_E2010_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",34,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2015_GLOBE_R2023A_54009_1000/V1-0/GHS_POP_E2015_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",34,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2020_GLOBE_R2023A_54009_1000/V1-0/GHS_POP_E2020_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",34,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2025_GLOBE_R2023A_54009_1000/V1-0/GHS_POP_E2025_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",34,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2030_GLOBE_R2023A_54009_1000/V1-0/GHS_POP_E2030_GLOBE_R2023A_54009_1000_V1_0.zip","200",TRUE
+"csv/expvul.csv",35,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_SMOD_GLOBE_R2023A/GHS_SMOD_E1975_GLOBE_R2023A_54009_1000/V2-0/GHS_SMOD_E1975_GLOBE_R2023A_54009_1000_V2_0.zip","200",TRUE
+"csv/expvul.csv",35,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_SMOD_GLOBE_R2023A/GHS_SMOD_E1980_GLOBE_R2023A_54009_1000/V2-0/GHS_SMOD_E1980_GLOBE_R2023A_54009_1000_V2_0.zip","200",TRUE
+"csv/expvul.csv",35,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_SMOD_GLOBE_R2023A/GHS_SMOD_E1985_GLOBE_R2023A_54009_1000/V2-0/GHS_SMOD_E1985_GLOBE_R2023A_54009_1000_V2_0.zip","200",TRUE
+"csv/expvul.csv",35,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_SMOD_GLOBE_R2023A/GHS_SMOD_E1990_GLOBE_R2023A_54009_1000/V2-0/GHS_SMOD_E1990_GLOBE_R2023A_54009_1000_V2_0.zip","200",TRUE
+"csv/expvul.csv",35,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_SMOD_GLOBE_R2023A/GHS_SMOD_E1995_GLOBE_R2023A_54009_1000/V2-0/GHS_SMOD_E1995_GLOBE_R2023A_54009_1000_V2_0.zip","200",TRUE
+"csv/expvul.csv",35,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_SMOD_GLOBE_R2023A/GHS_SMOD_E2000_GLOBE_R2023A_54009_1000/V2-0/GHS_SMOD_E2000_GLOBE_R2023A_54009_1000_V2_0.zip","200",TRUE
+"csv/expvul.csv",35,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_SMOD_GLOBE_R2023A/GHS_SMOD_E2005_GLOBE_R2023A_54009_1000/V2-0/GHS_SMOD_E2005_GLOBE_R2023A_54009_1000_V2_0.zip","200",TRUE
+"csv/expvul.csv",35,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_SMOD_GLOBE_R2023A/GHS_SMOD_E2010_GLOBE_R2023A_54009_1000/V2-0/GHS_SMOD_E2010_GLOBE_R2023A_54009_1000_V2_0.zip","200",TRUE
+"csv/expvul.csv",35,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_SMOD_GLOBE_R2023A/GHS_SMOD_E2015_GLOBE_R2023A_54009_1000/V2-0/GHS_SMOD_E2015_GLOBE_R2023A_54009_1000_V2_0.zip","200",TRUE
+"csv/expvul.csv",35,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_SMOD_GLOBE_R2023A/GHS_SMOD_E2020_GLOBE_R2023A_54009_1000/V2-0/GHS_SMOD_E2020_GLOBE_R2023A_54009_1000_V2_0.zip","200",TRUE
+"csv/expvul.csv",35,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_SMOD_GLOBE_R2023A/GHS_SMOD_E2025_GLOBE_R2023A_54009_1000/V2-0/GHS_SMOD_E2025_GLOBE_R2023A_54009_1000_V2_0.zip","200",TRUE
+"csv/expvul.csv",35,"Mollweide 1 km","https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_SMOD_GLOBE_R2023A/GHS_SMOD_E2030_GLOBE_R2023A_54009_1000/V2-0/GHS_SMOD_E2030_GLOBE_R2023A_54009_1000_V2_0.zip","200",TRUE
+"csv/expvul.csv",36,"BEM","https://giri.unepgrid.ch/form/subscribe-for-download-data","200",TRUE
+"csv/expvul.csv",37,"IEM","https://giri.unepgrid.ch/form/subscribe-for-download-data","200",TRUE
+"csv/expvul.csv",39,"Building height data","https://zenodo.org/records/10396451/files/BH_100m.zip?download=1","200",TRUE
+"csv/expvul.csv",40,"Building footprint data","https://zenodo.org/records/10396451/files/BF_100m.zip?download=1","200",TRUE
+"csv/expvul.csv",46,"GlobE-SoVI rasters","https://zenodo.org/records/10058743/files/raster.7z?download=1","200",TRUE
+"csv/expvul.csv",47,"GlobE-SoVI administrative units","https://zenodo.org/records/10058743/files/admin.7z?download=1","200",TRUE
+"csv/expvul.csv",48,"version 4","https://doi.org/10.7910/DVN/SXHLF3","202",TRUE
+"csv/expvul.csv",48,"version 4","https://doi.org/10.7910/DVN/VZOYHM","202",TRUE
+"csv/expvul.csv",48,"version 4","https://doi.org/10.7910/DVN/CIVCPB","202",TRUE
+"csv/expvul.csv",48,"version 4","https://doi.org/10.7910/DVN/JJGCTX","202",TRUE
+"csv/expvul.csv",48,"version 4","https://doi.org/10.7910/DVN/YYG6ET","202",TRUE
+"csv/expvul.csv",48,"version 4","https://doi.org/10.7910/DVN/S9ONXV","202",TRUE
+"csv/expvul.csv",48,"version 4","https://doi.org/10.7910/DVN/I1WCAB","202",TRUE
+"csv/expvul.csv",48,"version 4","https://doi.org/10.7910/DVN/LHBICE","202",TRUE
+"csv/expvul.csv",49,"Demographics 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a000_004_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10003 milliseconds",FALSE
+"csv/expvul.csv",49,"Demographics 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a005_009_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10001 milliseconds",FALSE
+"csv/expvul.csv",49,"Demographics 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a010_014_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10006 milliseconds",FALSE
+"csv/expvul.csv",49,"Demographics 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a015_019_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10015 milliseconds",FALSE
+"csv/expvul.csv",49,"Demographics 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a020_024_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10007 milliseconds",FALSE
+"csv/expvul.csv",49,"Demographics 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a025_029_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",49,"Demographics 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a030_034_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",49,"Demographics 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a035_039_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10003 milliseconds",FALSE
+"csv/expvul.csv",49,"Demographics 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a040_044_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10009 milliseconds",FALSE
+"csv/expvul.csv",49,"Demographics 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a045_049_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10007 milliseconds",FALSE
+"csv/expvul.csv",49,"Demographics 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a050_054_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10001 milliseconds",FALSE
+"csv/expvul.csv",49,"Demographics 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a055_059_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10009 milliseconds",FALSE
+"csv/expvul.csv",49,"Demographics 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a060_064_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10015 milliseconds",FALSE
+"csv/expvul.csv",49,"Demographics 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a065_069_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10003 milliseconds",FALSE
+"csv/expvul.csv",49,"Demographics 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a070_074_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10013 milliseconds",FALSE
+"csv/expvul.csv",49,"Demographics 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a075_079_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10007 milliseconds",FALSE
+"csv/expvul.csv",49,"Demographics 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a080_084_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10001 milliseconds",FALSE
+"csv/expvul.csv",50,"Demographics 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a000_004_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",50,"Demographics 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a005_009_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",50,"Demographics 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a010_014_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10009 milliseconds",FALSE
+"csv/expvul.csv",50,"Demographics 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a015_019_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10001 milliseconds",FALSE
+"csv/expvul.csv",50,"Demographics 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a020_024_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10006 milliseconds",FALSE
+"csv/expvul.csv",50,"Demographics 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a025_029_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10011 milliseconds",FALSE
+"csv/expvul.csv",50,"Demographics 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a030_034_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10004 milliseconds",FALSE
+"csv/expvul.csv",50,"Demographics 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a035_039_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",50,"Demographics 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a040_044_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10008 milliseconds",FALSE
+"csv/expvul.csv",50,"Demographics 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a045_049_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10013 milliseconds",FALSE
+"csv/expvul.csv",50,"Demographics 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a050_054_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10008 milliseconds",FALSE
+"csv/expvul.csv",50,"Demographics 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a055_059_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10013 milliseconds",FALSE
+"csv/expvul.csv",50,"Demographics 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a060_064_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10002 milliseconds",FALSE
+"csv/expvul.csv",50,"Demographics 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a065_069_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10007 milliseconds",FALSE
+"csv/expvul.csv",50,"Demographics 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a070_074_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10008 milliseconds",FALSE
+"csv/expvul.csv",50,"Demographics 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a075_079_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10006 milliseconds",FALSE
+"csv/expvul.csv",50,"Demographics 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a080_084_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10002 milliseconds",FALSE
+"csv/expvul.csv",51,"Demographics 2.5 arc minutes geotiif","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a000_004_2010_2pt5_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",51,"Demographics 2.5 arc minutes geotiif","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a005_009_2010_2pt5_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",51,"Demographics 2.5 arc minutes geotiif","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a010_014_2010_2pt5_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10008 milliseconds",FALSE
+"csv/expvul.csv",51,"Demographics 2.5 arc minutes geotiif","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a015_019_2010_2pt5_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10011 milliseconds",FALSE
+"csv/expvul.csv",51,"Demographics 2.5 arc minutes geotiif","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a020_024_2010_2pt5_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10007 milliseconds",FALSE
+"csv/expvul.csv",51,"Demographics 2.5 arc minutes geotiif","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a025_029_2010_2pt5_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10013 milliseconds",FALSE
+"csv/expvul.csv",51,"Demographics 2.5 arc minutes geotiif","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a030_034_2010_2pt5_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",51,"Demographics 2.5 arc minutes geotiif","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a035_039_2010_2pt5_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10014 milliseconds",FALSE
+"csv/expvul.csv",51,"Demographics 2.5 arc minutes geotiif","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a040_044_2010_2pt5_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10015 milliseconds",FALSE
+"csv/expvul.csv",51,"Demographics 2.5 arc minutes geotiif","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a045_049_2010_2pt5_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10004 milliseconds",FALSE
+"csv/expvul.csv",51,"Demographics 2.5 arc minutes geotiif","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a050_054_2010_2pt5_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",51,"Demographics 2.5 arc minutes geotiif","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a055_059_2010_2pt5_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10016 milliseconds",FALSE
+"csv/expvul.csv",51,"Demographics 2.5 arc minutes geotiif","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a060_064_2010_2pt5_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",51,"Demographics 2.5 arc minutes geotiif","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a065_069_2010_2pt5_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10006 milliseconds",FALSE
+"csv/expvul.csv",51,"Demographics 2.5 arc minutes geotiif","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a070_074_2010_2pt5_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10002 milliseconds",FALSE
+"csv/expvul.csv",51,"Demographics 2.5 arc minutes geotiif","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a075_079_2010_2pt5_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10007 milliseconds",FALSE
+"csv/expvul.csv",51,"Demographics 2.5 arc minutes geotiif","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a080_084_2010_2pt5_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10009 milliseconds",FALSE
+"csv/expvul.csv",52,"Demographics 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a000_004_2010_2pt5_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10002 milliseconds",FALSE
+"csv/expvul.csv",52,"Demographics 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a005_009_2010_2pt5_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",52,"Demographics 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a010_014_2010_2pt5_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10004 milliseconds",FALSE
+"csv/expvul.csv",52,"Demographics 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a015_019_2010_2pt5_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",52,"Demographics 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a020_024_2010_2pt5_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10002 milliseconds",FALSE
+"csv/expvul.csv",52,"Demographics 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a025_029_2010_2pt5_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10015 milliseconds",FALSE
+"csv/expvul.csv",52,"Demographics 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a030_034_2010_2pt5_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10014 milliseconds",FALSE
+"csv/expvul.csv",52,"Demographics 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a035_039_2010_2pt5_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10015 milliseconds",FALSE
+"csv/expvul.csv",52,"Demographics 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a040_044_2010_2pt5_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10004 milliseconds",FALSE
+"csv/expvul.csv",52,"Demographics 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a045_049_2010_2pt5_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10001 milliseconds",FALSE
+"csv/expvul.csv",52,"Demographics 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a050_054_2010_2pt5_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10008 milliseconds",FALSE
+"csv/expvul.csv",52,"Demographics 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a055_059_2010_2pt5_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10017 milliseconds",FALSE
+"csv/expvul.csv",52,"Demographics 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a060_064_2010_2pt5_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10008 milliseconds",FALSE
+"csv/expvul.csv",52,"Demographics 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a065_069_2010_2pt5_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10013 milliseconds",FALSE
+"csv/expvul.csv",52,"Demographics 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a070_074_2010_2pt5_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",52,"Demographics 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a075_079_2010_2pt5_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",52,"Demographics 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a080_084_2010_2pt5_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10015 milliseconds",FALSE
+"csv/expvul.csv",53,"Demographics 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a000_004_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10009 milliseconds",FALSE
+"csv/expvul.csv",53,"Demographics 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a005_009_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10008 milliseconds",FALSE
+"csv/expvul.csv",53,"Demographics 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a010_014_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10007 milliseconds",FALSE
+"csv/expvul.csv",53,"Demographics 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a015_019_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10011 milliseconds",FALSE
+"csv/expvul.csv",53,"Demographics 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a020_024_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10016 milliseconds",FALSE
+"csv/expvul.csv",53,"Demographics 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a025_029_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",53,"Demographics 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a030_034_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10004 milliseconds",FALSE
+"csv/expvul.csv",53,"Demographics 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a035_039_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10009 milliseconds",FALSE
+"csv/expvul.csv",53,"Demographics 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a040_044_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",53,"Demographics 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a045_049_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",53,"Demographics 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a050_054_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10014 milliseconds",FALSE
+"csv/expvul.csv",53,"Demographics 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a055_059_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10001 milliseconds",FALSE
+"csv/expvul.csv",53,"Demographics 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a060_064_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10017 milliseconds",FALSE
+"csv/expvul.csv",53,"Demographics 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a065_069_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10001 milliseconds",FALSE
+"csv/expvul.csv",53,"Demographics 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a070_074_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",53,"Demographics 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a075_079_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10000 milliseconds",FALSE
+"csv/expvul.csv",53,"Demographics 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a080_084_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10003 milliseconds",FALSE
+"csv/expvul.csv",54,"Demographics 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a000_004_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",54,"Demographics 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a005_009_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10013 milliseconds",FALSE
+"csv/expvul.csv",54,"Demographics 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a010_014_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",54,"Demographics 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a015_019_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10007 milliseconds",FALSE
+"csv/expvul.csv",54,"Demographics 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a020_024_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10009 milliseconds",FALSE
+"csv/expvul.csv",54,"Demographics 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a025_029_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",54,"Demographics 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a030_034_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",54,"Demographics 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a035_039_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10006 milliseconds",FALSE
+"csv/expvul.csv",54,"Demographics 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a040_044_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10002 milliseconds",FALSE
+"csv/expvul.csv",54,"Demographics 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a045_049_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10007 milliseconds",FALSE
+"csv/expvul.csv",54,"Demographics 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a050_054_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",54,"Demographics 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a055_059_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10007 milliseconds",FALSE
+"csv/expvul.csv",54,"Demographics 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a060_064_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10003 milliseconds",FALSE
+"csv/expvul.csv",54,"Demographics 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a065_069_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10011 milliseconds",FALSE
+"csv/expvul.csv",54,"Demographics 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a070_074_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10002 milliseconds",FALSE
+"csv/expvul.csv",54,"Demographics 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a075_079_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10002 milliseconds",FALSE
+"csv/expvul.csv",54,"Demographics 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a080_084_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10013 milliseconds",FALSE
+"csv/expvul.csv",55,"Demographics 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a000_004_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",55,"Demographics 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a005_009_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10004 milliseconds",FALSE
+"csv/expvul.csv",55,"Demographics 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a010_014_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10015 milliseconds",FALSE
+"csv/expvul.csv",55,"Demographics 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a015_019_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",55,"Demographics 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a020_024_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10013 milliseconds",FALSE
+"csv/expvul.csv",55,"Demographics 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a025_029_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",55,"Demographics 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a030_034_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10011 milliseconds",FALSE
+"csv/expvul.csv",55,"Demographics 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a035_039_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",55,"Demographics 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a040_044_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10008 milliseconds",FALSE
+"csv/expvul.csv",55,"Demographics 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a045_049_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10007 milliseconds",FALSE
+"csv/expvul.csv",55,"Demographics 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a050_054_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",55,"Demographics 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a055_059_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10014 milliseconds",FALSE
+"csv/expvul.csv",55,"Demographics 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a060_064_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",55,"Demographics 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a065_069_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10004 milliseconds",FALSE
+"csv/expvul.csv",55,"Demographics 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a070_074_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10003 milliseconds",FALSE
+"csv/expvul.csv",55,"Demographics 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a075_079_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",55,"Demographics 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a080_084_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",56,"Demographics 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a000_004_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10015 milliseconds",FALSE
+"csv/expvul.csv",56,"Demographics 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a005_009_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10007 milliseconds",FALSE
+"csv/expvul.csv",56,"Demographics 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a010_014_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10003 milliseconds",FALSE
+"csv/expvul.csv",56,"Demographics 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a015_019_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10011 milliseconds",FALSE
+"csv/expvul.csv",56,"Demographics 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a020_024_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",56,"Demographics 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a025_029_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10016 milliseconds",FALSE
+"csv/expvul.csv",56,"Demographics 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a030_034_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10003 milliseconds",FALSE
+"csv/expvul.csv",56,"Demographics 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a035_039_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10015 milliseconds",FALSE
+"csv/expvul.csv",56,"Demographics 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a040_044_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10009 milliseconds",FALSE
+"csv/expvul.csv",56,"Demographics 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a045_049_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10015 milliseconds",FALSE
+"csv/expvul.csv",56,"Demographics 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a050_054_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10006 milliseconds",FALSE
+"csv/expvul.csv",56,"Demographics 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a055_059_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10011 milliseconds",FALSE
+"csv/expvul.csv",56,"Demographics 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a060_064_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10011 milliseconds",FALSE
+"csv/expvul.csv",56,"Demographics 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a065_069_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10006 milliseconds",FALSE
+"csv/expvul.csv",56,"Demographics 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a070_074_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10013 milliseconds",FALSE
+"csv/expvul.csv",56,"Demographics 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a075_079_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10011 milliseconds",FALSE
+"csv/expvul.csv",56,"Demographics 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a080_084_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",57,"Demographics 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a000_004_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",57,"Demographics 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a005_009_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10006 milliseconds",FALSE
+"csv/expvul.csv",57,"Demographics 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a010_014_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10007 milliseconds",FALSE
+"csv/expvul.csv",57,"Demographics 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a015_019_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10011 milliseconds",FALSE
+"csv/expvul.csv",57,"Demographics 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a020_024_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10017 milliseconds",FALSE
+"csv/expvul.csv",57,"Demographics 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a025_029_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10015 milliseconds",FALSE
+"csv/expvul.csv",57,"Demographics 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a030_034_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",57,"Demographics 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a035_039_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",57,"Demographics 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a040_044_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",57,"Demographics 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a045_049_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",57,"Demographics 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a050_054_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",57,"Demographics 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a055_059_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10008 milliseconds",FALSE
+"csv/expvul.csv",57,"Demographics 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a060_064_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10016 milliseconds",FALSE
+"csv/expvul.csv",57,"Demographics 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a065_069_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10014 milliseconds",FALSE
+"csv/expvul.csv",57,"Demographics 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a070_074_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10006 milliseconds",FALSE
+"csv/expvul.csv",57,"Demographics 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a075_079_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10004 milliseconds",FALSE
+"csv/expvul.csv",57,"Demographics 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a080_084_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10002 milliseconds",FALSE
+"csv/expvul.csv",58,"Demographics 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a000_004_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10002 milliseconds",FALSE
+"csv/expvul.csv",58,"Demographics 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a005_009_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",58,"Demographics 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a010_014_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10013 milliseconds",FALSE
+"csv/expvul.csv",58,"Demographics 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a015_019_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10006 milliseconds",FALSE
+"csv/expvul.csv",58,"Demographics 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a020_024_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",58,"Demographics 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a025_029_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10011 milliseconds",FALSE
+"csv/expvul.csv",58,"Demographics 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a030_034_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10014 milliseconds",FALSE
+"csv/expvul.csv",58,"Demographics 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a035_039_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",58,"Demographics 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a040_044_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10009 milliseconds",FALSE
+"csv/expvul.csv",58,"Demographics 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a045_049_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10006 milliseconds",FALSE
+"csv/expvul.csv",58,"Demographics 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a050_054_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10000 milliseconds",FALSE
+"csv/expvul.csv",58,"Demographics 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a055_059_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10015 milliseconds",FALSE
+"csv/expvul.csv",58,"Demographics 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a060_064_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",58,"Demographics 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a065_069_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10015 milliseconds",FALSE
+"csv/expvul.csv",58,"Demographics 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a070_074_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10007 milliseconds",FALSE
+"csv/expvul.csv",58,"Demographics 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a075_079_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",58,"Demographics 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-basic-demographic-characteristics-rev11/gpw-v4-basic-demographic-characteristics-rev11_a080_084_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10013 milliseconds",FALSE
+"csv/expvul.csv",59,"Population 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2000_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10006 milliseconds",FALSE
+"csv/expvul.csv",59,"Population 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2005_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10003 milliseconds",FALSE
+"csv/expvul.csv",59,"Population 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2010_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10016 milliseconds",FALSE
+"csv/expvul.csv",59,"Population 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2015_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10013 milliseconds",FALSE
+"csv/expvul.csv",59,"Population 1 decimal degree geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2020_1_deg_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10007 milliseconds",FALSE
+"csv/expvul.csv",60,"Population 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2000_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10009 milliseconds",FALSE
+"csv/expvul.csv",60,"Population 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2005_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10011 milliseconds",FALSE
+"csv/expvul.csv",60,"Population 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2010_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10002 milliseconds",FALSE
+"csv/expvul.csv",60,"Population 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2015_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10008 milliseconds",FALSE
+"csv/expvul.csv",60,"Population 1 decimal degree ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2020_1_deg_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10002 milliseconds",FALSE
+"csv/expvul.csv",61,"Population 2.5 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2000_2pt5_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",61,"Population 2.5 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2005_2pt5_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10003 milliseconds",FALSE
+"csv/expvul.csv",61,"Population 2.5 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2010_2pt5_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10008 milliseconds",FALSE
+"csv/expvul.csv",61,"Population 2.5 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2015_2pt5_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10016 milliseconds",FALSE
+"csv/expvul.csv",61,"Population 2.5 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2020_2pt5_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10014 milliseconds",FALSE
+"csv/expvul.csv",62,"Population 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2000_2pt5_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10003 milliseconds",FALSE
+"csv/expvul.csv",62,"Population 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2005_2pt5_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10003 milliseconds",FALSE
+"csv/expvul.csv",62,"Population 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2010_2pt5_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",62,"Population 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2015_2pt5_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10004 milliseconds",FALSE
+"csv/expvul.csv",62,"Population 2.5 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2020_2pt5_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",63,"Population 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2000_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10006 milliseconds",FALSE
+"csv/expvul.csv",63,"Population 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2005_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10009 milliseconds",FALSE
+"csv/expvul.csv",63,"Population 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2010_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10004 milliseconds",FALSE
+"csv/expvul.csv",63,"Population 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2015_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10013 milliseconds",FALSE
+"csv/expvul.csv",63,"Population 15 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2020_15_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10016 milliseconds",FALSE
+"csv/expvul.csv",64,"Population 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2000_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10002 milliseconds",FALSE
+"csv/expvul.csv",64,"Population 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2005_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",64,"Population 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2010_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10002 milliseconds",FALSE
+"csv/expvul.csv",64,"Population 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2015_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10005 milliseconds",FALSE
+"csv/expvul.csv",64,"Population 15 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2020_15_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10008 milliseconds",FALSE
+"csv/expvul.csv",65,"Population 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2000_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10015 milliseconds",FALSE
+"csv/expvul.csv",65,"Population 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2005_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10008 milliseconds",FALSE
+"csv/expvul.csv",65,"Population 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2010_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10011 milliseconds",FALSE
+"csv/expvul.csv",65,"Population 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2015_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10006 milliseconds",FALSE
+"csv/expvul.csv",65,"Population 30 arc seconds geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2020_30_sec_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10008 milliseconds",FALSE
+"csv/expvul.csv",66,"Population 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2000_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10016 milliseconds",FALSE
+"csv/expvul.csv",66,"Population 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2005_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10002 milliseconds",FALSE
+"csv/expvul.csv",66,"Population 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2010_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10004 milliseconds",FALSE
+"csv/expvul.csv",66,"Population 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2015_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10004 milliseconds",FALSE
+"csv/expvul.csv",66,"Population 30 arc minutes geotiff","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2020_30_min_tif.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",67,"Population 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2000_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10013 milliseconds",FALSE
+"csv/expvul.csv",67,"Population 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2005_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",67,"Population 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2010_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10014 milliseconds",FALSE
+"csv/expvul.csv",67,"Population 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2015_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10012 milliseconds",FALSE
+"csv/expvul.csv",67,"Population 30 arc seconds ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2020_30_sec_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10011 milliseconds",FALSE
+"csv/expvul.csv",68,"Population 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2000_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10014 milliseconds",FALSE
+"csv/expvul.csv",68,"Population 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2005_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10007 milliseconds",FALSE
+"csv/expvul.csv",68,"Population 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2010_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10013 milliseconds",FALSE
+"csv/expvul.csv",68,"Population 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2015_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10006 milliseconds",FALSE
+"csv/expvul.csv",68,"Population 30 arc minutes ascii","https://sedac.ciesin.columbia.edu/downloads/data/gpw-v4/gpw-v4-population-count-rev11/gpw-v4-population-count-rev11_2020_30_min_asc.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",69,"GRIP4 raster data","https://zenodo.org/records/6420961/files/GRIP4_density_total.zip?download=1","200",TRUE
+"csv/expvul.csv",70,"GRIP4 vector data","https://zenodo.org/records/6420961/files/GRIP4_global_vector_fgdb.zip?download=1","200",TRUE
+"csv/expvul.csv",71,"Y2019","https://datacatalogfiles.worldbank.org/ddh-published/0042041/DR0092176/GSAP2019-shapefile-SM23.zip?versionId=2023-09-11T14:26:54.2600339Z","404",FALSE
+"csv/expvul.csv",74,"land use","https://geo.public.data.uu.nl/vault-hyde-data/HYDE%203.2%5B1648738557%5D/original/baseline.zip","200",TRUE
+"csv/expvul.csv",75,"population","https://geo.public.data.uu.nl/vault-hyde-data/HYDE%203.2%5B1648738557%5D/original/baseline.zip","200",TRUE
+"csv/expvul.csv",77,"Travel Time to Cities","https://data.malariaatlas.org/maps?layers=Accessibility:201501_Global_Travel_Time_to_Cities,Malaria:202206_Global_Pf_Parasite_Rate&extent=-2113074.092460947,218783.42351041292,5929546.773526536,4249698.897347293","200",TRUE
+"csv/expvul.csv",78,"Motorized Travel Time to Healthcare","https://data.malariaatlas.org/maps?layers=Accessibility:202001_Global_Motorized_Travel_Time_to_Healthcare,Malaria:202206_Global_Pf_Parasite_Rate&extent=-2113074.0924609466,391664.1534360172,5929546.773526536,4076818.1674216883","200",TRUE
+"csv/expvul.csv",79,"Walking Travel Time To Healthcare","https://data.malariaatlas.org/maps?layers=Accessibility:202001_Global_Walking_Only_Travel_Time_To_Healthcare,Malaria:202206_Global_Pf_Parasite_Rate&extent=-2113074.092460947,218783.42351041292,5929546.773526536,4249698.897347293","200",TRUE
+"csv/expvul.csv",80,"Buildings","https://download.geofabrik.de/","200",TRUE
+"csv/expvul.csv",81,"Infrastructure","https://download.geofabrik.de/","200",TRUE
+"csv/expvul.csv",82,"SHDI","https://globaldatalab.org/asset/394/SHDI-SGDI-Total%207.0.csv","403",FALSE
+"csv/expvul.csv",83,"version 2.0 (2010)","https://doi.org/10.7910/DVN/PRFF8V","202",TRUE
+"csv/expvul.csv",84,"Monthly Cloud-free DNB Composite","https://eogdata.mines.edu/nighttime_light/monthly/v10/","200",TRUE
+"csv/expvul.csv",85,"VNL version 2","https://eogdata.mines.edu/nighttime_light/annual/v20/","200",TRUE
+"csv/expvul.csv",86,"Geodatabase","https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA","200",TRUE
+"csv/expvul.csv",87,"Shapefile","https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA","200",TRUE
+"csv/expvul.csv",88,"Tabular","https://www.protectedplanet.net/en/thematic-areas/wdpa?tab=WDPA","200",TRUE
+"csv/expvul.csv",89,"WSF 2015","https://springernature.figshare.com/ndownloader/files/18108833","202",TRUE
+"csv/expvul.csv",91,"WSF evolution","https://download.geoservice.dlr.de/WSF_EVO/files/","200",TRUE
+"csv/expvul.csv",92,"built-up","https://dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/4QAGYL#","200",TRUE
+"csv/expvul.csv",95,"Demographic characteristics","https://hub.worldpop.org/geodata/listing?id=65","200",TRUE
+"csv/expvul.csv",96,"Y2015","https://figshare.com/ndownloader/articles/7638134/versions/4","202",TRUE
+"csv/expvul.csv",97,"version 1.3.0 (June 2021)","https://wri-dataportal-prod.s3.amazonaws.com/manual/global_power_plant_database_v_1_3.zip","200",TRUE
+"csv/expvul.csv",98,"ESA WorldCover 2020 (v1)","https://zenodo.org/records/5571936/files/ESA_WorldCover_10m_2020_v100_Map.tar.gz?download=1","200",TRUE
+"csv/expvul.csv",99,"ESA WorldCover 2021 (v2)","https://zenodo.org/api/records/7254221/files-archive","200",TRUE
+"csv/expvul.csv",100,"Projections","https://figshare.com/ndownloader/articles/23542860/versions/1","202",TRUE
+"csv/expvul.csv",101,"Projections","https://g-83fdd0.1beed.03c0.data.globus.org/cartuids/34852_f03e1476adbe5ca1a36b109882405281.tar","200",TRUE
+"csv/expvul.csv",102,"Projections","https://zenodo.org/records/4584775/files/Global%20PFT-based%20land%20projection%20dataset%20under%20SSPs-RCPs.zip?download=1","200",TRUE
+"csv/expvul.csv",104,"Y1870-2100","https://figshare.com/ndownloader/articles/9696218/versions/1","202",TRUE
+"csv/expvul.csv",105,"Projections","https://figshare.com/ndownloader/articles/19608594/versions/3","202",TRUE
+"csv/expvul.csv",106,"Projections","https://figshare.com/ndownloader/articles/3201130?private_link=9a94ae958d6a45684382","202",TRUE
+"csv/expvul.csv",107,"One-Eighth Degree Population","https://sedac.ciesin.columbia.edu/downloads/data/popdynamics/popdynamics-1-8th-pop-base-year-projection-ssp-2000-2100-rev01/popdynamics-1-8th-pop-base-year-projection-ssp-2000-2100-rev01-proj-ssp1-geotiff.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10014 milliseconds",FALSE
+"csv/expvul.csv",107,"One-Eighth Degree Population","https://sedac.ciesin.columbia.edu/downloads/data/popdynamics/popdynamics-1-8th-pop-base-year-projection-ssp-2000-2100-rev01/popdynamics-1-8th-pop-base-year-projection-ssp-2000-2100-rev01-proj-ssp2-geotiff.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10004 milliseconds",FALSE
+"csv/expvul.csv",107,"One-Eighth Degree Population","https://sedac.ciesin.columbia.edu/downloads/data/popdynamics/popdynamics-1-8th-pop-base-year-projection-ssp-2000-2100-rev01/popdynamics-1-8th-pop-base-year-projection-ssp-2000-2100-rev01-proj-ssp3-geotiff.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10004 milliseconds",FALSE
+"csv/expvul.csv",107,"One-Eighth Degree Population","https://sedac.ciesin.columbia.edu/downloads/data/popdynamics/popdynamics-1-8th-pop-base-year-projection-ssp-2000-2100-rev01/popdynamics-1-8th-pop-base-year-projection-ssp-2000-2100-rev01-proj-ssp4-geotiff.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10003 milliseconds",FALSE
+"csv/expvul.csv",107,"One-Eighth Degree Population","https://sedac.ciesin.columbia.edu/downloads/data/popdynamics/popdynamics-1-8th-pop-base-year-projection-ssp-2000-2100-rev01/popdynamics-1-8th-pop-base-year-projection-ssp-2000-2100-rev01-proj-ssp5-geotiff.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10011 milliseconds",FALSE
+"csv/expvul.csv",108,"1-km Downscaled Population","https://sedac.ciesin.columbia.edu/downloads/data/popdynamics/popdynamics-1-km-downscaled-pop-base-year-projection-ssp-2000-2100-rev01/popdynamics-1-km-downscaled-pop-base-year-projection-ssp-2000-2100-rev01-byr-geotiff.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10006 milliseconds",FALSE
+"csv/expvul.csv",108,"1-km Downscaled Population","https://sedac.ciesin.columbia.edu/downloads/data/popdynamics/popdynamics-1-km-downscaled-pop-base-year-projection-ssp-2000-2100-rev01/popdynamics-1-km-downscaled-pop-base-year-projection-ssp-2000-2100-rev01-proj-ssp1-geotiff.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10015 milliseconds",FALSE
+"csv/expvul.csv",108,"1-km Downscaled Population","https://sedac.ciesin.columbia.edu/downloads/data/popdynamics/popdynamics-1-km-downscaled-pop-base-year-projection-ssp-2000-2100-rev01/popdynamics-1-km-downscaled-pop-base-year-projection-ssp-2000-2100-rev01-proj-ssp2-geotiff.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10010 milliseconds",FALSE
+"csv/expvul.csv",108,"1-km Downscaled Population","https://sedac.ciesin.columbia.edu/downloads/data/popdynamics/popdynamics-1-km-downscaled-pop-base-year-projection-ssp-2000-2100-rev01/popdynamics-1-km-downscaled-pop-base-year-projection-ssp-2000-2100-rev01-proj-ssp3-geotiff.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10001 milliseconds",FALSE
+"csv/expvul.csv",108,"1-km Downscaled Population","https://sedac.ciesin.columbia.edu/downloads/data/popdynamics/popdynamics-1-km-downscaled-pop-base-year-projection-ssp-2000-2100-rev01/popdynamics-1-km-downscaled-pop-base-year-projection-ssp-2000-2100-rev01-proj-ssp4-geotiff.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10002 milliseconds",FALSE
+"csv/expvul.csv",108,"1-km Downscaled Population","https://sedac.ciesin.columbia.edu/downloads/data/popdynamics/popdynamics-1-km-downscaled-pop-base-year-projection-ssp-2000-2100-rev01/popdynamics-1-km-downscaled-pop-base-year-projection-ssp-2000-2100-rev01-proj-ssp5-geotiff.zip","Timeout was reached [sedac.ciesin.columbia.edu]:
+Connection timed out after 10004 milliseconds",FALSE
+"csv/expvul.csv",109,"Population (unconstrained) 30 arc seconds","https://hub.worldpop.org/geodata/listing?id=64","200",TRUE
+"csv/expvul.csv",110,"Population (unconstrained) 3 arc seconds","https://hub.worldpop.org/geodata/listing?id=29","200",TRUE
+"csv/expvul.csv",111,"Population (constrained) 3 arc seconds","https://hub.worldpop.org/geodata/listing?id=78","200",TRUE
+"csv/expvul.csv",114,"Projections","https://figshare.com/ndownloader/files/22078776","202",TRUE
+"csv/expvul.csv",115,"Historical GDP","https://zenodo.org/records/5880037/files/GDP2005_1km.tif?download=1","200",TRUE
+"csv/expvul.csv",116,"SSP-based GDP projections","https://zenodo.org/records/5880037/files/GDP_SSP1_1km.zip?download=1","200",TRUE
+"csv/expvul.csv",116,"SSP-based GDP projections","https://zenodo.org/records/5880037/files/GDP_SSP2_1km.zip?download=1","200",TRUE
+"csv/expvul.csv",116,"SSP-based GDP projections","https://zenodo.org/records/5880037/files/GDP_SSP3_1km.zip?download=1","200",TRUE
+"csv/expvul.csv",116,"SSP-based GDP projections","https://zenodo.org/records/5880037/files/GDP_SSP4_1km.zip?download=1","200",TRUE
+"csv/expvul.csv",116,"SSP-based GDP projections","https://zenodo.org/records/5880037/files/GDP_SSP5_1km.zip?download=1","200",TRUE
+"csv/expvul.csv",117,"Y2000-2018","https://figshare.com/ndownloader/articles/16571064/versions/7","202",TRUE
+"csv/expvul.csv",118,"30 arc seconds netcdf","https://dataverse.harvard.edu/file.xhtml?fileId=5372154&version=1.0","202",TRUE
+"csv/expvul.csv",118,"30 arc seconds netcdf","https://dataverse.harvard.edu/file.xhtml?fileId=5372150&version=1.0","202",TRUE
+"csv/expvul.csv",118,"30 arc seconds netcdf","https://dataverse.harvard.edu/file.xhtml?fileId=5372153&version=1.0","202",TRUE
+"csv/expvul.csv",118,"30 arc seconds netcdf","https://dataverse.harvard.edu/file.xhtml?fileId=5372152&version=1.0","202",TRUE
+"csv/expvul.csv",118,"30 arc seconds netcdf","https://dataverse.harvard.edu/file.xhtml?fileId=5372151&version=1.0","202",TRUE
+"csv/expvul.csv",119,"30 arc seconds geotiff","https://dataverse.harvard.edu/file.xhtml?fileId=5372145&version=1.0","202",TRUE
+"csv/expvul.csv",119,"30 arc seconds geotiff","https://dataverse.harvard.edu/file.xhtml?fileId=5372144&version=1.0","202",TRUE
+"csv/expvul.csv",119,"30 arc seconds geotiff","https://dataverse.harvard.edu/file.xhtml?fileId=5372143&version=1.0","202",TRUE
+"csv/expvul.csv",119,"30 arc seconds geotiff","https://dataverse.harvard.edu/file.xhtml?fileId=5372141&version=1.0","202",TRUE
+"csv/expvul.csv",119,"30 arc seconds geotiff","https://dataverse.harvard.edu/file.xhtml?fileId=5372142&version=1.0","202",TRUE
+"csv/expvul.csv",120,"1/8 degree netcdf","https://dataverse.harvard.edu/file.xhtml?persistentId=doi:10.7910/DVN/ZHMI1L/Q4S9QA&version=1.0","202",TRUE
+"csv/expvul.csv",121,"1/8 degree geotiff","https://dataverse.harvard.edu/file.xhtml?persistentId=doi:10.7910/DVN/ZHMI1L/TEVEB0&version=1.0","202",TRUE
+"csv/expvul.csv",122,"Projections","https://hs.pangaea.de/Maps/ChenG-etal_2019/Global-urban-product_SSPs_2015_2100.zip","200",TRUE
+"csv/expvul.csv",123,"NTLs","https://www.dropbox.com/s/b1wjqx0iniq0trz/Intercalibrated%20NTL_RSR.7z?dl=0","200",TRUE
