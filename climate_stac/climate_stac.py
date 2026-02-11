@@ -34,7 +34,7 @@ def create_catalog() -> pystac.Catalog:
     catalog_main = pystac.Catalog(
         id="climate-risk-stac",
         title="Climate Risk STAC",
-        description="This is a living, community-driven metadata catalog of geospatial datasets relevant for climate risk assessments (CRAs). The catalog is structured around the three risk drivers hazard, exposure, and vulnerability, with a focus on global-scale datasets. We provide detailed documentation on how to navigate the catalog, including a user guide (see 'Catalog documentation'). The development of the catalog is described in detail in the referenced publication (see 'Peer-reviewed publication'). As the catalog is designed to be a community-led endeavor, we encourage risk data users to add datasets to this catalog, thereby creating a growing knowledge base for potential users. New datasets can be submitted via GitHub (see 'Submit a new dataset').",
+        description="This is a living, community-driven metadata catalog of geospatial datasets relevant for climate risk assessments (CRAs). The catalog is structured around the three risk drivers hazard, exposure, and vulnerability, with a focus on global-scale datasets. We provide detailed documentation on how to navigate the catalog, including a user guide (see 'Catalog documentation'). The development of the catalog is described in detail in the referenced publication (see 'Peer-reviewed publication'). As the catalog is designed to be a community-led endeavor, we encourage risk data users to add datasets to this catalog, thereby creating a growing knowledge base for potential users. New datasets or error reports can be submitted via GitHub (see 'Submit a new dataset or report an error').",
         )
     
     # Create catalog links
@@ -48,8 +48,8 @@ def create_catalog() -> pystac.Catalog:
 
     publication_link = pystac.Link(
         rel=pystac.RelType.VIA,
-        target="https://doi.org/XXXXXXX",
-        title="Peer-reviewed publication (will be added once published)",
+        target="https://doi.org/10.1016/j.envsoft.2026.106906", 
+        title="Peer-reviewed publication",
     )
     # Add the link to the catalog
     catalog_main.add_link(publication_link)
@@ -57,7 +57,7 @@ def create_catalog() -> pystac.Catalog:
     github_link = pystac.Link(
         rel=pystac.RelType.VIA,
         target="https://github.com/climate-risk-data/climate-risk-stac/issues/new/choose",
-        title="Submit a new dataset",
+        title="Submit a new dataset or report an error",
     )
     # Add the link to the catalog
     catalog_main.add_link(github_link)
