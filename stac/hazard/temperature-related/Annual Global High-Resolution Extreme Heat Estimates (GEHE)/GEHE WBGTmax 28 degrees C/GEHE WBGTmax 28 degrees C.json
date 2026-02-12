@@ -94,9 +94,9 @@
   ],
   "assets": {
     "data-file_1": {
-      "href": "https://sedac.ciesin.columbia.edu/downloads/data/sdei/sdei-high-res-extreme-heat-estimates-1983-2016/sdei-high-res-extreme-heat-estimates-1983-2016-wbgtmax28-counts-geotiff.zip",
+      "href": "https://data.earthdata.nasa.gov/nasa-earth/human-dimensions/sedac-root/downloads/data/sdei/sdei-high-res-extreme-heat-estimates-1983-2016/sdei-high-res-extreme-heat-estimates-1983-2016-wbgtmax28-counts-geotiff.zip",
       "type": "image/tiff; application=geotiff",
-      "title": "https://sedac.ciesin.columbia.edu/downloads/data/sdei/sdei-high-res-extreme-heat-estimates-1983-2016/sdei-high-res-extreme-heat-estimates-1983-2016-wbgtmax28-counts-geotiff.zip",
+      "title": "https://data.earthdata.nasa.gov/nasa-earth/human-dimensions/sedac-root/downloads/data/sdei/sdei-high-res-extreme-heat-estimates-1983-2016/sdei-high-res-extreme-heat-estimates-1983-2016-wbgtmax28-counts-geotiff.zip",
       "roles": [
         "data"
       ]

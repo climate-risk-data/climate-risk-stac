@@ -43,7 +43,7 @@
       "interval": [
         [
           "2017-01-01T00:00:00Z",
-          "2025-11-28T00:00:00Z"
+          "2026-02-12T00:00:00Z"
         ]
       ]
     }
@@ -61,7 +61,7 @@
       "roles": [
         "producer"
       ],
-      "url": "https://emergency.copernicus.eu/mapping/ems/emergency-management-service-mapping"
+      "url": "https://mapping.emergency.copernicus.eu/"
     }
   ]
 }

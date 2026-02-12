@@ -58,9 +58,9 @@
   ],
   "providers": [
     {
-      "name": "NASA Socioeconomic Data and Applications Center (SEDAC)",
+      "name": "NASA",
       "roles": [
-        "licensor"
+        "host"
       ],
       "url": "https://doi.org/10.7927/fq7g-ny13"
     }

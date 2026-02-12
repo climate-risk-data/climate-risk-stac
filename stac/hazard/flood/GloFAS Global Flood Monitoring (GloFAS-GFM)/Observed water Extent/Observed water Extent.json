@@ -57,7 +57,7 @@
     "code type": null,
     "usage notes": "user account needed for data download",
     "start_datetime": "2015-01-01T00:00:00Z",
-    "end_datetime": "2025-11-28T00:00:00Z",
+    "end_datetime": "2026-02-12T00:00:00Z",
     "proj:code": "EPSG:4326",
     "datetime": null
   },
