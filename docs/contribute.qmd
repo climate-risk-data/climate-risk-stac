@@ -2,7 +2,7 @@
 title: "How to contribute"
 ---
 
-To make this a ***living*** catalog, it needs to be continuously updated and expanded by its users. We therefore encourage all users to **report inconsistencies**, missing information, or malfunctions, and to **contribute new or missing datasets**. 
+To make this a ***living*** catalog, it needs to be continuously updated and expanded by its users. We therefore encourage all users to **report inconsistencies, missing information, or malfunctions, and to **contribute new or missing datasets**, which can be submitted via [GitHub Issues](https://github.com/climate-risk-data/climate-risk-stac/issues/new/choose). 
 
 <br>
 
