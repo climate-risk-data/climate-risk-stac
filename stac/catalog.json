@@ -36,6 +36,11 @@
       "href": "./exposure-vulnerability/catalog.json",
       "type": "application/json",
       "title": "Exposure-vulnerability"
+    },
+    {
+      "rel": "self",
+      "href": "https://github.com/climate-risk-data/climate-risk-stac/tree/gh-pages/stac/catalog.json",
+      "type": "application/json"
     }
   ],
   "title": "Climate Risk STAC"
