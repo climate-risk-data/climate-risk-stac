@@ -48,6 +48,8 @@ if __name__ == '__main__':
     # catalog_main.describe()
 
     # Normalize hrefs and save the catalog
-    catalog_main.normalize_hrefs(output_dir.resolve().as_posix())
-    catalog_main.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
-    # catalog_main.save(catalog_type=pystac.CatalogType.RELATIVE_PUBLISHED)
+    # Use RELATIVE_PUBLISHED to include self links, which helps STAC Browser
+    # The URL must match where the catalog is hosted
+    catalog_url = "https://github.com/climate-risk-data/climate-risk-stac/tree/gh-pages/stac"
+    catalog_main.normalize_hrefs(catalog_url)
+    catalog_main.save(catalog_type=pystac.CatalogType.RELATIVE_PUBLISHED, dest_href=output_dir.resolve().as_posix())
