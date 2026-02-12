@@ -120,6 +120,6 @@ def check_links(csv_paths: list[str]):
         sys.exit(1)
 
 if __name__ == "__main__":
-    # Default paths based on project structure
+    # Default paths based on project structure 
     paths = ['csv/hazard.csv', 'csv/expvul.csv']
     check_links(paths)
