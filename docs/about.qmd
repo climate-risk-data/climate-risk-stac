@@ -20,5 +20,5 @@ These pages provide documentation and support on **how to navigate** the living 
 <br>
 
 ### Further details
--	**Scientific article**: The development of the living catalog is described in Reimann et al (in prep) [link will follow upon publication].
+-	**Scientific article**: The development of the living catalog is described in [Reimann et al. 2026](https://doi.org/10.1016/j.envsoft.2026.106906).
 -	**CLIMAAX project**: The catalog has been developed as part of the Horizon Europe project [CLIMAAX](https://www.climaax.eu/), which develops a harmonized framework and toolbox for CRAs across Europe. The catalog provides as a pool of possible data sources for a variety of CRA approaches ('[risk workflows](https://handbook.climaax.eu)').
