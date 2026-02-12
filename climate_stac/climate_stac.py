@@ -71,7 +71,7 @@ def update_catalog_from_dataframe(
 ) -> pystac.Catalog:
     """Update a STAC catalog with collections and items from a pandas dataframe."""
     indicator = dataframe.copy()
-    catalog_main = catalog.full_copy()
+    catalog_main = catalog
 
     for row_num in range(len(indicator)):
         item = indicator.iloc[row_num]

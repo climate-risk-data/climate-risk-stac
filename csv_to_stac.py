@@ -48,6 +48,6 @@ if __name__ == '__main__':
     # catalog_main.describe()
 
     # Normalize hrefs and save the catalog
-    catalog_main.normalize_hrefs(output_dir.as_posix())
+    catalog_main.normalize_hrefs(output_dir.resolve().as_posix())
     catalog_main.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
     # catalog_main.save(catalog_type=pystac.CatalogType.RELATIVE_PUBLISHED)
