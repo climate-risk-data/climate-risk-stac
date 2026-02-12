@@ -1,0 +1,106 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
+  "id": "SPEIbase",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "properties": {
+    "title": "SPEIbase",
+    "description": "The SPEIbase is based on the FAO-56 Penman-Monteith estimation of potential evapotranspiration. This is a major difference with respect to the SPEI Global Drought Monitor, that uses the Thornthwaite PET estimation.",
+    "risk data type": "hazard",
+    "subcategory": "drought",
+    "spatial scale": "(near-)global",
+    "reference period": "historical",
+    "temporal coverage": "1901-2022 (monthly)",
+    "scenarios": null,
+    "data type": "raster",
+    "data format": "netcdf",
+    "spatial resolution": "0.5 decimal degrees",
+    "source type": "modeled",
+    "analysis type": "deterministic",
+    "underlying data": "NOAA",
+    "publication type": "article (see DOI)",
+    "code type": "processing (see Code link)",
+    "usage notes": null,
+    "start_datetime": "1901-01-01T00:00:00Z",
+    "end_datetime": "2022-12-31T00:00:00Z",
+    "proj:code": "EPSG:4326",
+    "sci:doi": "10.1002/joc.3887",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "cite-as",
+      "href": "https://doi.org/10.1002/joc.3887"
+    },
+    {
+      "rel": "cite-as",
+      "href": "https://doi.org/10.5281/zenodo.834461",
+      "title": "Code link"
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk STAC"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Global SPEI database"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Global SPEI database"
+    }
+  ],
+  "assets": {
+    "data-file_1": {
+      "href": "https://digital.csic.es/bitstream/10261/332007/3/spei01.nc",
+      "type": "application/x-netcdf",
+      "title": "https://digital.csic.es/bitstream/10261/332007/3/spei01.nc",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "Global SPEI database"
+}

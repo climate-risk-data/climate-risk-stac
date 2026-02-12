@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "Thermal comfort indices derived from ERA5 (ERA5-HEAT)",
+  "stac_version": "1.1.0",
+  "description": "These data provide modelled hourly data for a set of indices representing human thermal stress and discomfort in outdoor conditions. ",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk STAC"
+    },
+    {
+      "rel": "item",
+      "href": "./Mean radiant temperature/Mean radiant temperature.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./Universal thermal climate index/Universal thermal climate index.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Temperature-related"
+    }
+  ],
+  "title": "Thermal comfort indices derived from ERA5 (ERA5-HEAT)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1940-01-01T00:00:00Z",
+          "2026-02-12T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "heat wave",
+    "(near-)global",
+    "historical",
+    "modeled"
+  ],
+  "providers": [
+    {
+      "name": "ECMWF",
+      "roles": [
+        "producer"
+      ],
+      "url": "https://doi.org/10.24381/cds.553b7518"
+    }
+  ]
+}

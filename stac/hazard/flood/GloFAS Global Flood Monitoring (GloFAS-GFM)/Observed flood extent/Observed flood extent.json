@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "Observed flood extent",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "properties": {
+    "title": "Observed flood extent",
+    "description": "Composite of the flooded areas mapped as the difference between S-1 observed water extent and the reference water mask.",
+    "risk data type": "hazard",
+    "subcategory": "fluvial flood",
+    "spatial scale": "(near-)global",
+    "reference period": "historical",
+    "temporal coverage": "2015-now (irregular)",
+    "scenarios": null,
+    "data type": "raster",
+    "data format": "geotiff",
+    "spatial resolution": "10 meters",
+    "source type": "observed",
+    "analysis type": "deterministic",
+    "underlying data": "Sentinel-1 SAR",
+    "publication type": null,
+    "code type": null,
+    "usage notes": "user account needed for data download",
+    "start_datetime": "2015-01-01T00:00:00Z",
+    "end_datetime": "2026-02-12T00:00:00Z",
+    "proj:code": "EPSG:4326",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk STAC"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GloFAS Global Flood Monitoring (GloFAS-GFM)"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GloFAS Global Flood Monitoring (GloFAS-GFM)"
+    }
+  ],
+  "assets": {
+    "data-file_1": {
+      "href": "https://global-flood.emergency.copernicus.eu/general-information/data-and-services/",
+      "type": "image/tiff; application=geotiff",
+      "title": "https://global-flood.emergency.copernicus.eu/general-information/data-and-services/",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
+  "collection": "GloFAS Global Flood Monitoring (GloFAS-GFM)"
+}
