@@ -39,7 +39,7 @@
     },
     {
       "rel": "self",
-      "href": "https://github.com/climate-risk-data/climate-risk-stac/tree/gh-pages/stac/catalog.json",
+      "href": "https://climate-risk-data.github.io/climate-risk-stac/stac/catalog.json",
       "type": "application/json"
     }
   ],

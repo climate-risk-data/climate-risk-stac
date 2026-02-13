@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "These pages provide documentation and support on how to navigate the living metadata catalog of open-access geospatial datasets for climate risk assessments (CRAs).\n\n\nKey principles\n\nRisk framework: The catalog follows the risk framework of the IPCC’s 5th and 6th Assessment Reports (AR5, AR6) where risk results from the interaction of hazards, the elements exposed to these hazards as well as the vulnerability of the exposed elements.\nFAIR data: The catalog includes data with an open-access license only, thereby facilitating the provision of Findable, Accessible, Interoperable, and Reusable (FAIR) data (Wilkinson et al. 2016).\nCommunity-driven development: To allow for continuous development by the CRA community, the catalog is hosted in a collaborative environment with the opportunity to contribute further datasets (see How to contribute).\n\n\n\n\nTechnical implementation\n\nSpatioTemporal Asset Catalog (STAC): The STAC specification provides the underlying common standard of the living catalog, allowing for structuring and querying geospatial metadata. STAC can flexibly accommodate a variety metadata attributes relevant for CRAs.\nSTAC Browser: All data included in the living catalog can be explored in a browsable webpage.\n\n\n\n\nFurther details\n\nScientific article: The development of the living catalog is described in Reimann et al. 2026.\nCLIMAAX project: The catalog has been developed as part of the Horizon Europe project CLIMAAX, which develops a harmonized framework and toolbox for CRAs across Europe. The catalog provides as a pool of possible data sources for a variety of CRA approaches (‘risk workflows’)."
+  },
+  {
     "objectID": "contribute.html",
     "href": "contribute.html",
     "title": "How to contribute",
@@ -21,6 +28,13 @@
     "text": "Step-by-step instructions\n\nGo to https://github.com/ and make a free user account\nNavigate to the Climate Risk STAC repository\nClick on the “Issues” tab and create a new issue (= contribute a dataset) via the “New Issue” button:\n\n\n\n\n\n\n\n\nSelect the relevant category by clicking on the “Get started” button:\n\n\n\n\n\n\n\n\nFill in the form and submit the issue. Please follow these guidelines:\n\nFollow the attribute descriptions and examples provided\nMake use of the pre-defined drop-down menus and free input fields\nBe as precise as possible\n\n\n\n\n\n\n\n\nImportant\n\n\n\nPlease submit a separate data entry (= item) for datasets belonging to the same overall data source (= collection) whenever more than one attribute applies."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Climate Risk STAC",
+    "section": "",
+    "text": "We provide a living metadata catalog of publicly available geospatial datasets for climate risk assessments (CRAs), which can be browsed, selected, and accessed based on a variety of technical specifications and information relevant for CRAs. The living catalog is based on the SpatioTemporal Asset Catalog (STAC) specification and visualized in STAC Browser.\nSTAC Browser: explore the catalog\nThe current version of the catalog includes hazard, exposure and vulnerability datasets, which are grouped into a) climate processes (i.e. hazard) and b) socioeconomic processes (i.e. exposure and vulnerability):\n\n\n\nCatalog structure along the three risk drivers, separated into a) climate processes (i.e. hazard) and b) socioeconomic processes (i.e. exposure and vulnerability)"
+  },
+  {
     "objectID": "user_guide.html",
     "href": "user_guide.html",
     "title": "User guide",
@@ -33,19 +47,5 @@
     "title": "User guide",
     "section": "Step-by-step browsing",
     "text": "Step-by-step browsing\n\nAccess the living metadata catalog via STAC Browser\nNavigate to hazard (i.e. climate) or exposure-vulnerability (i.e. socioeconomic) to browse the respective data entries:\n\n\n\n\n\n\n\n\nSelect from six hazard and four exposure-vulnerability categories:\n\nHazard: Flood, Precipitation related, Temperature related, Wind related, Environmental, Multi-hazard\nExposure-vulnerability: Population, Buildings, Infrastructure, Land use\n\n\n\n\n\n\n\n\nTip\n\n\n\nCatalogs can be filtered by title, descriptions, and keywords. Additionally, datasets can be filtered by selecting attributed keywords.\n\n\n\n\nChoose a dataset from the listed data sources (‘collections’). Collections contain the metadata attributes that all data entries have in common (e.g. keywords, license, temporal extent, data provider):\n\n\n\n\nScreenshot of the STAC Browser visualization at the collection level. Example of the collection ‘Critical Infrastructure Spatial Index (CISI)’ in catalog ‘Exposure-vulnerability’ - ‘Infrastructure’ (web browser used: Mozilla Firefox\n\n\n\n\nChoose a specific data entry (‘item’) . Items list a range of metadata attributes including at least one asset, provides access to the data download:\n\n\n\n\nScreenshot of the STAC Browser visualization at the item level. Example of the item ‘Index 0.1 dec deg’ in collection ‘Critical Infrastructure Spatial Index (CISI)’ (web browser used: Mozilla Firefox)"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Climate Risk STAC",
-    "section": "",
-    "text": "We provide a living metadata catalog of publicly available geospatial datasets for climate risk assessments (CRAs), which can be browsed, selected, and accessed based on a variety of technical specifications and information relevant for CRAs. The living catalog is based on the SpatioTemporal Asset Catalog (STAC) specification and visualized in STAC Browser.\nSTAC Browser: explore the catalog\nThe current version of the catalog includes hazard, exposure and vulnerability datasets, which are grouped into a) climate processes (i.e. hazard) and b) socioeconomic processes (i.e. exposure and vulnerability):\n\n\n\nCatalog structure along the three risk drivers, separated into a) climate processes (i.e. hazard) and b) socioeconomic processes (i.e. exposure and vulnerability)"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "These pages provide documentation and support on how to navigate the living metadata catalog of open-access geospatial datasets for climate risk assessments (CRAs).\n\n\nKey principles\n\nRisk framework: The catalog follows the risk framework of the IPCC’s 5th and 6th Assessment Reports (AR5, AR6) where risk results from the interaction of hazards, the elements exposed to these hazards as well as the vulnerability of the exposed elements.\nFAIR data: The catalog includes data with an open-access license only, thereby facilitating the provision of Findable, Accessible, Interoperable, and Reusable (FAIR) data (Wilkinson et al. 2016).\nCommunity-driven development: To allow for continuous development by the CRA community, the catalog is hosted in a collaborative environment with the opportunity to contribute further datasets (see How to contribute).\n\n\n\n\nTechnical implementation\n\nSpatioTemporal Asset Catalog (STAC): The STAC specification provides the underlying common standard of the living catalog, allowing for structuring and querying geospatial metadata. STAC can flexibly accommodate a variety metadata attributes relevant for CRAs.\nSTAC Browser: All data included in the living catalog can be explored in a browsable webpage.\n\n\n\n\nFurther details\n\nScientific article: The development of the living catalog is described in Reimann et al. 2026.\nCLIMAAX project: The catalog has been developed as part of the Horizon Europe project CLIMAAX, which develops a harmonized framework and toolbox for CRAs across Europe. The catalog provides as a pool of possible data sources for a variety of CRA approaches (‘risk workflows’)."
   }
 ]
