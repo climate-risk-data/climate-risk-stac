@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "a-global-high-resolution-dataset-of-earths-floodplains-gfplain250m",
+  "stac_version": "1.1.0",
+  "description": "The datasets aims at providing the floodplain delineation at the global level",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk STAC"
+    },
+    {
+      "rel": "item",
+      "href": "./gfplain250m-ascii/gfplain250m-ascii.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./gfplain250m-geotiff/gfplain250m-geotiff.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Flood"
+    }
+  ],
+  "title": "A Global High-resolution Dataset of Earth\u2019s Floodplains (GFPLAIN250m)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          60.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2000-01-01T00:00:00Z",
+          "2000-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "fluvial flood",
+    "(near-)global",
+    "historical",
+    "modeled"
+  ],
+  "providers": [
+    {
+      "name": "University for Foreigners of Perugia",
+      "roles": [
+        "licensor"
+      ],
+      "url": "https://figshare.com/articles/dataset/GFPLAIN250m/6665165/1"
+    }
+  ]
+}

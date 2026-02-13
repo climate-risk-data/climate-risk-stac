@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "copernicus-emergency-management-service-mapping-cems",
+  "stac_version": "1.1.0",
+  "description": "The Copernicus Emergency Management Service (CEMS) uses satellite imagery and other geospatial data to provide free of charge mapping service in cases of natural disasters, human-made emergency situations and humanitarian crises throughout the world. It covers the following hazards relevant for climate risk assessments: floods, severe storms, fires",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk STAC"
+    },
+    {
+      "rel": "item",
+      "href": "./rapid-mapping-per-event/rapid-mapping-per-event.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./risk-and-recovery-mapping/risk-and-recovery-mapping.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Environmental"
+    }
+  ],
+  "title": "Copernicus Emergency Management Service - Mapping (CEMS)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-01-01T00:00:00Z",
+          "2026-02-13T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "wildfire",
+    "(near-)global",
+    "historical",
+    "modeled"
+  ],
+  "providers": [
+    {
+      "name": "CEMS",
+      "roles": [
+        "producer"
+      ],
+      "url": "https://mapping.emergency.copernicus.eu/"
+    }
+  ]
+}

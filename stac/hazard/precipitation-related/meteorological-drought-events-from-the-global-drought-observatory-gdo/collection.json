@@ -1,0 +1,87 @@
+{
+  "type": "Collection",
+  "id": "meteorological-drought-events-from-the-global-drought-observatory-gdo",
+  "stac_version": "1.1.0",
+  "description": "More than 4500 drought events classified using a few indicators as the SPI and the SPEI at different temporal scales. The database of drought events has specific entries for each macro-region and country.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk STAC"
+    },
+    {
+      "rel": "item",
+      "href": "./spei12/spei12.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./spei3/spei3.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./spei6/spei6.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./spi12/spi12.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./spi3/spi3.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./spi6/spi6.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Precipitation-related"
+    }
+  ],
+  "title": "Meteorological drought events from the Global Drought Observatory (GDO)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1951-01-01T00:00:00Z",
+          "2016-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "drought",
+    "(near-)global",
+    "historical",
+    "modeled"
+  ],
+  "providers": [
+    {
+      "name": "Global Drought Observatory",
+      "roles": [
+        "host"
+      ],
+      "url": "https://data.jrc.ec.europa.eu/collection/id-00321"
+    }
+  ]
+}

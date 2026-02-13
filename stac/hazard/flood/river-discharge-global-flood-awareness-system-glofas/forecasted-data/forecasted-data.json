@@ -1,0 +1,101 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
+  "id": "forecasted-data",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -60.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    90.0
+  ],
+  "properties": {
+    "title": "Forecasted data",
+    "description": "This dataset provides an ensemble of forecast time series of gridded hydrological data. The data set is a product of the Global Flood Awareness System (GloFAS) and offers a consistent representation of key hydrological variables across the global domain.",
+    "risk data type": "hazard",
+    "subcategory": "fluvial flood",
+    "spatial scale": "(near-)global",
+    "reference period": "historical",
+    "temporal coverage": "2019-now (daily)",
+    "scenarios": null,
+    "data type": "raster",
+    "data format": "GRIB2",
+    "spatial resolution": "0.05 decimal degrees",
+    "source type": "modeled",
+    "analysis type": "probabilistic",
+    "underlying data": "LISFLOOD + ECMWF forecast",
+    "publication type": "dataset (see DOI)",
+    "code type": null,
+    "usage notes": "data download via interface or API",
+    "start_datetime": "2019-01-01T00:00:00Z",
+    "end_datetime": "2026-02-13T00:00:00Z",
+    "proj:code": "EPSG:4326",
+    "sci:doi": "10.24381/cds.ff1aef77",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "cite-as",
+      "href": "https://doi.org/10.24381/cds.ff1aef77"
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk STAC"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "River discharge Global Flood Awareness System (GloFAS)"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "River discharge Global Flood Awareness System (GloFAS)"
+    }
+  ],
+  "assets": {
+    "data-file_1": {
+      "href": "https://doi.org/10.24381/cds.ff1aef77",
+      "type": "application/grib2",
+      "title": "https://doi.org/10.24381/cds.ff1aef77",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
+  "collection": "river-discharge-global-flood-awareness-system-glofas"
+}

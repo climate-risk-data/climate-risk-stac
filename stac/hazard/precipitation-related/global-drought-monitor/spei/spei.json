@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "spei",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "properties": {
+    "title": "SPEI",
+    "description": "SPEI Global Drought Monitor is based on the Thortnthwaite equation for estimating potential evapotranspiration, PET.",
+    "risk data type": "hazard",
+    "subcategory": "drought",
+    "spatial scale": "(near-)global",
+    "reference period": "historical",
+    "temporal coverage": "1955-now (monthly)",
+    "scenarios": null,
+    "data type": "raster",
+    "data format": "netcdf",
+    "spatial resolution": "1 decimal degrees",
+    "source type": "modeled",
+    "analysis type": "deterministic",
+    "underlying data": "NOAA",
+    "publication type": null,
+    "code type": null,
+    "usage notes": "data download via interface",
+    "start_datetime": "1955-01-01T00:00:00Z",
+    "end_datetime": "2026-02-13T00:00:00Z",
+    "proj:code": "EPSG:4326",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk STAC"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Global Drought Monitor"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Global Drought Monitor"
+    }
+  ],
+  "assets": {
+    "data-file_1": {
+      "href": "https://spei.csic.es/map/maps.html#months=1#month=5#year=2024",
+      "type": "application/x-netcdf",
+      "title": "https://spei.csic.es/map/maps.html#months=1#month=5#year=2024",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
+  "collection": "global-drought-monitor"
+}

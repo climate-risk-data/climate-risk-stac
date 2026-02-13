@@ -1,0 +1,105 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "different-return-periods-in-2050",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          -90.0
+        ],
+        [
+          180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          90.0
+        ],
+        [
+          -180.0,
+          -90.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "properties": {
+    "title": "Different return periods in 2050",
+    "description": "Inundation (m) of coastal floods at 3 arc seconds resolution for 2050 (return periods 0, 2, 5, 10, 25, 50, 100, 250)",
+    "risk data type": "hazard",
+    "subcategory": "coastal flood",
+    "spatial scale": "(near-)global",
+    "reference period": "future",
+    "temporal coverage": "2050",
+    "scenarios": "RCPs",
+    "data type": "raster",
+    "data format": "netcdf",
+    "spatial resolution": "3 arc seconds",
+    "source type": "modeled",
+    "analysis type": "probabilistic",
+    "underlying data": "GTSM,MERIT-DEM, NASADEM, ERA5",
+    "publication type": "report (see Publication link)",
+    "code type": "download (see Code link)",
+    "usage notes": "download via API (example provided), data available for RCP8.5",
+    "start_datetime": "2050-01-01T00:00:00Z",
+    "end_datetime": "2050-12-31T00:00:00Z",
+    "proj:code": "EPSG:4326",
+    "datetime": null
+  },
+  "links": [
+    {
+      "rel": "cite-as",
+      "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/aod_docs/11206409-003-ZWS-0003_v0.1-Planetary-Computer-Deltares-global-flood-docs.pdf",
+      "title": "Publication link"
+    },
+    {
+      "rel": "cite-as",
+      "href": "https://planetarycomputer.microsoft.com/dataset/deltares-floods#Example-Notebook",
+      "title": "Code link"
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk STAC"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Deltares Coastal Flood Maps"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Deltares Coastal Flood Maps"
+    }
+  ],
+  "assets": {
+    "data-file_1": {
+      "href": "https://planetarycomputer.microsoft.com/dataset/deltares-floods",
+      "type": "application/x-netcdf",
+      "title": "https://planetarycomputer.microsoft.com/dataset/deltares-floods",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
+  "collection": "deltares-coastal-flood-maps"
+}

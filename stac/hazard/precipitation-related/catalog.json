@@ -1,0 +1,63 @@
+{
+  "type": "Catalog",
+  "id": "precipitation-related",
+  "stac_version": "1.1.0",
+  "description": "Precipitation-related datasets",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Climate Risk STAC"
+    },
+    {
+      "rel": "child",
+      "href": "./daily-evapotranspiration-deficit-index-dedi/collection.json",
+      "type": "application/json",
+      "title": "Daily Evapotranspiration Deficit Index (DEDI)"
+    },
+    {
+      "rel": "child",
+      "href": "./global-drought-monitor/collection.json",
+      "type": "application/json",
+      "title": "Global Drought Monitor"
+    },
+    {
+      "rel": "child",
+      "href": "./global-spei-database/collection.json",
+      "type": "application/json",
+      "title": "Global SPEI database"
+    },
+    {
+      "rel": "child",
+      "href": "./meteorological-drought-events-from-the-global-drought-observatory-gdo/collection.json",
+      "type": "application/json",
+      "title": "Meteorological drought events from the Global Drought Observatory (GDO)"
+    },
+    {
+      "rel": "child",
+      "href": "./monthly-maximum-of-accumulated-precipitation/collection.json",
+      "type": "application/json",
+      "title": "Monthly maximum of accumulated precipitation"
+    },
+    {
+      "rel": "child",
+      "href": "./standardized-precipitation-index-spi/collection.json",
+      "type": "application/json",
+      "title": "Standardized precipitation index (SPI)"
+    },
+    {
+      "rel": "child",
+      "href": "./wet-day-precipitation-indices/collection.json",
+      "type": "application/json",
+      "title": "Wet day precipitation indices"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Hazard"
+    }
+  ],
+  "title": "Precipitation-related"
+}
