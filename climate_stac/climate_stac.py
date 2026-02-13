@@ -16,6 +16,7 @@ from climate_stac.utils import (
     parse_year_range,
     providers_are_equal,
     update_keywords,
+    slugify,
 )
 
 __all__ = [
@@ -81,27 +82,29 @@ def update_catalog_from_dataframe(
         category_id = item["category"]
 
         ## CATALOGS ##
+        catalog_id_slug = slugify(catalog_id)
         # Create or retrieve the first-level catalog
-        if catalog_id not in [cat.id for cat in catalog_main.get_children()]:
+        if catalog_id_slug not in [cat.id for cat in catalog_main.get_children()]:
             catalog1 = pystac.Catalog(
-                id=catalog_id,
+                id=catalog_id_slug,
                 title=catalog_id.capitalize(),
                 description=f"{catalog_id.capitalize()} datasets",
             )
             catalog_main.add_child(catalog1)
         else:
-            catalog1 = catalog_main.get_child(catalog_id)
+            catalog1 = catalog_main.get_child(catalog_id_slug)
 
+        category_id_slug = slugify(category_id)
         # Create or retrieve the second-level catalog
-        if category_id not in [cat.id for cat in catalog1.get_children()]:
+        if category_id_slug not in [cat.id for cat in catalog1.get_children()]:
             catalog2 = pystac.Catalog(
-                id=category_id,
+                id=category_id_slug,
                 title=category_id.capitalize(),
                 description=f"{category_id.capitalize()} datasets",
             )
             catalog1.add_child(catalog2)
         else:
-            catalog2 = catalog1.get_child(category_id)
+            catalog2 = catalog1.get_child(category_id_slug)
 
         # Process bbox (needed for collections and items)
         bbox = item["bbox"]
@@ -129,11 +132,12 @@ def update_catalog_from_dataframe(
             url=item["data_overview_link"],
         )
 
+        collection_id = slugify(title_collection)
         # Create or retrieve the collection
-        if title_collection not in [col.id for col in catalog2.get_children()]:
+        if collection_id not in [col.id for col in catalog2.get_children()]:
             # create basic collection
             collection = pystac.Collection(
-                id=title_collection,
+                id=collection_id,
                 title=title_collection,
                 description=item["description_collection"],
                 extent=pystac.Extent(
@@ -155,7 +159,7 @@ def update_catalog_from_dataframe(
 
         else:
             # retrieve collection
-            collection = catalog2.get_child(title_collection)
+            collection = catalog2.get_child(collection_id)
 
             # Update spatial extent
             # get all items
@@ -228,8 +232,9 @@ def update_catalog_from_dataframe(
             logger.info(f"collection {row_num} {title_collection} successfully updated")
 
         ## ITEMS ##
+        item_id = slugify(item["title_item"])
         # Create new item if not present yet
-        if item["title_item"] not in [col.id for col in collection.get_items()]:
+        if item_id not in [col.id for col in collection.get_items()]:
             # define item attributes that can deviate per item
             temporal_coverage = (
                 f"{item['temporal_coverage']} ({item['temporal_interval']})"
@@ -283,7 +288,7 @@ def update_catalog_from_dataframe(
 
             # Create basic item
             item_stac = pystac.Item(
-                id=item["title_item"],
+                id=item_id,
                 geometry=mapping(footprint_polygon),
                 bbox=bbox_list,
                 datetime=None,  # datetime.now(),
@@ -394,8 +399,8 @@ def update_catalog_from_dataframe(
             logger.info(f"item {row_num} {item['title_item']} successfully added")
         
         #  if item already present, check subcategory of exiting versus new item
-        if item["title_item"] in [col.id for col in collection.get_items()]:
-            existing_item = collection.get_item(item["title_item"])
+        if item_id in [col.id for col in collection.get_items()]:
+            existing_item = collection.get_item(item_id)
             existing_subcategory = existing_item.properties.get("subcategory", None)
             new_subcategory = item["subcategory"]
 

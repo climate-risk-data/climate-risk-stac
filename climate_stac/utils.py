@@ -1,4 +1,5 @@
 from datetime import datetime
+import re
 import logging
 import numpy as np
 import pystac
@@ -13,7 +14,8 @@ __all__ = [
     'parse_year_range',
     'generate_keywords',
     'update_keywords',
-    'providers_are_equal'
+    'providers_are_equal',
+    'slugify'
 ]
 
 # Configure the logger
@@ -138,3 +140,11 @@ def providers_are_equal(provider1: pystac.Provider, provider2: pystac.Provider) 
     roles_equal = set(provider1.roles) == set(provider2.roles)
     url_equal = provider1.url == provider2.url
     return name_equal and roles_equal and url_equal
+
+def slugify(s: str) -> str:
+    """Slugify a string."""
+    s = s.lower().strip()
+    s = re.sub(r'[^\w\s-]', '', s)
+    s = re.sub(r'[\s_-]+', '-', s)
+    s = re.sub(r'^-+|-+$', '', s)
+    return s
