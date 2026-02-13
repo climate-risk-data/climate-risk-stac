@@ -4,7 +4,7 @@
     "upload_type": "software",
     "creators": [
         {
-            "affiliation": "Vrije Universiteit Amsterdam",
+            "affiliation": "Vrije Universiteit Amsterdam; Aalto University",
             "name": "Reimann, Lena",
             "orcid": "0000-0002-9405-9147"
         },
@@ -14,12 +14,12 @@
             "orcid": "0000-0002-0951-8418"
         },
         {
-            "affiliation": "Vrije Universiteit Amsterdam",
+            "affiliation": "Vrije Universiteit Amsterdam; Euro-Mediterranean Center on Climate Change (CMCC)",
             "name": "Tiggeloven, Timothy",
             "orcid": "0000-0002-3029-659X"
         },
         {
-            "affiliation": "ECMWF",
+            "affiliation": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
             "name": "Vuckovic, Milana",
             "orcid":"0000-0003-1626-8928"
         },
@@ -34,7 +34,7 @@
             "orcid": "0000-0001-8268-6509"
         },
         {
-            "affiliation": "CMCC; Ca'Foscari University",
+            "affiliation": "Euro-Mediterranean Center on Climate Change (CMCC); Ca'Foscari University",
             "name": "Pal, Jeremy S."
         },
         {
@@ -43,7 +43,7 @@
             "orcid": "0000-0002-0913-9370"
         },
         {
-            "affiliation": "ECMWF",
+            "affiliation": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
             "name": "Wetterhall, Fredrik",
             "orcid": "0000-0001-5331-9064"
         },
