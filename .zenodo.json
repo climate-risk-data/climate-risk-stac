@@ -1,6 +1,6 @@
 {
     "title": "Climate Risk STAC: A living metadata catalog of geospatial data for climate risk assessments",
-    "description": "Climate Risk STAC is a living metadata catalog of publicly available geospatial datasets for climate risk assessments (CRAs), which can be browsed, selected, and accessed based on a variety of technical specifications and information relevant for CRAs. The living catalog is based on the SpatioTemporal Asset Catalog (STAC) specification and visualized in STAC Browser. The catalog includes hazard, exposure and vulnerability datasets.",
+    "description": "Climate Risk STAC is a living metadata catalog of publicly available geospatial datasets for climate risk assessments (CRAs), which can be browsed, selected, and accessed based on a variety of technical specifications and information relevant for CRAs. The living catalog is based on the SpatioTemporal Asset Catalog (STAC) specification and visualized in STAC Browser. The catalog includes hazard, exposure and vulnerability datasets.\n\nPlease cite the following publication that describes this version (v1.0) of Climate Risk STAC: \nReimann, L., Eilander, D., Tiggeloven, T., Vuckovic, M., Kummu, M., Vajda, A., Pal, J. S., Mazzoleni, M., Wetterhall, F., & Aerts, J. C. J. H. (2026). Climate Risk STAC: A living metadata catalog of geospatial data for climate risk assessments. Environmental Modelling & Software. https://doi.org/10.1016/j.envsoft.2026.106906",
     "upload_type": "software",
     "creators": [
         {
