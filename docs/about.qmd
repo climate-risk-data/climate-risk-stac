@@ -15,7 +15,7 @@ These pages provide documentation and support on **how to navigate** the living 
 
 ### Technical implementation
 -	**SpatioTemporal Asset Catalog (STAC)**: The [STAC specification](https://stacspec.org/) provides the underlying common standard of the living catalog, allowing for structuring and querying geospatial metadata. STAC can flexibly accommodate a variety metadata attributes relevant for CRAs. 
--	**STAC Browser**: All data included in the living catalog can be explored in a [browsable webpage](https://radiantearth.github.io/stac-browser/#/external/https://raw.githubusercontent.com/climate-risk-data/climate-risk-stac/refs/heads/gh-pages/stac/catalog.json).
+-	**STAC Browser**: All data included in the living catalog can be explored in a [browsable webpage](https://radiantearth.github.io/stac-browser/#/external/https://climate-risk-data.github.io/climate-risk-stac/stac/catalog.json).
 
 <br>
 

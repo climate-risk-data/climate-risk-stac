@@ -9,7 +9,7 @@ The following steps ease browsing, selecting, and accessing the (meta)data inclu
 
 ## Step-by-step browsing
 
-1. Access the living metadata catalog via [STAC Browser](https://radiantearth.github.io/stac-browser/#/external/https://raw.githubusercontent.com/climate-risk-data/climate-risk-stac/refs/heads/gh-pages/stac/catalog.json)
+1. Access the living metadata catalog via [STAC Browser](https://radiantearth.github.io/stac-browser/#/external/https://climate-risk-data.github.io/climate-risk-stac/stac/catalog.json)
 
 2. Navigate to **hazard** (i.e. climate) or **exposure-vulnerability** (i.e. socioeconomic) to browse the respective data entries:
 
@@ -28,7 +28,7 @@ Catalogs can be **filtered** by title, descriptions, and keywords. Additionally,
 
 4. Choose a dataset from the listed **data sources** ('collections'). Collections contain the metadata attributes that all data entries have in common (e.g. keywords, license, temporal extent, data provider):
 
-![Screenshot of the STAC Browser visualization at the collection level. Example of the collection 'Critical Infrastructure Spatial Index (CISI)' in catalog 'Exposure-vulnerability' - 'Infrastructure' (web browser used: Mozilla Firefox](./images/collection.png){width=90% fig-align="center"}
+![Screenshot of the STAC Browser visualization at the collection level. Example of the collection 'Critical Infrastructure Spatial Index (CISI)' in catalog 'Exposure-vulnerability' - 'Infrastructure' (web browser used: Mozilla Firefox)](./images/collection.png){width=90% fig-align="center"}
 
 <br>
 
